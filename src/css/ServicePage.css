@@ -1,0 +1,51 @@
+.main-services {
+  background-color: #101010;
+  padding: 100px 0px;
+  color: #fff;
+  text-align: center;
+}
+section.inner-services {
+  width: 100%;
+  max-width: 1240px;
+  margin: 20px auto 0px;
+}
+.our-services-all {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 30px;
+}
+.web-development {
+  max-width: 50%;
+  width: 100%;
+  padding: 0px 10px;
+}
+.web-development-image {
+  width: 100%;
+  max-width: 50%;
+  padding: 0px 10px;
+}
+.web-development-image img {
+  width: 100%;
+}
+.explantion-tech ul{
+  padding: 0px;
+}
+.explantion-tech ul li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 25px;
+}
+.explantion-tech ul li::before {
+  content: '';
+  background-image: url(../pages/Assest/list_icon.png);
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 4px;
+}
