@@ -229,7 +229,7 @@ export default function Framework() {
                                                 )
                                             })}
                                         </CardContent>
-                                        <Button variant="contained" size="small">Get a Quote</Button>
+                                        <Button className='get_quote_btn' size="small">Get a Quote</Button>
                                     </Card>
                                 </Col>
                             )

@@ -15,7 +15,6 @@ import Portfolio from './pages/Portfolio';
 import Review from './pages/Review';
 import Career from './pages/Career';
 import WebDevelopment from './components/services/WebDevelopment';
-import PageNotFound from './components/PageNotFound';
 import './App.css'
 import GraphicDesign from './components/services/GraphicDesign';
 import MernStack from './components/services/MernStack';
@@ -23,6 +22,7 @@ import DigitalMarketing from './components/services/DigitalMarketing';
 import ContentStrategy from './components/services/ContentStrategy';
 import Framework from './components/services/FrameWork';
 import CMSSolution from './components/services/CMSSolution';
+import PageNotFound from './pages/PageNotFound'
 
 
 

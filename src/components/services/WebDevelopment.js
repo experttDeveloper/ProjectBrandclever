@@ -169,7 +169,7 @@ export default function WebDevelopment() {
                                     <p><VerifiedIcon /> User-Friendly Interface </p>
                                     <p><VerifiedIcon /> Strong Functionality</p>
                                 </CardContent>
-                                <Button variant="contained" size="small">Get a Quote</Button>
+                                <Button className='get_quote_btn' size="small">Get a Quote</Button>
                             </Card>
                         </Col>
                         <Col md={4} >
@@ -193,7 +193,7 @@ export default function WebDevelopment() {
                                     <p><VerifiedIcon /> Mobile Optimization </p>
                                     <p><VerifiedIcon /> Inventory Management</p>
                                 </CardContent>
-                                <Button variant="contained" size="small">Get a Quote</Button>
+                                <Button className='get_quote_btn' size="small">Get a Quote</Button>
                             </Card>
                         </Col>
                         <Col md={4} >
@@ -217,7 +217,7 @@ export default function WebDevelopment() {
                                     <p><VerifiedIcon /> User-Friendly Interface </p>
                                     <p><VerifiedIcon /> Strong Functionality</p>
                                 </CardContent>
-                                <Button variant="contained" size="small">Get a Quote</Button>
+                                <Button className='get_quote_btn' size="small">Get a Quote</Button>
                             </Card>
                         </Col>
                     </Row>
