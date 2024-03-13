@@ -12,6 +12,7 @@ import OurServices from '../components/OurServices';
 import Icons from '../components/Icons';
 import DatabaseSec from '../components/DatabaseSec';
 import Faq from '../components/Faq';
+import HomePageScroll from '../components/HomePageScroll';
 
 const Home = () => {
    
@@ -54,6 +55,7 @@ const Home = () => {
           <Tachnology techImages={technologyImages} />
           
           <AboutInfo imgAbout={aboutInfo} />
+         {/*  <HomePageScroll/> */}
           {/* <FruitsCarousel bgImage={backgroundImage} /> */}
           
           <OurServices />
