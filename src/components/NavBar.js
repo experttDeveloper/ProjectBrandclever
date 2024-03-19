@@ -55,45 +55,45 @@ const NavBar = () => {
                   <li>
                     <div className="dropdownMenu">
                       <Link to="/service" onClick={closeMenu} className="dropbtn">Services <span class="arrow-right"><span class="ar_line"></span><span class="ar_left"></span></span></Link>
-                        <div className="dropdown-content"> 
-                          <div className="row">
-                            <div className="columnMenu">
-                              <h3>Category 1</h3>
-                              <Link to=''>Website Designing</Link>
-                              <Link to=''>Web Development</Link>
-                              <Link to=''>Graphic Designs</Link>   
-                              <Link to=''>Mern Stack</Link>
-                              <Link to=''>Content Strategy</Link>
-                              <Link to=''>Framework</Link>
-                            </div>
-                            <div className="columnMenu">
-                              <h3>Category 2</h3>
-                              <Link to=''>CMS Solutions </Link>
-                              <Link to=''>Landing Page</Link>
-                              <Link to=''>Ecommerce</Link>  
-                              <Link to=''>Digital Marketing</Link>
-                              <Link to=''>Web Application Development</Link>
-                              <Link to=''>Software Testing</Link>  
-                            </div>
-                            <div className="columnMenu"> 
-                              <img src={ process.env.PUBLIC_URL+'/images/menus/ser_new_img.png'} alt='' />
-                            </div>
+                      <div className="dropdown-content">
+                        <div className="row">
+                          <div className="columnMenu">
+                            <h3>Category 1</h3>
+                            <Link to='/service/website-design'>Website Designing</Link>
+                            <Link to='/service/web-development'>Web Development</Link>
+                            <Link to='/service/graphic-degine'>Graphic Designs</Link>
+                            <Link to='/service/mern-stack'>Mern Stack</Link>
+                            <Link to='/service/content-strategy'>Content Strategy</Link>
+                            <Link to='/service/framework'>Framework</Link>
+                          </div>
+                          <div className="columnMenu">
+                            <h3>Category 2</h3>
+                            <Link to='/service/cms-solution'>CMS Solutions </Link>
+                            <Link to='/service/landing-page'>Landing Page</Link>
+                            <Link to='/service/ecommerce'>Ecommerce</Link>
+                            <Link to='/service/digital-marketing'>Digital Marketing</Link>
+                            <Link to='/service/web-application'>Web Application Development</Link>
+                            <Link to='/service/siftware-testing'>Software Testing</Link>
+                          </div>
+                          <div className="columnMenu">
+                            <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
                           </div>
                         </div>
-                      </div> 
+                      </div>
+                    </div>
                   </li>
                   <li>
-                    <div className="dropdownMenu"> 
+                    <div className="dropdownMenu">
                       <Link to="/career" className="dropbtn">Career <i className="fa fa-caret-down"></i></Link>
-                      <div className="dropdown-content"> 
-                          <div className="row">
-                            <div className="columnMenu">
-                              <Link to="/traning-and-placement">Training & Placement </Link>
-                            </div>
-                            <div className="columnMenu"> 
-                              <img src={ process.env.PUBLIC_URL+'/images/menus/ser_new_img.png'} alt='' />
-                            </div>
+                      <div className="dropdown-content">
+                        <div className="row">
+                          <div className="columnMenu">
+                            <Link to="/traning-and-placement">Training & Placement </Link>
                           </div>
+                          <div className="columnMenu">
+                            <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </li>

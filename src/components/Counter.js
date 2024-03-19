@@ -1,7 +1,7 @@
 // Counter.js
 
-import React, { useEffect } from 'react';
-import '../css/Counter.css'; // Import your CSS file
+import React, { useEffect } from "react";
+import "../css/Counter.css"; // Import your CSS file
 
 const Counter = () => {
   useEffect(() => {
@@ -34,9 +34,9 @@ const Counter = () => {
     // Adjust the speed for both "Projects" and "Clients" counters to be the same
     const commonSpeed = 50;
 
-    numCounter('Projects', 436, commonSpeed);
-    numCounter('Clients', 301, commonSpeed);
-    numCounter('Partners', 100, 10);
+    numCounter("Projects", 436, commonSpeed);
+    numCounter("Clients", 301, commonSpeed);
+    numCounter("Partners", 100, 10);
 
     // Clean up the intervals when the component unmounts
     return () => {
@@ -48,32 +48,32 @@ const Counter = () => {
   return (
     <div className="row counter-section">
       <div className="top-counter">
-      <div className="column">
-        <div className="card-counter">
-          <h3>
-            <span id="Projects">0</span>+
-          </h3>
-          <h3>Projects Delivered</h3>
+        <div className="column">
+          <div className="card-counter">
+            <h3>
+              <span id="Projects">0</span>+
+            </h3>
+            <h3>Projects Delivered</h3>
+          </div>
         </div>
-      </div>
-      <div className="column">
-        <div className="card-counter">
-          <h3>
-            <span id="Clients">0</span>+
-          </h3>
-          <h3>Happy Clients</h3>
+        <div className="column">
+          <div className="card-counter">
+            <h3>
+              <span id="Clients">0</span>+
+            </h3>
+            <h3>Happy Clients</h3>
+          </div>
         </div>
-      </div>
       </div>
       <div className="bottom-counter">
-      <div className="column">
-        <div className="card-counter">
-          <h3>
-            <span id="Partners">0</span>%
-          </h3>
-          <h3>Our Succes Rate</h3>
+        <div className="column">
+          <div className="card-counter">
+            <h3>
+              <span id="Partners">0</span>%
+            </h3>
+            <h3>Our Succes Rate</h3>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );
