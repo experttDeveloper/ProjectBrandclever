@@ -51,11 +51,12 @@ const Home = () => {
   return (
     <>
       <div className='page'>
+        <p>hello</p>
         <Banner />
         <Tachnology techImages={technologyImages} />
 
         <AboutInfo imgAbout={aboutInfo} />
-       {/*  <HomePageScroll /> */}
+        {/*  <HomePageScroll /> */}
         {/* <FruitsCarousel bgImage={backgroundImage} /> */}
 
         <OurServices />
