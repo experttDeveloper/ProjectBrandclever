@@ -33,7 +33,7 @@ export default function Service() {
                             </ul>
                         </div>
                         <div className='read-more'>
-                            <a href='/service/web-development' className='btn btn-primary'>Read More</a>
+                            <a href='/web-development' className='btn btn-primary'>Read More</a>
                         </div>
                     </div>
                     <div className='web-development-image'>
@@ -86,7 +86,7 @@ export default function Service() {
                             </ul>
                         </div>
                         <div className='read-more'>
-                            <a href='/service/graphic-degine' className='btn btn-primary'>Read More</a>
+                            <a href='/graphic-degine' className='btn btn-primary'>Read More</a>
                         </div>
                     </div>
 
@@ -108,7 +108,7 @@ export default function Service() {
                             </ul>
                         </div>
                         <div className='read-more'>
-                            <a href='/service/mern-stack' className='btn btn-primary'>Read More</a>
+                            <a href='/mern-stack' className='btn btn-primary'>Read More</a>
                         </div>
                     </div>
                     <div className='web-development-image'>
@@ -135,7 +135,7 @@ export default function Service() {
                             </ul>
                         </div>
                         <div className='read-more'>
-                            <a href='/service/digital-marketing' className='btn btn-primary'>Read More</a>
+                            <a href='/digital-marketing' className='btn btn-primary'>Read More</a>
                         </div>
                     </div>
                     
@@ -158,7 +158,7 @@ export default function Service() {
                             </ul>
                         </div>
                         <div className='read-more'>
-                            <a href='/service/content-strategy' className='btn btn-primary'>Read More</a>
+                            <a href='/content-strategy' className='btn btn-primary'>Read More</a>
                         </div>
                     </div>
                     <div className='web-development-image'>
@@ -185,7 +185,7 @@ export default function Service() {
                             </ul>
                         </div>
                         <div className='read-more'>
-                            <a href='/service/framework' className='btn btn-primary'>Read More</a>
+                            <a href='/framework' className='btn btn-primary'>Read More</a>
                         </div>
                     </div>
                     
@@ -210,7 +210,7 @@ export default function Service() {
                             </ul>
                         </div>
                         <div className='read-more'>
-                            <a href='/service/cms-solution' className='btn btn-primary'>Read More</a>
+                            <a href='/cms-solution' className='btn btn-primary'>Read More</a>
                         </div>
                     </div>
                     <div className='web-development-image'>

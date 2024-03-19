@@ -59,21 +59,21 @@ const NavBar = () => {
                         <div className="row">
                           <div className="columnMenu">
                             <h3>Category 1</h3>
-                            <Link to='/service/website-design'>Website Designing</Link>
-                            <Link to='/service/web-development'>Web Development</Link>
-                            <Link to='/service/graphic-degine'>Graphic Designs</Link>
-                            <Link to='/service/mern-stack'>Mern Stack</Link>
-                            <Link to='/service/content-strategy'>Content Strategy</Link>
-                            <Link to='/service/framework'>Framework</Link>
+                            <Link to='/website-design'>Website Designing</Link>
+                            <Link to='/web-development'>Web Development</Link>
+                            <Link to='/graphic-degine'>Graphic Designs</Link>
+                            <Link to='/mern-stack'>Mern Stack</Link>
+                            <Link to='/content-strategy'>Content Strategy</Link>
+                            <Link to='/framework'>Framework</Link>
                           </div>
                           <div className="columnMenu">
                             <h3>Category 2</h3>
-                            <Link to='/service/cms-solution'>CMS Solutions </Link>
-                            <Link to='/service/landing-page'>Landing Page</Link>
-                            <Link to='/service/ecommerce'>Ecommerce</Link>
-                            <Link to='/service/digital-marketing'>Digital Marketing</Link>
-                            <Link to='/service/web-application'>Web Application Development</Link>
-                            <Link to='/service/siftware-testing'>Software Testing</Link>
+                            <Link to='/cms-solution'>CMS Solutions </Link>
+                            <Link to='/landing-page'>Landing Page</Link>
+                            <Link to='/ecommerce'>Ecommerce</Link>
+                            <Link to='/digital-marketing'>Digital Marketing</Link>
+                            <Link to='/web-application'>Web Application Development</Link>
+                            <Link to='/software-testing'>Software Testing</Link>
                           </div>
                           <div className="columnMenu">
                             <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
