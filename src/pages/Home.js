@@ -51,7 +51,6 @@ const Home = () => {
   return (
     <>
       <div className='page'>
-        <p>hello</p>
         <Banner />
         <Tachnology techImages={technologyImages} />
 
