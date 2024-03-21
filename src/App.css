@@ -1,3 +1,13 @@
+
+
+
+
+@keyframes leftArrow {
+  100% {
+    -webkit-transform: rotate(225deg);
+  }
+}
+
 .App {
   text-align: center;
 }

@@ -50,11 +50,23 @@ const NavBar = () => {
               <nav className={isMenuOpen ? 'open' : 'closeToggal'}>
                 <ul>
                   <li>
-                    <Link to="/about" onClick={closeMenu}>About</Link>
+                    <Link to="/about" onClick={closeMenu}>About
+                      <span class="arrow-right">
+                        <span class="ar_line">
+                        </span><span class="ar_left">
+                        </span>
+                      </span>
+                    </Link>
                   </li>
                   <li>
                     <div className="dropdownMenu">
-                      <Link to="/service" onClick={closeMenu} className="dropbtn">Services <span class="arrow-right"><span class="ar_line"></span><span class="ar_left"></span></span></Link>
+                      <Link to="/service" onClick={closeMenu} className="dropbtn">Services
+                        <span class="arrow-right">
+                          <span class="ar_line">
+                          </span><span class="ar_left">
+                          </span>
+                        </span>
+                      </Link>
                       <div className="dropdown-content">
                         <div className="row">
                           <div className="columnMenu">
@@ -84,11 +96,24 @@ const NavBar = () => {
                   </li>
                   <li>
                     <div className="dropdownMenu">
-                      <Link to="/career" className="dropbtn">Career <i className="fa fa-caret-down"></i></Link>
+                      <Link to="/career" className="dropbtn">Career <i className="fa fa-caret-down"></i>
+                        <span class="arrow-right">
+                          <span class="ar_line">
+                          </span><span class="ar_left">
+                          </span>
+                        </span>
+                      </Link>
                       <div className="dropdown-content">
                         <div className="row">
                           <div className="columnMenu">
-                            <Link to="/traning-and-placement">Training & Placement </Link>
+                            <Link to="/traning-and-placement">Training & Placement
+                              <span class="arrow-right">
+                                <span class="ar_line">
+                                </span><span class="ar_left">
+                                </span>
+                              </span>
+
+                            </Link>
                           </div>
                           <div className="columnMenu">
                             <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
@@ -98,10 +123,22 @@ const NavBar = () => {
                     </div>
                   </li>
                   <li>
-                    <Link to="/portfolio" onClick={closeMenu}>Portfolio</Link>
+                    <Link to="/portfolio" onClick={closeMenu}>Portfolio
+                      <span class="arrow-right">
+                        <span class="ar_line">
+                        </span><span class="ar_left">
+                        </span>
+                      </span>
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/review" onClick={closeMenu}>Client Review's</Link>
+                    <Link to="/review" onClick={closeMenu}>Client Review's
+                      <span class="arrow-right">
+                        <span class="ar_line">
+                        </span><span class="ar_left">
+                        </span>
+                      </span>
+                    </Link>
                   </li>
                 </ul>
                 <div className='get_hed_btnn'>
