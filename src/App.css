@@ -1,7 +1,3 @@
-
-
-
-
 @keyframes leftArrow {
   100% {
     -webkit-transform: rotate(225deg);
@@ -145,87 +141,80 @@
   }
 }
 
-#slides-holder, .slide {
+
+.container_slider {
+  padding: 20px;
+}
+
+.showcase-container {
+  height: 400px;
+  overflow-y: scroll;
   position: relative;
-  width: 100%;
+  padding: 20px;
 }
 
-.slide, .slide.fixed {
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-
-
-.slide {
-  background-size: 500px 500px; /* Modified to set the background size to 500px x 500px */
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.slide.fixed {
-  position: fixed;
-}
-
-.slide-fake-height {
+.showcase {
+  display: flex;
+  background-color: black;
   position: relative;
-  display: none;
+  transition: z-index 0.3s ease;
+  z-index: 1;
 }
 
-.slide-fake-height.visible {
-  display: block;
+.content {
+  width: 50%;
+  color: white;
+  font-size: 50px;
+  padding-top: 40px;
 }
 
-.fade-text {
-  display: inline-block;
-  position: absolute;
-  font-family: HelveticaNeue, helvetica, arial;
-  font-size: 60px;
-  opacity: 0.2;
+.image {
+  position: relative;
 }
 
-#slide-1 {
-  background-image: url(https://res.cloudinary.com/dzpv5gmyw/image/upload/c_fill,h_500,w_500/v1468502671/demo/img7.jpg); /* Modified to set the image size to 500px x 500px */
+.image img {
+  height: 420px;
+  object-fit: cover;
 }
 
-#slide-1 .fade-text {
-  left: 5%;
-  top: 40%;
+.case-study {
+  color: #116bfb;
+  font-size: 25px;
 }
 
-#slide-2 {
-  background-image: url(https://res.cloudinary.com/dzpv5gmyw/image/upload/c_fill,h_500,w_500/v1468502667/demo/img8.jpg); /* Modified to set the image size to 500px x 500px */
+.example {
+  color: white;
 }
 
-#slide-2 .fade-text {
-  left: 5%;
-  top: 40%;
+.showcase-container::-webkit-scrollbar {
+  width: 3px;
 }
 
-#slide-3 {
-  background-image: url(https://res.cloudinary.com/dzpv5gmyw/image/upload/c_fill,h_500,w_500/v1468502664/demo/img1.jpg); /* Modified to set the image size to 500px x 500px */
+.showcase-container::-webkit-scrollbar-thumb {
+  background: #116bfb;
+  border-radius: 6px;
 }
 
-#slide-3 .fade-text {
-  color: #fff;
-  left: 5%;
-  top: 20%;
+.showcase-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8);
 }
 
+.showcase-container::-webkit-scrollbar-track {
+  background: grey;
+}
 
+.button button {
+  color: white;
+  font-size: 1.5rem;
+  background-color: black;
+}
 
-.image-cursor {
-  position: fixed;
+.button button:hover {
+  background: #116bfb;
+}
+
+.highlighted {
+  z-index: 2;
+  position: sticky;
   top: 0;
-  left: 0;
-  margin: -15px 0 0 -15px;
-  width: 70px;
-  height: 70px;
-  border-radius: 100%;
-  transition: all ease-out 120ms;
-  box-shadow: 0 0 8px 0px #111;
-  overflow: hidden;
-  opacity: 0;
-  z-index: 998;
 }
