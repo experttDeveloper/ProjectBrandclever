@@ -417,12 +417,12 @@ span.review-date {
 }
 
 .testimonial-inner .slick-initialized .slick-prev {
-    right: 131px !important;
+    right: 48% !important;
     left: unset;
 }
 
 .testimonial-inner .slick-initialized .slick-next {
-    right: 95px;
+    right: 45%;
 }
 
 .exp_btn a i {
@@ -2130,7 +2130,7 @@ div#successMsg {
 /* The dropdown container */
 .dropdownMenu {
     float: left;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* Dropdown button */
@@ -2268,4 +2268,15 @@ header.sticky {
 
 .sticky .inner-header {
     background: #000;
+}
+/* luc */
+.aboutInfo-section .about-content {
+    display: flex;
+    justify-content: space-between;
+}
+.aboutInfo-section h1.text-blue-600 {
+    width: 45%;
+}
+.aboutInfo-section .about-content p {
+    width: 50%;
 }
