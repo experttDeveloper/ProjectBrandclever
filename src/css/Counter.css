@@ -53,11 +53,12 @@
     color: #54a154;
 }
 .row.counter-section h3 {
-    font-size: 28px;
-    font-weight: 300;
-    color: #000000;
-    text-align: center;
-    margin-bottom: 9px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
+  text-align: center;
+  margin-bottom: 9px;
+  padding-top: 13px;
 }
 .card-counter {
   background: #ffffff;

@@ -55,7 +55,7 @@ const Home = () => {
         <Tachnology techImages={technologyImages} />
 
         <AboutInfo imgAbout={aboutInfo} />
-         <HomePageScroll />
+         {/* <HomePageScroll /> */}
         {/* <FruitsCarousel bgImage={backgroundImage} /> */}
 
         <OurServices />

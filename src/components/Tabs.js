@@ -10,7 +10,7 @@ const Tabs = () => {
 
   const allImg = [
     process.env.PUBLIC_URL + '/images/portfolio/jumpsport.png', 
-    process.env.PUBLIC_URL + '/images/portfolio/wp/costner-recovery.png',
+    process.env.PUBLIC_URL + '/images/portfolio/wp/costner_recover.png',
     process.env.PUBLIC_URL + '/images/portfolio/wp/mamasmarketplace-au-mamasmarketplace.png',
     process.env.PUBLIC_URL + '/images/portfolio/wp/pt-businessacademy-si.png',
     process.env.PUBLIC_URL + '/images/portfolio/wp/super-solar-systems.png',
@@ -18,7 +18,7 @@ const Tabs = () => {
   ];
   
   const wordpressImg = [
-    process.env.PUBLIC_URL + '/images/portfolio/wp/costner-recovery.png',
+    process.env.PUBLIC_URL + '/images/portfolio/wp/costner_recover.png',
     process.env.PUBLIC_URL + '/images/portfolio/wp/mamasmarketplace-au-mamasmarketplace.png',
     process.env.PUBLIC_URL + '/images/portfolio/wp/pt-businessacademy-si.png',
     process.env.PUBLIC_URL + '/images/portfolio/wp/super-solar-systems.png',

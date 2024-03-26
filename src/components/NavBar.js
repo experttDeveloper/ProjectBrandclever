@@ -71,7 +71,11 @@ const NavBar = () => {
                         <div className="row">
                           <div className="columnMenu">
                             <h3>Category 1</h3>
-                            <Link to='/website-design'>Website Designing</Link>
+                            <Link to='/website-design'>Website Designing <span class="arrow-right">
+                          <span class="ar_line">
+                          </span><span class="ar_left">
+                          </span>
+                        </span></Link>
                             <Link to='/web-development'>Web Development</Link>
                             <Link to='/graphic-degine'>Graphic Designs</Link>
                             <Link to='/mern-stack'>Mern Stack</Link>
@@ -96,7 +100,7 @@ const NavBar = () => {
                   </li>
                   <li>
                     <div className="dropdownMenu">
-                      <Link to="/career" className="dropbtn">Career <i className="fa fa-caret-down"></i>
+                      <Link to="/career" className="dropbtn">Career 
                         <span class="arrow-right">
                           <span class="ar_line">
                           </span><span class="ar_left">

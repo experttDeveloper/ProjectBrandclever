@@ -759,10 +759,6 @@
             }
         
 
-
-
-
-
             @media only screen and (min-width: 480px) and (max-width: 600px) {
                 .industryDemands-items {
                     display: grid !important;
@@ -882,6 +878,9 @@
     }
     .content p {
         color: #dfdfdf;
+        font-size: 17px;
+        width: auto;
+        padding-bottom: 10px;
     }
                 .main-sub {
                     height: 100% !important;
@@ -1047,7 +1046,13 @@
                    /************************ Header nav start *****************************/
 
     .banner .content h1 {
-        font-size: 40px !important;
+        font-size: 30px !important;
+    }
+    .content {
+        width: 80%;
+        color: white;
+        font-size: 0px;
+
     }
     .inner-header {
         padding: 0px 10px 0px 10px;
@@ -1405,7 +1410,27 @@
     }
     .content p {
         color: #fff !important;
-    }
+            width: auto !important;
+            padding-bottom: 30px;
+        }
+        .content {
+            width: auto !important;
+            font-size: 0px !important;
+        }
+
+        .aboutInfo-section h1.text-blue-600 {
+            width: 100%;
+        }
+        .aboutInfo-section .about-content p {
+            width: auto;
+        }
+        .frontCont {
+            text-align: center;
+        }
+        .aboutInfo-section .about-content {
+            display: flex;
+            flex-direction: column;
+        }
     .service-row {
         display: block !important;
     }

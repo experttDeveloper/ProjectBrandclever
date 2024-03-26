@@ -26,8 +26,10 @@ export default class About extends Component {
         <TopHeader title="About Us" />
         <OwnerInfo />
         <div className="about_third">
-          <AboutInfo imgAbout={aboutInfo} />
-          <Counter />
+          <div className='about_page'>
+            <AboutInfo imgAbout={aboutInfo} />
+            <Counter />
+          </div>
         </div>
         <section>
           <div className="founder_section">

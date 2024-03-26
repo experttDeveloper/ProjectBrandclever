@@ -6,7 +6,7 @@ const AboutInfo = () => {
     <div className="about_us_section">
       <div className="container">
         <div className="two-columns aboutInfo-section">
-          <div className="about-content-columns">
+          <div className="about-content-columns about_project">
             <div className="about-content">
               <h1 class="text-blue-600">
                 Design, Develop, Deliver: Brandclever Commitment

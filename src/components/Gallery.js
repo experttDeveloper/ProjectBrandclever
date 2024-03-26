@@ -257,7 +257,6 @@ export default class Gallery extends Component {
         <div className="main-gallery">
           <div className="big_fam">
             <h2>We’re One Big Family</h2>
-            <p>We’re One Big Family</p>
           </div>
           <div className="gallery">
             <div className="vertical-tabs">

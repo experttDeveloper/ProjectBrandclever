@@ -72,11 +72,11 @@ h2 {
 }
 
 .about-inner p {
-    color: #cdcdcd;
+    color: #bfbfbf;
     font-weight: 400;
     text-align: left;
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     padding-bottom: 10px;
 }
@@ -356,10 +356,10 @@ body {
 }
 
 .testimonial_technology img {
-    width: 100% !important;
-    height: 65px !important;
+    width: 150px !important;
+    height: 56px !important;
+    border-radius: 0px !important;
 }
-
 .testimonial-inner .item h3 {
     font-size: 40px;
     margin-bottom: 0px;
@@ -459,11 +459,12 @@ span.review-date {
     color: #000;
     font-size: 36px;
     text-align: center;
+    font-weight: 700;
 }
 
 .form-right p {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 25px;
     color: #000;
     text-align: center;
 }
@@ -522,16 +523,41 @@ p.subtitle {
 .footer-inner {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .social_media-icon {
     list-style: none;
     display: flex;
-    gap: 7px;
-    margin-top: 50px;
+    gap: 17px;
+    margin-top: 70px;
     padding-left: 15px !important;
 }
 
+.apply_now {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #54a154;
+    font-weight: 600;
+}
+.consult_hover {
+      position: relative;
+      animation: myfirst 2s infinite;
+      animation-direction: alternate;
+    }
+    .exp_btn a:hover {
+        background: #54a154;
+        text-decoration: none;
+        border-color: #54a154;
+    }
+    
+    @keyframes myfirst {
+      0%   {left: 0px; top: 0px;}
+      25%  {left: 10px; top: 0px;}
+      50%  {left: 0px; top: 0px;}
+      75%  {left: 10px; top: 0px;}
+      100% {left: 0px; top: 0px;}
+    }
 .quick-links,
 .portfolio-links {
     text-align: left;
@@ -555,8 +581,9 @@ p.subtitle {
     text-align: left;
     display: flex;
     gap: 10px;
-    font-size: 16px;
+    font-size: 14px;
     color: #cdcdcd !important;
+    padding-right: 20px;
 }
 
 .footer-phone,
@@ -571,13 +598,13 @@ p.subtitle {
     font-size: 20px;
 }
 
-.footer-phone a,
-.footer-email a {
+.footer-phone a, .footer-email a {
     color: #cdcdcd !important;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     font-weight: 300;
+    line-height: 3px;
 }
 
 .btn-primary {
@@ -832,9 +859,13 @@ nav {
     font-size: 15px !important;
     text-transform: uppercase;
 }
-
+.columnMenu h3 {
+    font-size: 27px !important;
+    font-weight: 700;
+}
 .logo img {
-    width: 190px;
+    width: 200px;
+    margin-top: -6px;
 }
 
 .inner_header_nav nav ul a:hover::before {
@@ -966,12 +997,12 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.footer_icon.css-i4bv87-MuiSvgIcon-
     font-size: 30px;
 }
 
-svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.footer_icon.css-i4bv87-MuiSvgIcon-root:hover {
+/* svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.footer_icon.css-i4bv87-MuiSvgIcon-root:hover {
     color: #fff;
     font-size: 30px;
     background-color: #28a745;
     border-radius: 100%;
-}
+} */
 
 .footer-email i.fa.fa-envelope:hover {
     background-color: #28a745;
@@ -1384,10 +1415,11 @@ subtitle {
 
 .about-content p {
     font-weight: 400;
-    color: #fff !important;
+    color: #ffffff !important;
     width: 50%;
     text-align: left;
-    font-size: 20px;
+    font-size: 17px;
+    line-height: 27px;
 }
 
 .about-content {
@@ -1515,8 +1547,19 @@ subtitle {
     display: flex;
     gap: 50px;
     align-items: center;
+    padding: 0px 53px;
 }
 
+span.question_in {
+    font-weight: 600;
+}
+
+.faq-main .faq-item {
+    border-radius: 5px;
+}
+.technology-main.slick-initialized .slick-slide {
+    opacity: 1 !important;
+}
 .content_of_founder p {
     color: #fff;
 }
@@ -1555,24 +1598,20 @@ subtitle {
 }
 
 .footer-inner ul.quick-links li a:hover {
-    border-bottom: 1px solid #54a154;
+    border-bottom: none;
 }
 
 .footer-inner .column h3 {
-    border-bottom: 1px solid #457a45;
+    border-bottom: 2px solid #457a45;
     white-space: nowrap;
-    width: 55px;
+    width: 65px;
     padding-bottom: 9px;
     padding-top: 0px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
-/* div#contactForm {
-    padding: 34px 0px 60px!important;
-     box-shadow: inset -19px -2000px 20px 20px #000000a8; 
-} */
 footer {
-    padding: 60px 45px 20px !important;
+    padding: 60px 70px 20px !important;
 }
 
 .footer-copy-text .home-link {
@@ -1838,7 +1877,7 @@ footer {
 .faq-main h2 {
     color: #000;
     font-size: 34px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.2;
     padding-left: 15px;
     text-align: left;
@@ -1860,6 +1899,7 @@ footer {
 
 .faq-item span.icon {
     padding-left: 38px;
+    margin-right: 9px;
 }
 
 .faq-main .faq-item {
@@ -2155,10 +2195,10 @@ div#successMsg {
 }
 
 .client_des {
-    font-size: 12px;
-    color: #fff;
+    font-size: 11px;
+    color: #969696;
+    margin-top: -1px;
 }
-
 .testimonial_modifi {
     background: #000;
     padding: 0px 25px 30px;
@@ -2243,7 +2283,7 @@ div#successMsg {
 
 /* Add a background color on hover */
 .columnMenu a:hover {
-    background-color: #ddd;
+    color: #54a154 !important;
 }
 
 /* Clear floats after the columns */
@@ -2273,6 +2313,30 @@ header.sticky {
 .aboutInfo-section .about-content {
     display: flex;
     justify-content: space-between;
+}
+.about_page .about_project .about-content {
+    flex-direction: column;
+} 
+
+.aboutInfo-section .about_project h1.text-blue-600 {
+    width: 100%;
+}
+.aboutInfo-section .about_project .about-content p {
+    width: 100%;
+}
+.about_page .aboutInfo-section .about_project .about-content h1 {
+    color: #000;
+    font-weight: 700;
+}
+.about_page {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0px 68px 20px;
+}
+.aboutInfo-section .about_project .about-content h1 {
+    color: #fff;
+    font-weight: 700;
 }
 .aboutInfo-section h1.text-blue-600 {
     width: 45%;

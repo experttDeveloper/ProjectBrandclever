@@ -240,7 +240,7 @@ const Career = () => {
         </section>
         <section ref={sectionRef} className='job-vacancy'>
          <div className='left-vacancyCnt'>
-              <h3>Apply Now</h3>
+              <h3 className='apply_now'>Apply Now</h3>
             <h4>Grow with us and build your dream career! Explore new opportunities and make your career goals a reality with us!</h4>
                {CareerApi.map(job => (
                 <div key={job.id} className='faq-item' onClick={() => toggleDescription(job.id)}>
