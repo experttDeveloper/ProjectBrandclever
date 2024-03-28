@@ -13,6 +13,7 @@ import Icons from '../components/Icons';
 import DatabaseSec from '../components/DatabaseSec';
 import Faq from '../components/Faq';
 import HomePageScroll from '../components/HomePageScroll';
+import ClientReview from '../components/ClientReview';
 
 const Home = () => {
 
@@ -55,7 +56,7 @@ const Home = () => {
         <Tachnology techImages={technologyImages} />
 
         <AboutInfo imgAbout={aboutInfo} />
-         {/* <HomePageScroll /> */}
+        {/* <HomePageScroll /> */}
         {/* <FruitsCarousel bgImage={backgroundImage} /> */}
 
         <OurServices />
@@ -64,6 +65,7 @@ const Home = () => {
         {/* <Activity /> */}
 
         <TestimonialCarousel />
+        {/* <ClientReview /> */}
         <Icons />
         <DatabaseSec />
         <div className='faq_Contact_Sec'>
