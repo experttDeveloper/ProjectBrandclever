@@ -3,19 +3,27 @@
     padding: 50px 20px 60px !important;
     background: #fff;
 }
+
 .our-services .services-inner h2 {
-    text-align: center;
+    text-align: left;
     color: #000;
     padding-bottom: 0px;
-    font-weight: 600;
-    font-size: 36px;
+    font-weight: 700;
+    font-size: 45px;
 }
 
 .our-services .services-inner p {
-    text-align: center;
+    text-align: left;
     color: #000;
     font-weight: 400;
     font-size: 16px;
+}
+
+.litle-dess {
+    margin-bottom: 0px;
+    padding-bottom: 7px;
+    color: #54a154 !important;
+    font-weight: 600 !important;
 }
 
 .service-row {
@@ -32,6 +40,10 @@
     border: 1px solid #e1e1e1;
 }
 
+.srv_bg_img {
+    position: relative;
+}
+
 .service-row .col:hover {
     background-color: #d7d7d70a;
     padding: 20px 15px;
@@ -41,16 +53,27 @@
 }
 
 .oposite ul li {
-    font-size: 13px;
-    line-height: 23px;
+    font-size: 15px;
+    line-height: 27px;
+    color: #fff;
 }
 
 .oposite ul {
     list-style: none;
     padding: 0;
     margin-top: 7px;
+    text-align: left;
 }
 
+.oposite ul li {
+    font-size: 17px;
+    line-height: 28px;
+    color: #000;
+    display: flex;
+    gap: 7px;
+    align-items: start;
+    margin: 1px 0px;
+}
 .service-row .col p {
     color: #000;
     text-align: left;
@@ -96,7 +119,6 @@
     display: none;
 }
 
-
 /* get a quote btn */
 
 button.get_quote_btn {
@@ -115,4 +137,116 @@ button.get_quote_btn:hover {
     text-decoration: none;
 }
 
-/************* Our Services Section End **********************/
+/************* Our Services Section flip css **********************/
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 100%;
+    height: 450px;
+}
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: cornSilk;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+
+.logo_img img, .back_logo_img img {
+    width: 100px;
+    text-align: left;
+}
+
+.logo_img, .back_logo_img {
+    text-align: left;
+}
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    padding: 30px 30px;
+    background: #fff;
+}
+
+.front .srv_bg_web {
+    position: absolute;
+    width: 55px !important;
+    left: 56px;
+    top: 48px;
+}
+
+.oposite ul li span svg {
+    fill: #54a154;
+    filter: contrast(0.5);
+}
+.servic_provid {
+    margin-top: 20px;
+}
+.back .srv_bg_web {
+    position: absolute;
+    width: 55px !important;
+    left: 56px;
+    top: 48px;
+    filter: opacity(0.5) drop-shadow(0 0 0 #54a154);
+}
+
+.logo_img h3 {
+    font-size: 24px;
+    color: #000;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.logo_img  p {
+    font-weight: 300 !important;
+    font-size: 16px !important;
+    text-align: left !important;
+    line-height: 22px;
+    color: #3d3d3d !important;
+}
+
+.back_logo_img h3 {
+    font-size: 26px;
+    color: #000;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.back_logo_img h3 {
+    font-size: 26px;
+    color: #000;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    padding: 30px 30px;
+    background: #faf4e8;
+}

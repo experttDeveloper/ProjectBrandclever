@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import '../Banner.css';
 // import banner_bg from '../Images/job-5.jpg';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 const Banner = () => {
 
@@ -23,8 +24,8 @@ const Banner = () => {
           <a href='#'
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
-            
-          >Consult Our Experts <i  className={isHover ? "consult_hover fa fa-chevron-right" : "fa fa-chevron-right"} aria-hidden="true"></i>
+
+          >Consult Our Experts <span className='icon_span'><NavigateNextIcon className={isHover ? "consult_hover " : ""} /> </span>
           </a>
         </div>
       </div>

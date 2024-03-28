@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Didact+Gothic&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body,
 p,
@@ -11,7 +12,7 @@ h6,
 span,
 strong,
 a {
-    font-family: "Inter", sans-serif;
+    font-family: "Didact Gothic", sans-serif;
 }
 
 /* header_css_start_Abhi */
@@ -45,17 +46,18 @@ a {
 
 .about-content h1 {
     color: #fff;
-    font-weight: 400;
+    font-weight: 400 !important;
     font-size: 34px;
     line-height: 50px;
     margin-bottom: 16px;
     text-align: left;
     width: 50%;
+    padding-right: 20px;
 }
 
 .container {
     width: 100%;
-    max-width: 1170px !important;
+    max-width: 1220px !important;
     padding: 0;
     margin: 0 auto;
 }
@@ -255,7 +257,7 @@ img.signature {
 
 .services-inner {
     width: 100%;
-    max-width: 1170px !important;
+    max-width: 1220px !important;
     margin: 0 auto;
 }
 
@@ -1021,16 +1023,17 @@ section#schedules .showcase {
 }
 
 .column-tech {
-    border-right: 1px solid #202020 !important;
+    border-right: 1px solid #707070 !important; 
     padding-right: 5px !important;
     text-align: center;
     display: flex !important;
     justify-content: center;
     align-items: center;
+    height: 100px;
 }
 
 .column-tech img {
-    width: 140px;
+    padding: 10px !important;
 }
 
 .testimonial.testi_clints {
@@ -1418,8 +1421,8 @@ subtitle {
     color: #ffffff !important;
     width: 50%;
     text-align: left;
-    font-size: 17px;
-    line-height: 27px;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .about-content {
@@ -1559,6 +1562,19 @@ span.question_in {
 }
 .technology-main.slick-initialized .slick-slide {
     opacity: 1 !important;
+}
+
+.read_more {
+    text-align: left;
+    padding-top: 10px;
+}
+
+.read_more a {
+    background: #54a154;
+    padding: 10px 19px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
 }
 .content_of_founder p {
     color: #fff;
@@ -1845,7 +1861,6 @@ footer {
 
 .slick-initialized .slick-slide {
     display: block;
-    opacity: 0.7;
 }
 
 .main-sub .databaseIcon.Subject-M {
@@ -2313,9 +2328,11 @@ header.sticky {
 .aboutInfo-section .about-content {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 .about_page .about_project .about-content {
     flex-direction: column;
+    gap: 0px;
 } 
 
 .aboutInfo-section .about_project h1.text-blue-600 {
@@ -2326,7 +2343,7 @@ header.sticky {
 }
 .about_page .aboutInfo-section .about_project .about-content h1 {
     color: #000;
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 .about_page {
     display: flex;
@@ -2336,7 +2353,7 @@ header.sticky {
 }
 .aboutInfo-section .about_project .about-content h1 {
     color: #fff;
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 .aboutInfo-section h1.text-blue-600 {
     width: 45%;

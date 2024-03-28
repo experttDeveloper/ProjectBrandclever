@@ -41,10 +41,10 @@ const Home = () => {
     process.env.PUBLIC_URL + '/images/tech/wordpress.png',
     process.env.PUBLIC_URL + '/images/tech/magento.png',
     process.env.PUBLIC_URL + '/images/tech/php.png',
-    process.env.PUBLIC_URL + '/images/tech/mysql.png',
+    process.env.PUBLIC_URL + '/images/tech/my_sql_lg.png',
     process.env.PUBLIC_URL + '/images/tech/laravel.png',
     process.env.PUBLIC_URL + '/images/tech/react.png',
-    process.env.PUBLIC_URL + '/images/tech/node_js.png',
+    process.env.PUBLIC_URL + '/images/tech/nd_js.png',
     process.env.PUBLIC_URL + '/images/tech/mongo_db.png',
   ];
 

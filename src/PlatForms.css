@@ -16,17 +16,17 @@
   font-size: 36px;
 }
 
-.column-tech img {
+/* .column-tech img {
   filter: brightness(1);
-}
+} */
 
 .column-tech img:hover {
   filter: grayscale(0);
 }
 
 .technology-main {
-  padding: 35px 0px 70px !important;
+  padding: 43px 80px 32px !important;
   width: 100%;
-  max-width: 1170px !important;
   margin: 0 auto;
+  /* width: 1220px; */
 }
