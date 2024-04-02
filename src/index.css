@@ -242,13 +242,13 @@ img.signature {
 
 /* header_css_close_abhi */
 /* banner_css_start_abhi */
-.brand_banner_section:before {
-    background: #00000096;
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
+    .brand_banner_section:before {
+        background: #00000096;
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
 
 .colun_frelance {
     display: flex;
