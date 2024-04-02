@@ -5,10 +5,11 @@
 }
 
 .banner_img_hi {
-  background: url("/images/banner/banner_img_one.jpg");
+  background: url("/public/images/banner/banner_img_one.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 /* .banner-video {
