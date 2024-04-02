@@ -2,13 +2,21 @@
 .banner {
   position: relative;
   overflow: hidden;
-  height: 607px;
 }
-.banner-video {
+
+.banner_img_hi {
+  background: url("/images/banner/banner_img_one.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .banner-video {
   width: 100%;
   height: calc(100vh - 50px);
   object-fit: cover;
-}
+} */
+
   .content {
     color: #fff;
     left: 28.3%;
@@ -20,13 +28,13 @@
 
 .exp_btn a {
   color: #fff;
-  border: 2px solid #fff;
-  padding: 10px 20px;
+  border: 1px solid #fff;
+  padding: 7px 15px;
   border-radius: 10px;
-  font-size: 20px;
-  line-height: 31px;
+  font-size: 17px;
+  line-height: 30px;
   display: inline-block;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 span.icon_span svg {
   margin-bottom: -6px;
@@ -45,6 +53,5 @@ span.icon_span svg {
   font-size: 20px;
   font-weight: 400;
   width: 80%;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
-  

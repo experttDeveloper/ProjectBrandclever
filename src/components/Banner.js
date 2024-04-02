@@ -10,12 +10,12 @@ const Banner = () => {
   const [isHover, setIsHover] = useState(false)
 
   return (
-    <div className="banner brand_banner_section">
+    <div className="banner brand_banner_section banner_img_hi">
       {/* Background video */}
-      <video autoPlay muted loop className="banner-video">
+      {/* <video autoPlay muted loop className="banner-video">
         <source src={process.env.PUBLIC_URL + '/video/banner_bg.mp4'} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
       <div className="content">
         <h1>​​Meet the Digital Drivers of Global Disruptors</h1>
         <p>We catalyze business growth by reimagining digital experiences that

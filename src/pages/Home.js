@@ -64,8 +64,8 @@ const Home = () => {
         <Tabs />
         {/* <Activity /> */}
 
-        <TestimonialCarousel />
-        {/* <ClientReview /> */}
+        {/* <TestimonialCarousel /> */}
+        <ClientReview />
         <Icons />
         <DatabaseSec />
         <div className='faq_Contact_Sec'>
