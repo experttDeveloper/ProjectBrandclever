@@ -16,6 +16,7 @@ const Banner = () => {
         <source src={process.env.PUBLIC_URL + '/video/banner_bg.mp4'} type="video/mp4" />
         Your browser does not support the video tag.
       </video> */}
+      <div className='container'>
       <div className="content">
         <h1>​​Meet the Digital Drivers of Global Disruptors</h1>
         <p>We catalyze business growth by reimagining digital experiences that
@@ -28,6 +29,7 @@ const Banner = () => {
           >Consult Our Experts <span className='icon_span'><NavigateNextIcon className={isHover ? "consult_hover " : ""} /> </span>
           </a>
         </div>
+       </div>
       </div>
 
     </div>

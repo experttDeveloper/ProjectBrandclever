@@ -81,27 +81,34 @@ h2 {
     padding: 50px;
 }
 
-
-.owl-item:nth-child(2) {
-    margin-top: 40px;
+.serv_cns {
+    text-align: left;
 }
-
+.serv_cns a:hover {
+    color: #54a154 !important;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+.serv_img img{
+    width: 100%;
+}
 .clint_name p {
     margin-bottom: 0;
 }
-.clint_name {
-    margin-top: 30px;
-}
+
  .testi_heding h2{
-text-align: left;
 color: #000;
 padding-bottom: 0px;
 font-weight: 700;
 font-size: 45px;
 }
+.testi_heding {
+    width: 45%;
+    margin-left: auto;
+}
 .Testmono_clint {
     background: #fff;
-    padding: 30px;
+    padding: 0px 30px 30px 30px;
     box-shadow: 0 1rem 3rem #2125292d !important;
     border-radius: 7px;
 }
@@ -109,7 +116,15 @@ font-size: 45px;
     background: #101010 !important;
     margin: 20px 0px 57px !important;
 }
+button.owl-next span, .owl-prev span {
+    font-size: 54px;
+    line-height: 41px !important;
+}  
 
+.owl-next, .owl-prev  {
+    width: 60px;
+    height: 60px;
+}
 .about-inner p {
     color: #bfbfbf;
     font-weight: 400;
@@ -133,12 +148,14 @@ font-size: 45px;
 }
 .clint_name_star h3 {
     font-weight: 700;
+    font-size: 25px !important;
 }
 .clint_name_star p {
     font-size: 13px;
 }
 .tstim_ine p {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 500;
 }
 .about-inner {
     display: grid;
@@ -243,13 +260,13 @@ img.signature {
 
 /* header_css_close_abhi */
 /* banner_css_start_abhi */
-    .brand_banner_section:before {
+    /* .brand_banner_section:before {
         background: #00000096;
         content: '';
         position: absolute;
         height: 100%;
         width: 100%;
-    }
+    } */
 
 .colun_frelance {
     display: flex;
@@ -1462,8 +1479,8 @@ subtitle {
 }
 
 .about-content p {
-    font-weight: 400;
-    color: #ffffff !important;
+    font-weight: 400 !important;
+    color: #fff !important;
     width: 50%;
     text-align: left;
     font-size: 20px;
@@ -2295,13 +2312,15 @@ div#successMsg {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    width: 90%;
-    left: 7%;
+    width: 89%;
+    left: 6%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 20px;
-    top: 70px;
+    top: 62px;
 }
+
+
 
 /* Mega Menu header, if needed */
 .dropdown-content .header {

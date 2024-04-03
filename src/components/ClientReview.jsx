@@ -4,6 +4,7 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { Rating } from '@mui/material';
+import '../css/ClientReview.css'
 
 const ClientReview = () => {
 
@@ -48,7 +49,9 @@ const ClientReview = () => {
                 <OwlCarousel className="owl-theme" {...options}>
                     <div className="item">
                         <div className='Testmono_clint'>
+                            <div className='icon_client'>
                             <span class="icon">“</span>
+                            </div>
                             <div className='tstim_ine'>
                                 <p>Lorem Ipsum simpy dummy
                                     text of the printing and types
@@ -69,7 +72,9 @@ const ClientReview = () => {
                     </div>
                     <div className="item">
                         <div className='Testmono_clint'>
+                            <div className='icon_client'>
                             <span class="icon">“</span>
+                            </div>
                             <div className='tstim_ine'>
                                 <p>Lorem Ipsum simpy dummy
                                     text of the printing and types
@@ -90,7 +95,9 @@ const ClientReview = () => {
                     </div>
                     <div className="item">
                         <div className='Testmono_clint'>
+                            <div className='icon_client'>
                             <span class="icon">“</span>
+                            </div>
                             <div className='tstim_ine'>
                                 <p>Lorem Ipsum simpy dummy
                                     text of the printing and types

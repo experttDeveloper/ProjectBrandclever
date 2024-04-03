@@ -69,8 +69,7 @@ const NavBar = () => {
                       </Link>
                       <div className="dropdown-content">
                         <div className="row">
-                          <div className="columnMenu">
-                            <h3>Category 1</h3>
+                          <div className="col-md-3 serv_cns">
                             <Link to='/website-design'>Website Designing <span class="arrow-right">
                           <span class="ar_line">
                           </span><span class="ar_left">
@@ -82,8 +81,7 @@ const NavBar = () => {
                             <Link to='/content-strategy'>Content Strategy</Link>
                             <Link to='/framework'>Framework</Link>
                           </div>
-                          <div className="columnMenu">
-                            <h3>Category 2</h3>
+                          <div className="col-md-3 serv_cns">
                             <Link to='/cms-solution'>CMS Solutions </Link>
                             <Link to='/landing-page'>Landing Page</Link>
                             <Link to='/ecommerce'>Ecommerce</Link>
@@ -91,7 +89,7 @@ const NavBar = () => {
                             <Link to='/web-application'>Web Application Development</Link>
                             <Link to='/software-testing'>Software Testing</Link>
                           </div>
-                          <div className="columnMenu">
+                          <div className="col-md-6 serv_img">
                             <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
                           </div>
                         </div>

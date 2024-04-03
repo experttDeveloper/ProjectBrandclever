@@ -1,7 +1,30 @@
-.client_review {
-    height: 350px;
-    width: 100%;
-    display: inline-block;
-    background: rgb(31, 30, 30);
-    padding-top: 120px;
+.testy_section .owl-dots {
+    display: none !important;
+}
+button.owl-next {
+    width: 60px !important;
+    background-color: #ff000000 !important;
+    font-size: 40px !important;
+    border-radius: 50% !important;
+    box-shadow: 0px 0px 2px 0px !important;
+    color:#000 !important;
+    cursor: pointer;
+}
+button.owl-prev {
+    width: 60px !important;
+    background-color: #ff000000 !important;
+    font-size: 40px !important;
+    border-radius: 50% !important;
+    box-shadow: 0px 0px 2px 0px !important;
+    color:#000 !important;
+    cursor: pointer;
+}
+.Testmono_clint span.icon {
+    font-size: 100px !important;
+}
+.Testmono_clint .icon_client {
+    height: 70px !important;
+}
+.clint_name p {
+    font-size: 13px !important;
 }
