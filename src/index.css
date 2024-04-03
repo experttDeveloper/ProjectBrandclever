@@ -508,6 +508,8 @@ span.review-date {
     width: 100%;
 }
 
+
+
 .testimonial-inner h3 {
     font-size: 36px;
     font-weight: 600;
@@ -913,11 +915,16 @@ nav {
     text-align: center;
 }
 
+.service_img {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
 .inner_header_nav nav ul a {
     position: relative;
     display: block;
     cursor: pointer;
-    padding: 8px 0;
+    padding: 8px;
     color: #fff;
     text-decoration: none;
     font-size: 15px !important;

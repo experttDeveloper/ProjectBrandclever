@@ -1,6 +1,83 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './Images/logoWhite.png';
+import { Col, Row } from 'react-bootstrap';
+
+const serviceMenus = [
+  {
+    id: 1,
+    icon: 'images/service/website_design.png',
+    title: "Website Designing",
+    url: "/website-design"
+  },
+  {
+    id: 2,
+    icon: 'images/service/website_develop.png',
+    title: "Web Development",
+    url: "/web-development"
+  },
+  {
+    id: 3,
+    icon: 'images/service/graphic_design.png',
+    title: "GRAPHIC DESIGNS",
+    url: "/graphic-degin"
+  },
+  {
+    id: 4,
+    icon: 'images/service/mern_stack.png',
+    title: "MERN STACK",
+    url: "/mern-stack"
+  },
+  {
+    id: 5,
+    icon: 'images/service/content_strategy.png',
+    title: "CONTENT STRATEGY",
+    url: "/content-strategy"
+  },
+  {
+    id: 6,
+    icon: 'images/service/framework.png',
+    title: "FRAMEWORK",
+    url: "/framework"
+  },
+  {
+    id: 7,
+    icon: 'images/service/cms_solution.png',
+    title: "CMS SOLUTIONS",
+    url: "/cms-solution"
+  },
+  {
+    id: 8,
+    icon: 'images/service/landing_page.png',
+    title: "LANDING PAGE",
+    url: "/landing-page"
+  },
+  {
+    id: 9,
+    icon: 'images/service/ecommerce.png',
+    title: "ECOMMERCE",
+    url: "/ecommerce"
+  },
+  {
+    id: 10,
+    icon: 'images/service/digital_marketing.png',
+    title: "DIGITAL MARKETING",
+    url: "/digital-marketing"
+  },
+  {
+    id: 11,
+    icon: 'images/service/web_application.png',
+    title: "WEB APPLICATION DEVELOPMENT",
+    url: "/web-application"
+  },
+  {
+    id: 12,
+    icon: 'images/service/software_testing.png',
+    title: "SOFTWARE TESTING",
+    url: "/software-testing"
+  }
+
+]
 
 const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -68,26 +145,39 @@ const NavBar = () => {
                         </span>
                       </Link>
                       <div className="dropdown-content">
+
                         <div className="row">
                           <div className="col-md-3 serv_cns">
-                            <Link to='/website-design'>Website Designing <span class="arrow-right">
-                          <span class="ar_line">
-                          </span><span class="ar_left">
-                          </span>
-                        </span></Link>
-                            <Link to='/web-development'>Web Development</Link>
-                            <Link to='/graphic-degine'>Graphic Designs</Link>
-                            <Link to='/mern-stack'>Mern Stack</Link>
-                            <Link to='/content-strategy'>Content Strategy</Link>
-                            <Link to='/framework'>Framework</Link>
+                            {serviceMenus.slice(0, 6).map((ele, key) => {
+                              return (
+                                <div className='service_img'>
+                                  <img src={ele.icon} height="40px" width="35px" />
+                                  <Link to='/website-design'>{ele.title}</Link>
+                                </div>
+                                // {/* <Link to='/web-development'>Web Development</Link>
+                                // <Link to='/graphic-degin'>Graphic Designs</Link>
+                                // <Link to='/mern-stack'>Mern Stack</Link>
+                                // <Link to='/content-strategy'>Content Strategy</Link>
+                                // <Link to='/framework'>Framework</Link> */}
+                              )
+                            })}
                           </div>
                           <div className="col-md-3 serv_cns">
-                            <Link to='/cms-solution'>CMS Solutions </Link>
-                            <Link to='/landing-page'>Landing Page</Link>
-                            <Link to='/ecommerce'>Ecommerce</Link>
-                            <Link to='/digital-marketing'>Digital Marketing</Link>
-                            <Link to='/web-application'>Web Application Development</Link>
-                            <Link to='/software-testing'>Software Testing</Link>
+                            {
+                              serviceMenus.slice(6, 12).map((ele, key) => {
+                                return (
+                                  <div className='service_img'>
+                                    <img src={ele.icon} height="40px" width="35px" />
+                                    <Link to='/website-design'>{ele.title}</Link>
+                                  </div>
+                                  //       {/* <Link to='/landing-page'>Landing Page</Link>
+                                  // <Link to='/ecommerce'>Ecommerce</Link>
+                                  // <Link to='/digital-marketing'>Digital Marketing</Link>
+                                  // <Link to='/web-application'>Web Application Development</Link>
+                                  // <Link to='/software-testing'>Software Testing</Link> */}
+                                )
+                              })
+                            }
                           </div>
                           <div className="col-md-6 serv_img">
                             <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
@@ -98,7 +188,7 @@ const NavBar = () => {
                   </li>
                   <li>
                     <div className="dropdownMenu">
-                      <Link to="/career" className="dropbtn">Career 
+                      <Link to="/career" className="dropbtn">Career
                         <span class="arrow-right">
                           <span class="ar_line">
                           </span><span class="ar_left">

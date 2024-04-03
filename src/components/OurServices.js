@@ -75,8 +75,8 @@ export default class OurServices extends Component {
     return (
       <div className='our-services'>
         <div className="services-inner">
-          <p className='litle-dess'>My Services</p>
-          <h2>Service Provide For My Clients.</h2>
+          <p className='litle-dess'>Our Services</p>
+          <h2>Boost Your Business with Brandclever's Expert Solutions</h2>
           <div className='servic_provid'>
 
             <Row>

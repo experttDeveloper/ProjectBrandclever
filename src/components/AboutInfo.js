@@ -9,18 +9,10 @@ const AboutInfo = () => {
           <div className="about-content-columns about_project">
             <div className="about-content">
               <h1 class="text-blue-600">
-                Design, Develop, Deliver: Brandclever Commitment
+                Designing Brilliance, Developing Futures, Delivering Excellence
               </h1>
               <p>
-                We at Brandclever are innovators, problem solvers, and partners
-                in your digital journey. Our company is best company in all
-                formates. We are more than just an IT company. Our dedication to
-                quality and enthusiasm for technology have allowed us to lead
-                the way in enabling companies with innovative solutions. Our
-                goal is to satisfy our clients with cutting-edge IT solutions
-                that go above and beyond their expectations. With our knowledge,
-                we hope to leave a lasting impression on businesses by promoting
-                efficiency and growth.{" "}
+                At Brandclever, we're not just predicting the future; we're actively crafting it with a team of over 250+ pioneers dedicated to digital excellence. Our expertise in technology and relentless innovation come together to deliver not just IT solutions but industry-defining benchmarks. With a passion for unparalleled quality, we offer more than just services—we provide transformative partnerships that propel businesses to lead and excel. Our ambition is to surpass your expectations, fostering growth and efficiency with each groundbreaking strategy, and securing your place at the forefront of the digital landscape. Choose Brandclever, where every IT challenge is met with an innovative solution and every business milestone is an opportunity for legendary growth.
               </p>
             </div>
           </div>

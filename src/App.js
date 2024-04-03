@@ -55,7 +55,8 @@ export default class App extends Component {
             <Route path="/review" element={<Review />} />
             <Route path="/career" element={<Career />} />
             <Route path="/web-development" element={<WebDevelopment />} />
-            <Route path="/graphic-degine" element={<GraphicDesign />} />
+            <Route path="/graphic-degin" element={<GraphicDesign />} />
+            
             <Route path="/mern-stack" element={<MernStack />} />
             <Route path="/digital-marketing" element={<DigitalMarketing />} />
             <Route path="/content-strategy" element={<ContentStrategy />} />
