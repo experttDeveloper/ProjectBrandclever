@@ -12,7 +12,7 @@ export default class OurServices extends Component {
       services: [
         {
           title: 'Web Development',
-          icon: process.env.PUBLIC_URL + '/images/service/web-devlopment.png',
+          icon: process.env.PUBLIC_URL + '/images/service/website_develop.png',
           description: 'Brandclever uses the latest technology in the field of web development, ensuring that all our websites are of high quality.',
           additionalInfo: '<ul><li>Shopify Store Development</li><li>Wordpress Site Development</li><li>Landing Page Website</li><li>Backend Development</li><li>Frontend Development</li></ul>',
           url: '/web-development',
@@ -20,15 +20,15 @@ export default class OurServices extends Component {
         },
         {
           title: 'Graphic Design',
-          icon: process.env.PUBLIC_URL + '/images/service/ui-ux-design.png',
+          icon: process.env.PUBLIC_URL + '/images/service/graphic_design.png',
           description: 'We provide the best facilities for customer satisfaction by creating professional and beautiful designs, making our customers happy.',
           additionalInfo: '<ul><li>Banner Designs</li><li>Icon Designs</li><li>Mobile Application Designs</li><li>Logo Designs</li><li>Business Cards</li><li>Brochures</li><ul>',
-          url: '/graphic-degine',
+          url: '/graphic-degin',
           tools: ['Banner Designs', 'Icon Designs', 'Mobile Application Designs', 'Logo Designs', 'Business Cards', 'Brochures'],
         },
         {
           title: 'CMS Solution',
-          icon: process.env.PUBLIC_URL + '/images/service/graphic.png',
+          icon: process.env.PUBLIC_URL + '/images/service/cms_solution.png',
           description: 'Content Management Solutions using technologies like WordPress, Shopify, Magento 2.',
           additionalInfo: '<ul><li>Content Creation and Storage</li><li>User Access Control</li><li>Workflow Automation</li><li>Multi-Platform Publishing</li><li>Content Analysis</li><li>Content Migration Services</li></ul>',
           url: '/cms-solution',
@@ -36,15 +36,15 @@ export default class OurServices extends Component {
         },
         {
           title: 'Content Strategy',
-          icon: process.env.PUBLIC_URL + '/images/service/graphic.png',
+          icon: process.env.PUBLIC_URL + '/images/service/content_strategy.png',
           description: 'Content Management Solutions using technologies like WordPress, Shopify, Magento 2.',
           additionalInfo: '<ul><li>Content Creation and Storage</li><li>User Access Control</li><li>Workflow Automation</li><li>Multi-Platform Publishing</li><li>Content Analysis</li><li>Content Migration Services</li></ul>',
           url: '/content-strategy',
-          tools: ['Content Audits', 'Content Calendar and Editing', 'Content Distribution and Promotion', 'Conversion website and landing pages', 'Email & social media copy', 'Optimized blog posts and articles'],
+          tools: ['Content Audits', 'Content Calendar and Edit`ing', 'Content Distribution and Promotion', 'Conversion website and landing pages', 'Email & social media copy', 'Optimized blog posts and articles'],
         },
         {
           title: 'Mern Stack',
-          icon: process.env.PUBLIC_URL + '/images/service/graphic.png',
+          icon: process.env.PUBLIC_URL + '/images/service/mern_stack.png',
           description: 'Content Management Solutions using technologies like WordPress, Shopify, Magento 2.',
           additionalInfo: '<ul><li>Content Creation and Storage</li><li>User Access Control</li><li>Workflow Automation</li><li>Multi-Platform Publishing</li><li>Content Analysis</li><li>Content Migration Services</li></ul>',
           url: '/mern-stack',
@@ -52,7 +52,7 @@ export default class OurServices extends Component {
         },
         {
           title: 'Software Testing',
-          icon: process.env.PUBLIC_URL + '/images/service/graphic.png',
+          icon: process.env.PUBLIC_URL + '/images/service/software_testing.png',
           description: 'Content Management Solutions using technologies like WordPress, Shopify, Magento 2.',
           additionalInfo: '<ul><li>Content Creation and Storage</li><li>User Access Control</li><li>Workflow Automation</li><li>Multi-Platform Publishing</li><li>Content Analysis</li><li>Content Migration Services</li></ul>',
           url: '/software-testing',
@@ -60,7 +60,7 @@ export default class OurServices extends Component {
         },
         {
           title: 'Framework',
-          icon: process.env.PUBLIC_URL + '/images/service/graphic.png',
+          icon: process.env.PUBLIC_URL + '/images/service/framework.png',
           description: 'Content Management Solutions using technologies like WordPress, Shopify, Magento 2.',
           additionalInfo: '<ul><li>Content Creation and Storage</li><li>User Access Control</li><li>Workflow Automation</li><li>Multi-Platform Publishing</li><li>Content Analysis</li><li>Content Migration Services</li></ul>',
           url: '/framework',
@@ -89,7 +89,7 @@ export default class OurServices extends Component {
                           <div class="front">
                             <div className='logo_img'>
                               <img className='srv_bg_img' src={`/images/service/bg_srv.png`} />
-                              <img className='srv_bg_web' src={`/images/service/web-dvl.svg`} />
+                              <img className='srv_bg_web' src={service.icon} />
                               <h3>{service.title}</h3>
                               <p>At Brandclever, Our professionals will Utilise modern programming languages and frameworks to build secure, scalable, and high-performing web solutions. We prioritize functionality, efficiency, and user-friendliness, guaranteeing the best experience for your audience. Our Web Development Platforms PHP frameworks        WordPress Shopify...</p>
                             </div>
@@ -97,7 +97,7 @@ export default class OurServices extends Component {
                           <div class="back">
                             <div className='back_logo_img'>
                               <img className='srv_bg_img' src={`/images/service/bg_srv.png`} />
-                              <img className='srv_bg_web' src={`/images/service/web-dvl.svg`} />
+                              <img className='srv_bg_web' src={service.icon} />
                               <h3>{service.title}</h3>
                             </div>
                             <div class="oposite" bis_skin_checked="1">
