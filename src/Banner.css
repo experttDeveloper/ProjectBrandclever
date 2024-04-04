@@ -15,21 +15,6 @@
 .content {
   width: 60%;
 }
-/* .banner-video {
-  width: 100%;
-  height: calc(100vh - 50px);
-  object-fit: cover;
-} */
-
-  /* .content {
-    color: #fff;
-    left: 28.3%;
-    position: absolute;
-    text-align: left;
-    top: 55%;
-    transform: translate(-29%,-50%);
-} */
-
 .exp_btn a {
   color: #fff;
   border: 1px solid #fff;
@@ -49,11 +34,11 @@ span.icon_span svg {
   margin-left: 20px;
 }
 .content h1 {
-  margin-bottom: 10px;
-  font-size: 49px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 50px;
+	margin-bottom: 15px;
+	font-size: 50px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 50px;
 }
 .content p {
   color: #ebebeb;

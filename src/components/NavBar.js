@@ -151,7 +151,7 @@ const NavBar = () => {
                             {serviceMenus.slice(0, 6).map((ele, key) => {
                               return (
                                 <div className='service_img'>
-                                  <img src={ele.icon} height="40px" width="35px" />
+                                  <img src={ele.icon} height="30px" width="30px" />
                                   <Link to='/website-design'>{ele.title}</Link>
                                 </div>
                                 // {/* <Link to='/web-development'>Web Development</Link>
@@ -167,7 +167,7 @@ const NavBar = () => {
                               serviceMenus.slice(6, 12).map((ele, key) => {
                                 return (
                                   <div className='service_img'>
-                                    <img src={ele.icon} height="40px" width="35px" />
+                                    <img src={ele.icon} height="30px" width="30px" />
                                     <Link to='/website-design'>{ele.title}</Link>
                                   </div>
                                   //       {/* <Link to='/landing-page'>Landing Page</Link>
