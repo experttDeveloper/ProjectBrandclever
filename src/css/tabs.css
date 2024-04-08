@@ -95,9 +95,9 @@ h3.tab-heading {
 }
 .screen_port {
     display: block;
-    height: 350px;
+    height: 313px;
     overflow: hidden;
-    position: relative; 
+    position: relative;
     border-radius: 10px;
     margin: 0 auto;
 }
@@ -115,5 +115,5 @@ h3.tab-heading {
     transform: translateY(0%);
 }
 .screen_port:hover img {
-    transform: translateY(calc(-100% + 350px));
+    transform: unset;
 }

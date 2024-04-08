@@ -10,7 +10,7 @@ const ClientReview = () => {
 
     useEffect(() => {
         fetch("https://dummy.restapiexample.com/api/v1/employees")
-            .then((response) => console.log("responde",response.json()))
+            .then((response) => console.log("responde", response.json()))
             .then((json) => console.log(json));
     })
 
@@ -22,6 +22,7 @@ const ClientReview = () => {
         autoplay: false,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
+        slideBy: 2,
         responsive: {
             0: {
                 items: 1, // Display 1 item at a time on small screens
@@ -47,12 +48,42 @@ const ClientReview = () => {
                     <h2>Satisfied Clients Say</h2>
                 </div>
                 <OwlCarousel className="owl-theme" {...options}>
+                    <div className='custom_review_tab'>
+
+                        <div className="item">
+                            <div className='Testmono_clint'>
+                                <div className='icon_client'>
+                                    <span class="icon">“</span>
+                                </div>
+                                <div className='tstim_ine'>
+                                    <h1>slide1</h1>
+                                    <p>Lorem Ipsum simpy dummy
+                                        text of the printing and types
+                                        industry has been the industr
+                                        standard dummy.
+                                    </p>
+                                    <div className='clint_name_star'>
+                                        <div className='clint_name'>
+                                            <h3>Raleigh Friend</h3>
+                                            <p>CEO, Seoly</p>
+                                        </div>
+                                        <div className='star_clint'>
+                                            <Rating value={4} readOnly />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="item">
                         <div className='Testmono_clint'>
                             <div className='icon_client'>
-                            <span class="icon">“</span>
+                                <span class="icon">“</span>
                             </div>
+
                             <div className='tstim_ine'>
+                                <h1>slide2</h1>
                                 <p>Lorem Ipsum simpy dummy
                                     text of the printing and types
                                     industry has been the industr
@@ -70,36 +101,40 @@ const ClientReview = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="item">
-                        <div className='Testmono_clint'>
-                            <div className='icon_client'>
-                            <span class="icon">“</span>
-                            </div>
-                            
-                            <div className='tstim_ine'>
-                                <p>Lorem Ipsum simpy dummy
-                                    text of the printing and types
-                                    industry has been the industr
-                                    standard dummy.
-                                </p>
-                                <div className='clint_name_star'>
-                                    <div className='clint_name'>
-                                        <h3>Raleigh Friend</h3>
-                                        <p>CEO, Seoly</p>
-                                    </div>
-                                    <div className='star_clint'>
-                                        <Rating value={4} readOnly />
+                    <div className='custom_review_tab'>
+                        <div className="item">
+                            <div className='Testmono_clint'>
+                                <div className='icon_client'>
+                                    <span class="icon">“</span>
+                                </div>
+                                <div className='tstim_ine'>
+                                    <h1>slide3</h1>
+                                    <p>Lorem Ipsum simpy dummy
+                                        text of the printing and types
+                                        industry has been the industr
+                                        standard dummy.
+                                    </p>
+                                    <div className='clint_name_star'>
+                                        <div className='clint_name'>
+                                            <h3>Raleigh Friend</h3>
+                                            <p>CEO, Seoly</p>
+                                        </div>
+                                        <div className='star_clint'>
+                                            <Rating value={4} readOnly />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div className="item">
                         <div className='Testmono_clint'>
                             <div className='icon_client'>
-                            <span class="icon">“</span>
+                                <span class="icon">“</span>
                             </div>
                             <div className='tstim_ine'>
+                                <h1>slide4</h1>
                                 <p>Lorem Ipsum simpy dummy
                                     text of the printing and types
                                     industry has been the industr

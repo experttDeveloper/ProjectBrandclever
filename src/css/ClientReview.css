@@ -28,3 +28,22 @@ button.owl-prev {
 .clint_name p {
     font-size: 13px !important;
 }
+.testy_section .owl-theme .owl-nav [class*='owl-']:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+    transition: 1.5s !important;
+}
+.custom_review_tab .item {
+    z-index: 9999999999 !important;
+    position: absolute;
+    top: -140px !important;
+}
+.owl-carousel .owl-stage-outer {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    overflow-x: clip !important;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: unset;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}

@@ -75,7 +75,7 @@ h2 {
 
 .testy_section {
     background: #fff;
-    padding: 51px 0px;
+    padding: 91px 0px 51px 0px;
 }
 .item {
     padding: 50px;
@@ -108,9 +108,9 @@ font-size: 45px;
 }
 .Testmono_clint {
     background: #fff;
-    padding: 0px 30px 30px 30px;
-    box-shadow: 0 1rem 3rem #2125292d !important;
+    padding: 25px 35px 50px 35px;
     border-radius: 7px;
+    box-shadow: 0px 0px 7px 0px #474747 !important;
 }
 .about-banner {
     background: #101010 !important;
@@ -2318,7 +2318,8 @@ div#successMsg {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color:#000 !important;
+    border-radius: 5px;
     width: 89%;
     left: 6%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -2354,7 +2355,7 @@ div#successMsg {
 }
 
 .dropdown-content a {
-    color: #000 !important;
+    color: #fff !important;
 }
 
 /* Style links inside the columns */
@@ -2431,4 +2432,11 @@ header.sticky {
 }
 .aboutInfo-section .about-content p {
     width: 50%;
+}
+.owl-theme .owl-nav {
+    text-align: right !important; 
+    -webkit-tap-highlight-color: transparent;
+    width: 47%;
+    position: absolute;
+    bottom: 60px;
 }

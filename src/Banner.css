@@ -6,11 +6,11 @@
 
 .banner_img_hi {
   /* background: linear-gradient(45deg, black, transparent), url(http://localhost:3000/static/media/banner_img_one.78343c93f8d60da5f570.jpg); */
-  background: linear-gradient(45deg, black, transparent), url('../public/images/banner/banner_img_one.jpg');
+  background: linear-gradient(45deg, black, transparent), url('../public/images/banner/main_banner.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 0px 160px;
+  padding: 190px 0px 150px;
 }
 .content {
   width: 60%;
@@ -34,16 +34,17 @@ span.icon_span svg {
   margin-left: 20px;
 }
 .content h1 {
-	margin-bottom: 15px;
-	font-size: 50px;
-	font-weight: 700;
-	color: #fff;
-	line-height: 50px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 50px;
+  letter-spacing: 1px;
 }
 .content p {
   color: #ebebeb;
   font-size: 20px;
   font-weight: 400;
-  width: 80%;
+  width: 100%;
   padding-bottom: 10px;
 }
