@@ -2353,7 +2353,9 @@ div#successMsg {
 .columnMenu {
     text-align: left;
 }
-
+.col-md-6.serv_img img {
+    height: 325px;
+}
 .dropdown-content a {
     color: #fff !important;
 }
