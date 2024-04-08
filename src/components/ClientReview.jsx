@@ -75,6 +75,7 @@ const ClientReview = () => {
                             <div className='icon_client'>
                             <span class="icon">“</span>
                             </div>
+                            
                             <div className='tstim_ine'>
                                 <p>Lorem Ipsum simpy dummy
                                     text of the printing and types
