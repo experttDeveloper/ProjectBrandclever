@@ -3,6 +3,16 @@
 /********** Tushar css Start here ***********/
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 1200px) {
+    .screen_port {
+        height: 242px !important;
+    }
+    .aboutInfo-section .about-content {
+        display: block !important;
+    }
+  
+    .banner.brand_banner_section.banner_img_hi .container {
+        width: 970px !important;
+    }
     .testimonial.testi_clints {
         padding: 40px 45px 144px 42px !important;
     }
@@ -111,6 +121,38 @@
 
 }
     @media screen and (max-width: 1024px) {
+        #root > div.page > div.main-sub > div.database_right > div:nth-child(4) {
+            margin-bottom: 60px !important;
+        }
+        .testi_heding {
+            width: 100%;
+            padding: 0px 0px 0px 50px;
+        }
+        body .custom_review_tab .item {
+            top: 0px !important;
+        }
+        body .owl-theme .owl-nav {
+            text-align: center !important;
+            width: 100%;
+            bottom: -20px;
+        }
+        .Testmono_clint span.icon {
+            font-size: 60px !important;
+        }
+        .testi_heding h2 {
+            font-size: 25px;
+        }
+        .tstim_ine p {
+            font-size: 15px;
+            line-height: 20px;
+        }
+     
+        .banner.brand_banner_section.banner_img_hi .container {
+            width: 90%;
+        }   
+        .banner_img_hi {
+            padding: 120px 0px 80px !important;
+        }
         .main-contact-page .section-420 {
             width: 100% !important;
             max-width: 100% !important;
@@ -289,9 +331,6 @@
         .content {
             top: 55% !important;
         }
-        .banner {
-            height: 500px !important;
-        }
         .contactForm-inner {
             justify-content: center;
             width: 100% !important;
@@ -366,6 +405,20 @@
 
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) { 
+    .screen_port {
+        height: 190px !important;
+    }
+    .servic_provid .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services-inner .servic_provid .col-md-4 {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .aboutInfo-section .about-content {
+        display: block !important;
+    }
     .row.counter-section h3 {
         font-size: 20px !important;
     }
@@ -483,7 +536,14 @@
      
  @media screen and (min-width: 480px) and (max-width: 768px) {
     /************************ Header nav start *****************************/
-   
+    .footer-inner .column {
+        padding: 15px 15px 0px 15px;
+        margin-bottom: -31px !important;
+    }
+    .about-content h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
     .openMenus .closeIcon {
         display: block;
     }
@@ -498,6 +558,7 @@
 
     .banner .content h1 {
         font-size: 30px !important;
+        line-height:30px !important;
     }
     .inner-header {
         padding: 20px;
@@ -863,6 +924,41 @@
 
 
             @media only screen and (min-width: 320px) and (max-width: 480px) {
+                .footer-inner .column {
+                    padding: 15px 15px 0px 15px;
+                    margin-bottom: -10px !important;
+                }
+              
+                button.owl-next span, .owl-prev span {
+                    font-size: 40px;
+                }
+                .testy_section .owl-nav button {
+                    height: 40px !important;
+                    width: 40px !important;
+                }
+                body .owl-theme .owl-nav {
+                    bottom: -50px;
+                }
+                .item {
+                    padding: 15px;
+                }
+                .testi_heding {
+                    padding: 0px 0px 0px 15px;
+                }
+                .screen_port {
+                    height: 248px !important;
+                }
+                .servic_provid .row .col-md-4 {
+                    margin-bottom: 40px !important;
+                }
+                .about-content h1 {
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+                .banner .content h1 {
+                    font-size: 25px !important;
+                    line-height: 30px !important;
+                }
 
                
     .openMenus .closeIcon {
@@ -895,6 +991,7 @@
                 .footer-inner {
                     display: grid !important;
                     grid-template-columns: repeat(1,1fr) !important;
+                        gap: 0px !important; 
                 }
                 #root > div.page > div.main-sub > div.database_right > div:nth-child(1) {
                     width: 100% !important;
@@ -1002,9 +1099,6 @@
                 .faq-main .faq-item {
                     width: 100% !important;
                 }
-                .content h1 {
-                    font-size: 30px !important;
-                }
                 .faq-main h2 {
                     font-size: 22px !important;
                     padding-bottom: 0px !important;
@@ -1037,17 +1131,13 @@
                 }
 
                 .main-sub .database_left h3 {
-                    font-size: 20px !important;
+                    font-size: 15px !important;
                     margin-bottom: 5px !important;
                     text-align: center;
                     line-height: 1.5;
-                    padding-bottom: 25px;
+                  padding: 0px 0px 20px 0px  !important; 
                 }
                    /************************ Header nav start *****************************/
-
-    .banner .content h1 {
-        font-size: 30px !important;
-    }
     .content {
         width: 80%;
         color: white;
@@ -1213,6 +1303,7 @@
     }
 }
 @media screen and (max-width: 480px) {
+
     .third ul{
         justify-content: center !important;
     }
@@ -1266,7 +1357,17 @@
         display:block !important
     }
 }
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .screen_port {
+        height: 145px !important;
+    }
+}
 @media screen and (max-width: 768px) {
+
+    
+    .front {
+        height: auto !important;
+    }
     nav.open {
         align-items: baseline !important;
     }
@@ -1430,6 +1531,7 @@
         .aboutInfo-section .about-content {
             display: flex;
             flex-direction: column;
+            gap: 0px !important;
         }
     .service-row {
         display: block !important;
@@ -1510,6 +1612,5 @@
     .service .second p {
         font-size: 13px !important;
     }
-
-
 }
+

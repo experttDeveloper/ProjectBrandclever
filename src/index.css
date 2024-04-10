@@ -776,10 +776,11 @@ footer .column {
 
 .whatsapp_widget_icon {
     border-radius: 50px;
-    padding: 10px 10px;
-    float: right;
-    position: fixed;
     bottom: 60px;
+    z-index: 9999999999 !important;
+    float: right;
+    padding: 10px;
+    position: fixed;
     right: 23px;
 }
 
