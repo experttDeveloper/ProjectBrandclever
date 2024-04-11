@@ -61,8 +61,8 @@ const Tabs = () => {
                     </div> }
                     { activeTab === 2 && <div className="tab_panel port_content">
                         {phpImg.map((image, index) => (
-                            <div className="screen_port column protpolio-clm" key={index}>
-                                <img src={image} alt={`Column ${index + 1}`} />
+                            <div className="screen_port column protpolio-clm php_image" key={index}>
+                                <img src={image} alt={`Column ${index + 1}`}  />
                             </div>
                         ))}
                     </div> }

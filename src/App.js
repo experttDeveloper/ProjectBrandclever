@@ -23,6 +23,7 @@ import ContentStrategy from './components/services/ContentStrategy';
 import Framework from './components/services/FrameWork';
 import CMSSolution from './components/services/CMSSolution';
 import PageNotFound from './pages/PageNotFound'
+import AboutPage from './pages/AboutPage';
 
 
 
@@ -49,6 +50,7 @@ export default class App extends Component {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            {/* <Route path="/about" element={<AboutPage />} /> */}
             <Route path="/service" element={<Service />} />
             <Route path="portfolio" element={<Portfolio />} />
             <Route path="/traning-and-placement" element={<PlacementForm />} />

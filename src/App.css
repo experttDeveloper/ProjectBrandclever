@@ -162,7 +162,7 @@
 }
 
 .content {
-  width: 70%;
+  width: 100% !important;
   color: white;
   padding-top: 20px;
 }

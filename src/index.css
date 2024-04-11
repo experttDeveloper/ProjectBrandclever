@@ -1943,7 +1943,11 @@ footer {
     align-items: center;
     justify-content: center;
 }
-
+.main-sub .databaseIcon.Subject-M:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+    cursor:pointer;
+}
 /*******************************************/
 
 .main-sub .database_right {
@@ -2156,7 +2160,7 @@ button.back_btn_placement_traning:hover {
 
 .read-btnn {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 div#successMsg {
@@ -2442,4 +2446,36 @@ header.sticky {
     width: 47%;
     position: absolute;
     bottom: 60px;
+}
+
+.banner.brand_banner_section.banner_img_hi .content p {
+    width: 70%;
+}
+.about_us_banner_iamge {
+    background-image: url('/public/images/about/banner.jfif');
+    background-size: contain;
+    width: 100% !important;
+    background-repeat: no-repeat;
+}
+.abous_secons_main {
+    padding-top: 80px !important;
+}
+.col-md-7.banner_twoes_divs p {
+    color: #fff;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 200px !important;
+}
+.col-md-7.banner_twoes_divs h1 {
+    font-size: 40px !important;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 230px !important;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.col-md-5.banner_twoes_divse {
+    text-align: right;
+    padding-top: 100px !important;
 }
