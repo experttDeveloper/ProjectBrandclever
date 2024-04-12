@@ -3,6 +3,13 @@
 /********** Tushar css Start here ***********/
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 1200px) {
+
+    .front {
+        height: fit-content !important;
+    }
+    body .logo_img p {
+        font-size: 13px !important;
+    }
     .screen_port {
         height: 242px !important;
     }
@@ -121,6 +128,40 @@
 
 }
     @media screen and (max-width: 1024px) {
+        .flip-container, .front, .back {
+            height: 435px !important;
+        }
+        .col-md-7.banner_twoes_divs {
+            width: 100% !important;
+            max-width: 95% !important;
+        }
+
+        .col-md-7.banner_twoes_divs h1 {
+            padding-top: 100px !important;
+        }
+        .col-md-5.banner_twoes_divse {
+            padding: 0px 0px 60px 0px !important;
+            text-align: left;
+        }
+        .col-md-7.banner_twoes_divs p {
+       padding-bottom: 0px !important; 
+        }
+        .row.banner_two_rows {
+            display: block;
+            padding: 0px 20px !important;
+            width: 100% !important;
+        }
+        .about_us_banner_iamge {
+            background-size: cover;
+        }
+        .about_page {
+            display: block !important;
+            padding: 20px 0px 0px 0px  !important;
+        }
+        .front {
+            height: fit-content !important;
+            margin-bottom:30px !important;
+        }
         #root > div.page > div.main-sub > div.database_right > div:nth-child(4) {
             margin-bottom: 60px !important;
         }
@@ -536,6 +577,7 @@
      
  @media screen and (min-width: 480px) and (max-width: 768px) {
     /************************ Header nav start *****************************/
+  
     .footer-inner .column {
         padding: 15px 15px 0px 15px;
         margin-bottom: -31px !important;
@@ -671,6 +713,7 @@
     .founder_section_content {
         display: block;
         width: 100% !important;
+        padding: 0;
     }
     .content_of_founder {
         width: 100%;
@@ -1363,8 +1406,33 @@
     }
 }
 @media screen and (max-width: 768px) {
-
-    
+    .img_of_founder img {
+        border: 5px solid #fff !important;
+    }
+    .gallery {
+        padding: 20px 20px !important;
+    }
+    .founder_section {
+        padding: 60px 20px;
+    }
+    .founder_section_content {
+        padding: 0;
+    }
+    .col-md-5.banner_twoes_divse img {
+        width: 100%;
+        max-width: 65% !important;
+    }
+    .our-services-all {
+        display: block !important;
+    }
+    .web-development {
+        max-width: 100% !important;
+    }
+    .web-development-image {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 15px 10px !important;
+    }
     .front {
         height: auto !important;
     }
@@ -1465,6 +1533,7 @@
     }
     .read-btnn {
         margin-bottom: 0px !important;
+        margin-top:30px !important;
     }
     li.drop-down:hover ul.sub-menus li a {
         display: block;

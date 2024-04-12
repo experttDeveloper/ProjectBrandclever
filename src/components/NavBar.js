@@ -194,7 +194,7 @@ const NavBar = () => {
                           </span>
                         </span>
                       </Link>
-                      <div className="dropdown-content">
+                      {/* <div className="dropdown-content">
                         <div className="row">
                           <div className="columnMenu">
                             <Link to="/traning-and-placement">Training & Placement
@@ -210,7 +210,7 @@ const NavBar = () => {
                             <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </li>
                   <li>

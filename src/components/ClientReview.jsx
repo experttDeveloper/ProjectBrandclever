@@ -136,19 +136,15 @@ const ClientReview = () => {
                                     <span class="icon">“</span>
                                 </div>
                                 <div className='tstim_ine'>
-                                    <h1>slide1</h1>
-                                    <p>Lorem Ipsum simpy dummy
-                                        text of the printing and types
-                                        industry has been the industr
-                                        standard dummy.
+                                    <p>{testimonials[0].text}
                                     </p>
                                     <div className='clint_name_star'>
                                         <div className='clint_name'>
-                                            <h3>Raleigh Friend</h3>
-                                            <p>CEO, Seoly</p>
+                                            <h3>{testimonials[0].name}</h3>
+                                            <p>{testimonials[0].country}</p>
                                         </div>
                                         <div className='star_clint'>
-                                            <Rating value={4} readOnly />
+                                            <Rating value={5} readOnly />
                                         </div>
                                     </div>
                                 </div>
@@ -163,16 +159,12 @@ const ClientReview = () => {
                             </div>
 
                             <div className='tstim_ine'>
-                                <h1>slide2</h1>
-                                <p>Lorem Ipsum simpy dummy
-                                    text of the printing and types
-                                    industry has been the industr
-                                    standard dummy.
+                                <p>{testimonials[1].text}
                                 </p>
                                 <div className='clint_name_star'>
                                     <div className='clint_name'>
-                                        <h3>Raleigh Friend</h3>
-                                        <p>CEO, Seoly</p>
+                                        <h3>{testimonials[1].name}</h3>
+                                        <p>{testimonials[1].country}</p>
                                     </div>
                                     <div className='star_clint'>
                                         <Rating value={4} readOnly />
@@ -188,19 +180,15 @@ const ClientReview = () => {
                                     <span class="icon">“</span>
                                 </div>
                                 <div className='tstim_ine'>
-                                    <h1>slide3</h1>
-                                    <p>Lorem Ipsum simpy dummy
-                                        text of the printing and types
-                                        industry has been the industr
-                                        standard dummy.
+                                    <p>{testimonials[2].text}
                                     </p>
                                     <div className='clint_name_star'>
                                         <div className='clint_name'>
-                                            <h3>Raleigh Friend</h3>
-                                            <p>CEO, Seoly</p>
+                                            <h3>{testimonials[2].name}</h3>
+                                            <p>{testimonials[2].country}</p>
                                         </div>
                                         <div className='star_clint'>
-                                            <Rating value={4} readOnly />
+                                            <Rating value={5} readOnly />
                                         </div>
                                     </div>
                                 </div>
@@ -214,16 +202,12 @@ const ClientReview = () => {
                                 <span class="icon">“</span>
                             </div>
                             <div className='tstim_ine'>
-                                <h1>slide4</h1>
-                                <p>Lorem Ipsum simpy dummy
-                                    text of the printing and types
-                                    industry has been the industr
-                                    standard dummy.
+                                <p>{testimonials[3].text}
                                 </p>
                                 <div className='clint_name_star'>
                                     <div className='clint_name'>
-                                        <h3>Raleigh Friend</h3>
-                                        <p>CEO, Seoly</p>
+                                        <h3>{testimonials[3].name}</h3>
+                                        <p>{testimonials[3].country}</p>
                                     </div>
                                     <div className='star_clint'>
                                         <Rating value={4} readOnly />
