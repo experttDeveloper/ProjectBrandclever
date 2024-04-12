@@ -7,7 +7,8 @@
     float: left;
     width: 100%;
     padding: 0;
-  }
+    margin-bottom: 10px !important;
+}
   .counter-section {
     margin: 0;
   }
@@ -49,7 +50,7 @@
     width: 50%;
 }
 .row.counter-section span {
-    font: 80px/.8 proxima_nova_altbold;
+    font: 70px/.8 proxima_nova_altbold;
     color: #54a154;
 }
 .row.counter-section h3 {
@@ -68,8 +69,8 @@
   border-top: 1px solid #54a154;
 }
 .bottom-counter {
-    width: 50%;
-    margin: auto;
+  width: 100%;
+  margin-top: 0px;
 }
 /* portfolio page */
 .portfolio-page .portfolio-inner {

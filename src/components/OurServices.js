@@ -91,7 +91,7 @@ export default class OurServices extends Component {
                               <img className='srv_bg_img' src={`/images/service/bg_srv.png`} />
                               <img className='srv_bg_web' src={service.icon} />
                               <h3>{service.title}</h3>
-                              <p>{service.description}</p>
+                              <p>{service.description.substring(0, 342)}...</p>
                             </div>
                           </div>
                           <div class="back">

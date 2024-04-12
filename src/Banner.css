@@ -6,7 +6,7 @@
 
 .banner_img_hi {
   /* background: linear-gradient(45deg, black, transparent), url(http://localhost:3000/static/media/banner_img_one.78343c93f8d60da5f570.jpg); */
-  background: linear-gradient(45deg, black, transparent), url('../public/images/banner/main_banner.png');
+  background:  url('../public/images/banner/main_banner.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
