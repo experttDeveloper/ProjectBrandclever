@@ -14,6 +14,7 @@ import DatabaseSec from '../components/DatabaseSec';
 import Faq from '../components/Faq';
 import HomePageScroll from '../components/HomePageScroll';
 import ClientReview from '../components/ClientReview';
+import Portfolio from '../components/Portfolio';
 
 const Home = () => {
 
@@ -61,7 +62,8 @@ const Home = () => {
 
         <OurServices />
         {/* <PlatForms images={columnImages} /> */}
-        <Tabs />
+        {/* <Tabs /> */}
+        <Portfolio/>
         {/* <Activity /> */}
 
         {/* <TestimonialCarousel /> */}
