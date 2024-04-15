@@ -1554,7 +1554,7 @@
     }
     .placement-main label {
         padding-right: 0px;
-    }
+    }s
     li.drop-down::after {
         content: '\25BC';
         margin-left: 5px;
