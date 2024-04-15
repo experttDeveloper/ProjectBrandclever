@@ -12,12 +12,12 @@ const Portfolio = () => {
   };
 
   const allImg = [
-    process.env.PUBLIC_URL + '/images/portfolio/jumpsport.png',
-    process.env.PUBLIC_URL + '/images/portfolio/wp/costner_recover.png',
-    process.env.PUBLIC_URL + '/images/portfolio/wp/mamasmarketplace-au-mamasmarketplace.png',
-    process.env.PUBLIC_URL + '/images/portfolio/wp/pt-businessacademy-si.png',
-    process.env.PUBLIC_URL + '/images/portfolio/wp/super-solar-systems.png',
-    process.env.PUBLIC_URL + '/images/portfolio/wp/studioblup.png',
+    process.env.PUBLIC_URL + '/images/portfolio/ales_website.png',
+    process.env.PUBLIC_URL + '/images/portfolio/connolly.png',
+    process.env.PUBLIC_URL + '/images/portfolio/Costner_recovery.png',
+    process.env.PUBLIC_URL + '/images/portfolio/cryptesc.png',
+    process.env.PUBLIC_URL + '/images/portfolio/liza.png',
+    process.env.PUBLIC_URL + '/images/portfolio/off_grid_site.png',
   ];
 
   const wordpressImg = [
@@ -64,14 +64,14 @@ const Portfolio = () => {
                   {allImg.map((image, index) => (
                     <div className='col-md-4' key={index}>
                       <div
-                        className={`costner_page_web ${hoveredCardIndex === index ? 'hovered' : ''}`}
+                        className={`costner_page_web `}
                         onMouseEnter={() => setHoveredCardIndex(index)}
                         onMouseLeave={() => setHoveredCardIndex(null)}>
                         <a href='/' >
                           <div className='card_portfol'>
                             <img src={image} />
                             {/* <div className='page_link_prot'> */}
-                            <h3 href='/' className="port_title" key={index}>Costner Recovery</h3>
+                            <h3 href='/' className={hoveredCardIndex === index ? "port_title":""} key={index}>Connolly Plumving And Gas</h3>
                             {/* </div> */}
                           </div>
                         </a>
@@ -86,7 +86,7 @@ const Portfolio = () => {
                   {phpImg.map((image, index) => (
                     <div className='col-md-4' key={index}>
                       <div
-                        className={`costner_page_web ${hoveredCardIndex === index ? 'hovered' : ''}`}
+                        className={`costner_page_web `}
                         onMouseEnter={() => setHoveredCardIndex(index)}
                         onMouseLeave={() => setHoveredCardIndex(null)}>
                         <a href='/' >
@@ -108,14 +108,14 @@ const Portfolio = () => {
                   {shopifyImg.map((image, index) => (
                     <div className='col-md-4' key={index}>
                       <div
-                        className={`costner_page_web ${hoveredCardIndex === index ? 'hovered' : ''}`}
+                        className={`costner_page_web `}
                         onMouseEnter={() => setHoveredCardIndex(index)}
                         onMouseLeave={() => setHoveredCardIndex(null)}>
                         <a href='/' >
                           <div className='card_portfol'>
                             <img src={image} />
                             {/* <div className='page_link_prot'> */}
-                            <h3 href='/' className="port_title" key={index}>Costner Recovery</h3>
+                            <h3 href='/' className="port_title" key={index}>Connolly Plumving And Gas</h3>
                             {/* </div> */}
                           </div>
                         </a>
@@ -130,7 +130,7 @@ const Portfolio = () => {
                   {wordpressImg.map((image, index) => (
                     <div className='col-md-4' key={index}>
                       <div
-                        className={`costner_page_web ${hoveredCardIndex === index ? 'hovered' : ''}`}
+                        className={`costner_page_web `}
                         onMouseEnter={() => setHoveredCardIndex(index)}
                         onMouseLeave={() => setHoveredCardIndex(null)}>
                         <a href='/' >
@@ -152,7 +152,7 @@ const Portfolio = () => {
                   {phpImg.map((image, index) => (
                     <div className='col-md-4' key={index}>
                       <div
-                        className={`costner_page_web ${hoveredCardIndex === index ? 'hovered' : ''}`}
+                        className={`costner_page_web `}
                         onMouseEnter={() => setHoveredCardIndex(index)}
                         onMouseLeave={() => setHoveredCardIndex(null)}>
                         <a href='/' >
