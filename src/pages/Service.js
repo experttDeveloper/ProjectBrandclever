@@ -11,7 +11,7 @@ import cms_solution from './Assest/cms_solutions.jpg';
 import TopHeader from '../components/TopHeader';
 
 
-export default function Service() {
+export default function  Service() {
     return (
         <div className='service'>
             <TopHeader title="Services" />

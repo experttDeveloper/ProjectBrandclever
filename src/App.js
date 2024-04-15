@@ -24,6 +24,7 @@ import Framework from './components/services/FrameWork';
 import CMSSolution from './components/services/CMSSolution';
 import PageNotFound from './pages/PageNotFound'
 import AboutPage from './pages/AboutPage';
+import UpdatedService from './pages/UpdatedService';
 
 
 
@@ -51,7 +52,8 @@ export default class App extends Component {
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             {/* <Route path="/about" element={<AboutPage />} /> */}
-            <Route path="/service" element={<Service />} />
+            {/* <Route path="/service" element={<Service />} /> */}
+            <Route path="/service" element={<UpdatedService />} />
             <Route path="portfolio" element={<Portfolio />} />
             <Route path="/traning-and-placement" element={<PlacementForm />} />
             <Route path="/review" element={<Review />} />
