@@ -70,6 +70,7 @@
 }
 
 .card_portfol h3 {
+    text-transform: capitalize;
     text-align: center;
     font-size: 17px;
     font-weight: 600;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../css/portfolio.css';
+import { Link } from 'react-router-dom';
 
 
 const Portfolio = () => {
@@ -11,33 +12,146 @@ const Portfolio = () => {
     setActiveTab(id);
   };
 
-  const allImg = [
-    process.env.PUBLIC_URL + '/images/portfolio/ales_website.png',
-    process.env.PUBLIC_URL + '/images/portfolio/connolly.png',
-    process.env.PUBLIC_URL + '/images/portfolio/Costner_recovery.png',
-    process.env.PUBLIC_URL + '/images/portfolio/cryptesc.png',
-    process.env.PUBLIC_URL + '/images/portfolio/liza.png',
-    process.env.PUBLIC_URL + '/images/portfolio/off_grid_site.png',
+  const allDevelopwebsite = [
+    {
+      id: "1",
+      image: process.env.PUBLIC_URL + '/images/portfolio/wordpress/all_member.png',
+      title: "connect with travelers",
+      websiteUrl: "https://myvisiticelandsocial.webdev.is/members/",
+    }, {
+      id: "2",
+      image: process.env.PUBLIC_URL + '/images/portfolio/wordpress/karla.png',
+      title: "karla tomanelli photography",
+      websiteUrl: "https://karlatomanelli.com/",
+    }, {
+      id: "3",
+      image: process.env.PUBLIC_URL + '/images/portfolio/php/little_wonder.png',
+      title: "Little Wonders Montessori",
+      websiteUrl: "https://www.lwm.qld.edu.au/",
+    }, {
+      id: "4",
+      image: process.env.PUBLIC_URL + '/images/portfolio/php/super_solar.png',
+      title: "super solar system",
+      websiteUrl: "https://super-solar-systems.com/",
+    }, {
+      id: "5",
+      image: process.env.PUBLIC_URL + '/images/portfolio/shopify/selis.png',
+      title: "selis &co interior design",
+      websiteUrl: "https://selisco.com/",
+    }, {
+      id: "6",
+      image: process.env.PUBLIC_URL + '/images/portfolio/magento/comercial.png',
+      title: "comercial dantas",
+      websiteUrl: "https://www.comercialdantas.com.br/",
+    },
+   
   ];
 
-  const wordpressImg = [
-    process.env.PUBLIC_URL + '/images/portfolio/wp/costner_recover.png',
-    process.env.PUBLIC_URL + '/images/portfolio/wp/mamasmarketplace-au-mamasmarketplace.png',
-    process.env.PUBLIC_URL + '/images/portfolio/wp/pt-businessacademy-si.png',
-    process.env.PUBLIC_URL + '/images/portfolio/wp/super-solar-systems.png',
-    process.env.PUBLIC_URL + '/images/portfolio/wp/studioblup.png',
+  const wordpessWebsite = [
+    {
+      id: "1",
+      image: process.env.PUBLIC_URL + '/images/portfolio/wordpress/all_member.png',
+      title: "connect with travelers",
+      websiteUrl: "https://myvisiticelandsocial.webdev.is/members/",
+    }, {
+      id: "2",
+      image: process.env.PUBLIC_URL + '/images/portfolio/wordpress/little_wonder.png',
+      title: "Little Wonders Montessori",
+      websiteUrl: "https://www.lwm.qld.edu.au/",
+    }, {
+      id: "3",
+      image: process.env.PUBLIC_URL + '/images/portfolio/wordpress/karla.png',
+      title: "karla tomanelli photography",
+      websiteUrl: "https://karlatomanelli.com/",
+    }, {
+      id: "4",
+      image: process.env.PUBLIC_URL + '/images/portfolio/wordpress/mynt.png',
+      title: "MYNT Financial",
+      websiteUrl: "https://myntfinancial.com.au/",
+    }, {
+      id: "5",
+      image: process.env.PUBLIC_URL + '/images/portfolio/wordpress/super_solar.png',
+      title: "super solar system",
+      websiteUrl: "https://super-solar-systems.com/",
+    }, {
+      id: "6",
+      image: process.env.PUBLIC_URL + '/images/portfolio/wordpress/mamas_market.png',
+      title: "mama's marketplace",
+      websiteUrl: "https://mamasmarketplace.com.au/",
+    },
   ];
 
-  const phpImg = [
-    process.env.PUBLIC_URL + '/images/portfolio/php/CRM-Project.png',
-    process.env.PUBLIC_URL + '/images/portfolio/php/lucy-exp.png',
-    process.env.PUBLIC_URL + '/images/portfolio/wp/super-solar-systems.png',
+  const phpWebsite = [
+    {
+      id: "1",
+      image: process.env.PUBLIC_URL + '/images/portfolio/php/little_wonder.png',
+      title: "Little Wonders Montessori",
+      websiteUrl: "https://www.lwm.qld.edu.au/",
+    }, {
+      id: "2",
+      image: process.env.PUBLIC_URL + '/images/portfolio/php/super_solar.png',
+      title: "super solar system",
+      websiteUrl: "https://super-solar-systems.com/",
+    }, {
+      id: "3",
+      image: process.env.PUBLIC_URL + '/images/portfolio/php/all_member.png',
+      title: "connect with travelers",
+      websiteUrl: "https://myvisiticelandsocial.webdev.is/members/",
+    }, {
+      id: "4",
+      image: process.env.PUBLIC_URL + '/images/portfolio/php/mamas_market.png',
+      title: "mama's marketplace",
+      websiteUrl: "https://mamasmarketplace.com.au/",
+    }, {
+      id: "5",
+      image: process.env.PUBLIC_URL + '/images/portfolio/php/poclonsic.png',
+      title: "pokloncic",
+      websiteUrl: "https://pokloncic.pro/",
+    },
   ];
 
-  const shopifyImg = [
-    process.env.PUBLIC_URL + '/images/portfolio/shopify/1.png',
-    process.env.PUBLIC_URL + '/images/portfolio/shopify/2.png',
-    process.env.PUBLIC_URL + '/images/portfolio/shopify/3.png',
+  const shopifyWebsite = [
+    {
+      id: "1",
+      image: process.env.PUBLIC_URL + '/images/portfolio/shopify/extee.png',
+      title: "Stylish summer shirts",
+      websiteUrl: "https://extee.com.au/",
+    }, {
+      id: "2",
+      image: process.env.PUBLIC_URL + '/images/portfolio/shopify/fohen.png',
+      title: "E-commerce",
+      websiteUrl: "https://fohen.co.uk/",
+    }, {
+      id: "3",
+      image: process.env.PUBLIC_URL + '/images/portfolio/shopify/naya.png',
+      title: "spring release",
+      websiteUrl: "https://myahookah.com/",
+    }, {
+      id: "4",
+      image: process.env.PUBLIC_URL + '/images/portfolio/shopify/selis.png',
+      title: "Selis &co interior design",
+      websiteUrl: "https://selisco.com/",
+    },
+    , {
+      id: "5",
+      image: process.env.PUBLIC_URL + '/images/portfolio/shopify/hyfa.png',
+      title: "New Arrivals",
+      websiteUrl: "https://heyfancystyle.com/",
+    },
+  ];
+
+  const magentoWebsite = [
+    {
+      id: "1",
+      image: process.env.PUBLIC_URL + '/images/portfolio/magento/comercial.png',
+      title: "comercial dantas",
+      websiteUrl: "https://www.comercialdantas.com.br/",
+    }, {
+      id: "2",
+      image: process.env.PUBLIC_URL + '/images/portfolio/magento/smart_sign.png',
+      title: "E-commerce ksmart sign",
+      websiteUrl: "https://www.ksmartsign.co.uk/",
+    },
   ];
 
   return (
@@ -45,8 +159,8 @@ const Portfolio = () => {
       <div className='portfolio_main'>
         <div className='container'>
           <div className='portfolio_heading'>
-            <p className='litle-dess'>OUR RECENT PROJECT</p>
-            <h2>Take a look at the recent and featured projects that we have completed</h2>
+            <p className='litle-dess'>Explore Our Recent and Featured Projects</p>
+            <h2>Discover our latest and standout projects. From recent innovations to featured highlights, explore our portfolio showcasing excellence and creativity across diverse industries.</h2>
           </div>
 
           <ul className="tabs">
@@ -61,20 +175,20 @@ const Portfolio = () => {
             <div className='row'>
               {
                 activeTab === 1 && <div className="tab_panel port_content">
-                  {allImg.map((image, index) => (
+                  {allDevelopwebsite.map((ele, index) => (
                     <div className='col-md-4' key={index}>
                       <div
                         className={`costner_page_web `}
                         onMouseEnter={() => setHoveredCardIndex(index)}
                         onMouseLeave={() => setHoveredCardIndex(null)}>
-                        <a href='/' >
+                        <Link to={ele.websiteUrl} target="_blank">
                           <div className='card_portfol'>
-                            <img src={image} />
+                            <img src={ele.image} />
                             {/* <div className='page_link_prot'> */}
-                            <h3 href='/' className={hoveredCardIndex === index ? "port_title":""} key={index}>Connolly Plumving And Gas</h3>
+                            <h3 href='/' className={hoveredCardIndex === index ? "port_title" : ""} key={index}>{ele.title}</h3>
                             {/* </div> */}
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   ))}
@@ -83,20 +197,20 @@ const Portfolio = () => {
 
               {
                 activeTab === 2 && <div className="tab_panel port_content">
-                  {phpImg.map((image, index) => (
+                  {phpWebsite.map((ele, index) => (
                     <div className='col-md-4' key={index}>
                       <div
                         className={`costner_page_web `}
                         onMouseEnter={() => setHoveredCardIndex(index)}
                         onMouseLeave={() => setHoveredCardIndex(null)}>
-                        <a href='/' >
+                        <Link to={ele.websiteUrl} target="_blank">
                           <div className='card_portfol'>
-                            <img src={image} />
+                            <img src={ele.image} />
                             {/* <div className='page_link_prot'> */}
-                            <h3 href='/' className="port_title" key={index}>Costner Recovery</h3>
+                            <h3 href='/' className={hoveredCardIndex === index ? "port_title" : ""} key={index}>{ele.title}</h3>
                             {/* </div> */}
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   ))}
@@ -105,20 +219,20 @@ const Portfolio = () => {
 
               {
                 activeTab === 3 && <div className="tab_panel port_content">
-                  {shopifyImg.map((image, index) => (
+                  {shopifyWebsite.map((ele, index) => (
                     <div className='col-md-4' key={index}>
                       <div
                         className={`costner_page_web `}
                         onMouseEnter={() => setHoveredCardIndex(index)}
                         onMouseLeave={() => setHoveredCardIndex(null)}>
-                        <a href='/' >
+                       <Link to={ele.websiteUrl} target="_blank">
                           <div className='card_portfol'>
-                            <img src={image} />
+                            <img src={ele.image} />
                             {/* <div className='page_link_prot'> */}
-                            <h3 href='/' className="port_title" key={index}>Connolly Plumving And Gas</h3>
+                            <h3 href='/' className={hoveredCardIndex === index ? "port_title" : ""} key={index}>{ele.title}</h3>
                             {/* </div> */}
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   ))}
@@ -127,20 +241,20 @@ const Portfolio = () => {
 
               {
                 activeTab === 4 && <div className="tab_panel port_content">
-                  {wordpressImg.map((image, index) => (
+                  {wordpessWebsite.map((ele, index) => (
                     <div className='col-md-4' key={index}>
                       <div
                         className={`costner_page_web `}
                         onMouseEnter={() => setHoveredCardIndex(index)}
                         onMouseLeave={() => setHoveredCardIndex(null)}>
-                        <a href='/' >
+                       <Link to={ele.websiteUrl} target="_blank">
                           <div className='card_portfol'>
-                            <img src={image} />
+                            <img src={ele.image} />
                             {/* <div className='page_link_prot'> */}
-                            <h3 href='/' className="port_title" key={index}>Costner Recovery</h3>
+                            <h3 href='/' className={hoveredCardIndex === index ? "port_title" : ""} key={index}>{ele.title}</h3>
                             {/* </div> */}
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   ))}
@@ -149,20 +263,20 @@ const Portfolio = () => {
 
               {
                 activeTab === 5 && <div className="tab_panel port_content">
-                  {phpImg.map((image, index) => (
+                  {magentoWebsite.map((ele, index) => (
                     <div className='col-md-4' key={index}>
                       <div
                         className={`costner_page_web `}
                         onMouseEnter={() => setHoveredCardIndex(index)}
                         onMouseLeave={() => setHoveredCardIndex(null)}>
-                        <a href='/' >
+                       <Link to={ele.websiteUrl} target="_blank">
                           <div className='card_portfol'>
-                            <img src={image} />
+                            <img src={ele.image} />
                             {/* <div className='page_link_prot'> */}
-                            <h3 href='/' className="port_title" key={index}>Costner Recovery</h3>
+                            <h3 href='/' className={hoveredCardIndex === index ? "port_title" : ""} key={index}>{ele.title}</h3>
                             {/* </div> */}
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   ))}

@@ -3,6 +3,7 @@ import '../css/updateservice.css'
 import JoinTeam from '../components/JoinTeam'
 import { Col, Row } from 'react-bootstrap'
 import TopHeader from '../components/TopHeader'
+import Portfolio from '../components/Portfolio'
 
 export default function UpdatedService() {
 
@@ -13,7 +14,7 @@ export default function UpdatedService() {
                             solutions across the tech spectrum. With our extensive expertise and experience,
                             we're quickly becoming the leader in providing innovative software services for every 
                             domain."/>
-            
+
             {/* <section class="serv_main">
                 <div class="container">
                     <div class="row">
@@ -156,87 +157,88 @@ export default function UpdatedService() {
                 </div>
             </section> */}
             <div class="hexagons_outer section_ptb">
-    <div class="container">
-      <div class="hexagons-title text-center">
-                <h2 class="fs-48 fs-34-mob">We Serve All Industries</h2>
-                    <p class="fs-20 mb-0">We stay on top of our industry by being experts in yours.</p>
+                <div class="container">
+                    <div class="hexagons-title text-center">
+                        <h2 class="fs-48 fs-34-mob">We Serve All Industries</h2>
+                        <p class="fs-20 mb-0">We stay on top of our industry by being experts in yours.</p>
+                    </div>
+                    <div class="hex_1bx">
+                        <div class="ctm_hex_dv1" id="borer_bx_1">
+                            <div class="ctm_hex_dv2">
+                                <a href="/">
+                                    <div class="ctm_hex_dv3" id="bg_inner_bx1">
+                                        <img src="images/service/website_design.png" />
+                                        <span class="text-center fs-20 fw-500">Website Designing </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ctm_hex_dv1" id="borer_bx_2">
+                            <div class="ctm_hex_dv2">
+                                <a href="/">
+                                    <div class="ctm_hex_dv3" id="bg_inner_bx2">
+                                        <img src="images/service/website_develop.png" />
+                                        <span class="text-center fs-20 fw-500">Web Development </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ctm_hex_dv1" id="borer_bx_3">
+                            <div class="ctm_hex_dv2">
+                                <a href="/">
+                                    <div class="ctm_hex_dv3" id="bg_inner_bx3">
+                                        <img src="images/service/graphic_design.png" />
+                                        <span class="text-center  fs-20 fw-500">GRAPHIC DESIGNS</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex_2bx">
+                        <div class="ctm_hex_dv1" id="borer_bx_4">
+                            <div class="ctm_hex_dv2">
+                                <a href="/">
+                                    <div class="ctm_hex_dv3" id="bg_inner_bx4">
+                                        <img src="images/service/mern_stack.png" />
+                                        <span class="text-center fs-20 fw-500">MERN STACK </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ctm_hex_dv1" id="borer_bx_5">
+                            <div class="ctm_hex_dv2">
+                                <a href="/">
+                                    <div class="ctm_hex_dv3" id="bg_inner_bx5">
+                                        <img src="images/service/content_strategy.png" />
+                                        <span class="text-center fs-20 fw-500">CONTENT STRATEGY</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ctm_hex_dv1" id="borer_bx_6">
+                            <div class="ctm_hex_dv2">
+                                <a href="/">
+                                    <div class="ctm_hex_dv3" id="bg_inner_bx6">
+                                        <img src="images/service/framework.png" />
+                                        <span class="text-center fs-20 fw-500">FRAMEWORK</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ctm_hex_dv1" id="borer_bx_7">
+                            <div class="ctm_hex_dv2">
+                                <a href="/">
+                                    <div class="ctm_hex_dv3" id="bg_inner_bx7">
+                                        <img src="images/service/cms_solution.png" />
+                                        <span class="text-center fs-20 fw-500">CMS SOLUTIONS</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-      <div class="hex_1bx">
-        <div class="ctm_hex_dv1" id="borer_bx_1">
-          <div class="ctm_hex_dv2">
-          <a href="/">
-            <div class="ctm_hex_dv3" id="bg_inner_bx1">
-            <img src="images/service/website_design.png" />
-            <span class="text-center fs-20 fw-500">Website Designing </span>
-            </div>
-            </a>
-          </div>
-        </div>
-        <div class="ctm_hex_dv1" id="borer_bx_2">
-          <div class="ctm_hex_dv2">
-          <a href="/">
-            <div class="ctm_hex_dv3" id="bg_inner_bx2">
-            <img src="images/service/website_develop.png" />
-            <span class="text-center fs-20 fw-500">Web Development </span>
-            </div>
-            </a>
-          </div>
-        </div>
-        <div class="ctm_hex_dv1" id="borer_bx_3">
-          <div class="ctm_hex_dv2">
-          <a href="/">
-            <div class="ctm_hex_dv3" id="bg_inner_bx3">
-            <img src="images/service/graphic_design.png" />
-            <span class="text-center  fs-20 fw-500">GRAPHIC DESIGNS</span>
-            </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="hex_2bx">
-        <div class="ctm_hex_dv1" id="borer_bx_4">
-          <div class="ctm_hex_dv2">
-          <a href="/">
-            <div class="ctm_hex_dv3" id="bg_inner_bx4">
-            <img src="images/service/mern_stack.png" />
-            <span class="text-center fs-20 fw-500">MERN STACK </span>
-            </div>
-            </a>
-          </div>
-        </div>
-        <div class="ctm_hex_dv1" id="borer_bx_5">
-          <div class="ctm_hex_dv2">
-          <a href="/">
-            <div class="ctm_hex_dv3" id="bg_inner_bx5">
-              <img src="images/service/content_strategy.png" />
-              <span class="text-center fs-20 fw-500">CONTENT STRATEGY</span>
-            </div>
-            </a>
-          </div>
-        </div>
-        <div class="ctm_hex_dv1" id="borer_bx_6">
-          <div class="ctm_hex_dv2">
-          <a href="/">
-            <div class="ctm_hex_dv3" id="bg_inner_bx6">
-            <img src="images/service/framework.png" />
-            <span class="text-center fs-20 fw-500">FRAMEWORK</span>
-            </div>
-            </a>
-          </div>
-        </div>
-        <div class="ctm_hex_dv1" id="borer_bx_7">
-          <div class="ctm_hex_dv2">
-          <a href="/">
-            <div class="ctm_hex_dv3" id="bg_inner_bx7">
-            <img src="images/service/cms_solution.png" />
-            <span class="text-center fs-20 fw-500">CMS SOLUTIONS</span>
-            </div>
-            </a>  
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
+            <Portfolio/>
             <JoinTeam />
         </div>
     )
