@@ -218,14 +218,14 @@ const Career = () => {
             <h2>Grow Your Careers With <span className='career-company'>Brandclever</span></h2>
           </div>
         </section> */}
-        <section className='career-first-section'> 
+        {/* <section className='career-first-section'> 
             <div className='main-title'>
                 <h1>Growing Organization </h1>
                 
                 <p>We are a dynamic and growing organization that values diversity, innovation, and teamwork.</p>
                 <button onClick={scrollToSection} className='button_slide slide_down'>Your success starts here</button>
             </div>
-        </section>
+        </section> */}
         <section className='why-join'>
             <div className='why-main'>
                 <div className='why-content'>
