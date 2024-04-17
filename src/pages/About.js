@@ -23,21 +23,10 @@ export default class About extends Component {
 
     return (
       <>
-        <div className='abous_secons_main'>
-          <div className='about_us_banner_iamge'>
-            <div className='container'>
-              <div className='row banner_two_rows'>
-                <div className='col-md-7 banner_twoes_divs'>
-                  <h1>About Us</h1>
-                  <p>Brandclever a premier fast growing company in India is committed
+      <TopHeader title="About us" description="Brandclever a premier fast growing company in India is committed
                     to hepling business become more adaptive competitive & profitable. We
-                    have the Attitude, Skills, And Knowledge to deliver the Right Solutions.</p>
-                </div>
-               
-              </div>
-            </div>
-          </div>
-        </div>
+                    have the Attitude, Skills, And Knowledge to deliver the Right Solutions."/>
+        
         <div className='page-about'>
           
           <OwnerInfo />

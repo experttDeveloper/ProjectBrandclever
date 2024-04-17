@@ -2,30 +2,18 @@ import React from 'react'
 import '../css/updateservice.css'
 import JoinTeam from '../components/JoinTeam'
 import { Col, Row } from 'react-bootstrap'
+import TopHeader from '../components/TopHeader'
 
 export default function UpdatedService() {
 
 
     return (
         <div>
-            <div className='serv_cont'>
-                <div className="container">
-                    <Row>
-                       <Col md={6}>
-                        <div className='banner_service'>
-                            <h1>Our Service</h1>
-                            <p>Brandclever emerges as a top-tier IT force, delivering smart and proven 
+            <TopHeader title="Our Service" description="Brandclever emerges as a top-tier IT force, delivering smart and proven 
                             solutions across the tech spectrum. With our extensive expertise and experience,
                             we're quickly becoming the leader in providing innovative software services for every 
-                            domain.</p>
-                        </div>
-                      </Col>
-                      <Col md={6}>
-                        <img src='' />
-                      </Col>
-                    </Row>
-                </div>
-            </div>
+                            domain."/>
+            
             {/* <section class="serv_main">
                 <div class="container">
                     <div class="row">

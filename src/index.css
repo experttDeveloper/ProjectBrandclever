@@ -2431,10 +2431,48 @@ header.sticky {
     background-attachment: fixed;
 }
 
+.main_header{
+    background: url('/public/images/about/aboutbanner.jpg');
+    background-size: cover;
+    width: 100% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 130px 0px 80px;
+    box-shadow: inset 0px 2000px 0px #000000ba;
+    background-attachment: fixed;
+}
+
+.main_header p {
+    color: #fff;
+    font-size: 18px;
+    padding-top: 10px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.main-services {
+    background: url('/public/images/about/aboutbanner.jpg');
+    background-size: cover;
+    width: 100% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 140px 0px;
+    box-shadow: inset 0px 2000px 0px #000000ba;
+    background-attachment: fixed;
+}
+.main-heading_title h1 {
+    font-size: 40px !important;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
 .row.banner_two_rows {
     justify-content: center;
     text-align: center;
 }
+
+
 .abous_secons_main {
     padding-top: 80px !important;
 }
