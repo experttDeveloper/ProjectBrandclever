@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 export default class JoinTeam extends Component {
   render() {
 
-    
     return (
         <div className='join-team'>
         <div className='join-team-inner'>
@@ -20,14 +19,14 @@ export default class JoinTeam extends Component {
           <div className='right-side grid-images'>
             <div className="display-flex-wrap">
               <div className="img-wrap">
-                <img src={process.env.PUBLIC_URL + '/images/join/01.jpg'} alt="" />
+                <img src={process.env.PUBLIC_URL + '/images/gallery/anniversary/3.jpeg'} alt="" style={{height:"210px" ,objectFit:"cover"}}/>
               </div>
               <div className="img-wrap">
                 <div className="img-wrap-inner"> 
                   <img src={process.env.PUBLIC_URL + '/images/join/1.jpg'} alt="" />
                 </div>
                 <div className="img-wrap-inner">
-                  <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/join-team-img3.webp" alt="" />
+                  <img src={process.env.PUBLIC_URL + '/images/gallery/diwali/5.jpeg'} alt="" />
                 </div>
               </div>
             </div>

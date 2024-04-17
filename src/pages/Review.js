@@ -130,7 +130,9 @@ export default class Review extends Component {
     return (
       <div className='review-page'>
         <div className='review-page-inner'>
-          <TopHeader title="Client's Review and Feedback" />
+          <TopHeader title="Client's Review and Feedback" description=
+            "Discover what our clients have to say. Dive into insightful reviews and valuable feedback from satisfied customers, guiding you towards making informed decisions with confidence."
+          />
 
           <div className='testimonial testi_clints'>
             <div className='container'>

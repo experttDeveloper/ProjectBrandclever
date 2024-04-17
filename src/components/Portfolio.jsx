@@ -159,8 +159,7 @@ const Portfolio = () => {
       <div className='portfolio_main'>
         <div className='container'>
           <div className='portfolio_heading'>
-            <p className='litle-dess'>Explore Our Recent and Featured Projects</p>
-            <h2>Discover our latest and standout projects. From recent innovations to featured highlights, explore our portfolio showcasing excellence and creativity across diverse industries.</h2>
+            <h2>Explore Our Recent and Featured Projects</h2>
           </div>
 
           <ul className="tabs">

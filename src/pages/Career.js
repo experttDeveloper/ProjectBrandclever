@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../css/Career.css'  
+import TopHeader from '../components/TopHeader';
 const Career = () => {
     const sectionRef = React.useRef(null);
     const scrollToSection = () => {
@@ -210,12 +211,13 @@ const Career = () => {
     <>
       <div className='career-page'>
       <div className='career-page-inner'>
-        <section className='heading'> 
+        <TopHeader title="Grow Your Careers With Brandclever" description="Unlock your career potential with BrandClever. Explore growth opportunities tailored to you and embark on a journey of professional development."/>
+        {/* <section className='heading'> 
           <div className='banner-heading placement-banner'>
           <img src={process.env.PUBLIC_URL + '/images/certificate/top-developer.png'} alt='test' />
             <h2>Grow Your Careers With <span className='career-company'>Brandclever</span></h2>
           </div>
-        </section>
+        </section> */}
         <section className='career-first-section'> 
             <div className='main-title'>
                 <h1>Growing Organization </h1>
