@@ -33,10 +33,7 @@ export default class About extends Component {
                     to hepling business become more adaptive competitive & profitable. We
                     have the Attitude, Skills, And Knowledge to deliver the Right Solutions.</p>
                 </div>
-                <div className='col-md-5 banner_twoes_divse'>
-                  <img src="images/about/about_right_img.png" />
-
-                </div>
+               
               </div>
             </div>
           </div>

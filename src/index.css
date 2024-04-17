@@ -1456,7 +1456,7 @@ subtitle {
 }
 
 .page-about {
-    padding-top: 80px;
+    padding-top: 30px;
 }
 
 .page-about .banner-heading h2 {
@@ -1465,7 +1465,7 @@ subtitle {
 }
 
 .about-main {
-    margin-bottom: 56px;
+    margin-bottom: 22px;
 }
 
 .about-inner h2 {
@@ -2421,10 +2421,19 @@ header.sticky {
     width: 70%;
 }
 .about_us_banner_iamge {
-    background-image: url('/public/images/about/banner.jfif');
-    background-size: contain;
+    background-image: url('/public/images/about/aboutbanner.jpg');
+    background-size: cover;
     width: 100% !important;
     background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 0px;
+    box-shadow: inset 0px 2000px 0px #000000ba;
+    background-attachment: fixed;
+}
+
+.row.banner_two_rows {
+    justify-content: center;
+    text-align: center;
 }
 .abous_secons_main {
     padding-top: 80px !important;
@@ -2433,13 +2442,11 @@ header.sticky {
     color: #fff;
     font-size: 18px;
     padding-top: 10px;
-    padding-bottom: 200px !important;
 }
 .col-md-7.banner_twoes_divs h1 {
     font-size: 40px !important;
     color: #fff;
-    font-weight: 700;
-    padding-top: 230px !important;
+    font-weight: 700; 
     font-family: Montserrat;
     text-transform: uppercase;
     font-weight: 700;
