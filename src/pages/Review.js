@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import TopHeader from '../components/TopHeader';
+import { Rating } from '@mui/material';
 
 export default class Review extends Component {
 
@@ -135,27 +136,87 @@ export default class Review extends Component {
               <TopHeader title="Client's Review and Feedback" description=
                 "Discover what our clients have to say. Dive into insightful reviews and valuable feedback from satisfied customers, guiding you towards making informed decisions with confidence."
               />
-               </div>
-              <div className='reviw_colms'>
-                <div className='container'>
-                  <h1 className='rev_hi'>Testimonial</h1>
-                    <div className='testi_row'>
-                        <div className='row'>
-                            <div className='col-md-4'>
-                                <div className='review-testo'>
-                                     <div className=''></div>
-                                </div>
+            </div>
+            <div className='reviw_colms'>
+              <div className='container'>
+                <h1 className='rev_hi'>Testimonial</h1>
+                <div className='testi_row'>
+                  <div className='row'>
+                    <div className='col-md-4'>
+                      <div className='review-testo'>
+                        <div className='Testmono_clint'>
+                          <div className='icon_client'>
+                            <span class="icon">“</span>
+                          </div>
+                          <div className='tstim_ine'>
+                            <p>{testimonials[2].text}
+                            </p>
+                            <div className='clint_name_star'>
+                              <div className='clint_name'>
+                                <h3>{testimonials[2].name}</h3>
+                                <p>{testimonials[2].country}</p>
+                              </div>
+                              <div className='star_clint'>
+                                <Rating value={testimonials[2].rating} readOnly />
+                              </div>
                             </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
+                    <div className='col-md-4'>
+                      <div className='review-testo'>
+                        <div className='Testmono_clint'>
+                          <div className='icon_client'>
+                            <span class="icon">“</span>
+                          </div>
+                          <div className='tstim_ine'>
+                            <p>{testimonials[2].text}
+                            </p>
+                            <div className='clint_name_star'>
+                              <div className='clint_name'>
+                                <h3>{testimonials[2].name}</h3>
+                                <p>{testimonials[2].country}</p>
+                              </div>
+                              <div className='star_clint'>
+                                <Rating value={testimonials[2].rating} readOnly />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className='col-md-4'>
+                      <div className='review-testo'>
+                        <div className='Testmono_clint'>
+                          <div className='icon_client'>
+                            <span class="icon">“</span>
+                          </div>
+                          <div className='tstim_ine'>
+                            <p>{testimonials[2].text}
+                            </p>
+                            <div className='clint_name_star'>
+                              <div className='clint_name'>
+                                <h3>{testimonials[2].name}</h3>
+                                <p>{testimonials[2].country}</p>
+                              </div>
+                              <div className='star_clint'>
+                                <Rating value={testimonials[2].rating} readOnly />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            <div>
-
             </div>
           </div>
-        </div>
+          <div>
 
+          </div>
+        </div>
       </>
     )
   }
