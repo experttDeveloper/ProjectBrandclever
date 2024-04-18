@@ -20,10 +20,10 @@ const Banner = () => {
     if (mounted) {
       const typed = new Typed(".typing", {
         strings: [
-          "Web Development Service.",
-          "Web Design Service.",
-          "CMS Solution Service.",
-          "Graphic Design Service."
+          "Web Development Service",
+          "Web Design Service",
+          "CMS Solution Service",
+          "Graphic Design Service"
         ],
         typeSpeed: 100,
         backSpeed: 60,
