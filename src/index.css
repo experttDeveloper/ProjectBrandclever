@@ -1510,7 +1510,7 @@ subtitle {
 /************** Join Our Team **********************/
 .join-team {
     background-color: #f7f7f7;
-    padding: 50px 0;
+    padding: 47px 0px 30px;
 }
 .join-team .join-team-inner {
     display: flex;
@@ -1569,6 +1569,7 @@ subtitle {
 }
 .join-team .img-wrap-inner {
     padding: 5px;
+    padding-bottom: 20px;
 }
 
 .join-team .left-side {
@@ -1706,9 +1707,7 @@ footer {
 /* Training & Placement css end here  */
 
 /*review-page css start here*/
-.review-page .review-page-inner {
-    padding-top: 100px;
-}
+
 
 .banner-heading.review-banner h2 {
     background: #101010 !important;

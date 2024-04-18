@@ -128,36 +128,35 @@ export default class Review extends Component {
     ];
 
     return (
-      <div className='review-page'>
-        <div className='review-page-inner'>
-          <TopHeader title="Client's Review and Feedback" description=
-            "Discover what our clients have to say. Dive into insightful reviews and valuable feedback from satisfied customers, guiding you towards making informed decisions with confidence."
-          />
-
-          <div className='testimonial testi_clints'>
-            <div className='container'>
-              <div className='testimonial-inner'>
-                <p className='subtitle'>Testimonial</p>
-                <h3 className='text-center p-5'> WHAT OUR CLIENT’S SAY </h3>
-                <div className='reviesOfClient'>
-                  {testimonials.map(testimonial => (
-                    <div key={testimonial.id} className='item'>
-                      <img src={testimonial.image} alt={testimonial.name} />
-                      <h3>{testimonial.name}</h3>
-                      <p className='country'>{testimonial.country}</p>
-                      <span className='review-date'>{testimonial.date}</span>
-                      <span className="ti-stars"> <i className="fa fa-star" aria-hidden="true"></i> <i className="fa fa-star" aria-hidden="true"></i> <i className="fa fa-star" aria-hidden="true"></i> <i className="fa fa-star" aria-hidden="true"></i> <i className="fa fa-star" aria-hidden="true"></i></span>
-                      <p>{testimonial.text}</p>
-                      <div className='tecnoLogo'><img src={testimonial.tecnology} alt={testimonial.name} /></div>
+      <>
+        <div className='review_clint'>
+          <div className='review-page'>
+            <div className='review-page-inner'>
+              <TopHeader title="Client's Review and Feedback" description=
+                "Discover what our clients have to say. Dive into insightful reviews and valuable feedback from satisfied customers, guiding you towards making informed decisions with confidence."
+              />
+               </div>
+              <div className='reviw_colms'>
+                <div className='container'>
+                  <h1 className='rev_hi'>Testimonial</h1>
+                    <div className='testi_row'>
+                        <div className='row'>
+                            <div className='col-md-4'>
+                                <div className='review-testo'>
+                                     <div className=''></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  ))}
                 </div>
               </div>
+            <div>
+
             </div>
           </div>
-
         </div>
-      </div>
+
+      </>
     )
   }
 }
