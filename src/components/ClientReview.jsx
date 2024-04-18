@@ -38,61 +38,46 @@ const testimonialImg = [
   const testimonials = [
     {
       id: 1,
-      name: 'Solomon',
-      country: 'United States',
-      date: '25. January, 2024',
+      name: 'David',
+      country: 'Israel',
+      rating:5,
       image: testimonialImg[0],
       tecnology: tecNoImg[5],
-      text: 'Our project was related to CRM implementation. Brandclever was very helpful and completed the tasks we needed'
+      text: 'Working with Brandclever was a real pleasure. It is professional, communicative and always available. I will definitely like to work with Brandclever in the future!'
     },
     {
       id: 2,
-      name: 'Judi ',
-      country: 'United States',
-      date: '03. November, 2023',
+      name: 'JP ',
+      rating:5,
+      country: 'Netherland',
       image: testimonialImg[1],
       tecnology: tecNoImg[11],
-      text: 'Branclever did an excellent job - not only with the verbage, but cleaning up my site to make it more clear and concise for my customers. She also added SEO (which I had no knowledge of how to do it). I had a few tweaks and she did what I asked of her - making my site light and welcoming. If need be I would definitely use her again. Thank you Brandclever.'
+      text: 'A talented, dedicated and very nice professional. Great communication. Thank you very much for all your help.'
     },
     {
       id: 3,
-      name: 'Alex Evans',
-      country: 'United Kingdom',
-      date: '07. December, 2023',
+      name: 'Simone',
+      rating:5,
+      country: 'Australia',
       image: testimonialImg[2],
       tecnology: tecNoImg[9],
-      text: 'Manish is very well structured and organised. He gives very clear instructions on any technical questions. He clearly knows his was around web builds. His communication is very consistent and always finds the time to carry out the work and fast. I look forward to working to working with them again.'
+      text: "I would highly recommend Brandclever. It was a pleasure working with Manish. He wrote clean, well-commented code, followed instructions without a problem, and voluntarily sent me a status update. I'd give him 6 stars if I could."
     },
     {
       id: 4,
-      name: 'Kathy',
-      country: 'United States',
-      date: '12. January, 2024',
+      name: 'Alex',
+      rating:5,
+      country: 'United kingdom',
       image: testimonialImg[3],
       tecnology: tecNoImg[16],
-      text: 'The project started, was done, and completed in an exceptional, 10-star way. Mansi, Manish and his team were great on all levels: communication, documentation, UX designs, planning, implementation, and always on time. I highly recommend Manish and his team'
-    },
-    {
-      id: 5,
-      name: 'Adam Viszler',
-      country: 'United Kingdom',
-      date: '28. November, 2023',
-      image: testimonialImg[4],
-      tecnology: tecNoImg[5],
-      text: 'Very very satisfied with Manish. He did an outstanding job! I had a complicated multilayered project for him and he did everything exactly as asked. Satisfied my expectations. Will try to work with Manish again in the future when I can.'
-    },
-    // Add more testimonials as needed
+      text: 'Brandclever is very well structured and organised. He gives very clear instructions on any technical questions. Brandclever clearly knows his was around web builds. His communication is very consistent and always finds the time to carry out the work and fast.I look forward to working to working with them again.'
+    }
   ];
 
 const ClientReview = () => {
     
 
-    useEffect(() => {
-        fetch("https://dummy.restapiexample.com/api/v1/employees")
-            .then((response) => console.log("responde", response.json()))
-            .then((json) => console.log(json));
-    })
-
+    
     const options = {
         loop: true,
         margin: 10,
@@ -144,7 +129,7 @@ const ClientReview = () => {
                                             <p>{testimonials[0].country}</p>
                                         </div>
                                         <div className='star_clint'>
-                                            <Rating value={5} readOnly />
+                                            <Rating value={testimonials[0].rating} readOnly />
                                         </div>
                                     </div>
                                 </div>
@@ -167,7 +152,7 @@ const ClientReview = () => {
                                         <p>{testimonials[1].country}</p>
                                     </div>
                                     <div className='star_clint'>
-                                        <Rating value={4} readOnly />
+                                        <Rating value={testimonials[1].rating} readOnly />
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +173,7 @@ const ClientReview = () => {
                                             <p>{testimonials[2].country}</p>
                                         </div>
                                         <div className='star_clint'>
-                                            <Rating value={5} readOnly />
+                                        <Rating value={testimonials[2].rating} readOnly />
                                         </div>
                                     </div>
                                 </div>
@@ -210,7 +195,7 @@ const ClientReview = () => {
                                         <p>{testimonials[3].country}</p>
                                     </div>
                                     <div className='star_clint'>
-                                        <Rating value={4} readOnly />
+                                        <Rating value={testimonials[3].rating} readOnly />
                                     </div>
                                 </div>
                             </div>
