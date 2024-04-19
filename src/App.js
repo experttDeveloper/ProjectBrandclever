@@ -24,7 +24,7 @@ import CMSSolution from './components/services/CMSSolution';
 import PageNotFound from './pages/PageNotFound'
 import AboutPage from './pages/AboutPage';
 import UpdatedService from './pages/UpdatedService';
-import ContactForm from './components/ContactForm';
+import Contact from './pages/Contact';
 
 
 
@@ -49,7 +49,7 @@ export default class App extends Component {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/blogs" element={<Blogs />} />
-            <Route path="/contact" element={<ContactForm />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             {/* <Route path="/about" element={<AboutPage />} /> */}
             {/* <Route path="/service" element={<Service />} /> */}

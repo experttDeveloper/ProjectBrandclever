@@ -63,7 +63,7 @@ const Home = () => {
         <OurServices />
         {/* <PlatForms images={columnImages} /> */}
         {/* <Tabs /> */}
-        <Portfolio/>
+        <Portfolio />
         {/* <Activity /> */}
 
         {/* <TestimonialCarousel /> */}
@@ -73,7 +73,6 @@ const Home = () => {
         <div className='faq_Contact_Sec'>
           <Faq />
           <ContactForm />
-
         </div>
       </div>
 

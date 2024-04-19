@@ -1,7 +1,11 @@
 import React from 'react';
 import ContactForm from '../components/ContactForm';
 import { Link } from 'react-router-dom';
- 
+import TopHeader from '../components/TopHeader';
+import { Col, Container, Row } from 'react-bootstrap';
+import { Typography } from '@mui/material';
+import { EmailOutlined, LocationCityOutlined, PhoneAndroid } from '@mui/icons-material';
+
 
 const Contact = () => {
   const divStyle = {
@@ -15,73 +19,60 @@ const Contact = () => {
   ];
 
   return (
-    <div className='main-contact-page'>
-      <div className='contact-page-inner'>
-        <section className='heading' style={divStyle}> 
-          <div className='formSectionCTC'>
-            <div className='ctc-inner'>
-              <div className='ctc-left'>
-                <h2>Kickstart Your Digital <br />Journey Today</h2> 
-                <p>Get all your questions answered by <br />our business development team.</p>
-                <span><Link to='/career'>For Career</Link></span>
-              </div>
-              <div className='ctc-right'>
+    <>
+      <TopHeader
+        title={"Connect With Us"}
+        description={"Reach out to us with any questions, feedback, or inquiries you may have. We're here to help! Contact us today and let's start the conversation."}
+      />
+      <div className='contact_us_section'>
+        <div className="contact_us_first">
+
+          <Container>
+            <Row>
+              <Col md={6}>
+                <Typography variant='h3' >
+                  Collaborative Ventures!
+                </Typography>
+                <Typography variant='h5'>
+                  Get in touch to brainstorm your business idea.
+                </Typography>
+                <Typography variant='p'>
+                  Unlock the full potential of your digital product with our comprehensive services. From design and development to scaling for growth, we're here to tailor solutions to your unique business challenges. Let's collaborate to turn your vision into reality.
+                </Typography>
+              </Col>
+              <Col md={6}>
+                <img src='https://devexhub.com/images/phone.png' className='contact_form_img' />
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="contact_us_second">
+            <Row>
+              <Col md={6}>
+                <Typography variant='h3'>
+                  Send us a Message!
+                </Typography>
+                <Typography variant='p'>
+                  We are happy to answer any questions. Talk to our team of experts to help make informed decisions for top-notch outcomes. Just fill out this short form and we will get back to you shortly.
+                </Typography>
+                <Typography variant='p'>
+                  <PhoneAndroid />+91-9872711866
+                </Typography>
+                <Typography variant='p'>
+                  <EmailOutlined />career@brandclever.in
+                </Typography>
+                <Typography variant='p'>
+                  <LocationCityOutlined />4th Floor, F-301, Bansal Tower, Phase 8B, Industrial Area, Sector 74, Brandclever, Sahibzada Ajit Singh Nagar, Punjab 160055
+                </Typography>
+              </Col>
+              <Col md={6}>
                 <ContactForm />
-              </div> 
-            </div>
-          </div>
-        </section>
- 
-        {/* new section code start here */}
-        <div className='section-420'>
-        <div className='heading-contact'>
-          <h3> FEEL FREE TO CONTACT US <span className='anitime'>ANYTIME</span> </h3>
+              </Col>
+            </Row>
         </div>
-        <div className='des'>
-          <p>With representatives around the world and products and services for every aspect of your business, Brandclever is eager to help your IT needs. We try to be the most responsive to your inquiries and emails. Towards this, we connect you directly with the people who will respond to your emails and calls. You can help us, respond quickly by choosing the most appropriate contact information.</p>
-        </div>
-        </div>
-
-
-
-        <div className="contact-section-430">
-                <div className="contact-item-1">
-                <div className='bk-add'>
-                    <i className="fa fa-map-marker" aria-hidden="true"></i>
-                    </div>
-                  <h2>ADDRESS</h2>
-                    <div className="content-1">4th Floor, F-301, Bansal Tower, Phase 8B, Industrial Area, Sector 74, Brandclever, Sahibzada Ajit Singh Nagar, Punjab 160055</div>
-                </div>
-
-                <div className="contact-item-2">
-                <div className='bk-em'>
-                <i className="fa fa-envelope" aria-hidden="true"></i>
-                </div>
-                <h2>EMAIL</h2>
-                    <div className="content-2">career@brandclever.in</div>
-                </div>
-
-                <div className="contact-item-3">
-                <div className='bk-ph'>
-                <i className="fa fa-phone-square" aria-hidden="true"></i>
-                </div>
-                <h2>PHONE</h2>
-                    <div className="content-3">9872711866</div>
-                </div>
-          </div>
-
-        <div className='digital-seamlessly'>
-          <div className='left-digital'>
-            <h3>Enable Unmatched Digital Transformation Seamlessly</h3>
-            <span className='btn button_slide slide_down'><Link to=''>Talk to Our Experts</Link></span>
-          </div>
-          <div className='right-digital'>
-             <img src={expert[0]} alt='Our Expert' />
-          </div> 
-        </div>
-          
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.2596703031263!2d76.68748917438705!3d30.711099586679968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef8cd36051e7%3A0xdfdada19c12e600f!2sBrandclever!5e0!3m2!1sen!2sin!4v1713517955171!5m2!1sen!2sin" width="100%" height="450" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    </div>
+    </>
   );
 };
 
