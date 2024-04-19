@@ -153,11 +153,6 @@ const NavBar = () => {
                                   <img src={ele.icon} height="30px" width="30px" />
                                   <Link to={ele.url}>{ele.title}</Link>
                                 </div>
-                                // {/* <Link to='/web-development'>Web Development</Link>
-                                // <Link to='/graphic-degin'>Graphic Designs</Link>
-                                // <Link to='/mern-stack'>Mern Stack</Link>
-                                // <Link to='/content-strategy'>Content Strategy</Link>
-                                // <Link to='/framework'>Framework</Link> */}
                               )
                             })}
                           </div>
@@ -169,11 +164,6 @@ const NavBar = () => {
                                     <img src={ele.icon} height="30px" width="30px" />
                                     <Link to={ele.url}>{ele.title}</Link>
                                   </div>
-                                  //       {/* <Link to='/landing-page'>Landing Page</Link>
-                                  // <Link to='/ecommerce'>Ecommerce</Link>
-                                  // <Link to='/digital-marketing'>Digital Marketing</Link>
-                                  // <Link to='/web-application'>Web Application Development</Link>
-                                  // <Link to='/software-testing'>Software Testing</Link> */}
                                 )
                               })
                             }

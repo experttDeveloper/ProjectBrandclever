@@ -1139,6 +1139,10 @@ section#schedules .showcase {
     background-color: #000000 !important;
 }
 
+.client_review_row{
+    gap: 30px;
+}
+
 .testimonial .tecnoLogo {
     padding-top: 15px;
 }

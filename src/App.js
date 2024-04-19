@@ -4,7 +4,6 @@ import './responsive.css';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Blogs from './pages/Blogs';
-import Contact from './pages/Contact';
 import About from './pages/About';
 import Service from './pages/Service';
 import Footer from './components/Footer';
@@ -25,6 +24,7 @@ import CMSSolution from './components/services/CMSSolution';
 import PageNotFound from './pages/PageNotFound'
 import AboutPage from './pages/AboutPage';
 import UpdatedService from './pages/UpdatedService';
+import ContactForm from './components/ContactForm';
 
 
 
@@ -49,7 +49,7 @@ export default class App extends Component {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/blogs" element={<Blogs />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<ContactForm />} />
             <Route path="/about" element={<About />} />
             {/* <Route path="/about" element={<AboutPage />} /> */}
             {/* <Route path="/service" element={<Service />} /> */}
