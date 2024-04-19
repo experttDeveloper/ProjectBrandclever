@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "question": "What services does Brandclever offer?",
+            "answer": "Brandclever offers comprehensive IT services including web design & development, software development, IT consulting, cloud solutions, and cybersecurity services."
+        },
+        {
+            "id": 2,
+            "question": "How can Brandclever help my business with IT services and consulting?",
+            "answer": "Brandclever provides strategic IT consulting and customized solutions to streamline operations, enhance productivity, and achieve business objectives through innovative technology."
+        },
+        {
+            "id": 3,
+            "question": "How does Brandclever approach client projects?",
+            "answer": "Brandclever collaborates closely with clients to understand their needs and challenges, providing personalized solutions with a focus on quality and timely delivery."
+        },
+        {
+            "id": 4,
+            "question": "Can Brandclever assist with both small-scale and large-scale IT projects?",
+            "answer": "Yes, Brandclever has the capability and experience to handle projects of all sizes, ensuring successful outcomes regardless of scale."
+        },
+        {
+            "id": 5,
+            "question": "Does Brandclever provide ongoing support and maintenance for implemented solutions?",
+            "answer": "Yes, Brandclever offers ongoing support and maintenance services to ensure the continued smooth operation and performance of implemented solutions."
+        },
+        {
+            "id": 6,
+            "question": "What is the typical project completion timeline with Brandclever?",
+            "answer": "Project timelines vary based on scope and complexity, with Brandclever committed to delivering projects efficiently while maintaining high standards."
+        }
+    ]
+  }

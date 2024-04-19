@@ -151,7 +151,7 @@ const NavBar = () => {
                               return (
                                 <div className='service_img'>
                                   <img src={ele.icon} height="30px" width="30px" />
-                                  <Link to='/website-design'>{ele.title}</Link>
+                                  <Link to={ele.url}>{ele.title}</Link>
                                 </div>
                                 // {/* <Link to='/web-development'>Web Development</Link>
                                 // <Link to='/graphic-degin'>Graphic Designs</Link>
@@ -167,7 +167,7 @@ const NavBar = () => {
                                 return (
                                   <div className='service_img'>
                                     <img src={ele.icon} height="30px" width="30px" />
-                                    <Link to='/website-design'>{ele.title}</Link>
+                                    <Link to={ele.url}>{ele.title}</Link>
                                   </div>
                                   //       {/* <Link to='/landing-page'>Landing Page</Link>
                                   // <Link to='/ecommerce'>Ecommerce</Link>
