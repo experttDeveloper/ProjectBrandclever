@@ -91,6 +91,9 @@
 .hex_2bx {
     margin-top: -75px
 }
+.hex_1bx.third_box {
+    margin-top: -76px;
+}
 
 .ctm_hex_dv3 img {
     height: 40px;

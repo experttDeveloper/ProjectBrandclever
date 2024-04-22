@@ -1,0 +1,94 @@
+{
+    "data": [
+        {
+            "allCategoryImages": [
+                "/images/gallery/pt1.jpg",
+                "/images/gallery/pt2.jpg",
+                "/images/gallery/pt3.jpg",
+                "/images/gallery/pt4.jpg",
+                "/images/gallery/pt5.jpg",
+                "/images/gallery/pt1.jpg",
+                "/images/gallery/pt2.jpg",
+                "/images/gallery/pt3.jpg",
+                "/images/gallery/pt4.jpg",
+                "/images/gallery/pt5.jpg"
+            ]
+        },
+        {
+            "christmasImg": [
+                "/images/gallery/christmas/1.jpeg",
+                "/images/gallery/christmas/2.jpeg",
+                "/images/gallery/christmas/3.jpeg",
+                "/images/gallery/christmas/4.jpeg",
+                "/images/gallery/christmas/5.jpeg",
+                "/images/gallery/christmas/6.jpeg",
+                "/images/gallery/christmas/7.jpeg",
+                "/images/gallery/christmas/8.jpeg",
+                "/images/gallery/christmas/9.jpeg",
+                "/images/gallery/christmas/10.jpeg"
+            ]
+        },
+        {
+            "bdayImg": [
+                "/images/gallery/birthday/1.jpg",
+                "/images/gallery/birthday/2.jpg",
+                "/images/gallery/birthday/3.jpg",
+                "/images/gallery/birthday/4.jpg",
+                "/images/gallery/birthday/5.jpg",
+                "/images/gallery/birthday/6.jpg",
+                "/images/gallery/birthday/7.jpg",
+                "/images/gallery/birthday/8.jpeg",
+                "/images/gallery/birthday/9.jpeg"
+            ]
+        },
+        {
+            "diwaliImg": [
+                "/images/gallery/diwali/1.jpeg",
+                "/images/gallery/diwali/2.jpg",
+                "/images/gallery/diwali/3.jpeg",
+                "/images/gallery/diwali/4.jpeg",
+                "/images/gallery/diwali/5.jpeg"
+            ]
+        },
+        {
+            "holiImg": [
+                "/images/gallery/holi/1.jpeg",
+                "/images/gallery/holi/2.jpeg",
+                "/images/gallery/holi/3.jpeg",
+                "/images/gallery/holi/4.jpeg",
+                "/images/gallery/holi/5.jpeg"
+            ]
+        },
+        {
+            "anniversaryImg": [
+                "/images/gallery/anniversary/1.jpg",
+                "/images/gallery/anniversary/2.jpeg",
+                "/images/gallery/anniversary/3.jpeg",
+                "/images/gallery/anniversary/4.jpeg",
+                "/images/gallery/anniversary/5.jpeg",
+                "/images/gallery/anniversary/6.jpeg",
+                "/images/gallery/anniversary/7.jpeg",
+                "/images/gallery/anniversary/8.jpeg"
+            ]
+        },
+        {
+            "videos": [
+                "/images/gallery/video/1.mp4",
+                "/images/gallery/video/2.mp4",
+                "/images/gallery/video/3.mp4",
+                "/images/gallery/video/4.mp4",
+                "/images/gallery/video/5.mp4",
+                "/images/gallery/video/6.mp4",
+                "/images/gallery/video/7.mp4",
+                "/images/gallery/video/8.mp4",
+                "/images/gallery/video/9.mp4",
+                "/images/gallery/video/10.mp4",
+                "/images/gallery/video/11.mp4",
+                "/images/gallery/video/12.mp4",
+                "/images/gallery/video/13.mp4",
+                "/images/gallery/video/14.mp4",
+                "/images/gallery/video/15.mp4"
+            ]
+        }
+    ]
+}

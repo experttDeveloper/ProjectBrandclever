@@ -39,7 +39,7 @@ export default function UpdatedService() {
                         })}
                     </div>
                     <div class="hex_2bx">
-                        {services.data.slice(3, 8).map((service, key) => {
+                        {services.data.slice(3, 7).map((service, key) => {
                             return (
                                 <div class="ctm_hex_dv1" id="borer_bx_4">
                                     <div class="ctm_hex_dv2">
@@ -54,6 +54,22 @@ export default function UpdatedService() {
                             )
                         })}
 
+                    </div>
+                    <div class="hex_1bx third_box">
+                        {services.data.slice(7, 10).map((service, key) => {
+                            return (
+                                <div class="ctm_hex_dv1" id="borer_bx_1">
+                                    <div class="ctm_hex_dv2">
+                                        <Link to={service.url}>
+                                            <div class="ctm_hex_dv3" id="bg_inner_bx1">
+                                                <img src={service.icon} />
+                                                <span class="text-center fs-20 fw-500">{service.title}</span>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </div>
+                            )
+                        })}
                     </div>
                 </div>
             </div>

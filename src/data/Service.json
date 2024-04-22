@@ -108,6 +108,54 @@
         "Performance optimization",
         "PHP Framework Migration"
       ]
+    },
+    {
+      "id": "8",
+      "title": "Landing Page",
+      "icon": "images/service/landing_page.png",
+      "description": "Content Management Solutions using technologies like WordPress, Shopify, Magento 2.",
+      "additionalInfo": "<ul><li>Content Creation and Storage</li><li>User Access Control</li><li>Workflow Automation</li><li>Multi-Platform Publishing</li><li>Content Analysis</li><li>Content Migration Services</li></ul>",
+      "url": "/landing-page",
+      "tools": [
+        "PHP - CMS Development",
+        "Custom PHP Framework Development",
+        "PHP Framework API Integration",
+        "PHP Framework Plugin Development",
+        "Performance optimization",
+        "PHP Framework Migration"
+      ]
+    },
+    {
+      "id": "9",
+      "title": "E-commerce",
+      "icon": "images/service/ecommerce.png",
+      "description": "Content Management Solutions using technologies like WordPress, Shopify, Magento 2.",
+      "additionalInfo": "<ul><li>Content Creation and Storage</li><li>User Access Control</li><li>Workflow Automation</li><li>Multi-Platform Publishing</li><li>Content Analysis</li><li>Content Migration Services</li></ul>",
+      "url": "/ecommerce",
+      "tools": [
+        "PHP - CMS Development",
+        "Custom PHP Framework Development",
+        "PHP Framework API Integration",
+        "PHP Framework Plugin Development",
+        "Performance optimization",
+        "PHP Framework Migration"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Digital Marketing",
+      "icon": "images/service/digital_marketing.png",
+      "description": "Content Management Solutions using technologies like WordPress, Shopify, Magento 2.",
+      "additionalInfo": "<ul><li>Content Creation and Storage</li><li>User Access Control</li><li>Workflow Automation</li><li>Multi-Platform Publishing</li><li>Content Analysis</li><li>Content Migration Services</li></ul>",
+      "url": "/digital-marketing",
+      "tools": [
+        "PHP - CMS Development",
+        "Custom PHP Framework Development",
+        "PHP Framework API Integration",
+        "PHP Framework Plugin Development",
+        "Performance optimization",
+        "PHP Framework Migration"
+      ]
     }
   ]
 }
