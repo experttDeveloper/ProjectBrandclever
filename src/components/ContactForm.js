@@ -103,10 +103,9 @@ export default class ContactForm extends Component {
 
     return (
       <>
-        <form ref={this.myFormRef} onSubmit={this.addFormData} style={{width:'100%' ,padding:"3rem"}}>
+        <form ref={this.myFormRef} onSubmit={this.addFormData} style={{ width: '100%', padding: "3rem" }}>
           <div className="form-group">
             <TextField
-            fullWidth
               variant="outlined"
               type="text"
               className={`form-control ${errors.name && 'is-invalid'}`}
@@ -153,7 +152,7 @@ export default class ContactForm extends Component {
             ></textarea>
             {errors.message && <div className="invalid-feedback">{errors.message}</div>}
           </div>
-          <Button type="submit" className="button_slide slide_down form_submit_btn" sx={{background:"#54a154"}}>
+          <Button type="submit" className="button_slide slide_down form_submit_btn" sx={{ background: "#54a154" }}>
             Submit
           </Button>
           <span id='successMsg'></span>

@@ -38,7 +38,7 @@ const Contact = () => {
                   Get in touch to brainstorm your business idea.
                 </Typography>
                 <Typography variant='p'>
-                  Unlock the full potential of your digital product with our comprehensive services. From design and development to scaling for growth, we're here to tailor solutions to your unique business challenges. Let's collaborate to turn your vision into reality.
+                  Maximize the impact of your digital product with our all-inclusive services. We cover everything from design and development to scaling for growth, customizing solutions to meet your business's specific needs. Let's work together to bring your vision to life.
                 </Typography>
               </Col>
               <Col md={6} className='contact_video'>
@@ -54,12 +54,12 @@ const Contact = () => {
               <Col md={6}>
                 <div className='contact_des'>
 
-                <Typography variant='h3'>
-                  Send us a Message!
-                </Typography>
-                <Typography variant='p'>
-                  We are happy to answer any questions. Talk to our team of experts to help make informed decisions for top-notch outcomes. Just fill out this short form and we will get back to you shortly.
-                </Typography>
+                  <Typography variant='h3'>
+                    Send us a Message!
+                  </Typography>
+                  <Typography variant='p'>
+                    We're here to help with any questions you might have. Connect with our expert team to get the guidance you need for outstanding results. Simply fill out this quick form, and we'll get back to you soon.
+                  </Typography>
                 </div>
                 <div className='contact_media'>
                   <Typography variant="subtitle1">
