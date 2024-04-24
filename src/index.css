@@ -1,8 +1,9 @@
 :root {
-    --background-color: #292b32;
     --white-color: #ffffff;
     --black-color: #292b32;
     --green-color: #54a154;
+    --dark-black-color:#000;
+    --paragraph-color:#212529;
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
@@ -29,7 +30,13 @@ a {
     align-items: center;
     padding: 20px 0px;
 }
-
+li.pages_navbar .dropdown-content {
+    width: fit-content;
+    max-width: 17% !important;
+    text-align: left;
+    position: absolute;
+    left: 63% !important;
+}
 .column {
     flex: 1;
     margin: 0 10px;
@@ -42,14 +49,16 @@ a {
     height: auto;
     border-radius: 8px;
 }
-
+a.dropbtn {
+    text-transform: uppercase;
+}
 .inner_header_nav nav ul {
     display: flex;
     list-style: none;
     gap: 45px;
     margin: 0px;
     align-items: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1px;
 }
 
@@ -111,12 +120,17 @@ h2 {
 }
 
 .testi_heding h2 {
-    color: #000;
+    color: var(--black-color);
     padding-bottom: 0px;
     font-weight: 700;
     font-size: 45px;
 }
-
+.tstim_ine p{
+    color: var(--paragraph-color);
+}
+.clint_name_star .clint_name h3 {
+color: var(--black-color);
+}
 .testi_heding {
     width: 45%;
     margin-left: auto;
@@ -358,13 +372,13 @@ img.signature {
 }
 
 body {
-    background: var(--background-color);
+    background: var(--black-color);
     position: relative;
     z-index: -1;
 }
 
 .footer_Sec {
-    background-color: var(--background-color);
+    background-color: var(--black-color);
     color: var(--white-color);
     text-align: center;
     padding:1rem;
@@ -707,7 +721,7 @@ p.subtitle {
     display: flex;
     gap: 10px;
     font-size: 14px;
-    color: #cdcdcd !important;
+    color: var(--white-color);
     padding-right: 20px;
 }
 
@@ -725,7 +739,7 @@ p.subtitle {
 
 .footer-phone a,
 .footer-email a {
-    color: #cdcdcd !important;
+    color: var(--white-color);
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -764,10 +778,25 @@ ul.portfolio-links li,
 ul.quick-links li {
     margin: 10px 0;
 }
-
+.form-group .MuiFormControl-root input {
+    color: var(--black-color);
+    font-size: 15px;
+    font-weight: 600;
+}
+textarea#message::placeholder {
+    color: #9b9b9b;
+    font-size: 15px;
+    font-weight: 600;
+}
+li.pages_navbar a:hover {
+    color: #54a154 !important;
+}
+.faq-inner .question span:hover {
+    color: #54a154 !important;
+}
 .footer-inner ul li a,
 .footer-inner ul li a {
-    color: #cdcdcd !important;
+    color: var(--white-color);
     font-size: 16px;
     text-decoration: none;
     font-weight: 300;
@@ -1573,14 +1602,14 @@ h6 {
 }
 
 .industryDemands-items .col:nth-child(4n) {
-    border-right: 0 solid #3c3c3c;
+    border-right: 0 solid var(--paragraph-color);
 }
 
 .industryDemands-items .col:nth-child(9),
 .col:nth-child(10),
 .col:nth-child(11),
 .col:nth-child(12) {
-    border-bottom: 1px solid #000 !important;
+    /* border-bottom: 1px solid var(--paragraph-color) !important; */
 }
 
 /***************** IndustryDemands end *************************/
@@ -2112,7 +2141,9 @@ h1.rev_hi {
 .testimonial-inner .slick-track {
     gap: 80px;
 }
-
+#root > div.page > div.our-services > div > div.servic_provid > div > div:nth-child(1) > div > div > div.back > div.read_more {
+    MARGIN-TOP: 35PX !IMPORTANT;
+}
 .testimonial-inner .slick-slide.slick-active.slick-center.slick-current {
     width: 850px !important;
     opacity: 1;
@@ -2153,9 +2184,11 @@ h1.rev_hi {
     align-items: center;
 }
 
-
+.faq-inner .question span {
+color: var(--black-color);
+}
 .faq-main h2 {
-    color: #000;
+    color:var(--black-color);
     font-size: 34px;
     font-weight: 700;
     line-height: 1.2;
@@ -2204,7 +2237,7 @@ h1.rev_hi {
 .faq-main .answer {
     overflow: hidden;
     font-size: 14px;
-    color: #2b2929;
+    color: var(--paragraph-color);
     transition: max-height 0.8s ease-out;
     padding: 0px 10px 0px 10px;
 }
@@ -2516,14 +2549,16 @@ div#successMsg {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000 !important;
+    background-color: var(--dark-black-color) !important;
     border-radius: 5px;
     width: 89%;
-    left: 6%;
+    left: 0;
+    right: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 20px;
     top: 62px;
+    width: 100% !important;
 }
 
 
@@ -2596,9 +2631,9 @@ header.sticky {
 }
 
 .sticky .inner-header {
-    background: #000;
+    background: var(--black-color);
+    box-shadow: 0px 0px 3px 0px var(--white-color) !important;
 }
-
 /* luc */
 .aboutInfo-section .about-content {
     display: flex;

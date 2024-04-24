@@ -280,20 +280,20 @@ const NavBar = () => {
                   </li>
                   <li className='pages_navbar'>
                     <div className="dropdownMenu">
-                      <Link to="/about" onClick={closeMenu}>Pages
+                      <Link to="/about" onClick={closeMenu} className='dropbtn'>Pages
                         <span class="arrow-right">
                           <span class="ar_line">
                           </span><span class="ar_left">
                           </span>
                         </span>
-                        <div className="dropdown-content pages">
+                      </Link>
+                        <div className="dropdown-content">
                           <Link to="/about">About</Link>
                           <Link to="/career">Career</Link>
                           <Link to="/portfolio">Portfolio</Link>
                           <Link to="/privacy-policy">Privacy Policy</Link>
                           <Link to="/privacy-policy">Terms & Conditions</Link>
                         </div>
-                      </Link>
                     </div>
                   </li>
                  
@@ -307,7 +307,7 @@ const NavBar = () => {
                     </Link>
                   </li> */}
                   <li>
-                    <Link to="/review" onClick={closeMenu}>Reviews
+                    <Link to="/review" onClick={closeMenu} className="dropbtn">Reviews
                       <span class="arrow-right">
                         <span class="ar_line">
                         </span><span class="ar_left">
@@ -316,7 +316,7 @@ const NavBar = () => {
                     </Link>
                   </li>
                   <li className='hire_us'>
-                    <Link to="/hire-us" onClick={closeMenu}>Hire Us
+                    <Link to="/hire-us" onClick={closeMenu} className="dropbtn">Hire Us
                       <span class="arrow-right">
                         <span class="ar_line">
                         </span><span class="ar_left">
