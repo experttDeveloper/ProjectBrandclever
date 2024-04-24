@@ -1,0 +1,163 @@
+.content_form_shopify {
+  background-color: #fff;
+}
+.inner_content {
+  color: #000;
+}
+.shopify_clutch_logo {
+    display: flex;
+    margin-top: 64px !important;
+}
+.shopifylogo {
+  margin: 10px 50px 20px 0px;
+}
+.clutchlogo {
+  margin: 22px 50px 21px 0px;
+}
+.contact_shopify {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.mail_shopify {
+  display: flex;
+  margin: 11px 50px 20px 10px;
+}
+.whatsapp_shopify {
+  display: flex;
+  margin: 11px 50px 20px 10px;
+}
+.form_inner {
+  margin-left: 120px;
+}
+.content_whychoose {
+  color: #fff;
+}
+.titleexpertise {
+  color: #fff;
+}
+.text_expertise {
+  color: #fff;
+}
+.circle_text {
+  display: flex;
+}
+.circle_tick {
+  color: #fff;
+}
+.testimonials {
+    background-color: #fff;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.titleoftestimonial {
+  text-align: center;
+}
+.title_testimonial {
+  color: #000;
+}
+.author_img {
+  display: flex;
+  justify-content: space-between;
+}
+img.authorimagelogo {
+  height: 22px;
+}
+.title_of_service {
+  text-align: center;
+  color: white;
+}
+.expertise_section {
+  color: white;
+  display: flex;
+}
+.expertiseandreviews {
+  background-color: #fff;
+}
+p.text_expertise_reviews {
+  color: black;
+}
+.title_hiring {
+  text-align: center;
+}
+.boldtext {
+  font-weight: 700;
+}
+.titleofhiring {
+  color: #fff;
+}
+.images img {
+  width: 300px;
+}
+
+.images .image {
+  position: relative;
+}
+
+.images .first {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: z-index 0.5s ease, transform 0.6s ease;
+}
+
+.images .image:hover .first {
+  z-index: 0;
+  background-color: red;
+  transform: scale(1.05);
+}
+.btn_contact {
+  text-align: center;
+}
+.title_faqs {
+  text-align: center;
+}
+.faqs{
+    background-color: white;
+}
+.titlefaqs{
+    color: black;
+}
+.main_content_shopifypg.row {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+p.hiring_shopify {
+    color: black;
+    font-size: 20px;
+}
+.whychoose_shopify {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.whychoose_img {
+    margin-left: 120px;
+}
+.expertise.row {
+    padding-top: 20px;
+}
+p.reviewone {
+    font-size: 18px;
+    line-height: 30px;
+}
+p.content_title {
+    font-size: 18px;
+    text-decoration: underline;
+}
+.shopify_services {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.title_of_service {
+    padding-bottom: 50px;
+}
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.svgiconss.css-i4bv87-MuiSvgIcon-root {
+    font-size: 40px;
+}
+.services_shopify.row {
+    padding-bottom: 50px;
+}
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.circle_tick.css-i4bv87-MuiSvgIcon-root {
+    color: #54a154;
+}

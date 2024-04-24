@@ -25,6 +25,8 @@ import PageNotFound from './pages/PageNotFound'
 import AboutPage from './pages/AboutPage';
 import UpdatedService from './pages/UpdatedService';
 import Contact from './pages/Contact';
+import HireShopify from './components/hiredevelopers/HireShopify';
+import './css/hiredeveloper.css'
 
 
 
@@ -66,6 +68,11 @@ export default class App extends Component {
             <Route path="/content-strategy" element={<ContentStrategy />} />
             <Route path="/framework" element={<Framework />} />
             <Route path="/cms-solution" element={<CMSSolution />} />
+
+
+            <Route path="/hire-shopify-expert" element={<HireShopify />} />
+
+
             <Route
               path="*"
               element={<PageNotFound />}
