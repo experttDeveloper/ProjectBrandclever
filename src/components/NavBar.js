@@ -18,61 +18,61 @@ const serviceMenus = [
   {
     id: 3,
     icon: 'images/service/graphic_design.png',
-    title: "GRAPHIC DESIGNS",
+    title: "Graphic Design",
     url: "/graphic-degin"
   },
   {
     id: 4,
     icon: 'images/service/mern_stack.png',
-    title: "MERN STACK",
+    title: "Mern Stack",
     url: "/mern-stack"
   },
   {
     id: 5,
     icon: 'images/service/content_strategy.png',
-    title: "CONTENT STRATEGY",
+    title: "Content Strategy",
     url: "/content-strategy"
   },
   {
     id: 6,
     icon: 'images/service/framework.png',
-    title: "FRAMEWORK",
+    title: "Framework",
     url: "/framework"
   },
   {
     id: 7,
     icon: 'images/service/cms_solution.png',
-    title: "CMS SOLUTIONS",
+    title: "CMS Solutions",
     url: "/cms-solution"
   },
   {
     id: 8,
     icon: 'images/service/landing_page.png',
-    title: "LANDING PAGE",
+    title: "Landing Page",
     url: "/landing-page"
   },
   {
     id: 9,
     icon: 'images/service/ecommerce.png',
-    title: "ECOMMERCE",
+    title: "E-Commerce",
     url: "/ecommerce"
   },
   {
     id: 10,
     icon: 'images/service/digital_marketing.png',
-    title: "DIGITAL MARKETING",
+    title: "Digital Marketing",
     url: "/digital-marketing"
   },
   {
     id: 11,
     icon: 'images/service/web_application.png',
-    title: "WEB APPLICATION DEVELOPMENT",
+    title: "Web Application Development",
     url: "/web-application"
   },
   {
     id: 12,
     icon: 'images/service/software_testing.png',
-    title: "SOFTWARE TESTING",
+    title: "Software Testing",
     url: "/software-testing"
   }
 
@@ -195,56 +195,7 @@ const NavBar = () => {
               </div>
               <nav className={isMenuOpen ? 'open' : 'closeToggal'}>
                 <ul>
-                  <li>
-                    <Link to="/about" onClick={closeMenu}>About
-                      <span class="arrow-right">
-                        <span class="ar_line">
-                        </span><span class="ar_left">
-                        </span>
-                      </span>
-                    </Link>
-                  </li>
-                  <li>
-                    <div className="dropdownMenu">
-                      <Link to="/service" onClick={closeMenu} className="dropbtn">Hire a Developer
-                        <span class="arrow-right">
-                          <span class="ar_line">
-                          </span><span class="ar_left">
-                          </span>
-                        </span>
-                      </Link>
-                      <div className="dropdown-content">
 
-                        <div className="row">
-                          <div className="col-md-3 serv_cns">
-                            {hireMenus.slice(0, 6).map((ele, key) => {
-                              return (
-                                <div className='service_img'>
-                                  <img src={ele.icon} height="30px" width="30px" />
-                                  <Link to={ele.url}>{ele.title}</Link>
-                                </div>
-                              )
-                            })}
-                          </div>
-                          <div className="col-md-4 serv_cns">
-                            {
-                              hireMenus.slice(6, 12).map((ele, key) => {
-                                return (
-                                  <div className='service_img'>
-                                    <img src={ele.icon} height="30px" width="30px" />
-                                    <Link to={ele.url}>{ele.title}</Link>
-                                  </div>
-                                )
-                              })
-                            }
-                          </div>
-                          <div className="col-md-5 serv_img">
-                            <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
                   <li>
                     <div className="dropdownMenu">
                       <Link to="/service" onClick={closeMenu} className="dropbtn">Services
@@ -288,33 +239,65 @@ const NavBar = () => {
                   </li>
                   <li>
                     <div className="dropdownMenu">
-                      <Link to="/career" className="dropbtn">Career
+                      <Link to="/service" onClick={closeMenu} className="dropbtn">Hire a Developer
                         <span class="arrow-right">
                           <span class="ar_line">
                           </span><span class="ar_left">
                           </span>
                         </span>
                       </Link>
-                      {/* <div className="dropdown-content">
-                        <div className="row">
-                          <div className="columnMenu">
-                            <Link to="/traning-and-placement">Training & Placement
-                              <span class="arrow-right">
-                                <span class="ar_line">
-                                </span><span class="ar_left">
-                                </span>
-                              </span>
+                      <div className="dropdown-content">
 
-                            </Link>
+                        <div className="row">
+                          <div className="col-md-3 serv_cns">
+                            {hireMenus.slice(0, 6).map((ele, key) => {
+                              return (
+                                <div className='service_img'>
+                                  <img src={ele.icon} height="30px" width="30px" />
+                                  <Link to={ele.url}>{ele.title}</Link>
+                                </div>
+                              )
+                            })}
                           </div>
-                          <div className="columnMenu">
+                          <div className="col-md-4 serv_cns">
+                            {
+                              hireMenus.slice(6, 12).map((ele, key) => {
+                                return (
+                                  <div className='service_img'>
+                                    <img src={ele.icon} height="30px" width="30px" />
+                                    <Link to={ele.url}>{ele.title}</Link>
+                                  </div>
+                                )
+                              })
+                            }
+                          </div>
+                          <div className="col-md-5 serv_img">
                             <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
                           </div>
                         </div>
-                      </div> */}
+                      </div>
                     </div>
                   </li>
-                  <li>
+                  <li className='pages_navbar'>
+                    <div className="dropdownMenu">
+                      <Link to="/about" onClick={closeMenu}>Pages
+                        <span class="arrow-right">
+                          <span class="ar_line">
+                          </span><span class="ar_left">
+                          </span>
+                        </span>
+                        <div className="dropdown-content pages">
+                          <Link to="/about">About</Link>
+                          <Link to="/career">Career</Link>
+                          <Link to="/portfolio">Portfolio</Link>
+                          <Link to="/privacy-policy">Privacy Policy</Link>
+                          <Link to="/privacy-policy">Terms & Conditions</Link>
+                        </div>
+                      </Link>
+                    </div>
+                  </li>
+                 
+                  {/* <li>
                     <Link to="/portfolio" onClick={closeMenu}>Portfolio
                       <span class="arrow-right">
                         <span class="ar_line">
@@ -322,9 +305,9 @@ const NavBar = () => {
                         </span>
                       </span>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
-                    <Link to="/review" onClick={closeMenu}>Client Review's
+                    <Link to="/review" onClick={closeMenu}>Reviews
                       <span class="arrow-right">
                         <span class="ar_line">
                         </span><span class="ar_left">
@@ -332,7 +315,7 @@ const NavBar = () => {
                       </span>
                     </Link>
                   </li>
-                  <li>
+                  <li className='hire_us'>
                     <Link to="/hire-us" onClick={closeMenu}>Hire Us
                       <span class="arrow-right">
                         <span class="ar_line">
@@ -343,7 +326,7 @@ const NavBar = () => {
                   </li>
                 </ul>
                 <div className='get_hed_btnn'>
-                  <Link to="/contact" className='button_slide slide_down' onClick={closeMenu}>Get In Touch</Link>
+                  <Link to="/contact" className='button_slide slide_down' onClick={closeMenu}>Contact Us</Link>
                 </div>
               </nav>
             </div>

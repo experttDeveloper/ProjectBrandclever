@@ -1,3 +1,10 @@
+:root {
+    --background-color: #292b32;
+    --white-color: #ffffff;
+    --black-color: #292b32;
+    --green-color: #54a154;
+}
+
 /* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Didact+Gothic&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -42,10 +49,12 @@ a {
     gap: 45px;
     margin: 0px;
     align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .about-content h1 {
-    color: #fff;
+    color: var(--white-color);
     font-weight: 400 !important;
     font-size: 34px;
     line-height: 50px;
@@ -65,7 +74,7 @@ a {
 h2 {
     font-size: 36px;
     font-weight: 600;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .clint_name_star {
@@ -75,7 +84,7 @@ h2 {
 }
 
 .testy_section {
-    background: #fff;
+    background: var(--white-color);
     padding: 91px 0px 51px 0px;
 }
 
@@ -114,12 +123,12 @@ h2 {
 }
 
 .reviw_colms {
-    background: #fff;
+    background: var(--white-color);
     padding: 50px 0px 60px;
 }
 
 .Testmono_clint {
-    background: #fff;
+    background: var(--white-color);
     padding: 30px 35px 30px 35px;
     border-radius: 7px;
     box-shadow: 0px 0px 7px 0px #474747 !important;
@@ -153,7 +162,7 @@ button.owl-next span,
 }
 
 .content_of_founder h2 {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .part-about subtitle {
@@ -161,7 +170,7 @@ button.owl-next span,
     text-align: left;
     font-size: 26px;
     font-weight: 700;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .clint_name_star h3 {
@@ -206,7 +215,7 @@ img.signature {
 }
 
 .inner_header_nav nav ul a {
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 15px;
     text-decoration: none;
     background-color: transparent;
@@ -217,7 +226,7 @@ img.signature {
     position: absolute;
     height: 2px;
     width: 22px;
-    background: #fff;
+    background: var(--white-color);
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     top: 12px;
@@ -230,7 +239,7 @@ img.signature {
     position: absolute;
     height: 2px;
     width: 15px;
-    background: #fff;
+    background: var(--white-color);
     transform: rotate(240deg);
     -webkit-transform: rotate(240deg);
     top: 13px;
@@ -272,7 +281,7 @@ img.signature {
 
 .get_hed_btn a {
     background: #54a154;
-    color: #fff;
+    color: var(--white-color);
     padding: 12px 15px 12px;
     font-size: 16px;
     text-decoration: none;
@@ -293,7 +302,7 @@ img.signature {
     display: flex;
     justify-content: space-between;
     margin: 20px auto !important;
-    background: #fff !important;
+    background: var(--white-color) !important;
     border-radius: 10px;
     width: 1110px;
     padding: 20px 0px;
@@ -322,7 +331,7 @@ img.signature {
 .about-content p {
     margin-top: 0;
     margin-bottom: 0rem;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .about_third .about-content h2,
@@ -349,9 +358,16 @@ img.signature {
 }
 
 body {
-    background: #000;
+    background: var(--background-color);
     position: relative;
     z-index: -1;
+}
+
+.footer_Sec {
+    background-color: var(--background-color);
+    color: var(--white-color);
+    text-align: center;
+    padding:1rem;
 }
 
 .image-sec img {
@@ -367,7 +383,7 @@ body {
 .about-content ul li {
     font-size: 16px;
     line-height: 30px;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .check_ico i {
@@ -375,7 +391,7 @@ body {
 }
 
 .experience_crown {
-    background: #ffff;
+    background: var(--white-color)f;
     box-shadow: 0px 0px 20px #cfcfcf;
     padding: 10px;
     text-align: center;
@@ -410,7 +426,7 @@ body {
 
 .learn_more_btn a {
     background: #54a154;
-    color: #fff;
+    color: var(--white-color);
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 16px;
@@ -450,7 +466,7 @@ body {
     font-size: 40px;
     margin-bottom: 0px;
     margin-top: 25px;
-    color: #ffffff;
+    color: var(--white-color);
     font-weight: 300;
     padding-bottom: 0px !important;
 }
@@ -461,7 +477,7 @@ p.country {
 
 span.review-date {
     font-size: 11px;
-    color: #fff;
+    color: var(--white-color);
     font-weight: 100;
 }
 
@@ -580,7 +596,7 @@ p.subtitle {
 
 .career-page button.apply-sub {
     background-color: #28a745;
-    color: #fff;
+    color: var(--white-color);
     padding: 6px 20px;
     border-radius: 3px;
     border-color: #28a745;
@@ -590,7 +606,7 @@ p.subtitle {
 
 .career-page button.apply-close {
     background-color: #28a74500;
-    color: #fff;
+    color: var(--white-color);
     margin-right: 0;
     border-radius: 3px;
     border-color: #28a745;
@@ -719,11 +735,11 @@ p.subtitle {
 
 .btn-primary {
     transition: transform 0.3s ease-in-out;
-    color: #fff;
+    color: var(--white-color);
     background-color: #54a15400;
     border-color: #54a154;
     padding: 8px 40px;
-    /* border: 1px solid #fff; */
+    /* border: 1px solid var(--white-color); */
     height: 42px !important;
     width: 134px !important;
 }
@@ -731,7 +747,7 @@ p.subtitle {
 .btn-primary:hover {
     transform: scale(1.1);
     background-color: #54a154 !important;
-    color: #fff !important;
+    color: var(--white-color) !important;
     border: none !important;
     padding: 8px 40px !important;
     height: 42px !important;
@@ -786,7 +802,7 @@ ul.social_media-icon li {
 label {
     display: inline-block;
     margin-bottom: .5rem;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .inner-header {
@@ -796,7 +812,7 @@ label {
 }
 
 .placement-inner p {
-    color: #ffffff;
+    color: var(--white-color);
     text-align: center;
     font-size: 16px;
 }
@@ -863,7 +879,7 @@ footer .column {
 }
 
 .whatsapp_widget_chat_wrapper_inner {
-    background: #fff;
+    background: var(--white-color);
     padding: 20px;
 }
 
@@ -888,7 +904,7 @@ footer .column {
 .whatsapp_widget_header {
     display: flex;
     flex-direction: row-reverse;
-    color: #ffff !important;
+    color: var(--white-color)f !important;
     background: #54a154 !important;
     padding: 15px 15px;
     justify-content: space-between;
@@ -909,7 +925,7 @@ a.whatsapp_widget_footer_btn {
     padding: 11px 10px;
     border-radius: 0px 10px 10px 0px;
     font-size: 11px;
-    color: #fff !important;
+    color: var(--white-color) !important;
     white-space: nowrap;
 }
 
@@ -939,7 +955,7 @@ hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
-    border-top: 1px solid rgb(255 255 255 / 10%);
+    border-top: 1px solid #54a154;
 }
 
 .onTop {
@@ -977,10 +993,9 @@ nav {
     display: block;
     cursor: pointer;
     padding: 8px;
-    color: #fff;
+    color: var(--white-color);
     text-decoration: none;
     font-size: 15px !important;
-    text-transform: uppercase;
 }
 
 .columnMenu h3 {
@@ -1088,7 +1103,7 @@ ul>li:hover .arrow-right {
 .footer-phone i,
 .footer-address i {
     font-size: 20px;
-    color: #ffffff;
+    color: var(--white-color);
     background: transparent;
     border-radius: 50%;
     width: 35px;
@@ -1105,20 +1120,20 @@ ul>li:hover .arrow-right {
 
 .footer-address i.fa.fa-map-marker:hover {
     background-color: #54a154;
-    color: #fff !important;
+    color: var(--white-color) !important;
     border-radius: 100%;
     padding: 10px !important;
 }
 
 .footer-phone i.fa.fa-phone-square:hover {
     background-color: #28a745;
-    color: #fff !important;
+    color: var(--white-color) !important;
     border-radius: 100%;
     padding: 10px !important;
 }
 
 svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.footer_icon.css-i4bv87-MuiSvgIcon-root {
-    color: #fff;
+    color: var(--white-color);
     font-size: 25px;
 }
 
@@ -1128,7 +1143,7 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.footer_icon.css-i4bv87-MuiSvgIcon-
 
 .footer-email i.fa.fa-envelope:hover {
     background-color: #28a745;
-    color: #fff !important;
+    color: var(--white-color) !important;
     border-radius: 100%;
     padding: 10px !important;
 }
@@ -1161,7 +1176,7 @@ section#schedules .showcase {
 }
 
 .testimonial.testi_clints {
-    background-color: #fff !important;
+    background-color: var(--white-color) !important;
     padding-bottom: 80px !important;
 }
 
@@ -1202,7 +1217,7 @@ section#schedules .showcase {
 }
 
 .review-page .testimonial-inner h3 {
-    color: #ffffff;
+    color: var(--white-color);
     padding-top: 15px !important;
 }
 
@@ -1213,7 +1228,7 @@ section#schedules .showcase {
 }
 
 .banner-heading.review-banner h2 {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .review-page .reviesOfClient .item:hover {
@@ -1228,7 +1243,7 @@ section#schedules .showcase {
     font-size: 30px;
     margin-bottom: 0px;
     margin-top: 0px;
-    color: #ffffff;
+    color: var(--white-color);
     font-weight: 300;
     padding-bottom: 0px !important;
 }
@@ -1308,11 +1323,11 @@ input[type=radio] {
     font-size: 18px;
     background: #54a154;
     font-weight: bold;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .questionLable {
-    color: #fff;
+    color: var(--white-color);
     padding-bottom: 30px;
     text-align: center;
 }
@@ -1336,11 +1351,13 @@ button.form_submit_btn {
 .contactForm-inner .form-group {
     margin-bottom: 1rem;
 }
+
 .contact_video.col-md-6 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .contact_us_section h3.MuiTypography-root.MuiTypography-h3.css-gepadz-MuiTypography-root {
     background: linear-gradient(to right, #148156, #9fd959);
     background-clip: text;
@@ -1348,46 +1365,57 @@ button.form_submit_btn {
     font-weight: 700;
     font-size: 40px;
 }
-.contact_us_section h5, h6 {
-    color: #fff !important;
+
+.contact_us_section h5,
+h6 {
+    color: var(--white-color) !important;
     font-size: 24px;
     font-weight: 600;
     padding-top: 20px;
     padding-bottom: 5px;
 }
+
 .contact_us_second .contact_media h6 svg {
     color: #4ba457;
     font-size: 30px;
 }
+
 .contact_us_second .container .col-md-6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .contact_us_section .contact_us_second input::placeholder {
-color:#fff ;
+    color: var(--white-color);
 }
+
 .contact_us_section .contact_us_second textarea::placeholder {
-    color:#595959 ;
-    }
+    color: #595959;
+}
+
 .contact_us_section .contact_us_second input {
     background: #000 !important;
-    box-shadow: 0px 0px 5px 0px #fff !important;
+    box-shadow: 0px 0px 5px 0px var(--white-color) !important;
     border-radius: 5px;
-    color:#fff;
+    color: var(--white-color);
 }
+
 .contact_us_section .contact_us_second textarea {
-    color:#fff;
+    color: var(--white-color);
     background: #000 !important;
-    box-shadow: 0px 0px 5px 0px #fff !important;
+    box-shadow: 0px 0px 5px 0px var(--white-color) !important;
     border-radius: 5px;
 }
+
 .contact_des h3 {
     padding-bottom: 20px;
 }
+
 .contact_media {
     margin-top: 15px;
 }
+
 .contact_us_second .contact_media h6 {
     padding: 10px 0px;
     display: flex;
@@ -1395,11 +1423,13 @@ color:#fff ;
     font-size: 16px;
     width: 70%;
 }
+
 .contact_us_first span.MuiTypography-root.MuiTypography-p.css-37jdci-MuiTypography-root {
     color: #d1d1d1;
     font-size: 18px;
     font-weight: 500;
 }
+
 .contact_us_first {
     color: white;
     padding: 50px 0px;
@@ -1408,15 +1438,18 @@ color:#fff ;
 .contact_us_second {
     border-bottom: 3px solid #54a154;
     padding: 30px;
-    color:#fff;
+    color: var(--white-color);
 }
+
 .contact_us_section {
     background: #000;
 }
+
 .contact_us_first img {
     width: 100%;
     max-width: 70%;
 }
+
 .common-fields {
     grid-template-columns: repeat(2, 1fr) !important;
     display: grid;
@@ -1433,7 +1466,7 @@ color:#fff ;
 /********************************/
 .placement-page h2 {
     text-align: center;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .placement-inner form {
@@ -1463,7 +1496,7 @@ color:#fff ;
 .industryDemands-inner h2 {
     margin-bottom: 50px;
     text-align: center;
-    color: #fff;
+    color: var(--white-color);
     font-size: 45px;
     font-weight: 400;
     line-height: 1.2;
@@ -1490,14 +1523,14 @@ color:#fff ;
 
 .btn-primary:hover {
     color: #000;
-    background-color: #ffffff;
-    border-color: #ffffff;
+    background-color: var(--white-color);
+    border-color: var(--white-color);
 }
 
 .industryDemands-items .col a,
 .industryDemands-items .col a h3 {
     text-decoration: none;
-    color: #fff;
+    color: var(--white-color);
     font-weight: 400;
     line-height: 1.3;
     padding-top: 20px;
@@ -1596,7 +1629,7 @@ div#contactForm {
 }
 
 /********************* About Us Page Start *********************/
-subtitle {
+.subtitle {
     color: #54a154;
 }
 
@@ -1619,12 +1652,12 @@ subtitle {
 
 .about-content h2,
 .about-content p {
-    color: #fff !important;
+    color: var(--white-color) !important;
     text-align: center;
 }
 
 .about_third {
-    background: #fff;
+    background: var(--white-color);
     display: flex;
     padding-right: 30px;
     padding-left: 30px;
@@ -1633,7 +1666,7 @@ subtitle {
 
 .about-content p {
     font-weight: 400 !important;
-    color: #fff !important;
+    color: var(--white-color) !important;
     width: 50%;
     text-align: left;
     font-size: 20px;
@@ -1781,12 +1814,12 @@ span.question_in {
     background: #54a154;
     padding: 10px 19px;
     border-radius: 5px;
-    color: #fff;
+    color: var(--white-color);
     font-size: 14px;
 }
 
 .content_of_founder p {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .founder_section {
@@ -1804,14 +1837,14 @@ span.question_in {
     margin-right: 0px !important;
     border-radius: 6px;
     cursor: pointer;
-    color: #fff !important;
+    color: var(--white-color) !important;
 }
 
 .tabs li {
     display: block;
     border-radius: 6px;
     cursor: pointer;
-    color: #fff;
+    color: var(--white-color);
     padding: 10px 15px !important;
 }
 
@@ -1848,12 +1881,18 @@ footer {
     color: #54a154;
 }
 
+.footer-copy-text span.term:hover,
+.footer-copy-text span.privacy:hover {
+    color: #54a154;
+    cursor: pointer;
+}
+
 .invalid-feedback {
     text-align: left;
 }
 
 .banner-heading.placement-banner h2 {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .error-message {
@@ -1871,7 +1910,7 @@ footer {
 }
 
 .questionAnswer-main .answer {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .answer input.profile_Q.ans_Qus {
@@ -1911,14 +1950,14 @@ h1.rev_hi {
     padding: 100px 0;
     padding-bottom: 100px;
     margin-bottom: 0;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .main-contact-page .section-420 {
     width: 1280px;
     margin: 0 auto;
     text-align: center;
-    color: #fff;
+    color: var(--white-color);
     padding: 50px 0px;
 }
 
@@ -1932,7 +1971,7 @@ h1.rev_hi {
 }
 
 .section-420 span.anitime:hover {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .contact-section-430 {
@@ -1946,7 +1985,7 @@ h1.rev_hi {
 
 .contact-section-430 .icon {
     padding: 10px 20px;
-    background-color: #fff;
+    background-color: var(--white-color);
     border-radius: 100%;
     font-size: 30px;
 }
@@ -1954,11 +1993,11 @@ h1.rev_hi {
 .contact-section-430 .content-1,
 .content-2,
 .content-3 {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .contact-section-430 i {
-    color: #fff;
+    color: var(--white-color);
     font-size: 30px !important;
 }
 
@@ -2002,15 +2041,15 @@ h1.rev_hi {
 }
 
 .contact-item-1:hover {
-    box-shadow: 0px 0px 20px 0px #ffffff;
+    box-shadow: 0px 0px 20px 0px var(--white-color);
 }
 
 .contact-item-2:hover {
-    box-shadow: 0px 0px 20px 0px #ffffff;
+    box-shadow: 0px 0px 20px 0px var(--white-color);
 }
 
 .contact-item-3:hover {
-    box-shadow: 0px 0px 20px 0px #ffffff;
+    box-shadow: 0px 0px 20px 0px var(--white-color);
 }
 
 .bk-ph {
@@ -2062,7 +2101,7 @@ h1.rev_hi {
 }
 
 .main-sub .database_left h3 {
-    color: #fff;
+    color: var(--white-color);
     font-size: 35px;
     font-weight: 400;
     line-height: 1.2;
@@ -2198,16 +2237,16 @@ h1.rev_hi {
     transform: scale(1.1);
     background-color: #28a745;
     border: 1px solid #28a745;
-    color: #fff;
+    color: var(--white-color);
     transition: 0.4s;
 }
 
 button.Next_btn_traning_and_placement {
     padding: 12px 50px;
     border: none;
-    color: #fff !important;
+    color: var(--white-color) !important;
     cursor: pointer;
-    border: 1px solid #fff;
+    border: 1px solid var(--white-color);
     background-color: transparent;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
@@ -2216,7 +2255,7 @@ button.Next_btn_traning_and_placement {
 button.Next_btn_traning_and_placement:hover {
     padding: 12px 50px;
     border: 1px solid #54a154;
-    color: #fff !important;
+    color: var(--white-color) !important;
     border-radius: 5px;
     background-color: #54a154;
     transition: 0.4s;
@@ -2228,21 +2267,21 @@ section.heading .banner-heading.placement-banner {
 }
 
 section.heading .banner-heading.placement-banner h2 {
-    color: #fff !important;
+    color: var(--white-color) !important;
 }
 
 .career-page .main-title button {
     transition: transform 0.3s ease-in-out;
     background-color: transparent !important;
-    border: 1px solid #fff !important;
-    color: #fff !important;
+    border: 1px solid var(--white-color) !important;
+    color: var(--white-color) !important;
 
 }
 
 .career-page .main-title button:hover {
     transform: scale(1.1);
     background-color: #54a154 !important;
-    color: #fff !important;
+    color: var(--white-color) !important;
     border: 1px solid #54a154 !important;
     transition: 0.4s;
 }
@@ -2252,9 +2291,9 @@ button.back_btn_placement_traning {
     padding: 10px 40px;
     font-size: 1rem;
     background-color: transparent !important;
-    color: #fff;
+    color: var(--white-color);
     background-clip: padding-box;
-    border: 1px solid #fff;
+    border: 1px solid var(--white-color);
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     height: 50px !important;
@@ -2264,7 +2303,7 @@ button.back_btn_placement_traning {
 
 button.back_btn_placement_traning:hover {
     background-color: #54a154 !important;
-    color: #fff;
+    color: var(--white-color);
     border: 1px solid #54a154;
 }
 
@@ -2279,7 +2318,7 @@ button.back_btn_placement_traning:hover {
 .read-btn a:hover {
     background-color: #54a154 !important;
     border: 1px solid #54a154 !important;
-    color: #fff !important;
+    color: var(--white-color) !important;
     font-weight: 600 !important;
     transform: scale(1.1);
     transition: 0.4s;
@@ -2295,7 +2334,7 @@ button.back_btn_placement_traning:hover {
     display: inline-block;
     font-size: 15px;
     letter-spacing: 1px;
-    color: #fff;
+    color: var(--white-color);
     font-weight: 400;
     text-transform: uppercase;
     cursor: pointer;
@@ -2305,7 +2344,7 @@ button.back_btn_placement_traning:hover {
 
 .slide_down:hover {
     box-shadow: inset 0 100px 0 0 #ffa41a;
-    color: #fff;
+    color: var(--white-color);
     transition: 2s;
     text-decoration: none;
 }
@@ -2327,7 +2366,7 @@ div#successMsg {
 }
 
 .banner-heading.about-banner h2 {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .section-420 .des p {
@@ -2341,18 +2380,18 @@ div#successMsg {
 
 .column ul.social_media-icon i:hover {
     background-color: #54a154;
-    color: #fff !important;
+    color: var(--white-color) !important;
     border-radius: 100%;
     padding: 10px !important;
 }
 
 
 .faq_Contact_Sec {
-    background-color: #fff !important;
+    background-color: var(--white-color) !important;
 }
 
 .faq_Contact_Sec {
-    background-color: #fff !important;
+    background-color: var(--white-color) !important;
     display: flex;
     padding: 80px;
 }
@@ -2368,14 +2407,14 @@ div#successMsg {
     display: block;
     position: relative;
     transform: rotateY(180deg);
-    color: #fff;
+    color: var(--white-color);
     transition: transform 0.9s ease-in-out;
 }
 .col.serviceCount:hover {
     position: relative;
     transform: rotateY(180deg);
     background-color: #cb8e32;
-    color: #fff;
+    color: var(--white-color);
     transition: transform 0.9s ease-in-out;
 } */
 .main-contact-page .contactForm-inner {
@@ -2419,7 +2458,7 @@ div#successMsg {
     font-size: 16px;
     border: none;
     outline: none;
-    color: #fff;
+    color: var(--white-color);
     padding: 0;
     background-color: inherit;
     font: inherit;
@@ -2432,7 +2471,7 @@ div#successMsg {
 
 .client_name {
     margin-bottom: 4px;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .client_des {
@@ -2466,11 +2505,12 @@ div#successMsg {
 
 .tesi_conte p {
     min-height: 190px;
-    color: #fff !important;
+    color: var(--white-color) !important;
     font-size: 16px;
     line-height: 27px;
     padding-top: 20px;
 }
+
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -2517,7 +2557,7 @@ div#successMsg {
 }
 
 .dropdown-content a {
-    color: #fff !important;
+    color: var(--white-color) !important;
 }
 
 /* Style links inside the columns */
@@ -2592,7 +2632,7 @@ header.sticky {
 }
 
 .aboutInfo-section .about_project .about-content h1 {
-    color: #fff;
+    color: var(--white-color);
     font-weight: 700 !important;
 }
 
@@ -2639,7 +2679,7 @@ header.sticky {
 }
 
 .main_header p {
-    color: #fff;
+    color: var(--white-color);
     font-size: 18px;
     padding-top: 10px;
     width: 60%;
@@ -2660,7 +2700,7 @@ header.sticky {
 
 .main-heading_title h1 {
     font-size: 40px !important;
-    color: #fff;
+    color: var(--white-color);
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
@@ -2677,14 +2717,14 @@ header.sticky {
 }
 
 .col-md-7.banner_twoes_divs p {
-    color: #fff;
+    color: var(--white-color);
     font-size: 18px;
     padding-top: 10px;
 }
 
 .col-md-7.banner_twoes_divs h1 {
     font-size: 40px !important;
-    color: #fff;
+    color: var(--white-color);
     font-weight: 700;
     font-family: Montserrat;
     text-transform: uppercase;
