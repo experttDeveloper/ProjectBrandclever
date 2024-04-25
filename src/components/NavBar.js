@@ -333,8 +333,8 @@ const NavBar = () => {
                     </div>
                   </li>
                 </ul>
-                <div className='get_hed_btnn'>
-                  <Link to="/contact" className='button_slide slide_down' onClick={closeMenu}>Contact Us</Link>
+                <div className='header_btn'>
+                  <Link to="/contact" className='' onClick={closeMenu}>Contact Us</Link>
                 </div>
               </nav>
             </div>

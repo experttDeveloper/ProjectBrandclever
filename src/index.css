@@ -2370,31 +2370,31 @@ button.back_btn_placement_traning:hover {
 }
 
 /********** Tushar css End here ***********/
-.get_hed_btnn:hover {
+.header_btn:hover {
     background: linear-gradient(to right, #96d358 0%, #89c957 50%, #2aa961 100%) !important;
 }
 
-.get_hed_btnn {
+.header_btn {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    animation: button_slide 2s infinite;
+    animation: header_btn 2s infinite;
     padding: 8px 30px;
     box-shadow: 0px 0px 5px 0px #89c857;
     text-transform: uppercase;
 }
 
-@keyframes button_slide  {
+@keyframes header_btn  {
     0% { transform: translateX(0); }
     50% { transform: translateX(10px); }
     100% { transform: translateX(0); }
 }
-.get_hed_btnn a.button_slide.slide_down {
+.header_btn a {
     color: var(--white-color) !important;
     letter-spacing: 0.5px;
     font-size: 15px !important;
 }
-/* .button_slide {
+ .button_slide {
     background: #54a154;
     padding: 8px 12px;
     border-radius: 8px;
@@ -2414,7 +2414,7 @@ button.back_btn_placement_traning:hover {
     color: var(--white-color);
     transition: 2s;
     text-decoration: none;
-}  */
+}  
 
 .read-btnn {
     text-align: center;
