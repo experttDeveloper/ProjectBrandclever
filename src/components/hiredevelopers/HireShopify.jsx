@@ -177,56 +177,65 @@ export default function HireShopify() {
           </div>
           <Row className="reviews_hiring">
             <Col md={4}>
-              <p className="reviewone">
-                “ He was exceptionally quick, highly efficient, and truly
-                professional! I wholeheartedly recommend working with him. I
-                encountered an issue with my Facebook Pixel and the Purchase
-                event, but he promptly resolved it, and now everything is
-                operating perfectly. ”
-              </p>
-              <div className="author_img">
-                <p className="author" style={{ fontWeight: "bold" }}>
-                  Sidoine's
+              <div className="sopify_dev_title">
+
+                <p className="reviewone">
+                  “ He was exceptionally quick, highly efficient, and truly
+                  professional! I wholeheartedly recommend working with him. I
+                  encountered an issue with my Facebook Pixel and the Purchase
+                  event, but he promptly resolved it, and now everything is
+                  operating perfectly. ”
                 </p>
-                <img
-                  src="images/hire/shopifylogo.png"
-                  className="authorimagelogo"
-                />
+                <div className="author_img">
+                  <p className="author" style={{ fontWeight: "bold" }}>
+                    Sidoine's
+                  </p>
+                  <img
+                    src="images/hire/shopifylogo.png"
+                    className="authorimagelogo"
+                  />
+                </div>
               </div>
             </Col>
             <Col md={4}>
-              <p className="reviewone">
-                “ Sehr nettes Team, einfache Kommunikation und schnelle
-                Lieferung. Top Qualität der Arbeit! Ich würde BrandClever
-                würklich weiterempfehlen da die zusammenarbeit sehr gut war.
-                Vielen Dank! Gerne wieder! ”
-              </p>
-              <div className="author_img">
-                <p className="author" style={{ fontWeight: "bold" }}>
-                  Luca Koller
+              <div className="sopify_dev_title">
+
+                <p className="reviewone">
+                  “ Sehr nettes Team, einfache Kommunikation und schnelle
+                  Lieferung. Top Qualität der Arbeit! Ich würde BrandClever
+                  würklich weiterempfehlen da die zusammenarbeit sehr gut war.
+                  Vielen Dank! Gerne wieder! ”
                 </p>
-                <img
-                  src="images/hire/shopifylogo.png"
-                  className="authorimagelogo"
-                />
+                <div className="author_img">
+                  <p className="author" style={{ fontWeight: "bold" }}>
+                    Luca Koller
+                  </p>
+                  <img
+                    src="images/hire/shopifylogo.png"
+                    className="authorimagelogo"
+                  />
+                </div>
               </div>
             </Col>
             <Col md={4}>
-              <p className="reviewone">
-                “ BrandClever provided excellent services with attention
-                to quality and timely deliverables. Sunil understanding of my
-                project needs and working diligently with the team was
-                commendable. I highly recommend them for Shopify design and App
-                development. Thank you for exceeding my expectations! ”
-              </p>
-              <div className="author_img">
-                <p className="author" style={{ fontWeight: "bold" }}>
-                  Jeremy Fritzhand
+              <div className="sopify_dev_title">
+
+                <p className="reviewone">
+                  “ BrandClever provided excellent services with attention
+                  to quality and timely deliverables. Sunil understanding of my
+                  project needs and working diligently with the team was
+                  commendable. I highly recommend them for Shopify design and App
+                  development. Thank you for exceeding my expectations! ”
                 </p>
-                <img
-                  src="images/hire/shopifylogo.png"
-                  className="authorimagelogo"
-                />
+                <div className="author_img">
+                  <p className="author" style={{ fontWeight: "bold" }}>
+                    Jeremy Fritzhand
+                  </p>
+                  <img
+                    src="images/hire/shopifylogo.png"
+                    className="authorimagelogo"
+                  />
+                </div>
               </div>
             </Col>
           </Row>
@@ -611,7 +620,7 @@ export default function HireShopify() {
           </div>
         </div>
       </div>
-      <div className="hiring_process">
+      <div className="hiring_process_main">
         <div className="container">
           <div className="title_hiring">
             <h2 className="hiringprocesstitle">
@@ -620,71 +629,79 @@ export default function HireShopify() {
           </div>
           <Row className="processofhiring">
             <Col md={3}>
-              <img
-                src="images/hire/requirement.png"
-                alt=""
-                className="requirement"
-              />
-              <p className="titleofhiring">
-                <span className="boldtext">Book a Free Consultation Call</span>{" "}
-                <br />
-                Initiate your Shopify project journey by booking a free
-                consultation call with BrandClever. This call provides
-                you with the opportunity to connect with our team of experts,
-                allowing us to understand your business requirements.
-              </p>
+              <div className="hiring_process">
+                <img
+                  src="images/hire/requirement.png"
+                  alt=""
+                  className="requirement"
+                />
+                <p className="titleofhiring">
+                  <span className="boldtext">Book a Free Consultation Call</span>{" "}
+                  <br />
+                  Initiate your Shopify project journey by booking a free
+                  consultation call with BrandClever. This call provides
+                  you with the opportunity to connect with our team of experts,
+                  allowing us to understand your business requirements.
+                </p>
+              </div>
             </Col>
 
             <Col md={3}>
-              <img
-                src="images/hire/resume.png"
-                alt=""
-                className="requirement"
-              />
-              <p className="titleofhiring">
-                <span className="boldtext">Discuss The Shopify Projects</span>
-                <br />
-                We will focus on a comprehensive discussion about your Shopify
-                project. We encourage you to share your ideas, brand identity,
-                target audience, and desired functionalities. This discussion
-                sets the foundation for a collaborative and effective Shopify
-                project.
-              </p>
+              <div className="hiring_process">
+                <img
+                  src="images/hire/resume.png"
+                  alt=""
+                  className="requirement"
+                />
+                <p className="titleofhiring">
+                  <span className="boldtext">Discuss The Shopify Projects</span>
+                  <br />
+                  We will focus on a comprehensive discussion about your Shopify
+                  project. We encourage you to share your ideas, brand identity,
+                  target audience, and desired functionalities. This discussion
+                  sets the foundation for a collaborative and effective Shopify
+                  project.
+                </p>
+              </div>
             </Col>
 
             <Col md={3}>
-              <img
-                src="images/hire/finalize.png"
-                alt=""
-                className="requirement"
-              />
-              <p className="titleofhiring">
-                <span className="boldtext">Project Execution & Delivery</span>
-                <br />
-                Our dedicated team of Shopify experts starts working diligently
-                on your project, adhering to the specified timeline and
-                delivering exceptional results. Throughout this phase, we
-                maintain open communication, ensuring that you are informed
-                about the project's progress.
-              </p>
+              <div className="hiring_process">
+                <img
+                  src="images/hire/finalize.png"
+                  alt=""
+                  className="requirement"
+                />
+                <p className="titleofhiring">
+                  <span className="boldtext">Project Execution & Delivery</span>
+                  <br />
+                  Our dedicated team of Shopify experts starts working diligently
+                  on your project, adhering to the specified timeline and
+                  delivering exceptional results. Throughout this phase, we
+                  maintain open communication, ensuring that you are informed
+                  about the project's progress.
+                </p>
+              </div>
             </Col>
 
             <Col md={3}>
-              <img
-                src="images/hire/assign-task.png"
-                alt=""
-                className="requirement"
-              />
-              <p className="titleofhiring">
-                <span className="boldtext">
-                  Daily / Weekly / Monthly Reporting
-                </span>
-                <br />
-                We provide regular reports, tailored to your preference, on a
-                daily, weekly, or monthly basis. These reports encompass the
-                project's progress, milestones achieved, and any challenges
-                encountered, along with proposed solutions.
-              </p>
+              <div className="hiring_process">
+                <img
+                  src="images/hire/assign-task.png"
+                  alt=""
+                  className="requirement"
+                />
+                <p className="titleofhiring">
+                  <span className="boldtext">
+                    Daily / Weekly / Monthly Reporting
+                  </span>
+                  <br />
+                  We provide regular reports, tailored to your preference, on a
+                  daily, weekly, or monthly basis. These reports encompass the
+                  project's progress, milestones achieved, and any challenges
+                  encountered, along with proposed solutions.
+                </p>
+              </div>
             </Col>
           </Row>
           <Row className="shopify_images">
@@ -766,135 +783,153 @@ export default function HireShopify() {
       <div className="payment">
         <div className="container">
           <Row className="onbasispayment">
-            <Col md={4}>
-              <h3 className="title_onbasis">
-                Hourly Basis <br /> <span className="perhour">$25</span>/hr
-              </h3>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  Cost is cited on hourly basis
-                  <br />
-                </p>
-              </div>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  Max, 8 hours a day and 5 days per week
-                  <br />
-                </p>
-              </div>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  A dedicated developer will be allotted
-                  <br />
-                </p>
-              </div>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  Communication via: Email, Skype, Phone
-                  <br />
-                </p>
-              </div>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  Ideal for Short-term projects
-                  <br />
-                </p>
-              </div>
-              <div className="btn_contact">
-                <button className="btn_contactus">Contact Us</button>
-              </div>
-            </Col>
-
-            <Col md={4}>
-              <h3 className="title_onbasis">
-                Weekly Basis <br /> <span className="perhour">$900</span>/wk
-              </h3>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  Cost is cited on weekly basis
-                  <br />
-                </p>
-              </div>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  Max, 8 hours a day and 5 days per week
-                  <br />
-                </p>
-              </div>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  A dedicated developer will be allotted
-                  <br />
-                </p>
-              </div>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  Communication via: Email, Skype, Phone
-                  <br />
-                </p>
-              </div>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  Favorable for short-term and mid-term projects
-                  <br />
-                </p>
-              </div>
-              <div className="btn_contact">
-                <button className="btn_contactus">Contact Us</button>
+            <Col md={4} className="hire_box_main">
+              <div className="box_shadow">
+                <div className="first_box_hire">
+                  <h3 className="title_onbasis">
+                    Hourly Basis <br /> <span className="perhour">$25</span>/hr
+                  </h3>
+                </div>
+                <div className="alltext">
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      Cost is cited on hourly basis
+                      <br />
+                    </p>
+                  </div>
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      Max, 8 hours a day and 5 days per week
+                      <br />
+                    </p>
+                  </div>
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      A dedicated developer will be allotted
+                      <br />
+                    </p>
+                  </div>
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      Communication via: Email, Skype, Phone
+                      <br />
+                    </p>
+                  </div>
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      Ideal for Short-term projects
+                      <br />
+                    </p>
+                  </div>
+                </div>
+                <div className="btn_contact">
+                  <button className="btn_contactus">Contact Us</button>
+                </div>
               </div>
             </Col>
 
-            <Col md={4}>
-              <h3 className="title_onbasis">
-                Monthly Basis <br /> <span className="perhour">$3200</span>/m
-              </h3>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  Cost is cited on monthly basis
-                  <br />
-                </p>
+            <Col md={4} className="hire_box_main">
+              <div className="box_shadow">
+                <div className="second_box_hire">
+                  <h3 className="title_onbasis">
+                    Weekly Basis <br /> <span className="perhour">$900</span>/wk
+                  </h3>
+                </div>
+                <div className="alltext">
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      Cost is cited on weekly basis
+                      <br />
+                    </p>
+                  </div>
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      Max, 8 hours a day and 5 days per week
+                      <br />
+                    </p>
+                  </div>
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      A dedicated developer will be allotted
+                      <br />
+                    </p>
+                  </div>
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      Communication via: Email, Skype, Phone
+                      <br />
+                    </p>
+                  </div>
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      Favorable for short-term and mid-term projects
+                      <br />
+                    </p>
+                  </div>
+                </div>
+                <div className="btn_contact">
+                  <button className="btn_contactus">Contact Us</button>
+                </div>
               </div>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  Max, 8 hours a day and 5 days per week
-                  <br />
-                </p>
-              </div>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  A dedicated developer will be allotted
-                  <br />
-                </p>
-              </div>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  Communication via: Email, Skype, Phone
-                  <br />
-                </p>
-              </div>
-              <div className="circle_text">
-                <CheckCircleIcon className="circle_tick" />
-                <p className="text_expertise">
-                  Favorable for long-term projects
-                  <br />
-                </p>
-              </div>
-              <div className="btn_contact">
-                <button className="btn_contactus">Contact Us</button>
+            </Col>
+
+            <Col md={4} className="hire_box_main" >
+              <div className="box_shadow">
+                <div className="third_box_hire">
+                  <h3 className="title_onbasis">
+                    Monthly Basis <br /> <span className="perhour">$3200</span>/m
+                  </h3>
+                </div>
+                <div className="alltext">
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      Cost is cited on monthly basis
+                      <br />
+                    </p>
+                  </div>
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      Max, 8 hours a day and 5 days per week
+                      <br />
+                    </p>
+                  </div>
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      A dedicated developer will be allotted
+                      <br />
+                    </p>
+                  </div>
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      Communication via: Email, Skype, Phone
+                      <br />
+                    </p>
+                  </div>
+                  <div className="circle_text">
+                    <CheckCircleIcon className="circle_tick" />
+                    <p className="text_expertise">
+                      Favorable for long-term projects
+                      <br />
+                    </p>
+                  </div>
+                </div>
+                <div className="btn_contact">
+                  <button className="btn_contactus">Contact Us</button>
+                </div>
               </div>
             </Col>
           </Row>
@@ -905,156 +940,159 @@ export default function HireShopify() {
           <div className="title_faqs">
             <h2 className="titlefaqs">Frequently Asked Questions</h2>
           </div>
-          <Row className="accordionfaq">
-            <Col md={6}>
-              <Accordion>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1-content"
-                  id="panel1-header"
-                >
-                  What is Shopify, and why is it popular for e-commerce?
-                </AccordionSummary>
-                <AccordionDetails>
-                  Shopify is a leading e-commerce platform that allows
-                  businesses to create and manage online stores. Its popularity
-                  stems from its user-friendly interface, customizable
-                  templates, secure transactions, and a range of powerful
-                  features tailored to e-commerce needs.
-                </AccordionDetails>
-              </Accordion>
-            </Col>
-            <Col md={6}>
-              <Accordion>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel2-content"
-                  id="panel2-header"
-                >
-                  Can I make changes to my Shopify store after it's live?
-                </AccordionSummary>
-                <AccordionDetails>
-                  Absolutely. You have complete control over your Shopify store
-                  and can make changes such as adding products, updating
-                  content, modifying design elements, and integrating new
-                  features even after it's live.
-                </AccordionDetails>
-              </Accordion>
-            </Col>
-          </Row>
-          <Row className="accordionfaq">
-            <Col md={6}>
-              <Accordion>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1-content"
-                  id="panel1-header"
-                >
-                  How can a Shopify expert help improve my online store?
-                </AccordionSummary>
-                <AccordionDetails>
-                  Shopify experts have specialized knowledge to enhance your
-                  store's design, functionality, and performance. They can
-                  optimize the user experience, integrate third-party apps,
-                  customize themes, and implement strategies for increased
-                  conversions and sales.
-                </AccordionDetails>
-              </Accordion>
-            </Col>
-            <Col md={6}>
-              <Accordion>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel2-content"
-                  id="panel2-header"
-                >
-                  Do Shopify experts provide SEO services for my store?
-                </AccordionSummary>
-                <AccordionDetails>
-                  Yes, many Shopify experts offer SEO services to optimize your
-                  store for search engines. They can help with keyword research,
-                  meta tags, page speed optimization, and other SEO strategies
-                  to improve visibility and ranking.
-                </AccordionDetails>
-              </Accordion>
-            </Col>
-          </Row>
-          <Row className="accordionfaq">
-            <Col md={6}>
-              <Accordion>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1-content"
-                  id="panel1-header"
-                >
-                  How long does setting up a Shopify store with your expert help
-                  take?
-                </AccordionSummary>
-                <AccordionDetails>
-                  The timeframe varies depending on the complexity of the
-                  project. A simple store setup may take a few days, while a
-                  more customized and feature-rich store can take several weeks.
-                  Timelines are typically discussed and agreed upon during
-                  project consultation.
-                </AccordionDetails>
-              </Accordion>
-            </Col>
-            <Col md={6}>
-              <Accordion>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel2-content"
-                  id="panel2-header"
-                >
-                  Can I get support and maintenance for my Shopify store
-                  post-launch?
-                </AccordionSummary>
-                <AccordionDetails>
-                  Yes, Shopify experts often provide ongoing support and
-                  maintenance services. This includes updates, security patches,
-                  troubleshooting, and ensuring your store operates smoothly and
-                  securely.
-                </AccordionDetails>
-              </Accordion>
-            </Col>
-          </Row>
-          <Row className="accordionfaq">
-            <Col md={6}>
-              <Accordion>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1-content"
-                  id="panel1-header"
-                >
-                  How secure is Shopify for processing customer payments?
-                </AccordionSummary>
-                <AccordionDetails>
-                  Shopify is highly secure for processing payments. It is PCI
-                  DSS compliant, ensuring that all payment transactions and
-                  customer data are handled securely and meet industry standards
-                  for payment processing.
-                </AccordionDetails>
-              </Accordion>
-            </Col>
-            <Col md={6}>
-              <Accordion>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel2-content"
-                  id="panel2-header"
-                >
-                  Are there limits to the customization of a Shopify store?
-                </AccordionSummary>
-                <AccordionDetails>
-                  While Shopify provides a structured environment, it offers
-                  extensive customization options. Experts can tailor themes,
-                  add custom code, and utilize apps to achieve a wide range of
-                  design and functional enhancements to suit your unique
-                  business needs.
-                </AccordionDetails>
-              </Accordion>
-            </Col>
-          </Row>
+          <div className="accordionfaq">
+            <div className="left_side_faq">
+
+              <div>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1-content"
+                    id="panel1-header"
+                  >
+                    What is Shopify, and why is it popular for e-commerce?
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    Shopify is a leading e-commerce platform that allows
+                    businesses to create and manage online stores. Its popularity
+                    stems from its user-friendly interface, customizable
+                    templates, secure transactions, and a range of powerful
+                    features tailored to e-commerce needs.
+                  </AccordionDetails>
+                </Accordion>
+              </div>
+
+              <div>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2-content"
+                    id="panel2-header"
+                  >
+                    Can I make changes to my Shopify store after it's live?
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    Absolutely. You have complete control over your Shopify store
+                    and can make changes such as adding products, updating
+                    content, modifying design elements, and integrating new
+                    features even after it's live.
+                  </AccordionDetails>
+                </Accordion>
+              </div>
+
+              <div>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1-content"
+                    id="panel1-header"
+                  >
+                    How can a Shopify expert help improve my online store?
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    Shopify experts have specialized knowledge to enhance your
+                    store's design, functionality, and performance. They can
+                    optimize the user experience, integrate third-party apps,
+                    customize themes, and implement strategies for increased
+                    conversions and sales.
+                  </AccordionDetails>
+                </Accordion>
+              </div>
+
+              <div>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2-content"
+                    id="panel2-header"
+                  >
+                    Do Shopify experts provide SEO services for my store?
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    Yes, many Shopify experts offer SEO services to optimize your
+                    store for search engines. They can help with keyword research,
+                    meta tags, page speed optimization, and other SEO strategies
+                    to improve visibility and ranking.
+                  </AccordionDetails>
+                </Accordion>
+              </div>
+            </div>
+            <div className="right_side_faq">
+              <div>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1-content"
+                    id="panel1-header"
+                  >
+                    How long does setting up a Shopify store with your expert help
+                    take?
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    The timeframe varies depending on the complexity of the
+                    project. A simple store setup may take a few days, while a
+                    more customized and feature-rich store can take several weeks.
+                    Timelines are typically discussed and agreed upon during
+                    project consultation.
+                  </AccordionDetails>
+                </Accordion>
+              </div>
+              <div>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2-content"
+                    id="panel2-header"
+                  >
+                    Can I get support and maintenance for my Shopify store
+                    post-launch?
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    Yes, Shopify experts often provide ongoing support and
+                    maintenance services. This includes updates, security patches,
+                    troubleshooting, and ensuring your store operates smoothly and
+                    securely.
+                  </AccordionDetails>
+                </Accordion>
+              </div>
+              <div>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1-content"
+                    id="panel1-header"
+                  >
+                    How secure is Shopify for processing customer payments?
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    Shopify is highly secure for processing payments. It is PCI
+                    DSS compliant, ensuring that all payment transactions and
+                    customer data are handled securely and meet industry standards
+                    for payment processing.
+                  </AccordionDetails>
+                </Accordion>
+              </div>
+              <div>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2-content"
+                    id="panel2-header"
+                  >
+                    Are there limits to the customization of a Shopify store?
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    While Shopify provides a structured environment, it offers
+                    extensive customization options. Experts can tailor themes,
+                    add custom code, and utilize apps to achieve a wide range of
+                    design and functional enhancements to suit your unique
+                    business needs.
+                  </AccordionDetails>
+                </Accordion>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </>
