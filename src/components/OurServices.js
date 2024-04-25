@@ -64,7 +64,7 @@ export default class OurServices extends Component {
             </Row>
           </div>
           <div className="read-btnn">
-            <Link to="/service" className='button_slide slide_down'>Read More</Link>
+            <Link to="/service" className='button_slide slide_down'>More</Link>
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
 /************* Our Services Section start **********************/
 :root {
     --white-color: #ffffff;
-    --black-color: #292b32;
+    --black-color: #191e25;
     --green-color: #54a154;
-    --dark-black-color:#000;
-    --paragraph-color:#3c3c3c;
+    --dark-black-color:#292b32;
+    --paragraph-color:#212529;
 }
 
 .our-services {
@@ -30,7 +30,7 @@
 .litle-dess {
     margin-bottom: 0px;
     padding-bottom: 7px;
-    color: #54a154 !important;
+    color: var(--green-color) !important;
     font-weight: 600 !important;
 }
 
@@ -97,7 +97,7 @@
 .read-btn a {
     display: block;
     padding: 10px 23px;
-    background: #54a154;
+    background: var(--green-color);
     border-radius: 6px;
     cursor: pointer;
     color: #fff;
@@ -132,7 +132,7 @@
 
 button.get_quote_btn {
     color: white;
-    background: #54a154;
+    background: var(--green-color);
     padding: 10px;
     font-weight: 700;
 }
@@ -209,7 +209,7 @@ button.get_quote_btn:hover {
 }
 
 .oposite ul li span svg {
-    fill: #54a154;
+    fill: var(--green-color);
     filter: contrast(0.5);
 }
 .servic_provid {
@@ -220,7 +220,7 @@ button.get_quote_btn:hover {
     width: 55px !important;
     left: 56px;
     top: 48px;
-    filter: opacity(0.5) drop-shadow(0 0 0 #54a154);
+    filter: opacity(0.5) drop-shadow(0 0 0 var(--green-color));
 }
 
 .logo_img h3 {
@@ -260,5 +260,5 @@ button.get_quote_btn:hover {
     transform: rotateY(180deg);
     padding: 30px 30px;
     background: #ffffff;
-    box-shadow: inset 0px 0px 7px 0px #54a154 !important;
+    box-shadow: inset 0px 0px 7px 0px var(--green-color) !important;
 }

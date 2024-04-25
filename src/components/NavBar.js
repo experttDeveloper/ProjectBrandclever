@@ -239,7 +239,7 @@ const NavBar = () => {
                   </li>
                   <li>
                     <div className="dropdownMenu">
-                      <Link to="/service" onClick={closeMenu} className="dropbtn">Hire a Developer
+                      <Link to="#" onClick={closeMenu} className="dropbtn">Hire a Developer
                         <span class="arrow-right">
                           <span class="ar_line">
                           </span><span class="ar_left">
@@ -316,13 +316,21 @@ const NavBar = () => {
                     </Link>
                   </li>
                   <li className='hire_us'>
-                    <Link to="/hire-us" onClick={closeMenu} className="dropbtn">Hire Us
-                      <span class="arrow-right">
-                        <span class="ar_line">
-                        </span><span class="ar_left">
+                  <div className="dropdownMenu">
+                      <Link to="/hire-us" onClick={closeMenu} className='dropbtn'>Hire Us
+                        <span class="arrow-right">
+                          <span class="ar_line">
+                          </span><span class="ar_left">
+                          </span>
                         </span>
-                      </span>
-                    </Link>
+                      </Link>
+                        <div className="dropdown-content">
+                          <Link to="#">PPH</Link>
+                          <Link to="#">Upwork</Link>
+                          <Link to="#">Fiverr</Link>
+                          <Link to="#">Guru</Link>
+                        </div>
+                    </div>
                   </li>
                 </ul>
                 <div className='get_hed_btnn'>
