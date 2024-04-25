@@ -60,14 +60,14 @@ export default class App extends Component {
             <Route path="/traning-and-placement" element={<PlacementForm />} />
             <Route path="/review" element={<Review />} />
             <Route path="/career" element={<Career />} />
-            <Route path="/web-development" element={<WebDevelopment />} />
+            {/* <Route path="/web-development" element={<WebDevelopment />} />
             <Route path="/graphic-degin" element={<GraphicDesign />} />
             
             <Route path="/mern-stack" element={<MernStack />} />
             <Route path="/digital-marketing" element={<DigitalMarketing />} />
             <Route path="/content-strategy" element={<ContentStrategy />} />
             <Route path="/framework" element={<Framework />} />
-            <Route path="/cms-solution" element={<CMSSolution />} />
+            <Route path="/cms-solution" element={<CMSSolution />} /> */}
 
 
             <Route path="/hire-shopify-expert" element={<HireShopify />} />

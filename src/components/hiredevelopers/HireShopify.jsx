@@ -18,7 +18,7 @@ export default function HireShopify() {
   return (
     <>
       <div>
-        <TopHeader title={"hire sopify devloepr"} description={""} />
+        <TopHeader title={"hire sopify devloper"} description={""} />
       </div>
       <div className="content_form_shopify">
         <div className="container ">
