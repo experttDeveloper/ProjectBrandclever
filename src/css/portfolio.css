@@ -64,12 +64,12 @@
 }
 .costner_page_web a:hover::after {
     content: '\f08e';
-    position: absolute;
+    position: absolute !important;
     background: #54a154;
-    top: 36%;
+    top: 36% !important;
     font-family: 'Font Awesome 5 Pro';
-    left: 38%;
-    display: flex;
+    left: 38% !important;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     transition: all .4s;
