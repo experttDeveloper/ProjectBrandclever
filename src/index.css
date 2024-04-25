@@ -1444,8 +1444,9 @@ h6 {
 .contact_us_section .contact_us_second textarea {
     color: var(--white-color);
     background: #000 !important;
-    box-shadow: 0px 0px 5px 0px var(--white-color) !important;
+    box-shadow: 0px 0px 5px 0px #ffffff !important;
     border-radius: 5px;
+    border: none;
 }
 
 .contact_des h3 {
