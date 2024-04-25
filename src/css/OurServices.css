@@ -171,18 +171,16 @@ button.get_quote_btn:hover {
 }
 
 /* hide back of pane during swap */
-.front,
-.back {
+.front, .back {
     backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
     color: cornSilk;
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
     border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px var(--green-color) !important;
 }
-
 .logo_img img, .back_logo_img img {
     width: 100px;
     text-align: left;
@@ -202,10 +200,7 @@ button.get_quote_btn:hover {
 }
 
 .front .srv_bg_web {
-    position: absolute;
     width: 55px !important;
-    left: 56px;
-    top: 48px;
 }
 
 .oposite ul li span svg {
@@ -213,16 +208,20 @@ button.get_quote_btn:hover {
     filter: contrast(0.5);
 }
 .servic_provid {
-    margin-top: 20px;
+    margin-top: 70px;
 }
 .back .srv_bg_web {
-    position: absolute;
     width: 55px !important;
-    left: 56px;
-    top: 48px;
-    filter: opacity(0.5) drop-shadow(0 0 0 var(--green-color));
 }
-
+.front_img {
+    width: max-content;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 0px #54a154;
+    border-radius: 100%;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: -77px !important;
+}
 .logo_img h3 {
     font-size: 24px;
     color: var(--black-color);
@@ -260,5 +259,5 @@ button.get_quote_btn:hover {
     transform: rotateY(180deg);
     padding: 30px 30px;
     background: #ffffff;
-    box-shadow: inset 0px 0px 7px 0px var(--green-color) !important;
+    box-shadow: 0px 0px 5px 0px var(--green-color) !important;
 }

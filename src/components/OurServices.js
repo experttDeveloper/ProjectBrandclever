@@ -28,16 +28,18 @@ export default class OurServices extends Component {
                         <div class="flipper">
                           <div class="front">
                             <div className='logo_img'>
-                              <img className='srv_bg_img' src={`/images/service/bg_srv.png`} />
-                              <img className='srv_bg_web' src={service.icon} />
+                              <div className='front_img'>
+                                <img className='srv_bg_web' src={service.icon} />
+                              </div>
                               <h3>{service.title}</h3>
-                              <p>{service.description.substring(0, 342)}...</p>
+                              <p>{service.description}</p>
                             </div>
                           </div>
                           <div class="back">
                             <div className='back_logo_img'>
-                              <img className='srv_bg_img' src={`/images/service/bg_srv.png`} />
-                              <img className='srv_bg_web' src={service.icon} />
+                            <div className='front_img'>
+                                <img className='srv_bg_web' src={service.icon} />
+                              </div>
                               <h3>{service.title}</h3>
                             </div>
                             <div class="oposite" bis_skin_checked="1">
@@ -60,11 +62,11 @@ export default class OurServices extends Component {
                   )
                 })
               }
-             
+
             </Row>
           </div>
           <div className="read-btnn">
-            <Link to="/service" className='button_slide slide_down'>More</Link>
+            <Link to="/service" className='button_slide slide_down'>More Details</Link>
           </div>
         </div>
       </div>
