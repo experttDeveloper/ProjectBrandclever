@@ -149,7 +149,7 @@ button.get_quote_btn:hover {
 
 /* entire container, keeps perspective */
 .flip-container {
-    perspective: 1000;
+    -webkit-perspective: 1000;
 }
 
 /* flip the pane when hovered */
