@@ -1,8 +1,8 @@
 :root {
     --white-color: #ffffff;
-    --black-color: #292b32;
+    --black-color: #191e25;
     --green-color: #54a154;
-    --dark-black-color:#000;
+    --dark-black-color:#292b32;
     --paragraph-color:#212529;
 }
 
@@ -36,6 +36,13 @@ li.pages_navbar .dropdown-content {
     text-align: left;
     position: absolute;
     left: 63% !important;
+}
+li.hire_us .dropdown-content {
+    width: fit-content;
+    max-width: 17% !important;
+    text-align: left;
+    position: absolute;
+    left: 79% !important;
 }
 .column {
     flex: 1;
@@ -788,11 +795,14 @@ textarea#message::placeholder {
     font-size: 15px;
     font-weight: 600;
 }
+li.hire_us a:hover {
+    color: var(--green-color) !important;
+}
 li.pages_navbar a:hover {
-    color: #54a154 !important;
+    color: var(--green-color) !important;
 }
 .faq-inner .question span:hover {
-    color: #54a154 !important;
+    color: var(--green-color) !important;
 }
 .footer-inner ul li a,
 .footer-inner ul li a {

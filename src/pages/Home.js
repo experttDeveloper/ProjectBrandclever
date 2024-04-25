@@ -72,7 +72,9 @@ const Home = () => {
         <DatabaseSec />
         <div className='faq_Contact_Sec'>
           <Faq />
+          <div style={{marginTop:"35px",width:'100%'}}>
           <ContactForm />
+          </div>
         </div>
       </div>
 
