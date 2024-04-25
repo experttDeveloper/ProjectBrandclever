@@ -74,7 +74,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className='column'>
-                        <h3>SERVICES</h3>
+                        <h3>Services</h3>
                         <ul className='quick-links'>
                             <li>
                                 <Link to="/"><ArrowRightIcon />Web Development</Link>

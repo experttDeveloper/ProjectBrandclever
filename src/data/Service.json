@@ -4,7 +4,7 @@
       "id": "1",
       "title": "Web Development",
       "icon": "images/service/website_develop.png",
-      "description": "At Brandclever, Our professionals harness modern programming languages and frameworks to construct secure, scalable, high-performing web solutions. Prioritizing functionality, efficiency, and user-friendliness, we ensure an exceptional experience for your audience. Our expertise spans prominent platforms including PHP frameworks, WordPress, and Shopify. Entrust us to elevate your online presence, delivering bespoke web development solutions that resonate with your brand and drive tangible results. Welcome to the pinnacle of web development excellence with Brandclever.",
+      "description": "At Brandclever, Our professionals harness modern programming languages and frameworks to construct secure, scalable, high-performing web solutions. Prioritizing functionality, efficiency, and user-friendliness, we ensure an exceptional experience for your audience. Our expertise spans prominent platforms including PHP frameworks, WordPress, and Shopify. Entrust us to elevate your online presence, delivering bespoke web development solutions that resonate with your brand and drive tangible.",
       "additionalInfo": "<ul><li>Shopify Store Development</li><li>Wordpress Site Development</li><li>Landing Page Website</li><li>Backend Development</li><li>Frontend Development</li></ul>",
       "url": "/web-development",
       "tools": [
@@ -19,7 +19,7 @@
       "id": "2",
       "title": "Graphic Design",
       "icon": "images/service/graphic_design.png",
-      "description": "We at Brandclever specialize in shaping innovative concepts into impactful designs, imprinting a sense of professionalism onto your brand. Our highly skilled and creative team meticulously crafts visually stunning graphics that not only command attention but also deeply resonate with your target audience. Utilizing leading-edge tools such as Adobe Photoshop, Coreldraw, Figma, and Illustrator, we ensure that every aspect of your brand's visual identity is meticulously curated and brought to life. Let's collaborate to elevate your brand's visual identity and make a lasting impression together.",
+      "description": "We at Brandclever specialize in shaping innovative concepts into impactful designs, imprinting a sense of professionalism onto your brand. Our highly skilled and creative team meticulously crafts visually stunning graphics that not only command attention but also deeply resonate with your target audience. Utilizing leading-edge tools such as Adobe Photoshop, Coreldraw, Figma, and Illustrator, we ensure that every aspect of your brand's visual identity is meticulously curated and brought to life. Let's collaborate.",
       "additionalInfo": "<ul><li>Banner Designs</li><li>Icon Designs</li><li>Mobile Application Designs</li><li>Logo Designs</li><li>Business Cards</li><li>Brochures</li></ul>",
       "url": "/graphic-degin",
       "tools": [
@@ -35,7 +35,7 @@
       "id": "3",
       "title": "CMS Solution",
       "icon": "images/service/cms_solution.png",
-      "description": "Unlock seamless digital control with Brandclever's cutting-edge CMS solutions. Empower your online presence with our Content Management System (CMS) service, offering an intuitive and user-friendly interface for effortless content management. Stay dynamic and authentic as you effortlessly update and expand your website's content—relying on our expertise and proficiency, supported by an arsenal of leading tools such as WordPress, Drupal, Joomla, Wix, Magento, and a myriad of other platforms. Let us revolutionize your online experience and propel your digital journey to new heights.",
+      "description": "Unlock seamless digital control with Brandclever's cutting-edge CMS solutions. Empower your online presence with our Content Management System (CMS) service, offering an intuitive and user-friendly interface for effortless content management. Stay dynamic and authentic as you effortlessly update and expand your website's content—relying on our expertise and proficiency, supported by an arsenal of leading tools such as WordPress, Drupal, Joomla, Wix, Magento, and a myriad.",
       "additionalInfo": "<ul><li>Content Creation and Storage</li><li>User Access Control</li><li>Workflow Automation</li><li>Multi-Platform Publishing</li><li>Content Analysis</li><li>Content Migration Services</li></ul>",
       "url": "/cms-solution",
       "tools": [

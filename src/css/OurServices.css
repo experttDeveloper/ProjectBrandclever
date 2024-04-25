@@ -11,13 +11,12 @@
     padding: 50px 20px 60px !important;
     background: #fff;
 }
-
 .our-services .services-inner h2 {
     text-align: left;
     color: var(--black-color);
     padding-bottom: 0px;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .our-services .services-inner p {
@@ -164,15 +163,32 @@ button.get_quote_btn:hover {
     height: 465px;
 }
 /* flip speed goes here */
+/* .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+} */
 .flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d; /* Add -webkit- prefix */
     position: relative;
 }
 
 /* hide back of pane during swap */
+/* .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: cornSilk;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px var(--green-color) !important;
+} */
 .front, .back {
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Add -webkit- prefix */
     position: absolute;
     top: 0;
     left: 0;
@@ -231,10 +247,7 @@ button.get_quote_btn:hover {
 }
 
 .logo_img  p {
-    font-weight: 300 !important;
-    font-size: 16px !important;
     text-align: left !important;
-    line-height: 22px;
     color: var(--paragraph-color) !important;
 }
 
@@ -255,9 +268,17 @@ button.get_quote_btn:hover {
 }
 
 /* back, initially hidden pane */
-.back {
+/* .back {
     transform: rotateY(180deg);
     padding: 30px 30px;
     background: #ffffff;
+    box-shadow: 0px 0px 5px 0px var(--green-color) !important;
+} */
+.back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    padding: 30px 30px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 5px 0px var(--green-color) !important;
     box-shadow: 0px 0px 5px 0px var(--green-color) !important;
 }

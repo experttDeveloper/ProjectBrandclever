@@ -1,3 +1,12 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #191e25;
+  --green-color: #54a154;
+  --dark-black-color:#292b32;
+  --paragraph-color:#212529;
+  --background-color-black-paragrpah:#bfbfbf;
+}
+
 .content_form_shopify {
   background-color: #fff;
 }
@@ -43,7 +52,7 @@
   margin-left: 120px;
 }
 .content_whychoose {
-  color: #fff;
+  color: var(--background-color-black-paragrpah);
 }
 .titleexpertise {
   color: #fff;
@@ -69,7 +78,7 @@ span.perhour {
   margin-bottom: 50px;
 }
 .title_testimonial {
-  color: #000;
+  color: var(--black-color);
 }
 .author_img {
   display: flex;
@@ -128,10 +137,11 @@ p.text_expertise_reviews {
   text-align: center;
 }
 .boldtext {
-  font-weight: 700;
+  margin-bottom: -20px;
+  color: var(--white-color);
 }
 .titleofhiring {
-  color: #fff;
+  color: var(--background-color-black-paragrpah);
 }
 .images img {
   width: 100% !important;
@@ -181,7 +191,7 @@ p.text_expertise_reviews {
   align-items: center;
 }
 p.hiring_shopify {
-    color: black;
+    color: var(--black-color);
     font-size: 20px;
 }
 .accordionfaq {
@@ -212,8 +222,27 @@ p.hiring_shopify {
     padding-top: 20px;
 }
 p.reviewone {
-    font-size: 18px;
     line-height: 30px;
+}
+  
+.shopify_services p.text_expertise {
+  color: var(--background-color-black-paragrpah);
+}
+
+p.text_expertise {
+  margin-left: 10px;
+  color: var(--black-color);
+}
+
+h4.title_expertise_reviews {
+color: var(--black-color);
+}
+p.author {
+  color: var(--black-color);
+}
+
+p.content_shopifyservices {
+  color: var(--background-color-black-paragrpah);
 }
 p.content_title {
     font-size: 18px;
@@ -290,7 +319,7 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.circle_tick.css-i4bv87-MuiSvgIcon-
   margin-top: 16px;
 }
 .whychoose_shopify .text_expertise {
-  color: #fff;
+  color: var(--background-color-black-paragrpah);
 }
 .faqs .accordionfaq.row .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiAccordion-root.MuiAccordion-rounded.MuiAccordion-gutters.css-1c35hjw-MuiPaper-root-MuiAccordion-root {
   border: 2px solid #cbcbcb;

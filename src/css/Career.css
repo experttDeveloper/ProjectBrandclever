@@ -1,3 +1,12 @@
+:root {
+    --white-color: #ffffff;
+    --black-color: #191e25;
+    --green-color: #54a154;
+    --dark-black-color:#292b32;
+    --paragraph-color:#212529;
+    --background-color-black-paragrpah:#bfbfbf;
+}
+
 .career-image {
     position: relative;
 }
@@ -115,7 +124,7 @@
     width: 41.66666667%;
 }
 .career-page section.job-vacancy {
-    color: #000;
+    color: var(--black-color);
     padding: 50px 80px;
     margin: 0 auto;
     background: #fff;
@@ -127,8 +136,7 @@
     text-align: center;
 }
 .career-page .left-vacancyCnt p {
-    color: #000;
-    font-size: 14px;
+    color: var(--black-color);
 }
 .right-vacancyCnt form input {
     width: 100%;
@@ -190,7 +198,7 @@
     color: #fff;
 }
 .career-page .job-card .more h2 {
-    color: #000 !important;
+    color: var(--black-color) !important;
     font-weight: 600;
 }
 .career-page .job-card .more h3 {
@@ -297,7 +305,6 @@
 .job-vacancy .left-vacancyCnt h4 {
     padding-bottom: 30px;
     font-size: 20px;
-    font-weight: 600;
-    color: #000;
+    color: var(--black-color);
     line-height: 30px;
 }

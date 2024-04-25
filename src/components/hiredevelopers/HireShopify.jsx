@@ -187,7 +187,7 @@ export default function HireShopify() {
                   operating perfectly. ”
                 </p>
                 <div className="author_img">
-                  <p className="author" style={{ fontWeight: "bold" }}>
+                  <p className="author">
                     Sidoine's
                   </p>
                   <img
@@ -207,7 +207,7 @@ export default function HireShopify() {
                   Vielen Dank! Gerne wieder! ”
                 </p>
                 <div className="author_img">
-                  <p className="author" style={{ fontWeight: "bold" }}>
+                  <p className="author">
                     Luca Koller
                   </p>
                   <img
@@ -228,7 +228,7 @@ export default function HireShopify() {
                   development. Thank you for exceeding my expectations! ”
                 </p>
                 <div className="author_img">
-                  <p className="author" style={{ fontWeight: "bold" }}>
+                  <p className="author">
                     Jeremy Fritzhand
                   </p>
                   <img
@@ -256,7 +256,7 @@ export default function HireShopify() {
               <RoomPreferencesIcon className="svgiconss" />
               <h4
                 className="title_shopify_services"
-                style={{ fontWeight: "bold" }}
+              
               >
                 Store build or redesign
               </h4>
@@ -301,7 +301,7 @@ export default function HireShopify() {
               <ImportExportIcon className="svgiconss" />
               <h4
                 className="title_shopify_services"
-                style={{ fontWeight: "bold" }}
+              
               >
                 Store Migration
               </h4>
@@ -346,7 +346,7 @@ export default function HireShopify() {
               <ImportExportIcon className="svgiconss" />
               <h4
                 className="title_shopify_services"
-                style={{ fontWeight: "bold" }}
+              
               >
                 Shopify App Development
               </h4>
@@ -393,7 +393,7 @@ export default function HireShopify() {
               <TroubleshootIcon className="svgiconss" />
               <h4
                 className="title_shopify_services"
-                style={{ fontWeight: "bold" }}
+              
               >
                 Troubleshooting
               </h4>
@@ -438,7 +438,7 @@ export default function HireShopify() {
               <ScreenSearchDesktopIcon className="svgiconss" />
               <h4
                 className="title_shopify_services"
-                style={{ fontWeight: "bold" }}
+              
               >
                 Search Engine Optimisation
               </h4>
@@ -483,7 +483,7 @@ export default function HireShopify() {
               <DashboardCustomizeIcon className="svgiconss" />
               <h4
                 className="title_shopify_services"
-                style={{ fontWeight: "bold" }}
+              
               >
                 Theme customization
               </h4>
@@ -536,12 +536,12 @@ export default function HireShopify() {
                   </div>
                   <div className="content_es">
                     <p className="text_expertise_reviews">
-                      <span
+                      <h4
                         className="title_expertise_reviews"
-                        style={{ fontWeight: "bold" }}
+                      
                       >
                         Expertise and Experience <br />
-                      </span>
+                      </h4>
                       Professional Shopify experts with extensive experience in
                       e-commerce solutions. We have a proven track record of
                       successful Shopify projects showcasing our expertise.
@@ -557,12 +557,12 @@ export default function HireShopify() {
                   </div>
                   <div className="content_es">
                     <p className="text_expertise_reviews">
-                      <span
+                      <h4
                         className="title_expertise_reviews"
-                        style={{ fontWeight: "bold" }}
+                      
                       >
                         Customized Solutions <br />
-                      </span>
+                      </h4>
                       Tailored approach to understand your unique business needs
                       and preferences. Crafted strategies and solutions designed
                       specifically for your brand and audience.
@@ -581,12 +581,12 @@ export default function HireShopify() {
                   </div>
                   <div className="content_es">
                     <p className="text_expertise_reviews">
-                      <span
+                      <h4
                         className="title_expertise_reviews"
-                        style={{ fontWeight: "bold" }}
+                      
                       >
                         Support and Maintenance <br />
-                      </span>
+                      </h4>
                       Ongoing support and maintenance to ensure your Shopify
                       store runs flawlessly. Quick issue resolution and regular
                       updates to keep your store up-to-date and secure.
@@ -602,12 +602,12 @@ export default function HireShopify() {
                   </div>
                   <div className="content_es">
                     <p className="text_expertise_reviews">
-                      <span
+                      <h4
                         className="title_expertise_reviews"
-                        style={{ fontWeight: "bold" }}
+                      
                       >
                         Customized Solutions <br />
-                      </span>
+                      </h4>
                       Prioritization of client satisfaction and exceeding
                       expectations. Client feedback integration and continuous
                       improvement based on insights and suggestions.
@@ -636,12 +636,12 @@ export default function HireShopify() {
                   className="requirement"
                 />
                 <p className="titleofhiring">
-                  <span className="boldtext">Book a Free Consultation Call</span>{" "}
+                  <h4 className="boldtext">Book a Free Consultation Call</h4>{" "}
                   <br />
                   Initiate your Shopify project journey by booking a free
                   consultation call with BrandClever. This call provides
                   you with the opportunity to connect with our team of experts,
-                  allowing us to understand your business requirements.
+                  allowing us to understand.
                 </p>
               </div>
             </Col>
@@ -654,13 +654,12 @@ export default function HireShopify() {
                   className="requirement"
                 />
                 <p className="titleofhiring">
-                  <span className="boldtext">Discuss The Shopify Projects</span>
+                  <h4 className="boldtext">Discuss The Shopify Projects</h4>
                   <br />
                   We will focus on a comprehensive discussion about your Shopify
                   project. We encourage you to share your ideas, brand identity,
                   target audience, and desired functionalities. This discussion
-                  sets the foundation for a collaborative and effective Shopify
-                  project.
+                  sets the foundation.
                 </p>
               </div>
             </Col>
@@ -673,13 +672,12 @@ export default function HireShopify() {
                   className="requirement"
                 />
                 <p className="titleofhiring">
-                  <span className="boldtext">Project Execution & Delivery</span>
+                  <h4 className="boldtext">Project Execution & Delivery</h4>
                   <br />
                   Our dedicated team of Shopify experts starts working diligently
                   on your project, adhering to the specified timeline and
                   delivering exceptional results. Throughout this phase, we
-                  maintain open communication, ensuring that you are informed
-                  about the project's progress.
+                  maintain open communication.
                 </p>
               </div>
             </Col>
@@ -692,14 +690,14 @@ export default function HireShopify() {
                   className="requirement"
                 />
                 <p className="titleofhiring">
-                  <span className="boldtext">
+                  <h4 className="boldtext">
                     Daily / Weekly / Monthly Reporting
-                  </span>
+                  </h4>
                   <br />
                   We provide regular reports, tailored to your preference, on a
                   daily, weekly, or monthly basis. These reports encompass the
                   project's progress, milestones achieved, and any challenges
-                  encountered, along with proposed solutions.
+                  encountered.
                 </p>
               </div>
             </Col>

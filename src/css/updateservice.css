@@ -1,3 +1,6 @@
+
+
+
 .serv_btn_outr button{
     border-radius: 50%;
     animation: spin 4s linear infinite; /* Adjust animation duration as needed */
@@ -12,24 +15,22 @@
     }
 }
 :root {
-    --primary-color: #262f37;
-    --sec-clr: #54a154;
-    --landing_pg_clr: #293241;
-    --primary-font: 'Century Gothic';
-    --second-font: 'Brandon Grotesque';
-    --white-clr: #ffffff
+    --white-color: #ffffff;
+    --black-color: #191e25;
+    --green-color: #54a154;
+    --dark-black-color:#292b32;
+    --paragraph-color:#212529;
 }
-
 
 ::-moz-selection {
     background: #54a154;
-    color: var(--white-clr);
+    color: var(--white-color);
     text-shadow: none
 }
 
 ::selection {
     background: #54a154;
-    color: var(--white-clr);
+    color: var(--white-color);
     text-shadow: none
 }
 
@@ -56,7 +57,7 @@
     transition: all .3s ease;
     height: 99%;
     width: 99%;
-    background: var(--white-clr);
+    background: var(--white-color);
     position: relative;
     clip-path: polygon(0 25%,50% 0,100% 25%,100% 75%,50% 100%,0 75%)
 }
@@ -74,7 +75,7 @@
     align-items: center;
 }
 .hexagons-title h2 {
-    color: #000;
+    color:var(--black-color);
     padding-top: 50px;
 }
 .ctm_hex_dv3 img {

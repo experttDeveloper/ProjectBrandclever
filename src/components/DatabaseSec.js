@@ -12,7 +12,7 @@ export default class DatabaseSec extends Component {
     return (
       <div className='main-sub'>
         <div className='database_left'>
-          <h3 className='cont2'>Our Subject Matter Experts Are Change Catalysts. Book Your First Presentation with Our Experts Today.</h3>
+          <h2 className='cont2'>Our Subject Matter Experts Are Change Catalysts. Book Your First Presentation with Our Experts Today.</h2>
         </div>
         <div className='database_right'>
           {dbImages.map((image, index) => (
