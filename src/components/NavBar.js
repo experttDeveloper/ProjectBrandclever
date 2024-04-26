@@ -154,6 +154,7 @@ const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isSticky, setSticky] = useState(false);
 
+
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
@@ -312,8 +313,8 @@ const NavBar = () => {
                               <img src='images/menus/term.png' alt='about page' height="32px" width="32px" />
                               <Link to="/term-conditions">Terms & Conditions</Link>
                             </div>
-                            
-                          
+
+
 
                           </Col>
                           <Col md={6}>
@@ -339,7 +340,7 @@ const NavBar = () => {
                       <div className="dropdown-content">
                         <Row>
                           <Col md={6}>
-                          <div className='service_img'>
+                            <div className='service_img'>
                               <img src='images/menus/google.png' alt='about page' height="26px" width="26px" />
                               <Link to="#">Google</Link>
                             </div>
@@ -378,9 +379,19 @@ const NavBar = () => {
                       <div className="dropdown-content">
                         <Row>
                           <Col med={6}>
-                          <div className='service_img'>
+                            <div className='service_img pph_icon'>
                               <img src='images/menus/pph.png' alt='about page' height="26px" width="26px" />
-                              <Link to="#">PPH</Link>
+                              <div className='pph_nav'>
+                                <div className='dropdownMenu'>
+                                  <Link to="#">PPH</Link>
+                                  <div className="dropdown-content">
+                                    <Link to="#">Profile1</Link>
+                                    <Link to="#">Profile2</Link>
+                                    <Link to="#">Profile3</Link>
+                                    <Link to="#">Profile4</Link>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                             <div className='service_img'>
                               <img src='images/menus/upwork.png' alt='about page' height="26px" width="26px" />
@@ -394,8 +405,8 @@ const NavBar = () => {
                               <img src='images/menus/guru.png' alt='about page' height="26px" width="26px" />
                               <Link to="#">Guru</Link>
                             </div>
-                            
-                           
+
+
                           </Col>
                           <Col md={6}>
 

@@ -2793,3 +2793,13 @@ li.hire_us .dropdown-content {
     max-width: 50% !important;
     left: 45% !important;
 }
+.service_img.pph_icon .dropdown-content {
+    display: none;
+}
+.service_img.pph_icon:hover .dropdown-content {
+    display: block !important;
+}
+.service_img.pph_icon .dropdown-content {
+    top: 25px;
+    box-shadow: inset 0px 0px 5px 0px #ffffff !important;
+}
