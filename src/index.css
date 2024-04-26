@@ -39,11 +39,12 @@ p{
     padding: 20px 0px;
 }
 li.pages_navbar .dropdown-content {
+    width: -moz-fit-content;
     width: fit-content;
-    max-width: 17% !important;
+    max-width: 50% !important;
     text-align: left;
     position: absolute;
-    left: 63% !important;
+    left: 44% !important;
 }
 li.hire_us .dropdown-content {
     width: fit-content;
@@ -277,8 +278,8 @@ img.signature {
     transform: rotate(-90deg);
     right: -10px;
     opacity: 0;
+    z-index: 999999999 !important;
 }
-
 .columnMenu img {
     width: 100%;
 }
@@ -2344,26 +2345,24 @@ button.back_btn_placement_traning:hover {
     transform: scale(1.1);
     transition: 0.4s;
 }
-
+li.review_nav .row .col-md-6 {
+    text-align: left !important;
+}
 /********** Tushar css End here ***********/
 .header_btn:hover {
     background: linear-gradient(to right, #96d358 0%, #89c957 50%, #2aa961 100%) !important;
 }
-
+li.review_nav .dropdown-content {
+    width: 50% !important;
+    left: 45%;
+}
 .header_btn {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    animation: header_btn 2s infinite;
     padding: 8px 30px;
-    box-shadow: 0px 0px 5px 0px #89c857;
     text-transform: uppercase;
-}
-
-@keyframes header_btn  {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(10px); }
-    100% { transform: translateX(0); }
+    background: #509e53 !important;
 }
 .header_btn a {
     color: var(--white-color) !important;
@@ -2567,10 +2566,9 @@ div#successMsg {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 20px;
-    top: 65px;
+    top: 60px;
     width: 100% !important;
 }
-
 
 
 /* Mega Menu header, if needed */
@@ -2790,4 +2788,8 @@ header.sticky {
 .tab_panel.port_content .col-md-4 {
     width: 100% !important;
     max-width: 100% !important;
+}
+li.hire_us .dropdown-content {
+    max-width: 50% !important;
+    left: 45% !important;
 }

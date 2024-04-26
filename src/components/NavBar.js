@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './Images/logoWhite.png';
+import { Col, Row } from 'react-bootstrap';
+import InfoIcon from '@mui/icons-material/Info';
 
 const serviceMenus = [
   {
@@ -212,7 +214,7 @@ const NavBar = () => {
                             {serviceMenus.slice(0, 6).map((ele, key) => {
                               return (
                                 <div className='service_img'>
-                                  <img src={ele.icon} height="30px" width="30px" />
+                                  <img src={ele.icon} height="32px" width="32px" />
                                   <Link to={ele.url}>{ele.title}</Link>
                                 </div>
                               )
@@ -223,7 +225,7 @@ const NavBar = () => {
                               serviceMenus.slice(6, 12).map((ele, key) => {
                                 return (
                                   <div className='service_img'>
-                                    <img src={ele.icon} height="30px" width="30px" />
+                                    <img src={ele.icon} height="32px" width="32px" />
                                     <Link to={ele.url}>{ele.title}</Link>
                                   </div>
                                 )
@@ -253,7 +255,7 @@ const NavBar = () => {
                             {hireMenus.slice(0, 6).map((ele, key) => {
                               return (
                                 <div className='service_img'>
-                                  <img src={ele.icon} height="30px" width="30px" />
+                                  <img src={ele.icon} height="32px" width="32px" />
                                   <Link to={ele.url}>{ele.title}</Link>
                                 </div>
                               )
@@ -264,7 +266,7 @@ const NavBar = () => {
                               hireMenus.slice(6, 12).map((ele, key) => {
                                 return (
                                   <div className='service_img'>
-                                    <img src={ele.icon} height="30px" width="30px" />
+                                    <img src={ele.icon} height="32px" width="32px" />
                                     <Link to={ele.url}>{ele.title}</Link>
                                   </div>
                                 )
@@ -287,36 +289,85 @@ const NavBar = () => {
                           </span>
                         </span>
                       </Link>
-                        <div className="dropdown-content">
-                          <Link to="/about">About</Link>
-                          <Link to="/career">Career</Link>
-                          <Link to="/portfolio">Portfolio</Link>
-                          <Link to="/privacy-policy">Privacy Policy</Link>
-                          <Link to="/privacy-policy">Terms & Conditions</Link>
-                        </div>
+                      <div className="dropdown-content">
+                        <Row>
+                          <Col md={6}>
+                            <div className='service_img'>
+                              <img src='images/menus/about.png' alt='about page' height="32px" width="32px" />
+                              <Link to="/about">About</Link>
+                            </div>
+                            <div className='service_img'>
+                              <img src='images/menus/career.png' alt='about page' height="32px" width="32px" />
+                              <Link to="/career">Career</Link>
+                            </div>
+                            <div className='service_img'>
+                              <img src='images/menus/portfolio.png' alt='about page' height="32px" width="32px" />
+                              <Link to="/portfolio">Portfolio</Link>
+                            </div>
+                            <div className='service_img'>
+                              <img src='images/menus/privacy.png' alt='about page' height="32px" width="32px" />
+                              <Link to="/privacy-policy">Privacy Policy</Link>
+                            </div>
+                            <div className='service_img'>
+                              <img src='images/menus/term.png' alt='about page' height="32px" width="32px" />
+                              <Link to="/term-conditions">Terms & Conditions</Link>
+                            </div>
+                            
+                          
+
+                          </Col>
+                          <Col md={6}>
+
+                            <div className=" serv_img">
+                              <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
+                            </div>
+                          </Col>
+                        </Row>
+                      </div>
                     </div>
                   </li>
-                 
-                  {/* <li>
-                    <Link to="/portfolio" onClick={closeMenu}>Portfolio
-                      <span class="arrow-right">
-                        <span class="ar_line">
-                        </span><span class="ar_left">
+
+                  <li className='review_nav'>
+                    <div className="dropdownMenu">
+                      <Link to="/review" onClick={closeMenu} className="dropbtn">Reviews
+                        <span class="arrow-right">
+                          <span class="ar_line">
+                          </span><span class="ar_left">
+                          </span>
                         </span>
-                      </span>
-                    </Link>
-                  </li> */}
-                  <li>
-                    <Link to="/review" onClick={closeMenu} className="dropbtn">Reviews
-                      <span class="arrow-right">
-                        <span class="ar_line">
-                        </span><span class="ar_left">
-                        </span>
-                      </span>
-                    </Link>
+                      </Link>
+                      <div className="dropdown-content">
+                        <Row>
+                          <Col md={6}>
+                          <div className='service_img'>
+                              <img src='images/menus/google.png' alt='about page' height="26px" width="26px" />
+                              <Link to="#">Google</Link>
+                            </div>
+                            <div className='service_img'>
+                              <img src='images/menus/upwork.png' alt='about page' height="26px" width="26px" />
+                              <Link to="#">Upwork</Link>
+                            </div>
+                            <div className='service_img'>
+                              <img src='images/menus/linkedin.png' alt='about page' height="26px" width="26px" />
+                              <Link to="#">LinkdIn</Link>
+                            </div>
+                            <div className='service_img'>
+                              <img src='images/menus/indeed.png' alt='about page' height="26px" width="26px" />
+                              <Link to="#">Indeed</Link>
+                            </div>
+                          </Col>
+                          <Col md={6}>
+
+                            <div className=" serv_img">
+                              <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
+                            </div>
+                          </Col>
+                        </Row>
+                      </div>
+                    </div>
                   </li>
                   <li className='hire_us'>
-                  <div className="dropdownMenu">
+                    <div className="dropdownMenu">
                       <Link to="/hire-us" onClick={closeMenu} className='dropbtn'>Hire Us
                         <span class="arrow-right">
                           <span class="ar_line">
@@ -324,12 +375,36 @@ const NavBar = () => {
                           </span>
                         </span>
                       </Link>
-                        <div className="dropdown-content">
-                          <Link to="#">PPH</Link>
-                          <Link to="#">Upwork</Link>
-                          <Link to="#">Fiverr</Link>
-                          <Link to="#">Guru</Link>
-                        </div>
+                      <div className="dropdown-content">
+                        <Row>
+                          <Col med={6}>
+                          <div className='service_img'>
+                              <img src='images/menus/pph.png' alt='about page' height="26px" width="26px" />
+                              <Link to="#">PPH</Link>
+                            </div>
+                            <div className='service_img'>
+                              <img src='images/menus/upwork.png' alt='about page' height="26px" width="26px" />
+                              <Link to="#">Upwork</Link>
+                            </div>
+                            <div className='service_img'>
+                              <img src='images/menus/fiver.png' alt='about page' height="26px" width="26px" />
+                              <Link to="#">Fiverr</Link>
+                            </div>
+                            <div className='service_img'>
+                              <img src='images/menus/guru.png' alt='about page' height="26px" width="26px" />
+                              <Link to="#">Guru</Link>
+                            </div>
+                            
+                           
+                          </Col>
+                          <Col md={6}>
+
+                            <div className=" serv_img">
+                              <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
+                            </div>
+                          </Col>
+                        </Row>
+                      </div>
                     </div>
                   </li>
                 </ul>
