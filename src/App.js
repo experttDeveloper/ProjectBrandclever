@@ -25,10 +25,11 @@ import PageNotFound from './pages/PageNotFound'
 import AboutPage from './pages/AboutPage';
 import UpdatedService from './pages/UpdatedService';
 import Contact from './pages/Contact';
-import HireShopify from './components/hiredevelopers/HireShopify';
+import HireShopify from './pages/HireShopify';
 import './css/hiredeveloper.css'
 import TermCondition from './pages/TermCondition';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import HireMagento from './pages/HireMagento';
 
 
 
@@ -79,6 +80,7 @@ export default class App extends Component {
 
 
             <Route path="/hire-shopify-expert" element={<HireShopify />} />
+            <Route path="/hire-magento-expert" element={<HireMagento />} />
 
 
             <Route
