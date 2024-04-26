@@ -161,6 +161,7 @@ export default function GraphicDesign() {
 
                         <Col md={6}>
                             <img
+                             alt='cms_img'
                                 src='https://aronwebsolutions.com/public/front/images/graphic_img_right.webp'
                                 height="500px"
                                 width="500px"
@@ -173,6 +174,7 @@ export default function GraphicDesign() {
                     <Row>
                         <Col md={6}>
                             <img
+                             alt='cms_img'
                                 src='https://aronwebsolutions.com/public/front/images/graphic_img_left.webp'
                                 height="500px"
                                 width="500px"
@@ -247,6 +249,7 @@ export default function GraphicDesign() {
                                 <Col md={3}>
                                     <img src={ele.image}
                                         style={{ border: '2px solid gray', borderRadius: '50%' }}
+                                        alt='cms_img'
                                     />
                                     <Typography variant='h5'> {ele.title} </Typography>
                                     <Typography variant='p'> {ele.description} </Typography>
