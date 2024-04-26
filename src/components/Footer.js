@@ -13,7 +13,7 @@ import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArro
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 const Footer = () => {
-   
+
 
     const certificates = [
         process.env.PUBLIC_URL + '/images/certificate/goodfirms.png',
@@ -105,8 +105,8 @@ const Footer = () => {
                 </div>
                 <hr></hr>
                 <div className='footer-copy-text'>
-                    <p>Copyright &copy; 2024 <Link to="/" className='home-link'>Brandclever </Link> | <span className='term'> Terms & Conditions </span>
-                        | <span className='privacy'> Privacy Policy </span>
+                    <p>Copyright &copy; 2024 <Link to="/" className='home-link'>Brandclever </Link> |<Link to="/term-conditions" style={{color:"white"}}> <span className='term'> Terms & Conditions </span></Link>
+                        | <Link to="/privacy-policy" style={{color:"white"}}> <span className='privacy'> Privacy Policy </span></Link>
                     </p>
                 </div>
             </footer>

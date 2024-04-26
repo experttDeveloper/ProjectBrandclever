@@ -42,7 +42,7 @@ const Portfolio = () => {
                         onMouseLeave={() => setHoveredCardIndex(null)}>
                         <Link to={ele.websiteUrl} target="_blank">
                           <div className='card_portfol'>
-                            <img src={ele.image} />
+                            <img src={ele.image} alt='service_img'/>
                             {/* <div className='page_link_prot'> */}
                             <h3 href='/' className={hoveredCardIndex === index ? "port_title" : ""} key={index}>{ele.title}</h3>
                             {/* </div> */}
@@ -64,7 +64,7 @@ const Portfolio = () => {
                         onMouseLeave={() => setHoveredCardIndex(null)}>
                         <Link to={ele.websiteUrl} target="_blank">
                           <div className='card_portfol'>
-                            <img src={ele.image} />
+                            <img src={ele.image} alt='service_img'/>
                             {/* <div className='page_link_prot'> */}
                             <h3 href='/' className={hoveredCardIndex === index ? "port_title" : ""} key={index}>{ele.title}</h3>
                             {/* </div> */}
@@ -86,7 +86,7 @@ const Portfolio = () => {
                         onMouseLeave={() => setHoveredCardIndex(null)}>
                        <Link to={ele.websiteUrl} target="_blank">
                           <div className='card_portfol'>
-                            <img src={ele.image} />
+                            <img src={ele.image} alt='service_img'/>
                             {/* <div className='page_link_prot'> */}
                             <h3 href='/' className={hoveredCardIndex === index ? "port_title" : ""} key={index}>{ele.title}</h3>
                             {/* </div> */}
@@ -108,7 +108,7 @@ const Portfolio = () => {
                         onMouseLeave={() => setHoveredCardIndex(null)}>
                        <Link to={ele.websiteUrl} target="_blank">
                           <div className='card_portfol'>
-                            <img src={ele.image} />
+                            <img src={ele.image} alt='service_img'/>
                             {/* <div className='page_link_prot'> */}
                             <h3 href='/' className={hoveredCardIndex === index ? "port_title" : ""} key={index}>{ele.title}</h3>
                             {/* </div> */}
@@ -130,7 +130,7 @@ const Portfolio = () => {
                         onMouseLeave={() => setHoveredCardIndex(null)}>
                        <Link to={ele.websiteUrl} target="_blank">
                           <div className='card_portfol'>
-                            <img src={ele.image} />
+                            <img src={ele.image} alt='service_img'/>
                             {/* <div className='page_link_prot'> */}
                             <h3 href='/' className={hoveredCardIndex === index ? "port_title" : ""} key={index}>{ele.title}</h3>
                             {/* </div> */}

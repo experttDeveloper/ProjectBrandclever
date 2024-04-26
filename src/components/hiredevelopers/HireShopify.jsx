@@ -35,10 +35,10 @@ export default function HireShopify() {
                 </p>
                 <div className="shopify_clutch_logo">
                   <div className="shopifylogo">
-                    <img src="images/hire/shopify.png" alt="" />
+                    <img src="images/hire/shopify.png" alt="brandclever" />
                   </div>
                   <div className="clutchlogo">
-                    <img src="images/hire/clutch_shopify-17.png" alt="" />
+                    <img src="images/hire/clutch_shopify-17.png" alt="brandclever" />
                   </div>
                 </div>
                 <div className="contact_shopify">
@@ -88,7 +88,7 @@ export default function HireShopify() {
             </Col>
             <Col md={6}>
               <div className="whychoose_img">
-                <img src="images/hire/stay.webp" alt="" />
+                <img src="images/hire/stay.webp" alt="brandclever" />
               </div>
             </Col>
           </Row>
@@ -193,6 +193,7 @@ export default function HireShopify() {
                   <img
                     src="images/hire/shopifylogo.png"
                     className="authorimagelogo"
+                    alt="brandclever"
                   />
                 </div>
               </div>
@@ -213,6 +214,7 @@ export default function HireShopify() {
                   <img
                     src="images/hire/shopifylogo.png"
                     className="authorimagelogo"
+                    alt="brandclever"
                   />
                 </div>
               </div>
@@ -234,6 +236,7 @@ export default function HireShopify() {
                   <img
                     src="images/hire/shopifylogo.png"
                     className="authorimagelogo"
+                    alt="brandclever"
                   />
                 </div>
               </div>
@@ -553,7 +556,7 @@ export default function HireShopify() {
               <Col md={6}>
                 <div className="expertise_section">
                   <div className="img_es">
-                    <img src="images/hire/customized_solutions.png" alt="" />
+                    <img src="images/hire/customized_solutions.png" alt="brandclever" />
                   </div>
                   <div className="content_es">
                     <p className="text_expertise_reviews">
@@ -577,7 +580,7 @@ export default function HireShopify() {
               <Col md={6}>
                 <div className="expertise_section">
                   <div className="img_es">
-                    <img src="images/hire/support_maintainanec.png" alt="" />
+                    <img src="images/hire/support_maintainanec.png" alt="brandclever" />
                   </div>
                   <div className="content_es">
                     <p className="text_expertise_reviews">
@@ -598,7 +601,7 @@ export default function HireShopify() {
               <Col md={6}>
                 <div className="expertise_section">
                   <div className="img_es">
-                    <img src="images/hire/client-centric-approach.png" alt="" />
+                    <img src="images/hire/client-centric-approach.png" alt="brandclever" />
                   </div>
                   <div className="content_es">
                     <p className="text_expertise_reviews">
@@ -632,7 +635,7 @@ export default function HireShopify() {
               <div className="hiring_process">
                 <img
                   src="images/hire/requirement.png"
-                  alt=""
+                  alt="brandclever"
                   className="requirement"
                 />
                 <p className="titleofhiring">
@@ -650,7 +653,7 @@ export default function HireShopify() {
               <div className="hiring_process">
                 <img
                   src="images/hire/resume.png"
-                  alt=""
+                  alt="brandclever"
                   className="requirement"
                 />
                 <p className="titleofhiring">
@@ -668,7 +671,7 @@ export default function HireShopify() {
               <div className="hiring_process">
                 <img
                   src="images/hire/finalize.png"
-                  alt=""
+                  alt="brandclever"
                   className="requirement"
                 />
                 <p className="titleofhiring">
@@ -686,7 +689,7 @@ export default function HireShopify() {
               <div className="hiring_process">
                 <img
                   src="images/hire/assign-task.png"
-                  alt=""
+                  alt="brandclever"
                   className="requirement"
                 />
                 <p className="titleofhiring">
@@ -706,10 +709,11 @@ export default function HireShopify() {
             <Col md={4}>
               <div class="images">
                 <div class="image">
-                  <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" />
+                  <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="brandclever" />
                   <img
                     class="first"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRujP_XCpNogxiQMd7av2SPgG656cqFkD_Ty3PM7UBw09SVp3mUY5_HXYbyovY7fygvi4I&usqp=CAU"
+                    alt="brandclever"
                   />
                 </div>
               </div>
@@ -718,10 +722,12 @@ export default function HireShopify() {
             <Col md={4}>
               <div class="images">
                 <div class="image">
-                  <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" />
+                  <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" 
+                  alt="brandclever"/>
                   <img
                     class="first"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRujP_XCpNogxiQMd7av2SPgG656cqFkD_Ty3PM7UBw09SVp3mUY5_HXYbyovY7fygvi4I&usqp=CAU"
+                    alt="brandclever"
                   />
                 </div>
               </div>
@@ -730,10 +736,12 @@ export default function HireShopify() {
             <Col md={4}>
               <div class="images">
                 <div class="image">
-                  <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" />
+                  <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" 
+                  alt="brandclever"/>
                   <img
                     class="first"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRujP_XCpNogxiQMd7av2SPgG656cqFkD_Ty3PM7UBw09SVp3mUY5_HXYbyovY7fygvi4I&usqp=CAU"
+                    alt="brandclever"
                   />
                 </div>
               </div>
@@ -743,10 +751,12 @@ export default function HireShopify() {
             <Col md={4}>
               <div class="images">
                 <div class="image">
-                  <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" />
+                  <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" 
+                  alt="brandclever"/>
                   <img
                     class="first"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRujP_XCpNogxiQMd7av2SPgG656cqFkD_Ty3PM7UBw09SVp3mUY5_HXYbyovY7fygvi4I&usqp=CAU"
+                    alt="brandclever"
                   />
                 </div>
               </div>
@@ -755,10 +765,11 @@ export default function HireShopify() {
             <Col md={4}>
               <div class="images">
                 <div class="image">
-                  <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" />
+                  <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="brandclever" />
                   <img
                     class="first"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRujP_XCpNogxiQMd7av2SPgG656cqFkD_Ty3PM7UBw09SVp3mUY5_HXYbyovY7fygvi4I&usqp=CAU"
+                    alt="brandclever"
                   />
                 </div>
               </div>
@@ -767,10 +778,11 @@ export default function HireShopify() {
             <Col md={4}>
               <div class="images">
                 <div class="image">
-                  <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" />
+                  <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="brandclever" />
                   <img
                     class="first"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRujP_XCpNogxiQMd7av2SPgG656cqFkD_Ty3PM7UBw09SVp3mUY5_HXYbyovY7fygvi4I&usqp=CAU"
+                    alt="brandclever"
                   />
                 </div>
               </div>

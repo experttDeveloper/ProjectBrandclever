@@ -14,7 +14,7 @@ export default function AboutPage() {
                     have the Attitude, Skills, And Knowledge to deliver the Right Solutions.</p>
                     </div>
                     <div className='col-md-5 banner_twoes_divse'>
-                     <img src="images/about/about_right_img.png"/>
+                     <img src="images/about/about_right_img.png" alt='about_brandclever'/>
 
                      </div>
                  </div>

@@ -29,7 +29,7 @@ export default class OurServices extends Component {
                           <div class="front">
                             <div className='logo_img'>
                               <div className='front_img'>
-                                <img className='srv_bg_web' src={service.icon} />
+                                <img className='srv_bg_web' src={service.icon} alt='service_img'/>
                               </div>
                               <h3>{service.title}</h3>
                               <p>{service.description}</p>
@@ -38,7 +38,7 @@ export default class OurServices extends Component {
                           <div class="back">
                             <div className='back_logo_img'>
                             <div className='front_img'>
-                                <img className='srv_bg_web' src={service.icon} />
+                                <img className='srv_bg_web' src={service.icon} alt='service_img'/>
                               </div>
                               <h3>{service.title}</h3>
                             </div>

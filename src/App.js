@@ -27,6 +27,8 @@ import UpdatedService from './pages/UpdatedService';
 import Contact from './pages/Contact';
 import HireShopify from './components/hiredevelopers/HireShopify';
 import './css/hiredeveloper.css'
+import TermCondition from './pages/TermCondition';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 
 
@@ -60,6 +62,12 @@ export default class App extends Component {
             <Route path="/traning-and-placement" element={<PlacementForm />} />
             <Route path="/review" element={<Review />} />
             <Route path="/career" element={<Career />} />
+
+
+            <Route path="/term-conditions" element={<TermCondition />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+
             {/* <Route path="/web-development" element={<WebDevelopment />} />
             <Route path="/graphic-degin" element={<GraphicDesign />} />
             

@@ -49,7 +49,7 @@ export default function HomePageScroll() {
                                 <h1>hello</h1>
                             </Col>
                             <Col md={6}>
-                                <div className="image"><img src={curElem.image} alt="" /></div>
+                                <div className="image"><img src={curElem.image} alt="image" /></div>
                             </Col>
                         </div>
                     ))}

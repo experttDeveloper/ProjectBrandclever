@@ -2438,6 +2438,10 @@ div#successMsg {
     padding: 80px;
 }
 
+.dropdown-content .service_img a:hover {
+    color: var(--green-color) !important;
+}
+
 /* Initially hide the .opposite content */
 /* .backService {
     display: none;
@@ -2802,4 +2806,25 @@ li.hire_us .dropdown-content {
 .service_img.pph_icon .dropdown-content {
     top: 25px;
     box-shadow: inset 0px 0px 5px 0px #ffffff !important;
+}
+
+.term_con_sec{
+    background-color: var(--white-color);
+}
+.term_cond_main h3{
+    color: var(--dark-black-color);
+    text-align: left;
+}
+.policy_con_sec{
+    background-color: var(--white-color);
+}
+.term_cond_main p{
+    color: var(--dark-black-color);
+}
+.privacy_policy_main h3{
+    color: var(--dark-black-color);
+    text-align: left;
+}
+.privacy_policy_main p{
+    color: var(--dark-black-color);
 }

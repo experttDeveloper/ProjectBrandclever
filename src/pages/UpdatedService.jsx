@@ -29,7 +29,7 @@ export default function UpdatedService() {
                                     <div class="ctm_hex_dv2">
                                         <Link to={service.url}>
                                             <div class="ctm_hex_dv3" id="bg_inner_bx1">
-                                                <img src={service.icon} />
+                                                <img src={service.icon}  alt={service.title}/>
                                                 <span class="text-center fs-20 fw-500">{service.title}</span>
                                             </div>
                                         </Link>
@@ -45,7 +45,7 @@ export default function UpdatedService() {
                                     <div class="ctm_hex_dv2">
                                         <Link to={service.url}>
                                             <div class="ctm_hex_dv3" id="bg_inner_bx4">
-                                                <img src={service.icon} />
+                                                <img src={service.icon} alt={service.title}/>
                                                 <span class="text-center fs-20 fw-500">{service.title} </span>
                                             </div>
                                         </Link>
@@ -62,7 +62,7 @@ export default function UpdatedService() {
                                     <div class="ctm_hex_dv2">
                                         <Link to={service.url}>
                                             <div class="ctm_hex_dv3" id="bg_inner_bx1">
-                                                <img src={service.icon} />
+                                                <img src={service.icon} alt={service.title}/>
                                                 <span class="text-center fs-20 fw-500">{service.title}</span>
                                             </div>
                                         </Link>

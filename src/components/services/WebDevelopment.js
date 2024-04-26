@@ -107,7 +107,9 @@ export default function WebDevelopment() {
 
                         <Col md={6}>
                             <img
-                                src='https://aronwebsolutions.com/public/front/images/web_dev_right.webp'
+                             alt='cms_img'
+                                src='http
+                                s://aronwebsolutions.com/public/front/images/web_dev_right.webp'
                                 height="500px"
                                 width="500px"
                             />
@@ -119,6 +121,7 @@ export default function WebDevelopment() {
                     <Row>
                         <Col md={6}>
                             <img
+                             alt='cms_img'
                                 src='https://aronwebsolutions.com/public/front/images/web_dev_left.webp'
                                 height="500px"
                                 width="500px"
@@ -228,22 +231,22 @@ export default function WebDevelopment() {
                     <Row>
 
                         <Col md={3}>
-                            <img src='https://aronwebsolutions.com/public/front/images/requirement.png' style={{ border: '2px solid gray', borderRadius: '50%' }} />
+                            <img src='https://aronwebsolutions.com/public/front/images/requirement.png'  alt='cms_img' style={{ border: '2px solid gray', borderRadius: '50%' }} />
                             <Typography variant='h5'> Strategy </Typography>
                             <Typography variant='p'> We adopt a strategic approach to web app development, delving into the intricacies of your business model, market dynamics, and product positioning. </Typography>
                         </Col>
                         <Col md={3}>
-                            <img src='https://aronwebsolutions.com/public/front/images/requirement.png' style={{ border: '2px solid gray', borderRadius: '50%' }} />
+                            <img src='https://aronwebsolutions.com/public/front/images/requirement.png'  alt='cms_img' style={{ border: '2px solid gray', borderRadius: '50%' }} />
                             <Typography variant='h5'> Product Design </Typography>
                             <Typography variant='p'> Our methodology involves assembling a multidisciplinary team comprising Strategists, Designers, and Developers. </Typography>
                         </Col>
                         <Col md={3}>
-                            <img src='https://aronwebsolutions.com/public/front/images/requirement.png' style={{ border: '2px solid gray', borderRadius: '50%' }} />
+                            <img src='https://aronwebsolutions.com/public/front/images/requirement.png'  alt='cms_img' style={{ border: '2px solid gray', borderRadius: '50%' }} />
                             <Typography variant='h5'> Development </Typography>
                             <Typography variant='p'> We maintain an agile and efficient development process, leveraging highly skilled teams. Each project is overseen by experienced managers dedicated to maintaining high standards of code quality. </Typography>
                         </Col>
                         <Col md={3}>
-                            <img src='https://aronwebsolutions.com/public/front/images/requirement.png' style={{ border: '2px solid gray', borderRadius: '50%' }} />
+                            <img src='https://aronwebsolutions.com/public/front/images/requirement.png'  alt='cms_img' style={{ border: '2px solid gray', borderRadius: '50%' }} />
                             <Typography variant='h5'> Quality Assurance </Typography>
                             <Typography variant='p'> We conduct rigorous testing to detect and rectify any bugs or issues. Our aim is to deliver solutions that are not only bug-free but also reliable, safe, and secure for a seamless user experience. </Typography>
                         </Col>

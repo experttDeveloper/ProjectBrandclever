@@ -227,7 +227,7 @@ const Career = () => {
                 <p>We're committed to continuous growth and always on the lookout for talented individuals who can help elevate both our company and themselves. Join us in raising the bar and unlocking your full potential.</p>
               </div>
               <div className='why-image'>
-                <img src="images/careerteam.png" alt="" />
+                <img src="images/careerteam.png" alt="career img" />
               </div>
             </div>
           </section>

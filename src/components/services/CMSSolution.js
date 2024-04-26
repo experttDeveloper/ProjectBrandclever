@@ -162,6 +162,7 @@ export default function CMSSolution() {
 
                         <Col md={6}>
                             <img
+                            alt='cms_img'
                                 src='https://aronwebsolutions.com/public/front/images/cms_img_right.webp'
                                 height="500px"
                                 width="500px"
@@ -174,6 +175,7 @@ export default function CMSSolution() {
                     <Row>
                         <Col md={6}>
                             <img
+                            alt='cms_img'
                                 src='https://aronwebsolutions.com/public/front/images/cms_img_left.webp'
                                 height="500px"
                                 width="500px"

@@ -19,14 +19,14 @@ export default class JoinTeam extends Component {
           <div className='right-side grid-images'>
             <div className="display-flex-wrap">
               <div className="img-wrap">
-                <img src={process.env.PUBLIC_URL + '/images/gallery/anniversary/3.jpeg'} alt="" style={{height:"210px" ,objectFit:"cover"}}/>
+                <img src={process.env.PUBLIC_URL + '/images/gallery/anniversary/3.jpeg'} alt="gallery_img" style={{height:"210px" ,objectFit:"cover"}}/>
               </div>
               <div className="img-wrap">
                 <div className="img-wrap-inner"> 
-                  <img src={process.env.PUBLIC_URL + '/images/join/1.jpg'} alt="" />
+                  <img src={process.env.PUBLIC_URL + '/images/join/1.jpg'} alt="gallery_img" />
                 </div>
                 <div className="img-wrap-inner">
-                  <img src={process.env.PUBLIC_URL + '/images/gallery/diwali/5.jpeg'} alt="" />
+                  <img src={process.env.PUBLIC_URL + '/images/gallery/diwali/5.jpeg'} alt="gallery_img" />
                 </div>
               </div>
             </div>

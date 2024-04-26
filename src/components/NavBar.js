@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './Images/logoWhite.png';
 import { Col, Row } from 'react-bootstrap';
-import InfoIcon from '@mui/icons-material/Info';
 
 const serviceMenus = [
   {
@@ -215,7 +214,7 @@ const NavBar = () => {
                             {serviceMenus.slice(0, 6).map((ele, key) => {
                               return (
                                 <div className='service_img'>
-                                  <img src={ele.icon} height="32px" width="32px" />
+                                  <img src={ele.icon} height="32px" width="32px" alt='logo_img'/>
                                   <Link to={ele.url}>{ele.title}</Link>
                                 </div>
                               )
@@ -226,7 +225,7 @@ const NavBar = () => {
                               serviceMenus.slice(6, 12).map((ele, key) => {
                                 return (
                                   <div className='service_img'>
-                                    <img src={ele.icon} height="32px" width="32px" />
+                                    <img src={ele.icon} height="32px" width="32px" alt='logo_img'/>
                                     <Link to={ele.url}>{ele.title}</Link>
                                   </div>
                                 )
@@ -234,7 +233,7 @@ const NavBar = () => {
                             }
                           </div>
                           <div className="col-md-6 serv_img">
-                            <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
+                            <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='logo_img' />
                           </div>
                         </div>
                       </div>
@@ -256,7 +255,7 @@ const NavBar = () => {
                             {hireMenus.slice(0, 6).map((ele, key) => {
                               return (
                                 <div className='service_img'>
-                                  <img src={ele.icon} height="32px" width="32px" />
+                                  <img src={ele.icon} height="32px" width="32px" alt='logo_img'/>
                                   <Link to={ele.url}>{ele.title}</Link>
                                 </div>
                               )
@@ -267,7 +266,7 @@ const NavBar = () => {
                               hireMenus.slice(6, 12).map((ele, key) => {
                                 return (
                                   <div className='service_img'>
-                                    <img src={ele.icon} height="32px" width="32px" />
+                                    <img src={ele.icon} height="32px" width="32px" alt='logo_img'/>
                                     <Link to={ele.url}>{ele.title}</Link>
                                   </div>
                                 )
@@ -275,7 +274,7 @@ const NavBar = () => {
                             }
                           </div>
                           <div className="col-md-5 serv_img">
-                            <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
+                            <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='logo_img' />
                           </div>
                         </div>
                       </div>
@@ -313,14 +312,11 @@ const NavBar = () => {
                               <img src='images/menus/term.png' alt='about page' height="32px" width="32px" />
                               <Link to="/term-conditions">Terms & Conditions</Link>
                             </div>
-
-
-
                           </Col>
                           <Col md={6}>
 
                             <div className=" serv_img">
-                              <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
+                              <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='logo_img' />
                             </div>
                           </Col>
                         </Row>
@@ -341,7 +337,7 @@ const NavBar = () => {
                         <Row>
                           <Col md={6}>
                             <div className='service_img'>
-                              <img src='images/menus/google.png' alt='about page' height="26px" width="26px" />
+                              <img src='images/menus/google.png' alt='about page' height="26px" width="26px"/>
                               <Link to="#">Google</Link>
                             </div>
                             <div className='service_img'>
@@ -360,7 +356,7 @@ const NavBar = () => {
                           <Col md={6}>
 
                             <div className=" serv_img">
-                              <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
+                              <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='logo_img' />
                             </div>
                           </Col>
                         </Row>
@@ -393,25 +389,53 @@ const NavBar = () => {
                                 </div>
                               </div>
                             </div>
-                            <div className='service_img'>
+                            <div className='service_img pph_icon'>
                               <img src='images/menus/upwork.png' alt='about page' height="26px" width="26px" />
-                              <Link to="#">Upwork</Link>
+                              <div className='pph_nav'>
+                                <div className='dropdownMenu'>
+                                  <Link to="#">Upwork</Link>
+                                  <div className="dropdown-content">
+                                    <Link to="#">Upwork1</Link>
+                                    <Link to="#">Upwork2</Link>
+                                    <Link to="#">Upwork3</Link>
+                                    <Link to="#">Upwork4</Link>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div className='service_img'>
+                            <div className='service_img pph_icon'>
                               <img src='images/menus/fiver.png' alt='about page' height="26px" width="26px" />
-                              <Link to="#">Fiverr</Link>
+                              <div className='pph_nav'>
+                                <div className='dropdownMenu'>
+                                  <Link to="#">Fiverr</Link>
+                                  <div className="dropdown-content">
+                                    <Link to="#">Fiverr1</Link>
+                                    <Link to="#">Fiverr2</Link>
+                                    <Link to="#">Fiverr3</Link>
+                                    <Link to="#">Fiverr4</Link>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div className='service_img'>
+                            <div className='service_img pph_icon'>
                               <img src='images/menus/guru.png' alt='about page' height="26px" width="26px" />
-                              <Link to="#">Guru</Link>
+                              <div className='pph_nav'>
+                                <div className='dropdownMenu'>
+                                  <Link to="#">Guru</Link>
+                                  <div className="dropdown-content">
+                                    <Link to="#">Guru1</Link>
+                                    <Link to="#">Guru2</Link>
+                                    <Link to="#">Guru3</Link>
+                                    <Link to="#">Guru4</Link>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-
-
                           </Col>
                           <Col md={6}>
 
                             <div className=" serv_img">
-                              <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='' />
+                              <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='logo_img' />
                             </div>
                           </Col>
                         </Row>

@@ -42,7 +42,7 @@ const Contact = () => {
                 </Typography>
               </Col>
               <Col md={6} className='contact_video'>
-                <img src='video/contact.gif' className='contact_form_img' />
+                <img src='video/contact.gif' className='contact_form_img' alt='contact_img'/>
               </Col>
             </Row>
           </Container>

@@ -40,7 +40,7 @@ export default class About extends Component {
             <div className="founder_section">
               <div className="founder_section_content">
                 <div className="img_of_founder">
-                  <img src={ownerImg} alt='' />
+                  <img src={ownerImg} alt='about_brandclever'/>
                 </div>
                 <div className="content_of_founder">
                   <h2>Founder & CEO</h2>

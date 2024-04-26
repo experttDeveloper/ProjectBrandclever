@@ -246,6 +246,7 @@ export default function ContentStrategy() {
                                 <Col md={3}>
                                     <img src={ele.image}
                                         style={{ border: '2px solid gray', borderRadius: '50%' }}
+                                        alt='cms_img'
                                     />
                                     <Typography variant='h5'> {ele.title} </Typography>
                                     <Typography variant='p'> {ele.description} </Typography>
