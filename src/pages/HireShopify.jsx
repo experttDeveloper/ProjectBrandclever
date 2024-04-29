@@ -18,7 +18,6 @@ export default function HireShopify() {
       <div>
         <TopHeader title={"hire sopify devloper"} description={""} />
       </div>
-
       <ContactSection
         title="Hire Certified, Trusted Professional Shopify Developers"
         description="Hire the best Shopify experts for your ecommerce business"

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './Images/logoWhite.png';
 import { Col, Row } from 'react-bootstrap';
+import DoneAllIcon from '@mui/icons-material/DoneAll';
 
 const serviceMenus = [
   {
@@ -214,7 +215,7 @@ const NavBar = () => {
                             {serviceMenus.slice(0, 6).map((ele, key) => {
                               return (
                                 <div className='service_img'>
-                                  <img src={ele.icon} height="32px" width="32px" alt='logo_img'/>
+                                  <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
                                   <Link to={ele.url}>{ele.title}</Link>
                                 </div>
                               )
@@ -225,7 +226,7 @@ const NavBar = () => {
                               serviceMenus.slice(6, 12).map((ele, key) => {
                                 return (
                                   <div className='service_img'>
-                                    <img src={ele.icon} height="32px" width="32px" alt='logo_img'/>
+                                    <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
                                     <Link to={ele.url}>{ele.title}</Link>
                                   </div>
                                 )
@@ -255,25 +256,25 @@ const NavBar = () => {
                             {hireMenus.slice(0, 6).map((ele, key) => {
                               return (
                                 <div className='service_img'>
-                                  <img src={ele.icon} height="32px" width="32px" alt='logo_img'/>
+                                  <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
                                   <Link to={ele.url}>{ele.title}</Link>
                                 </div>
                               )
                             })}
                           </div>
-                          <div className="col-md-4 serv_cns">
+                          <div className="col-md-3 serv_cns">
                             {
                               hireMenus.slice(6, 12).map((ele, key) => {
                                 return (
                                   <div className='service_img'>
-                                    <img src={ele.icon} height="32px" width="32px" alt='logo_img'/>
+                                    <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
                                     <Link to={ele.url}>{ele.title}</Link>
                                   </div>
                                 )
                               })
                             }
                           </div>
-                          <div className="col-md-5 serv_img">
+                          <div className="col-md-6 serv_img">
                             <img src={process.env.PUBLIC_URL + '/images/nav/hiring_nav.png'} alt='logo_img' />
                           </div>
                         </div>
@@ -291,7 +292,7 @@ const NavBar = () => {
                       </Link>
                       <div className="dropdown-content">
                         <Row>
-                          <Col md={6}>
+                          <Col md={4}>
                             <div className='service_img'>
                               <img src='images/menus/about.png' alt='about page' height="32px" width="32px" />
                               <Link to="/about">About</Link>
@@ -310,10 +311,10 @@ const NavBar = () => {
                             </div>
                             <div className='service_img'>
                               <img src='images/menus/term.png' alt='about page' height="32px" width="32px" />
-                              <Link to="/term-conditions">Terms & Conditions</Link>
+                              <Link to="/term-conditions">Terms Conditions</Link>
                             </div>
                           </Col>
-                          <Col md={6}>
+                          <Col md={8}>
 
                             <div className=" serv_img">
                               <img src={process.env.PUBLIC_URL + '/images/nav/about_nav.png'} alt='logo_img' />
@@ -335,9 +336,9 @@ const NavBar = () => {
                       </Link>
                       <div className="dropdown-content">
                         <Row>
-                          <Col md={6}>
+                          <Col md={4}>
                             <div className='service_img'>
-                              <img src='images/menus/google.png' alt='about page' height="26px" width="26px"/>
+                              <img src='images/menus/google.png' alt='about page' height="26px" width="26px" />
                               <Link to="#">Google</Link>
                             </div>
                             <div className='service_img'>
@@ -353,7 +354,7 @@ const NavBar = () => {
                               <Link to="#">Indeed</Link>
                             </div>
                           </Col>
-                          <Col md={6}>
+                          <Col md={8}>
 
                             <div className=" serv_img">
                               <img src={process.env.PUBLIC_URL + '/images/nav/review_nav.png'} alt='logo_img' />
@@ -374,31 +375,46 @@ const NavBar = () => {
                       </Link>
                       <div className="dropdown-content">
                         <Row>
-                          <Col med={6}>
-                            <div className='service_img pph_icon'>
-                              <img src='images/menus/pph.png' alt='about page' height="26px" width="26px" />
-                              <div className='pph_nav'>
-                                <div className='dropdownMenu'>
-                                  <Link to="#">PPH</Link>
-                                  <div className="dropdown-content">
-                                    <Link to="#">Profile1</Link>
-                                    <Link to="#">Profile2</Link>
-                                    <Link to="#">Profile3</Link>
-                                    <Link to="#">Profile4</Link>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                          <Col med={4}>
                             <div className='service_img pph_icon'>
                               <img src='images/menus/upwork.png' alt='about page' height="26px" width="26px" />
                               <div className='pph_nav'>
                                 <div className='dropdownMenu'>
                                   <Link to="#">Upwork</Link>
                                   <div className="dropdown-content">
-                                    <Link to="#">Upwork1</Link>
-                                    <Link to="#">Upwork2</Link>
-                                    <Link to="#">Upwork3</Link>
-                                    <Link to="#">Upwork4</Link>
+                                    <Row>
+                                      <Col md={6}>
+
+                                      <Link to="https://www.upwork.com/agencies/brandclever/" target="_blank"><DoneAllIcon/> Brandclever Agency</Link>
+                                        <Link to="https://www.upwork.com/freelancers/~01d672b038a81f6f0f" target="_blank"><DoneAllIcon/> Manish Kumar</Link>
+                                        <Link to="https://www.upwork.com/freelancers/shobhan3" target="_blank"><DoneAllIcon/> Shobha Negi</Link>
+                                        <Link to="https://www.upwork.com/freelancers/shalus3" target="_blank"><DoneAllIcon/> Shalu sharma</Link>
+                                        <Link to="https://www.upwork.com/freelancers/~013b4df1df24fb5df6" target="_blank"><DoneAllIcon/> Indu Thakur</Link>
+                                        
+                                      </Col>
+                                      <Col md={6}>
+                                      <Link to="https://www.upwork.com/freelancers/~017f90265127deec6e" target="_blank"><DoneAllIcon/> Shivani Devi</Link>
+                                        <Link to="https://www.upwork.com/freelancers/~01ad788d5e5e96a870" target="_blank"><DoneAllIcon/> Manshi Verma</Link>
+                                        <Link to="https://www.upwork.com/freelancers/gurjeets6" target="_blank"><DoneAllIcon/> Gurjeet Singh</Link>
+                                        <Link to="https://www.upwork.com/agencies/1747349465567211520/" target="_blank"><DoneAllIcon/> 3Realms agency</Link>
+                                        <Link to="https://www.upwork.com/freelancers/~01d54de3c49d7edb8b" target="_blank"><DoneAllIcon/> Ashandeep Singh</Link>
+                                      </Col>
+
+                                    </Row>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className='service_img pph_icon'>
+                              <img src='images/menus/pph.png' alt='about page' height="26px" width="26px" />
+                              <div className='pph_nav'>
+                                <div className='dropdownMenu'>
+                                  <Link to="#">PPH</Link>
+                                  <div className="dropdown-content">
+                                    <Link to="https://www.peopleperhour.com/freelancer/technology-programming/indu-thakur-1-wordpress-seo-expert-top-rated-mwyanvv" target="_blank"><DoneAllIcon/> Indu Thakur</Link>
+                                    <Link to="https://www.peopleperhour.com/freelancer/technology-programming/shobha-negi-award-winning-web-developer-zzzjjqqj" target="_blank"><DoneAllIcon/> Shobha Negi</Link>
+
                                   </div>
                                 </div>
                               </div>
@@ -409,10 +425,7 @@ const NavBar = () => {
                                 <div className='dropdownMenu'>
                                   <Link to="#">Fiverr</Link>
                                   <div className="dropdown-content">
-                                    <Link to="#">Fiverr1</Link>
-                                    <Link to="#">Fiverr2</Link>
-                                    <Link to="#">Fiverr3</Link>
-                                    <Link to="#">Fiverr4</Link>
+                                    <Link to="https://www.fiverr.com/shobha_negii" target="_blank"><DoneAllIcon/> Shobha Negi</Link>
                                   </div>
                                 </div>
                               </div>
@@ -423,16 +436,14 @@ const NavBar = () => {
                                 <div className='dropdownMenu'>
                                   <Link to="#">Guru</Link>
                                   <div className="dropdown-content">
-                                    <Link to="#">Guru1</Link>
-                                    <Link to="#">Guru2</Link>
-                                    <Link to="#">Guru3</Link>
-                                    <Link to="#">Guru4</Link>
+                                    <Link to="https://www.guru.com/freelancers/manish-kumar-221" target="_blank"><DoneAllIcon/> Manish Kumar</Link>
+
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </Col>
-                          <Col md={6}>
+                          <Col md={8}>
 
                             <div className=" serv_img">
                               <img src={process.env.PUBLIC_URL + '/images/nav/hireus_nav.png'} alt='logo_img' />

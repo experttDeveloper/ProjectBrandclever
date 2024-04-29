@@ -41,10 +41,10 @@ p{
 li.pages_navbar .dropdown-content {
     width: -moz-fit-content;
     width: fit-content;
-    max-width: 50% !important;
+    max-width: 55% !important;
     text-align: left;
     position: absolute;
-    left: 44% !important;
+    left: 45% !important;
 }
 li.hire_us .dropdown-content {
     width: fit-content;
@@ -2353,7 +2353,7 @@ li.review_nav .row .col-md-6 {
     background: linear-gradient(to right, #96d358 0%, #89c957 50%, #2aa961 100%) !important;
 }
 li.review_nav .dropdown-content {
-    width: 50% !important;
+    width: 55% !important;
     left: 45%;
 }
 .header_btn {
@@ -2794,7 +2794,7 @@ header.sticky {
     max-width: 100% !important;
 }
 li.hire_us .dropdown-content {
-    max-width: 50% !important;
+    max-width: 55% !important;
     left: 45% !important;
 }
 .service_img.pph_icon .dropdown-content {
@@ -2804,8 +2804,12 @@ li.hire_us .dropdown-content {
     display: block !important;
 }
 .service_img.pph_icon .dropdown-content {
+    margin-left: 14px;
     top: 25px;
     box-shadow: inset 0px 0px 5px 0px #ffffff !important;
+    z-index: 99999999 !important;
+    width: 420px !important;
+    max-width: 420px !important;
 }
 
 .term_con_sec{

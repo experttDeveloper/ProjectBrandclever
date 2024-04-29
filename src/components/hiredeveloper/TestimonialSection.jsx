@@ -16,7 +16,7 @@ export default function Testimonial() {
           <Row className="reviews_hiring">
             <Col md={4}>
               {
-                reviews.data.slice(0, 3).map((ele, key) => {
+                reviews.data.slice(0, 2).map((ele, key) => {
                   return (
                     <Col m={12}>
                       <div className="sopify_dev_title" key={key}>
@@ -42,7 +42,7 @@ export default function Testimonial() {
             </Col>
             <Col md={4}>
               {
-                reviews.data.slice(3, 6).map((ele, key) => {
+                reviews.data.slice(2, 4).map((ele, key) => {
                   return (
                     <Col m={12}>
                       <div className="sopify_dev_title">
@@ -70,10 +70,10 @@ export default function Testimonial() {
             </Col>
             <Col md={4}>
               {
-                reviews.data.slice(6, 9).map((ele, key) => {
+                reviews.data.slice(4, 6).map((ele, key) => {
                   return (
                     <Col m={12}>
-                      <div className="sopify_dev_title">
+                      <div className="sopify_dev_title" key={key}>
 
                         <p className="reviewone">
                           "{ele.review}"
