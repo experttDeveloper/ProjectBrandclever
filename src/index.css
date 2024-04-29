@@ -2821,10 +2821,24 @@ li.hire_us .dropdown-content {
 .term_cond_main p{
     color: var(--dark-black-color);
 }
-.privacy_policy_main h3{
+.privacy_policy_main h3 {
     color: var(--dark-black-color);
     text-align: left;
+    margin-top: 20px;
 }
-.privacy_policy_main p{
+.privacy_policy_main p {
     color: var(--dark-black-color);
+    padding-bottom: 20px !important;
+}
+.main_term_condtion {
+    background-color: #ebecec;
+    padding: 75px 0px;
+    box-shadow: inset 0px 0px 100px 0px #ccc !important;
+}
+.privacy_policy_main {
+    background: #ffff;
+    width: 80%;
+    margin: 0 auto !important;
+    padding: 50px 50px 30px 50px;
+    box-shadow: 0px 0px 6px 0px #ccc;
 }
