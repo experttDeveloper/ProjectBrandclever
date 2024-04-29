@@ -6,6 +6,7 @@ export default function PrivacyPolicy() {
   return (
     <div className='policy_con_sec'>
       <TopHeader title={"Privacy & Policy"} description="We prioritize your privacy and are committed to protecting your personal information. Our Policy and Privacy section outlines how we collect, use, and safeguard your data, ensuring transparency and security. Learn about your rights and how we maintain the confidentiality of your information."/>
+     <div className='main_term_condtion'>
       <Container>
         <div class="privacy_policy_main">
           <div class="inner_content_new">
@@ -64,6 +65,7 @@ export default function PrivacyPolicy() {
           </div>
         </div>
       </Container>
+      </div>
     </div>
   )
 }
