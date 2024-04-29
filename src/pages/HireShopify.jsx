@@ -11,6 +11,8 @@ import ExpertiesSection from "../components/hiredeveloper/ExpertiesSection";
 import ImageSection from "../components/hiredeveloper/ImageSection";
 
 export default function HireShopify() {
+
+
   return (
     <>
       <div>
@@ -137,16 +139,74 @@ export default function HireShopify() {
             description: "Prioritization of client satisfaction and exceeding expectations. Client feedback integration and continuous improvement based on insights and suggestions."
           }
         ]}
-        
+
       />
+
       <ProcessSection
+        data={[
+          {
+            title: "Book a Free Consultation Call",
+            image: "https://aronwebsolutions.com/public/front/images/requirement.png",
+            description: "Initiate your Shopify project journey by booking a free consultation call with Aron Web Solutions. This call provides you with the opportunity to connect with our team of experts, allowing us to understand your business requirements."
+
+          },
+          {
+            title: "Discuss The Shopify Projects",
+            image: "https://aronwebsolutions.com/public/front/images/resume.png",
+            description: "We will focus on a comprehensive discussion about your Shopify project. We encourage you to share your ideas, brand identity, target audience, and desired functionalities. This discussion sets the foundation for a collaborative and effective Shopify project."
+          },
+          {
+            title: "Project Execution & Delivery",
+            image: "https://aronwebsolutions.com/public/front/images/finalize.png",
+            description: "Our dedicated team of Shopify experts starts working diligently on your project, adhering to the specified timeline and delivering exceptional results. Throughout this phase, we maintain open communication, ensuring that you are informed about the project's progress."
+          },
+          {
+            title: "Daily / Weekly / Monthly Reporting",
+            image: "https://aronwebsolutions.com/public/front/images/assign-task.png",
+            description: "We provide regular reports, tailored to your preference, on a daily, weekly, or monthly basis. These reports encompass the project's progress, milestones achieved, and any challenges encountered, along with proposed solutions"
+          }
+        ]}
       />
 
-      <ImageSection />
-
+      <ImageSection
+      />
       <PaymentSection
       />
-      <FaqSection />
+      <FaqSection
+        data={[
+          {
+            question: "What is Shopify, and why is it popular for e-commerce?",
+            answer: "Shopify is a leading e-commerce platform that allows businesses to create and manage online stores. Its popularity stems from its user-friendly interface, customizable templates, secure transactions, and a range of powerful features tailored to e-commerce needs."
+          },
+          {
+            question: "Can I make changes to my Shopify store after it's live?",
+            answer: "Absolutely. You have complete control over your Shopify store and can make changes such as adding products, updating content, modifying design elements, and integrating new features even after it's live."
+          },
+          {
+            question: "How can a Shopify expert help improve my online store?",
+            answer: "Shopify experts have specialized knowledge to enhance your store's design, functionality, and performance. They can optimize the user experience, integrate third-party apps, customize themes, and implement strategies for increased conversions and sales."
+          },
+          {
+            question: "How long does setting up a Shopify store with your expert help take?",
+            answer: "The timeframe varies depending on the complexity of the project. A simple store setup may take a few days, while a more customized and feature-rich store can take several weeks. Timelines are typically discussed and agreed upon during project consultation."
+          }, {
+            question: "Do Shopify experts provide SEO services for my store?",
+            answer: "Yes, many Shopify experts offer SEO services to optimize your store for search engines. They can help with keyword research, meta tags, page speed optimization, and other SEO strategies to improve visibility and ranking."
+          },
+          {
+            question: "Can I get support and maintenance for my Shopify store post-launch?",
+            answer: "Yes, Shopify experts often provide ongoing support and maintenance services. This includes updates, security patches, troubleshooting, and ensuring your store operates smoothly and securely."
+          },
+          {
+            question: "How secure is Shopify for processing customer payments?",
+            answer: "Shopify is highly secure for processing payments. It is PCI DSS compliant, ensuring that all payment transactions and customer data are handled securely and meet industry standards for payment processing."
+          },
+          {
+            question: "Are there limits to the customization of a Shopify store?",
+            answer: "While Shopify provides a structured environment, it offers extensive customization options. Experts can tailor themes, add custom code, and utilize apps to achieve a wide range of design and functional enhancements to suit your unique business needs."
+          }
+        ]}
+      />
 
     </>
   );

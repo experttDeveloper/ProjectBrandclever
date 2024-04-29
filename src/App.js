@@ -30,6 +30,15 @@ import './css/hiredeveloper.css'
 import TermCondition from './pages/TermCondition';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import HireMagento from './pages/HireMagento';
+import HireWebFlow from './pages/HireWebFlow';
+import HireWix from './pages/HireWix';
+import HireWoo from './pages/HireWoo';
+import HireWordpress from './pages/HireWordpress';
+import HireBigCommerce from './pages/HireBigCommerce';
+import HireSquareSpace from './pages/HireSquareSpace';
+import HireLaravel from './pages/HireLaravel';
+import HireReactjs from './pages/HireReactjs';
+import HireTalwindCss from './pages/HireTalwindCss';
 
 
 
@@ -81,6 +90,16 @@ export default class App extends Component {
 
             <Route path="/hire-shopify-expert" element={<HireShopify />} />
             <Route path="/hire-magento-expert" element={<HireMagento />} />
+            <Route path="/hire-webflow-expert" element={<HireWebFlow />} />
+            <Route path="/hire-wix-expert" element={<HireWix />} />
+            <Route path="/hire-woo-commerce-expert" element={<HireWoo />} />
+            <Route path="/hire-wordpress-expert" element={<HireWordpress />} />
+            <Route path="/hire-bigcommerce-expert" element={<HireBigCommerce />} />
+            <Route path="/hire-suqarespace-expert" element={<HireSquareSpace />} />
+            <Route path="/hire-laravel-developer" element={<HireLaravel />} />
+            <Route path="/hire-reactjs-developer" element={<HireReactjs />} />
+            <Route path="/hire-tailwind-css-developer" element={<HireTalwindCss />} />
+           
 
 
             <Route

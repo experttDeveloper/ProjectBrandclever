@@ -116,10 +116,21 @@ img.authorimagelogo {
 h2.hiringprocesstitle {
   margin-bottom: 80px;
 }
+
+.faqs .left_side_faq {
+  width: 50%;
+}
+.faqs .right_side_faq {
+  width: 50%;
+}
 .expertise_section {
   color: white;
   gap: 0px 25px !important;
   display: flex;
+}
+
+.services_shopify.row p {
+  color: var(--background-color-black-paragrpah);
 }
 .expertiseandreviews {
   background-color: #fff;
@@ -216,9 +227,7 @@ p.hiring_shopify {
     padding-top: 75px;
     padding-bottom: 75px;
 }
-.whychoose_img {
-    margin-left: 120px;
-}
+
 .expertise.row {
     padding-top: 20px;
 }

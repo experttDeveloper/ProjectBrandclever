@@ -82,67 +82,67 @@ const serviceMenus = [
 const hireMenus = [
   {
     id: 1,
-    icon: 'images/service/website_design.png',
+    icon: 'images/hire/shopify.png',
     title: "Hire Shopify Expert",
     url: "/hire-shopify-expert"
   },
   {
     id: 2,
-    icon: 'images/service/website_develop.png',
+    icon: 'images/hire/magento.png',
     title: "Hire Magento Expert",
     url: "/hire-magento-expert"
   },
   {
     id: 3,
-    icon: 'images/service/graphic_design.png',
+    icon: 'images/hire/webflow.png',
     title: "Hire Webflow Expert",
     url: "/hire-webflow-expert"
   },
   {
     id: 4,
-    icon: 'images/service/mern_stack.png',
+    icon: 'images/hire/wix.png',
     title: "Hire Wix Expert",
     url: "/hire-wix-expert"
   },
   {
     id: 5,
-    icon: 'images/service/content_strategy.png',
+    icon: 'images/hire/woo.png',
     title: "Hire Woo Expert",
-    url: "/hire-woo-expert"
+    url: "/hire-woo-commerce-expert"
   },
   {
     id: 6,
-    icon: 'images/service/framework.png',
+    icon: 'images/hire/wordpress.png',
     title: "Hire Wordpress Expert",
     url: "/hire-wordpress-expert"
   },
   {
     id: 7,
-    icon: 'images/service/cms_solution.png',
+    icon: 'images/hire/bigcommerce.png',
     title: "Hire BigCommerce Expert",
     url: "/hire-bigcommerce-expert"
   },
   {
     id: 8,
-    icon: 'images/service/landing_page.png',
+    icon: 'images/hire/spaceaquare.png',
     title: "Hire Sqaurespace Expert",
     url: "/hire-suqarespace-expert"
   },
   {
     id: 9,
-    icon: 'images/service/ecommerce.png',
+    icon: 'images/hire/laravel.png',
     title: "Hire Laravel Developer",
     url: "/hire-laravel-developer"
   },
   {
     id: 10,
-    icon: 'images/service/digital_marketing.png',
+    icon: 'images/hire/reactjs.png',
     title: "Hire ReactJS Developer",
     url: "/hire-reactjs-developer"
   },
   {
     id: 11,
-    icon: 'images/service/web_application.png',
+    icon: 'images/hire/talwind.png',
     title: "Hire Tailwind CSS Developer",
     url: "/hire-tailwind-css-developer"
   },
@@ -233,7 +233,7 @@ const NavBar = () => {
                             }
                           </div>
                           <div className="col-md-6 serv_img">
-                            <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='logo_img' />
+                            <img src={process.env.PUBLIC_URL + '/images/nav/service_nav.png'} alt='logo_img' />
                           </div>
                         </div>
                       </div>
@@ -274,7 +274,7 @@ const NavBar = () => {
                             }
                           </div>
                           <div className="col-md-5 serv_img">
-                            <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='logo_img' />
+                            <img src={process.env.PUBLIC_URL + '/images/nav/hiring_nav.png'} alt='logo_img' />
                           </div>
                         </div>
                       </div>
@@ -316,7 +316,7 @@ const NavBar = () => {
                           <Col md={6}>
 
                             <div className=" serv_img">
-                              <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='logo_img' />
+                              <img src={process.env.PUBLIC_URL + '/images/nav/about_nav.png'} alt='logo_img' />
                             </div>
                           </Col>
                         </Row>
@@ -356,7 +356,7 @@ const NavBar = () => {
                           <Col md={6}>
 
                             <div className=" serv_img">
-                              <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='logo_img' />
+                              <img src={process.env.PUBLIC_URL + '/images/nav/review_nav.png'} alt='logo_img' />
                             </div>
                           </Col>
                         </Row>
@@ -435,7 +435,7 @@ const NavBar = () => {
                           <Col md={6}>
 
                             <div className=" serv_img">
-                              <img src={process.env.PUBLIC_URL + '/images/menus/ser_new_img.png'} alt='logo_img' />
+                              <img src={process.env.PUBLIC_URL + '/images/nav/hireus_nav.png'} alt='logo_img' />
                             </div>
                           </Col>
                         </Row>
