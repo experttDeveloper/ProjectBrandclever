@@ -15,19 +15,13 @@ export default function HireBigCommerce() {
     return (
         <>
             <div>
-                <TopHeader title={"hire Big Commerce devloper"} description={""} />
+                <TopHeader title={"Hire Highly Focused Bigcommerce Developers"} description={"Our experts will help you build custom and responsive store"} />
             </div>
-
-            <ContactSection
-                title="Our experts will help you build custom and responsive store"
-                description="Our experts will help you build custom and responsive store"
-                images={["https://aronwebsolutions.com/public/uploads/65707b6357eb6.png", "https://aronwebsolutions.com/public/uploads/161212-17.png"]}
-            />
             <WhyChoose
                 title="Brandlclever For Your BigCommerce Project"
                 description1="Choosing Aron Web Solutions for your BigCommerce project is a decision rooted in trust and reliability. We listen to your unique needs and make your goals our own. Whether you're dreaming of a standout online store or a smooth e-commerce platform, we bring expertise that turns your vision into reality."
                 description2="Our team is not just about making things work; we ensure every solution reflects your brand's identity. If you're a small business looking to make a big impact, our skills are here for you. From making your site look great on all devices to boosting its visibility and security, we've got what it takes to make your business shine. At Aron Web Solutions, your success is the measure of our trustworthiness and capability."
-                image="https://aronwebsolutions.com/public/front/images/bigcom_right.webp"
+                images={["https://aronwebsolutions.com/public/uploads/65707b6357eb6.png", "https://aronwebsolutions.com/public/uploads/161212-17.png"]}
                 experties={[
                     "E-commerce Solutions",
                     "User-Centric Design",

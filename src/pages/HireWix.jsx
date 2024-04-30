@@ -15,21 +15,17 @@ export default function HireWix() {
     return (
         <>
             <div>
-                <TopHeader title={"hire Wix devloper"} description={""} />
-            </div>
-
-            <ContactSection
-                title="Hire
+                <TopHeader  title="Hire
                 Top Rated
                 Wix Professional Experts"
-                description="Take Your Website to the Next Level with Our Wix Experts"
-                images={["https://aronwebsolutions.com/public/uploads/65707b237b675.png", "https://aronwebsolutions.com/public/uploads/upwork_wix-17.png"]}
-            />
+                description="Take Your Website to the Next Level with Our Wix Experts" />
+            </div>
+
             <WhyChoose
                 title="Brandlever For Your Wix Project"
                 description1="At Wix, we provide the option to enlist the services of skilled Wix web designers and developers who can craft a visually striking website or online store according to your needs."
                 description2="Our team of proficient web developers and designers excels in producing aesthetically pleasing websites that prioritize user-friendliness and responsiveness. With our experienced expert Wix designers, we are committed to helping you build a website that will match your brand identity. Whether you want a simple design or a new modern look wix website design, our team can give a customized solution to bring it to life. Recognized as a Wix Partner, Aron Web Solutions extends a comprehensive website design solution suitable for businesses of all scales. We handle every aspect, allowing you to concentrate on the core of your business."
-                image="https://aronwebsolutions.com/public/front/images/wix_right.webp"
+                images={["https://aronwebsolutions.com/public/uploads/65707b237b675.png", "https://aronwebsolutions.com/public/uploads/upwork_wix-17.png"]}
                 experties={[
                     "Custom Wix Website Design",
                     "Store Development",

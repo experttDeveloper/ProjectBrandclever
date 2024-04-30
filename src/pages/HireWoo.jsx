@@ -15,21 +15,17 @@ export default function HireWoo() {
     return (
         <>
             <div>
-                <TopHeader title={"hire Woo-Commerce Developer"} description={""} />
-            </div>
-
-            <ContactSection
-                title="WooCommerce
+                <TopHeader title="WooCommerce
                 Development
                 Company"
-                description="Hire Top Class Woocommerce Development Services"
-                images={["https://aronwebsolutions.com/public/uploads/6571b7e2dec6e.png", "https://aronwebsolutions.com/public/uploads/5-197.png"]}
-            />
+                    description="Hire Top Class Woocommerce Development Services" />
+            </div>
+
             <WhyChoose
                 title="Woocommerce Development Services?"
                 description1="When you're on the journey to create an outstanding online store with WooCommerce, selecting the right partner is crucial."
                 description2="At Aron Web Solutions, as top-notch woocommerce development company we don't just build websites; we create the best e-commerce experiences and provide you with unmatched expertise that sets us apart. Our commitment is to make your online store a unique success story. We treat each project as a customized adventure. Our expertise goes beyond the technical, where we create websites that are functional, stunning, and user-friendly. We optimize your website to be search engine-friendly, making sure that your store stands out in search results and attracts more visitors. When you choose Aron Web Solutions, you're selecting a team that's deeply dedicated to your e-commerce success. We're not just a service provider; we're your partners, your friends, and your allies on the path to an extraordinary online store."
-                image="https://aronwebsolutions.com/public/front/images/woo_right.webp"
+                images={["https://aronwebsolutions.com/public/uploads/6571b7e2dec6e.png", "https://aronwebsolutions.com/public/uploads/5-197.png"]}
                 experties={[
                     "Technical Expertise",
                     "Personalization",
@@ -44,7 +40,7 @@ export default function HireWoo() {
 
             />
             <Testimonial />
-           
+
             <ExpertiesSection
                 data={[
                     {

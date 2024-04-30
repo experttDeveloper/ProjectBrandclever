@@ -14,21 +14,18 @@ export default function HireWebFlow() {
     return (
         <div>
             <div>
-                <TopHeader title={"hire Webflow devloper"} description={""} />
-            </div>
-
-            <ContactSection
-                title="Hire
+                <TopHeader title="Hire
                 Skilled Experts
                 For Your Webflow Store"
-                description="Find the Right Solution for Your Project with Our Web Flow Experts!"
-                images={["https://aronwebsolutions.com/public/uploads/65707a64787c5.png", "https://aronwebsolutions.com/public/uploads/webflow_fiverr-17.png"]}
-            />
+                description="Find the Right Solution for Your Project with Our Web Flow Experts!" />
+            </div>
+
+
             <WhyChoose
                 title="Brandclver's Webflow developer?"
                 description1="At Brandclver, we're your trusted partners for taking your web projects to the next level with Webflow."
                 description2="We know that creating a stunning and effective website can be a daunting task, but that's where we come in. Our mission is simple: to make your digital dreams a reality. We understand that as a business owner, choosing the right platform and partner for your web projects is a big decision."
-                image="https://aronwebsolutions.com/public/front/images/webflow_right.webp"
+                images={["https://aronwebsolutions.com/public/uploads/65707a64787c5.png", "https://aronwebsolutions.com/public/uploads/webflow_fiverr-17.png"]}
                 experties={[
                     "Website Design and Development",
                     "Custom Webflow Template Creation",

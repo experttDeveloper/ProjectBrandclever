@@ -14,19 +14,14 @@ export default function HireMagento() {
     return (
         <>
             <div>
-                <TopHeader title={"hire magento devloper"} description={""} />
+                <TopHeader  title="Hire Professional Magento Experts For Online Store"
+                description="Creating a customer-centric Websites that deliver the best results" />
             </div>
-
-            <ContactSection
-                title="Hire Professional Magento Experts For Online Store"
-                description="Creating a customer-centric Websites that deliver the best results"
-                images={["images/hire/shopify.png", "images/hire/clutch_shopify-17.png"]}
-            />
             <WhyChoose
                 title="Brandclever For Magento Development Service?"
                 description1="Aron Web Solutions delivers a comprehensive range of services in Magento development and e-commerce strategy."
                 description2="Our team covers the entire spectrum, from designing and structuring your Magento platform to the successful delivery, optimization, and continuous support and maintenance. Our Magento developers possess an impressive depth of expertise in the Magento platform, ensuring that your e-commerce aspirations are in capable hands."
-                image="https://aronwebsolutions.com/public/front/images/magento_right.webp"
+                images={["images/hire/shopify.png", "images/hire/clutch_shopify-17.png"]}
                 experties={[
                     "End-to-End Magento Solutions",
                     "Magento Development",

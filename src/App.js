@@ -88,7 +88,7 @@ export default class App extends Component {
             <Route path="/cms-solution" element={<CMSSolution />} /> */}
 
 
-            {/* <Route path="/hire-shopify-expert" element={<HireShopify />} />
+            <Route path="/hire-shopify-expert" element={<HireShopify />} />
             <Route path="/hire-magento-expert" element={<HireMagento />} />
             <Route path="/hire-webflow-expert" element={<HireWebFlow />} />
             <Route path="/hire-wix-expert" element={<HireWix />} />
@@ -98,7 +98,7 @@ export default class App extends Component {
             <Route path="/hire-suqarespace-expert" element={<HireSquareSpace />} />
             <Route path="/hire-laravel-developer" element={<HireLaravel />} />
             <Route path="/hire-reactjs-developer" element={<HireReactjs />} />
-            <Route path="/hire-tailwind-css-developer" element={<HireTalwindCss />} /> */}
+            <Route path="/hire-tailwind-css-developer" element={<HireTalwindCss />} />
            
 
 

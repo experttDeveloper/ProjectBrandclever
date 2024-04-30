@@ -14,21 +14,17 @@ export default function HireSquareSpace() {
     return (
         <>
             <div>
-                <TopHeader title={"hire square space devloper"} description={""} />
-            </div>
-
-            <ContactSection
-                title="Hire
+                <TopHeader title="Hire
                 Industry Experts
                 For Squarespace Store"
-                description="Make Your Website More Beautiful, and Innovative"
-                images={["https://aronwebsolutions.com/public/uploads/6571b81996a38.png", "https://aronwebsolutions.com/public/uploads/3-144.png"]}
-            />
+                description="Make Your Website More Beautiful, and Innovative" />
+            </div>
+
             <WhyChoose
                 title="Brandlclever For Your Squarespace Project?"
                 description1="Aron Web Solutions is your perfect partner for any Squarespace project. With professional and experienced Squarespace experts on our team, we can help you create and maintain the perfect Squarespace website for your business."
                 description2="We can help you with everything from designing and launching the site to providing ongoing maintenance and support. Our services cover everything from custom Squarespace themes to SEO optimization, and our team is always available for any questions or help you may need. We believe in providing you with quality customer service and great results that you'll love. From start to finish, we're here to make sure your Squarespace website looks amazing and works perfectly. With Aron Web Solutions, you can count on us to make your Squarespace project a success!"
-                image="https://aronwebsolutions.com/public/front/images/ss_right.webp"
+                images={["https://aronwebsolutions.com/public/uploads/6571b81996a38.png", "https://aronwebsolutions.com/public/uploads/3-144.png"]}
                 experties={[
                     "Custom Website Design",
                     "E-commerce Integration",

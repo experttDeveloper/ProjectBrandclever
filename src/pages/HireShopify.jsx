@@ -16,18 +16,13 @@ export default function HireShopify() {
   return (
     <>
       <div>
-        <TopHeader title={"hire sopify devloper"} description={""} />
+        <TopHeader title={"Hire Certified, Trusted Professional Shopify Developers"} description={"Hire the best Shopify experts for your ecommerce business"} />
       </div>
-      <ContactSection
-        title="Hire Certified, Trusted Professional Shopify Developers"
-        description="Hire the best Shopify experts for your ecommerce business"
-        images={["images/hire/shopify.png", "images/hire/clutch_shopify-17.png"]}
-      />
       <WhyChoose
-        title="Aron Web Solution's Shopify Expertise?"
+        title="Brandclever's Shopify Expertise?"
         description1="Looking to Hire Shopify Experts to take your online business to the next level?"
         description2="At Brandclever, we take your Shopify store to the next level. As dedicated Shopify experts, We bring a wealth of experience and expertise to help you build, optimize, and elevate your online store. With our proven track record, we help businesses like yours to go one step ahead in the competitive e-commerce market."
-        image="images/hire/stay.webp"
+        images={["images/hire/shopify.png", "images/hire/clutch_shopify-17.png"]}
         experties={[
           "Custom Theme Development",
           "App Integration and Optimization",

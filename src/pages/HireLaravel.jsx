@@ -14,21 +14,16 @@ export default function HireLaravel() {
     return (
         <>
             <div>
-                <TopHeader title={"hire Laravel devloper"} description={""} />
+                <TopHeader title="Hire
+                Trustworthy
+                Laravel Developers"  description="Experience the difference with our certified Laravel developers" />
             </div>
 
-            <ContactSection
-                title="Hire
-                Trustworthy
-                Laravel Developers"
-                description="Experience the difference with our certified Laravel developers"
-                images={["https://aronwebsolutions.com/public/uploads/Laravel_upwork-55.png", "https://aronwebsolutions.com/public/uploads/Laravel_freelancer-18.png"]}
-            />
             <WhyChoose
                 title="Brandlclever For Your Laravel Project"
                 description1="Brandlclever delivers a comprehensive range of services in Magento development and e-commerce strategy."
                 description2="Looking for a trustworthy partner for your Laravel project or need support for your existing project? We are a top web development company that's really good at creating strong and expandable applications using Laravel. The people on their team are skilled developers who know much about the Laravel framework, so your project is in good hands. Aron Web Solutions keeps up with the latest technology and web development trends. We focus on making clients happy by understanding what each project needs. Our team takes the time to really get your business, who you're trying to reach, and what you want your project to achieve. Then, we come up with a personalized solution that will make your online business stand out."
-                image="https://aronwebsolutions.com/public/front/images/laravel.png"
+                images={["https://aronwebsolutions.com/public/uploads/Laravel_upwork-55.png", "https://aronwebsolutions.com/public/uploads/Laravel_freelancer-18.png"]}
                 experties={[
                     "Ongoing Support",
                     "Regular Maintenance",

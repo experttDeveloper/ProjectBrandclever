@@ -23,6 +23,7 @@
   margin: 22px 50px 21px 0px;
 }
 .contact_shopify {
+  color: var(--background-color-black-paragrpah);
   display: flex;
 }
 .mail_shopify {
