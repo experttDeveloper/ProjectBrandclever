@@ -27,6 +27,7 @@ import UpdatedService from './pages/UpdatedService';
 import Contact from './pages/Contact';
 import HireShopify from './pages/HireShopify';
 import './css/hiredeveloper.css'
+import './css/ServiceInnerPage.css'
 import TermCondition from './pages/TermCondition';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import HireMagento from './pages/HireMagento';
@@ -78,14 +79,14 @@ export default class App extends Component {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
 
-            {/* <Route path="/web-development" element={<WebDevelopment />} />
+            <Route path="/web-development" element={<WebDevelopment />} />
             <Route path="/graphic-degin" element={<GraphicDesign />} />
             
             <Route path="/mern-stack" element={<MernStack />} />
             <Route path="/digital-marketing" element={<DigitalMarketing />} />
             <Route path="/content-strategy" element={<ContentStrategy />} />
             <Route path="/framework" element={<Framework />} />
-            <Route path="/cms-solution" element={<CMSSolution />} /> */}
+            <Route path="/cms-solution" element={<CMSSolution />} />
 
 
             <Route path="/hire-shopify-expert" element={<HireShopify />} />

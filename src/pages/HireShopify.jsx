@@ -54,7 +54,7 @@ export default function HireShopify() {
             image: "https://aronwebsolutions.com/public/front/images/shopify_theme_fedf.webp",
             points: [
               'Configure your basic administrative settings',
-              "Import your store's content and data to Shopify",
+              "Import your store's content.",
               'Organize your products after migration',
               'Set up your shipping details',
               'Set up your payment provider'

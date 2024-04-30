@@ -7,6 +7,7 @@ import { Button, Card, CardContent, CardMedia, Typography } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { Email, WhatsApp } from '@mui/icons-material';
+import ContactSection from '../hiredeveloper/ContactSection';
 
 const questionAnsers = [
     {
@@ -63,8 +64,15 @@ export default function WebDevelopment() {
 
 
     return (
-        <div>
+        <div className='development_service'>
             <TopHeader title="Web Development" />
+            <ContactSection
+                title="Building
+                Beautiful Websites that Drive
+                Results and Inspire Engagement"
+                description="From concept to launch, we'll handle your website development with precision and expertise"
+                // images={["https://aronwebsolutions.com/public/uploads/Laravel_upwork-55.png", "https://aronwebsolutions.com/public/uploads/Laravel_freelancer-18.png"]}
+            />
             <Container>
                 <div style={{ padding: '20px' }}>
                     <Row>

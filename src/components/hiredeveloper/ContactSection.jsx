@@ -4,7 +4,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import HireDeveloperForm from '../HireDeveloperForm';
 
-export default function ContactSection({ title, description, images }) {
+export default function ContactSection({ title, description }) {
 
     return (
         <div>
@@ -19,14 +19,7 @@ export default function ContactSection({ title, description, images }) {
                                 <p className="hiring_shopify">
                                     {description}
                                 </p>
-                                <div className="shopify_clutch_logo">
-                                    <div className="shopifylogo">
-                                        <img src={images[0]} alt="brandclever" />
-                                    </div>
-                                    <div className="clutchlogo">
-                                        <img src={images[1]} alt="brandclever" />
-                                    </div>
-                                </div>
+                                
                                 <div className="contact_shopify">
                                     <div className="whatsapp_shopify">
                                         <WhatsAppIcon />

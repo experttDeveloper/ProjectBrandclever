@@ -5,21 +5,22 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 export default function ServiceSection({ data }) {
 
   return (
-      <div className="shopify_services">
-        <div className="container">
-          <div className="title_of_service">
-            <h2 className="title_shopifyservices">
+    <div className="shopify_services">
+      <div className="container">
+        <div className="title_of_service">
+          <h2 className="title_shopifyservices">
             Our Magento Development Services
-            </h2>
-            <p className="content_shopifyservices">
+          </h2>
+          <p className="content_shopifyservices">
             Our Customised development service offers a user-friendly upgrade and scaling solution
-            </p>
-          </div>
-          <Row className="services_shopify" style={{ color: "#fff" }}>
-            {
-              data.map((ele, key) => {
-                return (
-                  <Col md={4} key={key}>
+          </p>
+        </div>
+        <Row className="services_shopify" style={{ color: "#fff" }}>
+          {
+            data.map((ele, key) => {
+              return (
+                <Col md={4} key={key}>
+                  <div className='service_include'>
                     <img src={ele.image} alt={ele.title} className="svg_icon" />
                     <h4
                       className="title_shopify_services"
@@ -38,12 +39,13 @@ export default function ServiceSection({ data }) {
                       )
                     })}
 
-                  </Col>
-                )
-              })
-            }
-          </Row>
-        </div>
+                  </div>
+                </Col>
+              )
+            })
+          }
+        </Row>
       </div>
+    </div>
   )
 }
