@@ -2846,3 +2846,9 @@ li.hire_us .dropdown-content {
     padding: 50px 50px 30px 50px;
     box-shadow: 0px 0px 6px 0px #ccc;
 }
+.dropdown-content.fiverr_navbar {
+    top: 50% !important;
+}
+.dropdown-content.guru_navbar{
+    top: 70% !important;
+}

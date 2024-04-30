@@ -424,7 +424,7 @@ const NavBar = () => {
                               <div className='pph_nav'>
                                 <div className='dropdownMenu'>
                                   <Link to="#">Fiverr</Link>
-                                  <div className="dropdown-content">
+                                  <div className="dropdown-content fiverr_navbar">
                                     <Link to="https://www.fiverr.com/shobha_negii" target="_blank"><DoneAllIcon/> Shobha Negi</Link>
                                   </div>
                                 </div>
@@ -435,7 +435,7 @@ const NavBar = () => {
                               <div className='pph_nav'>
                                 <div className='dropdownMenu'>
                                   <Link to="#">Guru</Link>
-                                  <div className="dropdown-content">
+                                  <div className="dropdown-content guru_navbar">
                                     <Link to="https://www.guru.com/freelancers/manish-kumar-221" target="_blank"><DoneAllIcon/> Manish Kumar</Link>
 
                                   </div>
