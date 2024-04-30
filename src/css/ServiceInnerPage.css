@@ -1,0 +1,62 @@
+:root {
+    --white-color: #ffffff;
+    --black-color: #191e25;
+    --green-color: #54a154;
+    --dark-black-color:#292b32;
+    --paragraph-color:#212529;
+    --background-color-black-paragrpah:#bfbfbf;
+  }
+  .development_main_full_div {
+    padding: 50px 0px 50px 0px;
+    background: var(--black-color);
+}
+.development_main_full_div h2 {
+color: var(--white-color);
+}
+.content_form_shopify .form_shopify_hire .form_inner .card p {
+color: var(--white-color);
+}
+.development_main_full_div p{
+    color: var(--white-color);
+}
+.development_main_full_div img {
+    width: 100% !important;
+    max-width: 90%;
+    height: 90%;
+}
+.development_main_full_div .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.web_second_sdit {
+    padding: 50px 0px 60px 0px;
+    background-color: var(--white-color);
+}
+.web_second_sdit .css-ewlbiu-MuiPaper-root-MuiCard-root {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 375px;
+    padding: 0px 0px 15px 0px;
+    box-shadow: 0px 0px 3px 0px !important;
+}
+.Custom_lists_edit {
+    margin-top: 20px;
+}
+.Custom_lists_edit p {
+    display: flex;
+    gap: 0px 10px;
+    margin-bottom: 7px !important;
+}
+.web_second_sdit h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--black-color);
+}
+.development_service.nests .hiring_process_main {
+    padding: 60px 0px 15px 0px;
+}
+.web_second_sdit button.get_quote_btn {
+    margin-left: 20px !important;
+}
