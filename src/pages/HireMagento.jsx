@@ -1,6 +1,5 @@
 import React from 'react';
 import TopHeader from '../components/TopHeader';
-import ContactSection from '../components/hiredeveloper/ContactSection';
 import WhyChoose from '../components/hiredeveloper/WhyChooseSection';
 import Testimonial from '../components/hiredeveloper/TestimonialSection';
 import ServiceSection from '../components/hiredeveloper/ServiceSection';
@@ -14,24 +13,24 @@ export default function HireMagento() {
     return (
         <>
             <div>
-                <TopHeader  title="Hire Professional Magento Experts For Online Store"
-                description="Creating a customer-centric Websites that deliver the best results" />
+                <TopHeader title="Recruit Experienced Magento Experts for Your Online Store"
+                    description="Creating a customer-centric website involves more than just a visually pleasing design. It requires an in-depth understanding of your audience's needs, preferences, and behavior patterns. This approach leads to websites that not only draw visitors but also engage them, leading to conversions and loyalty." />
             </div>
             <WhyChoose
                 title="Brandclever For Magento Development Service?"
-                description1="Aron Web Solutions delivers a comprehensive range of services in Magento development and e-commerce strategy."
-                description2="Our team covers the entire spectrum, from designing and structuring your Magento platform to the successful delivery, optimization, and continuous support and maintenance. Our Magento developers possess an impressive depth of expertise in the Magento platform, ensuring that your e-commerce aspirations are in capable hands."
+                description1="Brandclever offers a wide array of services for Magento development and e-commerce strategy."
+                description2="Our team provides a complete range of services, from designing and structuring your Magento platform to ensuring successful delivery, optimization, and ongoing support and maintenance. Our Magento developers bring extensive experience with the Magento platform, ensuring your e-commerce goals are in expert hands."
                 images={["images/hire/shopify.png", "images/hire/clutch_shopify-17.png"]}
                 experties={[
-                    "End-to-End Magento Solutions",
+                    "Comprehensive Magento Solutions",
                     "Magento Development",
-                    "Customization",
-                    "E-commerce Strategy",
-                    "User-friendly Design",
-                    "Security Assurance",
-                    "Optimal performance",
-                    "Secure payment gateways",
-                    "Round-the-Clock Support"
+                    "Customizations",
+                    "E-Commerce Strategy",
+                    "User-Friendly Design",
+                    "Security Guarantee",
+                    "High Performance",
+                    "Secure Payment Gateways",
+                    "24/7 Support",
                 ]}
 
             />
@@ -39,28 +38,28 @@ export default function HireMagento() {
             <ServiceSection
                 data={[
                     {
-                        title: "Magento Design & Development",
-                        image: "https://aronwebsolutions.com/public/front/images/magento_service_spcl.png",
+                        title: "Magento Design and Creation",
+                        image: "images/hire/magento_ser1.png",
                         points: [
-                           
+
                         ],
-                        description:"We help make your online store look great and work smoothly. Whether you're starting from scratch or want to improve your existing store, we have the skills to bring your e-commerce store to a new level."
+                        description: "We ensure your online store not only looks fantastic but also functions seamlessly. Whether you're building from the ground up or enhancing an existing store, we have the expertise to take your e-commerce business to the next level."
                     },
                     {
-                        title: "Setup and Customization",
-                        image: "https://aronwebsolutions.com/public/front/images/website_maintainance.png",
+                        title: "Configuration and Customization",
+                        image: "images/hire/magento_ser.png",
                         points: [
-                            
+
                         ],
-                        description:"The final step in launching your Magento development services involves setting up and customizing your online store. This includes the installation of the Magento platform, configuration of essential settings, and integration with your existing website if applicable."
+                        description: "The last phase in launching your Magento development services is the setup and customization of your online store. This includes installing the Magento platform, configuring key settings, and integrating with your existing website, if needed."
                     },
                     {
-                        title: "Planning and Execution",
-                        image: "https://aronwebsolutions.com/public/front/images/cms.png",
+                        title: "Strategy and Implementation",
+                        image: "images/hire/magento_ser3.png",
                         points: [
-                           
+
                         ],
-                        description:"This phase includes developing a comprehensive project plan that outlines the scope, key milestones, and a timeline for project completion. We make sure that every detail aligns with your vision, and we keep you informed throughout the development process."
+                        description: "This stage involves creating a detailed project plan that defines the scope, key milestones, and a timeline for project completion. We ensure every aspect matches your vision and keep you updated throughout the development journey."
                     }
                 ]}
 
@@ -69,25 +68,25 @@ export default function HireMagento() {
             <ExpertiesSection
                 data={[
                     {
-                        title: "User-Friendly Design",
-                        image: "https://aronwebsolutions.com/public/front/images/user-friendly-design.png",
-                        description: "We prioritize user experience (UX) and create designs that are intuitive and easy to navigate. This ensures that visitors can find what they're looking for with ease."
+                        title: "Intuitive User Interface Design",
+                        image: "images/hire/magento_exp1.png",
+                        description: "We focus on delivering a seamless user experience (UX) with designs that are intuitive and simple to navigate, allowing visitors to find what they need effortlessly."
 
                     },
                     {
-                        title: "Fast Loading Times",
-                        image: "https://aronwebsolutions.com/public/front/images/fastloading-times.png",
-                        description: "Slow-loading websites can deter visitors. Our designs are optimized for quick loading, ensuring a smooth and enjoyable browsing experience for your audience."
+                        title: "Quick Page Load Times",
+                        image: "images/hire/magento_exp2.png",
+                        description: "Websites that load slowly can drive visitors away. We optimize our designs for fast loading times, providing your audience with a smooth and enjoyable browsing experience."
                     },
                     {
-                        title: "Scalability",
-                        image: "https://aronwebsolutions.com/public/front/images/scalability.png",
-                        description: "As your business grows, our designs are scalable, allowing you to expand your website's features and functionality to meet new demands."
+                        title: "Expandability",
+                        image: "images/hire/magento_ex3.png",
+                        description: "Our designs are scalable to support your business's growth, enabling you to add new features and functionality as your needs evolve."
                     },
                     {
-                        title: "Support and Maintenance",
-                        image: "https://aronwebsolutions.com/public/front/images/support_maintan_magento.png",
-                        description: "We offer ongoing support and maintenance services to keep your website up and running smoothly. You can count on us for any technical assistance or updates needed."
+                        title: "Support and Maintenance Services",
+                        image: "images/hire/magento_exp4.png",
+                        description: "We provide continuous support and maintenance services to ensure your website operates smoothly. You can rely on us for technical assistance and necessary updates."
                     }
                 ]}
 
@@ -96,65 +95,79 @@ export default function HireMagento() {
             <ProcessSection
                 data={[
                     {
-                        title: "Initial Consultation",
-                        image: "https://aronwebsolutions.com/public/front/images/requirement.png",
-                        description: "During this stage, our team collaborates closely with you to understand your specific e-commerce needs. We will understand your business goals, product offerings, target audience, and any unique requirements."
-
+                        title: "Discovery Session",
+                        image: "images/hire/annoucment.png",
+                        description: "In this stage, our team works closely with you to gather insights into your e-commerce requirements. We aim to understand your business objectives, product range, target market, and any other specific needs."
                     },
                     {
-                        title: "Proposal and Agreement",
-                        image: "https://aronwebsolutions.com/public/front/images/resume.png",
-                        description: "Following the initial consultation, we prepared a detailed project proposal. This proposal outlines the range of services we'll provide, including a breakdown of the project's scope and components."
+                        title: "Project Proposal and Agreement",
+                        image: "images/hire/discussion.png",
+                        description: "After the discovery session, we create a detailed project proposal that defines the services we will deliver. The proposal provides a comprehensive breakdown of the project's scope and key components."
                     },
                     {
-                        title: "Planning and Execution",
-                        image: "https://aronwebsolutions.com/public/front/images/finalize.png",
-                        description: "This phase includes developing a comprehensive project plan that outlines the scope, key milestones, and a timeline for project completion. We make sure that every detail aligns with your vision, and we keep you informed throughout the development process."
+                        title: "Execution and Project Management",
+                        image: "images/hire/implementation.png",
+                        description: "In this phase, we design a detailed project plan that establishes the scope, key milestones, and the schedule for project completion. We ensure that each aspect aligns with your expectations and keep you updated throughout the development."
                     },
                     {
-                        title: "Setup and Customization",
-                        image: "https://aronwebsolutions.com/public/front/images/assign-task.png",
-                        description: "The final step in launching your Magento development services involves setting up and customizing your online store. This includes the installation of the Magento platform, configuration of essential settings, and integration with your existing website if applicable."
+                        title: "Launch and Customization",
+                        image: "images/hire/reporting.png",
+                        description: "The final stage in launching your Magento project involves setting up and customizing your online store. This step includes installing the Magento platform, configuring essential settings, and integrating with any existing websites, if necessary."
                     }
                 ]}
             />
 
             <ImageSection
+                images={[
+                    {
+                        firstImage: "images/hire/magento_port1.png",
+                        secondImage: 'images/hire/magento_port2.png'
+                    },
+                    {
+                        firstImage: "images/hire/magento_port3.png",
+                        secondImage: 'images/hire/magento_port4.png'
+                    },
+                    {
+                        firstImage: "images/hire/magento_port5.png",
+                        secondImage: 'images/hire/magento_port6.png'
+                    }
+                ]}
             />
             <PaymentSection
             />
             <FaqSection
                 data={[
                     {
-                        question: "What sets Aron Web Solutions apart in Magento development services?",
-                        answer: "We cover everything from design and development to ongoing support and maintenance. Our team possesses extensive expertise in Magento, ensuring that your e-commerce goals are in capable hands."
+                        question: "What distinguishes Brandclever in Magento development services?",
+                        answer: "We offer a full range of services, from design and development to ongoing support and maintenance. Our team's deep expertise in Magento ensures that your e-commerce project is in capable hands."
                     },
                     {
-                        question: "Can you describe the step-by-step approach you take for Magento development projects?",
-                        answer: "Our step-by-step approach involves an initial consultation to understand your needs, followed by a detailed project proposal and agreement. We plan the project, execute the development, and customize the Magento website to your brand's identity."
+                        question: "What's your step-by-step process for Magento development projects?",
+                        answer: "Our process begins with a consultation to understand your needs. This is followed by a detailed project proposal and agreement. We then proceed with planning, development, and customizing the Magento website to match your brand's identity."
                     },
                     {
-                        question: "Can you explain the user-friendly design and its importance in Magento development?",
-                        answer: "User-friendly design is a crucial aspect of our Magento development. We prioritize creating designs that are easy for visitors to navigate and find what they're looking for, enhancing the overall user experience."
+                        question: "Why is user-friendly design essential in Magento development?",
+                        answer: "User-friendly design is crucial for a successful Magento website. We focus on creating intuitive layouts, allowing visitors to navigate easily and find what they need. This enhances the overall user experience and fosters customer engagement."
                     },
                     {
-                        question: "How do you handle the migration of products, customer data, and order history when upgrading an online store to Magento?",
-                        answer: "Our Magento migration services are designed to make the process seamless. We take care of transferring your products, customer data, and order history, minimizing downtime and disruption during the upgrade."
-                    }, {
-                        question: "What makes your Magento theme development services stand?",
-                        answer: "Our Magento theme development services focus on creating unique themes that not only match your brand's style but also provide a user-friendly experience, making your online store visually appealing"
+                        question: "How do you handle the migration of products, customer data, and order history when upgrading to Magento?",
+                        answer: "Our Magento migration services ensure a smooth transition. We manage the migration of products, customer data, and order history with minimal downtime and disruption, ensuring a seamless upgrade experience."
                     },
                     {
-                        question: "Can I get support and maintenance for my Shopify store post-launch?",
-                        answer: "Yes, Shopify experts often provide ongoing support and maintenance services. This includes updates, security patches, troubleshooting, and ensuring your store operates smoothly and securely."
+                        question: "What sets your Magento theme development services apart?",
+                        answer: "Our Magento theme development emphasizes unique themes that reflect your brand's style while providing a user-friendly experience. We aim for visually appealing designs that enhance your online store's aesthetic."
                     },
                     {
-                        question: "What kind of support and maintenance services do you provide?",
-                        answer: "We offer ongoing support and maintenance services to ensure that your Magento website operates smoothly. Our team is available for technical assistance and updates whenever you need them."
+                        question: "Do you offer post-launch support and maintenance for Shopify stores?",
+                        answer: "Yes, many Shopify experts offer ongoing support and maintenance after launch.This includes updates, security patches, troubleshooting, and ensuring your store operates smoothly and securely."
+                    },
+                    {
+                        question: "What kind of support and maintenance services do you offer?",
+                        answer: "We offer continuous support and maintenance to keep your Magento website running smoothly. Our team is available for technical assistance and updates whenever needed."
                     },
                     {
                         question: "What customization options are available for Magento development services?",
-                        answer: "We offer highly customizable solutions, ensuring that your Magento website aligns with your unique brand identity. Whether it's specific branding guidelines or a distinct look, we tailor the design to your needs."
+                        "answer": "We offer highly customizable solutions, ensuring your Magento website aligns with your unique brand identity. Whether it's branding guidelines or a specific look, we tailor the design to meet your needs."
                     }
                 ]}
             />

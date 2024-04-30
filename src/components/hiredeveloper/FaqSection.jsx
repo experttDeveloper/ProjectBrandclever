@@ -47,7 +47,7 @@ export default function FaqSection({ data }) {
                                                 {ele.question}
                                             </AccordionSummary>
                                             <AccordionDetails>
-                                                {ele.description}
+                                                {ele.answer}
                                             </AccordionDetails>
                                         </Accordion>
                                     </div>

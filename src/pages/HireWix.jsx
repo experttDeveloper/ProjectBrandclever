@@ -15,27 +15,27 @@ export default function HireWix() {
     return (
         <>
             <div>
-                <TopHeader  title="Hire
+                <TopHeader title="Hire
                 Top Rated
                 Wix Professional Experts"
-                description="Take Your Website to the Next Level with Our Wix Experts" />
+                    description="Take Your Website to the Next Level with Our Wix Experts" />
             </div>
 
             <WhyChoose
-                title="Brandlever For Your Wix Project"
-                description1="At Wix, we provide the option to enlist the services of skilled Wix web designers and developers who can craft a visually striking website or online store according to your needs."
-                description2="Our team of proficient web developers and designers excels in producing aesthetically pleasing websites that prioritize user-friendliness and responsiveness. With our experienced expert Wix designers, we are committed to helping you build a website that will match your brand identity. Whether you want a simple design or a new modern look wix website design, our team can give a customized solution to bring it to life. Recognized as a Wix Partner, Aron Web Solutions extends a comprehensive website design solution suitable for businesses of all scales. We handle every aspect, allowing you to concentrate on the core of your business."
+                title="Brandclever for Your Wix Project"
+                description1="Brandclever offers a team of skilled Wix designers and developers who can create a visually stunning website or online store tailored to your specific requirements."
+                description2="Our expert web designers and developers excel in crafting aesthetically pleasing websites that are both user-friendly and responsive. Our experienced Wix designers are dedicated to building a website that aligns with your brand identity. Whether you're looking for a simple design or a contemporary and stylish Wix website, we have the expertise to turn your vision into reality. As a recognized Wix Partner, Brandclever provides a complete website design solution for businesses of all sizes. We take care of everything, allowing you to focus on what matters most to you."
                 images={["https://aronwebsolutions.com/public/uploads/65707b237b675.png", "https://aronwebsolutions.com/public/uploads/upwork_wix-17.png"]}
                 experties={[
-                    "Custom Wix Website Design",
-                    "Store Development",
-                    "Responsive Design Solutions",
+                    "Bespoke Wix Website Design",
+                    "Online Store Development",
+                    "Responsive Design Services",
                     "SEO Optimization",
-                    "App Integration",
-                    "Elegant Graphic Elements",
-                    "Maintenance and Support",
-                    "Custom Wix Code",
-                    "Performance Analytics"
+                    "Third-Party App Integration",
+                    "Stylish Graphic Design",
+                    "Ongoing Maintenance and Support",
+                    "Custom Wix Scripting",
+                    "Performance Analytics and Insights"
                 ]}
 
             />
@@ -43,28 +43,22 @@ export default function HireWix() {
             <ServiceSection
                 data={[
                     {
-                        title: "Wix Website Design",
-                        image: "https://aronwebsolutions.com/public/front/images/wix_design.png",
-                        points: [
-
-                        ],
-                        description: "Our expert designers will create a visually stunning and user-friendly website that perfectly reflects your brand, ensuring you make a lasting impression on visitors."
+                        title: "Wix Web Design",
+                        image: "images/hire/wix_ser1.png",
+                        points: [],
+                        description: "Our skilled designers will craft a visually appealing and user-friendly website that embodies your brand, helping you make a memorable impression on visitors."
                     },
                     {
-                        title: "Wix Custom Development",
-                        image: "https://aronwebsolutions.com/public/front/images/wix_dev.png",
-                        points: [
-
-                        ],
-                        description: "Our Wix Custom Development service has you covered. We customize your site to meet unique business needs, providing advanced features and functionalities that set you apart from the rest."
+                        title: "Wix Custom Site Development",
+                        image: "images/hire/wix_ser2.png",
+                        points: [],
+                        description: "With our Wix Custom Site Development service, we tailor your site to meet specific business requirements. We offer advanced features and functionalities to give you a competitive edge."
                     },
                     {
-                        title: "Wix Migration",
-                        image: "https://aronwebsolutions.com/public/front/images/wix_migration.png",
-                        points: [
-
-                        ],
-                        description: "Our Wix Migration service ensures a smooth transition. We'll take care of transferring your content and functionality, so you can enjoy the benefits of the Wix platform without the hassle."
+                        title: "Wix Site Migration",
+                        image: "images/hire/wix_ser3.png",
+                        points: [],
+                        description: "Our Wix Site Migration service ensures a seamless transfer process. We handle the migration of your content and features, allowing you to enjoy the benefits of Wix without any hassle."
                     }
                 ]}
 
@@ -73,25 +67,24 @@ export default function HireWix() {
             <ExpertiesSection
                 data={[
                     {
-                        title: "Strategic Planning",
-                        image: "https://aronwebsolutions.com/public/front/images/strategic_planning_wix.png",
-                        description: "Our approach involves strategic planning. We develop comprehensive strategies, ensuring that every element serves a purpose and contributes to the overall success of the project."
-
+                        title: "Strategic Approach",
+                        image: "images/hire/wix_exp1.png",
+                        description: "We adopt a strategic approach to every project, crafting comprehensive strategies that ensure every aspect serves a purpose and contributes to the project's overall success."
                     },
                     {
-                        title: "Collaborative Process",
-                        image: "https://aronwebsolutions.com/public/front/images/collaborative_process_wix.png",
-                        description: "We involve our clients at every stage, welcoming feedback and ensuring that the final product aligns seamlessly with their vision and goals."
+                        title: "Client-Centric Collaboration",
+                        image: "images/hire/wix_exp2.png",
+                        description: "Our collaborative process involves our clients at every stage, actively seeking feedback to ensure the final product aligns perfectly with their vision and goals."
                     },
                     {
-                        title: "Attention to Detail",
-                        image: "https://aronwebsolutions.com/public/front/images/attention_detail_wix.png",
-                        description: "We pay attention to detail, ensuring that every aspect of the website is refined and polished, from the visual elements to the backend functionalities."
+                        title: "Meticulous Attention to Detail",
+                        image: "images/hire/wix_exp3.png",
+                        description: "We meticulously attend to every detail, refining and polishing every aspect of the website, from its visual elements to its backend functionalities."
                     },
                     {
-                        title: "Attention to Detail",
-                        image: "https://aronwebsolutions.com/public/front/images/proven_track_record_wix.png",
-                        description: "Our track record speaks for itself. With a portfolio of successful projects and satisfied clients, we have demonstrated our ability to deliver exceptional results."
+                        title: "Proven Track Record",
+                        image: "images/hire/wix_exp4.png",
+                        description: "Our track record speaks volumes. With a portfolio of successful projects and satisfied clients, we have consistently demonstrated our ability to deliver exceptional results."
                     }
                 ]}
 
@@ -100,65 +93,79 @@ export default function HireWix() {
             <ProcessSection
                 data={[
                     {
-                        title: "Discovery Session",
-                        image: "https://aronwebsolutions.com/public/front/images/requirement.png",
-                        description: "The journey begins with a thorough Discovery Session. We sit down with you to understand your vision, goals, and unique requirements for your Wix project."
-
+                        title: "Project Kickoff",
+                        image: "images/hire/annoucment.png",
+                        description: "We start with a comprehensive Discovery Session to understand your vision, goals, and unique requirements for your Wix project. During this session, we gather all the information needed to ensure that we fully comprehend your expectations and create a project plan that aligns with your objectives."
                     },
                     {
-                        title: "Customized Planning",
-                        image: "https://aronwebsolutions.com/public/front/images/resume.png",
-                        description: "We prioritize transparency, ensuring you have a clear roadmap of the entire process, from design to development and beyond."
+                        title: "Custom Project Planning",
+                        image: "images/hire/discussion.png",
+                        description: "In this phase, we develop a customized project plan that provides complete transparency. You get a detailed roadmap of the entire process, from initial design to final development, with clearly defined milestones. This approach ensures that you're always aware of the next steps."
                     },
                     {
-                        title: "Design and Development",
-                        image: "https://aronwebsolutions.com/public/front/images/finalize.png",
-                        description: "This phase includes iterative design reviews, allowing you to provide feedback and ensure that the project aligns with your expectations."
+                        title: "Design and Build",
+                        image: "images/hire/implementation.png",
+                        description: "During this stage, we focus on the design and development of your Wix project. We use an iterative approach, allowing for multiple rounds of feedback to ensure that the design matches your expectations. Our team works diligently to create a website that aligns ."
                     },
                     {
-                        title: "Testing and Launch",
-                        image: "https://aronwebsolutions.com/public/front/images/assign-task.png",
-                        description: "Before launching your Wix project to the world, we undergo rigorous Testing and Quality Assurance. Once we're confident in its performance, we move on to the exciting Launch phase."
+                        title: "Quality Testing and Launch",
+                        image: "images/hire/reporting.png",
+                        description: "Before launching your Wix project to the public, we conduct thorough testing and quality assurance to ensure that everything works flawlessly. This includes testing for functionality, compatibility, and responsiveness. Once we are confident in its performance."
                     }
                 ]}
             />
 
             <ImageSection
+                images={[
+                    {
+                        firstImage: "images/hire/magento_port1.png",
+                        secondImage: 'images/hire/magento_port2.png'
+                    },
+                    {
+                        firstImage: "images/hire/magento_port3.png",
+                        secondImage: 'images/hire/magento_port4.png'
+                    },
+                    {
+                        firstImage: "images/hire/magento_port5.png",
+                        secondImage: 'images/hire/magento_port6.png'
+                    }
+                ]}
             />
             <PaymentSection
             />
             <FaqSection
                 data={[
                     {
-                        question: "What sets Aron Web Solutions apart from other Wix service providers",
-                        answer: "Aron Web Solutions stands out for its commitment to personalized service. We go beyond standard templates, offering bespoke designs and functionalities that align smoothwith your brand, ensuring your website is unique and memorable."
+                        question: "What makes Brandclever stand out among other Wix service providers?",
+                        answer: "Brandclever differentiates itself through its focus on personalized service. We don't rely on generic templates; instead, we create custom designs and functionalities that perfectly align with your brand, making your website unique and memorable."
                     },
                     {
-                        question: "How involved will I be in the Wix website design process with Aron Web Solutions?",
-                        answer: "At Aron Web Solutions, we believe in collaboration. You'll be an integral part of the design process, from initial discussions to design reviews. Your feedback ensures the final product meets your vision and goals."
+                        question: "How involved will I be in the Wix website design process with Brandclever?",
+                        answer: "Brandclever values collaboration. You will be actively involved in the design process, from initial brainstorming to design reviews. Your input helps shape the final product, ensuring it meets your expectations and business goals."
                     },
                     {
-                        question: "What post-launch support do you offer for Wix websites?",
-                        answer: "Our commitment extends beyond launch. We provide comprehensive post-launch support, including updates, maintenance, and assistance with any queries or concerns you may have about your Wix website."
+                        question: "What kind of post-launch support does Brandclever offer for Wix websites?",
+                        "answer": "Our support extends well beyond the launch. We offer comprehensive post-launch assistance, including updates, ongoing maintenance, and answers to any questions or issues you may have with your Wix website."
                     },
                     {
-                        question: "Can you help migrate my existing website to Wix, and what's the process?",
-                        answer: "SEO is a priority at Aron Web Solutions. We implement effective strategies, optimizing content, meta tags, and other elements to enhance your website's visibility on search engines and drive organic traffic."
-                    }, {
-                        question: "What is the typical timeline for completing a Wix project?",
-                        answer: "Project timelines vary based on complexity. During the planning phase, we provide a detailed project plan outlining milestones and expected completion dates, keeping you informed throughout the process."
+                        question: "Can you migrate my existing website to Wix, and what does the process entail?",
+                        answer: "Brandclever can handle the migration of your current website to Wix. We take care of transferring all content, maintaining functionality, and ensuring a smooth transition without downtime or loss of data."
                     },
                     {
-                        question: "Can you integrate third-party apps into my Wix website?",
-                        answer: "Aron Web Solutions has expertise in integrating various third-party apps to enhance the functionality of your Wix website, ensuring it meets your specific business requirements."
+                        question: "How long does it typically take to complete a Wix project?",
+                        answer: "The timeline for a Wix project depends on its complexity. During the planning stage, we provide a detailed project plan with key milestones and estimated completion dates, keeping you informed throughout the process."
                     },
                     {
-                        question: "How do I get started with Aron Web Solutions for my Wix project?",
-                        answer: "Getting started is easy. Simply reach out to us through our contact page or give us a call. We'll schedule a consultation to understand your needs, discuss the project scope, and provide you with a personalized plan to kickstart your Wix project with Aron Web Solutions."
+                        question: "Can Brandclever integrate third-party apps into my Wix website?",
+                        answer: "Yes, Brandclever has extensive experience in integrating third-party apps into Wix websites. We can add a variety of features to enhance your website's functionality and meet your specific business requirements."
+                    },
+                    {
+                        question: "How do I start a Wix project with Brandclever?",
+                        answer: "Starting your Wix project with Brandclever is straightforward. Contact us through our website or by phone, and we'll schedule a consultation to understand your needs, discuss the project scope, and create a personalized plan to launch your Wix project."
                     },
                     {
                         question: "What customization options are available for Magento development services?",
-                        answer: "We offer highly customizable solutions, ensuring that your Magento website aligns with your unique brand identity. Whether it's specific branding guidelines or a distinct look, we tailor the design to your needs."
+                        answer: "We provide highly customizable solutions, allowing you to tailor your Magento website to align with your brand identity. Whether you require specific branding elements or a unique design, we can customize the project to meet your needs."
                     }
                 ]}
             />

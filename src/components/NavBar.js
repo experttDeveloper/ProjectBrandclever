@@ -126,8 +126,8 @@ const hireMenus = [
   {
     id: 8,
     icon: 'images/hire/spaceaquare.png',
-    title: "Hire Sqaurespace Expert",
-    url: "/hire-suqarespace-expert"
+    title: "Hire Squarespace Expert",
+    url: "/hire-squarespace-expert"
   },
   {
     id: 9,
@@ -146,6 +146,12 @@ const hireMenus = [
     icon: 'images/hire/talwind.png',
     title: "Hire Tailwind CSS Developer",
     url: "/hire-tailwind-css-developer"
+  },
+  {
+    id: 12,
+    icon: 'images/hire/digital_marketing_nav.png',
+    title: "Hire Digital Marketing",
+    url: "/hire-digital-marketing"
   },
 
 ]
@@ -385,19 +391,19 @@ const NavBar = () => {
                                     <Row>
                                       <Col md={6}>
 
-                                      <Link to="https://www.upwork.com/agencies/brandclever/" target="_blank"><DoneAllIcon/> Brandclever Agency</Link>
-                                        <Link to="https://www.upwork.com/freelancers/~01d672b038a81f6f0f" target="_blank"><DoneAllIcon/> Manish Kumar</Link>
-                                        <Link to="https://www.upwork.com/freelancers/shobhan3" target="_blank"><DoneAllIcon/> Shobha Negi</Link>
-                                        <Link to="https://www.upwork.com/freelancers/shalus3" target="_blank"><DoneAllIcon/> Shalu sharma</Link>
-                                        <Link to="https://www.upwork.com/freelancers/~013b4df1df24fb5df6" target="_blank"><DoneAllIcon/> Indu Thakur</Link>
-                                        
+                                        <Link to="https://www.upwork.com/agencies/brandclever/" target="_blank"><DoneAllIcon /> Brandclever Agency</Link>
+                                        <Link to="https://www.upwork.com/freelancers/~01d672b038a81f6f0f" target="_blank"><DoneAllIcon /> Manish Kumar</Link>
+                                        <Link to="https://www.upwork.com/freelancers/shobhan3" target="_blank"><DoneAllIcon /> Shobha Negi</Link>
+                                        <Link to="https://www.upwork.com/freelancers/shalus3" target="_blank"><DoneAllIcon /> Shalu sharma</Link>
+
+
                                       </Col>
                                       <Col md={6}>
-                                      <Link to="https://www.upwork.com/freelancers/~017f90265127deec6e" target="_blank"><DoneAllIcon/> Shivani Devi</Link>
-                                        <Link to="https://www.upwork.com/freelancers/~01ad788d5e5e96a870" target="_blank"><DoneAllIcon/> Manshi Verma</Link>
-                                        <Link to="https://www.upwork.com/freelancers/gurjeets6" target="_blank"><DoneAllIcon/> Gurjeet Singh</Link>
-                                        <Link to="https://www.upwork.com/agencies/1747349465567211520/" target="_blank"><DoneAllIcon/> 3Realms agency</Link>
-                                        <Link to="https://www.upwork.com/freelancers/~01d54de3c49d7edb8b" target="_blank"><DoneAllIcon/> Ashandeep Singh</Link>
+                                        <Link to="https://www.upwork.com/freelancers/~013b4df1df24fb5df6" target="_blank"><DoneAllIcon /> Indu Thakur</Link>
+                                        <Link to="https://www.upwork.com/freelancers/~017f90265127deec6e" target="_blank"><DoneAllIcon /> Shivani Devi</Link>
+                                        <Link to="https://www.upwork.com/freelancers/~01ad788d5e5e96a870" target="_blank"><DoneAllIcon /> Mansi Verma</Link>
+                                        <Link to="https://www.upwork.com/freelancers/gurjeets6" target="_blank"><DoneAllIcon /> Gurjeet Singh</Link>
+                                        <Link to="https://www.upwork.com/freelancers/~01d54de3c49d7edb8b" target="_blank"><DoneAllIcon /> Ashandeep Singh</Link>
                                       </Col>
 
                                     </Row>
@@ -412,8 +418,8 @@ const NavBar = () => {
                                 <div className='dropdownMenu'>
                                   <Link to="#">PPH</Link>
                                   <div className="dropdown-content">
-                                    <Link to="https://www.peopleperhour.com/freelancer/technology-programming/indu-thakur-1-wordpress-seo-expert-top-rated-mwyanvv" target="_blank"><DoneAllIcon/> Indu Thakur</Link>
-                                    <Link to="https://www.peopleperhour.com/freelancer/technology-programming/shobha-negi-award-winning-web-developer-zzzjjqqj" target="_blank"><DoneAllIcon/> Shobha Negi</Link>
+                                    <Link to="https://www.peopleperhour.com/freelancer/technology-programming/indu-thakur-1-wordpress-seo-expert-top-rated-mwyanvv" target="_blank"><DoneAllIcon /> Indu Thakur</Link>
+                                    <Link to="https://www.peopleperhour.com/freelancer/technology-programming/shobha-negi-award-winning-web-developer-zzzjjqqj" target="_blank"><DoneAllIcon /> Shobha Negi</Link>
 
                                   </div>
                                 </div>
@@ -425,7 +431,7 @@ const NavBar = () => {
                                 <div className='dropdownMenu'>
                                   <Link to="#">Fiverr</Link>
                                   <div className="dropdown-content fiverr_navbar">
-                                    <Link to="https://www.fiverr.com/shobha_negii" target="_blank"><DoneAllIcon/> Shobha Negi</Link>
+                                    <Link to="https://www.fiverr.com/shobha_negii" target="_blank"><DoneAllIcon /> Shobha Negi</Link>
                                   </div>
                                 </div>
                               </div>
@@ -436,7 +442,7 @@ const NavBar = () => {
                                 <div className='dropdownMenu'>
                                   <Link to="#">Guru</Link>
                                   <div className="dropdown-content guru_navbar">
-                                    <Link to="https://www.guru.com/freelancers/manish-kumar-221" target="_blank"><DoneAllIcon/> Manish Kumar</Link>
+                                    <Link to="https://www.guru.com/freelancers/manish-kumar-221" target="_blank"><DoneAllIcon /> Manish Kumar</Link>
 
                                   </div>
                                 </div>
