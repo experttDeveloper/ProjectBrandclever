@@ -39,6 +39,8 @@ export default function HireWebFlow() {
             />
             <Testimonial />
             <ServiceSection
+                heading="Our Webflow Services Included"
+                subHeading="Create an Engaging Website with Our Effective Webflow Service"
                 data={[
                     {
                         title: "Unique Webflow Template Design",
@@ -90,6 +92,7 @@ export default function HireWebFlow() {
             />
 
             <ProcessSection
+                heading="Our Process To Start the Web Flow Projects"
                 data={[
                     {
                         title: "Client Consultation",

@@ -37,6 +37,8 @@ export default function HireShopify() {
       />
       <Testimonial />
       <ServiceSection
+        heading="Our Shopify Services Included"
+        subHeading="Building Stores that Inspire and Drive Business Growth"
         data={[
           {
             title: "Store Creation or Revamp",
@@ -137,6 +139,7 @@ export default function HireShopify() {
       />
 
       <ProcessSection
+        heading="Our Hiring Process To Start the Shopify Projects"
         data={[
           {
             title: "Schedule a Complimentary Consultation Call",
@@ -163,20 +166,20 @@ export default function HireShopify() {
       />
 
       <ImageSection
-      images={[
-       {
-        firstImage:"images/hire/shopifyfirst.png",
-        secondImage:'images/hire/shopify2.png'
-       },
-       {
-        firstImage:"images/hire/shopifythird.png",
-        secondImage:'images/hire/shopifyfour.png'
-       },
-       {
-        firstImage:"images/hire/shopify5.png",
-        secondImage:'images/hire/shopify6.png'
-       }
-      ]}
+        images={[
+          {
+            firstImage: "images/hire/shopifyfirst.png",
+            secondImage: 'images/hire/shopify2.png'
+          },
+          {
+            firstImage: "images/hire/shopifythird.png",
+            secondImage: 'images/hire/shopifyfour.png'
+          },
+          {
+            firstImage: "images/hire/shopify5.png",
+            secondImage: 'images/hire/shopify6.png'
+          }
+        ]}
       />
       <PaymentSection
       />

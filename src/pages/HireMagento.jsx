@@ -36,6 +36,8 @@ export default function HireMagento() {
             />
             <Testimonial />
             <ServiceSection
+                heading="Our Magento Development Services"
+                subHeading="Our Customised development service offers a user-friendly upgrade and scaling solution"
                 data={[
                     {
                         title: "Magento Design and Creation",
@@ -93,6 +95,7 @@ export default function HireMagento() {
             />
 
             <ProcessSection
+                heading="Our Step By Step Approach to Start The Magento Development Services"
                 data={[
                     {
                         title: "Discovery Session",

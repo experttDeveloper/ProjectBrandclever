@@ -1,14 +1,14 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 
-export default function ProcessSection({ data }) {
+export default function ProcessSection({ data ,heading}) {
     return (
         <div>
             <div className="hiring_process_main">
                 <div className="container">
                     <div className="title_hiring">
                         <h2 className="hiringprocesstitle">
-                            Our Hiring Process To Start the Shopify Projects
+                            {heading}
                         </h2>
                     </div>
                     <Row className="processofhiring">

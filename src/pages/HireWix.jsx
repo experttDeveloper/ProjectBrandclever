@@ -41,6 +41,8 @@ export default function HireWix() {
             />
             <Testimonial />
             <ServiceSection
+            heading="Our Core Wix Service Included"
+            subHeading="Our Customised development service offers a user-friendly upgrade and scaling solution"
                 data={[
                     {
                         title: "Wix Web Design",
@@ -91,6 +93,7 @@ export default function HireWix() {
             />
 
             <ProcessSection
+              heading="Our Effective Approach To Start Your Wix Project"
                 data={[
                     {
                         title: "Project Kickoff",

@@ -68,9 +68,10 @@ export default function HireWoo() {
             />
 
             <ProcessSection
+                heading="Our Effective Approach To Start The Woocommerce Development Services"
                 data={[
                     {
-                        title:"Client Discovery",
+                        title: "Client Discovery",
                         image: "images/hire/annoucment.png",
                         description: "Start with a thorough consultation to understand your client's e-commerce needs. During this phase, discuss their business goals, product range, target audience, and specific requirements for their online store."
                     },

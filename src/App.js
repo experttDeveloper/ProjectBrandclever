@@ -78,7 +78,7 @@ export default class App extends Component {
             <Route path="/term-conditions" element={<TermCondition />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
-
+{/* 
             <Route path="/web-development" element={<WebDevelopment />} />
             <Route path="/graphic-degin" element={<GraphicDesign />} />
             
@@ -86,7 +86,7 @@ export default class App extends Component {
             <Route path="/digital-marketing" element={<DigitalMarketing />} />
             <Route path="/content-strategy" element={<ContentStrategy />} />
             <Route path="/framework" element={<Framework />} />
-            <Route path="/cms-solution" element={<CMSSolution />} />
+            <Route path="/cms-solution" element={<CMSSolution />} /> */}
 
 
             <Route path="/hire-shopify-expert" element={<HireShopify />} />
@@ -94,12 +94,12 @@ export default class App extends Component {
             <Route path="/hire-webflow-expert" element={<HireWebFlow />} />
             <Route path="/hire-wix-expert" element={<HireWix />} />
             <Route path="/hire-woo-commerce-expert" element={<HireWoo />} />
-            <Route path="/hire-wordpress-expert" element={<HireWordpress />} />
+            {/* <Route path="/hire-wordpress-expert" element={<HireWordpress />} />
             <Route path="/hire-bigcommerce-expert" element={<HireBigCommerce />} />
             <Route path="/hire-squarespace-expert" element={<HireSquareSpace />} />
             <Route path="/hire-laravel-developer" element={<HireLaravel />} />
             <Route path="/hire-reactjs-developer" element={<HireReactjs />} />
-            <Route path="/hire-tailwind-css-developer" element={<HireTalwindCss />} />
+            <Route path="/hire-tailwind-css-developer" element={<HireTalwindCss />} /> */}
            
 
 
@@ -129,10 +129,10 @@ export default class App extends Component {
           headerIconColor="pink"
           headerTxtColor="black"
           headerBgColor="#28a745"
-          headerTitle="Technical Team"
+          headerTitle=" Ishika Support Team"
           headerCaption="Online"
           bodyBgColor="#bbb"
-          chatPersonName="Support"
+          chatPersonName="Ishika"
           chatMessage={<> Hi there 👋 <br /><br /> How can I help you? </>}
           footerBgColor="#999"
           placeholder="Type a message.."

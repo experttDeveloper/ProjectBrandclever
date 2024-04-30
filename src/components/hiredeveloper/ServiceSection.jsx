@@ -2,17 +2,17 @@ import React from 'react'
 import { Col, Row } from 'react-bootstrap';
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
-export default function ServiceSection({ data }) {
+export default function ServiceSection({ data,heading,subHeading }) {
 
   return (
     <div className="shopify_services">
       <div className="container">
         <div className="title_of_service">
           <h2 className="title_shopifyservices">
-            Our Magento Development Services
+            {heading}
           </h2>
           <p className="content_shopifyservices">
-            Our Customised development service offers a user-friendly upgrade and scaling solution
+            {subHeading}
           </p>
         </div>
         <Row className="services_shopify" style={{ color: "#fff" }}>
