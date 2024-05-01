@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import '../PlatForms.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import {Container} from 'react-bootstrap'
 
 const Tachnology = ({ techImages }) => {
   const settings = {
@@ -44,18 +45,21 @@ const Tachnology = ({ techImages }) => {
   };
 
   return (
-    <div className='technology-main'>
-      
-      <div className="technology-inner"> 
-        <Slider {...settings}>
-          {techImages.map((techImage, index) => (
-            <div className="column-tech" key={index}>
-              <img src={techImage} alt={`Column ${index + 1}`} />
-            </div>
-          ))}
-        </Slider>
+    <Container>
+
+      <div className='technology-main'>
+
+        <div className="technology-inner">
+          <Slider {...settings}>
+            {techImages.map((techImage, index) => (
+              <div className="column-tech" key={index}>
+                <img src={techImage} alt={`Column ${index + 1}`} />
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

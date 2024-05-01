@@ -23,9 +23,8 @@
     .testimonial.testi_clints {
         padding: 40px 45px 144px 42px !important;
     }
-
     .faq_Contact_Sec {
-        padding: 80px 45px;
+        padding: 40px 0px;
     }
     .industryDemands-inner {
         padding: 57px 45px 58px;
@@ -37,11 +36,11 @@
         padding: 56px 45px 60px !important;
     }
     .about_us_section {
-        padding: 20px 45px 55px;
+        padding: 20px 0px 55px;
     }
     .technology-main {
-        padding: 57px 45px 30px !important;
-    } 
+        padding: 57px  0px 30px !important;
+    }
     .content h1 {
         font-size: 45px !important;
         font-weight: 600 !important;
@@ -60,9 +59,6 @@
         margin-left: -20px;
     } 
     .our-services .services-inner p.litle-des {
-        width: auto;
-    }
-    .main-sub {
         width: auto;
     }
     .faq-main {
@@ -96,9 +92,6 @@
     .row.counter-section h3 {
         font-size: 22px;
     }
-    .join-team .left-side {
-        padding-left: 30px;
-    }
     .service .service-inner .container {
         padding: 0 30px !important;
       }
@@ -128,6 +121,19 @@
 
 }
     @media screen and (max-width: 1024px) {
+        .about_page .about_us_section .aboutInfo-section .about-content .container {
+            width: 100% !important;
+        }
+        .about_us_section .aboutInfo-section .about-content .container {
+            display: block;
+        }
+        .card-counter {
+            padding: 30px 0px !important;
+        }
+      
+        .container {
+            width: 95% !important;
+        }
         .flip-container, .front, .back {
             height: 435px !important;
         }
@@ -167,7 +173,6 @@
         }
         .testi_heding {
             width: 100%;
-            padding: 0px 0px 0px 50px;
         }
         body .custom_review_tab .item {
             top: 0px !important;
@@ -322,7 +327,6 @@
             max-width: 100%;
         }
         .inner_header_nav {
-            justify-content: center;
             gap: 10px;
         }
 
@@ -333,10 +337,6 @@
         .form-left.col-6 {
             padding: 50px 0px 50px 50px;
         }
-        .main-sub .database_right {
-            display: block !important;
-        }
-        
         .service-row .col {
            
             width: 46%;
@@ -347,7 +347,7 @@
         .main-sub {
             display: block;
             height: 680px;
-            padding: 0px 50px 50px 50px;
+            padding: 0px 0px 50px 0px;
         }
         #root > div.page > div.main-sub > div.database_right > div:nth-child(1) {
             float: left !important;
@@ -363,10 +363,8 @@
             margin-top: 22px;
         }
         .main-sub .databaseIcon.Subject-M {
-            margin-left: 22px;
-            height: 200px;
-            margin-top: 22px;
-            width: 49% !important;
+            margin-top: 15px;
+            width: 90% !important;
             float: left;
         }
         .content {
@@ -409,7 +407,7 @@
         }
         .about_third {
             display: block;
-            padding: 40px 20px !important;
+            padding: 40px 0px !important;
         }
         .about_third .about_us_section {
             width: 100%;
@@ -419,14 +417,10 @@
             text-align: left;
             padding-bottom: 30px;
         }
-        .join-team .left-side {
-            padding-left: 30px;
-        }
         .about-inner {
-            padding: 40px 20px !important;
+            padding: 70px 0px !important;
             display: block;
         }
-        
         .placement-inner {
             padding: 60px;
         }
@@ -446,6 +440,15 @@
 
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) { 
+    .dropdownMenu .dropbtn {
+        font-size: 12px !important;
+    }
+    .header_btn {
+        padding: 8px 15px;
+    }
+    .header_btn a {
+        font-size: 13px !important;
+    }
     .screen_port {
         height: 190px !important;
     }
@@ -491,7 +494,7 @@
         grid-template-columns: repeat(1, 1fr) !important;
         text-align: start !important;
         width: 100% !important;
-         padding: 0px 50px 50px 68px !important;
+        padding: 0px 0px 50px 0px !important;
     }
     .our-services .services-inner p.litle-des {
         width: 100% !important;
@@ -577,9 +580,8 @@
      
  @media screen and (min-width: 480px) and (max-width: 768px) {
     /************************ Header nav start *****************************/
-  
     .footer-inner .column {
-        padding: 15px 15px 0px 15px;
+        padding: 15px 0px 0px 0px;
         margin-bottom: -31px !important;
     }
     .about-content h1 {
@@ -597,14 +599,9 @@
         font-weight: 400;
         color: #fff;
     }
-
-    .banner .content h1 {
-        font-size: 30px !important;
-        line-height:30px !important;
-    }
     .inner-header {
-        padding: 20px;
-    } 
+        padding: 20px 0px;
+    }
     .industryDemands-items .col { 
         padding: 28px 30px;
     }
@@ -816,16 +813,11 @@
             }
             .faq-main h2 {
                 margin-bottom: 20px !important;
-                font-size: 23px !important;
             }
             
             .inner_header_nav {
                 display: grid !important;
                 grid-template-columns: repeat(2, 1fr) !important;
-            }
-
-            .about-content h2 {
-                font-size: 29px !important;
             }
             .service-row h3 {
                 font-size: 20px !important;
@@ -843,11 +835,9 @@
                 font-size: 18px !important;
                 padding-top: 12px !important;
             }
-
-            .faq_Contact_Sec { 
-                padding: 30px;
+            .faq_Contact_Sec {
+                padding: 50px 0px 30px 0px;
             }
-
             .inner_header_nav nav ul {
                 padding-left: 5px;
                 display: grid;
@@ -868,22 +858,15 @@
                     display: grid !important;
                     grid-template-columns: repeat(2,1fr) !important;
                 }
-                .content h1 {
-                    font-size: 17px !important;
-                }
                 .content p {
                     font-size: 14px !important;
                     color: #dfdfdf;
-                }
-                .about-content h2 {
-                    font-size: 22px !important;
                 }
                 .about-content p {
                     font-size: 12px !important;
                 }
                 .our-services .services-inner h2 {
                     padding-bottom: 5px !important;
-                    font-size: 24px !important;
                 }
                 .our-services .services-inner p {   
                     font-size: 12px !important;
@@ -918,9 +901,6 @@
                 .testimonial.testi_clints {
                     padding-bottom: 90px !important;
                 }
-                .industryDemands-inner h2 {
-                    font-size: 30px !important;
-                }
                 .main-sub .database_left h3 {
                     font-size: 15px !important;
                     margin-bottom: 5px !important;
@@ -935,7 +915,6 @@
                     margin-left: 0px !important;
                 }
                 .faq-main h2 {
-                    font-size: 28px !important;
                     padding-bottom: 10px !important;
                 }
             
@@ -949,7 +928,7 @@
                     max-width: 100% !important;
                 }
                 .faq_Contact_Sec {
-                    padding: 30px !important;
+                    padding: 40px 0px  !important;
                 }
                 .footer-inner {
                     display: grid !important;
@@ -967,11 +946,14 @@
 
 
             @media only screen and (min-width: 320px) and (max-width: 480px) {
+                .main-sub .database_right {
+                    grid-template-columns: repeat(1, 1fr);
+                    gap:15px;
+                }
                 .footer-inner .column {
-                    padding: 15px 15px 0px 15px;
+                    padding: 15px 0px 0px 0px;
                     margin-bottom: -10px !important;
                 }
-              
                 button.owl-next span, .owl-prev span {
                     font-size: 40px;
                 }
@@ -999,7 +981,6 @@
                     line-height: 30px;
                 }
                 .banner .content h1 {
-                    font-size: 25px !important;
                     line-height: 30px !important;
                 }
 
@@ -1050,10 +1031,6 @@
                     font-size: 14px !important;
                     color: #dfdfdf;
                 }
-                .about-content h2 {
-                    font-size: 20px !important;
-                
-                }
                 .about-content p {
                     font-size: 14px !important;
                 }
@@ -1081,7 +1058,7 @@
                 }
                 ul.tabs {
                     display: grid !important;
-                    padding: 0px 20px 0px 20px !important;
+                    padding: 0px 0px 0px 0px !important;
                     justify-content: normal;
                 }
                 .tabs li {
@@ -1109,15 +1086,11 @@
                 .testimonial.testi_clints {
                     padding-bottom: 20px !important;
                 }
-                .main-sub { 
-                    padding: 0px 20px 50px 20px;
+                .main-sub {
+                    padding: 0px 0px 50px 0px;
                 }
                 #root > div.page > div.main-sub > div.database_right > div:nth-child(3) { 
                     margin-top: 0;
-                }
-                 
-                .industryDemands-inner h2 {
-                    font-size: 30px !important;
                 }
                 .database_right img { 
                     width: 100px;
@@ -1142,10 +1115,6 @@
                 .faq-main .faq-item {
                     width: 100% !important;
                 }
-                .faq-main h2 {
-                    font-size: 22px !important;
-                    padding-bottom: 0px !important;
-                }
                 .faq-main .question { 
                     padding: 0px 10px 0px 0px;
                     font-size: 14px !important;
@@ -1155,7 +1124,7 @@
                     font-size: 14px !important;
                 }
                 .faq_Contact_Sec {
-                    padding: 50px 13px;
+                    padding: 50px 0px;
                 }
                 .faq-main .question {
                     font-size: 11px;
@@ -1188,8 +1157,8 @@
 
     }
     .inner-header {
-        padding: 0px 10px 0px 10px;
-    } 
+        padding: 0px 0px 0px 0px;
+    }
     .menu-toggle {
         display: block;
         cursor: pointer;
@@ -1257,7 +1226,7 @@
         max-width: 100%;
     }
     footer {
-        padding: 30px 14px 30px !important;
+        padding: 30px 0px 30px !important;
     }
     /**************************** Header nav end *************************************/
    
@@ -1346,6 +1315,9 @@
     }
 }
 @media screen and (max-width: 480px) {
+    .main_header p {
+        width: 97%;
+    }
 
     .third ul{
         justify-content: center !important;
@@ -1406,14 +1378,44 @@
     }
 }
 @media screen and (max-width: 768px) {
+    .join-team .img-wrap-inner {
+        padding: 5px 0px;
+    }
+    .join-team .img-wrap {
+        padding: 10px 0px;
+    }
+    .grid-container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px !important;
+        line-height: 32px !important;
+    }
+    h2 {
+        font-size: 25px !important;
+        line-height: 30px !important;
+    }
+    .faq_Contact_Sec .container form {
+        padding: 0px 0px 40px 0px !important;
+    }
+    .faq_Contact_Sec .container {
+        display: block;
+    }
+    .item {
+        padding: 50px 0px 40px 5px;
+    }
+    .header_btn {
+        display: none;
+    }
     .img_of_founder img {
         border: 5px solid #fff !important;
     }
     .gallery {
-        padding: 20px 20px !important;
+        padding: 20px 0px 50px 0px !important;
     }
     .founder_section {
-        padding: 60px 20px;
+        padding: 91px 0px 80px 0px;
     }
     .founder_section_content {
         padding: 0;

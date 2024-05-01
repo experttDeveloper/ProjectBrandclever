@@ -15,6 +15,7 @@ import Faq from '../components/Faq';
 import HomePageScroll from '../components/HomePageScroll';
 import ClientReview from '../components/ClientReview';
 import Portfolio from '../components/Portfolio';
+import { Container } from 'react-bootstrap';
 
 const Home = () => {
 
@@ -70,12 +71,17 @@ const Home = () => {
         <ClientReview />
         <Icons />
         <DatabaseSec />
-        <div className='faq_Contact_Sec'>
-          <Faq />
-          <div style={{marginTop:"35px",width:'100%'}}>
-          <ContactForm />
+    
+
+          <div className='faq_Contact_Sec'>
+          <Container>
+            <Faq />
+            <div style={{ marginTop: "35px", width: '100%' }}>
+              <ContactForm />
+            </div>
+          
+          </Container>
           </div>
-        </div>
       </div>
 
     </>

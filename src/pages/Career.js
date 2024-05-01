@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../css/Career.css'
 import TopHeader from '../components/TopHeader';
 import { Button, TextField } from '@mui/material';
+import { Container } from 'react-bootstrap';
 
 const Career = () => {
   const sectionRef = React.useRef(null);
@@ -232,6 +233,7 @@ const Career = () => {
             </div>
           </section>
           <section ref={sectionRef} className='job-vacancy'>
+          <Container>
             <div className='left-vacancyCnt'>
               <h3 className='apply_now'>Apply Now</h3>
               <h4>Grow with us and build your dream career! Explore new opportunities and make your career goals a reality with us!</h4>
@@ -339,6 +341,7 @@ const Career = () => {
               </form>
 
             </div>
+          </Container>
           </section>
         </div>
       </div>

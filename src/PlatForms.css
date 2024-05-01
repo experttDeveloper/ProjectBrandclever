@@ -23,10 +23,3 @@
 .column-tech img:hover {
   filter: grayscale(0);
 }
-
-.technology-main {
-  padding: 43px 80px 32px !important;
-  width: 100%;
-  margin: 0 auto;
-  /* width: 1220px; */
-}

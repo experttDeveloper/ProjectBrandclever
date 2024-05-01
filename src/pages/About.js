@@ -5,6 +5,7 @@ import Gallery from '../components/Gallery';
 import Counter from '../components/Counter';
 import JoinTeam from '../components/JoinTeam';
 import TopHeader from '../components/TopHeader';
+import { Container } from 'react-bootstrap';
 
 
 
@@ -23,24 +24,31 @@ export default class About extends Component {
 
     return (
       <>
-      <TopHeader title="About us" description="Brandclever a premier fast growing company in India is committed
+        <TopHeader title="About us" description="Brandclever a premier fast growing company in India is committed
                     to hepling business become more adaptive competitive & profitable. We
                     have the Attitude, Skills, And Knowledge to deliver the Right Solutions."/>
-        
+
         <div className='page-about'>
-          
+
           <OwnerInfo />
-          <div className="about_third">
-            <div className='about_page'>
-              <AboutInfo imgAbout={aboutInfo} />
-              <Counter />
+     
+
+            <div className="about_third">
+            <Container>
+              <div className='about_page'>
+                <AboutInfo imgAbout={aboutInfo} />
+                <Counter />
+              </div>
+              </Container>
             </div>
-          </div>
+       
           <section>
+        
             <div className="founder_section">
+            <Container>
               <div className="founder_section_content">
                 <div className="img_of_founder">
-                  <img src={ownerImg} alt='about_brandclever'/>
+                  <img src={ownerImg} alt='about_brandclever' />
                 </div>
                 <div className="content_of_founder">
                   <h2>Founder & CEO</h2>
@@ -48,6 +56,7 @@ export default class About extends Component {
                   <img src={ownersign} className='signature' alt="Signature" />
                 </div>
               </div>
+              </Container>
             </div>
           </section>
           <Gallery />

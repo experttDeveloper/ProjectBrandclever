@@ -5,6 +5,7 @@ import TopHeader from '../components/TopHeader'
 import Portfolio from '../components/Portfolio';
 import { Link } from 'react-router-dom'
 import services from '../data/Service.json'
+import { Container } from 'react-bootstrap';
 
 
 export default function UpdatedService() {
@@ -72,7 +73,40 @@ export default function UpdatedService() {
                         })}
                     </div>
                 </div>
+                        <div className='Responsive_section_service'>
+                            <Container>
+                                <div className='Main_service'>
+                                    <div className='Sub_main_siv'>
+                                        <img src=" images/service/website_develop.png" alt="responsive_images"/>
+                                        <h6>Web Development</h6>
+                                    </div>
+                                   
+                                    <div className='Sub_main_siv'>
+                                        <img src=" images/service/graphic_design.png" alt="responsive_images"/>
+                                        <h6>Graphic Design</h6>
+                                    </div>
+                                    <div className='Sub_main_siv'>
+                                        <img src=" images/service/cms_solution.png" alt="responsive_images"/>
+                                        <h6>CMS Solution</h6>
+                                    </div>
+                                    <div className='Sub_main_siv'>
+                                        <img src="images/service/content_strategy.png  " alt="responsive_images"/>
+                                        <h6>Framework</h6>
+                                    </div>
+                                    <div className='Sub_main_siv'>
+                                        <img src="images/service/mern_stack.png " alt="responsive_images"/>
+                                        <h6>Content Strategy</h6>
+                                    </div>
+                                    <div className='Sub_main_siv'>
+                                        <img src="images/service/digital_marketing.png " alt="responsive_images"/>
+                                        <h6>Digital Marketing</h6>
+                                    </div>
+                              
+                                </div>
+                            </Container>
+                        </div>
             </div>
+
             <Portfolio />
             <JoinTeam />
         </div>
