@@ -18,49 +18,45 @@ export default function HireBigCommerce() {
                 <TopHeader title={"Hire Highly Focused Bigcommerce Developers"} description={"Our experts will help you build custom and responsive store"} />
             </div>
             <WhyChoose
-                title="Brandlclever For Your BigCommerce Project"
-                description1="Choosing Aron Web Solutions for your BigCommerce project is a decision rooted in trust and reliability. We listen to your unique needs and make your goals our own. Whether you're dreaming of a standout online store or a smooth e-commerce platform, we bring expertise that turns your vision into reality."
-                description2="Our team is not just about making things work; we ensure every solution reflects your brand's identity. If you're a small business looking to make a big impact, our skills are here for you. From making your site look great on all devices to boosting its visibility and security, we've got what it takes to make your business shine. At Aron Web Solutions, your success is the measure of our trustworthiness and capability."
+                title="Brandclever for Your BigCommerce Projectct"
+                description1="Choosing Brandclever for your BigCommerce project is a decision that ensures you receive the best e-commerce solutions. We take the time to understand your business needs and goals. Whether it's creating a unique online store or enhancing an existing platform, our expertise helps you achieve your e-commerce vision."
+                description2="Our focus is on delivering solutions that align with your brand's identity and resonate with your target audience. If you're a small business aiming for a significant online presence, we're here to make that happen. We offer services that make your site visually appealing, user-friendly, and secure. At Brandclever, we measure our success by your satisfaction and business growth."
                 images={["https://aronwebsolutions.com/public/uploads/65707b6357eb6.png", "https://aronwebsolutions.com/public/uploads/161212-17.png"]}
                 experties={[
-                    "E-commerce Solutions",
-                    "User-Centric Design",
-                    "Conversion Optimization",
-                    "Performance Enhancement",
-                    "Scalability Solutions",
-                    "Mobile Commerce Expertise",
-                    "Integrations and Third-Party Apps",
-                    "Data Security Measures",
-                    "Analytics and Reporting"
+                    "Custom E-commerce Solutions",
+                    "User-Centric Interface Design",
+                    "Conversion Rate Optimization",
+                    "Performance Tuning",
+                    "Scalability Strategies",
+                    "Mobile Commerce Development",
+                    "Integration with Third-Party Services",
+                    "Data Security and Compliance",
+                    "Advanced Analytics and Reporting"
                 ]}
 
             />
             <Testimonial />
             <ServiceSection
+                heading="Our BigCommerce Service Includes"
+                subHeading="We offer a full range of end to end bigcommerce services"
                 data={[
                     {
-                        title: "Theme Customization",
-                        image: "https://aronwebsolutions.com/public/front/images/bigcom_Customization.png",
-                        points: [
-
-                        ],
-                        description: "We personalize the design, layout, and features to match your brand identity, providing a unique and memorable online shopping experience for your customers"
+                        title: "Custom Theme Design",
+                        image: "images/hire/big_ser1.png",
+                        points: [],
+                        description: "We customize the design, layout, and features of your BigCommerce store to reflect your brand identity. This ensures a unique and engaging shopping experience that resonates with your customers and sets you apart from the competition."
                     },
                     {
-                        title: "Templates and themes",
-                        image: "https://aronwebsolutions.com/public/front/images/bigcom_temp.png",
-                        points: [
-
-                        ],
-                        description: "Choose from a range of professionally designed Templates and Themes to give your BigCommerce store a visually appealing and cohesive look."
+                        title: "Professional Templates and Themes",
+                        image: "images/hire/big_ser2.png",
+                        points: [],
+                        description: "Select from a variety of professionally designed templates and themes to give your BigCommerce store a polished and cohesive appearance. This approach enhances the overall user experience and boosts customer retention."
                     },
                     {
-                        title: "Development Services",
-                        image: "https://aronwebsolutions.com/public/front/images/bigcom_dev.png",
-                        points: [
-
-                        ],
-                        description: "Whether it's implementing specialized functionalities or integrating third-party services, our developers are equipped to enhance your BigCommerce site."
+                        title: "Advanced Development Services",
+                        image: "images/hire/big_ser3.png",
+                        points: [],
+                        description: "From adding custom functionalities to integrating third-party services, our development team is skilled in enhancing your BigCommerce site. We ensure that your e-commerce platform is tailored to meet your specific requirements and business goals."
                     }
                 ]}
 
@@ -69,93 +65,110 @@ export default function HireBigCommerce() {
             <ExpertiesSection
                 data={[
                     {
-                        title: "Client-Centric Approach",
-                        image: "https://aronwebsolutions.com/public/front/images/client-centric-approach_bigcom.png",
-                        description: "What sets Aron Web apart is its unwavering commitment to clients. We prioritize your goals and vision, ensuring that every solution is customized to your specific requirements. Our client-centric approach fosters collaboration, transparency, and the delivery of results that align with your business objectives."
-
+                        title: "Client-Focused Strategy",
+                        image: "images/hire/big_exp1.png",
+                        description: "Brandclever's focus on client satisfaction sets us apart. We put your goals and vision at the forefront, tailoring every solution to meet your unique needs. Our client-focused strategy encourages collaboration and transparency, ensuring that the results align with your business objectives."
                     },
                     {
-                        title: "Innovation and Adaptability",
-                        image: "https://aronwebsolutions.com/public/front/images/innovation_bigcom.png",
-                        description: "We continuously explore new technologies and trends, so that our clients benefit from the best solutions. Our adaptability allows us to navigate the ever-evolving IT landscape, providing services that remain relevant and effective."
+                        title: "Innovation and Flexibility",
+                        image: "images/hire/big_exp2.png",
+                        description: "We constantly explore new technologies and industry trends to offer our clients the most innovative solutions. Our flexibility allows us to adapt to the changing IT landscape, providing services that stay relevant and efficient in a dynamic environment."
                     },
                     {
-                        title: "Quality Assurance",
-                        image: "https://aronwebsolutions.com/public/front/images/client-centric-approach_bigcom.png",
-                        description: "What distinguishes Aron Web is its 100% commitment to quality assurance. We prioritize the delivery of error-free solutions through rigorous testing processes. Our dedication to quality ensures that every project not only meets but exceeds industry standards."
+                        title: "Comprehensive Quality Assurance",
+                        image: "images/hire/big_exp3.png",
+                        description: "At Brandclever, quality assurance is our top priority. We ensure that every project is rigorously tested, delivering error-free solutions. Our commitment to quality guarantees that each project meets and often exceeds industry standards."
                     },
                     {
-                        title: "Long-Term Partnership",
-                        image: "https://aronwebsolutions.com/public/front/images/innovation_bigcom.png",
-                        description: "Aron Web goes beyond being a service provider; we aim to be your long-term partner in success. Our commitment extends beyond project completion, offering ongoing support and maintenance"
+                        title: "Enduring Partnerships",
+                        image: "images/hire/big_exp4.png",
+                        description: "Brandclever aims to be more than just a service provider; we strive to be your long-term partner in success. Our commitment extends beyond project completion, providing ongoing support and maintenance to ensure lasting results and satisfaction."
                     }
+
                 ]}
 
             />
 
             <ProcessSection
+                heading="Our Effective Approach To Start Your Bigcommerce Project"
                 data={[
                     {
                         title: "Project Briefing",
-                        image: "https://aronwebsolutions.com/public/front/images/requirement.png",
+                        image: "images/hire/annoucment.png",
                         description: "The first step in our effective approach is the Project Briefing. We gather all key detailed discussions to understand your business objectives, target market, and specific features you envision for your BigCommerce store"
-
                     },
                     {
                         title: "Customization Blueprint",
-                        image: "https://aronwebsolutions.com/public/front/images/resume.png",
+                        image: "images/hire/discussion.png",
                         description: "This involves mapping out the unique features, design elements, and functionalities that will make your BigCommerce store stand out. We collaborate closely with you to ensure that every aspect aligns with your brand identity and goals."
                     },
                     {
                         title: "Development and Feedback",
-                        image: "https://aronwebsolutions.com/public/front/images/finalize.png",
+                        image: "images/hire/implementation.png",
                         description: "The development phase involves the process with frequent feedback loops. We break down the project into manageable milestones, allowing you to review and provide feedback at various stages."
                     },
                     {
                         title: "Quality Assurance",
-                        image: "https://aronwebsolutions.com/public/front/images/assign-task.png",
+                        image: "images/hire/reporting.png",
                         description: "Quality Assurance is a crucial step before launch. Our team conducts thorough testing to identify and address any issues, ensuring a smooth and error-free user experience. Simultaneously, we prepare for the official launch by optimizing performance, configuring integrations, and ensuring all components are in place"
                     }
+
                 ]}
             />
 
             <ImageSection
+                images={[
+                    {
+                        firstImage: "images/hire/magento_port1.png",
+                        secondImage: 'images/hire/magento_port2.png'
+                    },
+                    {
+                        firstImage: "images/hire/magento_port3.png",
+                        secondImage: 'images/hire/magento_port4.png'
+                    },
+                    {
+                        firstImage: "images/hire/magento_port5.png",
+                        secondImage: 'images/hire/magento_port6.png'
+                    }
+                ]}
             />
             <PaymentSection
             />
             <FaqSection
                 data={[
                     {
-                        question: "Why should I choose Aron Web Solutions for my BigCommerce project?",
-                        answer: "Aron Web Solutions stands out for its client-centric approach. We prioritize your goals, ensuring customized solutions that align with your specific requirements, collaboration, and transparency, and delivering the best results to your business objectives.*"
+                        question: "Why should I choose Brandclever for my BigCommerce project?",
+                        answer: "Brandclever distinguishes itself with a client-focused approach. We prioritize your goals and collaborate closely to deliver customized solutions that align with your specific requirements. Our process emphasizes transparency, ensuring the best outcomes for your business."
                     },
                     {
-                        question: "What makes Aron Web Solutions different from other BigCommerce experts?",
-                        answer: "Our aim is to be your long-term partner in success. Our commitment extends beyond project completion, offering ongoing support and maintenance to ensure the sustained success of your online store."
+                        question: "What makes Brandclever unique among BigCommerce experts?",
+                        answer: "Our commitment to long-term partnerships sets us apart. We provide ongoing support and maintenance even after the project's completion, ensuring your BigCommerce store's continued success and smooth operation."
                     },
                     {
-                        question: "How does Aron Web Solutions ensure the quality of its BigCommerce solutions?",
-                        answer: "What distinguishes us is our 100% commitment to quality assurance. We prioritize the delivery of error-free solutions through testing processes, ensuring that every project not only meets but exceeds industry standards"
+                        question: "How does Brandclever ensure the quality of its BigCommerce solutions?",
+                        answer: "We stand out through our dedication to quality assurance. Our rigorous testing process ensures error-free solutions that meet or exceed industry standards. This commitment to quality is what ensures the success of each project."
                     },
                     {
-                        question: "Can Aron Web Solutions handle the setup of my BigCommerce store?",
-                        answer: "Absolutely! Our Store Setup service includes handling the initial configuration, such as product listings, payment methods, and shipping settings, to get your online store up and running smoothly."
-                    }, {
-                        question: "What is the approach Aron Web Solutions takes to start a BigCommerce project?",
-                        answer: "Our effective approach begins with a Project Briefing, followed by creating a Customization Blueprint, involving an iterative Development and Feedback process, and concluding with rigorous Quality Assurance before the official launch"
+                        question: "Can Brandclever handle the setup of my BigCommerce store?",
+                        answer: "Absolutely! We offer comprehensive store setup services, including initial configuration, product listings, payment gateways, and shipping methods, to help your online store get started without a hitch."
                     },
                     {
-                        question: "Does Aron Web Solutions offer ongoing support for my BigCommerce site?",
-                        answer: "Yes, our commitment doesn't end with project completion. We offer ongoing support and maintenance services to keep your BigCommerce site secure, up-to-date, and functioning optimally for long-term success."
+                        question: "What approach does Brandclever take to start a BigCommerce project?",
+                        answer: "Our approach begins with a thorough Project Briefing, followed by the creation of a Customization Blueprint. This leads to an iterative Development and Feedback process and concludes with extensive Quality Assurance before the official launch."
                     },
                     {
-                        question: "How does Aron Web Solutions incorporate client feedback?",
-                        answer: "Throughout the Development phase, we ensure an iterative process with frequent feedback loops. This allows you to review and provide input at various stages, ensuring the project aligns with your expectations."
+                        question: "Does Brandclever offer ongoing support for my BigCommerce site?",
+                        answer: "Yes, our support doesn't end with project completion. We provide ongoing support and maintenance services to ensure your BigCommerce site remains secure, up-to-date, and operating at its best."
                     },
                     {
-                        question: "What is the Project Briefing in Aron Web Solutions' approach?",
-                        answer: "The Project Briefing is the first step in our approach, where we gather detailed information about your business objectives, target market, and specific features you envision for your BigCommerce store."
+                        question: "How does Brandclever incorporate client feedback into projects?",
+                        answer: "During the Development phase, we maintain frequent feedback loops. This iterative process allows you to provide input at various stages, ensuring that the final product meets your expectations and needs."
+                    },
+                    {
+                        question: "What is the Project Briefing in Brandclever's approach?",
+                        answer: "The Project Briefing is the first step, where we gather detailed information about your business objectives, target audience, and the specific features you desire for your BigCommerce store. This step ensures we understand your vision from the start."
                     }
+
                 ]}
             />
 

@@ -150,8 +150,8 @@ const hireMenus = [
   {
     id: 12,
     icon: 'images/hire/digital_marketing_nav.png',
-    title: "Hire Digital Marketing",
-    url: "/hire-digital-marketing"
+    title: "Hire Digital Marketing expert",
+    url: "/hire-digital-marekting-expert"
   },
 
 ]
