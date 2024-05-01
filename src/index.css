@@ -53,13 +53,6 @@ li.hire_us .dropdown-content {
     position: absolute;
     left: 79% !important;
 }
-.column {
-    flex: 1;
-    margin: 0 10px;
-    padding: 20px;
-    text-align: center;
-}
-
 .column img {
     max-width: 100%;
     height: auto;
@@ -79,8 +72,6 @@ a.dropbtn {
 }
 .about-content h2 {
     color: var(--white-color);
-    font-size: 35px;
-    line-height: 50px;
     margin-bottom: 16px;
     text-align: left !important;
     width: 100% !important;
@@ -208,7 +199,7 @@ button.owl-next span,
 }
 
 .part-about {
-    padding: 25px 0px;
+    padding: 15px 0px;
     margin: 0 auto;
 }
 
@@ -335,7 +326,6 @@ img.signature {
 
 /*_abut_css_ */
 .two-columns.aboutInfo-section {
-    display: flex;
     gap: 40px;
 }
 
@@ -350,24 +340,18 @@ img.signature {
     color: #000 !important;
     text-align: left;
 }
-
 .about_us_section {
-    padding: 20px 20px 55px;
+    padding: 20px 0px 55px;
     width: 100%;
-    max-width: 1280px !important;
-    margin: 0 auto;
 }
-
 .services-inner {
     width: 100%;
     max-width: 1220px !important;
     margin: 0 auto;
 }
-
 .technology-main {
-    padding: 70px 80px 30px !important;
+    padding: 70px 0px 30px !important;
 }
-
 body {
     background: var(--black-color);
     position: relative;
@@ -847,15 +831,13 @@ label {
 .column.footer-address-main {
     max-width: 35%;
 }
-
 footer .column {
     flex: 1 1;
-    margin: 0 10px;
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
     text-align: center;
+    max-width: -moz-fit-content;
     max-width: fit-content;
 }
-
 /***********************************************/
 .whatsapp_widget_wrapper {
     width: 300px;
@@ -1719,12 +1701,8 @@ div#contactForm {
     background-color: #f7f7f7;
     padding: 47px 0px 30px;
 }
-
 .join-team .join-team-inner {
     display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .join-team .left-side {
@@ -1808,14 +1786,12 @@ div#contactForm {
     width: 100%;
     border-radius: 20px;
 }
-
 .founder_section_content {
     display: flex;
     gap: 50px;
     align-items: center;
-    padding: 0px 53px;
+    padding: 0px 0px;
 }
-
 span.question_in {
     font-weight: 600;
 }
@@ -1844,9 +1820,8 @@ span.question_in {
 .content_of_founder p {
     color: var(--background-color-black-paragrpah);
 }
-
 .founder_section {
-    padding: 60px 46px;
+    padding: 70px 0px;
 }
 
 /********************* About Us Page End *********************/
@@ -1894,9 +1869,8 @@ span.question_in {
     padding-bottom: 9px;
     padding-top: 0px;
 }
-
 footer {
-    padding: 60px 70px 20px !important;
+    padding: 60px 0px 20px !important;
 }
 
 .footer-copy-text .home-link {
@@ -2098,12 +2072,9 @@ h1.rev_hi {
 /* contact page css end here */
 .main-sub {
     display: grid;
-    width: 1170px;
-    margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
     padding: 30px 0px 75px 0px;
 }
-
 .Subject-M p {
     text-align: right;
     width: -webkit-fill-available;
@@ -2434,10 +2405,11 @@ div#successMsg {
 
 .faq_Contact_Sec {
     background-color: var(--white-color) !important;
-    display: flex;
-    padding: 80px;
+    padding: 80px 0px;
 }
-
+.faq_Contact_Sec .container {
+    display: flex;
+}
 .dropdown-content .service_img a:hover {
     color: var(--green-color) !important;
 }
@@ -2647,12 +2619,16 @@ header.sticky {
     box-shadow: 0px 0px 3px 0px var(--white-color) !important;
 }
 /* luc */
-.aboutInfo-section .about-content {
+.aboutInfo-section .about-content .container {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
-
+.page-about .aboutInfo-section .about-content .container {
+    display: block !important;
+    justify-content: space-between;
+    gap: 10px;
+}
 .about_page .about_project .about-content {
     flex-direction: column;
     gap: 0px;
@@ -2670,14 +2646,12 @@ header.sticky {
     color: #000;
     font-weight: 700 !important;
 }
-
 .about_page {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    padding: 0px 68px 20px;
+    padding: 20px 0px 20px;
 }
-
 .aboutInfo-section .about_project .about-content h1 {
     color: var(--white-color);
     font-weight: 700 !important;
@@ -2746,10 +2720,8 @@ header.sticky {
 }
 
 .main-heading_title h1 {
-    font-size: 40px !important;
     color: var(--white-color);
     text-transform: capitalize;
-    font-weight: 700;
     text-align: center;
 }
 
