@@ -13,14 +13,14 @@ import PlacementForm from './components/PlacementForm';
 import Portfolio from './pages/Portfolio';
 import Review from './pages/Review';
 import Career from './pages/Career';
-import WebDevelopment from './components/services/WebDevelopment';
+import WebDevelopment from './pages/WebDevelopment';
 import './App.css'
-import GraphicDesign from './components/services/GraphicDesign';
-import MernStack from './components/services/MernStack';
-import DigitalMarketing from './components/services/DigitalMarketing';
-import ContentStrategy from './components/services/ContentStrategy';
-import Framework from './components/services/FrameWork';
-import CMSSolution from './components/services/CMSSolution';
+import GraphicDesign from './pages/GraphicDesign';
+import MernStack from './pages/MernStack';
+import DigitalMarketing from './pages/DigitalMarketing';
+import ContentStrategy from './pages/ContentStrategy';
+import Framework from './pages/FrameWork';
+import CMSSolution from './pages/CMSSolution';
 import PageNotFound from './pages/PageNotFound'
 import AboutPage from './pages/AboutPage';
 import UpdatedService from './pages/UpdatedService';
@@ -41,6 +41,7 @@ import HireLaravel from './pages/HireLaravel';
 import HireReactjs from './pages/HireReactjs';
 import HireTalwindCss from './pages/HireTalwindCss';
 import HireDigitalMarketing from './pages/HireDigitalMarketing';
+import WebDesigning from './pages/WebDesigning';
 
 
 
@@ -79,15 +80,16 @@ export default class App extends Component {
             <Route path="/term-conditions" element={<TermCondition />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
-{/* 
+
             <Route path="/web-development" element={<WebDevelopment />} />
+            <Route path="/website-design" element={<WebDesigning />} />
             <Route path="/graphic-degin" element={<GraphicDesign />} />
-            
+
             <Route path="/mern-stack" element={<MernStack />} />
             <Route path="/digital-marketing" element={<DigitalMarketing />} />
             <Route path="/content-strategy" element={<ContentStrategy />} />
             <Route path="/framework" element={<Framework />} />
-            <Route path="/cms-solution" element={<CMSSolution />} /> */}
+            <Route path="/cms-solution" element={<CMSSolution />} />
 
 
             <Route path="/hire-shopify-expert" element={<HireShopify />} />
@@ -102,7 +104,7 @@ export default class App extends Component {
             <Route path="/hire-reactjs-developer" element={<HireReactjs />} />
             <Route path="/hire-tailwind-css-developer" element={<HireTalwindCss />} />
             <Route path="/hire-digital-marekting-expert" element={<HireDigitalMarketing />} />
-           
+
 
 
             <Route

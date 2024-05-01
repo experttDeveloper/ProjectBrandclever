@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import TopHeader from '../TopHeader'
+import TopHeader from '../components/TopHeader'
 import { Col, Container, Row } from 'react-bootstrap'
-import HireDeveloperForm from '../HireDeveloperForm';
+import HireDeveloperForm from '../components/HireDeveloperForm';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import { Button, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
