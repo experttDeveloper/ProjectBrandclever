@@ -81,7 +81,7 @@ export default class App extends Component {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
 
-            <Route path="/web-development" element={<WebDevelopment />} />
+            {/* <Route path="/web-development" element={<WebDevelopment />} />
             <Route path="/website-design" element={<WebDesigning />} />
             <Route path="/graphic-degin" element={<GraphicDesign />} />
 
@@ -89,7 +89,7 @@ export default class App extends Component {
             <Route path="/digital-marketing" element={<DigitalMarketing />} />
             <Route path="/content-strategy" element={<ContentStrategy />} />
             <Route path="/framework" element={<Framework />} />
-            <Route path="/cms-solution" element={<CMSSolution />} />
+            <Route path="/cms-solution" element={<CMSSolution />} /> */}
 
 
             <Route path="/hire-shopify-expert" element={<HireShopify />} />
