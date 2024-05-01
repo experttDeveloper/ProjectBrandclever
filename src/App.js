@@ -94,12 +94,12 @@ export default class App extends Component {
             <Route path="/hire-webflow-expert" element={<HireWebFlow />} />
             <Route path="/hire-wix-expert" element={<HireWix />} />
             <Route path="/hire-woo-commerce-expert" element={<HireWoo />} />
-            {/* <Route path="/hire-wordpress-expert" element={<HireWordpress />} />
+            <Route path="/hire-wordpress-expert" element={<HireWordpress />} />
             <Route path="/hire-bigcommerce-expert" element={<HireBigCommerce />} />
             <Route path="/hire-squarespace-expert" element={<HireSquareSpace />} />
             <Route path="/hire-laravel-developer" element={<HireLaravel />} />
             <Route path="/hire-reactjs-developer" element={<HireReactjs />} />
-            <Route path="/hire-tailwind-css-developer" element={<HireTalwindCss />} /> */}
+            <Route path="/hire-tailwind-css-developer" element={<HireTalwindCss />} />
            
 
 
