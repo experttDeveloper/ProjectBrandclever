@@ -40,6 +40,7 @@ import HireSquareSpace from './pages/HireSquareSpace';
 import HireLaravel from './pages/HireLaravel';
 import HireReactjs from './pages/HireReactjs';
 import HireTalwindCss from './pages/HireTalwindCss';
+import HireDigitalMarketing from './pages/HireDigitalMarketing';
 
 
 
@@ -100,6 +101,7 @@ export default class App extends Component {
             <Route path="/hire-laravel-developer" element={<HireLaravel />} />
             <Route path="/hire-reactjs-developer" element={<HireReactjs />} />
             <Route path="/hire-tailwind-css-developer" element={<HireTalwindCss />} />
+            <Route path="/hire-digital-marekting-expert" element={<HireDigitalMarketing />} />
            
 
 

@@ -17,54 +17,51 @@ export default function HireSquareSpace() {
                 <TopHeader title="Hire
                 Industry Experts
                 For Squarespace Store"
-                description="Make Your Website More Beautiful, and Innovative" />
+                    description="Make Your Website More Beautiful, and Innovative" />
             </div>
 
             <WhyChoose
-                title="Brandlclever For Your Squarespace Project?"
-                description1="Aron Web Solutions is your perfect partner for any Squarespace project. With professional and experienced Squarespace experts on our team, we can help you create and maintain the perfect Squarespace website for your business."
-                description2="We can help you with everything from designing and launching the site to providing ongoing maintenance and support. Our services cover everything from custom Squarespace themes to SEO optimization, and our team is always available for any questions or help you may need. We believe in providing you with quality customer service and great results that you'll love. From start to finish, we're here to make sure your Squarespace website looks amazing and works perfectly. With Aron Web Solutions, you can count on us to make your Squarespace project a success!"
+                title="Brandclever for Your Squarespace Project?"
+                description1="Brandclever is your ideal partner for any Squarespace project. With a team of skilled and experienced Squarespace professionals, we can help you design, create, and maintain the perfect Squarespace website to meet your business needs and goals."
+                description2="Our services include everything from designing and launching your website to providing ongoing support and maintenance. We offer a range of solutions, from custom Squarespace themes to SEO optimization, and our team is always available to answer your questions. Our focus is on delivering excellent customer service and outstanding results. From conception to completion, we're here to ensure your Squarespace website looks amazing and functions flawlessly. With Brandclever, you can trust that your Squarespace project is in capable hands."
                 images={["https://aronwebsolutions.com/public/uploads/6571b81996a38.png", "https://aronwebsolutions.com/public/uploads/3-144.png"]}
                 experties={[
                     "Custom Website Design",
                     "E-commerce Integration",
                     "Mobile Responsiveness",
-                    "Content Management",
+                    "Content Management Systems",
                     "SEO Optimization",
-                    "Custom Coding",
-                    "Social Media Integration.",
-                    "Analytics and Reporting.",
-                    "Domain Management"
+                    "Custom Code Development",
+                    "Social Media Integration",
+                    "Advanced Analytics and Reporting",
+                    "Domain Management and Hosting"
                 ]}
 
             />
             <Testimonial />
             <ServiceSection
+                heading="Our Core Squarespace Service Included"
+                subHeading="We Make It Simple To Create A Professional Website In No Time"
                 data={[
                     {
                         title: "Custom Squarespace Website Design",
-                        image: "https://aronwebsolutions.com/public/front/images/ss_design.png",
-                        points: [
-
-                        ],
-                        description: "Our core service includes crafting visually stunning and uniquely tailored Squarespace websites that resonate with your brand identity. We ensure your online presence stands out and captures the essence of your business."
+                        image: "images/hire/big_ser1.png",
+                        points: [],
+                        description: "Our main service is creating visually stunning Squarespace websites tailored to your brand. We ensure that your online presence stands out, with a unique design that reflects your business's values and goals. Our team collaborates with you to understand your vision, translating it into a compelling online experience."
                     },
                     {
-                        title: "https://aronwebsolutions.com/public/front/images/ss_responsive.png",
-                        image: "https://aronwebsolutions.com/public/front/images/bigcom_temp.png",
-                        points: [
-
-                        ],
-                        description: "We prioritize mobile responsiveness, ensuring your Squarespace website looks impeccable and functions seamlessly across various devices. This guarantees a consistent and engaging user experience for your audience."
+                        title: "Mobile-Friendly Design",
+                        image: "images/hire/big_ser2.png",
+                        points: [],
+                        description: "We emphasize mobile responsiveness to make sure your Squarespace website looks great and works smoothly across all devices. This provides your audience with a consistent and engaging experience, whether they're on a smartphone, tablet, or desktop. Our designs are optimized for speed and user-friendliness."
                     },
                     {
-                        title: "Integrated E-commerce Solutions",
-                        image: "https://aronwebsolutions.com/public/front/images/ss_ecom.png",
-                        points: [
-
-                        ],
-                        description: "2x your power of online commerce with our integrated e-commerce solutions on Squarespace. We optimize your website for smooth transactions, making it easy for customers to browse, shop, and complete purchases hassle-free."
+                        title: "E-commerce Integration for Squarespace",
+                        image: "images/hire/big_ser3.png",
+                        points: [],
+                        description: "Boost your online sales with our integrated e-commerce solutions for Squarespace. We design your site for seamless transactions, ensuring customers can browse, shop, and make purchases without any issues or delays. Our solutions are built to support high traffic and secure payments."
                     }
+
                 ]}
 
             />
@@ -72,61 +69,76 @@ export default function HireSquareSpace() {
             <ExpertiesSection
                 data={[
                     {
-                        title: "Customization Expertise",
-                        image: "https://aronwebsolutions.com/public/front/images/expertise_sqspace.png",
-                        description: "We customize your Squarespace site to match your brand perfectly. It's like having a website that's as unique as you are. This makes us stand out from the crowd."
-
+                        title: "Squarespace Customization Expertise",
+                        image: "images/hire/space_exp1.png",
+                        description: "We customize your Squarespace site to align with your brand's unique identity, ensuring it stands out. Our tailored approach makes your website truly one-of-a-kind, helping you attract more customers."
                     },
                     {
-                        title: "E-commerce Excellence",
-                        image: "https://aronwebsolutions.com/public/front/images/e-commerceexcellence_sqspacwe.png",
-                        description: "We know the ins and outs of Squarespace e-commerce. Your online shop becomes a money-making machine with our help."
+                        title: "E-commerce Mastery",
+                        image: "images/hire/space_exp2.png",
+                        description: "We specialize in Squarespace e-commerce solutions, transforming your online shop into a powerful revenue generator. With our expertise, you can optimize sales and create a seamless shopping experience."
                     },
                     {
-                        title: "Comprehensive Support",
-                        image: "https://aronwebsolutions.com/public/front/images/comprehensive_sqsapce.png",
-                        description: "We stick around, offering support and training. We want you to feel confident running your Squarespace site. It's like having a friendly guide with you on the digital journey."
+                        title: "Comprehensive Support and Training",
+                        image: "images/hire/space_exp3.png",
+                        description: "We offer ongoing support and training to ensure you're comfortable managing your Squarespace site. Our friendly experts guide you through any challenges, providing valuable advice along the way."
                     },
                     {
-                        title: "Ongoing Support and Maintenance",
-                        image: "https://aronwebsolutions.com/public/front/images/support_sqspace.png",
-                        description: "We provide continuous assistance, ensuring your Squarespace website remains secure, up-to-date, and operates at peak performance."
+                        title: "Continuous Support and Maintenance",
+                        image: "images/hire/space_exp4.png",
+                        description: "We offer continuous assistance to keep your Squarespace website secure, updated, and running at its best. Our maintenance services ensure optimal performance and a reliable user experience."
                     }
+
                 ]}
 
             />
 
             <ProcessSection
+                heading="Our Effective Approach To Start Squarespace Project"
                 data={[
                     {
                         title: "Discovery and Consultation",
-                        image: "https://aronwebsolutions.com/public/front/images/requirement.png",
-                        description: "This is the phase where we learn about your brand, target audience, and the specific functionalities you envision. The more we understand, the better we can tailor the project to meet your expectations."
-
+                        image: "images/hire/annoucment.png",
+                        description: "In this initial phase, we gather information about your brand, target audience, and the specific features you desire for your Squarespace site. This understanding allows us to customize the project to meet and exceed your expectations."
                     },
                     {
                         title: "Custom Design and Development",
-                        image: "https://aronwebsolutions.com/public/front/images/resume.png",
-                        description: "From choosing the right color schemes and layouts to incorporating your brand elements, we create a visually appealing and functional Squarespace website that aligns with your goals."
+                        image: "images/hire/discussion.png",
+                        description: "We design and develop a unique Squarespace website, selecting color schemes, layouts, and other elements that reflect your brand identity. The result is a visually appealing and functional website that aligns with your goals."
                     },
                     {
-                        title: "User-Friendly Interface and Optimization",
-                        image: "https://aronwebsolutions.com/public/front/images/finalize.png",
-                        description: "Once the design is in place, we focus on making your Squarespace project user-friendly. We ensure that the navigation is intuitive, making it easy for visitors to explore and engage with your site."
+                        title: "User-Centric Design and Optimization",
+                        image: "images/hire/implementation.png",
+                        description: "After the initial design phase, we optimize your Squarespace site for user-friendliness. We focus on intuitive navigation and usability, ensuring visitors can easily find what they're looking for and engage with your content."
                     },
                     {
-                        title: "Launch and Ongoing Support",
-                        image: "https://aronwebsolutions.com/public/front/images/assign-task.png",
-                        description: "We provide ongoing support, addressing any issues, and ensuring your site stays up-to-date and performs optimally. Our goal is to see your Squarespace project thrive long after the initial launch."
+                        title: "Launch and Continuous Support",
+                        image: "images/hire/reporting.png",
+                        description: "Following the launch, we offer ongoing support to address any issues and keep your site updated. Our goal is to ensure your Squarespace project continues to perform optimally and remains successful in the long run."
                     }
+
                 ]}
             />
 
             <ImageSection
+                images={[
+                    {
+                        firstImage: "images/hire/magento_port1.png",
+                        secondImage: 'images/hire/magento_port2.png'
+                    },
+                    {
+                        firstImage: "images/hire/magento_port3.png",
+                        secondImage: 'images/hire/magento_port4.png'
+                    },
+                    {
+                        firstImage: "images/hire/magento_port5.png",
+                        secondImage: 'images/hire/magento_port6.png'
+                    }
+                ]}
             />
             <PaymentSection
             />
-           
+
         </>
     )
 }
