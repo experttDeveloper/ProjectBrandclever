@@ -86,7 +86,7 @@ export default function  Service() {
                             </ul>
                         </div>
                         <div className='read-more'>
-                            <a href='/graphic-degine' className='btn btn-primary'>Read More</a>
+                            <a href='/graphic-design' className='btn btn-primary'>Read More</a>
                         </div>
                     </div>
 
