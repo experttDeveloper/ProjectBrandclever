@@ -11,7 +11,7 @@ import TestimonialSection from '../components/services/TestimonialSection';
 export default function Ecommerce() {
     return (
         <div className='development_service nests'>
-            <TopHeader title="Ecommerce development" />
+            <TopHeader title="Ecommerce service" description="Ecommerce development builds online shopping platforms with product listings, secure checkout, and customer management features."/>
             <ContactSection
                 title={<>
                     Top Rated <br />

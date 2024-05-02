@@ -17,7 +17,7 @@ export default function MernStack() {
 
     return (
         <div className='development_service nests'>
-            <TopHeader title="Mern Stack" />
+            <TopHeader title="Mern Stack Service" description="MERN stack service develops full-stack web applications using MongoDB, Express.js, React, and Node.js, delivering robust and scalable solutions."/>
             <ContactSection
                 title={<>
                     Build <br />

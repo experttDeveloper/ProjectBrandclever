@@ -12,7 +12,7 @@ export default function WebDevelopment() {
 
     return (
         <div className='development_service nests'>
-            <TopHeader title="Web Development" />
+            <TopHeader title="Web Development Service" description={"Web development designs, builds, and maintains websites, focusing on functionality and user experience."} />
             <ContactSection
                 title={<>
                     Creating <br />
@@ -33,7 +33,7 @@ export default function WebDevelopment() {
                         title: "Cutting-Edge Technologies to Bring Your Project to Life",
                         description: "Our dedicated team uses the most up-to-date coding languages, frameworks, and tools to deliver outstanding results for our clients. We don't just use advanced technologies; we tailor our approach to meet each project's unique requirements, ensuring the final product is something both you and we can be proud of.",
                         image: "images/service/web_develo_ser2.png",
-                       
+
                         points: [
                             "PHP Frameworks",
                             "WordPress",

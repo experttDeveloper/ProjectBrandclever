@@ -10,7 +10,7 @@ import TestimonialSection from '../components/services/TestimonialSection';
 export default function WebApplication() {
     return (
         <div className='development_service nests'>
-            <TopHeader title="Web application development" />
+            <TopHeader title="Web application development" description="Web application development creates interactive software that runs in a web browser."/>
             <ContactSection
                 title={<>
                     Experience <br />

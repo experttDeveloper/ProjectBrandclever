@@ -21,7 +21,7 @@ const serviceMenus = [
     id: 3,
     icon: 'images/service/graphic_design.png',
     title: "Graphic Design",
-    url: "/graphic-degin"
+    url: "/graphic-design"
   },
   {
     id: 4,

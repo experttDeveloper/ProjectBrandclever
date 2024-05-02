@@ -13,7 +13,7 @@ import TestimonialSection from '../components/services/TestimonialSection';
 export default function DigitalMarketing() {
     return (
         <div className='development_service nests'>
-            <TopHeader title="Digital Marketing" />
+            <TopHeader title="Digital Marketing Service" description="Digital marketing service promotes businesses online through channels like social media, email, SEO, and paid advertising to increase brand visibility and drive sales."/>
             <ContactSection
                 title={<>
                     Top Rated <br />

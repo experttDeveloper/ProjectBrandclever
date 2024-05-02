@@ -11,7 +11,7 @@ import TestimonialSection from '../components/services/TestimonialSection';
 export default function LandingPage() {
     return (
         <div className='development_service nests'>
-            <TopHeader title="Landing page Development" />
+            <TopHeader title="Landing page Development" description={"A landing page is a single web page designed for marketing or promotional purposes, focused on driving specific user actions like sign-ups or sales."}/>
             <ContactSection
                 title={<>
                     Design <br />

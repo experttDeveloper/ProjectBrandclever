@@ -13,7 +13,7 @@ export default function Framework() {
 
     return (
         <div className='development_service nests'>
-            <TopHeader title="Framework" />
+            <TopHeader title="Framework" description={"A framework provides a structured foundation with predefined components to streamline software development."} />
             <ContactSection
                 title={<>
                     Build a Solid Foundation <br />

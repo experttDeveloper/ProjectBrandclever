@@ -15,7 +15,7 @@ export default function GraphicDesign() {
 
     return (
         <div className='development_service nests'>
-            <TopHeader title="Graphic Design" />
+            <TopHeader title="Graphic Design Service" description={"Graphic design creates visual content like logos, brochures, and digital graphics to communicate ideas and enhance brand identity."}/>
             <ContactSection
                 title={<>
                     Discover <br />

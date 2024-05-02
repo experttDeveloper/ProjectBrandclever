@@ -15,7 +15,7 @@ export default function ContentStrategy() {
 
     return (
         <div className='development_service nests'>
-            <TopHeader title="Content Strategy" />
+            <TopHeader title="Content Strategy Service" description="Content strategy service involves planning, creating, and managing content to meet business goals, ensuring it aligns with brand voice and engages your audience."/>
             <ContactSection
                 title={<>
                     Maximize <br />

@@ -15,7 +15,7 @@ export default function CMSSolution() {
 
     return (
         <div className='development_service nests'>
-            <TopHeader title="CMS Solutions" />
+            <TopHeader title="CMS Solutions Service" description={"CMS solutions offer content management systems for creating, managing, and organizing digital content, enabling efficient website and application administration."}/>
             <ContactSection
                 title={<>
                     Organize & <br />

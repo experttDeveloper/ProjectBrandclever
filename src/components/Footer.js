@@ -80,22 +80,22 @@ const Footer = () => {
                             <h3>Services</h3>
                             <ul className='quick-links'>
                                 <li>
-                                    <Link to="/"><ArrowRightIcon />Web Development</Link>
+                                    <Link to="/web-development"><ArrowRightIcon />Web Development</Link>
                                 </li>
                                 <li>
-                                    <Link to="/"><ArrowRightIcon />CMS Solution</Link>
+                                    <Link to="/cms-solution"><ArrowRightIcon />CMS Solution</Link>
                                 </li>
                                 <li>
-                                    <Link to="/"><ArrowRightIcon />Digital Marketing</Link>
+                                    <Link to="/digital-marketing"><ArrowRightIcon />digital-marketing</Link>
                                 </li>
                                 <li>
-                                    <Link to="/"><ArrowRightIcon />Graphic Designing</Link>
+                                    <Link to="/graphic-design"><ArrowRightIcon />Graphic Designing</Link>
                                 </li>
                                 <li>
-                                    <Link to="/"><ArrowRightIcon />Mern Stack</Link>
+                                    <Link to="/mern-stack"><ArrowRightIcon />Mern Stack</Link>
                                 </li>
                                 <li>
-                                    <Link to="/"><ArrowRightIcon />Frameworks</Link>
+                                    <Link to="/framework"><ArrowRightIcon />Frameworks</Link>
                                 </li>
                             </ul>
                         </div>

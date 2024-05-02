@@ -87,7 +87,7 @@ export default class App extends Component {
 
             <Route path="/web-development" element={<WebDevelopment />} />
             <Route path="/website-design" element={<WebDesigning />} />
-            <Route path="/graphic-degin" element={<GraphicDesign />} />
+            <Route path="/graphic-design" element={<GraphicDesign />} />
 
             <Route path="/mern-stack" element={<MernStack />} />
             <Route path="/digital-marketing" element={<DigitalMarketing />} />
