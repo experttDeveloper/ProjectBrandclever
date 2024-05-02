@@ -18,32 +18,32 @@ export default function GraphicDesign() {
             <TopHeader title="Graphic Design" />
             <ContactSection
                 title={<>
-                    Experience <br />
-                    Eye Catchy Visuals <br />
-                    With Premium Design Service
+                    Discover <br />
+                    Stunning Visuals <br />
+                    Through Premium Design
                 </>}
-                description="We Create Designs with a purpose and deliver the best results"
+                description="We create designs with intention, ensuring every element serves a purpose to deliver outstanding results."
             />
             <ServiceSection
                 data={[
                     {
-                        title: 'Presenting Your Marketing Features with Creative Graphic Design',
-                        description: "At Aron Web Solutions, we believe in maintaining high and best quality graphic design services. We transform your ideas into a clear vision for driving brand objectives through graphic design, using sophisticated, industry leading graphic design software and technologies. With an impressive portfolio of successful projects and satisfied clients, we showcase our ability to craft compelling graphics that resonate with your target audience. We believe in collaborative partnerships, ensuring that every design we create is a reflection of your brand's essence.",
-                        image: "https://aronwebsolutions.com/public/front/images/graphic_img_right.webp"
+                        title: "Bringing Your Marketing Vision to Life with Creative Graphic Design",
+                        description: "At Aron Web Solutions, we deliver top-quality graphic design services that turn your ideas into captivating visuals. Using cutting-edge software, we craft designs that align with your brand's objectives, helping you connect with your audience. Our extensive portfolio of successful projects and satisfied clients speaks to our commitment to excellence. We work closely with you to ensure every design reflects your brand's unique essence.",
+                        image: "https://example.com/images/graphic_design_services.webp"
                     },
                     {
-                        title: 'Advanced Graphic Design Tools For Catchy & Creative Designs',
-                        description: "The tools that will make high-converting visuals, and striking designs for your next project. These special tools help us create eye-catching and super creative designs that grab attention. It's like having a cool set of design superpowers! Find out how we use these tools to make our designs stand out and look amazing.",
-                        image: "https://aronwebsolutions.com/public/front/images/services_detail_banner888.webp",
+                        title: "State-of-the-Art Tools for Striking and Innovative Designs",
+                        description: "We utilize a variety of advanced tools to create high-impact visuals for your projects. These tools enable us to develop unique and compelling designs that stand out. It's like having a toolbox of design superpowers! Discover how we leverage these tools to craft attention-grabbing graphics that leave a lasting impression.",
+                        image: "https://example.com/images/design_tools.webp",
                         points: [
                             "Adobe Photoshop",
                             "Adobe Illustrator",
                             "Adobe InDesign",
                             "Figma",
-                            "After Effect",
-                            "Adobe premiere pro",
-                            "Corel draw",
-                            "Adobe xd",
+                            "Adobe After Effects",
+                            "Adobe Premiere Pro",
+                            "CorelDRAW",
+                            "Adobe XD",
                             "Blender",
                             "ZBrush"
                         ]
@@ -54,43 +54,40 @@ export default function GraphicDesign() {
                 heading="Transform Your Brand With Our Creative Graphic Design Services"
                 data={[
                     {
-                        title: "2D/3D Designs",
-                        description: "Transform your ideas into visuals with Aron Web Solutions' expertly crafted 2D and 3D designs. Our skilled designers use the latest techniques to bring your concepts to life, providing a visually stunning dimension to your projects.",
+                        title: "2D and 3D Design Services",
+                        description: "Bring your ideas to life with expertly crafted 2D and 3D designs from Aron Web Solutions. Our experienced designers use cutting-edge techniques to turn your concepts into visually stunning realities.",
                         points: [
-                            'Creative Visualization',
+                            "Creative Visualization",
                             "Detailed Design Elements",
                             "Conceptual Rendering",
                             "3D Modeling",
                             "High-Quality Graphics"
-
                         ],
-                        image: "https://aronwebsolutions.com/public/front/images/Web_Application_development.webp"
+                        image: "https://example.com/images/2D_3D_design_services.webp"
                     },
                     {
-                        title: "Logo Designs",
-                        description: "Make a lasting first impression with a distinctive and memorable logo crafted by Aron Web Solutions. Our logo designs are tailored to encapsulate your brand's essence, ensuring that your identity stands out in a crowded market.",
+                        title: "Custom Logo Design",
+                        description: "Make a strong first impression with a unique and memorable logo designed by Aron Web Solutions. Our logo designs are created to reflect your brand's identity, ensuring that your business stands out in a competitive market.",
                         points: [
-                            'Unique Brand Identity',
+                            "Distinctive Brand Identity",
                             "Memorable and Timeless",
                             "Scalable and Versatile",
-                            "Conceptual Symbolism",
+                            "Symbolic Design Elements",
                             "Consistent with Branding"
-
                         ],
-                        image: "https://aronwebsolutions.com/public/front/images/ecommerce_development.webp"
+                        image: "https://example.com/images/custom_logo_design.webp"
                     },
                     {
-                        title: "Mobile Application Designs",
-                        description: "Enrich user experiences and engagement through our mobile application designs. Aron Web Solutions combines creativity and functionality, resulting in an outstanding mobile app design.",
+                        title: "Mobile App Design Services",
+                        description: "Enhance user engagement with our mobile app designs. Aron Web Solutions combines creativity and functionality to create intuitive and visually appealing mobile applications that work seamlessly across platforms.",
                         points: [
-                            'Intuitive User Interfaces',
+                            "Intuitive User Interfaces",
                             "Responsive Design",
-                            "User-Centric Navigation",
-                            "Cross-Platform Consistency",
+                            "User-Friendly Navigation",
+                            "Cross-Platform Compatibility",
                             "Engaging Visual Elements"
-
                         ],
-                        image: "https://aronwebsolutions.com/public/front/images/Website_Maintenance.webp"
+                        image: "https://example.com/images/mobile_app_design_services.webp"
                     }
                 ]}
 
@@ -101,25 +98,24 @@ export default function GraphicDesign() {
                     heading="Our Effective Approach To Deliver The Best Results"
                     data={[
                         {
-                            title: "Start With Brief",
-                            image: "https://aronwebsolutions.com/public/front/images/requirement.png",
-                            description: "We initiate the process with a comprehensive briefing session, where we collect and discuss vital project specifics. This session serves as the cornerstone for a prosperous and well-planned design project."
-
+                            title: "Project Briefing",
+                            image: "https://example.com/images/project_briefing.png",
+                            description: "We start by conducting a thorough briefing session to gather essential project details. This step lays the groundwork for a successful and well-structured design process."
                         },
                         {
-                            title: "Brainstorm Design Ideas",
-                            image: "https://aronwebsolutions.com/public/front/images/resume.png",
-                            description: "At this stage, we create an environment where ideas flow freely. We explore diverse directions and innovative approaches to breathe life into the project's vision, ensuring it takes on a vibrant and imaginative form. "
+                            title: "Ideation & Brainstorming",
+                            image: "https://example.com/images/ideation_brainstorming.png",
+                            description: "In this phase, we foster a creative environment where ideas can flow freely. We explore different concepts and innovative approaches to turn your project vision into a vibrant reality."
                         },
                         {
-                            title: "Review Process",
-                            image: "https://aronwebsolutions.com/public/front/images/finalize.png",
-                            description: "This involves evaluating alignment with project goals, creativity, and client specifications. Constructive feedback guides the iterative refinement of designs, ensuring they meet the desired standards."
+                            title: "Design Review",
+                            image: "https://example.com/images/design_review.png",
+                            description: "Here, we assess the designs to ensure they align with project goals and client specifications. Constructive feedback guides the iterative refinement process, ensuring the final product meets the highest standards."
                         },
                         {
-                            title: "Present Final Product",
-                            image: "https://aronwebsolutions.com/public/front/images/assign-task.png",
-                            description: "This stage involves showcasing the finished product. Transparent collaboration with the client allows for any necessary adjustments, resulting in a design that exceeds expectations and aligns perfectly with the project's objectives."
+                            title: "Final Presentation",
+                            image: "https://example.com/images/final_presentation.png",
+                            description: "At this stage, we present the completed design to the client. Open collaboration allows for any final adjustments, ensuring the end result exceeds expectations and fully aligns with the project's objectives."
                         }
                     ]}
                 />
@@ -128,35 +124,36 @@ export default function GraphicDesign() {
             <FaqSection
                 data={[
                     {
-                        question: "Why should I choose Aron Web Solutions for graphic design services?",
-                        answer: "Aron Web Solutions is dedicated to maintaining high-quality graphic design services. With a portfolio of successful projects and satisfied clients, we use sophisticated graphic design software and technologies to transform your ideas into compelling visuals that drive brand objectives."
+                        question: "Why choose brandclever for graphic design services?",
+                        answer: "brandclever offers high-quality graphic design services backed by a portfolio of successful projects and satisfied clients. We use advanced software and technologies to transform your ideas into captivating visuals that align with your brand's goals."
                     },
                     {
-                        question: "What makes your graphic design approach unique?",
-                        answer: "We believe in collaborative partnerships, ensuring that every design we create reflects your brand's essence. Our approach involves a deep understanding of your vision to craft graphics that resonate with your target audience."
+                        question: "What makes your graphic design approach stand out?",
+                        answer: "Our approach is centered on collaborative partnerships. We ensure every design captures the essence of your brand, crafting graphics that resonate with your target audience and help you achieve your objectives."
                     },
                     {
-                        question: "What is Aron Web Solutions' effective approach to delivering the best graphic design results?",
-                        answer: "We start with a comprehensive briefing session, brainstorm design ideas, involve a review process for iterative refinement, and finally present the finished product through transparent collaboration with the client to ensure the design exceeds expectations and aligns perfectly with the project's objectives."
+                        question: "What is your process for achieving the best graphic design results?",
+                        answer: "We begin with a comprehensive briefing to understand your needs, brainstorm creative ideas, conduct iterative reviews for quality, and then present the final product with open collaboration to ensure it exceeds your expectations."
                     },
                     {
-                        question: "How can 2D/3D designs benefit my project?",
-                        answer: "We expertly crafted 2D and 3D designs bring your ideas to life, adding a visually stunning dimension to your projects. Our skilled designers use the latest techniques to transform concepts into compelling visuals."
-                    }, {
-                        question: "How does Aron Web Solutions give a new edge to mobile application designs?",
-                        answer: "We enrich user experiences and engagement through creative and functional mobile application designs. Our approach combines creativity and functionality to deliver outstanding mobile app designs."
+                        question: "How do 2D/3D designs benefit my project?",
+                        answer: "Our expertly crafted 2D and 3D designs add a visually striking dimension to your projects. Using the latest techniques, we transform your concepts into compelling visuals that capture attention."
                     },
                     {
-                        question: "What services does Aron Web Solutions offer for branding collateral?",
-                        answer: "We craft impactful business cards, brochures, and other branding collateral that reflect your brand identity. Our designs leave a lasting impression on clients and stakeholders, representing your brand's personality exceptionally "
+                        question: "How does brandclever create innovative mobile app designs?",
+                        answer: "We combine creativity and functionality to design mobile applications that enhance user experiences. Our approach focuses on intuitive interfaces and engaging visuals to deliver outstanding mobile app designs."
                     },
                     {
-                        question: "How can banner and packaging designs impact my product's visibility?",
-                        answer: "Our eye-catching banner and packaging designs ensure your product stands out in the digital business or on store shelves. Aron Web Solutions emphasizes designs that speak volumes about your product, enticing your target audience and setting you apart in the market."
+                        question: "What branding collateral services do you offer?",
+                        answer: "We design impactful business cards, brochures, and other branding materials that reflect your brand's identity. Our collateral designs leave a memorable impression on clients and stakeholders, effectively representing your brand."
                     },
                     {
-                        question: "Which advanced graphic design tools does Aron Web Solutions use? ",
-                        answer: "Aron Web Solutions utilizes industry-leading tools such as Adobe Photoshop, Illustrator, InDesign, Figma, After Effects, Premiere Pro, Corel Draw, Adobe XD, Blender, and ZBrush to create eye-catching and creative designs that grab attention."
+                        question: "How do banner and packaging designs boost product visibility?",
+                        answer: "Our eye-catching banner and packaging designs ensure your product stands out, whether in the digital space or on store shelves. We create designs that draw attention, entice your target audience, and differentiate you from competitors."
+                    },
+                    {
+                        question: "Which advanced graphic design tools do you use?",
+                        answer: "We utilize industry-leading tools like Adobe Photoshop, Illustrator, InDesign, Figma, After Effects, Premiere Pro, CorelDRAW, Adobe XD, Blender, and ZBrush to create striking and creative designs that captivate audiences."
                     }
                 ]}
             />

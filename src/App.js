@@ -42,6 +42,10 @@ import HireReactjs from './pages/HireReactjs';
 import HireTalwindCss from './pages/HireTalwindCss';
 import HireDigitalMarketing from './pages/HireDigitalMarketing';
 import WebDesigning from './pages/WebDesigning';
+import LandingPage from './pages/LandingPage';
+import Ecommerce from './pages/Ecommerce';
+import WebApplication from './pages/WebApplication';
+import SoftwareTesting from './pages/SoftwareTesting';
 
 
 
@@ -81,7 +85,7 @@ export default class App extends Component {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
 
-            {/* <Route path="/web-development" element={<WebDevelopment />} />
+            <Route path="/web-development" element={<WebDevelopment />} />
             <Route path="/website-design" element={<WebDesigning />} />
             <Route path="/graphic-degin" element={<GraphicDesign />} />
 
@@ -89,7 +93,11 @@ export default class App extends Component {
             <Route path="/digital-marketing" element={<DigitalMarketing />} />
             <Route path="/content-strategy" element={<ContentStrategy />} />
             <Route path="/framework" element={<Framework />} />
-            <Route path="/cms-solution" element={<CMSSolution />} /> */}
+            <Route path="/cms-solution" element={<CMSSolution />} />
+            <Route path="/landing-page" element={<LandingPage />} />
+            <Route path="/ecommerce" element={<Ecommerce />} />
+            <Route path="/web-application-development" element={<WebApplication />} />
+            <Route path="/software-testing" element={<SoftwareTesting />} />
 
 
             <Route path="/hire-shopify-expert" element={<HireShopify />} />

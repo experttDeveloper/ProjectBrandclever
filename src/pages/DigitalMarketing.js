@@ -1,282 +1,140 @@
-import React, { useState } from 'react'
+import React, { } from 'react'
 import TopHeader from '../components/TopHeader'
-import { Col, Container, Row } from 'react-bootstrap'
-import HireDeveloperForm from '../components/HireDeveloperForm';
-import VerifiedIcon from '@mui/icons-material/Verified';
-import { Button, Card, CardContent, CardMedia, Typography } from '@mui/material';
-import AddIcon from '@mui/icons-material/Add';
-import RemoveIcon from '@mui/icons-material/Remove';
-import { Email, WhatsApp } from '@mui/icons-material';
-
-const services = [
-    {
-        id: 1,
-        image: "https://aronwebsolutions.com/public/front/images/Inbound_Marketing.webp",
-        title: "Inbound Marketing",
-        description: "We utilize Inbound Marketing strategies to seamlessly connect your business with your target audience. By creating meaningful interactions and valuable experiences, we help nurture leads and drive conversions, enhancing your brand's presence and credibility.",
-        service: ["Content-Centric Approach", "Lead Generation Strategies", "Customer-Centric Engagement", "Educational Content Creation", "Relationship Building"]
-    },
-    {
-        id: 2,
-        image: "https://aronwebsolutions.com/public/front/images/SEO_optimization.webp",
-        title: "Search Engine Optimization(SEO)",
-        description: "We excel in SEO techniques that boost your website's ranking, making it easier for potential customers to find you. By optimizing keywords, enhancing website speed, and improving user experience, we drive organic traffic to your site and increase the chances of meaningful conversions.",
-        service: ["On-Page Optimization", "Quality Backlink Building", "Keyword Research and Integration", "Site Speed and Mobile Optimization", "Analytics and Reporting"]
-    },
-    {
-        id: 3,
-        image: "https://aronwebsolutions.com/public/front/images/Social_Media_Marketing.webp",
-        title: "Social Media Marketing",
-        description: "We leverage social media platforms to amplify your brand's message, connect with your audience, and drive traffic that can ultimately lead to increased sales and business growth.",
-        service: ["Social Platform Management", "Content Calendar Planning", "Audience Engagement Strategies", "Social Advertising Campaigns", "Social Analytics and Insights"]
-    }
-
-]
-
-
-const workFlows = [
-    {
-        id: 1,
-        image: "https://aronwebsolutions.com/public/front/images/requirement.png",
-        title: "Project Analysis",
-        description: "Our goal is to gain a deep understanding of your project, creating a strong foundation. This analysis is a compass, guiding us to plot the optimal route to achieve your project's future goals."
-    },
-    {
-        id: 2,
-        image: "https://aronwebsolutions.com/public/front/images/resume.png",
-        title: "Innovative Ideation",
-        description: "Our team brainstorms and strategizes, aiming to craft innovative digital marketing ideas. We align these ideas with your project's vision and goals, ensuring they are not only creative but also purposeful."
-    },
-    {
-        id: 3,
-        image: "https://aronwebsolutions.com/public/front/images/finalize.png",
-        title: "Strategic Optimization",
-        description: "We plan and implement innovative ideas to optimize your business website. The objective is clear to transform these ideas into actionable strategies that will make your project stand out"
-    },
-    {
-        id: 4,
-        image: "https://aronwebsolutions.com/public/front/images/assign-task.png",
-        title: "Reach The Target",
-        description: "We implement a holistic approach, covering SEO, social media, content marketing, PPC, and beyond. We track progress, analyze data, and optimize strategies to achieve and maintain that top spot."
-    },
-]
-
-const questionAnsers = [
-    {
-        id: 1,
-        question: "How can digital marketing solutions contribute to my business's revenue growth?",
-        answer: "Our digital marketing solutions aim to significantly increase your sales and revenue streams through a strategic approach, engaging campaigns, and persuasive content that effectively converts traffic into leads and loyal customers."
-    },
-    {
-        id: 2,
-        question: "What advanced marketing tools does Aron Web Solution use for guaranteed results?",
-        answer: "We use advanced tools such as Google Analytics, Google Ads, Semrush, Screaming Frog, Yoast SEO, ActiveCampaign, and Buffer to reach more people and ensure great results in digital marketing."
-    },
-    {
-        id: 3,
-        question: "What is Inbound Marketing, and how does it help in connecting my business with the target audience?",
-        answer: "Inbound Marketing seamlessly connects your business with the target audience by creating meaningful interactions and valuable experiences. It nurtures leads and drives conversions, enhancing your brand's presence and credibility."
-    },
-    {
-        id: 4,
-        question: "How does Aron Web Solution excel in Search Engine Optimization (SEO)?",
-        answer: "We excel in SEO techniques that boost your website's ranking, making it easier for potential customers to find you. Optimization of keywords, enhanced website speed, and improved user experience drive organic traffic, increasing the chances of meaningful conversions."
-    },
-    {
-        id: 5,
-        question: "How does Aron Web Solution approach Search Engine Marketing (SEM)?",
-        answer: "We excel in SEM by strategically placing ads where potential customers actively search for products or services like yours. Through paid search campaigns and optimization, we maximize your ad's reach, click-through rates, and overall return on investment."
-    },
-    {
-        id: 6,
-        question: "What is the significance of Email Marketing?",
-        answer: "Our Email Marketing strategies engage your audience and nurture leads with personalized, compelling email campaigns that resonate with customers and drive conversions."
-    },
-    {
-        id: 7,
-        question: "How does Pay Per Click (PPC) advertising benefit businesses, and what is Aron Web Solution's approach to strategic ad placement?",
-        answer: "In PPC advertising, we strategically place ads to capture your target audience's attention. Careful selection of keywords and campaign optimization ensure relevant traffic to your website, contributing to potential conversions."
-    },
-    {
-        id: 8,
-        question: "What does the 360 Digital Marketing Approach involve, and how does it contribute to project success?",
-        answer: "The 360 Digital Marketing Approach involves project analysis, innovative ideation, strategic optimization and implementation, and reaching the target. This holistic approach covers SEO, social media, content marketing, PPC, and beyond, ensuring project success through progress tracking, data analysis, and strategy optimization."
-    },
-
-]
+import { Container } from 'react-bootstrap'
+import ContactSection from '../components/hiredeveloper/ContactSection';
+import ProcessSection from '../components/hiredeveloper/ProcessSection';
+import FaqSection from '../components/hiredeveloper/FaqSection';
+import ServiceSection from '../components/services/ServiceSection';
+import TestimonialSection from '../components/services/TestimonialSection';
 
 
 
 
 export default function DigitalMarketing() {
-
-    const [showContent, setShowContent] = useState(false);
-
-    const handleShowContent = (id) => {
-        setShowContent((prevSelectedQuestion) => (prevSelectedQuestion === id ? null : id));
-    }
-
     return (
-        <div>
+        <div className='development_service nests'>
             <TopHeader title="Digital Marketing" />
+            <ContactSection
+                title={<>
+                    Top Rated <br />
+                    Digital Marketing Service<br />
+                    For Your Online Business
+                </>}
+                description="Design and Implement Digital Marketing Strategies for Maximum Conversions."
+            />
+            <ServiceSection
+                data={[
+                    {
+                        title: "Create High-Impact Digital Marketing Campaigns",
+                        description: "Effective digital marketing campaigns are key to driving traffic and increasing conversions. Our team specializes in designing, developing, and optimizing marketing strategies that resonate with your target audience. We create visually appealing and user-focused campaigns that aim to boost brand awareness and generate leads.",
+                        image: "https://example.com/images/digital_marketing_campaigns.webp"
+                    },
+                    {
+                        title: "Improve Your Marketing ROI with Advanced Analytics Tools",
+                        description: "Our advanced analytics tools help you track the performance of your digital marketing campaigns. These tools enable you to monitor key metrics, analyze user behavior, and make data-driven decisions. With comprehensive insights and customizable reporting, you can optimize your marketing strategies for maximum impact.",
+                        image: "https://example.com/images/digital_marketing_analytics.webp",
+                        points: [
+                            "Conversion Rate Optimization (CRO)",
+                            "Customer Segmentation",
+                            "Email Marketing Automation",
+                            "Integration with CRM Systems",
+                            "A/B Testing and Experimentation",
+                            "Social Media Analytics",
+                            "Customizable Reporting"
+                        ]
+                    }
+                ]}
+            />
+            <TestimonialSection
+                heading="Transform Your Business with High-Impact Digital Marketing Solutions"
+                data={[
+                    {
+                        title: "Create Engaging Marketing Campaigns",
+                        description: "Design captivating marketing campaigns with our digital marketing solutions. We offer intuitive tools for creating, organizing, and managing content that attracts and retains customers.",
+                        points: ["Intuitive Campaign Design", "Dynamic Content Creation", "Rich Media Integration", "SEO-Friendly Content", "Flexible Campaign Management"],
+                        image: "https://example.com/images/digital_marketing_campaigns.png"
+                    },
+                    {
+                        title: "Secure Data Handling",
+                        description: "Ensure the security and integrity of your digital marketing campaigns. Our solutions provide robust security features, allowing you to manage customer data safely and comply with industry standards.",
+                        points: ["Secure Data Storage", "Role-Based Access Control", "Data Encryption", "GDPR Compliance", "Secure User Authentication"],
+                        image: "https://example.com/images/digital_marketing_security.png"
+                    },
+                    {
+                        title: "Streamline Marketing Operations with Automation",
+                        description: "Boost efficiency by automating key marketing tasks. Our automated workflows reduce manual work and increase productivity, allowing you to focus on what matters most—engaging your audience.",
+                        points: ["Automated Email Campaigns", "Social Media Scheduling", "Task Automation", "Customizable Workflows", "Reduced Manual Effort"],
+                        image: "https://example.com/images/digital_marketing_automation.png"
+                    }
+                ]}
+
+            />
+
             <Container>
-                <div style={{ padding: '20px' }}>
-                    <Row>
-                        <Col md={8}>
-                            <h2>
-                                Dominate
-                                With Value Driven
-                                Digital Marketing Service
-                            </h2>
-                            <p>
-                                Maximize your reach, engage your customers, and Experience high ROI
-                            </p>
-                            <Row>
-                            <Col md={6}>
-                                <p><WhatsApp /> +91-00000-00000</p>
-                            </Col>
-                            <Col md={6}>
-                                <p><Email />career@brandclever.in</p>
-                            </Col>
-
-                        </Row>
-                        </Col>
-
-                        <Col md={4}>
-                            <HireDeveloperForm />
-                        </Col>
-                    </Row>
-                </div>
-
-                <div style={{ padding: '20px' }}>
-                    <Row>
-                        <Col md={6}>
-                            <h2>
-                                Drive More Revenue Growth With Our Digital Marketing Solutions
-                            </h2>
-                            <p>
-                                At Aron Web Solution, we are committed to delivering exceptional revenue growth through our comprehensive and targeted digital marketing solutions. Our expert team formulates and implements a strategic marketing approach to your unique business needs, aiming to significantly increase your sales and revenue streams. Through engaging campaigns and persuasive content, we effectively convert this increased traffic into leads, nurturing them into loyal customers. Partner with Aron Web Solutions to not only drive more sales but also achieve sustained revenue growth, ultimately positioning your business for long-term success in the dynamic digital landscape.
-                            </p>
-                        </Col>
-
-                        <Col md={6}>
-                            <img
-                             alt='cms_img'
-                                src='https://aronwebsolutions.com/public/front/images/digmar_img_right.webp'
-                                height="500px"
-                                width="500px"
-                            />
-                        </Col>
-                    </Row>
-                </div>
-
-                <div style={{ padding: '20px' }}>
-                    <Row>
-                        <Col md={6}>
-                            <img
-                             alt='cms_img'
-                                src='https://aronwebsolutions.com/public/front/images/digmar_img_left.webp'
-                                height="500px"
-                                width="500px"
-                            />
-                        </Col>
-
-                        <Col md={6}>
-                            <h1>Our Advanced Marketing Tools For Guaranteed Results</h1>
-                            <p> We use these special tools to reach more people and get great results. It's like having a secret weapon for success in marketing. Find out how we guarantee success with our advanced tools and take your marketing game to the next level. Exciting results are just a click away!</p>
-                            <Row>
-                                <Col md={6}>
-                                    <p><VerifiedIcon /> Google Analytics </p>
-                                    <p><VerifiedIcon /> Google Ads </p>
-                                    <p><VerifiedIcon /> Semrush </p>
-                                    <p><VerifiedIcon />Screaming Frog </p>
-
-
-                                </Col>
-                                <Col md={6}>
-                                    <p><VerifiedIcon /> Yoast SEO </p>
-                                    <p><VerifiedIcon /> Active Campaign </p>
-                                    <p><VerifiedIcon /> Buffer </p>
-                                </Col>
-                            </Row>
-
-                        </Col>
-                    </Row>
-                </div>
-
-                <div style={{ padding: '20px' }}>
-                    <h1>Our Digital Marketing Services For Proven Results</h1>
-                    <Row>
-                        {services.map((ele, key) => {
-                            return (
-                                <Col md={4} >
-                                    <Card sx={{ maxWidth: 345, padding: '10px' }} key={key}>
-                                        <CardMedia
-                                            component="img"
-                                            height="140"
-                                            image={ele.image}
-                                            alt="Product Image"
-                                        />
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="div">
-                                                {ele.title}
-                                            </Typography>
-                                            <Typography variant="p" color="text.secondary">
-                                                {ele.description}
-                                            </Typography>
-                                            {ele.service.map((service, key) => {
-                                                return (
-                                                    <p key={key}><VerifiedIcon /> {service} </p>
-                                                )
-                                            })}
-                                        </CardContent>
-                                        <Button className='get_quote_btn' size="small">Get a Quote</Button>
-                                    </Card>
-                                </Col>
-                            )
-                        })}
-
-                    </Row>
-                </div>
-
-                <div style={{ padding: '20px' }}>
-                    <Typography variant='h4'>Our 360 Digital Marketing Approach For Successful Project</Typography>
-                    <Row>
-                        {workFlows.map((ele, key) => {
-                            return (
-
-                                <Col md={3}>
-                                    <img src={ele.image}
-                                        style={{ border: '2px solid gray', borderRadius: '50%' }}
-                                        alt='cms_img'
-                                    />
-                                    <Typography variant='h5'> {ele.title} </Typography>
-                                    <Typography variant='p'> {ele.description} </Typography>
-                                </Col>
-                            )
-                        })}
-
-                    </Row>
-                </div>
-
-                <div style={{ padding: '20px' }}>
-                    <h2>
-                        Frequently Asked Questions
-                    </h2>
-                    <Row>
-                        {questionAnsers.map((ele, key) => {
-                            return (
-                                <Col md={6} key={key}>
-                                    <p onClick={() => handleShowContent(ele.id)}> {ele.question}
-                                        {showContent === ele.id ? <RemoveIcon /> : <AddIcon />} </p>
-                                    {showContent === ele.id && <p>{ele.answer}</p>}
-                                </Col>
-                            )
-                        })}
-
-                    </Row>
-                </div>
+                <ProcessSection
+                    heading="Optimize Your Digital Marketing with Our Step-by-Step Approach"
+                    data={[
+                        {
+                            image: "https://example.com/images/project_initiation.png",
+                            title: "Campaign Initiation",
+                            description: "Kick off your digital marketing campaign by defining your marketing goals. Identify your target audience, establish key performance metrics, and determine the scope, timeline, and budget for the campaign."
+                        },
+                        {
+                            image: "https://example.com/images/planning_strategy.png",
+                            title: "Planning and Strategy",
+                            description: "Develop a comprehensive plan for your digital marketing campaign. Identify potential risks and create strategies to address them, ensuring a smooth campaign execution. This phase sets the foundation for a successful campaign."
+                        },
+                        {
+                            image: "https://example.com/images/execution_monitoring.png",
+                            title: "Execution and Monitoring",
+                            description: "Bring your digital marketing strategy to life by implementing the plan. This phase involves executing the campaign, deploying marketing assets, and closely monitoring progress to ensure you meet your objectives."
+                        },
+                        {
+                            image: "https://example.com/images/project_closure.png",
+                            title: "Campaign Closure",
+                            description: "Conclude your digital marketing campaign with a thorough quality assurance review. Ensure all objectives have been met, document the final outcomes, and gather feedback for future improvements. This is the final step before wrapping up the campaign."
+                        }
+                    ]}
+                />
             </Container>
+
+            <FaqSection
+                data={[
+                    {
+                        question: "What is digital marketing, and why is it crucial for businesses?",
+                        answer: "Digital marketing involves promoting products or services using digital channels such as search engines, social media, email, and websites. It's crucial for businesses because it enables them to reach a wider audience, track customer engagement, and achieve measurable results."
+                    },
+                    {
+                        question: "How can digital marketing improve my business?",
+                        answer: "Digital marketing can increase brand visibility, drive traffic to your website, and boost conversions. It allows you to target specific audiences, use data-driven insights, and create personalized campaigns that resonate with customers."
+                    },
+                    {
+                        question: "What makes a digital marketing campaign effective?",
+                        answer: "An effective digital marketing campaign combines compelling content, targeted messaging, and robust analytics. It should include a clear call-to-action, optimized landing pages, and the ability to adapt to changes based on real-time data."
+                    },
+                    {
+                        question: "How do you measure the success of digital marketing campaigns?",
+                        answer: "We use a range of analytics tools to track key performance indicators (KPIs) such as conversion rates, click-through rates, bounce rates, and return on investment (ROI). These metrics help evaluate the success of campaigns and guide future strategies."
+                    },
+                    {
+                        question: "What is the typical process for launching a digital marketing campaign?",
+                        answer: "The process involves initial consultation, strategy development, content creation, campaign execution, and ongoing monitoring. We work closely with you to understand your business goals and ensure the campaign aligns with your brand identity."
+                    },
+                    {
+                        question: "Can digital marketing be integrated with other business systems?",
+                        answer: "Yes, digital marketing can be integrated with other business systems such as Customer Relationship Management (CRM), email marketing software, and e-commerce platforms. This integration streamlines customer engagement and allows for more cohesive marketing strategies."
+                    },
+                    {
+                        question: "How do you ensure digital marketing campaigns are mobile-friendly?",
+                        answer: "We design digital marketing campaigns with a mobile-first approach, ensuring content is responsive and works seamlessly across all devices. This includes optimizing emails, landing pages, and website content for a smooth mobile experience."
+                    },
+                    {
+                        question: "What ongoing support do you provide after launching a digital marketing campaign?",
+                        answer: "We offer ongoing support and maintenance, including performance monitoring, content updates, technical troubleshooting, and campaign adjustments based on data insights. This ensures your digital marketing campaigns continue to deliver results and meet your business objectives."
+                    }
+
+                ]}
+            />
         </div>
     )
 }

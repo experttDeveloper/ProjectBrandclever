@@ -14,108 +14,104 @@ export default function WebDesigning() {
             <ContactSection
                 title={<>
                     Designing <br />
-                    Stunning Websites With <br />
-                    Our Expert Website Designer
+                    Creative Websites with <br />
+                    Our Talented Designers
                 </>}
-                description="Attract, engage, and convert with our impactful website design service"
+                description="Create stunning websites with our team of expert web designers. We specialize in building websites that are visually appealing, user-friendly, and optimized for both desktop and mobile devices."
 
             />
             <ServiceSection
                 data={[
                     {
-                        title: 'Get User-Friendly Website For Higher Conversion',
-                        description: "We're India's leading website design agency, crafting websites that are both search engine friendly and easily accessible on mobile devices. Our focus is on creating custom business websites that perfectly match your needs. We offer a comprehensive range of services, covering everything from designing and developing to maintaining an impactful online presence for your business. You can choose the specific web development services that align with your requirements. If you're unsure which services are the best fit, don't hesitate to contact us. We'll guide you through the technical details, and scope of work, and even provide a clear cost estimate to help you make an informed decision.",
-                        image: "https://aronwebsolutions.com/public/front/images/services_detail_banner999.webp"
+                        title: "Optimize Your Website for Higher Conversions",
+                        description: "As a leading web design agency in India, we specialize in creating websites that are not only visually appealing but also highly effective at converting visitors into customers. Our websites are designed to be SEO-friendly and responsive, ensuring they perform well on all devices. We offer end-to-end services, from initial design concepts to full-scale web development and ongoing maintenance. If you're unsure about what you need, we can guide you through the process, explaining the technical details, scope of work, and providing a clear cost estimate to help you choose the right solution.",
+                        image: "https://example.com/images/website_optimization_banner.webp"
                     },
                     {
-                        title: 'We Use Advanced Tools To Complete Your ProjectAdvanced Tools Or Software We Use for Your Projects',
-                        description: "Need some design inspiration? Someone who can utilize their imaginative abilities to make a design that will really pop?",
-                        image: "https://aronwebsolutions.com/public/front/images/services_detail_banner888.webp",
+                        title: "We Use Advanced Tools to Deliver Your Projects",
+                        description: "Our team uses a wide range of advanced tools and software to ensure your project is completed with precision and creativity. Whether you need a sleek website design, robust e-commerce functionality, or custom software development, we have the right tools for the job. From design to development, we rely on industry-leading software to bring your vision to life. Our team is skilled in the following platforms and tools:",
+                        image: "https://example.com/images/advanced_tools_banner.webp",
                         points: [
                             "Wix",
                             "WordPress",
                             "Figma",
                             "Shopify",
-                            "Bigcommerce",
+                            "BigCommerce",
                             "Webflow",
                             "Magento",
                             "Adobe Illustrator",
                             "Adobe Photoshop",
-                            "Woocomerce"
+                            "WooCommerce"
                         ]
                     }
                 ]}
             />
             <TestimonialSection
-                heading="Website Design Services We Offer"
+                heading="Our Website Design Solutions"
                 data={[
                     {
-                        title: "Landing Pages",
-                        description: "Crafting attention-grabbing landing pages that captivate visitors, convey your message effectively, and encourage desired actions, driving engagement and conversions.",
+                        title: "High-Impact Landing Pages",
+                        description: "Designing landing pages that engage visitors with compelling visuals, clear messaging, and strategic calls to action, driving conversions and business growth.",
                         points: [
-                            'Conversion-Driven Design',
-                            "Custom Branding Options",
-                            "A/B Testing Capabilities",
-                            "Mobile-Responsive Pages",
-                            "Analytics and Insights"
-
+                            "Optimized for Conversions",
+                            "Distinct Branding Styles",
+                            "A/B Testing and Optimization",
+                            "Responsive Design for All Devices",
+                            "Comprehensive Analytics"
                         ],
-                        image: "https://aronwebsolutions.com/public/front/images/Web_Application_development.webp"
+                        image: "https://example.com/images/high-impact-landing-pages.webp"
                     },
                     {
-                        title: "Email Templates",
-                        description: "Designing visually appealing and functional email templates that enhance your email marketing campaigns, ensuring consistency and professionalism across all communications.",
+                        title: "Customized Email Templates",
+                        description: "Creating professional and stylish email templates that support your marketing goals, with a focus on consistency, adaptability, and high deliverability rates.",
                         points: [
-                            'Mobile Responsiveness',
-                            "Clear Call-to-Action (CTA)",
-                            "Branding Consistency",
-                            "A/B Testing Capability",
-                            "Editable and Customizable"
-
+                            "Mobile-First Design",
+                            "Strong Call-to-Action Strategies",
+                            "Consistent Branding Elements",
+                            "A/B Testing and Analysis",
+                            "Fully Customizable"
                         ],
-                        image: "https://aronwebsolutions.com/public/front/images/ecommerce_development.webp"
+                        image: "https://example.com/images/custom-email-templates.webp"
                     },
                     {
-                        title: "Creative Web Layouts",
-                        description: "Creating unique and aesthetically pleasing web layouts that provide a delightful user experience, making your website stand out and leave a lasting impression.",
+                        title: "Innovative Web Layouts",
+                        description: "Developing creative and user-friendly web layouts that enhance the user experience, improve site navigation, and distinguish your brand from competitors.",
                         points: [
-                            'Unique Branding Elements',
-                            "Engaging Visual Graphics",
-                            "Responsive Design",
-                            "SEO-Friendly Structures",
-                            "User-Centric Navigation"
-
+                            "Original Design Concepts",
+                            "Interactive Visual Elements",
+                            "Mobile-Friendly Design",
+                            "SEO Best Practices",
+                            "Intuitive User Journeys"
                         ],
-                        image: "https://aronwebsolutions.com/public/front/images/Website_Maintenance.webp"
+                        image: "https://example.com/images/innovative-web-layouts.webp"
                     }
-                ]}
-
+                ]
+                }
             />
 
             <Container>
                 <ProcessSection
-                    heading="Our Seamless Process For Website Design"
+                    heading="Our Streamlined Website Design Process"
                     data={[
                         {
-                            title: "Strategic",
-                            image: "https://aronwebsolutions.com/public/front/images/requirement.png",
-                            description: "We understand the needs of your business and the criteria and objectives for your website. We analyze the specific criteria and goals you have for your website."
-
+                            title: "Discovery & Strategy",
+                            image: "https://example.com/images/discovery-strategy.png",
+                            description: "We begin by understanding your business needs, goals, and target audience. This strategic analysis helps us tailor a website that aligns with your brand vision and achieves your objectives."
                         },
                         {
-                            title: "Designing & Developing",
-                            image: "https://aronwebsolutions.com/public/front/images/resume.png",
-                            description: "We'll start the design of your website and construct a wireframe at this stage. On the CMS, code, and server realization, we will work on their appeal."
+                            title: "Design & Development",
+                            image: "https://example.com/images/design-development.png",
+                            description: "Next, we create design concepts and wireframes to visualize the website's structure and layout. Our developers then bring these designs to life through coding, ensuring a seamless user experience across all platforms."
                         },
                         {
-                            title: "Testing",
-                            image: "https://aronwebsolutions.com/public/front/images/finalize.png",
-                            description: "This is a critical step where we scrutinize every aspect of the website, ensuring its functionality and performance meet the highest standards."
+                            title: "Quality Assurance & Testing",
+                            image: "https://example.com/images/quality-assurance.png",
+                            description: "In this phase, we rigorously test the website to ensure it is functional, responsive, and free from errors. Our thorough quality assurance process ensures that the final product meets or exceeds industry standards."
                         },
                         {
-                            title: "Maintaining",
-                            image: "https://aronwebsolutions.com/public/front/images/assign-task.png",
-                            description: "We continuously monitor the website's performance, security, and functionality. Regular updates and improvements are implemented to keep the website aligned with the latest industry standards."
+                            title: "Ongoing Maintenance & Support",
+                            image: "https://example.com/images/maintenance-support.png",
+                            description: "After launch, we provide continuous maintenance to ensure your website remains secure, updated, and optimized. We address any issues promptly and implement new features as needed to keep your site competitive."
                         }
                     ]}
                 />
@@ -124,35 +120,36 @@ export default function WebDesigning() {
             <FaqSection
                 data={[
                     {
-                        question: "What sets your website design services apart from others?",
-                        answer: "We differentiate ourselves by combining search engine-friendly designs with mobile accessibility. Our focus on custom solutions ensures your website perfectly aligns with your business needs, providing a unique online presence."
+                        question: "What makes your website design services unique?",
+                        answer: "We stand out by creating search engine-friendly websites that are also optimized for mobile devices. Our approach focuses on custom solutions tailored to your business needs, ensuring a distinctive online presence."
                     },
                     {
-                        question: "How do I choose the right web development services for my business?",
-                        answer: "Feel free to contact us! We guide you through technical details, discuss the scope of work, and provide clear cost estimates. Our goal is to empower you to make informed decisions tailored to your requirements."
+                        question: "How do I select the best web development services for my business?",
+                        answer: "Contact us for a consultation! We'll discuss your requirements, explain technical details, and give you a clear cost estimate. Our goal is to guide you through the decision-making process with clarity and transparency."
                     },
                     {
-                        question: "Which tools and software do you use for website development?",
-                        answer: "We leverage advanced tools and software such as Wix, WordPress, Figma, Shopify, Bigcommerce, Webflow, Magento, Adobe Illustrator, Adobe Photoshop, and Woocommerce to ensure the efficiency and excellence of your projects."
+                        question: "Which platforms and tools do you use for website development?",
+                        answer: "We work with a range of advanced tools and platforms, including Wix, WordPress, Figma, Shopify, BigCommerce, Webflow, Magento, Adobe Illustrator, Adobe Photoshop, and WooCommerce. This ensures we can meet various project needs with efficiency and precision."
                     },
                     {
-                        question: "What specific website design services do you offer?",
-                        answer: "Our services include crafting attention-grabbing landing pages, designing email templates for effective campaigns, creating unique web layouts, ensuring responsive web design, and developing websites using powerful tools like Webflow."
-                    }, {
-                        question: "Why is responsive web design important for my business website?",
-                        answer: "Responsive design ensures your website seamlessly adapts to various devices and screen sizes, providing a consistent and optimal user experience. This enhances user engagement and accessibility."
+                        question: "What types of website design services do you offer?",
+                        answer: "We offer a wide range of services, including designing captivating landing pages, creating email templates for effective campaigns, developing unique web layouts, ensuring responsive design, and building websites using robust platforms like Webflow."
                     },
                     {
-                        question: "Can you explain the process of designing and developing a website with your agency?",
-                        answer: "Certainly! We follow a strategic process, beginning with understanding your business needs, and then moving on to designing and developing the website. We prioritize testing for functionality and performance before continuous monitoring and maintenance."
+                        question: "Why is responsive design crucial for my business website?",
+                        answer: "Responsive design allows your website to adapt to different devices and screen sizes, offering users a consistent and seamless experience. This is crucial for maintaining engagement and accessibility across all platforms."
                     },
                     {
-                        question: "How do you ensure the security of my website after it's developed?",
-                        answer: "Security is a priority. We conduct thorough testing during development and implement industry-standard security measures. Regular monitoring, updates, and improvements are part of our maintenance process to keep your website secure."
+                        question: "Can you walk me through your website design and development process?",
+                        answer: "Of course! We start by learning about your business and understanding your goals. Then, we move into the design and development phase, where we create your website. Before launch, we conduct rigorous testing to ensure everything functions smoothly. Afterward, we offer ongoing monitoring and maintenance."
                     },
                     {
-                        question: "How do you handle ongoing maintenance and updates for my website?",
-                        answer: "Our maintenance process involves continuous monitoring of your website's performance, security, and functionality. Regular updates and improvements are implemented to keep your website aligned with the latest industry standards and technology advancements."
+                        question: "How do you ensure my website remains secure after launch?",
+                        answer: "Security is a top priority for us. We implement comprehensive security measures during development and continue monitoring and updating your website post-launch. Regular maintenance and adherence to industry-standard security practices keep your website safe."
+                    },
+                    {
+                        question: "What does your website maintenance and update process involve?",
+                        answer: "Our maintenance process includes regular monitoring of your website's performance and security. We implement updates to ensure your site stays in line with the latest industry standards and remains functional and secure over time."
                     }
                 ]}
             />

@@ -69,7 +69,7 @@ const serviceMenus = [
     id: 11,
     icon: 'images/service/web_application.png',
     title: "Web Application Development",
-    url: "/web-application"
+    url: "/web-application-development"
   },
   {
     id: 12,

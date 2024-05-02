@@ -15,76 +15,73 @@ export default function WebDevelopment() {
             <TopHeader title="Web Development" />
             <ContactSection
                 title={<>
-                    Building <br />
-                    Beautiful Websites that Drive <br />
-                    Results and Inspire Engagement
+                    Creating <br />
+                    Stunning Websites that <br />
+                    Deliver Results and Drive Engagement
                 </>}
-                description="From concept to launch, we'll handle your website development with precision and expertise"
+                description="From initial concept to final deployment, we build websites with meticulous attention to detail, ensuring functionality and user engagement."
 
             />
             <ServiceSection
                 data={[
                     {
-                        title: 'Web Development Service',
-                        description: "Our company specializes in creating websites and online applications using the latest and coolest technologies available. Our skilled team of developers can handle different types of projects, like making websites that customers can interact with and creating internal systems for managing things. What sets us apart is that we prioritize making top-notch apps and making sure the development process is clear and smooth. We're all about giving you the best web experience possible! For more than eleven years, we've partnered with big companies across 10 diverse fields. We've honed our skills and knowledge by using the latest and best technologies on the internet, working with some of the most popular brands online. Our focus is on making sure we use the newest and most effective tools to build your web application, tailoring it to your needs. We've got the expertise to make your project shine!",
-                        image: "https://aronwebsolutions.com/public/front/images/web_dev_right.webp"
+                        title: "Comprehensive Web Development Services",
+                        description: "We specialize in creating robust websites and web applications using the latest technologies. Our skilled developers excel in building interactive websites and internal management systems. What sets us apart is our commitment to delivering high-quality applications through a transparent and streamlined process. With over eleven years of experience and partnerships with leading brands across 10 different industries, we have the expertise to bring your project to life. We utilize the most effective tools and techniques to ensure your web application meets your specific needs.",
+                        image: "https://example.com/images/web_dev_right.webp"
                     },
                     {
-                        title: 'We Use Advanced Tools To Complete Your Project',
-                        description: "Our dedicated team of development ensure that all our projects are built with the most updated applications, coding languages, and technologies, enabling us to create stunning results for our clients. Not only do we use the best tools, but our process is tailored to individually suit each project, ensuring that the final product is one that both our clients and we are proud of.",
-                        image: "https://aronwebsolutions.com/public/front/images/web_dev_left.webp",
+                        title: "Cutting-Edge Technologies to Bring Your Project to Life",
+                        description: "Our dedicated team uses the most up-to-date coding languages, frameworks, and tools to deliver outstanding results for our clients. We don't just use advanced technologies; we tailor our approach to meet each project's unique requirements, ensuring the final product is something both you and we can be proud of.",
+                        image: "https://example.com/images/web_dev_left.webp",
                         points: [
-                            "PHP frameworks",
+                            "PHP Frameworks",
                             "WordPress",
                             "Shopify",
-                            "Node js",
-                            "React js",
-                            "Angular js"
+                            "Node.js",
+                            "React.js",
+                            "Angular.js"
                         ]
                     }
                 ]}
             />
             <TestimonialSection
-                heading="Web Development Services We Offer"
+                heading="Our Web Development Offerings"
                 data={[
                     {
-                        title: "Web Application Development",
-                        description: "We handle everything from design and integration to ongoing maintenance, ensuring a secure, scalable, and seamless experience across all devices and platforms.",
+                        title: "Custom Web Application Development",
+                        description: "We take care of everything from initial design to ongoing support, ensuring a secure, scalable, and smooth experience across all platforms and devices.",
                         points: [
-                            'Customized Solutions',
-                            "Scalable Architecture",
+                            "Tailored Solutions",
+                            "Scalable Infrastructure",
                             "Responsive Design",
-                            "User-Friendly Interface",
-                            "Strong Functionality"
-
+                            "Intuitive User Interfaces",
+                            "Robust Functionality"
                         ],
-                        image: "https://aronwebsolutions.com/public/front/images/Web_Application_development.webp"
+                        image: "https://example.com/images/custom-web-application-development.webp"
                     },
                     {
-                        title: "E-commerce Development",
-                        description: "Craft an easy-to-use online store tailored to your needs. Our team ensures smooth integration with your current tech tools, offering expertise in both full-scale e-commerce platforms and platform enhancements.",
+                        title: "E-commerce Solutions",
+                        description: "Build a seamless online store customized to your requirements. Our team integrates your e-commerce platform with existing systems, providing expertise in creating new stores or enhancing existing platforms.",
                         points: [
-                            'Secure Payment Gateways',
-                            "Product Catalog Management",
-                            "User-Friendly Checkout",
-                            "Mobile Optimization",
-                            "Inventory Management"
-
+                            "Secure Payment Integration",
+                            "Comprehensive Product Catalog",
+                            "Smooth Checkout Process",
+                            "Mobile-First Design",
+                            "Inventory Management Tools"
                         ],
-                        image: "https://aronwebsolutions.com/public/front/images/ecommerce_development.webp"
+                        image: "https://example.com/images/e-commerce-solutions.webp"
                     },
                     {
-                        title: "Website Maintenance",
-                        description: "Gain peace of mind with our flexible website maintenance plans—monthly, hourly, or after-hours. Entrust your website's care to AWS, a trusted maintenance services provider for businesses worldwide",
+                        title: "Comprehensive Website Maintenance",
+                        description: "Rest easy with our flexible maintenance plans—monthly, hourly, or after-hours. Trust us to keep your website secure, updated, and running smoothly. AWS is a trusted partner for website maintenance worldwide.",
                         points: [
-                            'Regular Updates',
-                            "Security Monitoring",
+                            "Regular Updates and Patches",
+                            "Security Monitoring and Alerts",
                             "Performance Optimization",
                             "Content Management",
-                            "Bug Fixing"
-
+                            "Bug Detection and Fixes"
                         ],
-                        image: "https://aronwebsolutions.com/public/front/images/Website_Maintenance.webp"
+                        image: "https://example.com/images/comprehensive-website-maintenance.webp"
                     }
                 ]}
 
@@ -92,28 +89,27 @@ export default function WebDevelopment() {
 
             <Container>
                 <ProcessSection
-                heading="Our Approach To Effective Web Development Process"
+                    heading="Our Web Development Process: A Step-by-Step Approach"
                     data={[
                         {
-                            title: "Strategy",
-                            image: "https://aronwebsolutions.com/public/front/images/requirement.png",
-                            description: "We adopt a strategic approach to web app development, delving into the intricacies of your business model, market dynamics, and product positioning."
-
+                            title: "Strategic Planning",
+                            image: "https://example.com/images/strategic-planning.png",
+                            description: "We approach web development with a strategic mindset, focusing on understanding your business model, market trends, and product positioning. This ensures we build a foundation that aligns with your goals."
                         },
                         {
                             title: "Product Design",
-                            image: "https://aronwebsolutions.com/public/front/images/resume.png",
-                            description: "Our methodology involves assembling a multidisciplinary team comprising Strategists, Designers, and Developers."
+                            image: "https://example.com/images/product-design.png",
+                            description: "Our process brings together a multidisciplinary team of strategists, designers, and developers. This collaborative approach ensures that every aspect of the design aligns with your business objectives and user needs."
                         },
                         {
-                            title: "Development",
-                            image: "https://aronwebsolutions.com/public/front/images/finalize.png",
-                            description: "We maintain an agile and efficient development process, leveraging highly skilled teams. Each project is overseen by experienced managers dedicated to maintaining high standards of code quality."
+                            title: "Development & Implementation",
+                            image: "https://example.com/images/development-implementation.png",
+                            description: "Our development phase is agile and efficient, with experienced managers overseeing every project. We focus on code quality, scalability, and adaptability, ensuring your website is built to the highest standards."
                         },
                         {
-                            title: "Quality Assurance",
-                            image: "https://aronwebsolutions.com/public/front/images/assign-task.png",
-                            description: "We conduct rigorous testing to detect and rectify any bugs or issues. Our aim is to deliver solutions that are not only bug-free but also reliable, safe, and secure for a seamless user experience."
+                            title: "Quality Assurance & Testing",
+                            image: "https://example.com/images/quality-assurance-testing.png",
+                            description: "Our rigorous testing process aims to identify and resolve any bugs or issues. We ensure the final product is not only bug-free but also secure, reliable, and provides a seamless user experience."
                         }
                     ]}
                 />
@@ -122,35 +118,36 @@ export default function WebDevelopment() {
             <FaqSection
                 data={[
                     {
-                        question: "What sets your web development service apart from others?",
-                        answer: "We stand out by prioritizing top-notch apps, ensuring a clear and smooth development process, and leveraging over eleven years of experience partnering with major companies across diverse fields."
+                        question: "What makes your web development service unique?",
+                        answer: "We distinguish ourselves by offering high-quality applications, a transparent development process, and over eleven years of experience working with major companies across a variety of industries."
                     },
                     {
-                        question: "What technologies do you use in your web development projects?",
-                        answer: "Our dedicated team employs cutting-edge tools, including PHP frameworks, WordPress, Shopify, Nodejs, React js, and Angular, to deliver exceptional results tailored to your project's needs."
+                        question: "Which technologies do you use in your web development projects?",
+                        answer: "Our team uses a range of advanced tools and frameworks, including PHP, WordPress, Shopify, Node.js, React.js, and Angular, ensuring each project is tailored to meet specific requirements."
                     },
                     {
-                        question: "How do you ensure a smooth integration for e-commerce development projects?",
-                        answer: "Our team crafts easy-to-use online stores tailored to your needs, ensuring seamless integration with your existing tech tools and offering expertise in both full-scale platforms and enhancements."
+                        question: "How do you ensure seamless integration for e-commerce development?",
+                        answer: "We create user-friendly online stores that integrate smoothly with your existing technology stack. Our expertise encompasses both full-scale platforms and customized enhancements."
                     },
                     {
-                        question: "Can you explain your approach to web application development?",
-                        answer: "From design to ongoing maintenance, we handle all aspects to ensure a secure, scalable, and seamless experience across various devices and platforms."
-                    }, {
-                        question: "What services do you provide for Magento website development?",
-                        answer: "We specialize in building customized Magento stores, from the ground up or through seamless migration. Our services cover theme development, integrations, and security implementation."
+                        question: "Can you describe your approach to web application development?",
+                        answer: "We handle the entire process, from initial design to ongoing maintenance, ensuring that your web application is secure, scalable, and provides a seamless experience across various devices."
                     },
                     {
-                        question: "Why is CMS development crucial for an effective online presence?",
-                        answer: "A well-organized website is essential, and we specialize in developing and streamlining Content Management Systems (CMS) for all types of websites, including informational and e-commerce platforms."
+                        question: "What services do you offer for Magento website development?",
+                        answer: "We specialize in creating custom Magento stores, whether from scratch or via migration. Our services include theme development, integrations, and robust security implementation."
                     },
                     {
-                        question: "What is your strategy for web app development projects?",
-                        answer: "We adopt a strategic approach, delving into the intricacies of your business model, market dynamics, and product positioning to deliver tailored solutions."
+                        question: "Why is CMS development important for a successful online presence?",
+                        answer: "An effective Content Management System (CMS) is critical for organizing website content. We develop and streamline CMS for various types of websites, including informational sites and e-commerce platforms."
+                    },
+                    {
+                        question: "What is your approach to web app development projects?",
+                        answer: "We take a strategic approach by understanding your business model, analyzing market trends, and determining optimal product positioning. This allows us to create customized solutions that align with your goals."
                     },
                     {
                         question: "How do you ensure the quality of your web development projects?",
-                        answer: "We maintain an agile and efficient development process, leveraging highly skilled teams overseen by experienced managers. Rigorous testing is conducted to deliver bug-free, reliable, safe, and secure solutions for a seamless user experience."
+                        answer: "We employ an agile development process with highly skilled teams, overseen by experienced managers. Rigorous testing ensures our solutions are bug-free, reliable, secure, and offer a smooth user experience."
                     }
                 ]}
             />
