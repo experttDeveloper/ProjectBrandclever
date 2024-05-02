@@ -24,12 +24,12 @@ export default function WebApplication() {
                     {
                         title: "Design High-Performing Web Applications with Ease",
                         description: "Web applications are essential for modern businesses, allowing you to interact with customers and streamline internal processes. Our team specializes in designing, developing, and optimizing web applications to meet diverse business needs. We create visually appealing, user-friendly applications that deliver a seamless user experience.",
-                        image: "https://example.com/images/web_app_design.webp"
+                        image: "images/service/web_app_ser1.png"
                     },
                     {
                         title: "Enhance Your Web Applications with Smart Development Tools",
                         description: "Our advanced web development tools streamline the process of building and maintaining web applications. These tools help you manage code efficiently, integrate third-party services, and ensure robust security. With comprehensive analytics and performance monitoring, you can optimize your web applications for maximum efficiency and reliability.",
-                        image: "https://example.com/images/web_app_tools.webp",
+                        image: "images/service/web_app_ser2.png",
                         points: [
                             "Modular Code Structure",
                             "Integration with Third-Party Services",
@@ -51,19 +51,19 @@ export default function WebApplication() {
                         title: "Create Robust Web Applications",
                         description: "Build reliable and scalable web applications with our comprehensive development solutions. We offer intuitive tools for designing, coding, and deploying web applications that meet your business needs.",
                         points: ["Flexible Application Design", "Scalable Architecture", "Cross-Platform Compatibility", "SEO-Friendly Development", "Easy Maintenance"],
-                        image: "https://example.com/images/web_app_development.png"
+                        image: "images/service/web_app_test1.avif"
                     },
                     {
                         title: "Ensure Secure User Authentication",
                         description: "Secure your web applications with robust user authentication methods. Our solutions offer advanced security features to protect sensitive data and ensure compliance with industry standards.",
                         points: ["Secure Login Systems", "Role-Based Access Control", "Multi-Factor Authentication", "Encryption Technologies", "Data Protection Measures"],
-                        image: "https://example.com/images/secure_user_authentication.png"
+                        image: "images/service/web_app_test2.avif"
                     },
                     {
                         title: "Automate Web Application Operations",
                         description: "Increase efficiency by automating key operations within your web applications. Our automated workflows reduce manual tasks and streamline processes, enhancing productivity and reducing errors.",
                         points: ["Automated Data Processing", "Task Automation", "Workflow Customization", "Error Detection and Resolution", "Reduced Manual Work"],
-                        image: "https://example.com/images/web_app_automation.png"
+                        image: "images/service/web_app_test3.jpg"
                     }
                 ]}
             />
@@ -73,22 +73,22 @@ export default function WebApplication() {
                     heading="Optimize Your Web Applications with Our Step-by-Step Approach"
                     data={[
                         {
-                            image: "https://example.com/images/project_initiation.png",
+                            image: "images/service/service_process1.png",
                             title: "Project Initiation",
                             description: "Kick off your web application project by clarifying your business objectives. Define the scope, identify key functionalities, and set the timeline and budget. This phase lays the groundwork for a successful web application development process."
                         },
                         {
-                            image: "https://example.com/images/planning_strategy.png",
+                            image: "images/service/service_process2.png",
                             title: "Planning and Strategy",
                             description: "Develop a comprehensive plan for your web application. Identify the necessary features, potential risks, and create strategies to address them. This step ensures a smooth execution and provides a clear roadmap for the project."
                         },
                         {
-                            image: "https://example.com/images/execution_monitoring.png",
+                            image: "images/service/service_process3.png",
                             title: "Execution and Monitoring",
                             description: "Bring your web application to life by executing the development plan. This phase involves coding, integrating functionalities, and closely monitoring progress to ensure the project stays on track and meets the defined goals."
                         },
                         {
-                            image: "https://example.com/images/project_closure.png",
+                            image: "images/service/service_process4.png",
                             title: "Project Closure",
                             description: "Conclude your web application project with a thorough quality assurance review. Ensure all objectives have been met, document the final outcomes, and collect feedback for future improvements. This is the final step before officially launching your web application."
                         }

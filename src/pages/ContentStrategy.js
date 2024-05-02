@@ -29,12 +29,12 @@ export default function ContentStrategy() {
                     {
                         title: "Crafting Content Strategies That Connect",
                         description: "A successful content strategy focuses on engaging your target audience by addressing their needs and motivations. We don't just create content; we craft a tailored strategy that aligns with your brand and resonates with your audience. Our approach is based on understanding what content your customers find valuable and delivering it in a way that drives results. We work with you to establish clear goals and key performance indicators (KPIs) to ensure the success of your content strategy.",
-                        image: "https://example.com/images/content_strategy.webp"
+                        image: "images/service/content_ser1.png"
                     },
                     {
                         title: "Advanced Tools for Content Management",
                         description: "Our suite of modern tools streamlines content creation and management, allowing us to organize and optimize your content with precision. These advanced technologies employ sophisticated algorithms to process large volumes of data, ensuring accuracy and efficiency. With these tools, we can categorize and enhance your content to make sure it resonates with your audience.",
-                        image: "https://example.com/images/content_management_tools.webp",
+                        image: "images/service/content_ser2.png",
                         points: [
                             "Jasper.ai",
                             "Grammarly",
@@ -60,7 +60,7 @@ export default function ContentStrategy() {
                             "Determine Content for Repurposing",
                             "Recommendations for Improvement"
                         ],
-                        image: "https://example.com/images/content_audit.webp"
+                        image: "images/service/content_test1.png"
                     },
                     {
                         title: "Content Calendar & Editing",
@@ -72,7 +72,7 @@ export default function ContentStrategy() {
                             "Consistent Tone and Style",
                             "Alignment with Brand Identity"
                         ],
-                        image: "https://example.com/images/content_calendar_editing.webp"
+                        image: "images/service/content_test2.jpg"
                     },
                     {
                         title: "Content Distribution & Promotion",
@@ -84,7 +84,7 @@ export default function ContentStrategy() {
                             "Audience Engagement Initiatives",
                             "Performance Tracking and Analysis"
                         ],
-                        image: "https://example.com/images/content_distribution_promotion.webp"
+                        image: "images/service/content_test3.avif"
                     }
                 ]}
 
@@ -95,22 +95,22 @@ export default function ContentStrategy() {
                     heading="Our Best Approach For Effective Content Strategy"
                     data={[
                         {
-                            image: "https://example.com/images/client_goal_alignment.png",
+                            image: "images/service/service_process1.png",
                             title: "Aligning with Client Goals",
                             description: "We start by understanding your business goals to create content that meets specific outcomes, whether it's boosting brand awareness, driving sales, or increasing customer engagement."
                         },
                         {
-                            image: "https://example.com/images/audience_research_segmentation.png",
+                            image: "images/service/service_process2.png",
                             title: "Audience Research & Segmentation",
                             description: "This step involves building detailed buyer personas, allowing you to tailor content to the unique needs and preferences of different customer segments, ensuring a more personalized approach."
                         },
                         {
-                            image: "https://example.com/images/content_planning_creation.png",
+                            image: "images/service/service_process3.png",
                             title: "Content Planning & Creation",
                             description: "Here, we focus on creating high-quality, informative, and engaging content that aligns with your objectives and appeals to your target audience."
                         },
                         {
-                            image: "https://example.com/images/performance_analysis.png",
+                            image: "images/service/service_process4.png",
                             title: "Content Performance Analysis",
                             description: "We regularly track key metrics to monitor content performance. This data-driven approach allows us to adjust the content strategy as needed to ensure continued success."
                         }

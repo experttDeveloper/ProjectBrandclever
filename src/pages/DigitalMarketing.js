@@ -27,12 +27,12 @@ export default function DigitalMarketing() {
                     {
                         title: "Create High-Impact Digital Marketing Campaigns",
                         description: "Effective digital marketing campaigns are key to driving traffic and increasing conversions. Our team specializes in designing, developing, and optimizing marketing strategies that resonate with your target audience. We create visually appealing and user-focused campaigns that aim to boost brand awareness and generate leads.",
-                        image: "https://example.com/images/digital_marketing_campaigns.webp"
+                        image: "images/service/digital_mar_ser1.png"
                     },
                     {
                         title: "Improve Your Marketing ROI with Advanced Analytics Tools",
                         description: "Our advanced analytics tools help you track the performance of your digital marketing campaigns. These tools enable you to monitor key metrics, analyze user behavior, and make data-driven decisions. With comprehensive insights and customizable reporting, you can optimize your marketing strategies for maximum impact.",
-                        image: "https://example.com/images/digital_marketing_analytics.webp",
+                        image: "images/service/digital_mar_ser2.png",
                         points: [
                             "Conversion Rate Optimization (CRO)",
                             "Customer Segmentation",
@@ -52,19 +52,19 @@ export default function DigitalMarketing() {
                         title: "Create Engaging Marketing Campaigns",
                         description: "Design captivating marketing campaigns with our digital marketing solutions. We offer intuitive tools for creating, organizing, and managing content that attracts and retains customers.",
                         points: ["Intuitive Campaign Design", "Dynamic Content Creation", "Rich Media Integration", "SEO-Friendly Content", "Flexible Campaign Management"],
-                        image: "https://example.com/images/digital_marketing_campaigns.png"
+                        image: "images/service/digital_mar_test1.jpg"
                     },
                     {
                         title: "Secure Data Handling",
                         description: "Ensure the security and integrity of your digital marketing campaigns. Our solutions provide robust security features, allowing you to manage customer data safely and comply with industry standards.",
                         points: ["Secure Data Storage", "Role-Based Access Control", "Data Encryption", "GDPR Compliance", "Secure User Authentication"],
-                        image: "https://example.com/images/digital_marketing_security.png"
+                        image: "images/service/digital_mar_test2.avif"
                     },
                     {
                         title: "Streamline Marketing Operations with Automation",
                         description: "Boost efficiency by automating key marketing tasks. Our automated workflows reduce manual work and increase productivity, allowing you to focus on what matters most—engaging your audience.",
                         points: ["Automated Email Campaigns", "Social Media Scheduling", "Task Automation", "Customizable Workflows", "Reduced Manual Effort"],
-                        image: "https://example.com/images/digital_marketing_automation.png"
+                        image: "images/service/digital_mar_test3.jpg"
                     }
                 ]}
 
@@ -75,22 +75,22 @@ export default function DigitalMarketing() {
                     heading="Optimize Your Digital Marketing with Our Step-by-Step Approach"
                     data={[
                         {
-                            image: "https://example.com/images/project_initiation.png",
+                            image: "images/service/service_process1.png",
                             title: "Campaign Initiation",
                             description: "Kick off your digital marketing campaign by defining your marketing goals. Identify your target audience, establish key performance metrics, and determine the scope, timeline, and budget for the campaign."
                         },
                         {
-                            image: "https://example.com/images/planning_strategy.png",
+                            image: "images/service/service_process2.png",
                             title: "Planning and Strategy",
                             description: "Develop a comprehensive plan for your digital marketing campaign. Identify potential risks and create strategies to address them, ensuring a smooth campaign execution. This phase sets the foundation for a successful campaign."
                         },
                         {
-                            image: "https://example.com/images/execution_monitoring.png",
+                            image: "images/service/service_process3.png",
                             title: "Execution and Monitoring",
                             description: "Bring your digital marketing strategy to life by implementing the plan. This phase involves executing the campaign, deploying marketing assets, and closely monitoring progress to ensure you meet your objectives."
                         },
                         {
-                            image: "https://example.com/images/project_closure.png",
+                            image: "images/service/service_process4.png",
                             title: "Campaign Closure",
                             description: "Conclude your digital marketing campaign with a thorough quality assurance review. Ensure all objectives have been met, document the final outcomes, and gather feedback for future improvements. This is the final step before wrapping up the campaign."
                         }

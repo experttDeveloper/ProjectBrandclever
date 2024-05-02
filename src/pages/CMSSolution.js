@@ -29,12 +29,12 @@ export default function CMSSolution() {
                     {
                         title: "Simplify Content Management with Our CMS Solutions",
                         description: "A Content Management System (CMS) is crucial for creating, organizing, and publishing your website content, whether it's text, images, videos, or other media. Our experts specialize in designing, developing, and maintaining CMS solutions, providing you with a user-friendly digital workspace to manage your online presence without requiring advanced technical skills. With our deep understanding of various CMS platforms, we deliver the best-fit solution to meet your unique needs.",
-                        image: "https://example.com/images/cms_solutions.webp"
+                        image: "images/service/framework_ser1.png"
                     },
                     {
                         title: "Smart Tools for Smarter Content Management",
                         description: "Our advanced content management systems employ smart tools that streamline content organization, improve data storage, and enhance productivity. These tools help you manage content efficiently while keeping your data secure. Additionally, they offer tracking capabilities to boost efficiency and improve the overall content management experience.",
-                        image: "https://example.com/images/smart_content_management_tools.webp",
+                        image: "images/service/framework_ser2.png",
                         points: [
                             "WordPress",
                             "Joomla",
@@ -60,7 +60,7 @@ export default function CMSSolution() {
                             "Multimedia Integration",
                             "Scalable Content Management"
                         ],
-                        image: "https://example.com/images/content_creation_storage.webp"
+                        image: "images/service/framework_test1.jpg"
                     },
                     {
                         title: "User Access Control",
@@ -72,7 +72,7 @@ export default function CMSSolution() {
                             "Granular Control Levels",
                             "Activity Logging"
                         ],
-                        image: "https://example.com/images/user_access_control.webp"
+                        image: "images/service/framework_test2.jpg"
                     },
                     {
                         title: "Workflow Automation",
@@ -84,7 +84,7 @@ export default function CMSSolution() {
                             "Customizable Workflows",
                             "Time-Efficient Content Management"
                         ],
-                        image: "https://example.com/images/workflow_automation.webp"
+                        image: "images/service/framework_test3.jpg"
                     }
                 ]}
 
@@ -95,22 +95,22 @@ export default function CMSSolution() {
                     heading="Maximize Your Content ROI with Our Step by Step CMS Solutions"
                     data={[
                         {
-                            image: "https://example.com/images/project_initiation.webp",
+                            image: "images/service/service_process1.png",
                             title: "Project Initiation",
                             description: "This is the starting point where you define the project's objectives and its importance. Establish the scope, determine key deliverables, set timelines, and outline budget constraints to build a solid foundation."
                         },
                         {
-                            image: "https://example.com/images/project_planning_strategy.webp",
+                            image: "images/service/service_process2.png",
                             title: "Planning & Strategy",
                             description: "This phase involves creating a detailed plan that guides the project from start to finish. Identify potential risks and develop strategies to mitigate them, ensuring a smooth project flow and minimizing disruptions."
                         },
                         {
-                            image: "https://example.com/images/project_execution_monitoring.webp",
+                            image: "images/service/service_process3.png",
                             title: "Execution & Monitoring",
                             description: "Execute the project plan while closely monitoring progress. Compare the actual outcomes with the plan to ensure the project stays on track. This phase focuses on implementing the plan and addressing any deviations."
                         },
                         {
-                            image: "https://example.com/images/project_closure.webp",
+                            image: "images/service/service_process4.png",
                             title: "Project Closure",
                             description: "In this final phase, conduct a thorough quality assurance review to ensure all project objectives have been met. Document the project's outcomes, compile a final report, and gather feedback to improve future projects."
                         }

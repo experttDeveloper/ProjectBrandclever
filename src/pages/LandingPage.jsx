@@ -25,12 +25,12 @@ export default function LandingPage() {
                     {
                         title: "Build High-Converting Landing Pages with Ease",
                         description: "Landing pages are a key component of your online marketing strategy. They are designed to convert visitors into leads or customers by focusing on a specific goal, such as signing up for a newsletter or purchasing a product. Our team has extensive experience in designing, developing, and optimizing landing pages to maximize conversions. We create landing pages that are visually appealing, user-friendly, and aligned with your marketing objectives.",
-                        image: "https://example.com/images/landing_page_building.webp"
+                        image: "images/service/landing_ser1.png"
                     },
                     {
                         title: "Boost Your Marketing ROI with Smart Landing Page Tools",
                         description: "Our advanced landing page tools streamline the process of creating, customizing, and optimizing landing pages. These tools allow you to quickly organize content, track user engagement, and improve conversion rates. With smart analytics and A/B testing capabilities, you can refine your landing pages to achieve the best results.",
-                        image: "https://example.com/images/landing_page_tools.webp",
+                        image: "images/service/landing_ser2.png",
                         points: [
                             "Drag-and-Drop Page Builders",
                             "Responsive Design",
@@ -51,19 +51,19 @@ export default function LandingPage() {
                         title: "Engaging Content",
                         description: "Create engaging content for your landing pages with our easy-to-use tools. Our system allows you to build, edit, and organize landing page content to capture attention and convert visitors.",
                         points: ["Intuitive Content Creation", "Dynamic Visuals", "Rich Media Integration", "SEO-Friendly Content", "Simple Content Editing"],
-                        image: "https://example.com/images/landing_page_content.png"
+                        image: "images/service/landing_test1.jpg"
                     },
                     {
                         title: "Secure User Access",
                         description: "Maintain control over who can access and modify your landing pages with secure user permissions. Define roles and permissions to ensure your content's security and maintain brand consistency.",
                         points: ["Role-Based Access Control", "Secure User Authentication", "Granular Permission Settings", "Audit Trails", "Comprehensive Security Measures"],
-                        image: "https://example.com/images/landing_page_permissions.png"
+                        image: "images/service/landing_test2.jpg"
                     },
                     {
                         title: "Automated Workflows",
                         description: "Boost productivity with automated workflows for your landing pages. Streamline content approval, automate publishing processes, and reduce manual work to enhance efficiency.",
                         points: ["Automated Content Approval", "Workflow Customization", "Task Assignment and Tracking", "Automated Publishing", "Reduced Manual Effort"],
-                        image: "https://example.com/images/landing_page_workflows.png"
+                        image: "images/service/landing_test3.jpg"
                     }
                 ]}
 
@@ -74,22 +74,22 @@ export default function LandingPage() {
                     heading="Optimize Your Landing Pages with Our Step-by-Step Approach"
                     data={[
                         {
-                            image: "https://example.com/images/project_initiation.png",
+                            image: "images/service/service_process1.png",
                             title: "Project Initiation",
                             description: "Kick off your landing page project with a clear understanding of your goals. Identify what you aim to achieve, determine the key elements for success, and establish the scope, timeline, and budget."
                         },
                         {
-                            image: "https://example.com/images/planning_strategy.png",
+                            image: "images/service/service_process2.png",
                             title: "Planning and Strategy",
                             description: "Develop a comprehensive plan that guides your landing page project from start to finish. Identify potential risks and devise strategies to overcome them, ensuring a smooth and successful project execution."
                         },
                         {
-                            image: "https://example.com/images/execution_monitoring.png",
+                            image: "images/service/service_process3.png",
                             title: "Execution and Monitoring",
                             description: "Bring your landing page to life by executing your plan. This phase involves closely monitoring progress, adjusting as needed, and ensuring the project stays on track to meet your goals."
                         },
                         {
-                            image: "https://example.com/images/project_closure.png",
+                            image: "images/service/service_process4.png",
                             title: "Project Closure",
                             description: "Conduct a thorough quality assurance review to ensure all objectives have been met. Document the final outcomes, compile a report, and gather feedback to improve future projects. This is the final step before officially launching your landing page."
                         }

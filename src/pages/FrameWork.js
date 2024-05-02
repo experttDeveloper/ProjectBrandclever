@@ -26,12 +26,12 @@ export default function Framework() {
                     {
                         title: "Creating Powerful Websites with Our Advanced Framework Services",
                         description: "Our framework is designed to build websites that are visually stunning, highly functional, and user-friendly. We ensure that your website looks great and performs flawlessly across all devices and screen sizes. This approach guarantees a seamless experience for users, whether they're browsing on a desktop, tablet, or smartphone. The framework's flexibility and versatility allow us to customize it according to your business needs, no matter your industry. We've incorporated all the essential elements and techniques to optimize your website's performance and visibility, helping you attract a broader audience and drive customer engagement.",
-                        image: "https://example.com/images/framework_services.webp"
+                        image: "images/service/framework_ser1.png"
                     },
                     {
                         title: "Precision Tools for Building Successful Projects",
                         description: "We use a selection of advanced framework tools to create projects with precision and efficiency. These tools enable us to design and develop outstanding projects that stand out in terms of visuals and functionality. With these tools, we can achieve stunning results quickly and easily, ensuring that your project meets the highest standards.",
-                        image: "https://example.com/images/precision_framework_tools.webp",
+                        image: "images/service/framework_ser2.png",
                         points: [
                             "Laravel",
                             "CodeIgniter",
@@ -59,7 +59,7 @@ export default function Framework() {
                             "SEO Optimization Tools",
                             "Responsive Design Compatibility"
                         ],
-                        image: "https://example.com/images/framework_cms_development.webp"
+                        image: "images/service/framework_test1.jpg"
                     },
                     {
                         title: "Custom Framework Development",
@@ -71,7 +71,7 @@ export default function Framework() {
                             "Optimized Site Performance",
                             "API Support for Integration"
                         ],
-                        image: "https://example.com/images/custom_framework_development.webp"
+                        image: "images/service/framework_test2.jpg"
                     },
                     {
                         title: "Framework API Integration",
@@ -83,7 +83,7 @@ export default function Framework() {
                             "Robust Error Handling and Logging",
                             "Rate Limiting and Throttling"
                         ],
-                        image: "https://example.com/images/framework_api_integration.webp"
+                        image: "images/service/framework_test3.jpg"
                     }
                 ]}
 
@@ -94,22 +94,22 @@ export default function Framework() {
                     heading="Reach New Heights With Our Step By Step Framework Process"
                     data={[
                         {
-                            image: "https://example.com/images/project_assessment_planning.webp",
+                            image: "images/service/service_process1.png",
                             title: "Project Assessment & Planning",
                             description: "Before starting framework development, it's crucial to assess the project's goals, scope, and specific requirements. This step involves planning the timeline, allocating resources, and selecting the most suitable framework to meet project objectives."
                         },
                         {
-                            image: "https://example.com/images/development_customization.webp",
+                            image: "images/service/service_process2.png",
                             title: "Development & Customization",
                             description: "Develop core functionalities such as routing, database interactions, and security measures. Customize the framework with plugins and extensions as needed, ensuring adherence to best coding practices."
                         },
                         {
-                            image: "https://example.com/images/integration_testing.webp",
+                            image: "images/service/service_process3.png",
                             title: "Integration & Testing",
                             description: "Conduct thorough testing, including unit and functional tests, to identify and resolve bugs or performance issues. Implement robust security measures to protect against vulnerabilities and ensure stability."
                         },
                         {
-                            image: "https://example.com/images/deployment_maintenance.webp",
+                            image: "images/service/service_process4.png",
                             title: "Deployment & Maintenance",
                             description: "After deployment, provide ongoing maintenance and updates to keep the framework secure and functional. Offer user support and address any post-deployment issues promptly to ensure continued success."
                         }

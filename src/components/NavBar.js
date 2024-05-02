@@ -7,15 +7,15 @@ import DoneAllIcon from '@mui/icons-material/DoneAll';
 const serviceMenus = [
   {
     id: 1,
-    icon: 'images/service/website_design.png',
-    title: "Website Designing",
-    url: "/website-design"
-  },
-  {
-    id: 2,
     icon: 'images/service/website_develop.png',
     title: "Web Development",
     url: "/web-development"
+  },
+  {
+    id: 2,
+    icon: 'images/service/website_design.png',
+    title: "Website Designing",
+    url: "/website-design"
   },
   {
     id: 3,
@@ -313,12 +313,12 @@ const NavBar = () => {
                             </div>
                             <div className='service_img'>
                               <img src='images/menus/privacy.png' alt='about page' height="32px" width="32px" />
-                              <Link to="/privacy-policy">Privacy Policy</Link>
+                              <Link to="/traning-and-placement">Traning & Placement</Link>
                             </div>
-                            <div className='service_img'>
+                            {/* <div className='service_img'>
                               <img src='images/menus/term.png' alt='about page' height="32px" width="32px" />
                               <Link to="/term-conditions">Terms Conditions</Link>
-                            </div>
+                            </div> */}
                           </Col>
                           <Col md={8}>
 
@@ -345,19 +345,19 @@ const NavBar = () => {
                           <Col md={4}>
                             <div className='service_img'>
                               <img src='images/menus/google.png' alt='about page' height="26px" width="26px" />
-                              <Link to="#">Google</Link>
+                              <Link to="https://www.google.com/search?q=brandclever+google+reviews&sca_esv=8f14c8c94b33adc6&sxsrf=ACQVn0-YomRngzIUeWaPpQkocnbm6xeIvA%3A1714648454031&ei=hnUzZrmwAZKM4-EPrtK00AU&oq=brandclever+googl&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWJyYW5kY2xldmVyIGdvb2dsKgIIATIHECEYoAEYCjIHECEYoAEYCjIHECEYoAEYCkiVFVCjAVjVCnABeAGQAQCYAb4BoAHgB6oBAzAuNrgBAcgBAPgBAZgCB6ACnAjCAgcQIxiwAxgnwgIKEAAYsAMY1gQYR8ICEBAAGIAEGLADGEMYyQMYigXCAg4QABiABBiwAxiSAxiKBcICDRAAGIAEGLADGEMYigXCAgQQIxgnwgIKECMYgAQYJxiKBcICCxAuGIAEGMcBGK8BwgIFEAAYgATCAgIQJsICCBAAGIAEGKIEwgIFECEYoAGYAwCIBgGQBgmSBwMxLjagB6Ed&sclient=gws-wiz-serp#lrd=0x390fef8cd36051e7:0xdfdada19c12e600f,1,,,," target="_blank">Google</Link>
                             </div>
                             <div className='service_img'>
                               <img src='images/menus/upwork.png' alt='about page' height="26px" width="26px" />
-                              <Link to="#">Upwork</Link>
+                              <Link to="https://www.upwork.com/agencies/brandclever/" target="_blank">Upwork</Link>
                             </div>
-                            <div className='service_img'>
+                            {/* <div className='service_img'>
                               <img src='images/menus/linkedin.png' alt='about page' height="26px" width="26px" />
                               <Link to="#">LinkdIn</Link>
-                            </div>
+                            </div> */}
                             <div className='service_img'>
                               <img src='images/menus/indeed.png' alt='about page' height="26px" width="26px" />
-                              <Link to="#">Indeed</Link>
+                              <Link to="https://in.indeed.com/cmp/Brandclever/reviews" target="_blank">Indeed</Link>
                             </div>
                           </Col>
                           <Col md={8}>
@@ -403,7 +403,7 @@ const NavBar = () => {
                                         <Link to="https://www.upwork.com/freelancers/~017f90265127deec6e" target="_blank"><DoneAllIcon /> Shivani Devi</Link>
                                         <Link to="https://www.upwork.com/freelancers/~01ad788d5e5e96a870" target="_blank"><DoneAllIcon /> Mansi Verma</Link>
                                         <Link to="https://www.upwork.com/freelancers/gurjeets6" target="_blank"><DoneAllIcon /> Gurjeet Singh</Link>
-                                        <Link to="https://www.upwork.com/freelancers/~01d54de3c49d7edb8b" target="_blank"><DoneAllIcon /> Ashandeep Singh</Link>
+                                        {/* <Link to="https://www.upwork.com/freelancers/~01d54de3c49d7edb8b" target="_blank"><DoneAllIcon /> Ashandeep Singh</Link> */}
                                       </Col>
 
                                     </Row>

@@ -25,12 +25,12 @@ export default function Ecommerce() {
                     {
                         title: "Design High-Converting E-Commerce Stores with Ease",
                         description: "E-commerce websites are the backbone of online businesses. They are designed to facilitate sales, allowing visitors to browse, select, and purchase products with ease. Our team specializes in designing, developing, and optimizing e-commerce stores to boost conversions. We create e-commerce sites that are visually appealing, user-friendly, and focused on providing a seamless shopping experience.",
-                        image: "https://example.com/images/ecommerce_design.webp"
+                        image: "images/service/ecommerce_ser1.png"
                     },
                     {
                         title: "Enhance Your E-Commerce ROI with Smart Store Management Tools",
                         description: "Our advanced e-commerce tools streamline the process of managing your online store. These tools help you quickly organize products, track inventory, and manage customer orders efficiently. With comprehensive analytics and customer engagement features, you can optimize your e-commerce store for maximum profitability.",
-                        image: "https://example.com/images/ecommerce_tools.webp",
+                        image: "images/service/ecommerce_ser2.png",
                         points: [
                             "Inventory Management",
                             "Order Processing Automation",
@@ -51,19 +51,19 @@ export default function Ecommerce() {
                         title: "Build Engaging Online Stores",
                         description: "Create a captivating online store with our e-commerce solutions. We offer intuitive tools for designing, organizing, and managing e-commerce content that attracts and retains customers.",
                         points: ["Intuitive Store Design", "Dynamic Product Displays", "Rich Media Integration", "SEO-Friendly Content", "Easy Product Management"],
-                        image: "https://example.com/images/ecommerce_store_design.png"
+                        image: "images/service/ecommerce_test1.jpg"
                     },
                     {
                         title: "Secure Payment Processing",
                         description: "Ensure secure payment transactions for your e-commerce store. Our solutions offer robust security features, allowing you to handle customer payments safely and comply with industry standards.",
                         points: ["Secure Payment Gateways", "Role-Based Access Control", "PCI Compliance", "Fraud Detection", "Encrypted Transactions"],
-                        image: "https://example.com/images/ecommerce_payment_processing.png"
+                        image: "images/service/ecommerce_test2.jpg"
                     },
                     {
                         title: "Streamline Operations with Automation",
                         description: "Boost efficiency by automating key e-commerce operations. From order processing to inventory management, our automated workflows help reduce manual tasks and increase productivity.",
                         points: ["Automated Order Processing", "Inventory Management", "Workflow Customization", "Task Assignment and Tracking", "Reduced Manual Work"],
-                        image: "https://example.com/images/ecommerce_automation.png"
+                        image: "images/service/ecommerce_test3.jpg"
                     }
                 ]}
             />
@@ -73,22 +73,22 @@ export default function Ecommerce() {
                     heading="Optimize Your E-Commerce with Our Step-by-Step Approach"
                     data={[
                         {
-                            image: "https://example.com/images/project_initiation.png",
+                            image: "images/service/service_process1.png",
                             title: "Project Initiation",
                             description: "Kick off your e-commerce project by clarifying your business goals. Identify what you aim to achieve, establish the key components of success, and determine the scope, timeline, and budget for the project."
                         },
                         {
-                            image: "https://example.com/images/planning_strategy.png",
+                            image: "images/service/service_process2.png",
                             title: "Planning and Strategy",
                             description: "Develop a comprehensive plan for your e-commerce project. Identify potential risks and create strategies to address them, ensuring a smooth project execution. This phase sets the foundation for a successful e-commerce launch."
                         },
                         {
-                            image: "https://example.com/images/execution_monitoring.png",
+                            image: "images/service/service_process3.png",
                             title: "Execution and Monitoring",
                             description: "Bring your e-commerce vision to life by implementing your plan. This phase involves executing the design, integrating e-commerce functionalities, and closely monitoring progress to ensure the project stays on track."
                         },
                         {
-                            image: "https://example.com/images/project_closure.png",
+                            image: "images/service/service_process4.png",
                             title: "Project Closure",
                             description: "Complete your e-commerce project with a thorough quality assurance review. Ensure all objectives have been met, document the final outcomes, and gather feedback for future improvements. This is the final step before launching your e-commerce site."
                         }

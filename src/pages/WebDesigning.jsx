@@ -25,12 +25,12 @@ export default function WebDesigning() {
                     {
                         title: "Optimize Your Website for Higher Conversions",
                         description: "As a leading web design agency in India, we specialize in creating websites that are not only visually appealing but also highly effective at converting visitors into customers. Our websites are designed to be SEO-friendly and responsive, ensuring they perform well on all devices. We offer end-to-end services, from initial design concepts to full-scale web development and ongoing maintenance. If you're unsure about what you need, we can guide you through the process, explaining the technical details, scope of work, and providing a clear cost estimate to help you choose the right solution.",
-                        image: "https://example.com/images/website_optimization_banner.webp"
+                        image: "images/service/design_ser1.png"
                     },
                     {
                         title: "We Use Advanced Tools to Deliver Your Projects",
                         description: "Our team uses a wide range of advanced tools and software to ensure your project is completed with precision and creativity. Whether you need a sleek website design, robust e-commerce functionality, or custom software development, we have the right tools for the job. From design to development, we rely on industry-leading software to bring your vision to life. Our team is skilled in the following platforms and tools:",
-                        image: "https://example.com/images/advanced_tools_banner.webp",
+                        image: "images/service/design_ser2.png",
                         points: [
                             "Wix",
                             "WordPress",
@@ -59,7 +59,7 @@ export default function WebDesigning() {
                             "Responsive Design for All Devices",
                             "Comprehensive Analytics"
                         ],
-                        image: "https://example.com/images/high-impact-landing-pages.webp"
+                        image: "images/service/design_test1.avif"
                     },
                     {
                         title: "Customized Email Templates",
@@ -71,7 +71,7 @@ export default function WebDesigning() {
                             "A/B Testing and Analysis",
                             "Fully Customizable"
                         ],
-                        image: "https://example.com/images/custom-email-templates.webp"
+                        image: "images/service/design_test2.jpg"
                     },
                     {
                         title: "Innovative Web Layouts",
@@ -83,7 +83,7 @@ export default function WebDesigning() {
                             "SEO Best Practices",
                             "Intuitive User Journeys"
                         ],
-                        image: "https://example.com/images/innovative-web-layouts.webp"
+                        image: "images/service/design_test3.jpg"
                     }
                 ]
                 }
@@ -95,22 +95,22 @@ export default function WebDesigning() {
                     data={[
                         {
                             title: "Discovery & Strategy",
-                            image: "https://example.com/images/discovery-strategy.png",
+                            image: "images/service/service_process1.png",
                             description: "We begin by understanding your business needs, goals, and target audience. This strategic analysis helps us tailor a website that aligns with your brand vision and achieves your objectives."
                         },
                         {
                             title: "Design & Development",
-                            image: "https://example.com/images/design-development.png",
+                            image: "images/service/service_process2.png",
                             description: "Next, we create design concepts and wireframes to visualize the website's structure and layout. Our developers then bring these designs to life through coding, ensuring a seamless user experience across all platforms."
                         },
                         {
                             title: "Quality Assurance & Testing",
-                            image: "https://example.com/images/quality-assurance.png",
+                            image: "images/service/service_process3.png",
                             description: "In this phase, we rigorously test the website to ensure it is functional, responsive, and free from errors. Our thorough quality assurance process ensures that the final product meets or exceeds industry standards."
                         },
                         {
                             title: "Ongoing Maintenance & Support",
-                            image: "https://example.com/images/maintenance-support.png",
+                            image: "images/service/service_process4.png",
                             description: "After launch, we provide continuous maintenance to ensure your website remains secure, updated, and optimized. We address any issues promptly and implement new features as needed to keep your site competitive."
                         }
                     ]}

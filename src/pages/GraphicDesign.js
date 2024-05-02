@@ -29,12 +29,12 @@ export default function GraphicDesign() {
                     {
                         title: "Bringing Your Marketing Vision to Life with Creative Graphic Design",
                         description: "At Aron Web Solutions, we deliver top-quality graphic design services that turn your ideas into captivating visuals. Using cutting-edge software, we craft designs that align with your brand's objectives, helping you connect with your audience. Our extensive portfolio of successful projects and satisfied clients speaks to our commitment to excellence. We work closely with you to ensure every design reflects your brand's unique essence.",
-                        image: "https://example.com/images/graphic_design_services.webp"
+                        image: "images/service/graphic_ser1.png"
                     },
                     {
                         title: "State-of-the-Art Tools for Striking and Innovative Designs",
                         description: "We utilize a variety of advanced tools to create high-impact visuals for your projects. These tools enable us to develop unique and compelling designs that stand out. It's like having a toolbox of design superpowers! Discover how we leverage these tools to craft attention-grabbing graphics that leave a lasting impression.",
-                        image: "https://example.com/images/design_tools.webp",
+                        image: "images/service/graphic_ser2.png",
                         points: [
                             "Adobe Photoshop",
                             "Adobe Illustrator",
@@ -63,7 +63,7 @@ export default function GraphicDesign() {
                             "3D Modeling",
                             "High-Quality Graphics"
                         ],
-                        image: "https://example.com/images/2D_3D_design_services.webp"
+                        image: "images/service/graphic_test1.jpg"
                     },
                     {
                         title: "Custom Logo Design",
@@ -75,7 +75,7 @@ export default function GraphicDesign() {
                             "Symbolic Design Elements",
                             "Consistent with Branding"
                         ],
-                        image: "https://example.com/images/custom_logo_design.webp"
+                        image: "images/service/graphic_test2.jpg"
                     },
                     {
                         title: "Mobile App Design Services",
@@ -87,7 +87,7 @@ export default function GraphicDesign() {
                             "Cross-Platform Compatibility",
                             "Engaging Visual Elements"
                         ],
-                        image: "https://example.com/images/mobile_app_design_services.webp"
+                        image: "images/service/graphic_test3.jpg"
                     }
                 ]}
 
@@ -99,22 +99,22 @@ export default function GraphicDesign() {
                     data={[
                         {
                             title: "Project Briefing",
-                            image: "https://example.com/images/project_briefing.png",
+                            image: "images/service/service_process1.png",
                             description: "We start by conducting a thorough briefing session to gather essential project details. This step lays the groundwork for a successful and well-structured design process."
                         },
                         {
                             title: "Ideation & Brainstorming",
-                            image: "https://example.com/images/ideation_brainstorming.png",
+                            image: "images/service/service_process2.png",
                             description: "In this phase, we foster a creative environment where ideas can flow freely. We explore different concepts and innovative approaches to turn your project vision into a vibrant reality."
                         },
                         {
                             title: "Design Review",
-                            image: "https://example.com/images/design_review.png",
+                            image: "images/service/service_process3.png",
                             description: "Here, we assess the designs to ensure they align with project goals and client specifications. Constructive feedback guides the iterative refinement process, ensuring the final product meets the highest standards."
                         },
                         {
                             title: "Final Presentation",
-                            image: "https://example.com/images/final_presentation.png",
+                            image: "images/service/service_process4.png",
                             description: "At this stage, we present the completed design to the client. Open collaboration allows for any final adjustments, ensuring the end result exceeds expectations and fully aligns with the project's objectives."
                         }
                     ]}

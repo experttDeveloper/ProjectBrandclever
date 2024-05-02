@@ -113,8 +113,6 @@ export default class App extends Component {
             <Route path="/hire-tailwind-css-developer" element={<HireTalwindCss />} />
             <Route path="/hire-digital-marekting-expert" element={<HireDigitalMarketing />} />
 
-
-
             <Route
               path="*"
               element={<PageNotFound />}

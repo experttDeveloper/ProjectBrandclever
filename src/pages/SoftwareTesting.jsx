@@ -25,12 +25,12 @@ export default function SoftwareTesting() {
                     {
                         title: "Ensure High-Quality Software with Comprehensive Testing Solutions",
                         description: "Software testing is critical for ensuring your applications run smoothly and meet industry standards. Our team specializes in a range of testing techniques to detect bugs, ensure functionality, and enhance user experience. We provide comprehensive testing solutions to guarantee that your software is reliable and performs at its best.",
-                        image: "https://example.com/images/software_testing.webp"
+                        image: "images/service/testing_ser1.png"
                     },
                     {
                         title: "Enhance Software Quality with Advanced Testing Tools",
                         description: "Our advanced software testing tools streamline the process of identifying issues and validating application performance. These tools help you conduct various types of tests, automate testing processes, and ensure robust security. With detailed reports and analytics, you can continuously improve software quality and reliability.",
-                        image: "https://example.com/images/testing_tools.webp",
+                        image: "images/service/testing_ser2.png",
                         points: [
                             "Automated Test Scripts",
                             "Functional Testing",
@@ -50,19 +50,19 @@ export default function SoftwareTesting() {
                         title: "Comprehensive Software Testing",
                         description: "Guarantee the quality and reliability of your software with our comprehensive testing solutions. We provide a range of testing services to detect bugs, ensure functionality, and validate performance before deployment.",
                         points: ["Functional Testing", "Regression Testing", "Unit Testing", "Integration Testing,", "User Acceptance Testing (UAT)"],
-                        image: "https://example.com/images/software_testing_comprehensive.webp"
+                        image: "images/service/testing_test1.jpg"
                     },
                     {
                         title: "Secure Your Software with Robust Security Testing",
                         description: "Protect your software from security vulnerabilities with our robust security testing services. Our solutions help you identify and mitigate security risks, ensuring compliance with industry standards and safeguarding sensitive data.",
                         points: ["Penetration Testing", "Vulnerability Assessment", "Multi-Factor Authentication", "Encryption Techniques", "Compliance Checks"],
-                        image: "https://example.com/images/software_testing_security.webp"
+                        image: "images/service/testing_test2.avif"
                     },
                     {
                         title: "Automate Software Testing Processes",
                         description: "Enhance efficiency by automating key testing processes. Our automated workflows reduce manual effort and ensure consistent testing results. This approach allows you to focus on development while we ensure software quality.",
                         points: ["Automated Test Scripts", "Continuous Integration Testing", "Load and Stress Testing", "Performance Monitoring", "Error Detection and Reporting"],
-                        "image": "https://example.com/images/software_testing_automation.webp"
+                        image: "images/service/testing_test3.jpg"
                     }
                 ]}
             />
@@ -72,22 +72,22 @@ export default function SoftwareTesting() {
                     heading="Optimize Your Software Testing with Our Step-by-Step Approach"
                     data={[
                         {
-                            image: "https://example.com/images/test_planning.png",
+                            image: "images/service/service_process1.png",
                             title: "Test Planning",
                             description: "Begin your software testing journey by creating a comprehensive plan. Identify test objectives, determine resources, and establish timelines. This step lays the groundwork for a successful software testing process."
                         },
                         {
-                            image: "https://example.com/images/test_strategy.png",
+                            image: "images/service/service_process2.png",
                             title: "Test Strategy",
                             description: "Develop a robust testing strategy. Determine the types of tests needed, consider potential risks, and define approaches to address them. This ensures a clear direction and helps minimize surprises during the testing process."
                         },
                         {
-                            image: "https://example.com/images/test_execution.png",
+                            image: "images/service/service_process3.png",
                             title: "Test Execution",
                             description: "Execute test cases and monitor results. This stage involves running both automated and manual tests, identifying and logging defects, and ensuring the software meets quality standards. Careful monitoring is key to staying on track."
                         },
                         {
-                            image: "https://example.com/images/test_closure.png",
+                            image: "images/service/service_process4.png",
                             title: "Test Closure",
                             description: "Conclude the software testing phase with a thorough review. Document test results, prepare reports, and gather feedback for continuous improvement. This step is essential before the software moves to production or is released to users."
                         }

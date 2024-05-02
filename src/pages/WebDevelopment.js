@@ -27,12 +27,13 @@ export default function WebDevelopment() {
                     {
                         title: "Comprehensive Web Development Services",
                         description: "We specialize in creating robust websites and web applications using the latest technologies. Our skilled developers excel in building interactive websites and internal management systems. What sets us apart is our commitment to delivering high-quality applications through a transparent and streamlined process. With over eleven years of experience and partnerships with leading brands across 10 different industries, we have the expertise to bring your project to life. We utilize the most effective tools and techniques to ensure your web application meets your specific needs.",
-                        image: "https://example.com/images/web_dev_right.webp"
+                        image: "images/service/web_development_ser2.png"
                     },
                     {
                         title: "Cutting-Edge Technologies to Bring Your Project to Life",
                         description: "Our dedicated team uses the most up-to-date coding languages, frameworks, and tools to deliver outstanding results for our clients. We don't just use advanced technologies; we tailor our approach to meet each project's unique requirements, ensuring the final product is something both you and we can be proud of.",
-                        image: "https://example.com/images/web_dev_left.webp",
+                        image: "images/service/web_develo_ser2.png",
+                       
                         points: [
                             "PHP Frameworks",
                             "WordPress",
@@ -57,7 +58,7 @@ export default function WebDevelopment() {
                             "Intuitive User Interfaces",
                             "Robust Functionality"
                         ],
-                        image: "https://example.com/images/custom-web-application-development.webp"
+                        image: "images/service/development_testi1.avif"
                     },
                     {
                         title: "E-commerce Solutions",
@@ -69,7 +70,7 @@ export default function WebDevelopment() {
                             "Mobile-First Design",
                             "Inventory Management Tools"
                         ],
-                        image: "https://example.com/images/e-commerce-solutions.webp"
+                        image: "images/service/development_testi2.jpg"
                     },
                     {
                         title: "Comprehensive Website Maintenance",
@@ -81,7 +82,7 @@ export default function WebDevelopment() {
                             "Content Management",
                             "Bug Detection and Fixes"
                         ],
-                        image: "https://example.com/images/comprehensive-website-maintenance.webp"
+                        image: "images/service/development_testi3.jpg"
                     }
                 ]}
 
@@ -93,22 +94,22 @@ export default function WebDevelopment() {
                     data={[
                         {
                             title: "Strategic Planning",
-                            image: "https://example.com/images/strategic-planning.png",
+                            image: "images/service/service_process1.png",
                             description: "We approach web development with a strategic mindset, focusing on understanding your business model, market trends, and product positioning. This ensures we build a foundation that aligns with your goals."
                         },
                         {
                             title: "Product Design",
-                            image: "https://example.com/images/product-design.png",
+                            image: "images/service/service_process2.png",
                             description: "Our process brings together a multidisciplinary team of strategists, designers, and developers. This collaborative approach ensures that every aspect of the design aligns with your business objectives and user needs."
                         },
                         {
                             title: "Development & Implementation",
-                            image: "https://example.com/images/development-implementation.png",
+                            image: "images/service/service_process3.png",
                             description: "Our development phase is agile and efficient, with experienced managers overseeing every project. We focus on code quality, scalability, and adaptability, ensuring your website is built to the highest standards."
                         },
                         {
                             title: "Quality Assurance & Testing",
-                            image: "https://example.com/images/quality-assurance-testing.png",
+                            image: "images/service/service_process4.png",
                             description: "Our rigorous testing process aims to identify and resolve any bugs or issues. We ensure the final product is not only bug-free but also secure, reliable, and provides a seamless user experience."
                         }
                     ]}

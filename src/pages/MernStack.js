@@ -31,12 +31,12 @@ export default function MernStack() {
                     {
                         title: "Unlock the Power of MERN with Our Expert Development Services",
                         description: "When it comes to web development, we focus on delivering solutions that truly stand out. Our team specializes in the advanced technologies of the MongoDB, Express.js, React, and Node.js (MERN) stack, creating applications that exceed expectations. Our unique approach combines MongoDB's flexibility, Express.js's streamlined server-side operations, React's interactive user interfaces, and Node.js's rapid development capabilities. This harmonious integration allows us to deliver solutions tailored to your specific requirements. We're committed to helping you achieve success through our exceptional MERN stack services.",
-                        image: "https://example.com/images/mern_stack_services.webp"
+                        image: "images/service/mern_ser1.png"
                     },
                     {
                         title: "The Advanced Tools Powering Our MERN Stack Development",
                         description: "Discover the powerful tools behind our MERN stack expertise. These advanced technologies are the backbone of our cutting-edge web development. We utilize them to create dynamic websites and applications. It's like having a toolkit of superpowers for building interactive and innovative digital experiences.",
-                        image: "https://example.com/images/advanced_mern_tools.webp",
+                        image: "images/service/mern_ser2.png",
                         points: [
                             "MongoDB",
                             "Express.js",
@@ -59,7 +59,7 @@ export default function MernStack() {
                             "High-Performance Queries",
                             "NoSQL Expertise"
                         ],
-                        image: "https://example.com/images/mongodb_database_solutions.webp"
+                        image: "images/service/mern_test1.jpg"
                     },
                     {
                         title: "Node.js Application Development",
@@ -71,7 +71,7 @@ export default function MernStack() {
                             "Extensive Module Library",
                             "Fast and Scalable"
                         ],
-                        image: "https://example.com/images/nodejs_application_development.webp"
+                        image: "images/service/mern_test2.avif"
                     },
                     {
                         title: "Express.js Framework Development",
@@ -83,7 +83,7 @@ export default function MernStack() {
                             "Flexible Routing System",
                             "Secure Authentication"
                         ],
-                        image: "https://example.com/images/expressjs_framework_development.webp"
+                        image: "images/service/mern_test3.avif"
                     }
                 ]}
 
@@ -95,22 +95,22 @@ export default function MernStack() {
                     data={[
                         {
                             title: "Project Requirements & Planning",
-                            image: "https://example.com/images/project_requirements_planning.webp",
+                            image: "images/service/service_process1.png",
                             description: "The first step is to understand the client's vision, goals, and requirements for the application. This involves detailed discussions, thorough requirements analysis, and setting clear objectives for the project."
                         },
                         {
                             title: "Development & Database Architecture",
-                            image: "https://example.com/images/development_database_architecture.webp",
+                            image: "images/service/service_process2.png",
                             description: "In this phase, the development team creates the underlying database structure and architecture, ensuring efficient data storage, retrieval, and management for the application."
                         },
                         {
                             title: "Design, Development, & Testing",
-                            image: "https://example.com/images/design_development_testing.webp",
+                            mage: "images/service/service_process3.png",
                             description: "This stage involves a cyclical process of design, coding, and testing. Iterative feedback ensures that the application meets quality standards, functional requirements, and user expectations."
                         },
                         {
                             title: "Deployment & Maintenance",
-                            image: "https://example.com/images/deployment_maintenance.webp",
+                            image: "images/service/service_process4.png",
                             description: "Once the application passes all tests and is optimized, it's ready for launch. After deployment, ongoing maintenance keeps the app efficient, secure, and updated to meet changing user needs."
                         }
 
