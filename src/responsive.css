@@ -1315,6 +1315,9 @@
     }
 }
 @media screen and (max-width: 480px) {
+    .banner.brand_banner_section.banner_img_hi h1 {
+        height: 70px;
+    }
     .main_header p {
         width: 97%;
     }
@@ -1684,4 +1687,7 @@
         font-size: 13px !important;
     }
 }
+
+
+
 
