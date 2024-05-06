@@ -5,6 +5,11 @@ export default function ImageSection({ images }) {
     return (
         <div>
             <Container>
+                <div className="portfolio_sect">
+                    <h2 className="title">
+                        Explore Our Latest Creations
+                    </h2>
+                </div>
                 <Row className="shopify_images">
                     {
                         images.map((ele, key) => {

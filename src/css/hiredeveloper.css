@@ -116,7 +116,7 @@ img.authorimagelogo {
   height: 100px;
 }
 h2.hiringprocesstitle {
-  margin-bottom: 80px;
+  padding: 75px 0 75px 0;
 }
 
 .faqs .left_side_faq {
@@ -351,4 +351,9 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.circle_tick.css-i4bv87-MuiSvgIcon-
 }
 .expertise_section img {
   height: 70px;
+}
+
+.portfolio_sect h2.title {
+  text-align: center;
+  padding-bottom: 75px;
 }
