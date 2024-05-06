@@ -160,6 +160,10 @@ const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isSticky, setSticky] = useState(false);
 
+  const [showMenu, setShowMenu] = useState(false);
+
+
+
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -196,7 +200,7 @@ const NavBar = () => {
               <div className="logo">
                 <Link to="/"><img src={logo} className="logo" alt="logo" /></Link>
               </div>
-              <div className={`menu-toggle ${isMenuOpen ? 'openMenus' : 'closeMenus'}`} onClick={toggleMenu}>
+              <div className={`menu-toggle ${isMenuOpen ? 'openMenus' : 'closeMenus'}`} >
                 <span></span>
                 <span></span>
                 <span></span>
@@ -207,7 +211,7 @@ const NavBar = () => {
 
                   <li>
                     <div className="dropdownMenu">
-                      <Link to="/service" onClick={closeMenu} className="dropbtn">Services
+                      <Link to="/service"  className="dropbtn">Services
                         <span class="arrow-right">
                           <span class="ar_line">
                           </span><span class="ar_left">
@@ -248,7 +252,7 @@ const NavBar = () => {
                   </li>
                   <li>
                     <div className="dropdownMenu">
-                      <Link to="#" onClick={closeMenu} className="dropbtn">Hire a Developer
+                      <Link to="#"  className="dropbtn">Hire a Developer
                         <span class="arrow-right">
                           <span class="ar_line">
                           </span><span class="ar_left">
@@ -289,7 +293,7 @@ const NavBar = () => {
                   </li>
                   <li className='pages_navbar'>
                     <div className="dropdownMenu">
-                      <Link to="/about" onClick={closeMenu} className='dropbtn'>Pages
+                      <Link to="/about"  className='dropbtn'>Pages
                         <span class="arrow-right">
                           <span class="ar_line">
                           </span><span class="ar_left">
@@ -333,7 +337,7 @@ const NavBar = () => {
 
                   <li className='review_nav'>
                     <div className="dropdownMenu">
-                      <Link to="/review" onClick={closeMenu} className="dropbtn">Reviews
+                      <Link to="/review"  className="dropbtn">Reviews
                         <span class="arrow-right">
                           <span class="ar_line">
                           </span><span class="ar_left">
@@ -372,7 +376,7 @@ const NavBar = () => {
                   </li>
                   <li className='hire_us'>
                     <div className="dropdownMenu">
-                      <Link to="/hire-us" onClick={closeMenu} className='dropbtn'>Hire Us
+                      <Link to="#"  className='dropbtn'>Hire Us
                         <span class="arrow-right">
                           <span class="ar_line">
                           </span><span class="ar_left">
@@ -461,7 +465,7 @@ const NavBar = () => {
                   </li>
                 </ul>
                 <div className='header_btn'>
-                  <Link to="/contact" className='' onClick={closeMenu}>Contact Us</Link>
+                  <Link to="/contact" className='' >Contact Us</Link>
                 </div>
               </nav>
             </div>
