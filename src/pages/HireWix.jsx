@@ -1,6 +1,5 @@
 import React from 'react';
 import TopHeader from '../components/TopHeader';
-import ContactSection from '../components/hiredeveloper/ContactSection';
 import WhyChoose from '../components/hiredeveloper/WhyChooseSection';
 import Testimonial from '../components/hiredeveloper/TestimonialSection';
 import ServiceSection from '../components/hiredeveloper/ServiceSection';
@@ -15,10 +14,8 @@ export default function HireWix() {
     return (
         <>
             <div>
-                <TopHeader title="Hire
-                Top Rated
-                Wix Professional Experts"
-                    description="Take Your Website to the Next Level with Our Wix Experts" />
+                <TopHeader title="Get a Wix Expert Onboard"
+                    description="Hiring a Wix expert brings in a pro to design, build, and optimize your Wix website, ensuring a customized, feature-rich, and user-friendly site." />
             </div>
 
             <WhyChoose

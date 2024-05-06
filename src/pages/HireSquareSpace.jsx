@@ -1,12 +1,10 @@
 import React from 'react';
 import TopHeader from '../components/TopHeader';
-import ContactSection from '../components/hiredeveloper/ContactSection';
 import WhyChoose from '../components/hiredeveloper/WhyChooseSection';
 import Testimonial from '../components/hiredeveloper/TestimonialSection';
 import ServiceSection from '../components/hiredeveloper/ServiceSection';
 import ProcessSection from '../components/hiredeveloper/ProcessSection';
 import PaymentSection from '../components/hiredeveloper/PaymentSection';
-import FaqSection from '../components/hiredeveloper/FaqSection';
 import ImageSection from '../components/hiredeveloper/ImageSection';
 import ExpertiesSection from '../components/hiredeveloper/ExpertiesSection';
 
@@ -14,10 +12,8 @@ export default function HireSquareSpace() {
     return (
         <>
             <div>
-                <TopHeader title="Hire
-                Industry Experts
-                For Squarespace Store"
-                    description="Make Your Website More Beautiful, and Innovative" />
+                <TopHeader title="Connect with a Squarespace Expert"
+                    description="Get expert assistance for your Squarespace projects. Our specialists offer custom website design, troubleshooting, and platform optimization to help you achieve your online goals." />
             </div>
 
             <WhyChoose

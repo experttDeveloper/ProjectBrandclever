@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../css/portfolio.css';
 import { Link } from 'react-router-dom';
-import portfolioData from '../data/Portfolio.json'
+import portfolioData from '../data/Portfolio.json';
 
 
 const Portfolio = () => {

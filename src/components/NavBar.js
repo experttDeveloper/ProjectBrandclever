@@ -159,8 +159,11 @@ const hireMenus = [
 const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isSticky, setSticky] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
 
-  const [showMenu, setShowMenu] = useState(false);
+  const toggleDropdown = (dropdownName) => {
+    setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
+  };
 
 
   const toggleMenu = () => {
@@ -206,8 +209,9 @@ const NavBar = () => {
               </div>
               <nav className={isMenuOpen ? 'open' : 'closeToggal'}>
                 <ul>
-
-                  <li>
+                  <li onMouseEnter={() => setActiveDropdown('services')}
+                    onMouseLeave={() => setActiveDropdown(null)}
+                    onClick={() => toggleDropdown('services')}>
                     <div className="dropdownMenu">
                       <Link to="/service" onClick={closeMenu} className="dropbtn">Services
                         <span class="arrow-right">
@@ -216,39 +220,44 @@ const NavBar = () => {
                           </span>
                         </span>
                       </Link>
-                      <div className="dropdown-content">
+                      {activeDropdown === 'services' && (
+                        <div className="dropdown-content">
 
-                        <div className="row">
-                          <div className="col-md-3 serv_cns">
-                            {serviceMenus.slice(0, 6).map((ele, key) => {
-                              return (
-                                <div className='service_img'>
-                                  <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
-                                  <Link to={ele.url}>{ele.title}</Link>
-                                </div>
-                              )
-                            })}
-                          </div>
-                          <div className="col-md-3 serv_cns">
-                            {
-                              serviceMenus.slice(6, 12).map((ele, key) => {
+                          <div className="row">
+                            <div className="col-md-3 serv_cns">
+                              {serviceMenus.slice(0, 6).map((ele, key) => {
                                 return (
                                   <div className='service_img'>
                                     <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
                                     <Link to={ele.url}>{ele.title}</Link>
                                   </div>
                                 )
-                              })
-                            }
-                          </div>
-                          <div className="col-md-6 serv_img">
-                            <img src={process.env.PUBLIC_URL + '/images/nav/service_nav.png'} alt='logo_img' />
+                              })}
+                            </div>
+                            <div className="col-md-3 serv_cns">
+                              {
+                                serviceMenus.slice(6, 12).map((ele, key) => {
+                                  return (
+                                    <div className='service_img'>
+                                      <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
+                                      <Link to={ele.url}>{ele.title}</Link>
+                                    </div>
+                                  )
+                                })
+                              }
+                            </div>
+                            <div className="col-md-6 serv_img">
+                              <img src={process.env.PUBLIC_URL + '/images/nav/service_nav.png'} alt='logo_img' />
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      )}
+
                     </div>
                   </li>
-                  <li>
+                  <li onMouseEnter={() => setActiveDropdown('services')}
+                    onMouseLeave={() => setActiveDropdown(null)}
+                    onClick={() => toggleDropdown('services')}>
                     <div className="dropdownMenu">
                       <Link to="#" onClick={closeMenu} className="dropbtn">Hire a Developer
                         <span class="arrow-right">
@@ -257,39 +266,43 @@ const NavBar = () => {
                           </span>
                         </span>
                       </Link>
-                      <div className="dropdown-content">
+                      {activeDropdown === 'services' && (
+                        <div className="dropdown-content">
 
-                        <div className="row">
-                          <div className="col-md-3 serv_cns">
-                            {hireMenus.slice(0, 6).map((ele, key) => {
-                              return (
-                                <div className='service_img'>
-                                  <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
-                                  <Link to={ele.url}>{ele.title}</Link>
-                                </div>
-                              )
-                            })}
-                          </div>
-                          <div className="col-md-3 serv_cns">
-                            {
-                              hireMenus.slice(6, 12).map((ele, key) => {
+                          <div className="row">
+                            <div className="col-md-3 serv_cns">
+                              {hireMenus.slice(0, 6).map((ele, key) => {
                                 return (
                                   <div className='service_img'>
                                     <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
                                     <Link to={ele.url}>{ele.title}</Link>
                                   </div>
                                 )
-                              })
-                            }
-                          </div>
-                          <div className="col-md-6 serv_img">
-                            <img src={process.env.PUBLIC_URL + '/images/nav/hiring_nav.png'} alt='logo_img' />
+                              })}
+                            </div>
+                            <div className="col-md-3 serv_cns">
+                              {
+                                hireMenus.slice(6, 12).map((ele, key) => {
+                                  return (
+                                    <div className='service_img'>
+                                      <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
+                                      <Link to={ele.url}>{ele.title}</Link>
+                                    </div>
+                                  )
+                                })
+                              }
+                            </div>
+                            <div className="col-md-6 serv_img">
+                              <img src={process.env.PUBLIC_URL + '/images/nav/hiring_nav.png'} alt='logo_img' />
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      )}
                     </div>
                   </li>
-                  <li className='pages_navbar'>
+                  <li className='pages_navbar' onMouseEnter={() => setActiveDropdown('services')}
+                    onMouseLeave={() => setActiveDropdown(null)}
+                    onClick={() => toggleDropdown('services')}>
                     <div className="dropdownMenu">
                       <Link to="/about" onClick={closeMenu} className='dropbtn'>Pages
                         <span class="arrow-right">
@@ -298,38 +311,40 @@ const NavBar = () => {
                           </span>
                         </span>
                       </Link>
-                      <div className="dropdown-content">
-                        <Row>
-                          <Col md={4}>
-                            <div className='service_img'>
-                              <img src='images/menus/about.png' alt='about page' height="32px" width="32px" />
-                              <Link to="/about">About</Link>
-                            </div>
-                            <div className='service_img'>
-                              <img src='images/menus/career.png' alt='about page' height="32px" width="32px" />
-                              <Link to="/career">Career</Link>
-                            </div>
-                            <div className='service_img'>
-                              <img src='images/menus/portfolio.png' alt='about page' height="32px" width="32px" />
-                              <Link to="/portfolio">Portfolio</Link>
-                            </div>
-                            <div className='service_img'>
-                              <img src='images/menus/privacy.png' alt='about page' height="32px" width="32px" />
-                              <Link to="/traning-and-placement">Traning & Placement</Link>
-                            </div>
-                            {/* <div className='service_img'>
+                      {activeDropdown === 'services' && (
+                        <div className="dropdown-content">
+                          <Row>
+                            <Col md={4}>
+                              <div className='service_img'>
+                                <img src='images/menus/about.png' alt='about page' height="32px" width="32px" />
+                                <Link to="/about">About</Link>
+                              </div>
+                              <div className='service_img'>
+                                <img src='images/menus/career.png' alt='about page' height="32px" width="32px" />
+                                <Link to="/career">Career</Link>
+                              </div>
+                              <div className='service_img'>
+                                <img src='images/menus/portfolio.png' alt='about page' height="32px" width="32px" />
+                                <Link to="/portfolio">Portfolio</Link>
+                              </div>
+                              <div className='service_img'>
+                                <img src='images/menus/privacy.png' alt='about page' height="32px" width="32px" />
+                                <Link to="/traning-and-placement">Traning & Placement</Link>
+                              </div>
+                              {/* <div className='service_img'>
                               <img src='images/menus/term.png' alt='about page' height="32px" width="32px" />
                               <Link to="/term-conditions">Terms Conditions</Link>
                             </div> */}
-                          </Col>
-                          <Col md={8}>
+                            </Col>
+                            <Col md={8}>
 
-                            <div className=" serv_img">
-                              <img src={process.env.PUBLIC_URL + '/images/nav/about_nav.png'} alt='logo_img' />
-                            </div>
-                          </Col>
-                        </Row>
-                      </div>
+                              <div className=" serv_img">
+                                <img src={process.env.PUBLIC_URL + '/images/nav/about_nav.png'} alt='logo_img' />
+                              </div>
+                            </Col>
+                          </Row>
+                        </div>
+                      )}
                     </div>
                   </li>
 

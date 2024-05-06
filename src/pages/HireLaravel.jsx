@@ -1,6 +1,5 @@
 import React from 'react';
 import TopHeader from '../components/TopHeader';
-import ContactSection from '../components/hiredeveloper/ContactSection';
 import WhyChoose from '../components/hiredeveloper/WhyChooseSection';
 import Testimonial from '../components/hiredeveloper/TestimonialSection';
 import ServiceSection from '../components/hiredeveloper/ServiceSection';
@@ -14,9 +13,7 @@ export default function HireLaravel() {
     return (
         <>
             <div>
-                <TopHeader title="Hire
-                Trustworthy
-                Laravel Developers"  description="Experience the difference with our certified Laravel developers" />
+                <TopHeader title="Laravel Development : Hire Now"  description="Hire a Laravel developer to build scalable, robust web applications using the Laravel framework, ensuring high performance and efficient code." />
             </div>
 
             <WhyChoose

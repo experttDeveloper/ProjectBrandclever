@@ -1,9 +1,7 @@
 import React from 'react';
 import TopHeader from '../components/TopHeader';
-import ContactSection from '../components/hiredeveloper/ContactSection';
 import WhyChoose from '../components/hiredeveloper/WhyChooseSection';
 import Testimonial from '../components/hiredeveloper/TestimonialSection';
-import ServiceSection from '../components/hiredeveloper/ServiceSection';
 import ProcessSection from '../components/hiredeveloper/ProcessSection';
 import PaymentSection from '../components/hiredeveloper/PaymentSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
@@ -15,10 +13,9 @@ export default function HireWoo() {
     return (
         <>
             <div>
-                <TopHeader title="WooCommerce
-                Development
-                Company"
-                    description="Hire Top Class Woocommerce Development Services" />
+                <TopHeader title="WooCommerce Solutions Expert"
+                    description="A WooCommerce Solutions Expert designs and customizes WooCommerce-based e-commerce platforms, ensuring smooth setup, seamless user experience, and advanced features for scalable online stores."
+                />
             </div>
 
             <WhyChoose

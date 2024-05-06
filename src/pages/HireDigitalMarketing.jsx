@@ -7,7 +7,6 @@ import ProcessSection from "../components/hiredeveloper/ProcessSection";
 import PaymentSection from "../components/hiredeveloper/PaymentSection";
 import FaqSection from "../components/hiredeveloper/FaqSection";
 import ExpertiesSection from "../components/hiredeveloper/ExpertiesSection";
-import ImageSection from "../components/hiredeveloper/ImageSection";
 
 export default function HireDigitalMarketing() {
 
@@ -15,8 +14,8 @@ export default function HireDigitalMarketing() {
     return (
         <>
             <div>
-                <TopHeader title="Partner with Certified Digital Marketing Experts You Can Trust"
-                    description="Connect with top-tier digital marketing professionals to elevate your online presence. Our vetted experts specialize in a range of services, including SEO, content marketing, social media campaigns, and PPC advertising. Get the best talent to boost your brand visibility and drive traffic for measurable success." />
+                <TopHeader title="hire-digital-marketing-specialist"
+                    description="Hire a digital marketing expert to boost your online presence, drive traffic, and increase customer engagement with targeted campaigns and strategies." />
             </div>
             <WhyChoose
                 title="Brandclever's Digital Marketing Expertise"

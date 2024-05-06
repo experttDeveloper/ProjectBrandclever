@@ -1,6 +1,5 @@
 import React from "react";
 import TopHeader from "../components/TopHeader";
-import ContactSection from "../components/hiredeveloper/ContactSection";
 import WhyChoose from "../components/hiredeveloper/WhyChooseSection";
 import Testimonial from "../components/hiredeveloper/TestimonialSection";
 import ServiceSection from "../components/hiredeveloper/ServiceSection";
@@ -16,7 +15,7 @@ export default function HireShopify() {
   return (
     <>
       <div>
-        <TopHeader title={"Engage with Certified, Reliable Shopify Developers You Can Trust"} description={"Connect with top-tier Shopify experts to boost your e-commerce business. Our vetted professionals excel in everything from custom theme design to seamless app integration. Get the best talent to build and optimize your Shopify store for success"} />
+        <TopHeader title={"Hire a Shopify Consultant"} description={"Collaborate with top Shopify experts to enhance your e-commerce site. Our specialists offer custom themes, app integration, and more, ensuring your Shopify store is optimized for success."} />
       </div>
       <WhyChoose
         title="Brandclever's Shopify Expertise?"

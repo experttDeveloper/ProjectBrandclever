@@ -1,6 +1,5 @@
 import React from 'react';
 import TopHeader from '../components/TopHeader';
-import ContactSection from '../components/hiredeveloper/ContactSection';
 import WhyChoose from '../components/hiredeveloper/WhyChooseSection';
 import Testimonial from '../components/hiredeveloper/TestimonialSection';
 import ServiceSection from '../components/hiredeveloper/ServiceSection';
@@ -14,10 +13,8 @@ export default function HireReactjs() {
     return (
         <>
             <div>
-                <TopHeader title="Hire
-                Unmatched
-                Reactjs Development Experts"
-                    description="Build Innovative And Interactive Websites For Your Online Business" />
+                <TopHeader title="Team-Up-with-ReactJS-Developer"
+                    description="Hire a ReactJS developer to build dynamic, responsive web applications with robust performance and modern user interfaces." />
             </div>
 
             <WhyChoose

@@ -1,6 +1,5 @@
 import React from 'react';
 import TopHeader from '../components/TopHeader';
-import ContactSection from '../components/hiredeveloper/ContactSection';
 import WhyChoose from '../components/hiredeveloper/WhyChooseSection';
 import Testimonial from '../components/hiredeveloper/TestimonialSection';
 import ServiceSection from '../components/hiredeveloper/ServiceSection';
@@ -15,10 +14,8 @@ export default function HireTalwindCss() {
   return (
     <>
       <div>
-        <TopHeader title="Hire
-                Certified
-                Tailwind CSS Experts"
-          description="Simply Your Website User Experience with our World-class developers" />
+        <TopHeader title="hire-tailwind-css-expert"
+          description="Hire a Tailwind CSS developer to create sleek, responsive, and highly customizable web interfaces with rapid development and flexibility in design." />
       </div>
       <WhyChoose
         title="Brandclever for Your Tailwind Project"

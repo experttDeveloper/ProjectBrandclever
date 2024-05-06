@@ -1,6 +1,5 @@
 import React from 'react'
 import TopHeader from '../components/TopHeader'
-import ContactSection from '../components/hiredeveloper/ContactSection'
 import WhyChoose from '../components/hiredeveloper/WhyChooseSection'
 import Testimonial from '../components/hiredeveloper/TestimonialSection'
 import ServiceSection from '../components/hiredeveloper/ServiceSection'
@@ -14,8 +13,7 @@ export default function HireWebFlow() {
     return (
         <div>
             <div>
-                <TopHeader title="Magento Specialists for Your Online Store Hire
-                Skilled Experts"
+                <TopHeader title="Engage a Webflow Specialist"
                     description="Finding the right solution for your project can be a challenging task, but our Web Flow experts are here to make it easier. " />
             </div>
 

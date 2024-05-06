@@ -1,6 +1,5 @@
 import React from 'react';
 import TopHeader from '../components/TopHeader';
-import ContactSection from '../components/hiredeveloper/ContactSection';
 import WhyChoose from '../components/hiredeveloper/WhyChooseSection';
 import Testimonial from '../components/hiredeveloper/TestimonialSection';
 import ServiceSection from '../components/hiredeveloper/ServiceSection';
@@ -15,7 +14,7 @@ export default function HireBigCommerce() {
     return (
         <>
             <div>
-                <TopHeader title={"Hire Highly Focused Bigcommerce Developers"} description={"Our experts will help you build custom and responsive store"} />
+                <TopHeader title={"Connect with a Squarespace Expert"} description={"Hire a Squarespace expert to design, build, or customize your website, ensuring a polished, professional online presence."} />
             </div>
             <WhyChoose
                 title="Brandclever for Your BigCommerce Projectct"

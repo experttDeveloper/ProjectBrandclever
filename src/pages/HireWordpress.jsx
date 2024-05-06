@@ -13,10 +13,8 @@ export default function HireWordpress() {
     return (
         <>
             <div>
-                <TopHeader title="Hire
-        Dedicated Experts
-        For Your WordPress Store"
-                    description="We are the leading WordPress Developer Company" />
+                <TopHeader title="Get a WordPress Consultant"
+                    description="Hire a WordPress expert to build, customize, and optimize your WordPress site for top performance and functionality." />
             </div>
 
 

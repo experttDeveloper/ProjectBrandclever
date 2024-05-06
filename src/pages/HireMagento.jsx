@@ -13,8 +13,8 @@ export default function HireMagento() {
     return (
         <>
             <div>
-                <TopHeader title="Recruit Experienced Magento Experts for Your Online Store"
-                    description="Creating a customer-centric website involves more than just a visually pleasing design. It requires an in-depth understanding of your audience's needs, preferences, and behavior patterns. This approach leads to websites that not only draw visitors but also engage them, leading to conversions and loyalty." />
+                <TopHeader title="Recruit a Magento Developer"
+                    description="A customer-centric website goes beyond good design—it understands your audience's needs and behavior to attract, engage, and convert visitors, driving customer loyalty." />
             </div>
             <WhyChoose
                 title="Brandclever For Magento Development Service?"
