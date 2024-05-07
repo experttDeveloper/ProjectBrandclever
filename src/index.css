@@ -2942,3 +2942,17 @@ button.read_more {
     background: #fdfdfd !important;
     padding: 75px 0px;
 }
+h5.MuiTypography-root.MuiTypography-h5.right_test_modal.css-ag7rrr-MuiTypography-root {
+    color: var(--black-color) !important;
+    text-transform: capitalize;
+}
+
+button.modal_button {
+    color: white;
+    background: #54a154;
+}
+button.modal_button:hover {
+    color: white;
+    background: linear-gradient(to right, #96d358 0%, #89c957 50%, #2aa961 100%) !important;
+    transition: 2s;
+}

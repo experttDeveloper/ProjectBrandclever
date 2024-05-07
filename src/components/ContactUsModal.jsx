@@ -48,13 +48,7 @@ export default function ContactUsModal({ useOpen }) {
         } else if (!/\S+@\S+\.\S+/.test(form.email)) {
             newErrors.email = 'Invalid email address';
         }
-        if (!form.number) {
-            newErrors.number = 'Contact number is required';
-        }
-        if (!form.message) {
-            newErrors.message = 'Message is required';
-        }
-
+        
         return newErrors;
     };
 
@@ -108,8 +102,8 @@ export default function ContactUsModal({ useOpen }) {
                     <Col md={6}>
                         <div className='contact_form'>
                             <DialogTitle id="alert-dialog-title" sx={{ display: "flex", justifyContent: "space-between" }}>
-                                <Typography variant='h5' className='right_test_modal' sx={{ color: "black",textTransform:"capitalize" }}>
-                                REQUEST FREE CONSULTATION
+                                <Typography variant='h5' className='right_test_modal'>
+                                Request Free Consulatation
                                 </Typography>
                                 <IconButton onClick={handleClose}>
                                     <CloseIcon />
@@ -119,7 +113,7 @@ export default function ContactUsModal({ useOpen }) {
                                 <TextField
                                     fullWidth
                                     id="name"
-                                    label="Full name"
+                                    label="Full name *"
                                     variant="standard"
                                     name="name"
                                     value={form.name}
@@ -131,7 +125,7 @@ export default function ContactUsModal({ useOpen }) {
                                     type="email"
                                     fullWidth
                                     id="email"
-                                    label="E-Mail ID"
+                                    label="E-Mail ID *"
                                     variant="standard"
                                     name="email"
                                     value={form.email}
@@ -148,8 +142,7 @@ export default function ContactUsModal({ useOpen }) {
                                     name="number"
                                     value={form.number}
                                     onChange={handleChange}
-                                    error={!!errors.number}
-                                    helperText={errors.number}
+                                  
                                 />
                                 <TextField
                                     fullWidth
@@ -159,17 +152,15 @@ export default function ContactUsModal({ useOpen }) {
                                     name="message"
                                     value={form.message}
                                     onChange={handleChange}
-                                    error={!!errors.message}
-                                    helperText={errors.message}
+                                   
                                 />
                             </DialogContent>
 
                             <DialogActions>
                                 <Button
                                     onClick={handleSubmit}
-                                    variant="contained"
-                                    color="primary"
                                     fullWidth
+                                    className='modal_button'
                                 >
                                     Submit
                                 </Button>

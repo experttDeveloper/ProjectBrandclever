@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const Banner = () => {
 
   const [isHover, setIsHover] = useState(false);
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
