@@ -1935,11 +1935,6 @@ footer {
     padding: 100px 0px;
     background-color: #101010 !important;
 }
-
-.placement-page-inner {
-    padding-top: 100px;
-}
-
 .questionAnswer-main .answer {
     color: var(--white-color);
 }
@@ -2915,12 +2910,15 @@ li.hire_us .dropdown-content {
     color: var(--dark-black-color);
     padding: 0 0 0px 30px;
 }
-
 .blog_image {
-    width: 375px;
-    height: 246px;
+    width: 100%;
+    height: 300px;
 }
-
+.section_blog {
+    box-shadow: 0 0 10px 0 rgba(167.88281250000003,167.88281250000003,167.88281250000003,.5);
+    background-color: #f3f3f3;
+    padding: 12px !important;
+}
 .dateandauthor {
     font-size: 14px;
     color: #888888;
@@ -2933,10 +2931,14 @@ p.about_text {
 button.read_more {
     padding: 10px;
     border: none;
-    background-color: #1ea8aa;
+
     color: white;
 }
 
 .main_entry {
     padding: 15px 15px 8px;
+}
+.blog_main {
+    background: #fdfdfd !important;
+    padding: 75px 0px;
 }

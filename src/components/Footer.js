@@ -30,7 +30,7 @@ const Footer = () => {
                     <div className='footer-inner'>
                         <div className='column'>
                             <div className='footer-logo'>
-                                <Link to="/"><img src='brandclever_logo.png' className="logo" alt="logo" /></Link>
+                                <Link to="/"><img src='/brandclever_logo.png' className="logo" alt="logo" /></Link>
 
                                 {/* {certificates.map((image, index) => (
                             <div key={index} className="certificate-item">

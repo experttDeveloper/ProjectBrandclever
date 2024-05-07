@@ -47,6 +47,7 @@ import Ecommerce from './pages/Ecommerce';
 import WebApplication from './pages/WebApplication';
 import SoftwareTesting from './pages/SoftwareTesting';
 import Blog from './pages/Blog';
+import BlogDetail from './pages/BlogDetail';
 
 
 
@@ -113,6 +114,7 @@ export default class App extends Component {
             <Route path="/hire-reactjs-developer" element={<HireReactjs />} />
             <Route path="/hire-tailwind-css-developer" element={<HireTalwindCss />} />
             <Route path="/hire-digital-marekting-expert" element={<HireDigitalMarketing />} />
+            <Route path="/blog/:title" element={<BlogDetail />} />
 
             <Route
               path="*"

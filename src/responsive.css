@@ -1686,7 +1686,28 @@
     .service .second p {
         font-size: 13px !important;
     }
+
+
 }
+
+@media (-moz-touch-enabled: 1), (min--moz-device-pixel-ratio: 0), (max-width: 1200px) {
+    .costner_page_web a:hover::after {
+        content: '\f08e';
+        position: absolute !important;
+        background: #54a154;
+        top: 36% !important;
+        font-family: 'Font Awesome 5 Pro';
+        left: 38% !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        transition: all .4s;
+        color: #fff;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+  }
 
 
 
