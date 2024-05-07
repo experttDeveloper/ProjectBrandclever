@@ -2,7 +2,6 @@ User-agent: *
 Disallow: /admin/   
 Disallow: /private/  
 Allow: /public/
-Allow: /sitemap.xml  
 Sitemap: https://brandclever.in/sitemap.xml  
 
 Crawl-delay: 5  

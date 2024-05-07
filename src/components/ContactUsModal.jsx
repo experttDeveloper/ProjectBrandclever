@@ -97,7 +97,7 @@ export default function ContactUsModal({ useOpen }) {
                     <Col md={6}>
                         <div className='left_modal'>
                             <Typography className='title_modal' variant='h3'>
-                                Turning your <span style={{color:"#54a154"}}>vision </span> 
+                                Turning your <span style={{ color: "#54a154" }}>vision </span>
                                 into tangible reality
                             </Typography>
                             {/* <p className="des_modal">
@@ -108,8 +108,8 @@ export default function ContactUsModal({ useOpen }) {
                     <Col md={6}>
                         <div className='contact_form'>
                             <DialogTitle id="alert-dialog-title" sx={{ display: "flex", justifyContent: "space-between" }}>
-                                <Typography variant='h5' sx={{ color: "black" }}>
-                                    Get in Touch
+                                <Typography variant='h5' className='right_test_modal' sx={{ color: "black",textTransform:"capitalize" }}>
+                                REQUEST FREE CONSULTATION
                                 </Typography>
                                 <IconButton onClick={handleClose}>
                                     <CloseIcon />
@@ -128,6 +128,7 @@ export default function ContactUsModal({ useOpen }) {
                                     helperText={errors.name} // Display error message
                                 />
                                 <TextField
+                                    type="email"
                                     fullWidth
                                     id="email"
                                     label="E-Mail ID"
@@ -139,6 +140,7 @@ export default function ContactUsModal({ useOpen }) {
                                     helperText={errors.email}
                                 />
                                 <TextField
+                                    type="number"
                                     fullWidth
                                     id="number"
                                     label="Contact number"
