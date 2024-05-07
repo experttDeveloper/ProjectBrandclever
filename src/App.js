@@ -46,6 +46,7 @@ import LandingPage from './pages/LandingPage';
 import Ecommerce from './pages/Ecommerce';
 import WebApplication from './pages/WebApplication';
 import SoftwareTesting from './pages/SoftwareTesting';
+import Blog from './pages/Blog';
 
 
 
@@ -83,12 +84,12 @@ export default class App extends Component {
 
             <Route path="/term-conditions" element={<TermCondition />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/blog" element={<Blog />} />
 
 
             <Route path="/web-development" element={<WebDevelopment />} />
             <Route path="/website-design" element={<WebDesigning />} />
             <Route path="/graphic-design" element={<GraphicDesign />} />
-
             <Route path="/mern-stack" element={<MernStack />} />
             <Route path="/digital-marketing" element={<DigitalMarketing />} />
             <Route path="/content-strategy" element={<ContentStrategy />} />

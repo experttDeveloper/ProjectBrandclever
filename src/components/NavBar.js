@@ -328,9 +328,14 @@ const NavBar = () => {
                                 <Link to="/portfolio">Portfolio</Link>
                               </div>
                               <div className='service_img'>
+                                <img src='images/menus/blog.png' alt='about page' height="32px" width="32px" />
+                                <Link to="/blog">blog</Link>
+                              </div>
+                              <div className='service_img'>
                                 <img src='images/menus/privacy.png' alt='about page' height="32px" width="32px" />
                                 <Link to="/traning-and-placement">Traning & Placement</Link>
                               </div>
+                              
                               {/* <div className='service_img'>
                               <img src='images/menus/term.png' alt='about page' height="32px" width="32px" />
                               <Link to="/term-conditions">Terms Conditions</Link>
@@ -389,7 +394,7 @@ const NavBar = () => {
                   </li>
                   <li className='hire_us'>
                     <div className="dropdownMenu">
-                      <Link to="/hire-us" onClick={closeMenu} className='dropbtn'>Hire Us
+                      <Link to="#" onClick={closeMenu} className='dropbtn'>Hire Us
                         <span class="arrow-right">
                           <span class="ar_line">
                           </span><span class="ar_left">

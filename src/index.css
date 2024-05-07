@@ -2,9 +2,9 @@
     --white-color: #ffffff;
     --black-color: #191e25;
     --green-color: #54a154;
-    --dark-black-color:#292b32;
-    --paragraph-color:#212529;
-    --background-color-black-paragrpah:#bfbfbf;
+    --dark-black-color: #292b32;
+    --paragraph-color: #212529;
+    --background-color-black-paragrpah: #bfbfbf;
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
@@ -26,7 +26,7 @@ a {
 }
 
 body,
-p{
+p {
     font-size: 17px;
 }
 
@@ -38,6 +38,7 @@ p{
     align-items: center;
     padding: 20px 0px;
 }
+
 li.pages_navbar .dropdown-content {
     width: -moz-fit-content;
     width: fit-content;
@@ -46,6 +47,7 @@ li.pages_navbar .dropdown-content {
     position: absolute;
     left: 45% !important;
 }
+
 li.hire_us .dropdown-content {
     width: fit-content;
     max-width: 17% !important;
@@ -53,14 +55,17 @@ li.hire_us .dropdown-content {
     position: absolute;
     left: 79% !important;
 }
+
 .column img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
+
 a.dropbtn {
     text-transform: uppercase;
 }
+
 .inner_header_nav nav ul {
     display: flex;
     list-style: none;
@@ -70,6 +75,7 @@ a.dropbtn {
     text-transform: capitalize;
     letter-spacing: 1px;
 }
+
 .about-content h2 {
     color: var(--white-color);
     margin-bottom: 16px;
@@ -77,16 +83,19 @@ a.dropbtn {
     width: 100% !important;
     padding-right: 20px;
 }
+
 .container {
     width: 100%;
     max-width: 1220px !important;
     padding: 0;
     margin: 0 auto;
 }
+
 h2 {
     font-size: 35px !important;
     color: var(--white-color);
 }
+
 .clint_name_star {
     display: flex;
     justify-content: space-between;
@@ -125,12 +134,15 @@ h2 {
     padding-bottom: 0px;
     font-size: 45px;
 }
-.tstim_ine p{
+
+.tstim_ine p {
     color: var(--paragraph-color);
 }
+
 .clint_name_star .clint_name h3 {
-color: var(--black-color);
+    color: var(--black-color);
 }
+
 .testi_heding {
     width: 45%;
     margin-left: auto;
@@ -178,6 +190,7 @@ button.owl-next span,
 .content_of_founder h2 {
     color: var(--white-color);
 }
+
 .part-about subtitle {
     width: 25%;
     text-align: left;
@@ -193,6 +206,7 @@ button.owl-next span,
 .clint_name_star p {
     font-size: 13px;
 }
+
 .about-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -220,7 +234,7 @@ img.signature {
     font-weight: 300;
 }
 
-.logo_img  p {
+.logo_img p {
     color: var(--paragraph-color) !important;
 }
 
@@ -271,6 +285,7 @@ img.signature {
     opacity: 0;
     z-index: 999999999 !important;
 }
+
 .columnMenu img {
     width: 100%;
 }
@@ -340,18 +355,22 @@ img.signature {
     color: #000 !important;
     text-align: left;
 }
+
 .about_us_section {
     padding: 20px 0px 55px;
     width: 100%;
 }
+
 .services-inner {
     width: 100%;
     max-width: 1220px !important;
     margin: 0 auto;
 }
+
 .technology-main {
     padding: 70px 0px 30px !important;
 }
+
 body {
     background: var(--black-color);
     position: relative;
@@ -362,7 +381,7 @@ body {
     background-color: var(--black-color);
     color: var(--white-color);
     text-align: center;
-    padding:1rem;
+    padding: 1rem;
 }
 
 .image-sec img {
@@ -754,28 +773,35 @@ ul.portfolio-links li,
 ul.quick-links li {
     margin: 10px 0;
 }
+
 .form-group .MuiFormControl-root input {
     color: var(--black-color);
     font-size: 15px;
     font-weight: 600;
 }
+
 textarea#message::placeholder {
     color: #9b9b9b;
     font-size: 15px;
     font-weight: 600;
 }
+
 li.hire_us a:hover {
     color: var(--green-color) !important;
 }
+
 li.pages_navbar a:hover {
     color: var(--green-color) !important;
 }
-.dropbtn:hover{
+
+.dropbtn:hover {
     color: var(--green-color) !important;
 }
+
 .faq-inner .question span:hover {
     color: var(--green-color) !important;
 }
+
 .footer-inner ul li a,
 .footer-inner ul li a {
     color: var(--white-color);
@@ -831,6 +857,7 @@ label {
 .column.footer-address-main {
     max-width: 35%;
 }
+
 footer .column {
     flex: 1 1;
     padding: 20px 20px 20px 0px;
@@ -838,6 +865,7 @@ footer .column {
     max-width: -moz-fit-content;
     max-width: fit-content;
 }
+
 /***********************************************/
 .whatsapp_widget_wrapper {
     width: 300px;
@@ -1379,6 +1407,7 @@ button.form_submit_btn {
 h5.MuiTypography-root.MuiTypography-h5.css-ag7rrr-MuiTypography-root {
     color: var(--white-color) !important;
 }
+
 .contact_us_section h5,
 h6 {
     color: var(--background-color-black-paragrpah) !important;
@@ -1701,6 +1730,7 @@ div#contactForm {
     background-color: #f7f7f7;
     padding: 47px 0px 30px;
 }
+
 .join-team .join-team-inner {
     display: flex;
 }
@@ -1717,6 +1747,7 @@ div#contactForm {
 .join-team .content {
     max-width: 400px;
 }
+
 .join-team h3 {
     font-size: 35px;
     color: var(--black-color);
@@ -1786,12 +1817,14 @@ div#contactForm {
     width: 100%;
     border-radius: 20px;
 }
+
 .founder_section_content {
     display: flex;
     gap: 50px;
     align-items: center;
     padding: 0px 0px;
 }
+
 span.question_in {
     font-weight: 600;
 }
@@ -1820,6 +1853,7 @@ span.question_in {
 .content_of_founder p {
     color: var(--background-color-black-paragrpah);
 }
+
 .founder_section {
     padding: 70px 0px;
 }
@@ -1869,6 +1903,7 @@ span.question_in {
     padding-bottom: 9px;
     padding-top: 0px;
 }
+
 footer {
     padding: 60px 0px 20px !important;
 }
@@ -2075,6 +2110,7 @@ h1.rev_hi {
     grid-template-columns: repeat(2, 1fr);
     padding: 30px 0px 75px 0px;
 }
+
 .Subject-M p {
     text-align: right;
     width: -webkit-fill-available;
@@ -2104,9 +2140,11 @@ h1.rev_hi {
 .testimonial-inner .slick-track {
     gap: 80px;
 }
-#root > div.page > div.our-services > div > div.servic_provid > div > div:nth-child(1) > div > div > div.back > div.read_more {
+
+#root>div.page>div.our-services>div>div.servic_provid>div>div:nth-child(1)>div>div>div.back>div.read_more {
     MARGIN-TOP: 35PX !IMPORTANT;
 }
+
 .testimonial-inner .slick-slide.slick-active.slick-center.slick-current {
     width: 850px !important;
     opacity: 1;
@@ -2148,10 +2186,11 @@ h1.rev_hi {
 }
 
 .faq-inner .question span {
-color: var(--black-color);
+    color: var(--black-color);
 }
+
 .faq-main h2 {
-    color:var(--black-color);
+    color: var(--black-color);
     line-height: 1.2;
     padding-left: 15px;
     text-align: left;
@@ -2316,17 +2355,21 @@ button.back_btn_placement_traning:hover {
     transform: scale(1.1);
     transition: 0.4s;
 }
+
 li.review_nav .row .col-md-6 {
     text-align: left !important;
 }
+
 /********** Tushar css End here ***********/
 .header_btn:hover {
     background: linear-gradient(to right, #96d358 0%, #89c957 50%, #2aa961 100%) !important;
 }
+
 li.review_nav .dropdown-content {
     width: 55% !important;
     left: 45%;
 }
+
 .header_btn {
     border: none;
     border-radius: 10px;
@@ -2335,12 +2378,14 @@ li.review_nav .dropdown-content {
     text-transform: uppercase;
     background: #509e53 !important;
 }
+
 .header_btn a {
     color: var(--white-color) !important;
     letter-spacing: 0.5px;
     font-size: 15px !important;
 }
- .button_slide {
+
+.button_slide {
     background: #54a154;
     padding: 8px 12px;
     border-radius: 8px;
@@ -2360,7 +2405,7 @@ li.review_nav .dropdown-content {
     color: var(--white-color);
     transition: 2s;
     text-decoration: none;
-}  
+}
 
 .read-btnn {
     text-align: center;
@@ -2407,9 +2452,11 @@ div#successMsg {
     background-color: var(--white-color) !important;
     padding: 80px 0px;
 }
+
 .faq_Contact_Sec .container {
     display: flex;
 }
+
 .dropdown-content .service_img a:hover {
     color: var(--green-color) !important;
 }
@@ -2618,17 +2665,20 @@ header.sticky {
     background: var(--black-color);
     box-shadow: 0px 0px 3px 0px var(--white-color) !important;
 }
+
 /* luc */
 .aboutInfo-section .about-content .container {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
+
 .page-about .aboutInfo-section .about-content .container {
     display: block !important;
     justify-content: space-between;
     gap: 10px;
 }
+
 .about_page .about_project .about-content {
     flex-direction: column;
     gap: 0px;
@@ -2646,12 +2696,14 @@ header.sticky {
     color: #000;
     font-weight: 700 !important;
 }
+
 .about_page {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     padding: 20px 0px 20px;
 }
+
 .aboutInfo-section .about_project .about-content h1 {
     color: var(--white-color);
     font-weight: 700 !important;
@@ -2765,52 +2817,63 @@ header.sticky {
     width: 100% !important;
     max-width: 100% !important;
 }
+
 li.hire_us .dropdown-content {
     max-width: 55% !important;
     left: 45% !important;
 }
+
 .service_img.pph_icon .dropdown-content {
     display: none;
 }
+
 .service_img.pph_icon:hover .dropdown-content {
     display: block !important;
 }
+
 .service_img.pph_icon .dropdown-content {
-    box-shadow: inset 0 0 5px 0 #fff!important;
+    box-shadow: inset 0 0 5px 0 #fff !important;
     margin-left: 14px;
-    max-width: 460px!important;
+    max-width: 460px !important;
     top: 25px;
-    width: 460px!important;
-    z-index: 99999999!important;
+    width: 460px !important;
+    z-index: 99999999 !important;
 }
 
-.term_con_sec{
+.term_con_sec {
     background-color: var(--white-color);
 }
-.term_cond_main h3{
+
+.term_cond_main h3 {
     color: var(--dark-black-color);
     text-align: left;
 }
-.policy_con_sec{
+
+.policy_con_sec {
     background-color: var(--white-color);
 }
-.term_cond_main p{
+
+.term_cond_main p {
     color: var(--dark-black-color);
 }
+
 .privacy_policy_main h3 {
     color: var(--dark-black-color);
     text-align: left;
     margin-top: 20px;
 }
+
 .privacy_policy_main p {
     color: var(--dark-black-color);
     padding-bottom: 20px !important;
 }
+
 .main_term_condtion {
     background-color: #ebecec;
     padding: 75px 0px;
     box-shadow: inset 0px 0px 100px 0px #ccc !important;
 }
+
 .privacy_policy_main {
     background: #ffff;
     width: 80%;
@@ -2818,9 +2881,62 @@ li.hire_us .dropdown-content {
     padding: 50px 50px 30px 50px;
     box-shadow: 0px 0px 6px 0px #ccc;
 }
+
 .dropdown-content.fiverr_navbar {
     top: 50% !important;
 }
-.dropdown-content.guru_navbar{
+
+.dropdown-content.guru_navbar {
     top: 70% !important;
+}
+
+.contact_form .MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.css-953pxc-MuiInputBase-root-MuiInput-root {
+    margin-bottom: 20px;
+}
+
+.left_modal {
+    background-image: url('../public/get_in.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.left_modal h3.title_modal {
+    font-size: 35px;
+    padding: 20px 0px 0px 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.left_modal .des_modal {
+    text-align: left;
+    color: var(--dark-black-color);
+    padding: 0 0 0px 30px;
+}
+
+.blog_image {
+    width: 375px;
+    height: 246px;
+}
+
+.dateandauthor {
+    font-size: 14px;
+    color: #888888;
+}
+
+p.about_text {
+    color: #444444;
+}
+
+button.read_more {
+    padding: 10px;
+    border: none;
+    background-color: #1ea8aa;
+    color: white;
+}
+
+.main_entry {
+    padding: 15px 15px 8px;
 }

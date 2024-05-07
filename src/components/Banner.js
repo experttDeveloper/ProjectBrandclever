@@ -5,16 +5,22 @@ import '../Banner.css';
 // import banner_bg from '../Images/job-5.jpg';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Typed from "typed.js";
+import ContactUsModal from './ContactUsModal';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
 
   const [isHover, setIsHover] = useState(false);
-
+  const [open, setOpen] = useState(false)
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const handleOpen = () => {
+    setOpen(true)
+  }
 
   useEffect(() => {
     if (mounted) {
@@ -28,7 +34,7 @@ const Banner = () => {
         typeSpeed: 100,
         backSpeed: 60,
         loop: true,
-        showCursor:true
+        showCursor: true
       });
 
       return () => {
@@ -47,19 +53,25 @@ const Banner = () => {
       </video> */}
       <div className='container'>
         <div className="content">
-          <h1>Discover Unmatched <span className="typing" style={{color:"#54a154"}}></span></h1>
+          <h1>Discover Unmatched <span className="typing" style={{ color: "#54a154" }}></span></h1>
           {/* <h1>Discover Unmatched Web Development Service</h1> */}
           <p>Brandclever emerges as a top-tier IT force, delivering smart and proven solutions across the tech spectrum. With our extensive expertise and experience, we're quickly becoming the leader in providing innovative software services for every domain.</p>
-          <div className='exp_btn'>
-            <a href='#'
+          <div className='exp_btn' onClick={handleOpen}>
+            <Link to='#'
               onMouseEnter={() => setIsHover(true)}
               onMouseLeave={() => setIsHover(false)}
 
             >Consult Our Experts <span className='icon_span'><NavigateNextIcon className={isHover ? "consult_hover " : ""} /> </span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
+
+      {
+        open && (
+          <ContactUsModal useOpen={() => [open, setOpen]} />
+        )
+      }
 
     </div>
   );

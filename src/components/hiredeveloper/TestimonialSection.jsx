@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap';
 import reviews from '../../data/ClientReview.json'
+import { Rating } from '@mui/material';
 
 export default function Testimonial() {
   return (
@@ -27,11 +28,7 @@ export default function Testimonial() {
                           <h3 className="author">
                           {ele.name}
                           </h3>
-                          <img
-                            src="images/hire/shopifylogo.png"
-                            className="authorimagelogo"
-                            alt="brandclever"
-                          />
+                          <Rating value={ele.rating} readOnly/>
                         </div>
                       </div>
 
@@ -54,11 +51,7 @@ export default function Testimonial() {
                           <h3 className="author">
                           {ele.name}
                           </h3>
-                          <img
-                            src="images/hire/shopifylogo.png"
-                            className="authorimagelogo"
-                            alt="brandclever"
-                          />
+                           <Rating value={ele.rating} readOnly/>
                         </div>
                       </div>
 
@@ -82,11 +75,7 @@ export default function Testimonial() {
                           <h3 className="author">
                             {ele.name}
                           </h3>
-                          <img
-                            src="images/hire/shopifylogo.png"
-                            className="authorimagelogo"
-                            alt="brandclever"
-                          />
+                           <Rating value={ele.rating} readOnly/>
                         </div>
                       </div>
                     </Col>
