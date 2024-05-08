@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title1": "Software Development",
+            "image": "images/blog/1.png",
+            "title2": "Selecting the Ideal Software Development Partner for Your Business"
+        },
+        {
+            "id": 2,
+            "title1": "Web Design and Development",
+            "image": "images/blog/2.png",
+            "title2": "How to Leverage a Web Design and Development Agency to Boost Your Business"
+        },
+        {
+            "id": 3,
+            "title1": "Custom Software Solutions",
+            "image": "images/blog/3.png",
+            "title2": "10 Signs a Custom Clover App Development Agency is the Right Choice for You"
+        },
+        {
+            "id": 4,
+            "title1": "Tech Development Services",
+            "image": "images/blog/4.png",
+            "title2": "Discovering the Best POS App Development Services: A 10-Point Guide"
+        },
+        {
+            "id": 5,
+            "title1": "Ecommerce Platforms",
+            "image": "images/blog/5.png",
+            "title2": "Shopify vs. Magento: Choosing the Ideal Ecommerce Platform for Your Business"
+        },
+        {
+            "id": 6,
+            "title1": "Custom website Development",
+            "image": "images/blog/6.png",
+            "title2": "The Benefits of Custom Clover website Development for Your Business"
+        },
+        {
+            "id": 7,
+            "title1": "Backend Technologies",
+            "image": "images/blog/7.png",
+            "title2": "Comparing PHP and Python for Backend Development: Which One to Choose?"
+        },
+        {
+            "id": 8,
+            "title1": "PHP Programming",
+            "image": "images/blog/8.png",
+            "title2": "Enhancing Your PHP Skills: A Guide to Open-Source Projects and Libraries"
+        },
+        {
+            "id": 9,
+            "title1": "Digital Business Transformation",
+            "image": "images/blog/9.png",
+            "title2": "Why This Is the Best Time to Embrace Digital Transformation"
+        }
+    ]
+}
