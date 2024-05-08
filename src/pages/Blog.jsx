@@ -38,6 +38,7 @@ export default function Blog() {
                       <CardMedia
                         image={ele.image}
                         title="green iguana"
+                        sx={{height:"180px",width:"100%"}}
                       />
                       <CardContent>
                         <Typography gutterBottom variant="h5" component="div" className='blog_title1'>

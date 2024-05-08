@@ -2625,7 +2625,7 @@ div#successMsg {
 /* Style links inside the columns */
 .columnMenu a {
     float: none;
-    color: black;
+    color: var(--dark-black-color);
     padding: 16px;
     text-decoration: none;
     display: block;
@@ -2634,8 +2634,9 @@ div#successMsg {
 
 /* Add a background color on hover */
 .columnMenu a:hover {
-    color: #54a154 !important;
+    color: var(--green-color) !important;
 }
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -2989,7 +2990,10 @@ button.modal_button:hover {
     background-color: var(--background-color-black-paragrpah);
     padding: 80px 0px !important;
 }
-
+.MuiCardMedia-root.css-pqdqbj {
+    height: 180px;
+    width: 100%;
+}
 .blog_card {
     border: 1px solid #8b949e;
     border-radius: 5px;
