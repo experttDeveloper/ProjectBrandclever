@@ -100,7 +100,7 @@ export default function ContactUsModal({ useOpen }) {
                         </div>
                     </Col>
                     <Col md={6}>
-                        <div className='contact_form'>
+                        <div className='contact_form modal_form'>
                             <DialogTitle id="alert-dialog-title" sx={{ display: "flex", justifyContent: "space-between" }}>
                                 <Typography variant='h5' className='right_test_modal'>
                                 Request Free Consulatation

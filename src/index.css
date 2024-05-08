@@ -1935,6 +1935,7 @@ footer {
     padding: 100px 0px;
     background-color: #101010 !important;
 }
+
 .questionAnswer-main .answer {
     color: var(--white-color);
 }
@@ -2835,6 +2836,11 @@ li.hire_us .dropdown-content {
     z-index: 99999999 !important;
 }
 
+
+.modal_form .MuiFormControl-root.MuiFormControl-fullWidth.MuiTextField-root.css-feqhe6 {
+    margin-bottom: 20px;
+}
+
 .term_con_sec {
     background-color: var(--white-color);
 }
@@ -2886,7 +2892,7 @@ li.hire_us .dropdown-content {
 }
 
 .contact_form .MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.css-953pxc-MuiInputBase-root-MuiInput-root {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 }
 
 .left_modal {
@@ -2907,18 +2913,25 @@ li.hire_us .dropdown-content {
 
 .left_modal .des_modal {
     text-align: left;
-    color: var(--dark-black-color);
+    color: var(--dark-black-color) !important;
     padding: 0 0 0px 30px;
 }
+
+h5.MuiTypography-root.MuiTypography-h5.right_test_modal.css-zq6grw {
+    color: var(--dark-black-color);
+}
+
 .blog_image {
     width: 100%;
     height: 300px;
 }
+
 .section_blog {
-    box-shadow: 0 0 10px 0 rgba(167.88281250000003,167.88281250000003,167.88281250000003,.5);
+    box-shadow: 0 0 10px 0 rgba(167.88281250000003, 167.88281250000003, 167.88281250000003, .5);
     background-color: #f3f3f3;
     padding: 12px !important;
 }
+
 .dateandauthor {
     font-size: 14px;
     color: #888888;
@@ -2938,10 +2951,12 @@ button.read_more {
 .main_entry {
     padding: 15px 15px 8px;
 }
+
 .blog_main {
     background: #fdfdfd !important;
     padding: 75px 0px;
 }
+
 h5.MuiTypography-root.MuiTypography-h5.right_test_modal.css-ag7rrr-MuiTypography-root {
     color: var(--black-color) !important;
     text-transform: capitalize;
@@ -2951,6 +2966,7 @@ button.modal_button {
     color: white;
     background: #54a154;
 }
+
 button.modal_button:hover {
     color: white;
     background: linear-gradient(to right, #96d358 0%, #89c957 50%, #2aa961 100%) !important;

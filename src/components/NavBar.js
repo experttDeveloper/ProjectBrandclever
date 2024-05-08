@@ -381,6 +381,10 @@ const NavBar = () => {
                               <img src='images/menus/indeed.png' alt='about page' height="26px" width="26px" />
                               <Link to="https://in.indeed.com/cmp/Brandclever/reviews" target="_blank">Indeed</Link>
                             </div>
+                            <div className='service_img'>
+                              <img src='images/menus/glassdor.png' alt='about page' height="26px" width="26px" />
+                              <Link to="https://www.glassdoor.co.in/Overview/Working-at-Brandclever-in-EI_IE7371543.11,25.htm" target="_blank">Glassdoor</Link>
+                            </div>
                           </Col>
                           <Col md={8}>
 
