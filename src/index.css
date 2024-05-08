@@ -2920,42 +2920,10 @@ li.hire_us .dropdown-content {
 h5.MuiTypography-root.MuiTypography-h5.right_test_modal.css-zq6grw {
     color: var(--dark-black-color);
 }
-
-.blog_image {
-    width: 100%;
-    height: 300px;
-}
-
-.section_blog {
-    box-shadow: 0 0 10px 0 rgba(167.88281250000003, 167.88281250000003, 167.88281250000003, .5);
-    background-color: #f3f3f3;
-    padding: 12px !important;
-}
-
-.dateandauthor {
-    font-size: 14px;
-    color: #888888;
-}
-
 p.about_text {
     color: #444444;
 }
 
-button.read_more {
-    padding: 10px;
-    border: none;
-
-    color: white;
-}
-
-.main_entry {
-    padding: 15px 15px 8px;
-}
-
-.blog_main {
-    background: #fdfdfd !important;
-    padding: 75px 0px;
-}
 
 h5.MuiTypography-root.MuiTypography-h5.right_test_modal.css-ag7rrr-MuiTypography-root {
     color: var(--black-color) !important;
@@ -2971,4 +2939,46 @@ button.modal_button:hover {
     color: white;
     background: linear-gradient(to right, #96d358 0%, #89c957 50%, #2aa961 100%) !important;
     transition: 2s;
+}
+.blog_main {
+    background-color: var(--background-color-black-paragrpah);
+    padding: 80px 0px !important;
+}
+.blog_card {
+    border: 1px solid #8b949e;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.blog_card .css-16cvb1l-MuiCardMedia-root {
+    border-radius: 5px;
+    height: 180px;
+    box-shadow: 0px 0px 1px 0px #000;
+}
+.blog_card .css-h93ljk-MuiTypography-root {
+    color: #509e53;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    padding: 10px 0px;
+}
+.blog_card  p.MuiTypography-root.MuiTypography-body2.blog_title2.css-r40f8v-MuiTypography-root {
+    font-size: 15px;
+    color:var(--paragraph-color);
+    padding-bottom: 10px !important;
+    text-shadow: 0px 0px 1px;
+}
+.blog_read_more {
+    border-radius: 3px !important;
+    cursor: pointer !important;
+    color: #509e53 !important;
+    font-weight: 700 !important;
+    padding: 8px 30px !important;
+    text-transform: uppercase;
+    margin-bottom: 25px !important;
+    border: 2px solid #509e53 !important;
+    margin-left: 8px !important;
+}
+.blog_read_more:hover {
+background:linear-gradient(to right, #96d358 0%, #89c957 50%, #2aa961 100%) !important;
+border:none  !important;
+color:#fff !important;
 }
