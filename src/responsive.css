@@ -1709,6 +1709,14 @@
     }
   }
 
+  @media (max-width: 768px) { /* Tablet breakpoint */
+    .main-heading_title {
+      font-size: 0.8em; /* Adjust text size */
+    }
+  }
 
-
-
+  @media (max-width: 480px) { /* Mobile breakpoint */
+    .main-heading_title {
+      font-size: 0.7em; /* Further adjustment for small screens */
+    }
+  }

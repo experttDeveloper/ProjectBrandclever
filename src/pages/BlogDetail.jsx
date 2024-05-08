@@ -1,13 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TopHeader from '../components/TopHeader'
 import FaqSection from '../components/hiredeveloper/FaqSection'
 import { Container } from 'react-bootstrap'
+import blogs from '../data/Blog.json'
+import { useParams } from 'react-router-dom'
 
 export default function BlogDetail() {
+    const { title } = useParams();
+
+    useEffect(() => {
+
+        const modifyTitle = title.replace(/-/g, " ");
+        if (modifyTitle) {
+            const blogData = blogs.data.find((item) => item.title2.toLowerCase().includes(modifyTitle.toLowerCase()));
+            console.log("blogData", blogData)
+        }
+
+    }, [])
+
+
     return (
         <div>
             <TopHeader title="blog details page" />
-           <Container>
+
+            {/* <Container>
                 <div className="section_innerblog">
                     <div className="bg_img">
                         <img src="../images/service/design_test1.avif" alt="" className="bg_img" />
@@ -220,7 +236,7 @@ export default function BlogDetail() {
                                 answer: "Although Shopify has a defined structure, it allows for significant customization. Experts can modify themes, implement custom code, and use various apps to create a wide array of design and functionality features, adapting the platform to meet your specific business requirements."
                             }
                         ]}
-                    />
+                    /> */}
         </div>
     )
 }

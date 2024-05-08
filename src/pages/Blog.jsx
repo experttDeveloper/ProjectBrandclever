@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TopHeader from '../components/TopHeader'
 import { Col, Container, Row } from 'react-bootstrap'
 import Card from '@mui/material/Card';
@@ -8,82 +8,62 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
+import blogs from '../data/Blog.json'
 
 export default function Blog() {
+
+  const [visibleBlogs, setVisibleBlogs] = useState(6);
+
+  const loadMoreBlogs = () => {
+    setVisibleBlogs(visibleBlogs + 3); // Load 3 more blogs
+  };
+
+  const convertTitleToURL = (title) => {
+    return title.toLowerCase().replace(/\s+/g, '-'); // Convert to lowercase and replace spaces with dashes
+  };
+
   return (
     <div>
-      <TopHeader title={"Blogs"} />
+      <TopHeader title={"Blogs"} description={"Navigating Offshore Software Development: What You Should Know"} />
       <div className='blog_main'>
         <Container>
           <Row>
-            <Col md={4}>
-              <Card className='blog_card'>
-                <CardMedia
-                  image="https://apidots.com/wp-content/uploads/2024/04/how-to-choose-the-right-software-development-company.jpg"
-                  title="green iguana"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" className='blog_title1'>
-                    Software Development
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary" className='blog_title2'>
-                    IT Outsourcing: How to Choose the Right Software Development Company
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Link to="#">
-                    <Button className='blog_read_more'>read more</Button>
-                  </Link>
-                </CardActions>
-              </Card>
-            </Col>
+            {
+              blogs.data.slice(0,visibleBlogs).map((ele, key) => {
+                const blogURL = `/blog/${convertTitleToURL(ele.title2)}`;
 
-            <Col md={4}>
-              <Card className='blog_card'>
-                <CardMedia className='top_header_card'
-                  image="https://apidots.com/wp-content/uploads/2024/04/how-to-choose-the-right-software-development-company.jpg"
-                  title="green iguana"
-                />
-                  <div className='heading_btn_blog_page'>
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" className='blog_title1'>
-                    Software Development
-                  </Typography>
-                    
-                  <Typography variant="body2" color="text.secondary" className='blog_title2'>
-                    IT Outsourcing: How to Choose the Right Software Development Company
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Link to="#">
-                    <Button className='blog_read_more'>read more</Button>
-                  </Link>
-                </CardActions>
-                </div>
-              </Card>
-            </Col>
-
-            <Col md={4}>
-              <Card className='blog_card'>
-                <CardMedia
-                  image="https://apidots.com/wp-content/uploads/2024/04/how-to-choose-the-right-software-development-company.jpg"
-                  title="green iguana"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" className='blog_title1'>
-                    Software Development
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary" className='blog_title2'>
-                    IT Outsourcing: How to Choose the Right Software Development Company
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Link to="#">
-                    <Button className='blog_read_more'>read more</Button>
-                  </Link>
-                </CardActions>
-              </Card>
-            </Col>
+                return (
+                  <Col md={4} key={key}>
+                    <Card className='blog_card'>
+                      <CardMedia
+                        image={ele.image}
+                        title="green iguana"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" className='blog_title1'>
+                          {ele.title1}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary" className='blog_title2'>
+                          {ele.title2}
+                        </Typography>
+                      </CardContent>
+                      <CardActions>
+                        <Link to={blogURL}>
+                          <Button className='blog_read_more'>read more</Button>
+                        </Link>
+                      </CardActions>
+                    </Card>
+                  </Col>
+                )
+              })
+            }
+          </Row>
+          <Row className="text-center mt-4">
+            {visibleBlogs < blogs.data.length && (
+              <Col>
+                <Button onClick={loadMoreBlogs} variant="contained" className='load_mor'>Load More</Button>
+              </Col>
+            )}
           </Row>
         </Container>
       </div>

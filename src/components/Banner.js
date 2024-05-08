@@ -29,7 +29,8 @@ const Banner = () => {
           "Web Development Service",
           "Web Design Service",
           "CMS Solution Service",
-          "Graphic Design Service"
+          "Graphic Design Service",
+          "Digital Marketing"
         ],
         typeSpeed: 100,
         backSpeed: 60,

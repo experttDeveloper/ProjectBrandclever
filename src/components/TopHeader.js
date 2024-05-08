@@ -1,15 +1,23 @@
 import React from 'react'
 
-export default function TopHeader({ title,description}) {
+export default function TopHeader({ title, description }) {
 
     return (
         <div>
-            <section className='main_header'>
-                <div className='main-heading_title'>
+            <div class="main_header">
+                <img src="/images/about/main_banner.png" alt="brandclever top image" class="main_header_background-image" />
+                <div class="main-heading_title">
                     <h1>{title}</h1>
                     <p>{description}</p>
+                    
                 </div>
-            </section>
+            </div>
+            {/* <section className='main_header'>
+                <img src='images/about/aboutbanner.jpg' />
+                <div className='main-heading_title'>
+                    <h1>{title}</h1>
+                </div>
+            </section> */}
         </div>
     )
 }
