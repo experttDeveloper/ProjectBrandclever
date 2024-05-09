@@ -62,7 +62,7 @@ export default function Blog() {
           <Row className="text-center mt-4">
             {visibleBlogs < blogs.data.length && (
               <Col>
-                <Button onClick={loadMoreBlogs} variant="contained" className='load_mor'>Load More</Button>
+                <Button onClick={loadMoreBlogs}  className='get_quote_btn'>Load More</Button>
               </Col>
             )}
           </Row>

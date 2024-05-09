@@ -30,7 +30,7 @@ export default function UpdatedService() {
                                     <div class="ctm_hex_dv2">
                                         <Link to={service.url}>
                                             <div class="ctm_hex_dv3" id="bg_inner_bx1">
-                                                <img src={service.icon}  alt={service.title}/>
+                                                <img src={service.icon} alt={service.title} />
                                                 <span class="text-center fs-20 fw-500">{service.title}</span>
                                             </div>
                                         </Link>
@@ -46,7 +46,7 @@ export default function UpdatedService() {
                                     <div class="ctm_hex_dv2">
                                         <Link to={service.url}>
                                             <div class="ctm_hex_dv3" id="bg_inner_bx4">
-                                                <img src={service.icon} alt={service.title}/>
+                                                <img src={service.icon} alt={service.title} />
                                                 <span class="text-center fs-20 fw-500">{service.title} </span>
                                             </div>
                                         </Link>
@@ -63,7 +63,7 @@ export default function UpdatedService() {
                                     <div class="ctm_hex_dv2">
                                         <Link to={service.url}>
                                             <div class="ctm_hex_dv3" id="bg_inner_bx1">
-                                                <img src={service.icon} alt={service.title}/>
+                                                <img src={service.icon} alt={service.title} />
                                                 <span class="text-center fs-20 fw-500">{service.title}</span>
                                             </div>
                                         </Link>
@@ -73,38 +73,25 @@ export default function UpdatedService() {
                         })}
                     </div>
                 </div>
-                        <div className='Responsive_section_service'>
-                            <Container>
-                                <div className='Main_service'>
-                                    <div className='Sub_main_siv'>
-                                        <img src=" images/service/website_develop.png" alt="responsive_images"/>
-                                        <h6>Web Development</h6>
-                                    </div>
-                                   
-                                    <div className='Sub_main_siv'>
-                                        <img src=" images/service/graphic_design.png" alt="responsive_images"/>
-                                        <h6>Graphic Design</h6>
-                                    </div>
-                                    <div className='Sub_main_siv'>
-                                        <img src=" images/service/cms_solution.png" alt="responsive_images"/>
-                                        <h6>CMS Solution</h6>
-                                    </div>
-                                    <div className='Sub_main_siv'>
-                                        <img src="images/service/content_strategy.png  " alt="responsive_images"/>
-                                        <h6>Framework</h6>
-                                    </div>
-                                    <div className='Sub_main_siv'>
-                                        <img src="images/service/mern_stack.png " alt="responsive_images"/>
-                                        <h6>Content Strategy</h6>
-                                    </div>
-                                    <div className='Sub_main_siv'>
-                                        <img src="images/service/digital_marketing.png " alt="responsive_images"/>
-                                        <h6>Digital Marketing</h6>
-                                    </div>
-                              
-                                </div>
-                            </Container>
+                <div className='Responsive_section_service'>
+                    <Container>
+                        <div className='Main_service'>
+                            {
+                                services.data.map((service, key) => {
+                                    return (
+                                        <div className='Sub_main_siv' key={key}>
+                                            <Link to={service.url}>
+                                                <img src={service.icon} alt="responsive_images" />
+                                                <h6>{service.title}</h6>
+                                            </Link>
+                                        </div>
+                                    )
+                                })
+                            }
+
                         </div>
+                    </Container>
+                </div>
             </div>
 
             <Portfolio />

@@ -96,7 +96,7 @@ export default class App extends Component {
             <Route path="/content-strategy" element={<ContentStrategy />} />
             <Route path="/framework" element={<Framework />} />
             <Route path="/cms-solution" element={<CMSSolution />} />
-            <Route path="/landing-page" element={<LandingPage />} />
+            <Route path="/landing" element={<LandingPage />} />
             <Route path="/ecommerce" element={<Ecommerce />} />
             <Route path="/web-application-development" element={<WebApplication />} />
             <Route path="/software-testing" element={<SoftwareTesting />} />

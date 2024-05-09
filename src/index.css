@@ -1436,7 +1436,7 @@ h6 {
 }
 
 .contact_us_section .contact_us_second input {
-    background: #000 !important;
+    background: var(--black-color) !important;
     box-shadow: 0px 0px 5px 0px var(--white-color) !important;
     border-radius: 5px;
     color: var(--white-color);
@@ -1444,7 +1444,7 @@ h6 {
 
 .contact_us_section .contact_us_second textarea {
     color: var(--white-color);
-    background: #000 !important;
+    background: var(--black-color) !important;
     box-shadow: 0px 0px 5px 0px #ffffff !important;
     border-radius: 5px;
     border: none;
@@ -1452,6 +1452,13 @@ h6 {
 
 .contact_des h3 {
     padding-bottom: 20px;
+}
+h3.MuiTypography-root.MuiTypography-h3.css-18h9l83 {
+    background: linear-gradient(to right, #148156, #9fd959);
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 40px;
 }
 
 .contact_media {
@@ -1473,18 +1480,19 @@ h6 {
 }
 
 .contact_us_first {
+    border-bottom: 3px solid #54a154;
     color: white;
     padding: 50px 0px;
 }
 
 .contact_us_second {
-    border-bottom: 3px solid #54a154;
+   
     padding: 30px;
     color: var(--background-color-black-paragrpah);
 }
 
 .contact_us_section {
-    background: #000;
+    background: var(--black-color);
 }
 
 .contact_us_first img {

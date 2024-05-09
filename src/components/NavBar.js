@@ -7,73 +7,73 @@ import DoneAllIcon from '@mui/icons-material/DoneAll';
 const serviceMenus = [
   {
     id: 1,
-    icon: 'images/service/website_develop.png',
+    icon: '/images/service/website_develop.png',
     title: "Web Development",
     url: "/web-development"
   },
   {
     id: 2,
-    icon: 'images/service/website_design.png',
+    icon: '/images/service/website_design.png',
     title: "Website Designing",
     url: "/website-design"
   },
   {
     id: 3,
-    icon: 'images/service/graphic_design.png',
+    icon: '/images/service/graphic_design.png',
     title: "Graphic Design",
     url: "/graphic-design"
   },
   {
     id: 4,
-    icon: 'images/service/mern_stack.png',
+    icon: '/images/service/mern_stack.png',
     title: "Mern Stack",
     url: "/mern-stack"
   },
   {
     id: 5,
-    icon: 'images/service/content_strategy.png',
+    icon: '/images/service/content_strategy.png',
     title: "Content Strategy",
     url: "/content-strategy"
   },
   {
     id: 6,
-    icon: 'images/service/framework.png',
+    icon: '/images/service/framework.png',
     title: "Framework",
     url: "/framework"
   },
   {
     id: 7,
-    icon: 'images/service/cms_solution.png',
+    icon: '/images/service/cms_solution.png',
     title: "CMS Solutions",
     url: "/cms-solution"
   },
   {
     id: 8,
-    icon: 'images/service/landing_page.png',
+    icon: '/images/service/landing_page.png',
     title: "Landing Page",
-    url: "/landing-page"
+    url: "/landing"
   },
   {
     id: 9,
-    icon: 'images/service/ecommerce.png',
+    icon: '/images/service/ecommerce.png',
     title: "E-Commerce",
     url: "/ecommerce"
   },
   {
     id: 10,
-    icon: 'images/service/digital_marketing.png',
+    icon: '/images/service/digital_marketing.png',
     title: "Digital Marketing",
     url: "/digital-marketing"
   },
   {
     id: 11,
-    icon: 'images/service/web_application.png',
+    icon: '/images/service/web_application.png',
     title: "Web Application Development",
     url: "/web-application-development"
   },
   {
     id: 12,
-    icon: 'images/service/software_testing.png',
+    icon: '/images/service/software_testing.png',
     title: "Software Testing",
     url: "/software-testing"
   }
@@ -83,73 +83,73 @@ const serviceMenus = [
 const hireMenus = [
   {
     id: 1,
-    icon: 'images/hire/shopify.png',
+    icon: '/images/hire/shopify.png',
     title: "Hire Shopify Expert",
     url: "/hire-shopify-expert"
   },
   {
     id: 2,
-    icon: 'images/hire/magento.png',
+    icon: '/images/hire/magento.png',
     title: "Hire Magento Expert",
     url: "/hire-magento-expert"
   },
   {
     id: 3,
-    icon: 'images/hire/webflow.png',
+    icon: '/images/hire/webflow.png',
     title: "Hire Webflow Expert",
     url: "/hire-webflow-expert"
   },
   {
     id: 4,
-    icon: 'images/hire/wix.png',
+    icon: '/images/hire/wix.png',
     title: "Hire Wix Expert",
     url: "/hire-wix-expert"
   },
   {
     id: 5,
-    icon: 'images/hire/woo.png',
+    icon: '/images/hire/woo.png',
     title: "Hire Woo Expert",
     url: "/hire-woo-commerce-expert"
   },
   {
     id: 6,
-    icon: 'images/hire/wordpress.png',
+    icon: '/images/hire/wordpress.png',
     title: "Hire Wordpress Expert",
     url: "/hire-wordpress-expert"
   },
   {
     id: 7,
-    icon: 'images/hire/bigcommerce.png',
+    icon: '/images/hire/bigcommerce.png',
     title: "Hire BigCommerce Expert",
     url: "/hire-bigcommerce-expert"
   },
   {
     id: 8,
-    icon: 'images/hire/spaceaquare.png',
+    icon: '/images/hire/spaceaquare.png',
     title: "Hire Squarespace Expert",
     url: "/hire-squarespace-expert"
   },
   {
     id: 9,
-    icon: 'images/hire/laravel.png',
+    icon: '/images/hire/laravel.png',
     title: "Hire Laravel Developer",
     url: "/hire-laravel-developer"
   },
   {
     id: 10,
-    icon: 'images/hire/reactjs.png',
+    icon: '/images/hire/reactjs.png',
     title: "Hire ReactJS Developer",
     url: "/hire-reactjs-developer"
   },
   {
     id: 11,
-    icon: 'images/hire/talwind.png',
+    icon: '/images/hire/talwind.png',
     title: "Hire Tailwind CSS Developer",
     url: "/hire-tailwind-css-developer"
   },
   {
     id: 12,
-    icon: 'images/hire/digital_marketing_nav.png',
+    icon: '/images/hire/digital_marketing_nav.png',
     title: "Hire Digital Marketing expert",
     url: "/hire-digital-marekting-expert"
   },
@@ -247,7 +247,7 @@ const NavBar = () => {
                               }
                             </div>
                             <div className="col-md-6 serv_img">
-                              <img src={process.env.PUBLIC_URL + '/images/nav/service_nav.png'} alt='logo_img' />
+                              <img src={'/images/nav/service_nav.png'} alt='logo_img' />
                             </div>
                           </div>
                         </div>
@@ -293,7 +293,7 @@ const NavBar = () => {
                               }
                             </div>
                             <div className="col-md-6 serv_img">
-                              <img src={process.env.PUBLIC_URL + '/images/nav/hiring_nav.png'} alt='logo_img' />
+                              <img src={'/images/nav/hiring_nav.png'} alt='logo_img' />
                             </div>
                           </div>
                         </div>
@@ -316,23 +316,23 @@ const NavBar = () => {
                           <Row>
                             <Col md={4}>
                               <div className='service_img'>
-                                <img src='images/menus/about.png' alt='about page' height="32px" width="32px" />
+                                <img src='/images/menus/about.png' alt='about page' height="32px" width="32px" />
                                 <Link to="/about">About</Link>
                               </div>
                               <div className='service_img'>
-                                <img src='images/menus/career.png' alt='about page' height="32px" width="32px" />
+                                <img src='/images/menus/career.png' alt='about page' height="32px" width="32px" />
                                 <Link to="/career">Career</Link>
                               </div>
                               <div className='service_img'>
-                                <img src='images/menus/portfolio.png' alt='about page' height="32px" width="32px" />
+                                <img src='/images/menus/portfolio.png' alt='about page' height="32px" width="32px" />
                                 <Link to="/portfolio">Portfolio</Link>
                               </div>
                               <div className='service_img'>
-                                <img src='images/menus/blog.png' alt='about page' height="32px" width="32px" />
+                                <img src='/images/menus/blog.png' alt='about page' height="32px" width="32px" />
                                 <Link to="/blog">blog</Link>
                               </div>
                               <div className='service_img'>
-                                <img src='images/menus/privacy.png' alt='about page' height="32px" width="32px" />
+                                <img src='/images/menus/privacy.png' alt='about page' height="32px" width="32px" />
                                 <Link to="/traning-and-placement">Traning & Placement</Link>
                               </div>
                               
@@ -344,7 +344,7 @@ const NavBar = () => {
                             <Col md={8}>
 
                               <div className=" serv_img">
-                                <img src={process.env.PUBLIC_URL + '/images/nav/about_nav.png'} alt='logo_img' />
+                                <img src={'/images/nav/about_nav.png'} alt='logo_img' />
                               </div>
                             </Col>
                           </Row>
@@ -366,11 +366,11 @@ const NavBar = () => {
                         <Row>
                           <Col md={4}>
                             <div className='service_img'>
-                              <img src='images/menus/google.png' alt='about page' height="26px" width="26px" />
+                              <img src='/images/menus/google.png' alt='about page' height="26px" width="26px" />
                               <Link to="https://www.google.com/search?q=brandclever+google+reviews&sca_esv=8f14c8c94b33adc6&sxsrf=ACQVn0-YomRngzIUeWaPpQkocnbm6xeIvA%3A1714648454031&ei=hnUzZrmwAZKM4-EPrtK00AU&oq=brandclever+googl&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWJyYW5kY2xldmVyIGdvb2dsKgIIATIHECEYoAEYCjIHECEYoAEYCjIHECEYoAEYCkiVFVCjAVjVCnABeAGQAQCYAb4BoAHgB6oBAzAuNrgBAcgBAPgBAZgCB6ACnAjCAgcQIxiwAxgnwgIKEAAYsAMY1gQYR8ICEBAAGIAEGLADGEMYyQMYigXCAg4QABiABBiwAxiSAxiKBcICDRAAGIAEGLADGEMYigXCAgQQIxgnwgIKECMYgAQYJxiKBcICCxAuGIAEGMcBGK8BwgIFEAAYgATCAgIQJsICCBAAGIAEGKIEwgIFECEYoAGYAwCIBgGQBgmSBwMxLjagB6Ed&sclient=gws-wiz-serp#lrd=0x390fef8cd36051e7:0xdfdada19c12e600f,1,,,," target="_blank">Google</Link>
                             </div>
                             <div className='service_img'>
-                              <img src='images/menus/upwork.png' alt='about page' height="26px" width="26px" />
+                              <img src='/images/menus/upwork.png' alt='about page' height="26px" width="26px" />
                               <Link to="https://www.upwork.com/agencies/brandclever/" target="_blank">Upwork</Link>
                             </div>
                             {/* <div className='service_img'>
@@ -378,18 +378,18 @@ const NavBar = () => {
                               <Link to="#">LinkdIn</Link>
                             </div> */}
                             <div className='service_img'>
-                              <img src='images/menus/indeed.png' alt='about page' height="26px" width="26px" />
+                              <img src='/images/menus/indeed.png' alt='about page' height="26px" width="26px" />
                               <Link to="https://in.indeed.com/cmp/Brandclever/reviews" target="_blank">Indeed</Link>
                             </div>
                             <div className='service_img'>
-                              <img src='images/menus/glassdor.png' alt='about page' height="26px" width="26px" />
+                              <img src='/images/menus/glassdor.png' alt='about page' height="26px" width="26px" />
                               <Link to="https://www.glassdoor.co.in/Overview/Working-at-Brandclever-in-EI_IE7371543.11,25.htm" target="_blank">Glassdoor</Link>
                             </div>
                           </Col>
                           <Col md={8}>
 
                             <div className=" serv_img">
-                              <img src={process.env.PUBLIC_URL + '/images/nav/review_nav.png'} alt='logo_img' />
+                              <img src={'/images/nav/review_nav.png'} alt='logo_img' />
                             </div>
                           </Col>
                         </Row>
@@ -409,7 +409,7 @@ const NavBar = () => {
                         <Row>
                           <Col med={4}>
                             <div className='service_img pph_icon'>
-                              <img src='images/menus/upwork.png' alt='about page' height="26px" width="26px" />
+                              <img src='/images/menus/upwork.png' alt='about page' height="26px" width="26px" />
                               <div className='pph_nav'>
                                 <div className='dropdownMenu'>
                                   <Link to="#">Upwork</Link>
@@ -439,7 +439,7 @@ const NavBar = () => {
                               </div>
                             </div>
                             <div className='service_img pph_icon'>
-                              <img src='images/menus/pph.png' alt='about page' height="26px" width="26px" />
+                              <img src='/images/menus/pph.png' alt='about page' height="26px" width="26px" />
                               <div className='pph_nav'>
                                 <div className='dropdownMenu'>
                                   <Link to="#">PPH</Link>
@@ -452,7 +452,7 @@ const NavBar = () => {
                               </div>
                             </div>
                             <div className='service_img pph_icon'>
-                              <img src='images/menus/fiver.png' alt='about page' height="26px" width="26px" />
+                              <img src='/images/menus/fiver.png' alt='about page' height="26px" width="26px" />
                               <div className='pph_nav'>
                                 <div className='dropdownMenu'>
                                   <Link to="#">Fiverr</Link>
@@ -463,7 +463,7 @@ const NavBar = () => {
                               </div>
                             </div>
                             <div className='service_img pph_icon'>
-                              <img src='images/menus/guru.png' alt='about page' height="26px" width="26px" />
+                              <img src='/images/menus/guru.png' alt='about page' height="26px" width="26px" />
                               <div className='pph_nav'>
                                 <div className='dropdownMenu'>
                                   <Link to="#">Guru</Link>
@@ -478,7 +478,7 @@ const NavBar = () => {
                           <Col md={8}>
 
                             <div className=" serv_img">
-                              <img src={process.env.PUBLIC_URL + '/images/nav/hireus_nav.png'} alt='logo_img' />
+                              <img src={'/images/nav/hireus_nav.png'} alt='logo_img' />
                             </div>
                           </Col>
                         </Row>

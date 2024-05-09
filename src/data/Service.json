@@ -115,7 +115,7 @@
       "icon": "images/service/landing_page.png",
       "description": "Content Management Solutions using technologies like WordPress, Shopify, Magento 2.",
       "additionalInfo": "<ul><li>Content Creation and Storage</li><li>User Access Control</li><li>Workflow Automation</li><li>Multi-Platform Publishing</li><li>Content Analysis</li><li>Content Migration Services</li></ul>",
-      "url": "/landing-page",
+      "url": "/landing",
       "tools": [
         "PHP - CMS Development",
         "Custom PHP Framework Development",
