@@ -177,8 +177,28 @@ export default function Gallery() {
   return (
     <>
       <Container>
-
-     s
+        <div className="main-gallery">
+          <div className="big_fam">
+            <h2>We’re One Big Family</h2>
+          </div>
+          <div className="gallery">
+            <div className="vertical-tabs">
+              {tabs.map((tab) => (
+                <div
+                  key={tab.id}
+                  className={`tab ${activeTab === tab.id ? "active" : ""
+                    }`}
+                  onClick={() =>handleTabClick(tab.id)}
+                >
+                  {tab.label}
+                </div>
+              ))}
+            </div>
+            <div className="tab-content">
+              {tabContents[activeTab]}
+            </div>
+          </div>
+        </div>
       </Container>
     </>
   );
