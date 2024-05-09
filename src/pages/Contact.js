@@ -72,7 +72,7 @@ const Contact = () => {
                   Get in touch to brainstorm your business idea.
                 </Typography>
                 <Typography variant='p'>
-                  Maximize the impact of your digital product with our all-inclusive services. We cover everything from design and development to scaling for growth, customizing solutions to meet your business's specific needs. Let's work together to bring your vision to life.
+                Unlock the full potential of your digital venture with our comprehensive suite of services tailored to elevate your online presence. From conceptualization to execution, we're your trusted partner every step of the way. Our holistic approach encompasses meticulous design, agile development, and seamless scalability, ensuring your digital product not only meets but exceeds your expectations.
                 </Typography>
               </Col>
               <Col md={6} className='contact_video'>
