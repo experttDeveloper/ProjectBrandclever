@@ -7,6 +7,7 @@ import { Typography } from '@mui/material';
 import { EmailOutlined, LocationCityOutlined, PhoneAndroid } from '@mui/icons-material';
 import RoomIcon from '@mui/icons-material/Room';
 import SocialContact from '../components/SocialContact';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 
 const Contact = () => {
@@ -22,6 +23,7 @@ const Contact = () => {
 
   return (
     <>
+    <MetaTitleDes title={"Contact Us - Your Idea Our Innovation- BrandClever"} description={"Contact Brandclever if you are looking to talk to us about- Web development, Web design, Graphic design, CMS Solutions, or Digital Marketing! Call us Now"}/>
       <TopHeader
         title={"Connect With Us"}
         description={"Reach out to us with any questions, feedback, or inquiries you may have. We're here to help! Contact us today and let's start the conversation."}

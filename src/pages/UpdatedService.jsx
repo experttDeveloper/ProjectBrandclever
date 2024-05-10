@@ -6,13 +6,15 @@ import Portfolio from '../components/Portfolio';
 import { Link } from 'react-router-dom'
 import services from '../data/Service.json'
 import { Container } from 'react-bootstrap';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 
 export default function UpdatedService() {
 
-
     return (
         <div>
+            <MetaTitleDes title={"Development - CMS & Digital Marketing Service | Brandclever"} description={"BrandClever is one of the leading development & Digital Marketing service providers. We build custom platforms as a service for clients. Call today!"} />
+
             <TopHeader title="Our Service" description="Brandclever emerges as a top-tier IT force, delivering smart and proven 
                             solutions across the tech spectrum. With our extensive expertise and experience,
                             we're quickly becoming the leader in providing innovative software services for every 

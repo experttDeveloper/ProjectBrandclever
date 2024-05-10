@@ -6,6 +6,7 @@ import ProcessSection from '../components/hiredeveloper/ProcessSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ServiceSection from '../components/services/ServiceSection';
 import TestimonialSection from '../components/services/TestimonialSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 
 export default function Framework() {
@@ -13,6 +14,7 @@ export default function Framework() {
 
     return (
         <div className='development_service nests'>
+            <MetaTitleDes title={"Framework Development Agency in India! Brandclever"} description={"Brandclever is your friendly agency in India for FrameWork Development and Implement In every Segment."}/>
             <TopHeader title="Framework" description={"A framework provides a structured foundation with predefined components to streamline software development."} />
             <ContactSection
                 title={<>

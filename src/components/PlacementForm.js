@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import TopHeader from './TopHeader';
+import MetaTitleDes from './MetaTitleDes';
 
 export default class PlacementForm extends Component {
   constructor(props) {
@@ -932,6 +933,8 @@ export default class PlacementForm extends Component {
 
     return (
       <>
+        <MetaTitleDes title={"BrandClever - Training And Placement Program At Brandclever"} description={"Build your career path with confidence with brandClever top-tier Training And Placement Program. Achieve your professional goals and thrive competitive market."} />
+
         <TopHeader title={"Welcome to Our Training and Placement Program"} description={"Immerse yourself in a comprehensive curriculum designed to enhance your skills and prepare you for the dynamic world of web development."} />
         <div className="placement-page">
           <div className="placement-page-inner">

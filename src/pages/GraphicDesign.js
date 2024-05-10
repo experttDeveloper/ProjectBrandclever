@@ -6,6 +6,7 @@ import ProcessSection from '../components/hiredeveloper/ProcessSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ServiceSection from '../components/services/ServiceSection';
 import TestimonialSection from '../components/services/TestimonialSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 
 
@@ -15,6 +16,7 @@ export default function GraphicDesign() {
 
     return (
         <div className='development_service nests'>
+            <MetaTitleDes title={"Best Animation & Graphic Design Company in India"} description={"We are the best graphic design company in India. We have qualified professionals experienced in crafting impressive designs for your brand & fulfill your needs"}/>
             <TopHeader title="Graphic Design Service" description={"Graphic design creates visual content like logos, brochures, and digital graphics to communicate ideas and enhance brand identity."}/>
             <ContactSection
                 title={<>

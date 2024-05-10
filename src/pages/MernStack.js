@@ -6,6 +6,7 @@ import ProcessSection from '../components/hiredeveloper/ProcessSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ServiceSection from '../components/services/ServiceSection';
 import TestimonialSection from '../components/services/TestimonialSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 
 
@@ -17,6 +18,7 @@ export default function MernStack() {
 
     return (
         <div className='development_service nests'>
+            <MetaTitleDes title={"Mern Stack Development Service! Brandclever"} description={"Hire a Mern Stack Development! In full stack development with MERN, We mainly focus on building custom web and mobile applications using the MERN stack."}/>
             <TopHeader title="Mern Stack Service" description="MERN stack service develops full-stack web applications using MongoDB, Express.js, React, and Node.js, delivering robust and scalable solutions."/>
             <ContactSection
                 title={<>

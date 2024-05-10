@@ -6,6 +6,7 @@ import Counter from '../components/Counter';
 import JoinTeam from '../components/JoinTeam';
 import TopHeader from '../components/TopHeader';
 import { Container } from 'react-bootstrap';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 
 
@@ -24,6 +25,7 @@ export default class About extends Component {
     
     return (
       <>
+      <MetaTitleDes title={"BrandClever - Leading IT Service Provider In India"} description={"To Know More. How we different from others. We aim to provide ideal solutions to our clients using the latest innovative technology strategies."} />
         
         <TopHeader title="About us" description="Brandclever a premier fast growing company in India is committed
                     to hepling business become more adaptive competitive & profitable. We

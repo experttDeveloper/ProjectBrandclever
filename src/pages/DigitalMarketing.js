@@ -6,6 +6,7 @@ import ProcessSection from '../components/hiredeveloper/ProcessSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ServiceSection from '../components/services/ServiceSection';
 import TestimonialSection from '../components/services/TestimonialSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 
 
@@ -13,6 +14,7 @@ import TestimonialSection from '../components/services/TestimonialSection';
 export default function DigitalMarketing() {
     return (
         <div className='development_service nests'>
+            <MetaTitleDes title={"SEO & Digital Marketing Agency Brandclever No #1 SEO Agency"} description={"Brandclever is the best digital marketing company in India. Where we provide top solutions for all your digital marketing needs. Contact us today."}/>
             <TopHeader title="Digital Marketing Service" description="Digital marketing service promotes businesses online through channels like social media, email, SEO, and paid advertising to increase brand visibility and drive sales."/>
             <ContactSection
                 title={<>

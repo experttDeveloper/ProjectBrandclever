@@ -16,6 +16,7 @@ import HomePageScroll from '../components/HomePageScroll';
 import ClientReview from '../components/ClientReview';
 import Portfolio from '../components/Portfolio';
 import { Container } from 'react-bootstrap';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 const Home = () => {
 
@@ -53,6 +54,7 @@ const Home = () => {
 
   return (
     <>
+    <MetaTitleDes title={"BrandClever - Leading IT Service Provider In India"} description={"We are one of the leading IT service providers offering a range of CMS solutions, digital marketing, Graphic design & web development services worldwide."}/>
       <div className='page'>
         <Banner />
         <Tachnology techImages={technologyImages} />

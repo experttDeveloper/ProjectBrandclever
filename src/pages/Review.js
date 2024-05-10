@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import TopHeader from '../components/TopHeader';
 import { Rating } from '@mui/material';
 import reviews from '../data/ClientReview.json'
+import MetaTitleDes from '../components/MetaTitleDes';
 
 export default class Review extends Component {
 
@@ -9,6 +10,8 @@ export default class Review extends Component {
 
     return (
       <>
+        <MetaTitleDes title={"BrandClever - Client's Review And Feedback"} description={"Dive into insightful reviews and valuable feedback from satisfied customers, guiding you toward making informed decisions with confidence."} />
+
         <div className='review_clint'>
           <div className='review-page'>
             <div className='review-page-inner'>
