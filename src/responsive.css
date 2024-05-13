@@ -3,6 +3,9 @@
 /********** Tushar css Start here ***********/
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 1200px) {
+    .hiring_process {
+        height: auto !important;
+    }
 
     .front {
         height: fit-content !important;
@@ -121,6 +124,60 @@
 
 }
     @media screen and (max-width: 1024px) {
+        .second_box_hire {
+     margin-top: 0px !important;
+        }
+        .third_box_hire {
+            margin-top: 0px !important;
+        }
+        .first_box_hire {
+            margin-top: 0px !important;
+        }
+        .payment {
+            padding: 224px 0px 83px 0px !important;
+        }
+        .onbasispayment.row .alltext {
+            height: auto !important;
+        }
+        .hire_box_main.col-md-4 button.btn_contactus {
+            padding: 10px 30px;
+            font-size: 15px !important;
+        }
+        .industryDemands-items .col a, h3 {
+            padding-top: 0px !important;
+            font-size: 16px !important;
+        }
+        span.perhour {
+            font-size: 25px !important;
+        }
+        .services_shopify.row .col-md-4 .service_include {
+            padding: 30px 10px !important;
+        }
+        .expertitsetile {
+            margin-top: 20px;
+        }
+        .reviews_hiring.row .col-md-4 {
+            max-width: 100% !important;
+        }
+        .reviews_hiring.row {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .processofhiring.row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .processofhiring.row .col-md-3 {
+            max-width: 100% !important;
+        }
+        .form_inner {
+            margin-left: 0px !important;
+        }
+        .hiring_process {
+            padding: 20px 2px !important;
+            height: auto !important;
+
+        }
         .about_page .about_us_section .aboutInfo-section .about-content .container {
             width: 100% !important;
         }
@@ -1315,6 +1372,27 @@
     }
 }
 @media screen and (max-width: 480px) {
+
+    .main-heading_title {
+        width: 90% !important;
+    }
+    .form_shopify_hire .form_inner .card {
+        padding: 26px 10px 35px 10px;
+    }
+    .hire_box_main.col-md-4 .box_shadow {
+        height: auto !important;
+        margin-bottom: 60px !important;
+    }
+    .contact_shopify {
+        display: block !important;
+    }
+    .processofhiring.row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-heading_title {
+        font-size: 0.7em; 
+      }
     .banner.brand_banner_section.banner_img_hi h1 {
         height: 70px;
     }
@@ -1380,7 +1458,55 @@
         height: 145px !important;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {  
+    .menu-toggle.closeMenus {
+        position: absolute;
+        right: 14px;
+    }
+    .closeIcon {
+        position: absolute;
+        right: 14px;
+        top: 24px;
+    }
+    
+    .services_shopify.row {
+        padding-bottom: 0px;
+    }
+    .payment {
+        padding: 80px 0px 83px 0px !important;
+    }
+    .industryDemands-items .col a, h3 {
+        padding-top: 0px !important;
+        font-size: 20px !important;
+    }
+    .shopify_services {
+        padding-bottom: 35px;
+    }
+    .services_shopify.row .col-md-4 .service_include {
+
+        height: auto !important;
+    }
+    .main_header p {
+        width: 99%;
+        padding: 0px;
+        font-size: 14px;
+    }
+    .web_second_sdit .css-ewlbiu-MuiPaper-root-MuiCard-root {
+        max-width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+    .accordionfaq {
+        display: block !important;
+    }
+    .faqs .left_side_faq {
+        width: 100% !important;
+    }
+    .faqs .right_side_faq {
+        width: 100% !important;
+    }
+    .main-heading_title {
+        font-size: 0.8em; 
+      }
     .join-team .img-wrap-inner {
         padding: 5px 0px;
     }
@@ -1690,33 +1816,4 @@
 
 }
 
-@media (-moz-touch-enabled: 1), (min--moz-device-pixel-ratio: 0), (max-width: 1200px) {
-    .costner_page_web a:hover::after {
-        content: '\f08e';
-        position: absolute !important;
-        background: #54a154;
-        top: 36% !important;
-        font-family: 'Font Awesome 5 Pro';
-        left: 38% !important;
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        transition: all .4s;
-        color: #fff;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-    }
-  }
 
-  @media (max-width: 768px) { /* Tablet breakpoint */
-    .main-heading_title {
-      font-size: 0.8em; /* Adjust text size */
-    }
-  }
-
-  @media (max-width: 480px) { /* Mobile breakpoint */
-    .main-heading_title {
-      font-size: 0.7em; /* Further adjustment for small screens */
-    }
-  }

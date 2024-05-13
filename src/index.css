@@ -1306,7 +1306,7 @@ section#schedules .showcase {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #101010;
+    background-color: #fff;
     padding-bottom: 50px;
 }
 
@@ -1363,11 +1363,11 @@ input[type=radio] {
     font-weight: bold;
     color: var(--white-color);
 }
-
 .questionLable {
     color: var(--white-color);
     padding-bottom: 30px;
     text-align: center;
+    color: #191e25;
 }
 
 
@@ -1646,7 +1646,6 @@ h3.MuiTypography-root.MuiTypography-h3.css-18h9l83 {
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
 }
-
 .placement-inner .form-control {
     display: block;
     width: 100%;
@@ -1657,11 +1656,19 @@ h3.MuiTypography-root.MuiTypography-h3.css-18h9l83 {
     /* border: 1px solid #54a154; */
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    box-shadow: 0px 0px 7px 0px #a6c1a696;
+    box-shadow: 0px 0px 4px 0px #509e53;
     height: 50px !important;
     cursor: pointer;
+    border: none;
+    text-shadow: 0px 0px 30px;
+    font-weight: 600;
 }
-
+select#traing_exp{
+    color: #636363 !important;
+    text-shadow: 0px 0px 30px;
+    font-weight: 600;
+    font-size: 14px;
+}
 div#contactForm {
     padding-top: 0px !important;
     padding-right: 0px !important;
@@ -2276,7 +2283,6 @@ h1.rev_hi {
     color: var(--white-color);
     transition: 0.4s;
 }
-
 button.Next_btn_traning_and_placement {
     padding: 12px 50px;
     border: none;
@@ -2286,6 +2292,7 @@ button.Next_btn_traning_and_placement {
     background-color: transparent;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
+    background: #509e53;
 }
 
 button.Next_btn_traning_and_placement:hover {
@@ -2321,7 +2328,6 @@ section.heading .banner-heading.placement-banner h2 {
     border: 1px solid #54a154 !important;
     transition: 0.4s;
 }
-
 button.back_btn_placement_traning {
     display: block;
     padding: 10px 40px;
@@ -2335,6 +2341,7 @@ button.back_btn_placement_traning {
     height: 50px !important;
     cursor: pointer;
     font-weight: 700;
+    background: #509e53 !important;
 }
 
 button.back_btn_placement_traning:hover {
@@ -3047,4 +3054,65 @@ button.modal_button:hover {
     border: 2px solid #fff !important;
     border-radius: 3px !important;
     padding: 8px 30px !important;
+}
+.placement-page-inner label {
+    color: #383838 !important;
+    text-shadow: 0px 0px 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.placement-inner .form-control::placeholder {
+    color: #636363 !important;
+    text-shadow: 0px 0px 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.placement-inner .questionAnswer-main .answer label {
+    color: #494949 !important;
+    text-shadow: 0px 0px 30px;
+    font-size: 14px;
+}
+.blog_detail_form_main {
+    position: sticky;
+    top: 15% !important;
+    left: 0;
+    width: 100%;
+    color: #fff;
+}
+.blog_detail_form_main .card{
+    padding:40px 15px !important;
+        background-image: linear-gradient(rgb(80 158 83), #aae159) !important;
+      
+ 
+}
+.blog_detail_form_main .card button.btn.btn-contained {
+    padding: 14px 30px !important;
+    box-shadow: unset !important;
+    margin-top: 20px;
+}
+.blog_inner_page_data {
+    padding: 70px 0px;
+    background: #fff;
+}
+.one_side_text_inner_blog h3 {
+    font-size: 27px !important;
+    font-weight: 600;
+    margin: 20px 0px !important;
+}
+.one_side_text_inner_blog h4 {
+    font-size: 22px !important;
+    font-weight: 600;
+    margin: 20px 0px !important;
+}
+.contact_shopify {
+    color: #191e25 !important;
+}
+.form_inner .card p {
+    color: #fff;
+}
+.contact_shopify {
+    color: var(--background-color-black-paragrpah) !important;
+}
+.main_content_shopifypg.row .contact_shopify {
+    color: #191e25 !important;
 }
