@@ -8,11 +8,13 @@ import PaymentSection from '../components/hiredeveloper/PaymentSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ImageSection from '../components/hiredeveloper/ImageSection';
 import ExpertiesSection from '../components/hiredeveloper/ExpertiesSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 
 export default function HireWix() {
     return (
         <>
+         <MetaTitleDes title={"Choose Brandclever for Your Wix Project"} description={"Wix designers at Brandclever craft stunning, user-friendly websites tailored to your brand. Complete design solution for businesses."} />
             <div>
                 <TopHeader title="Get a Wix Expert Onboard"
                     description="Hiring a Wix expert brings in a pro to design, build, and optimize your Wix website, ensuring a customized, feature-rich, and user-friendly site." />
