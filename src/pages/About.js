@@ -7,6 +7,7 @@ import JoinTeam from '../components/JoinTeam';
 import TopHeader from '../components/TopHeader';
 import { Container } from 'react-bootstrap';
 import MetaTitleDes from '../components/MetaTitleDes';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -22,11 +23,16 @@ export default class About extends Component {
     const ownersign = process.env.PUBLIC_URL + '/images/signature.png';
 
     //const bannerImage = process.env.PUBLIC_URL + '/images/banner/about.png';
-    
+
+    const canonicalUrl = "https://brandclever.in/about"
+
     return (
       <>
-      <MetaTitleDes title={"BrandClever - Leading IT Service Provider In India"} description={"To Know More. How we different from others. We aim to provide ideal solutions to our clients using the latest innovative technology strategies."} />
-        
+        <Helmet>
+          <link rel="canonical" href={canonicalUrl} />
+        </Helmet>
+        <MetaTitleDes title={"BrandClever - Leading IT Service Provider In India"} description={"To Know More. How we different from others. We aim to provide ideal solutions to our clients using the latest innovative technology strategies."} />
+
         <TopHeader title="About us" description="Brandclever a premier fast growing company in India is committed
                     to hepling business become more adaptive competitive & profitable. We
                     have the Attitude, Skills, And Knowledge to deliver the Right Solutions."/>
