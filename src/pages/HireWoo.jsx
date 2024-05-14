@@ -7,6 +7,7 @@ import PaymentSection from '../components/hiredeveloper/PaymentSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ImageSection from '../components/hiredeveloper/ImageSection';
 import ExpertiesSection from '../components/hiredeveloper/ExpertiesSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 
 export default function HireWoo() {
@@ -16,6 +17,7 @@ export default function HireWoo() {
                 <TopHeader title="WooCommerce Solutions Expert"
                     description="A WooCommerce Solutions Expert designs and customizes WooCommerce-based e-commerce platforms, ensuring smooth setup, seamless user experience, and advanced features for scalable online stores."
                 />
+                 <MetaTitleDes title={"No.1 Best Woocommerce Development Company In India"} description={"Best Woocommerce Development Company In India- BrandClever- Design Your store In Woocommorce. Grow Your Business With Us."} />
             </div>
 
             <WhyChoose

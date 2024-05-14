@@ -6,10 +6,12 @@ import ProcessSection from '../components/hiredeveloper/ProcessSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ServiceSection from '../components/services/ServiceSection';
 import TestimonialSection from '../components/services/TestimonialSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 export default function WebApplication() {
     return (
         <div className='development_service nests'>
+             <MetaTitleDes title={"#1 Web development agency in India! Brandclever "} description={"Brandclever is the most trustworthy web application Development agency in India,  If you have any queries for your business, you are at the right place."}/>
             <TopHeader title="Web application development" description="Web application development creates interactive software that runs in a web browser."/>
             <ContactSection
                 title={<>

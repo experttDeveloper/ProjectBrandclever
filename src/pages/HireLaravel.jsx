@@ -8,10 +8,12 @@ import PaymentSection from '../components/hiredeveloper/PaymentSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ImageSection from '../components/hiredeveloper/ImageSection';
 import ExpertiesSection from '../components/hiredeveloper/ExpertiesSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 export default function HireLaravel() {
     return (
         <>
+         <MetaTitleDes title={"Hire Best Laravel development services company in India"} description={"Brandclever is a well know laravel web development company in India that offers the best Laravel Development Services at a reasonable price."} />
             <div>
                 <TopHeader title="Laravel Development : Hire Now"  description="Hire a Laravel developer to build scalable, robust web applications using the Laravel framework, ensuring high performance and efficient code." />
             </div>

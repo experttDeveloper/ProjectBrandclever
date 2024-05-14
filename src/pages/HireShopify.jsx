@@ -8,6 +8,7 @@ import PaymentSection from "../components/hiredeveloper/PaymentSection";
 import FaqSection from "../components/hiredeveloper/FaqSection";
 import ExpertiesSection from "../components/hiredeveloper/ExpertiesSection";
 import ImageSection from "../components/hiredeveloper/ImageSection";
+import MetaTitleDes from "../components/MetaTitleDes";
 
 export default function HireShopify() {
 
@@ -17,6 +18,7 @@ export default function HireShopify() {
       <div>
         <TopHeader title={"Hire a Shopify Consultant"} description={"Collaborate with top Shopify experts to enhance your e-commerce site. Our specialists offer custom themes, app integration, and more, ensuring your Shopify store is optimized for success."} />
       </div>
+      <MetaTitleDes title={"Hire A Shopify Consultant At Brandclever"} description={"Empower your business with our expert partners in India. Connect with brandclever, We offer a wide range of services tailored to your business needs."} />
       <WhyChoose
         title="Brandclever's Shopify Expertise?"
         description1="Looking to Hire Shopify Experts to take your online business to the next level?"

@@ -8,11 +8,13 @@ import PaymentSection from '../components/hiredeveloper/PaymentSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ImageSection from '../components/hiredeveloper/ImageSection';
 import ExpertiesSection from '../components/hiredeveloper/ExpertiesSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 
 export default function HireTalwindCss() {
   return (
     <>
+     <MetaTitleDes title={"Hire Top Remote Tailwind CSS Developers - BrandClever"} description={"Looking for skilled Tailwind CSS developers to join your team? Discover how BrandClever can help! Hire experts today."} />
       <div>
         <TopHeader title="hire-tailwind-css-expert"
           description="Hire a Tailwind CSS developer to create sleek, responsive, and highly customizable web interfaces with rapid development and flexibility in design." />

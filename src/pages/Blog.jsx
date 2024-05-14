@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
 import blogs from '../data/Blog.json'
+import MetaTitleDes from '../components/MetaTitleDes';
 
 export default function Blog() {
 
@@ -24,6 +25,7 @@ export default function Blog() {
 
   return (
     <div>
+      <MetaTitleDes title={"Blogs- Brandclever"} description={"Looking to explore Web Development, CMS Solutions, Web Design, Graphic design, Digital Marketing, and many more Blogs? Visit Brandclever Blog now."} />
       <TopHeader title={"Blogs"} description={"Navigating Offshore Software Development: What You Should Know"} />
       <div className='blog_main'>
         <Container>

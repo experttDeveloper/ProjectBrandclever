@@ -8,11 +8,13 @@ import PaymentSection from '../components/hiredeveloper/PaymentSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ImageSection from '../components/hiredeveloper/ImageSection';
 import ExpertiesSection from '../components/hiredeveloper/ExpertiesSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 
 export default function HireBigCommerce() {
     return (
         <>
+            <MetaTitleDes title={"Choose Brandclever for Expert BigCommerce Solutions"} description={"Achieve your e-commerce goals with Brandclever to transform your BigCommerce project. Tailored solutions for growth and customer satisfaction."} />
             <div>
                 <TopHeader title={"Connect with a Squarespace Expert"} description={"Hire a Squarespace expert to design, build, or customize your website, ensuring a polished, professional online presence."} />
             </div>

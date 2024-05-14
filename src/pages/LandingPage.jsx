@@ -6,11 +6,13 @@ import ProcessSection from '../components/hiredeveloper/ProcessSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ServiceSection from '../components/services/ServiceSection';
 import TestimonialSection from '../components/services/TestimonialSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 
 export default function LandingPage() {
     return (
         <div className='development_service nests'>
+             <MetaTitleDes title={"Brandclever-Landing Page Development Services In India"} description={"Your online success is our mission. We're a full landing page development company with the best people to bring your vision to life, from sales to conversion."} />
             <TopHeader title="Landing page Development" description={"A landing page is a single web page designed for marketing or promotional purposes, focused on driving specific user actions like sign-ups or sales."}/>
             <ContactSection
                 title={<>

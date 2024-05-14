@@ -8,10 +8,12 @@ import PaymentSection from '../components/hiredeveloper/PaymentSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ImageSection from '../components/hiredeveloper/ImageSection';
 import ExpertiesSection from '../components/hiredeveloper/ExpertiesSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 export default function HireWordpress() {
     return (
         <>
+        <MetaTitleDes title={"Customize WordPress Solutions for Your Business"} description={"Get stunning WordPress websites aligned with your goals. Unique designs, SEO, speed & security. Let's make your online presence shine! - Brandclever"} />
             <div>
                 <TopHeader title="Get a WordPress Consultant"
                     description="Hire a WordPress expert to build, customize, and optimize your WordPress site for top performance and functionality." />

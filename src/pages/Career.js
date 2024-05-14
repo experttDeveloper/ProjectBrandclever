@@ -3,6 +3,7 @@ import '../css/Career.css'
 import TopHeader from '../components/TopHeader';
 import { Button, TextField } from '@mui/material';
 import { Col, Container, Row } from 'react-bootstrap';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 const Career = () => {
   const sectionRef = React.useRef(null);
@@ -212,6 +213,7 @@ const Career = () => {
 
   return (
     <>
+    <MetaTitleDes title={"Grow with us and build your dream career! Brandclever"} description={"Discover your future with BrandClever. Embrace growth opportunities designed for you and start your journey toward career success and personal development."} />
       <div className='career-page'>
         <div className='career-page-inner'>
           <TopHeader

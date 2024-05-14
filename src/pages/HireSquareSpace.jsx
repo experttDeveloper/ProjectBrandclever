@@ -7,10 +7,12 @@ import ProcessSection from '../components/hiredeveloper/ProcessSection';
 import PaymentSection from '../components/hiredeveloper/PaymentSection';
 import ImageSection from '../components/hiredeveloper/ImageSection';
 import ExpertiesSection from '../components/hiredeveloper/ExpertiesSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 export default function HireSquareSpace() {
     return (
         <>
+        <MetaTitleDes title={"Hiring a Squarespace SEO Expert: Everything Need to Know"} description={"Brandclever Experts is a team of makes Squarespace websites and templates, you can get the best Squarespace designer with suitable pricing or cost"} />
             <div>
                 <TopHeader title="Connect with a Squarespace Expert"
                     description="Get expert assistance for your Squarespace projects. Our specialists offer custom website design, troubleshooting, and platform optimization to help you achieve your online goals." />
