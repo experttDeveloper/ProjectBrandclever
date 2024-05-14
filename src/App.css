@@ -106,15 +106,12 @@
     }
   }
 }
-
 .contact_us_section h3.MuiTypography-root.MuiTypography-h3.css-gepadz-MuiTypography-root {
   background: linear-gradient(to right, #148156, #9fd959);
   background-clip: text;
   color: transparent;
-  font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
 }
-
 @keyframes colorSlide {
   0% {
     background-color: #152a68;

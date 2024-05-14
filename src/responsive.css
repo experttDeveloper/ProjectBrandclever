@@ -124,6 +124,9 @@
 
 }
     @media screen and (max-width: 1024px) {
+        .contact_us_second .contact_media h6 {
+            width: 100%;
+        }
         .clint_name_star h3 {
             font-size: 18px !important;
         }
@@ -131,13 +134,17 @@
             top: 56%;
         }
         .second_box_hire {
-     margin-top: 0px !important;
+            margin-top:40px !important;
+            margin-bottom: 0px !important;
+            margin-left: 0px !important; 
         }
         .third_box_hire {
             margin-top: 0px !important;
         }
         .first_box_hire {
-            margin-top: 0px !important;
+             margin-top:40px !important;
+           margin-bottom: 0px !important;
+           margin-left: 0px !important; 
         }
         .payment {
             padding: 224px 0px 83px 0px !important;
@@ -446,9 +453,6 @@
         .inner_header_nav nav ul { 
             gap: 0px;
             margin: 0px; 
-        }
-        .button_slide { 
-            padding: 5px 10px; 
         }
         .inner_header_nav nav ul { 
             padding-left: 5px;
@@ -1380,6 +1384,13 @@
     }
 }
 @media screen and (max-width: 480px) {
+    .part-about subtitle {
+        font-size: 20px;
+    }
+    .privacy_policy_main {
+        padding: 50px 20px 30px;
+        width: 100%;
+    }
 
     .main-heading_title {
         width: 90% !important;
@@ -1462,11 +1473,34 @@
     }
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
+ 
     .screen_port {
         height: 145px !important;
     }
 }
 @media screen and (max-width: 768px) {  
+    .left_modal {
+        display: none;
+    }
+    .contact_video.col-md-6 #wrapper {
+        margin-top: 250px !important;
+        position: unset !important;
+
+
+
+        perspective: 1344px !important;
+        padding-bottom: 80px !important;
+    }
+    .contact_us_first {
+
+        padding: 50px 0px !important;
+    }
+    .contact_us_second {
+        padding: 60px 0px 0px 0px;
+    }
+    .contact_us_second .contact_media h6 {
+        gap: 5px;
+    }
     .css-12rl710-MuiPaper-root-MuiDialog-paper {
     margin: 0px !important;
     }

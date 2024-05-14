@@ -1111,7 +1111,9 @@ ul>li:hover .arrow-right {
     z-index: -9999;
     border-radius: 5px;
 }
-
+.contact_us_section .contact_us_second .container .col-md-6 form {
+    padding: 50px 0px 20px 0px   !important;
+}
 .get_hed_btn:hover::before,
 .get_hed_btn:hover::after {
     width: calc(96% + 6px);
@@ -1389,29 +1391,19 @@ button.form_submit_btn {
 .contactForm-inner .form-group {
     margin-bottom: 1rem;
 }
-
 .contact_video.col-md-6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 30px !important;
+}
+.contact_us_first h5.MuiTypography-root.MuiTypography-h5.css-ag7rrr-MuiTypography-root {
+    color: var(--dark-black-color) !important;
 }
 
-.contact_us_section h3.MuiTypography-root.MuiTypography-h3.css-gepadz-MuiTypography-root {
-    background: linear-gradient(to right, #148156, #9fd959);
-    background-clip: text;
-    color: transparent;
-    font-weight: 700;
-    font-size: 40px;
-}
-
-h5.MuiTypography-root.MuiTypography-h5.css-ag7rrr-MuiTypography-root {
-    color: var(--white-color) !important;
-}
-
-.contact_us_section h5,
-h6 {
+.contact_us_section h5, h6 {
     color: var(--background-color-black-paragrpah) !important;
-    font-size: 24px;
+    font-size: 21px;
     padding-top: 20px;
     padding-bottom: 5px;
 }
@@ -1434,18 +1426,16 @@ h6 {
 .contact_us_section .contact_us_second textarea::placeholder {
     color: #595959;
 }
-
 .contact_us_section .contact_us_second input {
     background: var(--black-color) !important;
-    box-shadow: 0px 0px 5px 0px var(--white-color) !important;
+    box-shadow: 0px 0px 3px 0px var(--white-color) !important;
     border-radius: 5px;
     color: var(--white-color);
 }
-
 .contact_us_section .contact_us_second textarea {
     color: var(--white-color);
     background: var(--black-color) !important;
-    box-shadow: 0px 0px 5px 0px #ffffff !important;
+    box-shadow: 0px 0px 3px 0px #ffffff !important;
     border-radius: 5px;
     border: none;
 }
@@ -1453,6 +1443,7 @@ h6 {
 .contact_des h3 {
     padding-bottom: 20px;
 }
+
 h3.MuiTypography-root.MuiTypography-h3.css-18h9l83 {
     background: linear-gradient(to right, #148156, #9fd959);
     background-clip: text;
@@ -1474,17 +1465,15 @@ h3.MuiTypography-root.MuiTypography-h3.css-18h9l83 {
 }
 
 .contact_us_first span.MuiTypography-root.MuiTypography-p.css-37jdci-MuiTypography-root {
-    color: var(--background-color-black-paragrpah);
+    color: var(--paragraph-color) !important;
     font-size: 17px;
     font-weight: 500;
 }
-
 .contact_us_first {
-    border-bottom: 3px solid #54a154;
     color: white;
-    padding: 50px 0px;
+    padding: 80px 0px !important;
+    background: #fff;
 }
-
 .contact_us_second {
    
     padding: 30px;
@@ -3120,4 +3109,8 @@ a {
 }
 button{
     padding: 8PX 30PX  !important;
+}
+.our-services .services-inner .read-btnn {
+    margin-bottom: 0px !important;
+    margin-top: -20px !important;
 }

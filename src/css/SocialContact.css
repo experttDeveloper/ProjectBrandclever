@@ -67,10 +67,8 @@
 #wrapper .box-area {
     transform: rotateX(90deg) rotateY(90deg);
 }
-
-
 #wrapper .button {
-    background: rgba(62,88,62,.253);
+    background: rgb(80 158 83 / 31%);
     border: 3px solid #fff;
     border-radius: 2px;
     color: #fff;
@@ -78,7 +76,7 @@
     padding: 125px 87px 80px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: all .2s ease-in-out;
+    transition: all 10.2s ease-in-out;
 }
 
 #wrapper .glow-button:hover {
