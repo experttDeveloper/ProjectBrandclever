@@ -7,12 +7,14 @@ import ProcessSection from "../components/hiredeveloper/ProcessSection";
 import PaymentSection from "../components/hiredeveloper/PaymentSection";
 import FaqSection from "../components/hiredeveloper/FaqSection";
 import ExpertiesSection from "../components/hiredeveloper/ExpertiesSection";
+import MetaTitleDes from '../components/MetaTitleDes';
 
 export default function HireDigitalMarketing() {
 
 
     return (
         <>
+         <MetaTitleDes title={"Hire The Best Digital Marketing Agency in India"} description={"Ready to Gear Up your online presence? Trust Brandclever skilled team for effective digital marketing strategies. Drive results today!"} />
             <div>
                 <TopHeader title="hire-digital-marketing-specialist"
                     description="Hire a digital marketing expert to boost your online presence, drive traffic, and increase customer engagement with targeted campaigns and strategies." />

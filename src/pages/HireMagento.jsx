@@ -8,6 +8,7 @@ import PaymentSection from '../components/hiredeveloper/PaymentSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ImageSection from '../components/hiredeveloper/ImageSection';
 import ExpertiesSection from '../components/hiredeveloper/ExpertiesSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 export default function HireMagento() {
     return (
@@ -16,6 +17,7 @@ export default function HireMagento() {
                 <TopHeader title="Recruit a Magento Developer"
                     description="A customer-centric website goes beyond good design—it understands your audience's needs and behavior to attract, engage, and convert visitors, driving customer loyalty." />
             </div>
+            <MetaTitleDes title={"Recruit Dedicated Magento Developer-Brandclever"} description={"Looking to hire a Magento developer? Our experts give advice and step-by-step instructions to help you navigate the process."} />
             <WhyChoose
                 title="Brandclever For Magento Development Service?"
                 description1="Brandclever offers a wide array of services for Magento development and e-commerce strategy."

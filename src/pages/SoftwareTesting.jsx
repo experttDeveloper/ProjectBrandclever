@@ -6,10 +6,12 @@ import ProcessSection from '../components/hiredeveloper/ProcessSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ServiceSection from '../components/services/ServiceSection';
 import TestimonialSection from '../components/services/TestimonialSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 export default function SoftwareTesting() {
     return (
         <div className='development_service nests'>
+            <MetaTitleDes title={"Quality Assurance (QA) & Software Testing  Services"} description={"At Brandclever, We provide end-to-end software testing services, leveraging global expertise and advanced automation tools to ensure quality. Get a free Quote"}/>
             <TopHeader title="Software testing" description="Software testing involves evaluating software to identify bugs, ensure functionality, and verify that it meets quality standards."/>
             <ContactSection
                 title={<>

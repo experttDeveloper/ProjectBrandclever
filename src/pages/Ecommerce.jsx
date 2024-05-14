@@ -6,11 +6,13 @@ import ProcessSection from '../components/hiredeveloper/ProcessSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ServiceSection from '../components/services/ServiceSection';
 import TestimonialSection from '../components/services/TestimonialSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 
 export default function Ecommerce() {
     return (
         <div className='development_service nests'>
+             <MetaTitleDes title={"E-Commerce Solutions for Your Store | Boost Conversions"} description={"Brandclever ECommerce Consultation - Looking for the best eCommerce Consulting that provides eCommerce consulting services in India & other parts of the world."} />
             <TopHeader title="Ecommerce service" description="Ecommerce development builds online shopping platforms with product listings, secure checkout, and customer management features."/>
             <ContactSection
                 title={<>

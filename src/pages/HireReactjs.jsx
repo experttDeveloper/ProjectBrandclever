@@ -8,10 +8,12 @@ import PaymentSection from '../components/hiredeveloper/PaymentSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ImageSection from '../components/hiredeveloper/ImageSection';
 import ExpertiesSection from '../components/hiredeveloper/ExpertiesSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 export default function HireReactjs() {
     return (
         <>
+          <MetaTitleDes title={"Hire the Best React.Js Developers in India | BrandClever"} description={"Enhance a custom website using ReactJS. We work with industries of all sizes company, from SMBs to enterprises, to design custom solutions. Reach Us Now!"} />
             <div>
                 <TopHeader title="Team-Up-with-ReactJS-Developer"
                     description="Hire a ReactJS developer to build dynamic, responsive web applications with robust performance and modern user interfaces." />
