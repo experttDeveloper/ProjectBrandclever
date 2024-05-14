@@ -45,10 +45,10 @@ const Contact = () => {
                 </div>
                 <div className='contact_media'>
                   <Typography variant="subtitle1">
-                    <PhoneAndroid />+91-9872711866
+                    <PhoneAndroid /><Link to='tel:+919872711866'>+91-9872711866 </Link>
                   </Typography>
                   <Typography variant='subtitle1'>
-                    <EmailOutlined />career@brandclever.in
+                    <EmailOutlined /><Link to='mailto:career@brandclever.in'>career@brandclever.in</Link>
                   </Typography>
                   <Typography variant='subtitle1'>
                     <RoomIcon />4th Floor, F-301, Bansal Tower, Phase 8B, Industrial Area, Sector 74, Brandclever, Sahibzada Ajit Singh Nagar, Punjab 160055

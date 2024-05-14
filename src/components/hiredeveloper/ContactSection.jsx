@@ -3,6 +3,7 @@ import { Col, Row } from 'react-bootstrap';
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import HireDeveloperForm from '../HireDeveloperForm';
+import { Link } from 'react-router-dom';
 
 export default function ContactSection({ title, description }) {
 
@@ -23,11 +24,16 @@ export default function ContactSection({ title, description }) {
                                 <div className="contact_shopify">
                                     <div className="whatsapp_shopify">
                                         <WhatsAppIcon />
+                                        <Link to="https://api.whatsapp.com/send?phone=919872711866">
                                         <p className="whatsapp_number">+91-9872711866</p>
+                                        </Link>
                                     </div>
                                     <div className="mail_shopify">
                                         <MailOutlineIcon />
+                                        <Link to="mailto:career@brandclever.in">
                                         <p className="email_id">career@brandclever.in</p>
+                                        </Link>
+                                     
                                     </div>
                                 </div>
                             </div>

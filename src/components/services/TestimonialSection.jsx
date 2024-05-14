@@ -8,7 +8,7 @@ export default function TestimonialSection({ heading, data }) {
         <div>
             <div className='web_second_sdit'>
                 <Container>
-                    <div style={{ padding: '20px' }}>
+                    <div className='service_testinm'>
                         <h2>{heading}</h2>
                         <Row>
                             {data.map((ele, key) => {

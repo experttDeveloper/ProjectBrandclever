@@ -6,10 +6,12 @@ import ProcessSection from '../components/hiredeveloper/ProcessSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ServiceSection from '../components/services/ServiceSection';
 import TestimonialSection from '../components/services/TestimonialSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 export default function WebDesigning() {
     return (
         <div className='development_service nests'>
+            <MetaTitleDes title={"Web Design Services | #1 Professional Web designer in India"} description={"Brandclever helps you to build custom website that contributes directly to your revenue through sales or leads, How can we help you? Contact US today!"} />
             <TopHeader title="Website Designing service" description="Website design creates attractive, user-friendly interfaces to enhance your online presence." />
             <ContactSection
                 title={<>

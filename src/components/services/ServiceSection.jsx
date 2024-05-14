@@ -8,7 +8,7 @@ export default function ServiceSection({ data }) {
         <div>
             <div className='development_main_full_div'>
                 <Container>
-                    <div style={{ padding: '20px' }}>
+                    <div>
                         <Row>
                             <Col md={6}>
                                 <h2>
@@ -30,7 +30,7 @@ export default function ServiceSection({ data }) {
                         </Row>
                     </div>
 
-                    <div style={{ padding: '20px' }}>
+                    <div>
                         <Row>
                             <Col md={6}>
                                 <img

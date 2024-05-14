@@ -6,6 +6,7 @@ import ProcessSection from '../components/hiredeveloper/ProcessSection';
 import FaqSection from '../components/hiredeveloper/FaqSection';
 import ServiceSection from '../components/services/ServiceSection';
 import TestimonialSection from '../components/services/TestimonialSection';
+import MetaTitleDes from '../components/MetaTitleDes';
 
 
 
@@ -15,6 +16,7 @@ export default function ContentStrategy() {
 
     return (
         <div className='development_service nests'>
+            <MetaTitleDes title={"Maximize Content That Converts And Drive Results! learn more"} description={"We utilize tools to streamline content creation, ensuring accuracy and efficiency in delivering valuable results. Let's boost your brand together"} />
             <TopHeader title="Content Strategy Service" description="Content strategy service involves planning, creating, and managing content to meet business goals, ensuring it aligns with brand voice and engages your audience."/>
             <ContactSection
                 title={<>

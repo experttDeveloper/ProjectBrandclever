@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../css/Career.css'
 import TopHeader from '../components/TopHeader';
 import { Button, TextField } from '@mui/material';
-import { Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 const Career = () => {
   const sectionRef = React.useRef(null);
@@ -214,134 +214,143 @@ const Career = () => {
     <>
       <div className='career-page'>
         <div className='career-page-inner'>
-          <TopHeader 
-          title="Grow Your Careers With Brandclever" 
-          description="Discover your future with BrandClever. Embrace growth opportunities designed for you and start your journey toward career success and personal development." />
+          <TopHeader
+            title="Grow Your Careers With Brandclever"
+            description="Discover your future with BrandClever. Embrace growth opportunities designed for you and start your journey toward career success and personal development." />
 
           <section className='why-join'>
-            <div className='why-main'>
-              <div className='why-content'>
-                <h2>Why Work with Brandclever ?</h2>
-                <p>
-                At BrandClever, we're dedicated to making a meaningful difference in people's lives through our innovative solutions. We're seeking individuals who resonate with our vision and actively contribute to it. Our inclusive workplace fosters open communication, collaboration, and equal opportunities for all.
-                </p>
-                <p>We're committed to continuous growth and always on the lookout for talented individuals who can help elevate both our company and themselves. Join us in raising the bar and unlocking your full potential.</p>
+            <Container>
+
+              <div className='why-main'>
+                <div className='why-content'>
+                  <h2>Why Work with Brandclever ?</h2>
+                  <p>
+                    At BrandClever, we're dedicated to making a meaningful difference in people's lives through our innovative solutions. We're seeking individuals who resonate with our vision and actively contribute to it. Our inclusive workplace fosters open communication, collaboration, and equal opportunities for all.
+                  </p>
+                  <p>We're committed to continuous growth and always on the lookout for talented individuals who can help elevate both our company and themselves. Join us in raising the bar and unlocking your full potential.</p>
+                </div>
+                <div className='why-image'>
+                  <img src="images/careerteam.png" alt="career img" />
+                </div>
               </div>
-              <div className='why-image'>
-                <img src="images/careerteam.png" alt="career img" />
-              </div>
-            </div>
+            </Container>
           </section>
           <section ref={sectionRef} className='job-vacancy'>
-          <Container>
-            <div className='left-vacancyCnt'>
-              <h3 className='apply_now'>Apply Now</h3>
-              <h4>Grow with us and build your dream career! Explore new opportunities and make your career goals a reality with us!</h4>
-              {CareerApi.map(job => (
-                <div key={job.id} className='faq-item' onClick={() => toggleDescription(job.id)}>
-                  <h3>{job.position} <span><i className="fa fa-plus" aria-hidden="true"></i></span></h3>
-                  {openId === job.id && (
-                    <>
-                      <p>{job.description}</p>
-                      <p><strong>Education: </strong>{job.education}</p>
-                      <p><strong>Role Category: </strong>{job.roleCategory}</p>
-                      <p><strong>Experience: </strong>{job.experience}</p>
-                      <p><strong>Vacancies: </strong>{job.vacancies}</p>
-                    </>
-                  )}
-                </div>
-              ))}
-            </div>
-            <div className='right-vacancyCnt'>
-              <form onSubmit={handleSubmit} className='career_form'>
-                {/* Your form inputs go here */}
-                <div className="form-group">
-                  <TextField
-                    label="Your Full Name"
-                    fullWidth
-                    type="text"
-                    placeholder="Name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                  />
-                  <span className='error-message'>{formErrors.name}</span>
-                </div>
-                <div className="form-group">
-                  <TextField
-                    label="Email"
-                    fullWidth
-                    type="email"
-                    placeholder="Email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                  />
-                  <span className='error-message'>{formErrors.email}</span>
-                </div>
-                <div className="form-group">
-                  <TextField
-                    fullWidth
-                    label="Position"
-                    type="text"
-                    id="position"
-                    name="position"
-                    value={formData.position}
-                    onChange={handleChange}
-                    placeholder='Position'
-                  />
-                  <span className="error-message">{formErrors.position}</span>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="cv">Upload CV</label>
-                  <TextField
-                    fullWidth
-                    type="file"
-                    id='cv'
-                    name='files'
-                    onChange={handleChange}
-                  />
-                  <span className='error-message'>{formErrors.files}</span>
-                </div>
-                <div className="form-group">
-                  <TextField
-                    label="Phone Number"
-                    fullWidth
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder='Phone number'
-                  />
-                  <span className='error-message'>{formErrors.phone}</span>
-                </div>
-                <div className="form-group">
-                  <TextField
-                    label="Experience"
-                    fullWidth
-                    type="number"
-                    id="experience"
-                    name="experience"
-                    value={formData.experience}
-                    onChange={handleChange}
-                    placeholder='Total experience'
-                  />
-                  <span className='error-message'>{formErrors.experience}</span>
+            <Container>
+              <Row>
+                <Col md={6}>
+                  <div className='left-vacancyCnt'>
+                    <h3 className='apply_now'>Apply Now</h3>
+                    <h4>Grow with us and build your dream career! Explore new opportunities and make your career goals a reality with us!</h4>
+                    {CareerApi.map(job => (
+                      <div key={job.id} className='faq-item' onClick={() => toggleDescription(job.id)}>
+                        <h3>{job.position} <span><i className="fa fa-plus" aria-hidden="true"></i></span></h3>
+                        {openId === job.id && (
+                          <>
+                            <p>{job.description}</p>
+                            <p><strong>Education: </strong>{job.education}</p>
+                            <p><strong>Role Category: </strong>{job.roleCategory}</p>
+                            <p><strong>Experience: </strong>{job.experience}</p>
+                            <p><strong>Vacancies: </strong>{job.vacancies}</p>
+                          </>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </Col>
+                <Col md={6}>
+                  <div className='right-vacancyCnt'>
+                    <form onSubmit={handleSubmit} className='career_form'>
+                      {/* Your form inputs go here */}
+                      <div className="form-group">
+                        <TextField
+                          label="Your Full Name"
+                          fullWidth
+                          type="text"
+                          placeholder="Name"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                        />
+                        <span className='error-message'>{formErrors.name}</span>
+                      </div>
+                      <div className="form-group">
+                        <TextField
+                          label="Email"
+                          fullWidth
+                          type="email"
+                          placeholder="Email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                        />
+                        <span className='error-message'>{formErrors.email}</span>
+                      </div>
+                      <div className="form-group">
+                        <TextField
+                          fullWidth
+                          label="Position"
+                          type="text"
+                          id="position"
+                          name="position"
+                          value={formData.position}
+                          onChange={handleChange}
+                          placeholder='Position'
+                        />
+                        <span className="error-message">{formErrors.position}</span>
+                      </div>
+                      <div className="form-group">
+                        <label htmlFor="cv">Upload CV</label>
+                        <TextField
+                          fullWidth
+                          type="file"
+                          id='cv'
+                          name='files'
+                          onChange={handleChange}
+                        />
+                        <span className='error-message'>{formErrors.files}</span>
+                      </div>
+                      <div className="form-group">
+                        <TextField
+                          label="Phone Number"
+                          fullWidth
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          placeholder='Phone number'
+                        />
+                        <span className='error-message'>{formErrors.phone}</span>
+                      </div>
+                      <div className="form-group">
+                        <TextField
+                          label="Experience"
+                          fullWidth
+                          type="number"
+                          id="experience"
+                          name="experience"
+                          value={formData.experience}
+                          onChange={handleChange}
+                          placeholder='Total experience'
+                        />
+                        <span className='error-message'>{formErrors.experience}</span>
 
-                </div>
-                <Button
-                  type="submit"
-                  className="button_slide slide_down form_submit_btn"
-                  sx={{ background: "#54a154" }}
-                >
-                  Submit
-                </Button>
-                <span id='successMsg'></span>
-              </form>
+                      </div>
+                      <Button
+                        type="submit"
+                        className="button_slide slide_down form_submit_btn"
+                        sx={{ background: "#54a154" }}
+                      >
+                        Submit
+                      </Button>
+                      <span id='successMsg'></span>
+                    </form>
 
-            </div>
-          </Container>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
           </section>
         </div>
       </div>

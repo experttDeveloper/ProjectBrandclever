@@ -2395,11 +2395,10 @@ li.review_nav .dropdown-content {
     letter-spacing: 0.5px;
     font-size: 15px !important;
 }
-
 .button_slide {
     background: #54a154;
-    padding: 8px 12px;
-    border-radius: 8px;
+    padding: 10px 30px;
+    border-radius: 10px;
     display: inline-block;
     font-size: 15px;
     letter-spacing: 1px;
@@ -3115,4 +3114,10 @@ button.modal_button:hover {
 }
 .main_content_shopifypg.row .contact_shopify {
     color: #191e25 !important;
+}
+a {
+    color: unset;
+}
+button{
+    padding: 8PX 30PX  !important;
 }

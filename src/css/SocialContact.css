@@ -70,15 +70,15 @@
 
 
 #wrapper .button {
-    text-decoration: none;
-    color: white;
-    background: rgba(62, 88, 62, 0.253);
-    padding: 125px 78px 80px;
+    background: rgba(62,88,62,.253);
+    border: 3px solid #fff;
     border-radius: 2px;
-    border: 3px solid #ffffff;
-    font-weight: normal;
+    color: #fff;
+    font-weight: 400;
+    padding: 125px 87px 80px;
+    text-decoration: none;
     text-transform: uppercase;
-    transition: all 0.2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 #wrapper .glow-button:hover {
@@ -87,4 +87,8 @@
 
 #wrapper svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
     font-size: 78px;
+}
+
+.contact_video.col-md-6 #wrapper svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-vubbuv {
+    font-size: 60px !important;
 }

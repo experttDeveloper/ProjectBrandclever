@@ -116,21 +116,18 @@
 }
 .left-vacancyCnt {
     flex: 0 0 auto;
-    width: 57.333333%;
+    width: 100%;
     margin-right: 20px;
 }
 .right-vacancyCnt {
     flex: 0 0 auto;
-    width: 41.66666667%;
+    width: 100%;
 }
 .career-page section.job-vacancy {
     color: var(--black-color);
     padding: 60px 0px;
     margin: 0 auto;
     background: #fff;
-}
-.career-page section.job-vacancy .container {
-    display: flex;
 }
 .right-vacancyCnt form span#successMsg {
     color: #28a745;
@@ -274,7 +271,7 @@
     font-size: 16px;
 }
 .right-vacancyCnt form {
-    width: 75%!important;
+    width: 100%!important;
     padding: 1.5rem!important;
     background-color: #191e25;
     border-radius: 10px;
@@ -312,4 +309,7 @@
     font-size: 20px;
     color: var(--black-color);
     line-height: 30px;
+}
+section.job-vacancy .right-vacancyCnt .form-group .MuiFormControl-root input {
+    color: #fff !important;
 }
