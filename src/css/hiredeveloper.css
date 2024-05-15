@@ -46,9 +46,10 @@
   color: var(--dark-black-color);
 }
 .form_shopify_hire .form_inner .card button.btn.btn-contained:hover {
-box-shadow: inset 0 100px 0 0 #191e25;
-color: var(--white-color);
-transition: 1s;
+  box-shadow: inset 0 100px 0 0 #191e25;
+  color: var(--white-color);
+  transition: 1s;
+  border: 1px solid #191e25;
 }
 .whatsapp_shopify {
   display: flex;

@@ -75,8 +75,8 @@
     align-items: center;
 }
 .hexagons-title h2 {
-    color:var(--black-color);
-    padding-top: 50px;
+    color: var(--black-color);
+    padding-top: 60px;
 }
 .ctm_hex_dv3 img {
     margin-bottom: 20px;

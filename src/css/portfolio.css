@@ -94,37 +94,14 @@
 @-moz-document url-prefix() {
     .costner_page_web a:hover::after {
         content: '\f08e';
-        position: absolute !important;
-        background: #54a154;
         top: 90px !important;
-        font-family: 'Font Awesome 5 Pro';
         left: 145px !important;
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        transition: all .4s;
-        color: #fff;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
     }
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@supports (-webkit-overflow-scrolling: touch) {
     .costner_page_web a:hover:after {
-        align-items: center;
-        background: #54a154;
-        border-radius: 50%;
-        color: #fff;
-        content: "\f08e";
-        display: flex!important;
-        font-family: Font Awesome\ 5 Pro;
-        height: 70px !important;
-        justify-content: center;
         left: 160px !important;
-        position: absolute!important;
         top: -190px !important;
-        transition: all .4s;
-        width: 70px;
     }
-        }
+        } 
