@@ -101,16 +101,13 @@ h2 {
     justify-content: space-between;
     align-items: center;
 }
-
 .testy_section {
     background: var(--white-color);
-    padding: 91px 0px 51px 0px;
+    padding: 81px 0px 11px 0px;
 }
-
 .item {
-    padding: 50px;
+    padding: 30px 0px;
 }
-
 .serv_cns {
     text-align: left;
 }
@@ -355,12 +352,10 @@ img.signature {
     color: #000 !important;
     text-align: left;
 }
-
 .about_us_section {
-    padding: 20px 0px 55px;
+    padding: 20px 0px 65px;
     width: 100%;
 }
-
 .services-inner {
     width: 100%;
     max-width: 1220px !important;
@@ -663,11 +658,12 @@ p.subtitle {
     animation: myfirst 2s infinite;
     animation-direction: alternate;
 }
-
 .exp_btn a:hover {
-    background: #54a154;
+    box-shadow: inset 0 100px 0 0 #191e25;
+    color: var(--white-color);
+    transition: 1s;
     text-decoration: none;
-    border-color: #54a154;
+    border: 1px solid #191e25;
 }
 
 @keyframes myfirst {
@@ -1463,11 +1459,10 @@ h3.MuiTypography-root.MuiTypography-h3.css-18h9l83 {
     font-size: 16px;
     width: 70%;
 }
-
 .contact_us_first span.MuiTypography-root.MuiTypography-p.css-37jdci-MuiTypography-root {
-    color: var(--paragraph-color) !important;
     font-size: 17px;
     font-weight: 500;
+    color: #212529 !important;
 }
 .contact_us_first {
     color: white;
@@ -2266,11 +2261,10 @@ h1.rev_hi {
 
 /********** Tushar css start here **********/
 .join-team a:hover {
-    transform: scale(1.1);
-    background-color: #28a745;
-    border: 1px solid #28a745;
+    box-shadow: inset 0 100px 0 0 #191e25;
     color: var(--white-color);
-    transition: 0.4s;
+    transition: 1s;
+    border: 1px solid #191e25;
 }
 button.Next_btn_traning_and_placement {
     padding: 12px 50px;
@@ -2283,17 +2277,6 @@ button.Next_btn_traning_and_placement {
     transition: transform 0.3s ease-in-out;
     background: #509e53;
 }
-
-button.Next_btn_traning_and_placement:hover {
-    padding: 12px 50px;
-    border: 1px solid #54a154;
-    color: var(--white-color) !important;
-    border-radius: 5px;
-    background-color: #54a154;
-    transition: 0.4s;
-    transform: scale(1.1);
-}
-
 section.heading .banner-heading.placement-banner {
     background-color: #101010 !important;
 }
@@ -2361,24 +2344,33 @@ li.review_nav .row .col-md-6 {
 }
 
 /********** Tushar css End here ***********/
-.header_btn:hover {
-    background: linear-gradient(to right, #96d358 0%, #89c957 50%, #2aa961 100%) !important;
-}
 
 li.review_nav .dropdown-content {
     width: 55% !important;
     left: 45%;
 }
-
 .header_btn {
     border: none;
-    border-radius: 10px;
+    border-radius: 4px;
     cursor: pointer;
     padding: 8px 30px;
     text-transform: uppercase;
     background: #509e53 !important;
 }
-
+.header_btn:hover {
+    padding: 8px 30px !important;
+    font-weight: 700;
+    box-shadow: inset 0 100px 0 0 #191e25;
+    color: #fff;
+    transition: 1s;
+    text-decoration: none;
+}
+button.modal_button:hover{
+    font-weight: 700;
+    box-shadow: inset 0 100px 0 0  #191e25;
+    color: #fff;
+    transition: 2s;
+}
 .header_btn a {
     color: var(--white-color) !important;
     letter-spacing: 0.5px;
@@ -2398,14 +2390,26 @@ li.review_nav .dropdown-content {
     box-shadow: inset 0 0 0 0 #54a154;
     transition: ease-out 0.4s;
 }
-
+.career-page-inner .right-vacancyCnt button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.button_slide.slide_down.form_submit_btn.css-3qm5fz-MuiButtonBase-root-MuiButton-root:hover {
+    box-shadow: inset 0 100px 0 0 #ebebeb;
+    color: #000 !important;
+}
+.contact_us_section .container .col-md-6 form button:hover{
+    box-shadow: inset 0 100px 0 0 #ebebeb;
+    color: #000 !important;
+}
 .slide_down:hover {
-    box-shadow: inset 0 100px 0 0 #ffa41a;
+    box-shadow: inset 0 100px 0 0 #191e25;
+    color: var(--white-color);
+    transition: 1s;
+    text-decoration: none;
+}
+.read_more a:hover{
+    box-shadow: inset 0 100px 0 0 #191e25;
     color: var(--white-color);
     transition: 2s;
     text-decoration: none;
 }
-
 .read-btnn {
     text-align: center;
     margin-top: 60px;
@@ -2441,17 +2445,13 @@ div#successMsg {
     border-radius: 100%;
     padding: 10px !important;
 }
-
-
 .faq_Contact_Sec {
     background-color: var(--white-color) !important;
 }
-
 .faq_Contact_Sec {
     background-color: var(--white-color) !important;
-    padding: 80px 0px;
+    padding: 70px 0px;
 }
-
 .faq_Contact_Sec .container {
     display: flex;
 }
@@ -2459,28 +2459,6 @@ div#successMsg {
 .dropdown-content .service_img a:hover {
     color: var(--green-color) !important;
 }
-
-/* Initially hide the .opposite content */
-/* .backService {
-    display: none;
-}
-.col.serviceCount:hover .frontCont {
-    display: none;
-}
-.col.serviceCount:hover .backService {
-    display: block;
-    position: relative;
-    transform: rotateY(180deg);
-    color: var(--white-color);
-    transition: transform 0.9s ease-in-out;
-}
-.col.serviceCount:hover {
-    position: relative;
-    transform: rotateY(180deg);
-    background-color: #cb8e32;
-    color: var(--white-color);
-    transition: transform 0.9s ease-in-out;
-} */
 .main-contact-page .contactForm-inner {
     display: flex;
     justify-content: center;
@@ -2982,16 +2960,9 @@ button.modal_button {
     background: #54a154;
     
 }
-
-button.modal_button:hover {
-    color: white;
-    background: linear-gradient(to right, #96d358 0%, #89c957 50%, #2aa961 100%) !important;
-    transition: 2s;
-}
-
 .blog_main {
     background-color: var(--background-color-black-paragrpah);
-    padding: 80px 0px !important;
+    padding: 60px 0px 55px 0px !important;
 }
 .MuiCardMedia-root.css-pqdqbj {
     height: 180px;
@@ -3000,7 +2971,7 @@ button.modal_button:hover {
 .blog_card {
     border: 1px solid #8b949e;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .blog_card .css-16cvb1l-MuiCardMedia-root {
@@ -3036,12 +3007,10 @@ button.modal_button:hover {
 }
 
 .blog_read_more:hover {
-    background: linear-gradient(to right, #96d358 0%, #89c957 50%, #2aa961 100%) !important;
-    border: none !important;
-    color: #fff !important;
-    border: 2px solid #fff !important;
-    border-radius: 3px !important;
-    padding: 8px 30px !important;
+    box-shadow: inset 0 100px 0 0 #191e25;
+    color: var(--white-color) !important;
+    transition: 1s;
+    border: 2px solid #191e25 !important;
 }
 .placement-page-inner label {
     color: #383838 !important;
@@ -3111,6 +3080,9 @@ button{
     padding: 8PX 30PX  !important;
 }
 .our-services .services-inner .read-btnn {
-    margin-bottom: 0px !important;
-    margin-top: -20px !important;
+	margin-bottom: 0px !important;
+	margin-top: 20px !important;
 }
+
+
+

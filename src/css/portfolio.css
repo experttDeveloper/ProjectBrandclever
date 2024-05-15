@@ -22,18 +22,9 @@
     text-align: center;
     padding-bottom: 13px;
 }
-/* 
-.page_link_prot a {
-    color: #000;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-} */
-
 .portfolio_main {
-    padding: 60px 0px;
+    padding: 67px 0px;
 }
-
 .costner_page_web:hover {
     background: #f9f9f9;
 }
@@ -62,22 +53,6 @@
     height: 80.5%;
     border-radius: 10px;
 }
-.costner_page_web a:hover::after {
-    content: '\f08e';
-    position: absolute !important;
-    background: #54a154;
-    top: 36% !important;
-    font-family: 'Font Awesome 5 Pro';
-    left: 38% !important;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    transition: all .4s;
-    color: #fff;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-}
 
 .card_portfol h3 {
     text-transform: capitalize;
@@ -96,3 +71,60 @@
 .port_title{
     color: #fff !important;
 }
+
+
+.costner_page_web a:hover::after {
+    content: '\f08e';
+    position: absolute !important;
+    background: #54a154;
+    top: 36% ;
+    font-family: 'Font Awesome 5 Pro';
+    left: 38% ;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/* safari browser */
+@-moz-document url-prefix() {
+    .costner_page_web a:hover::after {
+        content: '\f08e';
+        position: absolute !important;
+        background: #54a154;
+        top: 90px !important;
+        font-family: 'Font Awesome 5 Pro';
+        left: 145px !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        transition: all .4s;
+        color: #fff;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .costner_page_web a:hover:after {
+        align-items: center;
+        background: #54a154;
+        border-radius: 50%;
+        color: #fff;
+        content: "\f08e";
+        display: flex!important;
+        font-family: Font Awesome\ 5 Pro;
+        height: 70px !important;
+        justify-content: center;
+        left: 160px !important;
+        position: absolute!important;
+        top: -190px !important;
+        transition: all .4s;
+        width: 70px;
+    }
+        }

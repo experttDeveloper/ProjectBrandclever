@@ -78,6 +78,9 @@
     }
 }
 @media screen and (min-device-width: 1024px) and (max-device-width: 1300px) {
+    .onbasispayment.row .alltext {
+        height: auto !important;
+    }
     .main-contact-page .section-420 {
         width: 100% !important;
         max-width: 100% !important;
@@ -124,6 +127,17 @@
 
 }
     @media screen and (max-width: 1024px) {
+        .titleoftestimonial {
+            margin-bottom: 20px !important;
+        }
+        .expertise_section img {
+            height: 50px !IMPORTANT;
+        }
+        .box_shadow {
+            max-height: 100% !important;
+            padding: 20px 10px !important;
+            margin-bottom: 20px;
+        }
         .contact_us_second .contact_media h6 {
             width: 100%;
         }
@@ -134,20 +148,24 @@
             top: 56%;
         }
         .second_box_hire {
-            margin-top:40px !important;
+            margin-top: 0px !important;
             margin-bottom: 0px !important;
-            margin-left: 0px !important; 
+            margin-left: 0px !important;
+            width: 100% !important;
         }
         .third_box_hire {
             margin-top: 0px !important;
+            margin-left: 0px !important;
+            width: 100% !important;
         }
         .first_box_hire {
-             margin-top:40px !important;
-           margin-bottom: 0px !important;
-           margin-left: 0px !important; 
+            margin-top: 00px !important;
+            margin-bottom: 0px !important;
+            margin-left: 0px !important;
+            width: 100% !important;
         }
         .payment {
-            padding: 224px 0px 83px 0px !important;
+            padding: 100px 0px 83px 0px !important;
         }
         .onbasispayment.row .alltext {
             height: auto !important;
@@ -649,6 +667,9 @@
      
  @media screen and (min-width: 480px) and (max-width: 768px) {
     /************************ Header nav start *****************************/
+    .processofhiring.row .col-md-3 {
+        padding: 10px !important;
+    }
     .footer-inner .column {
         padding: 15px 0px 0px 0px;
         margin-bottom: -31px !important;
@@ -1398,10 +1419,6 @@
     .form_shopify_hire .form_inner .card {
         padding: 26px 10px 35px 10px;
     }
-    .hire_box_main.col-md-4 .box_shadow {
-        height: auto !important;
-        margin-bottom: 60px !important;
-    }
     .contact_shopify {
         display: block !important;
     }
@@ -1473,12 +1490,19 @@
     }
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
+    .industryDemands-items .col a, h3 {
+        font-size: 12px !important;
+    }
+    .tab_panel.port_content .col-md-4 {
+        padding: 5px !important;
+    }
  
     .screen_port {
         height: 145px !important;
     }
 }
 @media screen and (max-width: 768px) {  
+  
     .left_modal {
         display: none;
     }
@@ -1542,7 +1566,7 @@
     }
     .industryDemands-items .col a, h3 {
         padding-top: 0px !important;
-        font-size: 20px !important;
+        font-size: 20px;
     }
     .shopify_services {
         padding-bottom: 35px;
