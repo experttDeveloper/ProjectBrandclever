@@ -65,7 +65,7 @@ const Dashboard = () => {
     return (
       <div className="dashboard_section">
         <AppBar position="static">
-          <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
+          <Toolbar className="admin_header">
             <Typography variant="h6" component="div">
             <img src="/brandclever_logo.png" width="200px" />
             </Typography>
@@ -90,29 +90,6 @@ const Dashboard = () => {
                 onClick={handleClose}
                 PaperProps={{
                   elevation: 0,
-                  sx: {
-                    overflow: 'visible',
-                    filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
-                    mt: 1.5,
-                    '& .MuiAvatar-root': {
-                      width: 32,
-                      height: 32,
-                      ml: -0.5,
-                      mr: 1,
-                    },
-                    '&:before': {
-                      content: '""',
-                      display: 'block',
-                      position: 'absolute',
-                      top: 0,
-                      right: 14,
-                      width: 10,
-                      height: 10,
-                      bgcolor: 'background.paper',
-                      transform: 'translateY(-50%) rotate(45deg)',
-                      zIndex: 0,
-                    },
-                  },
                 }}
                 transformOrigin={{ horizontal: 'right', vertical: 'top' }}
                 anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
@@ -133,12 +110,13 @@ const Dashboard = () => {
           <Grid container spacing={3}>
             <Grid item xs={3}>
               <Paper className="left_nav">
+                <h1>Dashboard</h1>
                 {/* Left side: Navigation */}
                 <List component="nav">
                   
                   <ListItem onClick={() => handleNavItemClick("Users")}>
                     <ListItemText
-                      primary="Contct Users"
+                      primary="Contact Users"
                       className={
                         selectedNavItem === "Users" ? "active_nav" : "nav_item"
                       }
@@ -157,14 +135,11 @@ const Dashboard = () => {
                 </List>
               </Paper>
             </Grid>
-            <Grid item xs={9}>
+            <Grid item xs={9} className="admin_right_side">
               <Paper>
-                {/* Right side: Content */}
                 <Typography variant="h5">{selectedNavItem}</Typography>
-                {/* Content based on selected navigation item */}
                 {selectedNavItem === "Users" && <><Users/></>}
-               
-                {/* Add more content components for other navigation items */}
+                {selectedNavItem === "career" && <h5 className="no_data_found">No data found.</h5>}
               </Paper>
             </Grid>
           </Grid>

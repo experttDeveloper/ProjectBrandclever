@@ -99,9 +99,12 @@
     }
 }
 
-@supports (-webkit-overflow-scrolling: touch) {
-    .costner_page_web a:hover:after {
-        left: 160px !important;
-        top: -190px !important;
-    }
-        } 
+
+        @supports (-webkit-touch-callout: none) {
+            /* Safari-specific CSS rules here */
+            .costner_page_web a:hover:after {
+                left: 160px !important;
+                top: -190px !important;
+            }
+        }
+        

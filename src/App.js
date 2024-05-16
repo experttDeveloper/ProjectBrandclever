@@ -51,6 +51,7 @@ import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
 import Dashboard from './components/admin/Index';
 import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -69,11 +70,12 @@ export default class App extends Component {
 
     return (
       <>
+      <ToastContainer position="top-right"/>
         {
-          window.location.pathname === "/admin/dashbaord" ? (
+          window.location.pathname === "/admin/dashboard" ? (
             <BrowserRouter>
               <Routes>
-                <Route path="/admin/dashbaord" element={<Dashboard />} />
+                <Route path="/admin/dashboard" element={<Dashboard />} />
               </Routes>
             </BrowserRouter>
           ) : (
