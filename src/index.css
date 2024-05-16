@@ -3045,6 +3045,7 @@ button.modal_button {
     padding: 14px 30px !important;
     box-shadow: unset !important;
     margin-top: 20px;
+    width: 100% !important;
 }
 .blog_inner_page_data {
     padding: 70px 0px;
@@ -3091,4 +3092,11 @@ button{
 .MuiDialog-container.MuiDialog-scrollPaper.css-hz1bth-MuiDialog-container .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthMd.css-12rl710-MuiPaper-root-MuiDialog-paper {
     box-shadow: 0px 0px 7px 0px #d0ff90 !important;
     border-radius: 15px !important;
+}
+.iner_mains_blog .blog_detail_form_main .card {
+    border-radius: 10px !important;
+}
+.iner_mains_blog .blog_detail_form_main .card input {
+    border: 2px solid #fff;
+    border-radius: 5px !important;
 }
