@@ -19,7 +19,7 @@ import {
 import AdminLogin from "./AdminLogin";
 import { useNavigate } from "react-router-dom";
 import Logout from "@mui/icons-material/Logout";
-import Users from "./Users";
+import Users from "./ContactUsers";
 
 const Dashboard = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -138,17 +138,17 @@ const Dashboard = () => {
                   
                   <ListItem onClick={() => handleNavItemClick("Users")}>
                     <ListItemText
-                      primary="Users"
+                      primary="Contct Users"
                       className={
                         selectedNavItem === "Users" ? "active_nav" : "nav_item"
                       }
                     />
                   </ListItem>
-                  <ListItem onClick={() => handleNavItemClick("dish")}>
+                  <ListItem onClick={() => handleNavItemClick("career")}>
                     <ListItemText
-                      primary="Dishes"
+                      primary="Career Users"
                       className={
-                        selectedNavItem === "dish"
+                        selectedNavItem === "career"
                           ? "active_nav"
                           : "nav_item"
                       }

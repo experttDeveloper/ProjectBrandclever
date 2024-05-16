@@ -2,25 +2,39 @@ import React, { useEffect, useState } from 'react'
 import { Table, TableHead, TableBody, TableRow, TableCell, TablePagination, Paper, Checkbox, Button, Chip } from '@mui/material';
 
 import { toast } from 'react-toastify';
+import axios from 'axios';
 
 export default function Users() {
 
-    const [users, serUsers] = useState([]);
+    const [users, setUsers] = useState([]);
     const [page, setPage] = useState(0);
-    const [rowsPerPage, setRowsPerPage] = useState(5);
-    const [selected, setSelected] = useState([]);
+    const [rowsPerPage, setRowsPerPage] = useState(10);
     const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState(null);
 
 
+    useEffect(() => {
+        // URL of the server endpoint
+        const url = 'https://brandclever.in/developer/brand/admin/form/getDataContactForm.php';
 
-    // useEffect(() => {
-    //     (async () => {
-    //         setIsLoading(true)
-    //         const result = await getAllUsers();
-    //         serUsers(result)
-    //         setIsLoading(true)
-    //     })()
-    // }, [isLoading])
+        const fetchData = async () => {
+            try {
+                // Make the GET request
+                const response = await axios.get(url);
+                console.log("response", response.data)
+                setUsers(response.data.slice(20,100))
+            } catch (error) {
+                // Handle any errors
+                setError(error);
+            } finally {
+                // Set loading to false after the fetch is complete
+                setIsLoading(false);
+            }
+        };
+
+        // Call the function to fetch data
+        fetchData();
+    }, [isLoading]);
 
 
     // Change page handler
@@ -37,32 +51,30 @@ export default function Users() {
     // Calculate pagination
     const emptyRows = rowsPerPage - Math.min(rowsPerPage, users.length - page * rowsPerPage);
 
-
-
     return (
         <div>
             <Paper>
-                <Table>
+                <Table stickyHeader aria-label="sticky table">
                     <TableHead>
                         <TableRow>
                             <TableCell>ID</TableCell>
                             <TableCell>Name</TableCell>
                             <TableCell>Email</TableCell>
-                            <TableCell>Action</TableCell>
+                            <TableCell>Message</TableCell>
+                            <TableCell>Date & Time</TableCell>
                         </TableRow>
                     </TableHead>
-                    {/* <TableBody>
+                    <TableBody>
                         {(rowsPerPage > 0
                             ? users.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                             : users
-                        ).map((row) => (
-                            <TableRow key={row.id}>
-                                <TableCell padding="checkbox">
-                                    <Checkbox checked={selected.indexOf(row._id) !== -1} />
-                                </TableCell>
-                                <TableCell>{row._id}</TableCell>
-                                <TableCell>{row.firstname} {row.lastname} </TableCell>
-                                <TableCell>{row.email}</TableCell>
+                        ).map((user,key) => (
+                            <TableRow key={key}>
+                                <TableCell>{user.id}</TableCell>
+                                <TableCell>{user.name} </TableCell>
+                                <TableCell>{user.email}</TableCell>
+                                <TableCell>{user.message}</TableCell>
+                                <TableCell>{user.dateTime}</TableCell>
                               
                             </TableRow>
                         ))}
@@ -71,10 +83,10 @@ export default function Users() {
                                 <TableCell colSpan={4} />
                             </TableRow>
                         )}
-                    </TableBody> */}
+                    </TableBody>
                 </Table>
                 <TablePagination
-                    rowsPerPageOptions={[5, 10, 25]}
+                    rowsPerPageOptions={[10, 20, 100]}
                     component="div"
                     count={users.length}
                     rowsPerPage={rowsPerPage}
