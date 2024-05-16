@@ -1,0 +1,27 @@
+:root {
+    --white-color: #ffffff;
+    --black-color: #191e25;
+    --green-color: #54a154;
+    --dark-black-color: #292b32;
+    --paragraph-color: #212529;
+    --background-color-black-paragrpah: #bfbfbf;
+}
+
+
+.MuiListItemText-root.active_nav.css-tlelie-MuiListItemText-root {
+    background: red;
+    padding: 11px;
+    height: 50px;
+    width: 220px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.MuiListItemText-root.nav_item.css-tlelie-MuiListItemText-root {
+    height: 50px;
+    width: 220px;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+}
