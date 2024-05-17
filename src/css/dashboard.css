@@ -19,6 +19,30 @@
     cursor: pointer;
     text-align: center;
 }
+
+.dashboard_section .MuiListItemText-root.nav_item.css-1tsvksn {
+    height: 50px;
+    width: 220px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: #ffff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dashboard_section .MuiListItemText-root.active_nav.css-1tsvksn {
+    padding: 11px;
+    border: 1px solid #5bc762;
+    height: 50px;
+    color: #fff !important;
+    width: 220px;
+    border-radius: 10px;
+    background-color: #27a460;
+    cursor: pointer;
+    text-align: center;
+}
+
 .dashboard_section .MuiListItemText-root.nav_item.css-tlelie-MuiListItemText-root {
     height: 50px;
     width: 220px;
@@ -29,9 +53,11 @@
     cursor: pointer;
     text-align: center;
 }
+
 .admin_login_pag .MuiBox-root.css-y1gt6f {
     margin: 0;
 }
+
 .admin_login_pag {
     background-color: #fff;
     margin: 0;
@@ -42,6 +68,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .dashboard_section header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionStatic.css-hip9hq-MuiPaper-root-MuiAppBar-root {
     position: fixed;
     top: 0;
@@ -51,12 +78,24 @@
     z-index: 9;
     background-color: var(--dark-black-color);
 }
+.dashboard_section header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionStatic.css-1x7skt0{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    background-color: var(--dark-black-color);
+}
+
 .dashboard_section .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-9.css-1qpzhgb-MuiGrid-root {
     margin-top: 39px;
 }
+
 .dashboard_section .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3.css-zow5z4-MuiGrid-root .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-9.css-1qpzhgb-MuiGrid-root {
     padding: 0;
 }
+
 .dashboard_section .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.left_nav.css-1ps6pg7-MuiPaper-root {
     background: #191e25;
     position: fixed;
@@ -64,37 +103,60 @@
     padding-top: 67px;
     height: 100vh !important;
 }
+.dashboard_section .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.left_nav.css-aoeo82{
+    background: #191e25;
+    position: fixed;
+    left: 0;
+    padding-top: 67px;
+    height: 100vh !important;
+}
+
 .dashboard_section thead.MuiTableHead-root.css-15wwp11-MuiTableHead-root {
     position: sticky;
     top: 50px;
     width: 100%;
     z-index: 1;
 }
+
+
+.dashboard_section h5.MuiTypography-root.MuiTypography-h5.css-zq6grw{
+    position: sticky;
+    top: 50px;
+    width: 100%;
+    z-index: 1;
+}
+
 .dashboard_section .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.css-1ps6pg7-MuiPaper-root h5.MuiTypography-root.MuiTypography-h5.css-ag7rrr-MuiTypography-root {
     margin-top: 50px;
     padding: 40px 40px 0px 10px;
 }
+
 .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-9.css-1qpzhgb-MuiGrid-root .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.css-1ps6pg7-MuiPaper-root {
     height: 100% !important;
 }
+
 header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionStatic.css-hip9hq-MuiPaper-root-MuiAppBar-root .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.admin_header.css-hyum1k-MuiToolbar-root {
     display: flex;
     justify-content: space-between;
 }
+
 .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3.css-zow5z4-MuiGrid-root .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-3.css-1equabv-MuiGrid-root .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.left_nav.css-1ps6pg7-MuiPaper-root h1 {
     font-size: 30px;
     color: #fff !important;
     text-transform: uppercase;
     padding: 23px 0px 0px 15px;
 }
+
 .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-9.admin_right_side.css-1qpzhgb-MuiGrid-root {
     height: 100vh !important;
 }
+
 .dashboard_section thead.MuiTableHead-root.css-15wwp11-MuiTableHead-root th.MuiTableCell-root.MuiTableCell-head.MuiTableCell-stickyHeader.MuiTableCell-sizeMedium.css-y8ay40-MuiTableCell-root {
     font-weight: bold;
     text-transform: uppercase;
     padding-top: 31px;
 }
+
 h5.no_data_found {
     padding-left: 10px;
     text-transform: uppercase;

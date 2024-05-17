@@ -61,7 +61,7 @@ const Dashboard = () => {
     setAuthenticated(false);
   };
 
-  if (authenticated && admin.username === "admin@gmail.com" && "admin@123") {
+  if (authenticated && admin.username === "adminuser@gmail.com" && "Admin@1911") {
     return (
       <div className="dashboard_section">
         <AppBar position="static">

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { Table, TableHead, TableBody, TableRow, TableCell, TablePagination, Paper, Checkbox, Button, Chip } from '@mui/material';
+import { Table, TableHead, TableBody, TableRow, TableCell, TablePagination, Paper } from '@mui/material';
 
-import { toast } from 'react-toastify';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default function Users() {
 
@@ -72,7 +72,7 @@ export default function Users() {
                             <TableRow key={key}>
                                 <TableCell>{user.id}</TableCell>
                                 <TableCell>{user.name} </TableCell>
-                                <TableCell>{user.email}</TableCell>
+                                <TableCell><Link to={`mailto:${user.email}`}>{user.email}</Link> </TableCell>
                                 <TableCell>{user.message}</TableCell>
                                 <TableCell>{user.dateTime}</TableCell>
                               

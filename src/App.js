@@ -72,10 +72,10 @@ export default class App extends Component {
       <>
       <ToastContainer position="top-right"/>
         {
-          window.location.pathname === "/admin/dashboard" ? (
+          window.location.pathname === "/dashboard" ? (
             <BrowserRouter>
               <Routes>
-                <Route path="/admin/dashboard" element={<Dashboard />} />
+                <Route path="/dashboard" element={<Dashboard />} />
               </Routes>
             </BrowserRouter>
           ) : (
@@ -129,9 +129,6 @@ export default class App extends Component {
                   <Route path="/hire-tailwind-css-developer" element={<HireTalwindCss />} />
                   <Route path="/hire-digital-marekting-expert" element={<HireDigitalMarketing />} />
                   <Route path="/blog/:title" element={<BlogDetail />} />
-
-
-
 
 
                   <Route

@@ -55,13 +55,21 @@ export default function ContactUsModal({ useOpen }) {
     // Handle form submission
     const handleSubmit = () => {
         const validationErrors = validate();
+        
+        const formData ={
+            name:form.name,
+            email: form.email,
+            contact_number:form.number,
+            message:form.message
+        }
+        console.log("ofmr",formData)
 
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
         } else {
             // Form is valid, do something with the data (e.g., send to server)
             axios
-                .post('https://developer.brandclever.in/brand/admin/form/contactForm.php', form)
+                .post('https://developer.brandclever.in/brand/admin/form/contactForm.php', formData)
                 .then((res) => {
                     console.log("response", res)
                     if (res) {

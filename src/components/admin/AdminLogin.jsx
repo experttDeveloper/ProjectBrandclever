@@ -21,7 +21,7 @@ export default function AdminLogin({ isLoading }) {
             return;
         }
         // Simulated authentication (for demonstration only)
-        if (username === 'admin@gmail.com' && password === 'admin@123') {
+        if (username === 'adminuser@gmail.com' && password === 'Admin@1911') {
             setLoading(!loading)
             const token = jwt_encode({ username, password });
             localStorage.setItem('Admintoken', token);
