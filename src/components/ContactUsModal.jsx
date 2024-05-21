@@ -98,7 +98,7 @@ export default function ContactUsModal({ useOpen }) {
                 <Row style={{ marginRight: "0" }}>
                     <Col md={6}>
                         <div className='left_modal'>
-                            <Typography className='title_modal' variant='h3'>
+                            <Typography className='title_modal' variant='h4'>
                                 Turning your <span style={{ color: "#54a154" }}>vision </span>
                                 into tangible reality
                             </Typography>

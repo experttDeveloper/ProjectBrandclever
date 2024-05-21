@@ -7,6 +7,7 @@ import FaqSection from '../components/hiredeveloper/FaqSection';
 import ServiceSection from '../components/services/ServiceSection';
 import TestimonialSection from '../components/services/TestimonialSection';
 import MetaTitleDes from '../components/MetaTitleDes';
+import { Link } from 'react-router-dom';
 
 
 
@@ -17,7 +18,7 @@ export default function GraphicDesign() {
     return (
         <div className='development_service nests'>
             <MetaTitleDes title={"Best Animation & Graphic Design Company in India"} description={"We are the best graphic design company in India. We have qualified professionals experienced in crafting impressive designs for your brand & fulfill your needs"}/>
-            <TopHeader title="Graphic Design Service" description={"Graphic design creates visual content like logos, brochures, and digital graphics to communicate ideas and enhance brand identity."}/>
+            <TopHeader title="Graphic Design Service" description={<><Link to="https://www.upwork.com/agencies/brandclever/" className="hire_link" target="_blank">hire freelance graphic designer</Link> to creates visual content like logos, brochures, and digital graphics to communicate ideas and enhance brand identity.</>}/>
             <ContactSection
                 title={<>
                     Discover <br />

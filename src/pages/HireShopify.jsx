@@ -9,6 +9,7 @@ import FaqSection from "../components/hiredeveloper/FaqSection";
 import ExpertiesSection from "../components/hiredeveloper/ExpertiesSection";
 import ImageSection from "../components/hiredeveloper/ImageSection";
 import MetaTitleDes from "../components/MetaTitleDes";
+import { Link } from "react-router-dom";
 
 export default function HireShopify() {
 
@@ -16,7 +17,7 @@ export default function HireShopify() {
   return (
     <>
       <div>
-        <TopHeader title={"Hire a Shopify Consultant"} description={"Collaborate with top Shopify experts to enhance your e-commerce site. Our specialists offer custom themes, app integration, and more, ensuring your Shopify store is optimized for success."} />
+        <TopHeader title={"Hire a Shopify Consultant"} description={<>Collaborate with top <Link to="https://brandclever.in/hire-shopify-expert" className="hire_link" target="_blank">shopify developer </Link> near me to enhance your e-commerce site. Our specialists offer custom themes, app integration, and more, ensuring your Shopify store is optimized for success.</>} />
       </div>
       <MetaTitleDes title={"Hire A Shopify Consultant At Brandclever"} description={"Empower your business with our expert partners in India. Connect with brandclever, We offer a wide range of services tailored to your business needs."} />
       <WhyChoose

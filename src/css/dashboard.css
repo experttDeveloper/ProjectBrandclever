@@ -117,7 +117,12 @@
     width: 100%;
     z-index: 1;
 }
-
+.dashboard_section thead.MuiTableHead-root.css-1wbz3t9{
+    position: sticky;
+    top: 50px;
+    width: 100%;
+    z-index: 1;
+}
 
 .dashboard_section h5.MuiTypography-root.MuiTypography-h5.css-zq6grw{
     position: sticky;
@@ -129,6 +134,10 @@
 .dashboard_section .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.css-1ps6pg7-MuiPaper-root h5.MuiTypography-root.MuiTypography-h5.css-ag7rrr-MuiTypography-root {
     margin-top: 50px;
     padding: 40px 40px 0px 10px;
+}
+.dashboard_section .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.css-1ps6pg7-MuiPaper-root h5.MuiTypography-root.MuiTypography-h5.css-ag7rrr-MuiTypography-root, .dashboard_section h5.MuiTypography-root.MuiTypography-h5.css-zq6grw {
+    margin-top: 70px;
+    padding: 40px 40px 0 10px;
 }
 
 .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-9.css-1qpzhgb-MuiGrid-root .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.css-1ps6pg7-MuiPaper-root {
@@ -146,6 +155,12 @@ header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAp
     text-transform: uppercase;
     padding: 23px 0px 0px 15px;
 }
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.left_nav.css-aoeo82 h1 {
+    font-size: 30px;
+    color: #fff !important;
+    text-transform: uppercase;
+    padding: 23px 0px 0px 15px;
+}
 
 .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-9.admin_right_side.css-1qpzhgb-MuiGrid-root {
     height: 100vh !important;
@@ -156,11 +171,30 @@ header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAp
     text-transform: uppercase;
     padding-top: 31px;
 }
-
+.dashboard_section  th.MuiTableCell-root.MuiTableCell-head.MuiTableCell-stickyHeader.MuiTableCell-sizeMedium.css-8coetn {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 31px;
+}
 h5.no_data_found {
     padding-left: 10px;
     text-transform: uppercase;
     font-size: 20px;
     color: red !important;
-    padding-top: 10px;
+    padding-top: 60px;
+}
+.dashboard_section .css-1deacqj:hover {
+    background-color: unset !important;
+}
+.dashboard_section .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.admin_header.css-i6s8oy {
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard_section .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3.css-1h77wgb .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-9.admin_right_side.css-14ybvol {
+    padding: 0 !important;
+    height: 100vh;
+}
+
+.admin_right_side .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.css-aoeo82 {
+    height: 100%;
 }

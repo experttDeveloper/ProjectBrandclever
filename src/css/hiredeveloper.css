@@ -2,77 +2,95 @@
   --white-color: #ffffff;
   --black-color: #191e25;
   --green-color: #54a154;
-  --dark-black-color:#292b32;
-  --paragraph-color:#212529;
-  --background-color-black-paragrpah:#bfbfbf;
+  --dark-black-color: #292b32;
+  --paragraph-color: #212529;
+  --background-color-black-paragrpah: #bfbfbf;
 }
 
 .content_form_shopify {
   background-color: var(--white-color);
 }
+
 .inner_content {
   color: var(--black-color);
 }
+
 .shopify_clutch_logo {
-    display: flex;
+  display: flex;
 }
+
 .shopifylogo {
   margin: 10px 50px 20px 0px;
 }
+
 .clutchlogo {
   margin: 22px 50px 21px 0px;
 }
+
 .contact_shopify {
   color: var(--background-color-black-paragrpah);
   display: flex;
 }
+
 .mail_shopify {
   display: flex;
   margin: 11px 50px 20px 10px;
 }
+
 .form_shopify_hire .form_inner .card {
   background-image: linear-gradient(rgb(37 159 95), #7abe57) !important;
   padding: 26px 35px 35px 35px;
   border-radius: 10px !important;
 }
+
 .form_shopify_hire .form_inner .card .MuiInputBase-root {
   background: var(--white-color);
   border-radius: 5px !important;
 }
+
 .form_shopify_hire .form_inner .card button.btn.btn-contained {
   width: 100% !important;
   padding: 15px 0px;
   border-radius: 4px;
   color: var(--dark-black-color);
 }
+
 .form_shopify_hire .form_inner .card button.btn.btn-contained:hover {
   box-shadow: inset 0 100px 0 0 #191e25;
   color: var(--white-color);
   transition: 1s;
   border: 1px solid #191e25;
 }
+
 .whatsapp_shopify {
   display: flex;
   margin: 11px 50px 20px 10px;
 }
+
 .form_inner {
   margin-left: 120px;
 }
+
 .content_whychoose {
   color: var(--background-color-black-paragrpah);
 }
+
 .titleexpertise {
   color: var(--white-color);
 }
+
 .circle_text {
   display: flex;
 }
+
 .circle_text svg {
   color: var(--green-color);
 }
+
 .circle_tick {
   color: var(--white-color);
 }
+
 .testimonials {
   background-color: #ececec;
   padding-top: 75px;
@@ -83,30 +101,37 @@ span.perhour {
   font-size: 70px;
   font-weight: 700 !important;
 }
+
 .titleoftestimonial {
   text-align: center;
   margin-bottom: 50px;
 }
+
 .title_testimonial {
   color: var(--black-color);
 }
+
 .author_img {
   display: flex;
   justify-content: space-between;
 }
+
 .sopify_dev_title {
   margin-top: 15px;
   box-shadow: 0px 0px 10px 0px #ccc !important;
   padding: 20px !important;
   border-radius: 10px !important;
 }
+
 img.authorimagelogo {
   height: 22px;
 }
+
 .title_of_service {
   text-align: center;
   color: var(--white-color);
 }
+
 .hiring_process {
   padding: 20px;
   box-shadow: 0px 0px 4px 0px var(--white-color);
@@ -115,6 +140,7 @@ img.authorimagelogo {
   border-radius: 5px;
   text-align: center;
 }
+
 .hiring_process img.requirement {
   border: 1px solid var(--white-color);
   padding: 20px;
@@ -124,6 +150,7 @@ img.authorimagelogo {
   background: var(--dark-black-color);
   height: 100px;
 }
+
 h2.hiringprocesstitle {
   padding: 9px 0 80px 0;
 }
@@ -131,9 +158,11 @@ h2.hiringprocesstitle {
 .faqs .left_side_faq {
   width: 50%;
 }
+
 .faqs .right_side_faq {
   width: 50%;
 }
+
 .expertise_section {
   color: var(--white-color);
   gap: 0px 25px !important;
@@ -143,30 +172,38 @@ h2.hiringprocesstitle {
 .services_shopify.row p {
   color: var(--background-color-black-paragrpah);
 }
+
 .expertiseandreviews {
   background-color: var(--white-color);
   padding: 75px 0px;
 }
+
 .hiring_process_main {
   padding-bottom: 20px;
   PADDING-TOP: 60PX;
 }
+
 .aboutpersonnel.row {
   margin-top: 20px !important;
 }
+
 p.text_expertise_reviews {
   color: var(--black-color);
 }
+
 .title_hiring {
   text-align: center;
 }
+
 .boldtext {
   margin-bottom: -20px;
   color: var(--white-color);
 }
+
 .titleofhiring {
   color: var(--background-color-black-paragrpah);
 }
+
 .images img {
   width: 100% !important;
   height: 400px !important;
@@ -176,10 +213,12 @@ p.text_expertise_reviews {
 .images .image {
   position: relative;
 }
+
 .payment {
   padding: 184px 0px 83px 0px;
   background: #ececec;
 }
+
 .images .first {
   position: absolute;
   top: 0;
@@ -193,20 +232,25 @@ p.text_expertise_reviews {
   background-color: red;
   transform: scale(1.05);
 }
+
 .btn_contact {
   text-align: center;
 }
+
 .title_faqs {
   text-align: center;
 }
+
 .faqs {
   background-color: white;
   padding: 70px 0px 80px 0px;
 }
+
 .titlefaqs {
   color: black;
   padding-bottom: 45px;
 }
+
 .main_content_shopifypg.row {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -214,18 +258,22 @@ p.text_expertise_reviews {
   justify-content: center;
   align-items: center;
 }
+
 p.hiring_shopify {
-    color: var(--black-color);
-    font-size: 20px;
+  color: var(--black-color);
+  font-size: 20px;
 }
+
 .accordionfaq {
   display: flex;
   gap: 0px 20px;
 }
+
 .accordionfaq .MuiPaper-root {
   border-top: 1px solid #a0a0a0;
   padding: 10px 0px;
 }
+
 .hire_box_main.col-md-4 button.btn_contactus {
   background: linear-gradient(to right, #509e53, #509e53);
   border: navajowhite;
@@ -234,25 +282,27 @@ p.hiring_shopify {
   border-radius: 4px;
   text-transform: uppercase;
 }
+
 .hire_box_main.col-md-4 button.btn_contactus:hover {
-box-shadow: inset 0 100px 0 0 #191e25;
-color: var(--white-color);
-transition: 1s;
-cursor: pointer;
+  box-shadow: inset 0 100px 0 0 #191e25;
+  color: var(--white-color);
+  transition: 1s;
+  cursor: pointer;
 }
 
 .whychoose_shopify {
-    padding-top: 75px;
-    padding-bottom: 75px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .expertise.row {
-    padding-top: 20px;
+  padding-top: 20px;
 }
+
 p.reviewone {
-    line-height: 30px;
+  line-height: 30px;
 }
-  
+
 .shopify_services p.text_expertise {
   color: var(--background-color-black-paragrpah);
 }
@@ -263,8 +313,9 @@ p.text_expertise {
 }
 
 h4.title_expertise_reviews {
-color: var(--black-color);
+  color: var(--black-color);
 }
+
 p.author {
   color: var(--black-color);
 }
@@ -272,22 +323,28 @@ p.author {
 p.content_shopifyservices {
   color: var(--background-color-black-paragrpah);
 }
+
 p.content_title {
-    font-size: 18px;
+  font-size: 18px;
 }
+
 .shopify_services {
-    padding-top: 75px;
-    padding-bottom: 75px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
+
 .services_shopify.row {
   padding-bottom: 0px;
 }
+
 svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.svgiconss.css-i4bv87-MuiSvgIcon-root {
-    font-size: 40px;
+  font-size: 40px;
 }
+
 svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.circle_tick.css-i4bv87-MuiSvgIcon-root {
-    color: #54a154;
+  color: #54a154;
 }
+
 .first_box_hire {
   width: 80%;
   background: #fa7f00;
@@ -302,6 +359,7 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.circle_tick.css-i4bv87-MuiSvgIcon-
   margin-bottom: 30px;
   margin-left: 30px;
 }
+
 .second_box_hire {
   background: #5e9cac;
   width: 80%;
@@ -316,6 +374,7 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.circle_tick.css-i4bv87-MuiSvgIcon-
   margin-bottom: 30px;
   margin-left: 30px;
 }
+
 .third_box_hire {
   background: #38b161;
   width: 80%;
@@ -330,6 +389,7 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.circle_tick.css-i4bv87-MuiSvgIcon-
   margin-bottom: 30px;
   margin-left: 30px;
 }
+
 .hire_box_main.col-md-4 .box_shadow {
   box-shadow: 0px 0px 5px 0px #ccc !important;
   display: flex;
@@ -339,18 +399,22 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.circle_tick.css-i4bv87-MuiSvgIcon-
   border-radius: 10px !important;
   max-height: 480px;
 }
+
 .onbasispayment.row .alltext {
   height: 253px;
   margin-top: 16px;
 }
+
 .whychoose_shopify .text_expertise {
   color: var(--background-color-black-paragrpah);
 }
+
 .faqs .accordionfaq.row .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiAccordion-root.MuiAccordion-rounded.MuiAccordion-gutters.css-1c35hjw-MuiPaper-root-MuiAccordion-root {
   border: 2px solid #cbcbcb;
   border-width: 1px 0px 1px 0px;
   padding: 10px 0px;
 }
+
 .services_shopify.row .col-md-4 .service_include {
   box-shadow: 0px 0px 4px 0px var(--white-color);
   padding: 30px;
@@ -358,17 +422,25 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.circle_tick.css-i4bv87-MuiSvgIcon-
   border-radius: 10px;
   margin-bottom: 30px;
 }
+
 .services_shopify.row .col-md-4 .service_include img.svg_icon {
   padding-bottom: 20px;
   height: 85px;
 }
+
 .expertise_section img {
   height: 70px;
 }
+
 .portfolio_sect h2.title {
   text-align: center;
   padding-bottom: 30px;
 }
+
 .shopify_images.row {
   padding-bottom: 60px;
+}
+
+a.hire_link:hover {
+  color: var(--white-color);
 }
