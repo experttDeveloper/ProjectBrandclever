@@ -49,6 +49,9 @@ export default function ContactUsModal({ useOpen }) {
         } else if (!/\S+@\S+\.\S+/.test(form.email)) {
             newErrors.email = 'Invalid email address';
         }
+        if (!form.message) {
+            newErrors.message = 'Message is required';
+        }
 
         return newErrors;
     };
@@ -161,6 +164,8 @@ export default function ContactUsModal({ useOpen }) {
                                     name="message"
                                     value={form.message}
                                     onChange={handleChange}
+                                    error={!!errors.message} // Display error state
+                                    helperText={errors.message} // Display error message
 
                                 />
                             </DialogContent>

@@ -73,7 +73,7 @@ export default function Users() {
                                 <TableCell>{user.name} </TableCell>
                                 <TableCell><Link to={`mailto:${user.email}`}>{user.email}</Link> </TableCell>
                                 <TableCell>{user.message}</TableCell>
-                                <TableCell>{user.dateTime}</TableCell>
+                                <TableCell>{user.created_at ? user.created_at : "None"}</TableCell>
                               
                             </TableRow>
                         ))}
