@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Table, TableHead, TableBody, TableRow, TableCell, TablePagination, Paper } from '@mui/material';
+import { Table, TableHead, TableBody, TableRow, TableCell, TablePagination, Paper, Typography } from '@mui/material';
 
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-export default function Users() {
+export default function LandingPageUser() {
 
     const [users, setUsers] = useState([]);
     const [page, setPage] = useState(0);
@@ -15,13 +15,14 @@ export default function Users() {
 
     useEffect(() => {
         // URL of the server endpoint
-        const url = 'https://brandclever.in/developer/brand/admin/form/getDataContactForm.php';
+        const url = 'https://brandclever.in/developer/brand/admin/form/get_landing_page_users.php';
 
         const fetchData = async () => {
             try {
                 // Make the GET request
                 const response = await axios.get(url);
-                setUsers(response.data.slice(20,100))
+                console.log("response",response.data)
+                setUsers(response.data)
             } catch (error) {
                 // Handle any errors
                 setError(error);
@@ -59,29 +60,42 @@ export default function Users() {
                             <TableCell>ID</TableCell>
                             <TableCell>Name</TableCell>
                             <TableCell>Email</TableCell>
+                            <TableCell>Contact Number</TableCell>
                             <TableCell>Message</TableCell>
                             <TableCell>Date & Time</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {(rowsPerPage > 0
-                            ? users.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                            : users
-                        ).map((user,key) => (
-                            <TableRow key={key}>
-                                <TableCell>{user.id}</TableCell>
-                                <TableCell>{user.name} </TableCell>
-                                <TableCell><Link to={`mailto:${user.email}`}>{user.email}</Link> </TableCell>
-                                <TableCell>{user.message}</TableCell>
-                                <TableCell>{user.dateTime}</TableCell>
-                              
-                            </TableRow>
-                        ))}
-                        {emptyRows > 0 && (
-                            <TableRow style={{ height: 53 * emptyRows }}>
-                                <TableCell colSpan={4} />
-                            </TableRow>
-                        )}
+                        {
+                            users.length ? (
+                                <>
+                                {(rowsPerPage > 0
+                                    ? users.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                                    : users
+                                ).map((user, key) => (
+                                    <TableRow key={key}>
+                                        <TableCell>{user.id}</TableCell>
+                                        <TableCell>{user.name} </TableCell>
+                                        <TableCell><Link to={`mailto:${user.email}`}>{user.email}</Link> </TableCell>
+                                        <TableCell>{user.number ? user.number : "None"}</TableCell>
+                                        <TableCell>{user.message}</TableCell>
+                                        <TableCell>{user.created_at}</TableCell>
+        
+                                    </TableRow>
+                                ))}
+                                {emptyRows > 0 && (
+                                    <TableRow style={{ height: 53 * emptyRows }}>
+                                        <TableCell colSpan={4} />
+                                    </TableRow>
+                                )}
+                                
+                                </>
+                            ):(
+                                <Typography variant='h5'>
+                                    No data found
+                                </Typography>
+                            )
+                        }
                     </TableBody>
                 </Table>
                 <TablePagination

@@ -20,6 +20,7 @@ import AdminLogin from "./AdminLogin";
 import { useNavigate } from "react-router-dom";
 import Logout from "@mui/icons-material/Logout";
 import Users from "./ContactUsers";
+import LandingPageUser from "./LandingPageUser";
 
 const Dashboard = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -67,7 +68,7 @@ const Dashboard = () => {
         <AppBar position="static">
           <Toolbar className="admin_header">
             <Typography variant="h6" component="div">
-            <img src="/brandclever_logo.png" width="200px" />
+              <img src="/brandclever_logo.png" width="200px" />
             </Typography>
             <div>
               <Tooltip title="Account">
@@ -94,7 +95,7 @@ const Dashboard = () => {
                 transformOrigin={{ horizontal: 'right', vertical: 'top' }}
                 anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
               >
-                
+
                 <MenuItem onClick={handleLogout}>
                   <ListItemIcon>
                     <Logout fontSize="small" />
@@ -113,7 +114,7 @@ const Dashboard = () => {
                 <h1>Dashboard</h1>
                 {/* Left side: Navigation */}
                 <List component="nav">
-                  
+
                   <ListItem onClick={() => handleNavItemClick("Users")}>
                     <ListItemText
                       primary="Contact Users"
@@ -122,11 +123,11 @@ const Dashboard = () => {
                       }
                     />
                   </ListItem>
-                  <ListItem onClick={() => handleNavItemClick("career")}>
+                  <ListItem onClick={() => handleNavItemClick("Landing page users")}>
                     <ListItemText
-                      primary="Career Users"
+                      primary="Landing page users"
                       className={
-                        selectedNavItem === "career"
+                        selectedNavItem === "Landing page users"
                           ? "active_nav"
                           : "nav_item"
                       }
@@ -138,8 +139,8 @@ const Dashboard = () => {
             <Grid item xs={9} className="admin_right_side">
               <Paper>
                 <Typography variant="h5">{selectedNavItem}</Typography>
-                {selectedNavItem === "Users" && <><Users/></>}
-                {selectedNavItem === "career" && <h5 className="no_data_found">No data found.</h5>}
+                {selectedNavItem === "Users" && <><Users /></>}
+                {selectedNavItem === "Landing page users" && <LandingPageUser />}
               </Paper>
             </Grid>
           </Grid>

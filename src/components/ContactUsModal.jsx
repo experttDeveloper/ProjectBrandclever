@@ -8,6 +8,7 @@ import { IconButton, TextField, Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import { Col, Row } from 'react-bootstrap';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 export default function ContactUsModal({ useOpen }) {
 
@@ -48,21 +49,21 @@ export default function ContactUsModal({ useOpen }) {
         } else if (!/\S+@\S+\.\S+/.test(form.email)) {
             newErrors.email = 'Invalid email address';
         }
-        
+
         return newErrors;
     };
 
     // Handle form submission
     const handleSubmit = () => {
         const validationErrors = validate();
-        
-        const formData ={
-            name:form.name,
+
+        const formData = {
+            name: form.name,
             email: form.email,
-            contact_number:form.number,
-            message:form.message
+            number: form.number,
+            message: form.message,
+            subject: ""
         }
-        console.log("ofmr",formData)
 
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
@@ -71,8 +72,8 @@ export default function ContactUsModal({ useOpen }) {
             axios
                 .post('https://developer.brandclever.in/brand/admin/form/contactForm.php', formData)
                 .then((res) => {
-                    console.log("response", res)
-                    if (res) {
+                    if (res.data.status) {
+                        toast.success(res.data.message || "Form submitted successfully!")
                         setOpen(false);
                         return
                     }
@@ -111,7 +112,7 @@ export default function ContactUsModal({ useOpen }) {
                         <div className='contact_form modal_form'>
                             <DialogTitle id="alert-dialog-title" sx={{ display: "flex", justifyContent: "space-between" }}>
                                 <Typography variant='h5' className='right_test_modal'>
-                                Request Free Consultation 
+                                    Request Free Consultation
                                 </Typography>
                                 <IconButton onClick={handleClose}>
                                     <CloseIcon />
@@ -150,7 +151,7 @@ export default function ContactUsModal({ useOpen }) {
                                     name="number"
                                     value={form.number}
                                     onChange={handleChange}
-                                  
+
                                 />
                                 <TextField
                                     fullWidth
@@ -160,7 +161,7 @@ export default function ContactUsModal({ useOpen }) {
                                     name="message"
                                     value={form.message}
                                     onChange={handleChange}
-                                   
+
                                 />
                             </DialogContent>
 

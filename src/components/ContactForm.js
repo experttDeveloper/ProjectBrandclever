@@ -1,27 +1,26 @@
-import React, { Component } from 'react';
+import React, { useState, useRef } from 'react';
 import axios from 'axios';
 import { Button, TextField } from '@mui/material';
 
-export default class ContactForm extends Component {
-  constructor(props) {
-    super(props);
-    this.myFormRef = React.createRef();
-    this.state = {
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-      errors: {
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-      },
-    };
-  }
+const ContactForm = () => {
+  const myFormRef = useRef();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+    number: ""
+  });
 
-  validateForm = () => {
-    const { name, email, subject, message } = this.state;
+  const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  const validateForm = () => {
+    const { name, email, subject, message } = formData;
     let errors = {
       name: '',
       email: '',
@@ -57,107 +56,104 @@ export default class ContactForm extends Component {
       isValid = false;
     }
 
-    this.setState({ errors });
+    setErrors(errors);
     return isValid;
   };
 
-
-  addFormData = (evt) => {
+  const addFormData = (evt) => {
     evt.preventDefault();
 
-    if (this.validateForm()) {
-      const formData = new FormData();
-      Object.entries(this.state).forEach(([key, value]) => {
-        formData.append(key, value);
+    if (validateForm()) {
+      const formDataObj = new FormData();
+      Object.entries(formData).forEach(([key, value]) => {
+        formDataObj.append(key, value);
       });
-
       axios
         .post('https://developer.brandclever.in/brand/admin/form/contactForm.php', formData)
         .then((res) => {
-          console.log(res.data.success);
-          document.getElementById('successMsg').innerText = res.data.success;
-
-          this.myFormRef.current.reset();
+          if (res.data.status) {
+            document.getElementById('statusMsg').innerText = res.data.message;
+            myFormRef.current.reset();
+            setFormData({ name: '', email: '', subject: '', message: '' });
+          }
         })
         .catch((error) => {
-          console.error(error.response.data.error); // Log detailed error message
+          console.log("error", error)
+          // console.error(error.response.data.error); // Log detailed error message
         });
     }
   };
 
-
-  handleInputChange = (e) => {
+  const handleInputChange = (e) => {
     const { name, value } = e.target;
-    this.setState((prevState) => ({
+    setFormData((prevState) => ({
+      ...prevState,
       [name]: value,
-      errors: {
-        ...prevState.errors,
-        [name]: '',
-      },
+    }));
+    setErrors((prevState) => ({
+      ...prevState,
+      [name]: '',
     }));
   };
 
+  return (
+    <>
+      <form ref={myFormRef} onSubmit={addFormData} style={{ width: '100%', padding: '3rem' }}>
+        <div className="form-group">
+          <TextField
+            variant="outlined"
+            type="text"
+            className={`form-control ${errors.name && 'is-invalid'}`}
+            id="name"
+            placeholder="Name *"
+            name="name"
+            onChange={handleInputChange}
+          />
+          {errors.name && <div className="invalid-feedback">{errors.name}</div>}
+        </div>
+        <div className="form-group">
+          <TextField
+            variant="outlined"
+            type="email"
+            className={`form-control ${errors.email && 'is-invalid'}`}
+            id="email"
+            aria-describedby="emailHelp"
+            placeholder="Email *"
+            name="email"
+            onChange={handleInputChange}
+          />
+          {errors.email && <div className="invalid-feedback">{errors.email}</div>}
+        </div>
+        <div className="form-group">
+          <TextField
+            variant="outlined"
+            type="text"
+            className={`form-control ${errors.subject && 'is-invalid'}`}
+            id="subject"
+            placeholder="Subject *"
+            name="subject"
+            onChange={handleInputChange}
+          />
+          {errors.subject && <div className="invalid-feedback">{errors.subject}</div>}
+        </div>
+        <div className="form-group">
+          <textarea
+            className={`form-control ${errors.message && 'is-invalid'}`}
+            id="message"
+            placeholder="Message *"
+            name="message"
+            onChange={handleInputChange}
+            rows="3"
+          ></textarea>
+          {errors.message && <div className="invalid-feedback">{errors.message}</div>}
+        </div>
+        <Button type="submit" className="button_slide slide_down form_submit_btn" sx={{ background: '#54a154' }}>
+          Submit
+        </Button>
+        <span id="statusMsg"></span>
+      </form>
+    </>
+  );
+};
 
-  render() {
-    const { errors } = this.state;
-
-    return (
-      <>
-        <form ref={this.myFormRef} onSubmit={this.addFormData} style={{ width: '100%', padding: "3rem" }}>
-          <div className="form-group">
-            <TextField
-              variant="outlined"
-              type="text"
-              className={`form-control ${errors.name && 'is-invalid'}`}
-              id="name"
-              placeholder="Name *"
-              name="name"
-              onChange={this.handleInputChange}
-            />
-            {errors.name && <div className="invalid-feedback">{errors.name}</div>}
-          </div>
-          <div className="form-group">
-            <TextField
-              variant="outlined"
-              type="email"
-              className={`form-control ${errors.email && 'is-invalid'}`}
-              id="email"
-              aria-describedby="emailHelp"
-              placeholder="Email *"
-              name="email"
-              onChange={this.handleInputChange}
-            />
-            {errors.email && <div className="invalid-feedback">{errors.email}</div>}
-          </div>
-          <div className="form-group">
-            <TextField
-              variant="outlined"
-              type="text"
-              className={`form-control ${errors.subject && 'is-invalid'}`}
-              id="subject"
-              placeholder="Subject *"
-              name="subject"
-              onChange={this.handleInputChange}
-            />
-            {errors.subject && <div className="invalid-feedback">{errors.subject}</div>}
-          </div>
-          <div className="form-group">
-            <textarea
-              className={`form-control ${errors.message && 'is-invalid'}`}
-              id="message"
-              placeholder="Message *"
-              name="message"
-              onChange={this.handleInputChange}
-              rows="3"
-            ></textarea>
-            {errors.message && <div className="invalid-feedback">{errors.message}</div>}
-          </div>
-          <Button type="submit" className="button_slide slide_down form_submit_btn" sx={{ background: "#54a154" }}>
-            Submit
-          </Button>
-          <span id='successMsg'></span>
-        </form>
-      </>
-    );
-  }
-}
+export default ContactForm;
