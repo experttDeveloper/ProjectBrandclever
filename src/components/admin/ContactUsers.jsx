@@ -21,7 +21,7 @@ export default function Users() {
             try {
                 // Make the GET request
                 const response = await axios.get(url);
-                setUsers(response.data.slice(20,100))
+                setUsers(response.data)
             } catch (error) {
                 // Handle any errors
                 setError(error);
@@ -59,6 +59,7 @@ export default function Users() {
                             <TableCell>ID</TableCell>
                             <TableCell>Name</TableCell>
                             <TableCell>Email</TableCell>
+                            <TableCell>Phone Number</TableCell>
                             <TableCell>Message</TableCell>
                             <TableCell>Date & Time</TableCell>
                         </TableRow>
@@ -72,6 +73,7 @@ export default function Users() {
                                 <TableCell>{user.id}</TableCell>
                                 <TableCell>{user.name} </TableCell>
                                 <TableCell><Link to={`mailto:${user.email}`}>{user.email}</Link> </TableCell>
+                                <TableCell>{user.number ? user.number : "None"}</TableCell>
                                 <TableCell>{user.message}</TableCell>
                                 <TableCell>{user.created_at ? user.created_at : "None"}</TableCell>
                               

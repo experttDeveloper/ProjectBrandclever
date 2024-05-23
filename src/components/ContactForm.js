@@ -9,7 +9,9 @@ const ContactForm = () => {
     email: '',
     subject: '',
     message: '',
-    number: ""
+    number: "",
+    service: ""
+
   });
 
   const [errors, setErrors] = useState({

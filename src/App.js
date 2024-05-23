@@ -59,14 +59,12 @@ export default class App extends Component {
 
   scrollToTop = () => {
     scroll.scrollToTop({
-      duration: 5000,
+      duration: 1000, // Reduce the duration to 1000ms (1 second) for a faster scroll
       smooth: 'easeInOutQuart',
     });
   };
 
   render() {
-
-
 
     return (
       <>
@@ -169,7 +167,7 @@ export default class App extends Component {
                 btnTxtColor="black"
               />
 
-              <button onClick={this.scrollToTop} className='onTop '><i className="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+              <button style={{cursor:"pointer"}} onClick={this.scrollToTop} className='onTop '><i className="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
             </>
           )
         }

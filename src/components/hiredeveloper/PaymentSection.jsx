@@ -1,8 +1,16 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap';
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import { useNavigate } from 'react-router-dom';
 
 export default function PaymentSection() {
+
+  const navigate = useNavigate()
+
+  const handleClick = ()=>{
+    navigate('/contact')
+  }
+
   return (
     <div>
         <div className="payment">
@@ -53,7 +61,7 @@ export default function PaymentSection() {
                   </div>
                 </div>
                 <div className="btn_contact">
-                  <button className="btn_contactus">Contact Us</button>
+                  <button className="btn_contactus" onClick={handleClick}>Contact Us</button>
                 </div>
               </div>
             </Col>
@@ -103,7 +111,7 @@ export default function PaymentSection() {
                   </div>
                 </div>
                 <div className="btn_contact">
-                  <button className="btn_contactus">Contact Us</button>
+                  <button className="btn_contactus" onClick={handleClick}>Contact Us</button>
                 </div>
               </div>
             </Col>
@@ -153,7 +161,7 @@ export default function PaymentSection() {
                   </div>
                 </div>
                 <div className="btn_contact">
-                  <button className="btn_contactus">Contact Us</button>
+                  <button className="btn_contactus" onClick={handleClick}>Contact Us</button>
                 </div>
               </div>
             </Col>

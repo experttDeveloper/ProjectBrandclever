@@ -1481,6 +1481,7 @@ h3.MuiTypography-root.MuiTypography-h3.css-18h9l83 {
 }
 
 .contact_us_first {
+    border-bottom: 3px solid var(--green-color);
     color: white;
     padding: 80px 0px !important;
     background: #fff;
@@ -2963,7 +2964,7 @@ li.hire_us .dropdown-content {
 }
 
 .left_modal {
-    background-image: url('../public/get_in.png');
+    background-image: url('../public/get_in.avif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3198,6 +3199,23 @@ h4.MuiTypography-root.MuiTypography-h3.title_modal.css-18h9l83 {
     text-transform: capitalize;
 }
 h4.MuiTypography-root.MuiTypography-h4.title_modal.css-1xvinid {
-    padding: 26px 0px 0px 0px;
+    padding: 26px 0 0;
     text-align: center;
+    color: white;
+    text-transform: capitalize;
 }
+button.close_modal_btn {
+    color: var(--dark-black-color);
+    left: 83%;
+}
+button.close_modal_btn:hover {
+    color: var(--dark-black-color);
+    left: 83%;
+    background: transparent;
+}
+
+h5.MuiTypography-root.MuiTypography-h5.right_test_modal.css-zq6grw {
+    text-align: center;
+    font-size: 31px;
+}
+

@@ -77,7 +77,7 @@ export default function WebDevelopment() {
                     },
                     {
                         title: "Comprehensive Website Maintenance",
-                        description: "Rest easy with our flexible maintenance plans—monthly, hourly, or after-hours. Trust us to keep your website secure, updated, and running smoothly. AWS is a trusted partner for website maintenance worldwide.",
+                        description: "Rest easy with our flexible maintenance plans—monthly, hourly, or after-hours. Trust us to keep your website secure, updated, and running smoothly. AWS is a trusted.",
                         points: [
                             "Regular Updates and Patches",
                             "Security Monitoring and Alerts",

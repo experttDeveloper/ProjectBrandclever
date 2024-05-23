@@ -4,11 +4,12 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
-import { IconButton, TextField, Typography } from '@mui/material';
+import { IconButton, InputAdornment, TextField, Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import { Col, Row } from 'react-bootstrap';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import { AccountCircle, Email, Message, Phone } from '@mui/icons-material';
 
 export default function ContactUsModal({ useOpen }) {
 
@@ -65,7 +66,8 @@ export default function ContactUsModal({ useOpen }) {
             email: form.email,
             number: form.number,
             message: form.message,
-            subject: ""
+            subject: "",
+            service: ""
         }
 
         if (Object.keys(validationErrors).length > 0) {
@@ -75,6 +77,7 @@ export default function ContactUsModal({ useOpen }) {
             axios
                 .post('https://developer.brandclever.in/brand/admin/form/contactForm.php', formData)
                 .then((res) => {
+                    console.log("res", res.data)
                     if (res.data.status) {
                         toast.success(res.data.message || "Form submitted successfully!")
                         setOpen(false);
@@ -103,7 +106,7 @@ export default function ContactUsModal({ useOpen }) {
                     <Col md={6}>
                         <div className='left_modal'>
                             <Typography className='title_modal' variant='h4'>
-                                Turning your <span style={{ color: "#54a154" }}>vision </span>
+                                Turning your <span style={{ color: "#54a154", fontWeight: '700' }}>vision </span>
                                 into tangible reality
                             </Typography>
                             {/* <p className="des_modal">
@@ -112,14 +115,15 @@ export default function ContactUsModal({ useOpen }) {
                         </div>
                     </Col>
                     <Col md={6}>
+                        <Button onClick={handleClose} className='close_modal_btn'>
+                            <CloseIcon />
+                        </Button>
                         <div className='contact_form modal_form'>
                             <DialogTitle id="alert-dialog-title" sx={{ display: "flex", justifyContent: "space-between" }}>
                                 <Typography variant='h5' className='right_test_modal'>
                                     Request Free Consultation
                                 </Typography>
-                                <IconButton onClick={handleClose}>
-                                    <CloseIcon />
-                                </IconButton>
+
                             </DialogTitle>
                             <DialogContent>
                                 <TextField
@@ -132,6 +136,13 @@ export default function ContactUsModal({ useOpen }) {
                                     onChange={handleChange}
                                     error={!!errors.name} // Display error state
                                     helperText={errors.name} // Display error message
+                                    InputProps={{
+                                        startAdornment: (
+                                            <InputAdornment position="start">
+                                                <AccountCircle /> {/* Icon for Full Name */}
+                                            </InputAdornment>
+                                        ),
+                                    }}
                                 />
                                 <TextField
                                     type="email"
@@ -144,6 +155,13 @@ export default function ContactUsModal({ useOpen }) {
                                     onChange={handleChange}
                                     error={!!errors.email}
                                     helperText={errors.email}
+                                    InputProps={{
+                                        startAdornment: (
+                                            <InputAdornment position="start">
+                                                <Email /> {/* Icon for Email */}
+                                            </InputAdornment>
+                                        ),
+                                    }}
                                 />
                                 <TextField
                                     type="number"
@@ -154,6 +172,13 @@ export default function ContactUsModal({ useOpen }) {
                                     name="number"
                                     value={form.number}
                                     onChange={handleChange}
+                                    InputProps={{
+                                        startAdornment: (
+                                            <InputAdornment position="start">
+                                                <Phone /> {/* Icon for Contact Number */}
+                                            </InputAdornment>
+                                        ),
+                                    }}
 
                                 />
                                 <TextField
@@ -166,6 +191,13 @@ export default function ContactUsModal({ useOpen }) {
                                     onChange={handleChange}
                                     error={!!errors.message} // Display error state
                                     helperText={errors.message} // Display error message
+                                    InputProps={{
+                                        startAdornment: (
+                                            <InputAdornment position="start">
+                                                <Message /> {/* Icon for Message */}
+                                            </InputAdornment>
+                                        ),
+                                    }}
 
                                 />
                             </DialogContent>

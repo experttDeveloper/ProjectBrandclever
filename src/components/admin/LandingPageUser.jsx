@@ -60,7 +60,7 @@ export default function LandingPageUser() {
                             <TableCell>ID</TableCell>
                             <TableCell>Name</TableCell>
                             <TableCell>Email</TableCell>
-                            <TableCell>Contact Number</TableCell>
+                            <TableCell>Phone Number</TableCell>
                             <TableCell>Message</TableCell>
                             <TableCell>Date & Time</TableCell>
                         </TableRow>

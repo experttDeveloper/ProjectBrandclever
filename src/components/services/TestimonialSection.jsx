@@ -2,8 +2,16 @@ import { CardContent, CardMedia, Typography, Card, Button } from '@mui/material'
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import VerifiedIcon from '@mui/icons-material/Verified';
+import { useNavigate } from 'react-router-dom';
 
 export default function TestimonialSection({ heading, data }) {
+
+    const navigate = useNavigate()
+
+    const handleClick = () => {
+        navigate("/contact")
+    }
+
     return (
         <div>
             <div className='web_second_sdit'>
@@ -32,15 +40,14 @@ export default function TestimonialSection({ heading, data }) {
                                                     {
                                                         ele.points.map((point, key) => {
                                                             return (
-
-                                                                <p><VerifiedIcon /> <b>{point}</b> </p>
+                                                                <p key={key}><VerifiedIcon /> <b>{point}</b> </p>
                                                             )
                                                         })
                                                     }
                                                 </div>
 
                                             </CardContent>
-                                            <Button className='get_quote_btn' size="small">Get a Quote</Button>
+                                            <Button onClick={handleClick} className='get_quote_btn' size="small">Get a Quote</Button>
                                         </Card>
                                     </Col>
                                 )

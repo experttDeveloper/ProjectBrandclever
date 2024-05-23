@@ -1,14 +1,20 @@
-import { TextField } from '@mui/material';
+import { InputLabel, MenuItem, Select, TextField, FormControl, FormHelperText } from '@mui/material';
+import axios from 'axios';
 import React, { useState } from 'react'
 import { Button, Card } from 'react-bootstrap';
+import { toast } from 'react-toastify';
+
+
 
 export default function HireDeveloperForm() {
 
+    const [errors, setErrors] = React.useState({});
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         number: '',
-        message: ''
+        message: '',
+        service: ""
     });
 
     const handleChange = (e) => {
@@ -17,29 +23,83 @@ export default function HireDeveloperForm() {
             ...formData,
             [name]: value
         });
+
+        setErrors({ ...errors, [name]: '' });
+    };
+
+
+    const validate = () => {
+        const newErrors = {};
+
+        if (!formData.name) {
+            newErrors.name = 'Full name is required';
+        }
+        if (!formData.email) {
+            newErrors.email = 'Email is required';
+        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+            newErrors.email = 'Invalid email address';
+        }
+        if (!formData.message) {
+            newErrors.message = 'Message is required';
+        }
+        if (!formData.service) {
+            newErrors.service = 'Service is required';
+        }
+
+        return newErrors;
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         // Handle form submission, e.g., send data to server
-        console.log(formData);
+        const validationErrors = validate();
+
+        const form = {
+            name: formData.name,
+            email: formData.email,
+            number: formData.number,
+            message: formData.message,
+            subject: "",
+            service: formData.service
+        }
+
+        if (Object.keys(validationErrors).length > 0) {
+            setErrors(validationErrors);
+        } else {
+            // Form is valid, do something with the data (e.g., send to server)
+            axios
+                .post('https://developer.brandclever.in/brand/admin/form/contactForm.php', form)
+                .then((res) => {
+                    console.log("res", res.data)
+                    if (res.data.status) {
+                        toast.success(res.data.message || "Form submitted successfully!")
+                        return
+                    }
+
+                })
+                .catch((error) => {
+                    console.log("error", error)
+                    // console.error(error.response.data.error); // Log detailed error message
+                });
+        }
     };
 
 
     return (
-        <div>
+        <div className='hire_developer_form'>
             <Card style={{ backgroundImage: "linear-gradient(#ed5952, yellow)", padding: "15px" }}>
-                <h2>Get Consultation Now!</h2>
-                <p>Let’s Discuss to Build Something Great Together!</p>
+                <h2 style={{ textAlign: "center" }}>Get Consultation Now!</h2>
+                <p style={{ textAlign: "center" }}>Let’s Discuss to Build Something Great Together!</p>
                 <form onSubmit={handleSubmit}>
                     <div style={{ marginBottom: "10px" }}>
                         <TextField
                             fullWidth
                             name='name'
-                            label="Name"
                             variant="outlined"
-                            placeholder='Your Name'
+                            placeholder='Your Name *'
                             onChange={handleChange}
+                            error={!!errors.name} // Display error state
+                            helperText={errors.name} // Display error message
                         />
 
                     </div>
@@ -48,10 +108,11 @@ export default function HireDeveloperForm() {
                             fullWidth
                             name='email'
                             id="name"
-                            label="Email"
                             variant="outlined"
-                            placeholder='Your Email'
+                            placeholder='Your Email *'
                             onChange={handleChange}
+                            error={!!errors.email} // Display error state
+                            helperText={errors.email} // Display error message
                         />
                     </div>
                     <div style={{ marginBottom: "10px" }}>
@@ -59,20 +120,45 @@ export default function HireDeveloperForm() {
                             fullWidth
                             id="number"
                             name='number'
-                            label="Phone Number"
                             variant="outlined"
                             placeholder='Your Phone Number'
                             onChange={handleChange}
                         />
                     </div>
                     <div style={{ marginBottom: "10px" }}>
+                        <FormControl fullWidth variant="outlined" >
+                            {
+                                formData.service ? "" : <InputLabel sx={{ color: "#a2a2a2" }}>Select Service *</InputLabel>
+                            }
+                            <Select
+                                labelId="project-type-label"
+                                id="project-type"
+                                name="service"
+                                placeholder='Service *'
+                                onChange={handleChange}
+                                error={!!errors.service}
+                            >
+
+                                <MenuItem value="developement">Web Development</MenuItem>
+                                <MenuItem value="web_design">Web Design</MenuItem>
+                                <MenuItem value="ui/ux">UI/UX</MenuItem>
+                                <MenuItem value="ppc">PPC</MenuItem>
+                                <MenuItem value="seo">SEO</MenuItem>
+                                <MenuItem value="email_marketing">Email Marketing</MenuItem>
+                                <MenuItem value="smm">SMM</MenuItem>
+                            </Select>
+                            {errors.service && <FormHelperText>{errors.service}</FormHelperText>}
+                        </FormControl>
+                    </div>
+                    <div style={{ marginBottom: "10px" }}>
                         <TextField
                             fullWidth
                             id="message"
                             name="message"
-                            label="Message"
                             onChange={handleChange}
-                            placeholder='Message'
+                            placeholder='Message *'
+                            error={!!errors.message} // Display error state
+                            helperText={errors.message} // Display error message
                         />
                     </div>
                     <Button variant="contained" type="submit">Hire Developer</Button>

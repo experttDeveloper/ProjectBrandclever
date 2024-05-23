@@ -53,6 +53,7 @@
   padding: 15px 0px;
   border-radius: 4px;
   color: var(--dark-black-color);
+  text-transform: uppercase;
 }
 
 .form_shopify_hire .form_inner .card button.btn.btn-contained:hover {
@@ -281,6 +282,7 @@ p.hiring_shopify {
   color: var(--white-color);
   border-radius: 4px;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .hire_box_main.col-md-4 button.btn_contactus:hover {
