@@ -333,7 +333,7 @@ const NavBar = () => {
                               </div>
                               <div className='service_img'>
                                 <img src='/images/menus/privacy.png' alt='about page' height="32px" width="32px" />
-                                <Link to="/traning-and-placement">Traning & Placement</Link>
+                                <Link to="/training-and-placement">Traning & Placement</Link>
                               </div>
                               
                               {/* <div className='service_img'>

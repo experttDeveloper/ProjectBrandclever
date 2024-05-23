@@ -58,9 +58,9 @@ import { ToastContainer } from 'react-toastify';
 export default class App extends Component {
 
   scrollToTop = () => {
-    scroll.scrollToTop({
-      duration: 1000, // Reduce the duration to 1000ms (1 second) for a faster scroll
-      smooth: 'easeInOutQuart',
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scrolling behavior
     });
   };
 
@@ -90,7 +90,7 @@ export default class App extends Component {
                   {/* <Route path="/service" element={<Service />} /> */}
                   <Route path="/service" element={<UpdatedService />} />
                   <Route path="portfolio" element={<Portfolio />} />
-                  <Route path="/traning-and-placement" element={<PlacementForm />} />
+                  <Route path="/training-and-placement" element={<PlacementForm />} />
                   <Route path="/review" element={<Review />} />
                   <Route path="/career" element={<Career />} />
 
