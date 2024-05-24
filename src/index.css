@@ -3185,7 +3185,7 @@ a.hire_link:hover {
 
 .contact_form.modal_form button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root {
     background: transparent;
-    
+
 }
 
 .contact_form.modal_form button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-1yxmbwk {
@@ -3198,16 +3198,19 @@ h4.MuiTypography-root.MuiTypography-h3.title_modal.css-18h9l83 {
     font-weight: 600;
     text-transform: capitalize;
 }
+
 h4.MuiTypography-root.MuiTypography-h4.title_modal.css-1xvinid {
     padding: 26px 0 0;
     text-align: center;
     color: white;
     text-transform: capitalize;
 }
+
 button.close_modal_btn {
     color: var(--dark-black-color);
     left: 83%;
 }
+
 button.close_modal_btn:hover {
     color: var(--dark-black-color);
     left: 83%;
@@ -3217,5 +3220,9 @@ button.close_modal_btn:hover {
 h5.MuiTypography-root.MuiTypography-h5.right_test_modal.css-zq6grw {
     text-align: center;
     font-size: 31px;
+}
+
+.hidedropdown {
+    display: none !important;
 }
 

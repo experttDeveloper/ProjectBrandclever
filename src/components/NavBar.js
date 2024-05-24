@@ -159,11 +159,8 @@ const hireMenus = [
 const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isSticky, setSticky] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
 
-  const toggleDropdown = (dropdownName) => {
-    setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
-  };
+  const [hideDropDown, setHideDropdown] = useState(false)
 
 
   const toggleMenu = () => {
@@ -173,6 +170,13 @@ const NavBar = () => {
   const closeMenu = () => {
     setMenuOpen(false);
   };
+
+  const hideHandleDropDown = () => {
+    setHideDropdown(!hideDropDown);
+    closeMenu()
+  }
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -209,9 +213,7 @@ const NavBar = () => {
               </div>
               <nav className={isMenuOpen ? 'open' : 'closeToggal'}>
                 <ul>
-                  <li onMouseEnter={() => setActiveDropdown('services')}
-                    onMouseLeave={() => setActiveDropdown(null)}
-                    onClick={() => toggleDropdown('services')}>
+                  <li onMouseEnter={() => setHideDropdown(false)}>
                     <div className="dropdownMenu">
                       <Link to="/service" onClick={closeMenu} className="dropbtn">Services
                         <span class="arrow-right">
@@ -220,44 +222,39 @@ const NavBar = () => {
                           </span>
                         </span>
                       </Link>
-                      {activeDropdown === 'services' && (
-                        <div className="dropdown-content">
 
-                          <div className="row">
-                            <div className="col-md-3 serv_cns">
-                              {serviceMenus.slice(0, 6).map((ele, key) => {
+                      <div className={`dropdown-content ${hideDropDown ? "hidedropdown" : ""}`}>
+                        <div className="row">
+                          <div className="col-md-3 serv_cns">
+                            {serviceMenus.slice(0, 6).map((ele, key) => {
+                              return (
+                                <div className='service_img' >
+                                  <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
+                                  <Link to={ele.url} onClick={hideHandleDropDown}>{ele.title}</Link>
+                                </div>
+                              )
+                            })}
+                          </div>
+                          <div className="col-md-3 serv_cns">
+                            {
+                              serviceMenus.slice(6, 12).map((ele, key) => {
                                 return (
                                   <div className='service_img'>
                                     <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
-                                    <Link to={ele.url}>{ele.title}</Link>
+                                    <Link to={ele.url} onClick={hideHandleDropDown}>{ele.title}</Link>
                                   </div>
                                 )
-                              })}
-                            </div>
-                            <div className="col-md-3 serv_cns">
-                              {
-                                serviceMenus.slice(6, 12).map((ele, key) => {
-                                  return (
-                                    <div className='service_img'>
-                                      <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
-                                      <Link to={ele.url}>{ele.title}</Link>
-                                    </div>
-                                  )
-                                })
-                              }
-                            </div>
-                            <div className="col-md-6 serv_img">
-                              <img src={'/images/nav/service_nav.png'} alt='logo_img' />
-                            </div>
+                              })
+                            }
+                          </div>
+                          <div className="col-md-6 serv_img">
+                            <img src={'/images/nav/service_nav.png'} alt='logo_img' />
                           </div>
                         </div>
-                      )}
-
+                      </div>
                     </div>
                   </li>
-                  <li onMouseEnter={() => setActiveDropdown('services')}
-                    onMouseLeave={() => setActiveDropdown(null)}
-                    onClick={() => toggleDropdown('services')}>
+                  <li onMouseEnter={() => setHideDropdown(false)}>
                     <div className="dropdownMenu">
                       <Link to="#" onClick={closeMenu} className="dropbtn">Hire a Developer
                         <span class="arrow-right">
@@ -266,43 +263,41 @@ const NavBar = () => {
                           </span>
                         </span>
                       </Link>
-                      {activeDropdown === 'services' && (
-                        <div className="dropdown-content">
 
-                          <div className="row">
-                            <div className="col-md-3 serv_cns">
-                              {hireMenus.slice(0, 6).map((ele, key) => {
+                      <div className={`dropdown-content ${hideDropDown ? "hidedropdown" : ""}`}>
+
+                        <div className="row">
+                          <div className="col-md-3 serv_cns">
+                            {hireMenus.slice(0, 6).map((ele, key) => {
+                              return (
+                                <div className='service_img'>
+                                  <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
+                                  <Link to={ele.url} onClick={hideHandleDropDown}>{ele.title}</Link>
+                                </div>
+                              )
+                            })}
+                          </div>
+                          <div className="col-md-3 serv_cns">
+                            {
+                              hireMenus.slice(6, 12).map((ele, key) => {
                                 return (
                                   <div className='service_img'>
                                     <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
-                                    <Link to={ele.url}>{ele.title}</Link>
+                                    <Link to={ele.url} onClick={hideHandleDropDown}>{ele.title}</Link>
                                   </div>
                                 )
-                              })}
-                            </div>
-                            <div className="col-md-3 serv_cns">
-                              {
-                                hireMenus.slice(6, 12).map((ele, key) => {
-                                  return (
-                                    <div className='service_img'>
-                                      <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
-                                      <Link to={ele.url}>{ele.title}</Link>
-                                    </div>
-                                  )
-                                })
-                              }
-                            </div>
-                            <div className="col-md-6 serv_img">
-                              <img src={'/images/nav/hiring_nav.png'} alt='logo_img' />
-                            </div>
+                              })
+                            }
+                          </div>
+                          <div className="col-md-6 serv_img">
+                            <img src={'/images/nav/hiring_nav.png'} alt='logo_img' />
                           </div>
                         </div>
-                      )}
+                      </div>
+
                     </div>
                   </li>
-                  <li className='pages_navbar' onMouseEnter={() => setActiveDropdown('services')}
-                    onMouseLeave={() => setActiveDropdown(null)}
-                    onClick={() => toggleDropdown('services')}>
+                  <li className='pages_navbar' onMouseEnter={() => setHideDropdown(false)}>
                     <div className="dropdownMenu">
                       <Link to="/about" onClick={closeMenu} className='dropbtn'>Pages
                         <span class="arrow-right">
@@ -311,49 +306,49 @@ const NavBar = () => {
                           </span>
                         </span>
                       </Link>
-                      {activeDropdown === 'services' && (
-                        <div className="dropdown-content">
-                          <Row>
-                            <Col md={4}>
-                              <div className='service_img'>
-                                <img src='/images/menus/about.png' alt='about page' height="32px" width="32px" />
-                                <Link to="/about">About</Link>
-                              </div>
-                              <div className='service_img'>
-                                <img src='/images/menus/career.png' alt='about page' height="32px" width="32px" />
-                                <Link to="/career">Career</Link>
-                              </div>
-                              <div className='service_img'>
-                                <img src='/images/menus/portfolio.png' alt='about page' height="32px" width="32px" />
-                                <Link to="/portfolio">Portfolio</Link>
-                              </div>
-                              <div className='service_img'>
-                                <img src='/images/menus/blog.png' alt='about page' height="32px" width="32px" />
-                                <Link to="/blog">blog</Link>
-                              </div>
-                              <div className='service_img'>
-                                <img src='/images/menus/privacy.png' alt='about page' height="32px" width="32px" />
-                                <Link to="/training-and-placement">Traning & Placement</Link>
-                              </div>
-                              
-                              {/* <div className='service_img'>
+
+                      <div className={`dropdown-content ${hideDropDown ? "hidedropdown" : ""}`}>
+                        <Row>
+                          <Col md={4}>
+                            <div className='service_img'>
+                              <img src='/images/menus/about.png' alt='about page' height="32px" width="32px" />
+                              <Link to="/about" onClick={hideHandleDropDown}>About</Link>
+                            </div>
+                            <div className='service_img'>
+                              <img src='/images/menus/career.png' alt='about page' height="32px" width="32px" />
+                              <Link to="/career" onClick={hideHandleDropDown}>Career</Link>
+                            </div>
+                            <div className='service_img'>
+                              <img src='/images/menus/portfolio.png' alt='about page' height="32px" width="32px" />
+                              <Link to="/portfolio" onClick={hideHandleDropDown}>Portfolio</Link>
+                            </div>
+                            <div className='service_img'>
+                              <img src='/images/menus/blog.png' alt='about page' height="32px" width="32px" />
+                              <Link to="/blog" onClick={hideHandleDropDown}>blog</Link>
+                            </div>
+                            <div className='service_img'>
+                              <img src='/images/menus/privacy.png' alt='about page' height="32px" width="32px" />
+                              <Link to="/training-and-placement" onClick={hideHandleDropDown}>Traning & Placement</Link>
+                            </div>
+
+                            {/* <div className='service_img'>
                               <img src='images/menus/term.png' alt='about page' height="32px" width="32px" />
                               <Link to="/term-conditions">Terms Conditions</Link>
                             </div> */}
-                            </Col>
-                            <Col md={8}>
+                          </Col>
+                          <Col md={8}>
 
-                              <div className=" serv_img">
-                                <img src={'/images/nav/about_nav.png'} alt='logo_img' />
-                              </div>
-                            </Col>
-                          </Row>
-                        </div>
-                      )}
+                            <div className=" serv_img">
+                              <img src={'/images/nav/about_nav.png'} alt='logo_img' />
+                            </div>
+                          </Col>
+                        </Row>
+                      </div>
+
                     </div>
                   </li>
 
-                  <li className='review_nav'>
+                  <li className='review_nav' onMouseEnter={() => setHideDropdown(false)}>
                     <div className="dropdownMenu">
                       <Link to="/review" onClick={closeMenu} className="dropbtn">Reviews
                         <span class="arrow-right">
@@ -362,16 +357,16 @@ const NavBar = () => {
                           </span>
                         </span>
                       </Link>
-                      <div className="dropdown-content">
+                      <div className={`dropdown-content ${hideDropDown ? "hidedropdown" : ""}`}>
                         <Row>
                           <Col md={4}>
                             <div className='service_img'>
                               <img src='/images/menus/google.png' alt='about page' height="26px" width="26px" />
-                              <Link to="https://www.google.com/search?q=brandclever+google+reviews&sca_esv=8f14c8c94b33adc6&sxsrf=ACQVn0-YomRngzIUeWaPpQkocnbm6xeIvA%3A1714648454031&ei=hnUzZrmwAZKM4-EPrtK00AU&oq=brandclever+googl&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWJyYW5kY2xldmVyIGdvb2dsKgIIATIHECEYoAEYCjIHECEYoAEYCjIHECEYoAEYCkiVFVCjAVjVCnABeAGQAQCYAb4BoAHgB6oBAzAuNrgBAcgBAPgBAZgCB6ACnAjCAgcQIxiwAxgnwgIKEAAYsAMY1gQYR8ICEBAAGIAEGLADGEMYyQMYigXCAg4QABiABBiwAxiSAxiKBcICDRAAGIAEGLADGEMYigXCAgQQIxgnwgIKECMYgAQYJxiKBcICCxAuGIAEGMcBGK8BwgIFEAAYgATCAgIQJsICCBAAGIAEGKIEwgIFECEYoAGYAwCIBgGQBgmSBwMxLjagB6Ed&sclient=gws-wiz-serp#lrd=0x390fef8cd36051e7:0xdfdada19c12e600f,1,,,," target="_blank">Google</Link>
+                              <Link to="https://www.google.com/search?q=brandclever+google+reviews&sca_esv=8f14c8c94b33adc6&sxsrf=ACQVn0-YomRngzIUeWaPpQkocnbm6xeIvA%3A1714648454031&ei=hnUzZrmwAZKM4-EPrtK00AU&oq=brandclever+googl&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWJyYW5kY2xldmVyIGdvb2dsKgIIATIHECEYoAEYCjIHECEYoAEYCjIHECEYoAEYCkiVFVCjAVjVCnABeAGQAQCYAb4BoAHgB6oBAzAuNrgBAcgBAPgBAZgCB6ACnAjCAgcQIxiwAxgnwgIKEAAYsAMY1gQYR8ICEBAAGIAEGLADGEMYyQMYigXCAg4QABiABBiwAxiSAxiKBcICDRAAGIAEGLADGEMYigXCAgQQIxgnwgIKECMYgAQYJxiKBcICCxAuGIAEGMcBGK8BwgIFEAAYgATCAgIQJsICCBAAGIAEGKIEwgIFECEYoAGYAwCIBgGQBgmSBwMxLjagB6Ed&sclient=gws-wiz-serp#lrd=0x390fef8cd36051e7:0xdfdada19c12e600f,1,,,," target="_blank" onClick={hideHandleDropDown}>Google</Link>
                             </div>
                             <div className='service_img'>
                               <img src='/images/menus/upwork.png' alt='about page' height="26px" width="26px" />
-                              <Link to="https://www.upwork.com/agencies/brandclever/" target="_blank">Upwork</Link>
+                              <Link to="https://www.upwork.com/agencies/brandclever/" target="_blank" onClick={hideHandleDropDown}>Upwork</Link>
                             </div>
                             {/* <div className='service_img'>
                               <img src='images/menus/linkedin.png' alt='about page' height="26px" width="26px" />
@@ -379,11 +374,11 @@ const NavBar = () => {
                             </div> */}
                             <div className='service_img'>
                               <img src='/images/menus/indeed.png' alt='about page' height="26px" width="26px" />
-                              <Link to="https://in.indeed.com/cmp/Brandclever/reviews" target="_blank">Indeed</Link>
+                              <Link to="https://in.indeed.com/cmp/Brandclever/reviews" target="_blank" onClick={hideHandleDropDown}>Indeed</Link>
                             </div>
                             <div className='service_img'>
                               <img src='/images/menus/glassdor.png' alt='about page' height="26px" width="26px" />
-                              <Link to="https://www.glassdoor.co.in/Overview/Working-at-Brandclever-in-EI_IE7371543.11,25.htm" target="_blank">Glassdoor</Link>
+                              <Link to="https://www.glassdoor.co.in/Overview/Working-at-Brandclever-in-EI_IE7371543.11,25.htm" target="_blank" onClick={hideHandleDropDown}>Glassdoor</Link>
                             </div>
                           </Col>
                           <Col md={8}>
@@ -396,7 +391,7 @@ const NavBar = () => {
                       </div>
                     </div>
                   </li>
-                  <li className='hire_us'>
+                  <li className='hire_us' onMouseEnter={() => setHideDropdown(false)}>
                     <div className="dropdownMenu">
                       <Link to="#" onClick={closeMenu} className='dropbtn'>Hire Us
                         <span class="arrow-right">
@@ -405,7 +400,7 @@ const NavBar = () => {
                           </span>
                         </span>
                       </Link>
-                      <div className="dropdown-content">
+                      <div className={`dropdown-content ${hideDropDown ? "hidedropdown" : ""}`}>
                         <Row>
                           <Col med={4}>
                             <div className='service_img pph_icon'>
@@ -413,22 +408,22 @@ const NavBar = () => {
                               <div className='pph_nav'>
                                 <div className='dropdownMenu'>
                                   <Link to="#">Upwork</Link>
-                                  <div className="dropdown-content">
+                                  <div className={`dropdown-content ${hideDropDown ? "hidedropdown" : ""}`}>
                                     <Row>
                                       <Col md={6}>
 
-                                        <Link to="https://www.upwork.com/agencies/brandclever/" target="_blank"><DoneAllIcon /> Brandclever Agency</Link>
-                                        <Link to="https://www.upwork.com/freelancers/~01d672b038a81f6f0f" target="_blank"><DoneAllIcon /> Manish Kumar</Link>
-                                        <Link to="https://www.upwork.com/freelancers/shobhan3" target="_blank"><DoneAllIcon /> Shobha Negi</Link>
-                                        <Link to="https://www.upwork.com/freelancers/shalus3" target="_blank"><DoneAllIcon /> Shalu sharma</Link>
+                                        <Link to="https://www.upwork.com/agencies/brandclever/" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Brandclever Agency</Link>
+                                        <Link to="https://www.upwork.com/freelancers/~01d672b038a81f6f0f" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Manish Kumar</Link>
+                                        <Link to="https://www.upwork.com/freelancers/shobhan3" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Shobha Negi</Link>
+                                        <Link to="https://www.upwork.com/freelancers/shalus3" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Shalu sharma</Link>
 
 
                                       </Col>
                                       <Col md={6}>
-                                        <Link to="https://www.upwork.com/freelancers/~013b4df1df24fb5df6" target="_blank"><DoneAllIcon /> Indu Thakur</Link>
-                                        <Link to="https://www.upwork.com/freelancers/~017f90265127deec6e" target="_blank"><DoneAllIcon /> Shivani Devi</Link>
-                                        <Link to="https://www.upwork.com/freelancers/~01ad788d5e5e96a870" target="_blank"><DoneAllIcon /> Mansi Verma</Link>
-                                        <Link to="https://www.upwork.com/freelancers/gurjeets6" target="_blank"><DoneAllIcon /> Gurjeet Singh</Link>
+                                        <Link to="https://www.upwork.com/freelancers/~013b4df1df24fb5df6" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Indu Thakur</Link>
+                                        <Link to="https://www.upwork.com/freelancers/~017f90265127deec6e" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Shivani Devi</Link>
+                                        <Link to="https://www.upwork.com/freelancers/~01ad788d5e5e96a870" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Mansi Verma</Link>
+                                        <Link to="https://www.upwork.com/freelancers/gurjeets6" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Gurjeet Singh</Link>
                                         {/* <Link to="https://www.upwork.com/freelancers/~01d54de3c49d7edb8b" target="_blank"><DoneAllIcon /> Ashandeep Singh</Link> */}
                                       </Col>
 
@@ -443,9 +438,9 @@ const NavBar = () => {
                               <div className='pph_nav'>
                                 <div className='dropdownMenu'>
                                   <Link to="#">PPH</Link>
-                                  <div className="dropdown-content">
-                                    <Link to="https://www.peopleperhour.com/freelancer/technology-programming/indu-thakur-1-wordpress-seo-expert-top-rated-mwyanvv" target="_blank"><DoneAllIcon /> Indu Thakur</Link>
-                                    <Link to="https://www.peopleperhour.com/freelancer/technology-programming/shobha-negi-award-winning-web-developer-zzzjjqqj" target="_blank"><DoneAllIcon /> Shobha Negi</Link>
+                                  <div className={`dropdown-content ${hideDropDown ? "hidedropdown" : ""}`}>
+                                    <Link to="https://www.peopleperhour.com/freelancer/technology-programming/indu-thakur-1-wordpress-seo-expert-top-rated-mwyanvv" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Indu Thakur</Link>
+                                    <Link to="https://www.peopleperhour.com/freelancer/technology-programming/shobha-negi-award-winning-web-developer-zzzjjqqj" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Shobha Negi</Link>
 
                                   </div>
                                 </div>
@@ -457,7 +452,7 @@ const NavBar = () => {
                                 <div className='dropdownMenu'>
                                   <Link to="#">Fiverr</Link>
                                   <div className="dropdown-content fiverr_navbar">
-                                    <Link to="https://www.fiverr.com/shobha_negii" target="_blank"><DoneAllIcon /> Shobha Negi</Link>
+                                    <Link to="https://www.fiverr.com/shobha_negii" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Shobha Negi</Link>
                                   </div>
                                 </div>
                               </div>
@@ -468,8 +463,7 @@ const NavBar = () => {
                                 <div className='dropdownMenu'>
                                   <Link to="#">Guru</Link>
                                   <div className="dropdown-content guru_navbar">
-                                    <Link to="https://www.guru.com/freelancers/manish-kumar-221" target="_blank"><DoneAllIcon /> Manish Kumar</Link>
-
+                                    <Link to="https://www.guru.com/freelancers/manish-kumar-221" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Manish Kumar</Link>
                                   </div>
                                 </div>
                               </div>
