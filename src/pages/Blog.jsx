@@ -32,8 +32,7 @@ export default function Blog() {
           <Row>
             {
               blogs.data.slice(0,visibleBlogs).map((ele, key) => {
-                const blogURL = `/blog/${convertTitleToURL(ele.title2)}`;
-
+                const blogURL = `/${convertTitleToURL(ele.title2)}`;
                 return (
                   <Col md={4} key={key}>
                     <Card className='blog_card'>
