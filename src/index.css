@@ -2324,6 +2324,11 @@ section.heading .banner-heading.placement-banner h2 {
     transition: 0.4s;
 }
 
+.blog_detail_form_main label.MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-sizeMedium.MuiInputLabel-outlined.MuiFormLabel-colorPrimary.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-sizeMedium.MuiInputLabel-outlined.css-ayzozo-MuiFormLabel-root-MuiInputLabel-root {
+    color: #507a37;
+}
+
+
 button.back_btn_placement_traning {
     display: block;
     padding: 10px 40px;
