@@ -10,7 +10,7 @@ import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 export default function BlogDetail() {
     const { title } = useParams();
     const [blog, setBlog] = useState({});
-    console.log("BlogDetail", blog)
+    console.log("blog",blog)
 
     useEffect(() => {
 
@@ -41,33 +41,28 @@ export default function BlogDetail() {
                             <Col md={8}>
                                 <div className='one_side_text_inner_blog'>
                                     <h3>Introduction:</h3>
-                                    <p>{blog.introduction}</p>
+                                    <p dangerouslySetInnerHTML={{ __html: blog.introduction }}></p>
+                                    {/* <p>{blog.introduction}</p> */}
                                     <h3>{blog.step1}</h3>
                                     <p>{blog.step1Des}</p>
                                     <h3>{blog.step2}</h3>
                                     <p>{blog.step2Des}</p>
                                     <img src=''></img>
                                     <h3>{blog.step3}</h3>
+                                    <p dangerouslySetInnerHTML={{ __html: blog.step3Des }}></p>
                                     {/* <h4>A. Improved customization:</h4> */}
-                                    <p>{blog.step3Des}</p>
-                                    <h4 className='blog_detail_sub'><FiberManualRecordIcon />B2B Companies:</h4>
-                                    <p>
-                                        Prioritize thought leadership, networking, and professionals.
-                                        The best platforms are YouTube (educational content, product demos, webinars), Twitter (real-time updates, industry news, thought leadership), and LinkedIn (professional networking, content sharing, industry conversations).
-                                        B2C Businesses: Put an emphasis on customer involvement, community building, and brand recognition.
-                                        Top platforms include TikTok (short-form video content, reaching younger demographics), Facebook (diverse content formats, community building, targeted advertising), Pinterest (product discovery, visual inspiration, driving website traffic), Instagram (visual content, influencer marketing, product promotions), and Facebook (diverse content formats).
-
-                                    </p>
-                                    <h4 className='blog_detail_sub'><FiberManualRecordIcon />E-commerce Businesses:</h4>
-                                    <p>Emphasis: Highlighting products, increasing sales, and gathering feedback from clients.
-                                        Top Platforms: Facebook (targeted advertising, product promotions, customer support), Pinterest (product discovery, boosting website traffic), TikTok (engaging product demos, short-form video ads), Instagram (product photography, influencer marketing, shoppable posts).
-                                    </p>
-                                    <h4 className='blog_detail_sub'><FiberManualRecordIcon />Local Businesses:</h4>
-                                    <p>Top Platforms: Instagram (local events, showcasing your location, customer testimonials), Facebook (local business pages, targeted advertising, community events).
-
-                                        Ultimately, you need to think about the social media behaviors and demographics of your target audience. Whereas B2B professionals tend to use LinkedIn and Twitter, millennials and Gen Z might be more active on Instagram and TikTok.
-                                    </p>
-
+                                    {/* <p>{blog.step3Des}</p> */}
+                                    {
+                                       blog.step3SubTittleDes?.length && blog.step3SubTittleDes.map((ele,key)=>{
+                                            return(
+                                                <div>
+                                                <h4 className='blog_detail_sub'><FiberManualRecordIcon />{ele.title}</h4>
+                                                <p>{ele.description}</p>
+                                                </div>
+                                                    
+                                            )
+                                        })
+                                    }
                                     <h3>{blog.step4}</h3>
                                     <p>{blog.step4Des}</p>
 
@@ -75,8 +70,9 @@ export default function BlogDetail() {
                                     <p>{blog.step5Des}</p>
 
                                     <h3>Conclusion:</h3>
-                                    <p>{blog.conclusion}
-                                    </p>
+                                    <p dangerouslySetInnerHTML={{ __html: blog.conclusion }}></p>
+                                    {/* <p>{blog.conclusion}
+                                    </p> */}
                                 </div>
 
                             </Col>

@@ -108,7 +108,7 @@ h2 {
 }
 
 .item {
-    padding: 50px;
+    padding: 25px;
 }
 
 .serv_cns {
@@ -642,8 +642,8 @@ p.subtitle {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    text-transform: capitalize;
 }
-
 .social_media-icon {
     list-style: none;
     display: flex;
@@ -1312,7 +1312,7 @@ section#schedules .showcase {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: #ccc;
     padding-bottom: 50px;
 }
 
@@ -1659,19 +1659,22 @@ h3.MuiTypography-root.MuiTypography-h3.css-18h9l83 {
     /* border: 1px solid #54a154; */
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    box-shadow: 0px 0px 4px 0px #509e53;
+    /* box-shadow: 0px 0px 4px 0px #509e53; */
     height: 50px !important;
     cursor: pointer;
     border: none;
-    text-shadow: 0px 0px 30px;
     font-weight: 600;
 }
 
 select#traing_exp {
     color: #636363 !important;
-    text-shadow: 0px 0px 30px;
     font-weight: 600;
     font-size: 14px;
+}
+
+div#errorMsg {
+    color: red;
+    margin-top: 20px;
 }
 
 div#contactForm {
@@ -1863,7 +1866,7 @@ span.question_in {
 }
 
 .read_more a {
-    background: #54a154;
+    background: var(--green-color);
     padding: 10px 19px;
     border-radius: 5px;
     color: var(--white-color);
@@ -1871,6 +1874,7 @@ span.question_in {
 }
 
 .content_of_founder p {
+    text-align: left;
     color: var(--background-color-black-paragrpah);
 }
 
@@ -2293,7 +2297,7 @@ button.Next_btn_traning_and_placement {
     border: none;
     color: var(--white-color) !important;
     cursor: pointer;
-    border: 1px solid var(--white-color);
+    border: 1px solid transparent;
     background-color: transparent;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
@@ -3089,22 +3093,19 @@ h4.blog_detail_sub {
 
 .placement-page-inner label {
     color: #383838 !important;
-    text-shadow: 0px 0px 30px;
     font-size: 16px;
     font-weight: 600;
 }
 
 .placement-inner .form-control::placeholder {
     color: #636363 !important;
-    text-shadow: 0px 0px 30px;
     font-size: 14px;
     font-weight: 600;
 }
 
 .placement-inner .questionAnswer-main .answer label {
     color: #494949 !important;
-    text-shadow: 0px 0px 30px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .blog_detail_form_main {

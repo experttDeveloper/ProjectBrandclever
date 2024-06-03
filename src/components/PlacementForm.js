@@ -95,21 +95,31 @@ export default class PlacementForm extends Component {
       axios
         .post('https://developer.brandclever.in/brand/admin/form/placementForm.php', formData)
         .then((res) => {
-          console.log(res.data);
-          document.getElementById('successMsg').innerText = res.data.data;
+          console.log("res", res)
+          if (res.data.data) {
+            document.getElementById('successMsg').innerText = res.data.data;
+            document.getElementById('successMsg').style.display = 'block';
+            document.getElementById('errorMsg').style.display = 'none';
+            this.myFormRef.current.reset();
+            setTimeout(() => {
+              this.setState({ currentStep: 1 });
+            }, 5000);
+            return
+          }
+          if (res.data.errorMSG) {
+            document.getElementById('errorMsg').innerText = res.data.errorMSG || "Email is already exist!";
+            document.getElementById('errorMsg').style.display = 'block';
+            document.getElementById('successMsg').style.display = 'none';
+            
+            return
+          }
           // Reset form fields
-          this.myFormRef.current.reset();
-
-          // Show the first step after 5 seconds
-          setTimeout(() => {
-            this.setState({ currentStep: 1 });
-          }, 5000);
-
+         
         })
         .catch((error) => {
           console.error(error.response.data.error);
           // var msgError = error.response.data.error.errorMSG;
-          document.getElementById('errorMsg').innerText = "Email is already exist! ";
+          // document.getElementById('errorMsg').innerText = "Email is already exist! ";
         });
     }
   };
@@ -223,7 +233,7 @@ export default class PlacementForm extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="phone">Phone *</label>
-            <input type="text" id="phone" className='form-control' name="phone" placeholder="Phone" onChange={this.handleInputChange} />
+            <input maxLength={10} type="text" id="phone" className='form-control' name="phone" placeholder="Phone" onChange={this.handleInputChange} />
             <div className="error-message">{errors.phone}</div>
           </div>
           <div className="form-group">

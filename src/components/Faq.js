@@ -7,11 +7,11 @@ class Faq extends Component {
     this.faqs = [
         { 
             question: 'What services does Brandclever offer?', 
-            answer: 'Brandclever offers comprehensive IT services including web design & development, software development, IT consulting, cloud solutions, and cybersecurity services.' 
+            answer: 'Brandclever offers comprehensive <strong>seo services for website </strong>services including web design & development, software development, IT consulting, cloud solutions, and cybersecurity services.' 
         },
         { 
             question: 'How can Brandclever help my business with IT services and consulting?', 
-            answer: 'Brandclever provides strategic IT consulting and customized solutions to streamline operations, enhance productivity, and achieve business objectives through innovative technology.' 
+            answer: 'Brandclever provides strategic <strong>top marketing agencies in india </strong> consulting and customized solutions to streamline operations, enhance productivity, and achieve business objectives through innovative technology.' 
         }, 
         { 
           question: 'How does Brandclever approach client projects?', 
@@ -19,7 +19,7 @@ class Faq extends Component {
         },
         { 
           question: 'Can Brandclever assist with both small-scale and large-scale IT projects?', 
-          answer: 'Yes, Brandclever has the capability and experience to handle projects of all sizes, ensuring successful outcomes regardless of scale.' 
+          answer: 'Yes, <strong>top 10 marketing companies in india </strong> has the capability and experience to handle projects of all sizes, ensuring successful outcomes regardless of scale.' 
         },
         { 
           question: 'Does Brandclever provide ongoing support and maintenance for implemented solutions?', 
@@ -27,7 +27,7 @@ class Faq extends Component {
         },
         { 
           question: 'What is the typical project completion timeline with Brandclever?', 
-          answer: 'Project timelines vary based on scope and complexity, with Brandclever committed to delivering projects efficiently while maintaining high standards.' 
+          answer: 'Project timelines vary based on scope and complexity, <strong>hire digital marketing freelancer</strong> committed to delivering projects efficiently while maintaining high standards.' 
         },
       // Add more FAQ items as needed
     ];
@@ -73,7 +73,8 @@ class Faq extends Component {
                     className="answer"
                     style={{ maxHeight: this.state.activeIndex === index ? this.state.answerHeight + 'px' : '0' }}
                   >
-                    {faq.answer}
+                    <span dangerouslySetInnerHTML={{ __html: faq.answer }}>
+                      </span>
                   </div>
                 </div>
               ))}

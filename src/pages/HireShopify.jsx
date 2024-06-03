@@ -189,7 +189,7 @@ export default function HireShopify() {
         data={[
           {
             question: "What is Shopify, and why is it popular for e-commerce?",
-            answer: "Shopify is a top e-commerce platform that enables businesses to build and manage online stores. It is widely used due to its intuitive interface, customizable design templates, secure payment processing, and extensive range of features designed to meet e-commerce requirements."
+            answer: "<strong>Hire shopify developers</strong> india is a top e-commerce platform that enables businesses to build and manage online stores. It is widely used due to its intuitive interface, customizable design templates, secure payment processing, and extensive range of features designed to meet e-commerce requirements."
           },
           {
             question: "Can I make changes to my Shopify store after it's live?",
@@ -197,22 +197,22 @@ export default function HireShopify() {
           },
           {
             question: "In what ways can a Shopify expert enhance my online store?",
-            answer: "Shopify experts possess specialized skills to improve your store's design, functionality, and performance. They can enhance the user experience, integrate third-party apps, tailor themes to your needs, and devise strategies to boost conversions and sales."
+            answer: "Shopify experts possess specialized skills to improve your store's design, functionality, and performance. They can enhance the user experience, integrate third-party apps, tailor themes to your needs, and <strong> freelance shopify developer.</strong>"
           },
           {
             question: "What's the typical timeframe for setting up a Shopify store with assistance from your experts?",
             answer: "The duration depends on the project's complexity. A basic store setup might take a few days, while a highly customized, feature-rich store could require several weeks. We typically discuss and finalize timelines during the project consultation phase."
           }, {
             question: "Do Shopify experts offer SEO services for my store?",
-            answer: "Absolutely. Many Shopify experts provide SEO services to enhance your store's search engine visibility. They can assist with keyword research, meta tags, page speed optimization, and other SEO techniques to boost your store's ranking."
+            answer: "Absolutely. Many <strong> freelance shopify developer.</strong> experts provide SEO services to enhance your store's search engine visibility. They can assist with keyword research, meta tags, page speed optimization, and other SEO techniques to boost your store's ranking."
           },
           {
             question: "Is post-launch support and maintenance available for my Shopify store?",
             answer: "Yes, many Shopify experts offer continuous support and maintenance after your store is launched. This typically includes updates, security patches, troubleshooting, and making sure your store runs efficiently and safely."
           },
           {
-            question: "How secure is Shopify for handling customer payments?",
-            answer: "Shopify offers a high level of security for processing payments. It complies with PCI DSS (Payment Card Industry Data Security Standard), guaranteeing that all payment transactions and customer information are managed securely and meet industry standards for payment processing."
+            question: "How secure is Shopify for handling customer payments? ",
+            answer: "<strong>Shopify developer near me </strong> offers a high level of security for processing payments. It complies with PCI DSS (Payment Card Industry Data Security Standard), guaranteeing that all payment transactions and customer information are managed securely and meet industry standards for payment processing."
           },
           {
             question: "Are there any restrictions on how much you can customize a Shopify store?",

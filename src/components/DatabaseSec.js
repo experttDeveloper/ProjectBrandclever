@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default class DatabaseSec extends Component {
   render() {
@@ -14,7 +15,7 @@ export default class DatabaseSec extends Component {
       <Container>
         <div className='main-sub'>
           <div className='database_left'>
-            <h2 className='cont2'>Our Subject Matter Experts Are Change Catalysts. Book Your First Presentation with Our Experts Today.</h2>
+            <h2 className='cont2'>Our Subject Matter Experts Are Change Catalysts. Book Your First Presentation with Our <Link to="https://brandclever.in/manishverma/" style={{textDecoration:"none",fontWeight:"700"}} target="_blank">Manish verma upwork </Link> Today.</h2>
           </div>
           <div className='database_right'>
             {dbImages.map((image, index) => (

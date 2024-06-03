@@ -124,35 +124,35 @@ export default function HireDigitalMarketing() {
                 data={[
                     {
                         question: "What is digital marketing, and why is it important?",
-                        answer: "Digital marketing refers to the use of online platforms and digital technologies to promote products or services. It encompasses a range of activities, including SEO, social media marketing, content marketing, email campaigns, and PPC advertising. It's crucial because it allows businesses to reach a larger audience, engage with customers, and measure marketing performance in real time."
+                        answer: " <strong>Digital marketing agency seo </strong>refers to the use of online platforms and digital technologies to promote products or services. It encompasses a range of activities, including SEO, social media marketing, content marketing, email campaigns, and PPC advertising. It's crucial because it allows businesses to reach a larger audience, engage with customers, and measure <strong> E-commerce SEO Agency </strong> performance in real time."
                     },
                     {
                         question: "Can I adjust my digital marketing campaigns after they've launched?",
-                        answer: "Yes, digital marketing offers flexibility to adjust campaigns even after they've launched. You can tweak ad copy, change targeting parameters, update content, and shift marketing budgets to focus on strategies that yield better results."
+                        answer: "Yes, <strong>best ppc management agencies</strong> offers flexibility to adjust campaigns even after they've launched. You can tweak ad copy, change targeting parameters, update content, and shift marketing budgets to focus on strategies that yield better results."
                     },
                     {
                         question: "How can digital marketing experts improve my online presence?",
-                        answer: "Digital marketing experts bring specialized skills to enhance your online presence. They can optimize your website for search engines, create engaging content, manage social media campaigns, and design targeted advertising to increase traffic and conversions."
+                        answer: "Digital marketing experts bring specialized skills to enhance your online presence. They can optimize your website for search engines, create engaging content,<strong>Bigcommerce SEO Agency </strong>, manage social media campaigns,<strong>WordPress woocommerce SEO Agency </strong>, and design targeted advertising to increase traffic and conversions."
                     },
                     {
                         question: "What's the typical timeframe for seeing results from digital marketing campaigns?",
-                        answer: "The timeframe for results varies depending on the type of campaign and the goals. SEO and content marketing may take weeks to months for noticeable results, while PPC campaigns can yield quicker outcomes. We usually discuss timelines and expectations during the consultation phase."
+                        answer: "The timeframe for results varies depending on the type of campaign and the goals. SEO ,<strong>Bigcommerce seo agency india</strong> and content marketing may take weeks to months for noticeable results, while PPC campaigns can yield quicker outcomes. We usually discuss timelines and expectations during the consultation phase."
                     },
                     {
                         question: "Do digital marketing experts provide SEO services?",
-                        answer: "Absolutely. Digital marketing experts often specialize in SEO services, including keyword research, on-page optimization, technical SEO, link building, and content strategy. These services help improve your website's visibility in search engine results."
+                        answer: "Absolutely. Digital marketing experts often specialize in SEO services, including keyword research, on-page optimization,<strong>B2b Marketing Agency </strong>, technical SEO, link building, <strong>international seo services </strong>, and content strategy. These services help improve your website's visibility in search engine results."
                     },
                     {
                         question: "Is post-campaign analysis and reporting available for digital marketing campaigns?",
-                        answer: "Yes, many digital marketing experts offer post-campaign analysis and customized reporting. This typically includes key performance metrics, insights into campaign success, and recommendations for future marketing efforts."
+                        answer: "Yes, many digital marketing experts offer post-campaign analysis and customized reporting. This typically includes key performance metrics,<strong>seo agency for ecommerce </strong>, insights into campaign success,<strong>b2b seo agency</strong>, and recommendations for future marketing efforts."
                     },
                     {
                         question: "How secure is digital marketing for handling customer data?",
-                        answer: "Digital marketing requires strict adherence to data security and privacy standards. Experts ensure compliance with regulations like GDPR and CCPA, safeguarding customer data and maintaining trust. Secure platforms and encryption technologies are used to protect sensitive information."
+                        answer: "<strong>Best digital marketing freelancer in india </strong>requires strict adherence to data security and privacy standards.<strong>Top marketing agencies near me </strong> Experts ensure compliance with regulations like GDPR and CCPA, safeguarding customer data and maintaining trust. Secure platforms and encryption technologies are used to protect sensitive information."
                     },
                     {
                         question: "Are there any limitations on digital marketing customization?",
-                        answer: "Digital marketing is highly customizable. While platforms have certain constraints, experts can create bespoke campaigns tailored to your business needs. They can adapt strategies, implement unique content, and adjust targeting to achieve specific marketing objectives."
+                        answer: "<strong>Local seo agency in india </strong>is highly customizable. While platforms have certain constraints, experts can create bespoke campaigns tailored to your business needs. They can adapt strategies, implement unique content,<strong>digital marketing freelancer </strong>website and adjust targeting to achieve specific marketing objectives."
                     }
 
                 ]}

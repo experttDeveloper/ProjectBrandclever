@@ -139,31 +139,31 @@ export default function HireBigCommerce() {
                 data={[
                     {
                         question: "Why should I choose Brandclever for my BigCommerce project?",
-                        answer: "Brandclever distinguishes itself with a client-focused approach. We prioritize your goals and collaborate closely to deliver customized solutions that align with your specific requirements. Our process emphasizes transparency, ensuring the best outcomes for your business."
+                        answer: "Brandclever distinguishes itself with a client-focused approach. We prioritize your goals and collaborate closely to deliver customized solutions that align with <strong> E-commerce SEO Agency </strong>specific requirements. Our process emphasizes transparency, ensuring the best outcomes for your business."
                     },
                     {
                         question: "What makes Brandclever unique among BigCommerce experts?",
-                        answer: "Our commitment to long-term partnerships sets us apart. We provide ongoing support and maintenance even after the project's completion, ensuring your BigCommerce store's continued success and smooth operation."
+                        answer: "Our commitment to long-term partnerships sets us apart. <strong>Bigcommerce SEO Agency </strong> provide ongoing support and maintenance even after the project's completion, ensuring your BigCommerce store's continued success and smooth operation."
                     },
                     {
                         question: "How does Brandclever ensure the quality of its BigCommerce solutions?",
-                        answer: "We stand out through our dedication to quality assurance. Our rigorous testing process ensures error-free solutions that meet or exceed industry standards. This commitment to quality is what ensures the success of each project."
+                        answer: "We stand out through our dedication to quality assurance. <strong>WordPress woocommerce SEO Agency </strong> rigorous testing process ensures error-free solutions that meet or exceed industry standards. This commitment to quality is what ensures the success of each project."
                     },
                     {
                         question: "Can Brandclever handle the setup of my BigCommerce store?",
-                        answer: "Absolutely! We offer comprehensive store setup services, including initial configuration, product listings, payment gateways, and shipping methods, to help your online store get started without a hitch."
+                        answer: "Absolutely! We offer comprehensive store setup services, including initial configuration, product listings, payment gateways, and shipping methods, <strong>seo agency for ecommerce </strong> to help your online store get started without a hitch."
                     },
                     {
                         question: "What approach does Brandclever take to start a BigCommerce project?",
-                        answer: "Our approach begins with a thorough Project Briefing, followed by the creation of a Customization Blueprint. This leads to an iterative Development and Feedback process and concludes with extensive Quality Assurance before the official launch."
+                        answer: "Our approach begins with a thorough Project Briefing, followed by the creation of a Customization Blueprint. <strong>E-commerce seo specialist</strong> leads to an iterative Development and Feedback process and concludes with extensive Quality Assurance before the official launch."
                     },
                     {
                         question: "Does Brandclever offer ongoing support for my BigCommerce site?",
-                        answer: "Yes, our support doesn't end with project completion. We provide ongoing support and maintenance services to ensure your BigCommerce site remains secure, up-to-date, and operating at its best."
+                        answer: "Yes, our support doesn't end with project completion. We provide ongoing support and maintenance services to ensure your <strong>Bigcommerce seo agency india </strong> site remains secure, up-to-date, and operating at its best."
                     },
                     {
                         question: "How does Brandclever incorporate client feedback into projects?",
-                        answer: "During the Development phase, we maintain frequent feedback loops. This iterative process allows you to provide input at various stages, ensuring that the final product meets your expectations and needs."
+                        answer: "During the Development phase, we maintain frequent feedback loops.<strong> Freelancer manish verma </strong> iterative process allows you to provide input at various stages, ensuring that the final product meets your expectations and needs."
                     },
                     {
                         question: "What is the Project Briefing in Brandclever's approach?",

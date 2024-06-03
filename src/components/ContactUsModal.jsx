@@ -26,6 +26,11 @@ export default function ContactUsModal({ useOpen }) {
         setOpen(false);
     };
 
+    function validatePhoneNumber(phoneNumber) {
+        const phoneRegex = /^(\+?\d{1,3}[- ]?)?\(?\d{1,4}\)?[- ]?\d{1,4}[- ]?\d{1,4}[- ]?\d{1,9}$/;
+        return phoneRegex.test(phoneNumber);
+    }
+
 
     // State for error messages
 
@@ -53,7 +58,7 @@ export default function ContactUsModal({ useOpen }) {
         if (!form.message) {
             newErrors.message = 'Message is required';
         }
-
+        
         return newErrors;
     };
 
@@ -164,7 +169,7 @@ export default function ContactUsModal({ useOpen }) {
                                     }}
                                 />
                                 <TextField
-                                    type="number"
+                                    type="text"
                                     fullWidth
                                     id="number"
                                     label="Contact number"

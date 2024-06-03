@@ -69,7 +69,7 @@ const Footer = () => {
                                     <Link to="/service"><ArrowRightIcon />Services</Link>
                                 </li>
                                 <li>
-                                    <Link to="/traning-and-placement"><ArrowRightIcon />Training & Placement</Link>
+                                    <Link to="/training-and-placement"><ArrowRightIcon />Training & Placement</Link>
                                 </li>
                                 <li>
                                     <Link to="/contact"><ArrowRightIcon />Contact Us</Link>
@@ -86,7 +86,7 @@ const Footer = () => {
                                     <Link to="/cms-solution"><ArrowRightIcon />CMS Solution</Link>
                                 </li>
                                 <li>
-                                    <Link to="/digital-marketing"><ArrowRightIcon />digital-marketing</Link>
+                                    <Link to="/digital-marketing"><ArrowRightIcon />Digital Marketing</Link>
                                 </li>
                                 <li>
                                     <Link to="/graphic-design"><ArrowRightIcon />Graphic Designing</Link>

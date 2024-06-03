@@ -24,8 +24,8 @@ export default function FaqSection({ data }) {
                                                 >
                                                     {ele.question}
                                                 </AccordionSummary>
-                                                <AccordionDetails>
-                                                    {ele.answer}
+                                                <AccordionDetails dangerouslySetInnerHTML={{ __html: ele.answer }}>
+                                                    {/* {ele.answer} */}
                                                 </AccordionDetails>
                                             </Accordion>
                                         </div>
@@ -46,8 +46,8 @@ export default function FaqSection({ data }) {
                                             >
                                                 {ele.question}
                                             </AccordionSummary>
-                                            <AccordionDetails>
-                                                {ele.answer}
+                                            <AccordionDetails dangerouslySetInnerHTML={{ __html: ele.answer }}>
+                                                {/* {ele.answer} */}
                                             </AccordionDetails>
                                         </Accordion>
                                     </div>

@@ -21,6 +21,7 @@ import { useNavigate } from "react-router-dom";
 import Logout from "@mui/icons-material/Logout";
 import Users from "./ContactUsers";
 import LandingPageUser from "./LandingPageUser";
+import Interviewers from "./Interviewers";
 
 const Dashboard = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -133,6 +134,16 @@ const Dashboard = () => {
                       }
                     />
                   </ListItem>
+                  <ListItem onClick={() => handleNavItemClick("Interviewers")}>
+                    <ListItemText
+                      primary="Interviewers"
+                      className={
+                        selectedNavItem === "Interviewers"
+                          ? "active_nav"
+                          : "nav_item"
+                      }
+                    />
+                  </ListItem>
                 </List>
               </Paper>
             </Grid>
@@ -141,6 +152,7 @@ const Dashboard = () => {
                 <Typography variant="h5">{selectedNavItem}</Typography>
                 {selectedNavItem === "Users" && <><Users /></>}
                 {selectedNavItem === "Landing page users" && <LandingPageUser />}
+                {selectedNavItem === "Interviewers" && <Interviewers />}
               </Paper>
             </Grid>
           </Grid>

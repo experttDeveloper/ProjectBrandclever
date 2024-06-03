@@ -52,6 +52,7 @@ import BlogDetail from './pages/BlogDetail';
 import Dashboard from './components/admin/Index';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
+import ScrollToTop from './components/ScrollToTop';
 
 
 
@@ -68,7 +69,8 @@ export default class App extends Component {
 
     return (
       <>
-      <ToastContainer position="top-right"/>
+
+        <ToastContainer position="top-right" />
         {
           window.location.pathname === "/dashboard" ? (
             <BrowserRouter>
@@ -79,6 +81,7 @@ export default class App extends Component {
           ) : (
             <>
               <BrowserRouter>
+                <ScrollToTop />
                 <NavBar />
                 <Routes>
                   <Route path="/" element={<Home />} />
@@ -167,7 +170,7 @@ export default class App extends Component {
                 btnTxtColor="black"
               />
 
-              <button style={{cursor:"pointer"}} onClick={this.scrollToTop} className='onTop '><i className="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+              <button style={{ cursor: "pointer" }} onClick={this.scrollToTop} className='onTop '><i className="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
             </>
           )
         }
