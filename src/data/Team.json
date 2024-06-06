@@ -1,0 +1,47 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Shalu Sharma",
+            "image": "/images/team/shalu_sharma.jpg",
+            "linkedIn":"https://www.linkedin.com/in/shalu-sharma-9baa55234/",
+            "profile": "Sr. Human Resource"
+        },
+        {
+            "id": 2,
+            "name": "Shobha Negi ",
+            "image": "/images/team/shoba_negi.jpeg",
+            "linkedIn":"https://www.linkedin.com/in/shobha-negi-b98014249/",
+            "profile": "Human Resource"
+        },
+        {
+            "id": 3,
+            "name": "Charanjeet Singh ",
+            "image": "",
+            "linkedIn":"",
+            "profile": "Project Manager"
+        },
+        {
+            "id": 4,
+            "name": "Rishika rana",
+            "image": "",
+            "linkedIn":"",
+            "profile": "Senior PHP Developer"
+        },
+        {
+            "id": 5,
+            "name": "shivam thakur",
+            "image": "",
+            "linkedIn":"",
+            "profile": "Senior PHP Developer"
+        },
+        {
+            "id": 6,
+            "name": "prabhdeep singh",
+            "image": "",
+            "linkedIn":"",
+            "profile": "PHP developer"
+        }
+        
+    ]
+}

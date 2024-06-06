@@ -57,7 +57,7 @@ export default function BlogDetail() {
                                             return(
                                                 <div>
                                                 <h4 className='blog_detail_sub'><FiberManualRecordIcon />{ele.title}</h4>
-                                                <p>{ele.description}</p>
+                                                <p dangerouslySetInnerHTML={{ __html: ele.description }}></p>
                                                 </div>
                                                     
                                             )
@@ -67,7 +67,7 @@ export default function BlogDetail() {
                                     <p>{blog.step4Des}</p>
 
                                     <h3>{blog.step5}</h3>
-                                    <p>{blog.step5Des}</p>
+                                    <p dangerouslySetInnerHTML={{ __html: blog.step5Des }}></p>
 
                                     <h3>Conclusion:</h3>
                                     <p dangerouslySetInnerHTML={{ __html: blog.conclusion }}></p>

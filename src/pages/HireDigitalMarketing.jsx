@@ -22,7 +22,7 @@ export default function HireDigitalMarketing() {
             <WhyChoose
                 title="Brandclever's Digital Marketing Expertise"
                 description1="Looking to hire digital marketing experts to take your online business to the next level?"
-                description2="At Brandclever, we specialize in elevating your digital marketing efforts. Our team of experienced professionals excels in creating and executing effective marketing strategies that drive results. With a proven track record, we help businesses increase brand visibility, attract new customers, and stay ahead in the competitive digital landscape."
+                description2="At Brandclever, we specialize in elevating your <b> <a href='https://brandclever.in/contact'> local seo services india </a>	 </b>efforts. Our team of experienced professionals excels in creating and executing effective marketing strategies that drive results. With a proven track record, we help businesses increase brand visibility, attract new customers, and stay ahead in the competitive digital landscape."
                 experties={[
                     "Search Engine Optimization (SEO)",
                     "Content Marketing and Strategy",

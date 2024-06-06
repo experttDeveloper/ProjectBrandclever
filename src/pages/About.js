@@ -8,6 +8,7 @@ import TopHeader from '../components/TopHeader';
 import { Container } from 'react-bootstrap';
 import MetaTitleDes from '../components/MetaTitleDes';
 import { Helmet } from 'react-helmet';
+import Team from '../components/Team';
 
 
 
@@ -68,6 +69,9 @@ export default class About extends Component {
               </Container>
             </div>
           </section>
+          <div className='team'>
+            {/* <Team /> */}
+          </div>
           <Gallery />
           <JoinTeam />
 

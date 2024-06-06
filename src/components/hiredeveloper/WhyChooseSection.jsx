@@ -18,11 +18,12 @@ export default function WhyChoose({ title, description1, description2, images, e
                                     <h2 className="title_whychoose">
                                         Why Choose {title}
                                     </h2>
-                                    <p className="content_whychoose">
+                                    <p className="content_whychoose" >
                                         {description1}
                                         <br />
                                         <br />
-                                        {description2}
+                                        <span dangerouslySetInnerHTML={{ __html:description2 }}>
+                                            </span>
                                     </p>
                                 </div>
                                 <div className="contact_shopify">

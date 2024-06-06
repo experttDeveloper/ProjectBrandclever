@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import TopHeader from '../components/TopHeader'
 import { Col, Container, Row } from 'react-bootstrap'
 import Card from '@mui/material/Card';
@@ -13,6 +13,7 @@ import MetaTitleDes from '../components/MetaTitleDes';
 
 export default function Blog() {
 
+  
   const [visibleBlogs, setVisibleBlogs] = useState(6);
 
   const loadMoreBlogs = () => {
@@ -25,7 +26,8 @@ export default function Blog() {
 
   return (
     <div>
-      <MetaTitleDes title={"Blogs- Brandclever"} description={"Looking to explore Web Development, CMS Solutions, Web Design, Graphic design, Digital Marketing, and many more Blogs? Visit Brandclever Blog now."} />
+      <MetaTitleDes title={"Blogs- Brandclever"} description={"Looking to explore Web Development, CMS Solutions, Web Design, Graphic design, Digital Marketing, and many more Blogs? Visit Brandclever Blog now."} pageURL={window.location.href}/>
+      
       <TopHeader title={"Blogs"} description={"Navigating Offshore Software Development: What You Should Know"} />
       <div className='blog_main'>
         <Container>

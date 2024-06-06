@@ -9,9 +9,9 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { Container } from 'react-bootstrap';
+import { BookOnlineOutlined } from '@mui/icons-material';
 
 const Footer = () => {
 
@@ -70,6 +70,9 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <Link to="/training-and-placement"><ArrowRightIcon />Training & Placement</Link>
+                                </li>
+                                <li>
+                                    <Link to="/blog"><ArrowRightIcon />Blog</Link>
                                 </li>
                                 <li>
                                     <Link to="/contact"><ArrowRightIcon />Contact Us</Link>
