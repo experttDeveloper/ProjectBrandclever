@@ -30,7 +30,13 @@ p {
     font-size: 17px;
 }
 
-
+/* @supports (-webkit-touch0callout: none) {
+    .costner_page_web a:hover:after {
+        left: 160px !important;
+        position: absolute !important;
+        top: -180px !important;
+    }
+} */
 
 /* header_css_start_Abhi */
 .inner_header_nav {
@@ -645,6 +651,7 @@ p.subtitle {
     gap: 40px;
     text-transform: capitalize;
 }
+
 .social_media-icon {
     list-style: none;
     display: flex;
@@ -3244,4 +3251,18 @@ h5.MuiTypography-root.MuiTypography-h5.right_test_modal.css-zq6grw {
 
 .hidedropdown {
     display: none !important;
+}
+
+.MuiTypography-root.MuiTypography-h5.MuiTypography-gutterBottom.blog_title1.css-t1nuxs {
+    color: #509e53;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    padding: 10px 0px;
+}
+
+p.MuiTypography-root.MuiTypography-body2.blog_title2.css-u30lmt {
+    font-size: 15px;
+    color: var(--paragraph-color);
+    padding-bottom: 10px !important;
+    text-shadow: 0px 0px 1px;
 }

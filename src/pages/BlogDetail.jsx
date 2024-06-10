@@ -10,13 +10,15 @@ import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 export default function BlogDetail() {
     const { title } = useParams();
     const [blog, setBlog] = useState({});
-    console.log("blog",blog)
 
     useEffect(() => {
 
         const modifyTitle = title.replace(/-/g, " ");
+       
+        console.log("modifyTitle",modifyTitle);
         if (modifyTitle) {
             const blogData = blogs.data.find((item) => item.title2.toLowerCase().includes(modifyTitle.toLowerCase()));
+           
             setBlog(blogData)
         }
 
@@ -64,7 +66,7 @@ export default function BlogDetail() {
                                         })
                                     }
                                     <h3>{blog.step4}</h3>
-                                    <p>{blog.step4Des}</p>
+                                    <p dangerouslySetInnerHTML={{ __html: blog.step4Des}}></p>
 
                                     <h3>{blog.step5}</h3>
                                     <p dangerouslySetInnerHTML={{ __html: blog.step5Des }}></p>

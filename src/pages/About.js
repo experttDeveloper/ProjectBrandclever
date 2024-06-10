@@ -70,7 +70,7 @@ export default class About extends Component {
             </div>
           </section>
           <div className='team'>
-            {/* <Team /> */}
+            <Team />
           </div>
           <Gallery />
           <JoinTeam />
