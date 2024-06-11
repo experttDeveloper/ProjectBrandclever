@@ -480,6 +480,7 @@ const NavBar = () => {
                     </div>
                   </li>
                 </ul>
+                
                 <div className='header_btn'>
                   <Link to="/contact" className='' onClick={closeMenu}>Contact Us</Link>
                 </div>

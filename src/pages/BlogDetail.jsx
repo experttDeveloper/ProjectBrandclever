@@ -46,9 +46,9 @@ export default function BlogDetail() {
                                     <p dangerouslySetInnerHTML={{ __html: blog.introduction }}></p>
                                     {/* <p>{blog.introduction}</p> */}
                                     <h3>{blog.step1}</h3>
-                                    <p>{blog.step1Des}</p>
+                                    <p dangerouslySetInnerHTML={{ __html: blog.step1Des }}></p>
                                     <h3>{blog.step2}</h3>
-                                    <p>{blog.step2Des}</p>
+                                    <p dangerouslySetInnerHTML={{ __html: blog.step2Des }}></p>
                                     <img src=''></img>
                                     <h3>{blog.step3}</h3>
                                     <p dangerouslySetInnerHTML={{ __html: blog.step3Des }}></p>
@@ -71,7 +71,7 @@ export default function BlogDetail() {
                                     <h3>{blog.step5}</h3>
                                     <p dangerouslySetInnerHTML={{ __html: blog.step5Des }}></p>
 
-                                    <h3>Conclusion:</h3>
+                                    <h3>{blog.conclusion ? "Conclusion":""}</h3>
                                     <p dangerouslySetInnerHTML={{ __html: blog.conclusion }}></p>
                                     {/* <p>{blog.conclusion}
                                     </p> */}
