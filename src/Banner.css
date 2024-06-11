@@ -48,3 +48,50 @@ span.icon_span svg {
   width: 100%;
   padding-bottom: 10px;
 }
+
+
+  @keyframes blink {
+    0% {
+      background-color: #292b32; /* Start color */
+    }
+    50% {
+      background-color: #54a154; /* Mid color */
+    }
+    100% {
+      background-color: #292b32; /* End color */
+    }
+  }
+
+  .btn-play {
+    animation: blink 1s infinite;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+    width: 50px !important;
+    height: 50px !important;
+}
+  .btn-play i {
+    margin-left: 5px; /* Adjust spacing as needed */
+  }
+
+.exp_btn {
+    display: flex;
+    gap: 20px;
+}
+button.btn-play.btn.btn-primary {
+  padding: 0 !important;
+}
+button.btn-play.btn.btn-primary:hover {
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  transform: scale(1) !important;
+}

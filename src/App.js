@@ -53,6 +53,7 @@ import Dashboard from './components/admin/Index';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import ScrollToTop from './components/ScrollToTop';
+import SeoAudit from './components/SeoAudit';
 
 
 
@@ -71,6 +72,7 @@ export default class App extends Component {
       <>
 
         <ToastContainer position="top-right" />
+    
         {
           window.location.pathname === "/dashboard" ? (
             <BrowserRouter>
@@ -78,7 +80,13 @@ export default class App extends Component {
                 <Route path="/dashboard" element={<Dashboard />} />
               </Routes>
             </BrowserRouter>
-          ) : (
+          ) : window.location.pathname === "/analyzer" ? (
+            <BrowserRouter>
+              <Routes>
+                <Route path="/analyzer" element={<SeoAudit />} />
+              </Routes>
+            </BrowserRouter>
+          ) :(
             <>
               <BrowserRouter>
                 <ScrollToTop />
@@ -99,6 +107,7 @@ export default class App extends Component {
                   <Route path="/term-conditions" element={<TermCondition />} />
                   <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                   <Route path="/blog" element={<Blog />} />
+
 
 
                   <Route path="/web-development" element={<WebDevelopment />} />

@@ -6,13 +6,17 @@ import '../Banner.css';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Typed from "typed.js";
 import ContactUsModal from './ContactUsModal';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
+import ContentPasteSearchIcon from '@mui/icons-material/ContentPasteSearch';
+import { IconButton } from '@mui/material';
 
 const Banner = () => {
 
   const [isHover, setIsHover] = useState(false);
   const [open, setOpen] = useState(true)
   const [mounted, setMounted] = useState(false);
+  const navigate  = useNavigate()
 
   useEffect(() => {
     setMounted(true);
@@ -38,6 +42,11 @@ const Banner = () => {
         showCursor: true
       });
 
+
+
+
+
+
       return () => {
         typed.destroy();
       };
@@ -57,13 +66,19 @@ const Banner = () => {
           <h1>Discover Unmatched <span className="typing" style={{ color: "#54a154" }}></span></h1>
           {/* <h1>Discover Unmatched Web Development Service</h1> */}
           <p>Brandclever emerges as a top-tier IT force, delivering smart and proven solutions across the tech spectrum. With our extensive expertise and experience, we're quickly becoming the leader in providing innovative software services for every domain.</p>
-          <div className='exp_btn' onClick={handleOpen}>
+          <div className='exp_btn' >
             <Link to='#'
               onMouseEnter={() => setIsHover(true)}
               onMouseLeave={() => setIsHover(false)}
-
+              onClick={handleOpen}
             >Consult Our Experts <span className='icon_span'><NavigateNextIcon className={isHover ? "consult_hover " : ""} /> </span>
             </Link>
+            <div className='seo_audit_btn'>
+              <Button className='btn-play'  onClick={()=>navigate('/analyzer')}>
+                  <ContentPasteSearchIcon className="fas fa-play" />
+              </Button>
+            </div>
+
           </div>
         </div>
       </div>
