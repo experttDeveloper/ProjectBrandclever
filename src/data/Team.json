@@ -3,45 +3,165 @@
         {
             "id": 1,
             "name": "Shalu Sharma",
-            "image": "/images/team/shalu_sharma.jpg",
+            "image": "/images/team/shalu.png",
             "linkedIn":"https://www.linkedin.com/in/shalu-sharma-9baa55234/",
-            "profile": "Sr. Human Resource"
+            "profile": "Human Resource"
         },
         {
             "id": 2,
             "name": "Shobha Negi ",
-            "image": "/images/team/shoba_negi.jpeg",
+            "image": "/images/team/shobha.png",
             "linkedIn":"https://www.linkedin.com/in/shobha-negi-b98014249/",
             "profile": "Human Resource"
         },
         {
             "id": 3,
             "name": "Charanjeet Singh ",
-            "image": "",
+            "image": "/images/team/charanjeet.png",
             "linkedIn":"",
             "profile": "Project Manager"
         },
         {
             "id": 4,
-            "name": "Rishika rana",
-            "image": "",
+            "name": "Rishika Rana",
+            "image": "/images/team/rishika.png",
             "linkedIn":"",
-            "profile": "Senior PHP Developer"
+            "profile": "PHP Developer"
         },
         {
             "id": 5,
-            "name": "shivam thakur",
-            "image": "",
+            "name": "Ishika Bhardwaj",
+            "image": "/images/team/ishika.png",
             "linkedIn":"",
-            "profile": "Senior PHP Developer"
+            "profile": "Web Developer"
         },
         {
             "id": 6,
-            "name": "prabhdeep singh",
+            "name": "Ruchi",
             "image": "",
             "linkedIn":"",
-            "profile": "PHP developer"
+            "profile": "PHP Developer"
+        },
+        {
+            "id": 6,
+            "name": "Shivam Thakur",
+            "image": "/images/team/shivam.png",
+            "linkedIn":"",
+            "profile": "PHP Developer"
+        },
+        {
+            "id": 7,
+            "name": "Prabhdeep Singh",
+            "image": "/images/team/prabh.png",
+            "linkedIn":"",
+            "profile": "PHP Developer"
+        },
+        {
+            "id": 8,
+            "name": "Deepak Shah",
+            "image": "/images/team/deepak.png",
+            "linkedIn":"",
+             "profile": "React js Developer"
+        },
+        {
+            "id": 9,
+            "name": "Sahavaj Ahmad",
+            "image": "",
+            "linkedIn":"",
+             "profile": "Laravel Developer"
+        },
+        {
+            "id": 10,
+            "name": "Amarjit Singh",
+            "image": "",
+            "linkedIn":"",
+             "profile": "Web Developer"
+        },
+        {
+            "id": 11,
+            "name": "Simran Kaur",
+            "image": "/images/team/simran.png",
+            "linkedIn":"",
+             "profile": "PHP Developer"
+        },
+        {
+            "id": 12,
+            "name": "Abhishek Rathour",
+            "image": "",
+            "linkedIn":"",
+             "profile": "Web Designer"
+        },
+        {
+            "id": 12,
+            "name": "Lucky Jaryal",
+            "image": "/images/team/lucky.png",
+            "linkedIn":"",
+             "profile": "Web Designer"
+        },
+        {
+            "id": 13,
+            "name": "Tushar Thakur",
+            "image": "/images/team/tushar.png",
+            "linkedIn":"",
+             "profile": "Web Designer"
+        },
+        {
+            "id": 14,
+            "name": "Rahul Kumar",
+            "image": "/images/team/rahul.png",
+            "linkedIn":"",
+            "profile": "Web Designer"
+        },
+        {
+            "id": 15,
+            "name": "Anmol Madaan",
+            "image": "/images/team/anmol.png",
+            "linkedIn":"",
+            "profile": "SEO Executive "
+        },
+        {
+            "id": 16,
+            "name": "Lakshya Devgan",
+            "image": "",
+            "linkedIn":"",
+            "profile": "SEO Executive "
+        },
+        {
+            "id": 17,
+            "name": "Shivani Chandel",
+           "image": "/images/team/shivani.png",
+            "linkedIn":"",
+            "profile": "Business Development Executive"
+        },
+        {
+            "id": 18,
+            "name": "Mansi Verma",
+           "image": "",
+            "linkedIn":"",
+            "profile": " Business Development Executive "
+        },
+        {
+            "id": 19,
+            "name": "Mangesh Goel",
+           "image": "",
+            "linkedIn":"",
+            "profile": "Business Development Executive"
+        },
+        {
+            "id": 20,
+            "name": "Deepak Kumar",
+           "image": "",
+            "linkedIn":"",
+            "profile": "Business Development Executive"
+        },
+        {
+            "id": 21,
+            "name": "Sangharsh Thakur",
+           "image": "",
+            "linkedIn":"",
+            "profile": "Business Development Executive"
         }
+    
         
     ]
 }

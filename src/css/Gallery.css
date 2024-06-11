@@ -62,8 +62,9 @@
   align-items: flex-start;
   padding: 20px 0px;
 }
-.main-gallery {
-  margin-bottom: 40px;
+.container .main-gallery {
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
 .gallery .gallery-item {
   margin: 0px !important;

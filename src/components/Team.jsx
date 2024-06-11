@@ -7,12 +7,13 @@ import teams from '../data/Team.json'
 import { Link } from 'react-router-dom';
 
 export default function Team() {
+    
     const settings = {
-        dots: true,
-        infinite: true,
+        dots: false,
+        infinite: false,
         speed: 500,
         slidesToShow: 4,
-        arrows: false,
+        arrows: true,
         slidesToScroll: 3,
         responsive: [
             {
@@ -21,7 +22,8 @@ export default function Team() {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     infinite: true,
-                    dots: true
+                    arrows: true,
+                    dots: false
                 }
             },
             {
@@ -42,7 +44,6 @@ export default function Team() {
         ]
     };
 
-    console.log("team", teams.data)
 
     return (
         <div>
@@ -57,7 +58,7 @@ export default function Team() {
                                         <div className="card-img-wrapper">
                                             <img src={ele.image ? ele.image:"https://cdn.icon-icons.com/icons2/2570/PNG/512/image_icon_153794.png"} alt={ele.name} />
                                         </div>
-                                        <Link to={ele.linkedIn ? ele.linkedIn : "https://www.linkedin.com/company/brandclever/"} className="social-icon" target='_blank'><i className="fa-brands fa-linkedin-in"></i></Link>
+                                        <Link to={"#"} className="social-icon" target='_blank'><i class="fa-regular fa-circle-nodes"></i></Link>
                                         <div className="card-content-wrapper">
                                             <a href="#" className="card-content">
                                                 <h3>{ele.name}</h3>
