@@ -6,6 +6,7 @@ import blogs from '../data/Blog.json'
 import { useParams } from 'react-router-dom'
 import HireDeveloperForm from '../components/HireDeveloperForm';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import Comment from '../components/Comment'
 
 export default function BlogDetail() {
     const { title } = useParams();
@@ -14,11 +15,11 @@ export default function BlogDetail() {
     useEffect(() => {
 
         const modifyTitle = title.replace(/-/g, " ");
-       
-        console.log("modifyTitle",modifyTitle);
+
+        console.log("modifyTitle", modifyTitle);
         if (modifyTitle) {
             const blogData = blogs.data.find((item) => item.title2.toLowerCase().includes(modifyTitle.toLowerCase()));
-           
+
             setBlog(blogData)
         }
 
@@ -55,23 +56,23 @@ export default function BlogDetail() {
                                     {/* <h4>A. Improved customization:</h4> */}
                                     {/* <p>{blog.step3Des}</p> */}
                                     {
-                                       blog.step3SubTittleDes?.length && blog.step3SubTittleDes.map((ele,key)=>{
-                                            return(
+                                        blog.step3SubTittleDes?.length && blog.step3SubTittleDes.map((ele, key) => {
+                                            return (
                                                 <div>
-                                                <h4 className='blog_detail_sub'><FiberManualRecordIcon />{ele.title}</h4>
-                                                <p dangerouslySetInnerHTML={{ __html: ele.description }}></p>
+                                                    <h4 className='blog_detail_sub'><FiberManualRecordIcon />{ele.title}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: ele.description }}></p>
                                                 </div>
-                                                    
+
                                             )
                                         })
                                     }
                                     <h3>{blog.step4}</h3>
-                                    <p dangerouslySetInnerHTML={{ __html: blog.step4Des}}></p>
+                                    <p dangerouslySetInnerHTML={{ __html: blog.step4Des }}></p>
 
                                     <h3>{blog.step5}</h3>
                                     <p dangerouslySetInnerHTML={{ __html: blog.step5Des }}></p>
 
-                                    <h3>{blog.conclusion ? "Conclusion":""}</h3>
+                                    <h3>{blog.conclusion ? "Conclusion" : ""}</h3>
                                     <p dangerouslySetInnerHTML={{ __html: blog.conclusion }}></p>
                                     {/* <p>{blog.conclusion}
                                     </p> */}
@@ -82,6 +83,9 @@ export default function BlogDetail() {
                                 <div className='blog_detail_form_main'>
                                     <HireDeveloperForm />
                                 </div>
+                            </Col>
+                            <Col md={8}>
+                                <Comment />
                             </Col>
                         </Row>
                         {/* <FaqSection
@@ -122,6 +126,7 @@ export default function BlogDetail() {
                         /> */}
                     </div>
                 </Container>
+
             </div>
 
         </div>
