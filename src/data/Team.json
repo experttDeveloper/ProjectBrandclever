@@ -66,14 +66,14 @@
         {
             "id": 9,
             "name": "Sahavaj Ahmad",
-            "image": "",
+            "image": "/images/team/sahavaj.png",
             "linkedIn":"",
              "profile": "Laravel Developer"
         },
         {
             "id": 10,
             "name": "Amarjit Singh",
-            "image": "",
+          "image": "/images/team/amarjeet.png",
             "linkedIn":"",
              "profile": "Web Developer"
         },
@@ -87,7 +87,7 @@
         {
             "id": 12,
             "name": "Abhishek Rathour",
-            "image": "",
+            "image": "/images/team/abhishek.png",
             "linkedIn":"",
              "profile": "Web Designer"
         },
@@ -122,7 +122,7 @@
         {
             "id": 16,
             "name": "Lakshya Devgan",
-            "image": "",
+            "image": "/images/team/lakshay.png",
             "linkedIn":"",
             "profile": "SEO Executive "
         },
@@ -136,28 +136,28 @@
         {
             "id": 18,
             "name": "Mansi Verma",
-           "image": "",
+           "image": "/images/team/mansi.png",
             "linkedIn":"",
             "profile": " Business Development Executive "
         },
         {
             "id": 19,
             "name": "Mangesh Goel",
-           "image": "",
+           "image": "/images/team/mangesh.png",
             "linkedIn":"",
             "profile": "Business Development Executive"
         },
         {
             "id": 20,
             "name": "Deepak Kumar",
-           "image": "",
+           "image": "/images/team/deepak_kumar.png",
             "linkedIn":"",
             "profile": "Business Development Executive"
         },
         {
             "id": 21,
             "name": "Sangharsh Thakur",
-           "image": "",
+           "image": "/images/team/sangarsh.png",
             "linkedIn":"",
             "profile": "Business Development Executive"
         }
