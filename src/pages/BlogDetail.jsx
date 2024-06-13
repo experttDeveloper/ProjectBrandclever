@@ -77,15 +77,14 @@ export default function BlogDetail() {
                                     {/* <p>{blog.conclusion}
                                     </p> */}
                                 </div>
-
+                                <div className='comment_main_section'>
+                                    <Comment />
+                                </div>
                             </Col>
                             <Col md={4}>
                                 <div className='blog_detail_form_main'>
                                     <HireDeveloperForm />
                                 </div>
-                            </Col>
-                            <Col md={8}>
-                                <Comment />
                             </Col>
                         </Row>
                         {/* <FaqSection

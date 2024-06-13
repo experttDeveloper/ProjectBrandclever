@@ -1,0 +1,10 @@
+.comment_sec_main {
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0px 0px 4px 0px #509e53;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+button.post_btn.btn.btn-primary {
+    background: #509e53;
+}

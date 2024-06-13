@@ -1250,12 +1250,12 @@ section#schedules .showcase {
     background-color: #000000 !important;
 }
 .blog_detail_form_main .hire_developer_form h2 {
-    font-size: 26px !important;
+    font-size: 30px !important;
     font-weight: 600;
 }
 .blog_detail_form_main .hire_developer_form p {
-    font-size: 16px;
-    letter-spacing: 0px !important;
+    font-size: 19px;
+    letter-spacing: 0.9px !important;
 }
 .client_review_row {
     gap: 30px;
@@ -2783,18 +2783,6 @@ header.sticky {
     box-shadow: inset 0px 2000px 0px #000000ba;
     background-attachment: fixed;
 }
-
-/* .main_header img {
-    background-size: cover;
-    width: 100% !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 130px 0px 80px;
-    box-shadow: inset 0px 2000px 0px #000000ba;
-    background-attachment: fixed;
-}*/
-
-
 .main_header p {
     text-transform: capitalize;
     color: var(--white-color);
@@ -3121,14 +3109,14 @@ h4.blog_detail_sub {
 }
 .blog_detail_form_main {
     position: sticky;
-    top: 19% !important;
+    top: 15% !important;
     left: 0;
     width: 100%;
     color: #fff;
 }
 .blog_detail_form_main .hire_developer_form select {
     height: 50px;
-    max-height: 45px !important;
+    max-height: 50px !important;
     width: 100%;
     border-radius: 5px;
     border: 2px solid #fff;
@@ -3146,8 +3134,9 @@ h4.blog_detail_sub {
     font-size: 16px !important;
 }
 .blog_detail_form_main .card {
-    padding: 25px 28px  40px 28px!important;
-    background-image: linear-gradient(rgb(80 158 83), #aae159) !important;
+    padding: 30px 40px  41px 40px!important;
+    background-image: unset !important;
+    background-color: #509e53 !important;
 }
 .blog_detail_form_main .card button.btn.btn-contained {
     padding: 10px 30px !important;
@@ -3155,8 +3144,12 @@ h4.blog_detail_sub {
     margin-top: -1px;
     color: #fff !important;
     width: 100% !important;
+    letter-spacing: 1px !important;
     background: #000;
     font-weight: 600;
+}
+ input#inputPassword5 {
+    margin-bottom: 25px;
 }
 
 .blog_inner_page_data {
@@ -3221,11 +3214,10 @@ button {
 .iner_mains_blog .blog_detail_form_main .card {
     border-radius: 10px !important;
 }
-
 .iner_mains_blog .blog_detail_form_main .card input {
     border: 2px solid #fff;
     border-radius: 5px !important;
-    height: 8px !important;
+    height: 12px !important;
 }
 
 a.hire_link:hover {
