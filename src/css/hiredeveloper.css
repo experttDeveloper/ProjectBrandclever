@@ -88,14 +88,14 @@
   background: #72b755;
 }
 .form_shopify_hire .form_inner button.btn.btn-contained {
-  padding: 10px 30px !important;
-  box-shadow: unset !important;
-  margin-top: -1px;
-  color: #fff !important;
-  width: 100% !important;
-  letter-spacing: 1px !important;
-  background: #000;
-  font-weight: 600;
+    padding: 10px 30px !important;
+    box-shadow: unset !important;
+    margin-top: -1px;
+    color: #fff !important;
+    width: 100% !important;
+    letter-spacing: 1px !important;
+    background: #191e25;
+    font-weight: 600;
 }
 .form_shopify_hire .form_inner .card button.btn.btn-contained:hover {
   box-shadow: inset 0 100px 0 0 #191e25;

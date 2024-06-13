@@ -26,7 +26,7 @@ export default function Comment() {
     const handleSubmit = () => {
         try {
             if (!formData.name) {
-                setError({ type: "name", status: true, message: "Name is require!" });
+                setError({ type: "name", status: true, message: "Name is required!" });
                 return
             }
             if (!formData.comment) {
@@ -41,7 +41,8 @@ export default function Comment() {
                         toast.success(res.data.message || "Form submitted successfully!");
                         setFormData({
                             name: "",
-                            comment: ""
+                            comment: "",
+                            created_at: ""
                         })
                         setIsLoading(false)
                         return;
@@ -83,13 +84,13 @@ export default function Comment() {
                         value={formData.comment}
                     />
                 </FloatingLabel>
-                {error.status && error.type === "comment" && <Form.Text id="passwordHelpBlock" muted>{error.message}</Form.Text>}
+                {error.status && error.type === "comment" && <Form.Text id="passwordHelpBlock test" muted>{error.message}</Form.Text>}
                 <div className='btn_sec'>
-                    <Button className='post_btn' disabled={isLoading} onClick={handleSubmit}>Post</Button>
+                    <Button className='post_btn' onClick={handleSubmit}>Post</Button>
                 </div>
             </Container>
             <div className='comment_list'>
-                <CommentList />
+                <CommentList Loading={() => [isLoading, setIsLoading]} />
             </div>
         </div>
     )

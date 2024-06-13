@@ -3145,13 +3145,15 @@ h4.blog_detail_sub {
     color: #fff !important;
     width: 100% !important;
     letter-spacing: 1px !important;
-    background: #000;
+    background: #191e25;
     font-weight: 600;
 }
- input#inputPassword5 {
-    margin-bottom: 25px;
+input#inputPassword5 {
+    margin-bottom: 4px;
 }
-
+textarea#floatingTextarea2 {
+    margin-top: 25px;
+}
 .blog_inner_page_data {
     padding: 70px 0px;
     background: #fff;
