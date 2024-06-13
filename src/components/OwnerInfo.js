@@ -23,7 +23,7 @@ const OwnerInfo = () => {
                     <div className='part-about'>
                         <subtitle>What Sets Us Apart</subtitle>
                         <div className='right-content-abt'>
-                            <p>Expertise: Our team is a tapestry of seasoned professionals boasting diverse skills and knowledge. From software development to cybersecurity, cloud solutions to data analytics, we bring a rich tapestry of experience to every project.Innovation: In a world that thrives on innovation, we lead the charge. We don't just adapt to change; we ignite it. Our unwavering commitment to pioneering technological advancements ensures that our clients always receive solutions that are future-proof.Collaboration: We champion the power of collaboration. By forging close partnerships with our clients, comprehending their distinct needs and challenges, we craft bespoke solutions that yield tangible results. Your triumph is our triumph.
+                            <p>Expertise: Our team is a tapestry of seasoned professionals boasting diverse skills and knowledge. From software development to cybersecurity, cloud solutions to data analytics, we bring a rich tapestry of experience to every project.Innovation: In a world that thrives on innovation, we lead the charge. We don't just adapt to change; we ignite it. Our unwavering commitment to pioneering technological advancements ensures that our clients always receive solutions that are future-proof.
 
                             </p>
                         </div>

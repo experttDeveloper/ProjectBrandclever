@@ -159,6 +159,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .two-columns.aboutInfo-section .about-content-columns.about_project .about-content p {
+        padding-right: 0px;
+    }
     .titleoftestimonial {
         margin-bottom: 20px !important;
     }

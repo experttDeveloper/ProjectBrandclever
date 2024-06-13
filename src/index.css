@@ -28,16 +28,11 @@ a {
 body,
 p {
     font-size: 17px;
+    letter-spacing: 0.4px !important;
 }
-
-/* @supports (-webkit-touch0callout: none) {
-    .costner_page_web a:hover:after {
-        left: 160px !important;
-        position: absolute !important;
-        top: -180px !important;
-    }
-} */
-
+span {
+    letter-spacing: 0.4px !important;
+}
 /* header_css_start_Abhi */
 .inner_header_nav {
     display: flex;
@@ -1022,7 +1017,9 @@ span.ti-stars i:hover {
     animation: star .5s cubic-bezier(.36, .07, .57, .99) infinite;
     transform: scale(1.5);
 }
-
+.two-columns.aboutInfo-section .about-content-columns.about_project .about-content p {
+    padding-right: 50px;
+}
 nav {
     display: table-cell;
     vertical-align: middle;
@@ -3266,3 +3263,7 @@ p.MuiTypography-root.MuiTypography-body2.blog_title2.css-u30lmt {
     padding-bottom: 10px !important;
     text-shadow: 0px 0px 1px;
 }
+.seo_audit_btn a.seo_link {
+    border: none !important;
+}
+
