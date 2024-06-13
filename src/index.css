@@ -3218,6 +3218,7 @@ button {
     border: 2px solid #fff;
     border-radius: 5px !important;
     height: 12px !important;
+    color: #fff !important;
 }
 
 a.hire_link:hover {
@@ -3283,4 +3284,12 @@ p.MuiTypography-root.MuiTypography-body2.blog_title2.css-u30lmt {
 .seo_audit_btn a.seo_link {
     border: none !important;
 }
+.blog_detail_form_main .card button.btn.btn-contained:hover {
+    box-shadow: inset 0px 100px 0px 0px #fff !important;
+    transition: 2s !important;
+    color: #000 !important;
+    border: 1px solid #fff !important;
+  }
+
+
 

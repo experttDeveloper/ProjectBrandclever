@@ -1752,9 +1752,8 @@
     .main-heading_title {
         width: 90% !important;
     }
-
     .form_shopify_hire .form_inner .card {
-        padding: 26px 10px 35px 10px;
+        padding: 30px 10px  41px 10px!important;
     }
 
     .contact_shopify {
@@ -1864,6 +1863,15 @@
 }
 
 @media screen and (max-width: 768px) {
+    .blog_detail_form_main .card {
+        padding: 30px 10px  41px 10px!important;
+    }
+    .comment_sec_main {
+        padding: 30px 10px 30px 10px;
+    }
+    .form_shopify_hire .form_inner .card {
+        padding: 30px 10px  41px 10px!important;
+    }
     .seo_analyzer .seo_report p {
         font-size: 15px !important;
     }
