@@ -1,7 +1,7 @@
 import { InputLabel, MenuItem, Select, TextField, FormControl, FormHelperText } from '@mui/material';
 import axios from 'axios';
 import React, { useState } from 'react'
-import { Button, Card } from 'react-bootstrap';
+import { Button, Card, Form } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 
 
@@ -126,7 +126,25 @@ export default function HireDeveloperForm() {
                         />
                     </div>
                     <div style={{ marginBottom: "10px" }}>
-                        <FormControl fullWidth variant="outlined" >
+
+                        <Form.Select
+                            aria-label="Default select example"
+                            name="service"
+                            placeholder='Service *'
+                            onChange={handleChange}
+                            className='service_select'
+                        >
+                            <option>Select Service *</option>
+                            <option value="developement">Web Development</option>
+                            <option value="web_design">Web Design</option>
+                            <option value="ui/ux">UI/UX</option>
+                            <option value="ppc">PPC</option>
+                            <option value="seo">SEO</option>
+                            <option value="email_marketing">Email Marketing</option>
+                            <option value="smm">SMM</option>
+                        </Form.Select>
+                        {errors.service && <p className='error_mesg'>{errors.service}</p>}
+                        {/* <FormControl fullWidth variant="outlined" >
                             {
                                 formData.service ? "" : <InputLabel sx={{ color: "#a2a2a2" }}>Select Service *</InputLabel>
                             }
@@ -147,8 +165,8 @@ export default function HireDeveloperForm() {
                                 <MenuItem value="email_marketing">Email Marketing</MenuItem>
                                 <MenuItem value="smm">SMM</MenuItem>
                             </Select>
-                            {errors.service && <FormHelperText>{errors.service}</FormHelperText>}
-                        </FormControl>
+                            
+                        </FormControl> */}
                     </div>
                     <div style={{ marginBottom: "10px" }}>
                         <TextField
