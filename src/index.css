@@ -231,9 +231,9 @@ button.owl-next span,
 }
 
 img.signature {
+    float: left;
+    padding-top: 0px!important;
     width: 160px;
-    padding-top: 50px !important;
-    float: right;
 }
 
 .about-content p {

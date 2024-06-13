@@ -12,6 +12,9 @@
   background-size: cover;
   padding: 190px 0px 150px;
 }
+.seo_audit_btn button.btn-play.btn.btn-primary svg {
+  margin-top: 9px !important;
+}
 .content {
   width: 60%;
 }

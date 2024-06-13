@@ -1863,6 +1863,21 @@
 }
 
 @media screen and (max-width: 768px) {
+    .seo_analyzer .seo_report p {
+        font-size: 15px !important;
+    }
+    .seo_analyzer .banner_down_main_div h2 {
+        font-size: 25px !important;
+    }
+    .seo_analyzer .content_banner p {
+        font-size: 14px !important;
+    }
+    .seo_analyzer .content_banner h1 {
+        font-size: 40px !important;
+    }
+    .seo_analyzer .benner_main_div {
+        padding: 40px 0px !important;
+    }
     section.team_section {
         padding-bottom: 70px !important;
     }
