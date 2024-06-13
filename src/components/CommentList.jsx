@@ -1,7 +1,7 @@
 import { Avatar, IconButton } from '@mui/material';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { Button } from 'react-bootstrap';
+import ReplyIcon from '@mui/icons-material/Reply';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
 export default function CommentList() {
@@ -39,21 +39,20 @@ export default function CommentList() {
                 <div className='list_name'>
                     <p>ravan</p>
                 </div>
-                <div className='list_time'>
-                    <p>just now</p>
-                </div>
+
                 <div className='action'>
                     <MoreHorizIcon />
                 </div>
-
+            </div>
+            <div className='list_time'>
+                <p>just now</p>
             </div>
             <div className='des'>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
             <div className='reply_btn'>
-                <Button className='reply'>
-                    Reply
-                </Button>
+                <ReplyIcon />
+                <p>Reply</p>
             </div>
 
 

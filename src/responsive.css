@@ -1863,6 +1863,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .blog_detail_form_main {
+        position: unset !important;
+        margin-top: 40px;
+    }
     .blog_detail_form_main .card {
         padding: 30px 10px  41px 10px!important;
     }

@@ -3,8 +3,50 @@
     box-shadow: 0px 0px 4px 0px #509e53;
     border-radius: 8px;
     margin-top: 10px;
+    position: relative;
 }
 
 button.post_btn.btn.btn-primary {
     background: #509e53;
+}
+.comment_sec_main .comment_desc {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.comment_sec_main .action {
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+}
+.comment_sec_main .comment_list_section {
+    background: #dbdbdb;
+    border-radius: 7px;
+    padding: 20px 20px 20px 20px;
+    margin-top: 30px;
+}
+.comment_sec_main .list_time p {
+    padding: 0;
+    margin-left: 70px;
+    margin-top: -24px;
+}
+.comment_sec_main .reply_btn {
+    display: flex;
+    cursor: pointer;
+    gap: 5px;
+    align-items: center;
+}
+.comment_sec_main .reply_btn p {
+    padding: 0;
+    margin: 0;
+}
+.comment_sec_main  .comment_desc p {
+    margin: 0;
+    padding: 0;
+}
+.comment_sec_main .list_name p {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.8px !important;
+    margin-top: -14px !important;
 }
