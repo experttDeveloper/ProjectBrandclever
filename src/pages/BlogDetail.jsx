@@ -78,7 +78,7 @@ export default function BlogDetail() {
                                     </p> */}
                                 </div>
                                 <div className='comment_main_section'>
-                                    <Comment />
+                                    <Comment blogId={blog.id} />
                                 </div>
                             </Col>
                             <Col md={4}>

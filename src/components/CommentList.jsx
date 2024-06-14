@@ -7,7 +7,7 @@ import moment from 'moment/moment';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
-export default function CommentList({ Loading }) {
+export default function CommentList({ Loading, blogId }) {
 
     const [isLoading, setIsLoading] = Loading();
     const [comments, setComments] = useState([]);
@@ -25,28 +25,26 @@ export default function CommentList({ Loading }) {
             [id]: !prevLikes[id]
         }));
     };
+    
     useEffect(() => {
         // URL of the server endpoint
-        const url = 'https://brandclever.in/developer/brand/admin/form/get_comment.php';
+        const url = `https://brandclever.in/developer/brand/admin/form/get_comment.php?blog_id=${blogId}`;
         const fetchData = async () => {
             try {
-                setIsLoading(true)
-                // Make the GET request
+                setIsLoading(true);
+                // Make the GET request with blogId
                 const response = await axios.get(url);
-                setComments(response.data)
-                setIsLoading(false)
+                setComments(response.data);
+                setIsLoading(false);
             } catch (error) {
-                console.log("error", error)
-                setIsLoading(false)
-            } finally {
-                // Set loading to false after the fetch is complete
+                console.log("error", error);
                 setIsLoading(false);
             }
         };
 
-        // Call the function to fetch data
+        // Fetch comments when the component mounts or blogId changes
         fetchData();
-    }, [isLoading]);
+    }, [blogId, isLoading]);
 
     return (
         <>

@@ -5,7 +5,7 @@ import { toast } from 'react-toastify'
 import axios from 'axios'
 import CommentList from './CommentList'
 
-export default function Comment() {
+export default function Comment({ blogId }) {
 
 
     const [error, setError] = useState({ type: "", status: true, message: "" })
@@ -13,7 +13,8 @@ export default function Comment() {
     const [formData, setFormData] = useState({
         name: "",
         comment: "",
-        created_at: new Date()
+        created_at: "",
+        blogId: blogId
     })
 
     const handleChange = (e) => {
@@ -33,17 +34,26 @@ export default function Comment() {
                 setError({ type: "comment", status: true, message: "Comment is required!" });
                 return
             }
+            const newFormData = {
+                name: formData.name,
+                comment: formData.comment,
+                created_at: new Date(),
+                blog_id: blogId
+
+            }
             setIsLoading(true);
             axios
-                .post('https://developer.brandclever.in/brand/admin/form/comment.php', formData)
+                .post('https://developer.brandclever.in/brand/admin/form/comment.php', newFormData)
                 .then((res) => {
                     if (res.data.status) {
                         toast.success(res.data.message || "Form submitted successfully!");
                         setFormData({
                             name: "",
                             comment: "",
-                            created_at: ""
+                            created_at: "",
+                            blogId: ""
                         })
+
                         setIsLoading(false)
                         return;
                     }
@@ -90,7 +100,7 @@ export default function Comment() {
                 </div>
             </Container>
             <div className='comment_list'>
-                <CommentList Loading={() => [isLoading, setIsLoading]} />
+                <CommentList Loading={() => [isLoading, setIsLoading]} blogId={blogId} />
             </div>
         </div>
     )
