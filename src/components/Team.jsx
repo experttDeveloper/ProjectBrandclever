@@ -10,7 +10,7 @@ export default function Team() {
     
     const settings = {
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 4,
         arrows: true,
@@ -58,7 +58,7 @@ export default function Team() {
                                         <div className="card-img-wrapper">
                                             <img src={ele.image ? ele.image:"https://cdn.icon-icons.com/icons2/2570/PNG/512/image_icon_153794.png"} alt={ele.name} />
                                         </div>
-                                        <Link to={"#"} className="social-icon" target='_blank'><i class="fa-regular fa-circle-nodes"></i></Link>
+                                        {/* <Link to={"#"} className="social-icon" target='_blank'><i class="fa-regular fa-circle-nodes"></i></Link> */}
                                         <div className="card-content-wrapper">
                                             <a href="#" className="card-content">
                                                 <h3>{ele.name}</h3>

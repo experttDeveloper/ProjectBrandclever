@@ -1,11 +1,17 @@
 .comment_sec_main {
-    padding: 30px 30px 30px 30px;
+    padding: 10px 20px 20px 20px;
     box-shadow: 0px 0px 4px 0px #509e53;
     border-radius: 8px;
     margin-top: 10px;
     position: relative;
 }
-
+.comment_sec_main .container label.form-label {
+    color: #212529 !important;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    display: none;
+}
 button.post_btn.btn.btn-primary {
     background: #509e53;
 }

@@ -37,13 +37,6 @@
         },
         {
             "id": 6,
-            "name": "Ruchi",
-            "image": "",
-            "linkedIn":"",
-            "profile": "PHP Developer"
-        },
-        {
-            "id": 6,
             "name": "Shivam Thakur",
             "image": "/images/team/shivam.png",
             "linkedIn":"",
@@ -116,13 +109,6 @@
             "id": 15,
             "name": "Anmol Madaan",
             "image": "/images/team/anmol.png",
-            "linkedIn":"",
-            "profile": "SEO Executive "
-        },
-        {
-            "id": 16,
-            "name": "Lakshya Devgan",
-            "image": "/images/team/lakshay.png",
             "linkedIn":"",
             "profile": "SEO Executive "
         },
