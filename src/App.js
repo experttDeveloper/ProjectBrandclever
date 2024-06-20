@@ -83,7 +83,7 @@ export default class App extends Component {
           ) : window.location.pathname === "/analyzer" ? (
             <BrowserRouter>
               <Routes>
-                {/* <Route path="/analyzer" element={<SeoAudit />} /> */}
+                <Route path="/analyzer" element={<SeoAudit />} />
               </Routes>
             </BrowserRouter>
           ) :(

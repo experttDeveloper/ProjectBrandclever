@@ -37,7 +37,6 @@ export default function CommentList({ Loading, blogId }) {
                 setComments(response.data);
                 setIsLoading(false);
             } catch (error) {
-                console.log("error", error);
                 setIsLoading(false);
             }
         };
@@ -77,10 +76,10 @@ export default function CommentList({ Loading, blogId }) {
                                         <div className='des'>
                                             <p>{ele.comment}</p>
                                         </div>
-                                        <div className='reply_btn'>
+                                        {/* <div className='reply_btn'>
                                             <ReplyIcon />
                                             <p>Reply</p>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </>
                             )
