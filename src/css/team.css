@@ -266,3 +266,9 @@ button.submit_team_btn {
     border: 1px solid green !important;
     color: var(--dark-black-color);
 }
+
+p.no_experience {
+    text-align: center;
+    margin-top: 15px;
+    color: #e73a3a;
+}

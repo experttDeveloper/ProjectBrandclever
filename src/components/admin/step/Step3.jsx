@@ -34,7 +34,7 @@ const Step3 = ({ formData, setForm, navigation }) => {
                     </Typography>
 
                     <TableContainer component={Paper}>
-                        <Button variant="contained" color="primary" onClick={handleAddExperience} style={{float:"right"}}>
+                        <Button variant="contained" color="primary" onClick={handleAddExperience} style={{ float: "right" }}>
                             Add Experience
                         </Button>
                         <Table stickyHeader aria-label="sticky table">
@@ -46,13 +46,21 @@ const Step3 = ({ formData, setForm, navigation }) => {
                                 </TableRow>
                             </TableHead>
                             <TableBody>
-                                {experiences?.map((experience, index) => (
-                                    <TableRow key={index}>
-                                        <TableCell>{experience.companyName}</TableCell>
-                                        <TableCell>{experience.profile}</TableCell>
-                                        <TableCell>{experience.experienceTime}</TableCell>
-                                    </TableRow>
-                                ))}
+                                {
+                                    experiences.length ? (
+                                        <>
+                                            {experiences.map((experience, index) => (
+                                                <TableRow key={index}>
+                                                    <TableCell>{experience.companyName}</TableCell>
+                                                    <TableCell>{experience.profile}</TableCell>
+                                                    <TableCell>{experience.experienceTime}</TableCell>
+                                                </TableRow>
+                                            ))}
+                                        </>
+                                    ) : (
+                                        <p className='no_experience'>No experince found</p>
+                                    )
+                                }
                             </TableBody>
                         </Table>
                     </TableContainer>
@@ -80,7 +88,7 @@ const Step3 = ({ formData, setForm, navigation }) => {
 
 
             <Dialog open={openDialog} onClose={handleDialogClose}>
-                <DialogTitle sx={{color:"black"}}>Add New Experience</DialogTitle>
+                <DialogTitle sx={{ color: "black" }}>Add New Experience</DialogTitle>
                 <DialogContent>
                     <TextField
                         label="Company Name"
