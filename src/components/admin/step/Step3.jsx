@@ -1,7 +1,7 @@
 // Step1.jsx
 import React, { useState } from 'react';
 import { Grid, Typography, Button, Dialog, DialogTitle, DialogContent, DialogActions, TextField, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
-import { ArrowBack } from '@mui/icons-material';
+import { Add, ArrowBack } from '@mui/icons-material';
 
 const Step3 = ({ formData, setForm, navigation }) => {
 
@@ -34,7 +34,7 @@ const Step3 = ({ formData, setForm, navigation }) => {
                     </Typography>
 
                     <TableContainer component={Paper}>
-                        <Button variant="contained" color="primary" onClick={handleAddExperience} style={{ float: "right" }}>
+                        <Button startIcon={<Add/>} variant="contained" color="primary" onClick={handleAddExperience} style={{ float: "right" }}>
                             Add Experience
                         </Button>
                         <Table stickyHeader aria-label="sticky table">
