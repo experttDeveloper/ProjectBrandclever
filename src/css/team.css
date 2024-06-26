@@ -19,12 +19,14 @@
 a {
     text-decoration: none;
 }
+
 button.slick-arrow.slick-next:before {
     color: green !important;
     font-size: 30px;
     position: absolute;
     top: -10px;
-    right: -10px;}
+    right: -10px;
+}
 
 button.slick-arrow {
     z-index: 9;
@@ -37,9 +39,11 @@ button.slick-arrow.slick-prev:before {
     font-size: 30px;
     left: -10px;
 }
+
 .team {
     background: #e8eaef;
 }
+
 .team_section img {
     max-width: 100%;
     display: block;
@@ -80,9 +84,11 @@ button.slick-arrow.slick-prev:before {
     line-height: 1;
     margin-bottom: 1rem;
 }
+
 section.team_section .card:hover p {
     color: white !important;
 }
+
 .team_section .cards {
     margin-top: 4rem;
     display: grid;
@@ -124,16 +130,20 @@ section.team_section .card:hover p {
     filter: grayscale(10%);
     transition: 0.5s ease;
 }
+
 .slick-dots li button:before {
     top: 2px !important;
     font-size: 12px !important;
 }
+
 section.team_section {
     padding-bottom: 100px !important;
 }
+
 .team_section .cards .card img:hover {
     filter: grayscale(0%);
 }
+
 .card:hover img {
     transform: scale(1.1);
 }
@@ -141,10 +151,12 @@ section.team_section {
 .card-img-wrapper {
     overflow: hidden !important;
 }
+
 .team_section .cards .card .card-content-wrapper {
     margin-left: auto;
     max-width: 100%;
 }
+
 /* section.team_section .card .card-content-wrapper p {
     color: #2d2d2d !important;
     font-weight: 600;
@@ -156,6 +168,7 @@ section.team_section {
     padding: 30px;
     text-align: center;
 }
+
 .team_section .cards .card .card-content-wrapper .card-content>div {
     text-align: right;
 }
@@ -202,11 +215,54 @@ section.team_section {
 
     animation: rotate 2s linear infinite;
 }
+
 @keyframes orbit {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
+}
+
+button.add_team {
+    float: right;
+    background: #27a460;
+    border: none;
+    margin-right: 20px;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+button.add_team:hover {
+    float: right;
+    background: #27a460;
+    border: none;
+    margin-right: 20px;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.team_form {
+    padding: 50px;
+}
+
+button.next_btn {
+    border: 1px solid var(--green-color);
+    color: var(--dark-black-color);
+}
+
+button.prev_btn {
+    border: 1px solid var(--green-color);
+    margin-right: 10px;
+    color: var(--dark-black-color);
+}
+
+
+button.submit_team_btn {
+    border: 1px solid green !important;
+    color: var(--dark-black-color);
 }

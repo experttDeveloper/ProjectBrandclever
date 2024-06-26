@@ -17,11 +17,12 @@ import {
   IconButton,
 } from "@mui/material";
 import AdminLogin from "./AdminLogin";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Logout from "@mui/icons-material/Logout";
 import Users from "./ContactUsers";
 import LandingPageUser from "./LandingPageUser";
 import Interviewers from "./Interviewers";
+import Team from "./Team";
 
 const Dashboard = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -63,13 +64,17 @@ const Dashboard = () => {
     setAuthenticated(false);
   };
 
+
+
   if (authenticated && admin.username === "adminuser@gmail.com" && "Admin@1911") {
     return (
       <div className="dashboard_section">
         <AppBar position="static">
           <Toolbar className="admin_header">
             <Typography variant="h6" component="div">
-              <img src="/brandclever_logo.png" width="200px" />
+              <Link to='/' target="_blank">
+                <img src="/brandclever_logo.png" width="200px" />
+              </Link>
             </Typography>
             <div>
               <Tooltip title="Account">
@@ -144,6 +149,16 @@ const Dashboard = () => {
                       }
                     />
                   </ListItem>
+                  <ListItem onClick={() => handleNavItemClick("Team")}>
+                    <ListItemText
+                      primary="Team"
+                      className={
+                        selectedNavItem === "Team"
+                          ? "active_nav"
+                          : "nav_item"
+                      }
+                    />
+                  </ListItem>
                 </List>
               </Paper>
             </Grid>
@@ -153,6 +168,7 @@ const Dashboard = () => {
                 {selectedNavItem === "Users" && <><Users /></>}
                 {selectedNavItem === "Landing page users" && <LandingPageUser />}
                 {selectedNavItem === "Interviewers" && <Interviewers />}
+                {selectedNavItem === "Team" && <><Team/></>}
               </Paper>
             </Grid>
           </Grid>
