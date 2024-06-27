@@ -1,16 +1,35 @@
 // Step1.jsx
 import React, { useState } from 'react';
-import { Grid, Typography, Button, Dialog, DialogTitle, DialogContent, DialogActions, TextField, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
-import { Add, ArrowBack } from '@mui/icons-material';
+import { Grid, Typography, Button, Dialog, DialogTitle, DialogContent, DialogActions, TextField, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, IconButton } from '@mui/material';
+import { Add, ArrowBack, Delete, Edit } from '@mui/icons-material';
+import { validateStep3 } from './Validation';
 
 const Step3 = ({ formData, setForm, navigation }) => {
 
     const { experiences } = formData;
+    const [errors, setErrors] = useState({});
     const [openDialog, setOpenDialog] = useState(false);
+    const [dialogErrors, setDialogErrors] = useState({});
+    const [dialogMode, setDialogMode] = useState('add'); // add or edit
+    const [editIndex, setEditIndex] = useState(null);
     const [newExperience, setNewExperience] = useState({ companyName: '', profile: '', experienceTime: '' });
 
     const handleAddExperience = () => {
+        setNewExperience({ companyName: '', profile: '', experienceTime: '' });
+        setDialogMode('add');
         setOpenDialog(true);
+    };
+
+    const handleEditExperience = (index) => {
+        setNewExperience(experiences[index]);
+        setEditIndex(index);
+        setDialogMode('edit');
+        setOpenDialog(true);
+    };
+
+    const handleDeleteExperience = (index) => {
+        const updatedExperiences = experiences.filter((_, i) => i !== index);
+        navigation.setForm('experiences', updatedExperiences);
     };
 
     const handleDialogClose = () => {
@@ -18,10 +37,40 @@ const Step3 = ({ formData, setForm, navigation }) => {
     };
 
     const handleSaveExperience = () => {
-        // Add the new experience to the experiences list
-        navigation.setForm('experiences', [...formData.experiences, newExperience]);
-        setNewExperience({ companyName: '', profile: '', experienceTime: '' });
-        setOpenDialog(false);
+        const validationErrors = {};
+        if (!newExperience.companyName) validationErrors.companyName = "Company name is required";
+        if (!newExperience.profile) validationErrors.profile = "Profile is required";
+        if (!newExperience.experienceTime) validationErrors.experienceTime = "Experience time is required";
+
+        if (Object.keys(validationErrors).length > 0) {
+            setDialogErrors(validationErrors);
+        } else {
+            setDialogErrors({});
+            if (dialogMode === 'add') {
+                setForm('experiences', [...experiences, newExperience]);
+            } else if (dialogMode === 'edit') {
+                const updatedExperiences = experiences.map((exp, index) =>
+                    index === editIndex ? newExperience : exp
+                );
+                setForm('experiences', updatedExperiences);
+            }
+            setNewExperience({ companyName: '', profile: '', experienceTime: '' });
+            setOpenDialog(false);
+        }
+    };
+
+    const handleNext = () => {
+        const validationErrors = validateStep3(formData);
+        if (Object.keys(validationErrors).length > 0) {
+            setErrors(validationErrors);
+        } else {
+            setErrors({});
+            navigation.handleSubmit();
+        }
+    };
+
+    const handleBack = () => {
+        navigation.previous();
     };
 
 
@@ -34,7 +83,7 @@ const Step3 = ({ formData, setForm, navigation }) => {
                     </Typography>
 
                     <TableContainer component={Paper}>
-                        <Button startIcon={<Add/>} variant="contained" color="primary" onClick={handleAddExperience} style={{ float: "right" }}>
+                        <Button startIcon={<Add />} variant="contained" color="primary" onClick={handleAddExperience} style={{ float: "right" }}>
                             Add Experience
                         </Button>
                         <Table stickyHeader aria-label="sticky table">
@@ -43,6 +92,7 @@ const Step3 = ({ formData, setForm, navigation }) => {
                                     <TableCell>Company Name</TableCell>
                                     <TableCell>Profile</TableCell>
                                     <TableCell>Experience Time</TableCell>
+                                    <TableCell>Actions</TableCell>
                                 </TableRow>
                             </TableHead>
                             <TableBody>
@@ -54,6 +104,14 @@ const Step3 = ({ formData, setForm, navigation }) => {
                                                     <TableCell>{experience.companyName}</TableCell>
                                                     <TableCell>{experience.profile}</TableCell>
                                                     <TableCell>{experience.experienceTime}</TableCell>
+                                                    <TableCell>
+                                                        <IconButton onClick={() => handleEditExperience(index)}>
+                                                            <Edit />
+                                                        </IconButton>
+                                                        <IconButton onClick={() => handleDeleteExperience(index)}>
+                                                            <Delete />
+                                                        </IconButton>
+                                                    </TableCell>
                                                 </TableRow>
                                             ))}
                                         </>
@@ -70,7 +128,7 @@ const Step3 = ({ formData, setForm, navigation }) => {
 
                     <Button
                         color="primary"
-                        onClick={navigation.previous}
+                        onClick={handleBack}
                         className='prev_btn'
                         startIcon={<ArrowBack />}
                     >
@@ -78,7 +136,7 @@ const Step3 = ({ formData, setForm, navigation }) => {
                     </Button>
                     <Button
                         color="primary"
-                        onClick={navigation.handleSubmit}
+                        onClick={handleNext}
                         className='submit_team_btn'
                     >
                         Submit
@@ -88,7 +146,7 @@ const Step3 = ({ formData, setForm, navigation }) => {
 
 
             <Dialog open={openDialog} onClose={handleDialogClose}>
-                <DialogTitle sx={{ color: "black" }}>Add New Experience</DialogTitle>
+                <DialogTitle style={{ color: "black" }}>{dialogMode === 'add' ? 'Add New Experience' : 'Edit Experience'}</DialogTitle>
                 <DialogContent>
                     <TextField
                         label="Company Name"
@@ -96,6 +154,8 @@ const Step3 = ({ formData, setForm, navigation }) => {
                         onChange={(e) => setNewExperience({ ...newExperience, companyName: e.target.value })}
                         fullWidth
                         margin="normal"
+                        error={!!dialogErrors.companyName}
+                        helperText={dialogErrors.companyName}
                     />
                     <TextField
                         label="Profile"
@@ -103,6 +163,8 @@ const Step3 = ({ formData, setForm, navigation }) => {
                         onChange={(e) => setNewExperience({ ...newExperience, profile: e.target.value })}
                         fullWidth
                         margin="normal"
+                        eerror={!!dialogErrors.profile}
+                        helperText={dialogErrors.profile}
                     />
                     <TextField
                         label="Experience Time"
@@ -110,6 +172,8 @@ const Step3 = ({ formData, setForm, navigation }) => {
                         onChange={(e) => setNewExperience({ ...newExperience, experienceTime: e.target.value })}
                         fullWidth
                         margin="normal"
+                        error={!!dialogErrors.experienceTime}
+                        helperText={dialogErrors.experienceTime}
                     />
                 </DialogContent>
                 <DialogActions>

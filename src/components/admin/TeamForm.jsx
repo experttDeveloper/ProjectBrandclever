@@ -48,6 +48,10 @@ const TeamForm = () => {
 
     const handleSubmit = () => {
         // Handle submission of formData
+        if(!formData.experiences.length){
+            alert("please add experience!")
+            return
+        }
         console.log(formData);
         console.log("image", image)
     };

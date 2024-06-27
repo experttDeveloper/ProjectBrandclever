@@ -1,9 +1,25 @@
 // Step1.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Grid, TextField } from '@mui/material';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
+import { validateStep2 } from './Validation';
 
 const Step2 = ({ formData, setForm, navigation }) => {
+    const [errors, setErrors] = useState({});
+
+    const handleNext = () => {
+        const validationErrors = validateStep2(formData);
+        if (Object.keys(validationErrors).length > 0) {
+            setErrors(validationErrors);
+        } else {
+            setErrors({});
+            navigation.next();
+        }
+    };
+
+    const handleBack = () => {
+        navigation.previous();
+    };
 
     const { masterDegree, masterPercentage, bachelorDegree, bachelorPercentage, twelfth, twelfthPercentage, tenth, tenthPercentage } = formData;
     return (
@@ -18,6 +34,8 @@ const Step2 = ({ formData, setForm, navigation }) => {
                         onChange={(e) => setForm(e.target.name, e.target.value)}
                         margin="normal"
                         fullWidth
+                        error={!!errors.masterDegree}
+                        helperText={errors.masterDegree}
                     />
                 </Grid>
                 <Grid item xs={12} md={6}>
@@ -28,6 +46,8 @@ const Step2 = ({ formData, setForm, navigation }) => {
                         onChange={(e) => setForm(e.target.name, e.target.value)}
                         margin="normal"
                         fullWidth
+                        error={!!errors.masterPercentage}
+                        helperText={errors.masterPercentage}
                     />
                 </Grid>
                 <Grid item xs={12} md={6}>
@@ -38,6 +58,8 @@ const Step2 = ({ formData, setForm, navigation }) => {
                         onChange={(e) => setForm(e.target.name, e.target.value)}
                         margin="normal"
                         fullWidth
+                        error={!!errors.bachelorDegree}
+                        helperText={errors.bachelorDegree}
                     />
                 </Grid>
                 <Grid item xs={12} md={6}>
@@ -48,6 +70,8 @@ const Step2 = ({ formData, setForm, navigation }) => {
                         onChange={(e) => setForm(e.target.name, e.target.value)}
                         margin="normal"
                         fullWidth
+                        error={!!errors.bachelorPercentage}
+                        helperText={errors.bachelorPercentage}
                     />
                 </Grid>
                 <Grid item xs={12} md={6}>
@@ -58,6 +82,8 @@ const Step2 = ({ formData, setForm, navigation }) => {
                         onChange={(e) => setForm(e.target.name, e.target.value)}
                         margin="normal"
                         fullWidth
+                        error={!!errors.twelfth}
+                        helperText={errors.twelfth}
                     />
                 </Grid>
                 <Grid item xs={12} md={6}>
@@ -68,6 +94,8 @@ const Step2 = ({ formData, setForm, navigation }) => {
                         onChange={(e) => setForm(e.target.name, e.target.value)}
                         margin="normal"
                         fullWidth
+                        error={!!errors.twelfthPercentage}
+                        helperText={errors.twelfthPercentage}
                     />
                 </Grid>
                 <Grid item xs={12} md={6}>
@@ -78,6 +106,8 @@ const Step2 = ({ formData, setForm, navigation }) => {
                         onChange={(e) => setForm(e.target.name, e.target.value)}
                         margin="normal"
                         fullWidth
+                        error={!!errors.tenth}
+                        helperText={errors.tenth}
                     />
                 </Grid>
                 <Grid item xs={12} md={6}>
@@ -88,18 +118,21 @@ const Step2 = ({ formData, setForm, navigation }) => {
                         onChange={(e) => setForm(e.target.name, e.target.value)}
                         margin="normal"
                         fullWidth
+                        error={!!errors.tenthPercentage}
+                        helperText={errors.tenthPercentage}
+                        
                     />
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <Button
-                        onClick={navigation.previous}
+                        onClick={handleBack}
                         className='prev_btn'
                         startIcon={<ArrowBack />}
                     >
                         Back
                     </Button>
                     <Button
-                        onClick={() => navigation.next()}
+                        onClick={handleNext}
                         className='next_btn'
                         endIcon={<ArrowForward />}
                     >Next</Button>
