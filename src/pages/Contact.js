@@ -33,7 +33,7 @@ const Contact = () => {
           <Container>
 
             <Row>
-              <Col md={6}>
+              <Col md={6} className='left_contact'>
                 <div className='contact_des'>
 
                   <Typography variant='h3'>
@@ -56,7 +56,7 @@ const Contact = () => {
 
                 </div>
               </Col>
-              <Col md={6}>
+              <Col md={6} className='right_contact'>
                 <ContactForm />
               </Col>
             </Row>
