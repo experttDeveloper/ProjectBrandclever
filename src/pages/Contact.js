@@ -78,7 +78,7 @@ const Contact = () => {
                 </Typography>
               </Col>
               <Col md={6} className='contact_video'>
-                <SocialContact/>
+                {/* <SocialContact/> */}
               </Col>
             </Row>
           </Container>

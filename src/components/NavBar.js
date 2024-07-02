@@ -412,8 +412,8 @@ const NavBar = () => {
                                     <Row>
                                       <Col md={6}>
 
-                                        <Link to="https://www.upwork.com/agencies/brandclever/" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Brandclever Agency</Link>
-                                        <Link to="https://www.upwork.com/freelancers/~01d672b038a81f6f0f" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Manish Kumar</Link>
+                                        <Link to="https://www.upwork.com/agencies/brandcleveragency/" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Brandclever Agency</Link>
+                                        <Link to="https://www.upwork.com/freelancers/~01d58975667dec8fe1" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Manish Kumar</Link>
                                         <Link to="https://www.upwork.com/freelancers/shobhan3" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Shobha Negi</Link>
                                         <Link to="https://www.upwork.com/freelancers/shalus3" target="_blank" onClick={hideHandleDropDown}><DoneAllIcon /> Shalu sharma</Link>
 
