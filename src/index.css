@@ -1496,7 +1496,7 @@ h3.MuiTypography-root.MuiTypography-h3.css-18h9l83 {
     border-bottom: 3px solid var(--green-color);
     color: white;
     padding: 80px 0px !important;
-    background: #fff;
+    background: #ccc;
 }
 
 .contact_us_second {
@@ -3294,13 +3294,12 @@ p.MuiTypography-root.MuiTypography-body2.blog_title2.css-u30lmt {
   }
 /* 01-07-2024 contact us form css start here */
 .right_contact.col-md-6 {
-    background-color: #4ba457;
+    background-color: #63696980;
     border-radius: 10px;
 }
-/* .right_contact button.form_submit_btn {
+.right_contact button.form_submit_btn {
     border: 2px solid;
     background-color: #fff !important;
-    color: #509e53 !important;
 }
 .right_contact .form-control {
     border: 2px solid #fff !important;
@@ -3308,13 +3307,6 @@ p.MuiTypography-root.MuiTypography-body2.blog_title2.css-u30lmt {
 .right_contact input::placeholder {
     color: #fff !important;
 }
-.contact_us_section .contact_us_second .right_contact textarea {
-    color: #ffffff;
-    background: #54a154 !important;
-}
-.contact_us_section .contact_us_second .right_contact input {
-    background: #54a154 !important;
-} */
 button.form_submit_btn {
     padding: 10px;
     height: 50px;
@@ -3327,3 +3319,126 @@ button.form_submit_btn {
     color: #fff !important;
     background-color: #191e25 !important;
 }
+
+
+.social_media_hover ul{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.social_media_hover ul li{
+    list-style: none;
+    margin: 0 5px;
+}
+.social_media_hover ul li a .fa{
+    font-size: 40px;
+    color: #262626;
+    line-height: 80px;
+    transition: .5s;
+    padding-right: 14px;
+}
+.social_media_hover ul li a span{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    color: #262626;
+    letter-spacing: 4px;
+    transition: .5s;
+}
+.social_media_hover ul li a{
+    text-decoration: none;
+    display: absolute;
+    display: block;
+    width: 210px;
+    height: 80px;
+    background-color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skew(25deg) translate(0,0);
+    transition: .5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+.social_media_hover ul li a::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transform: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+.social_media_hover ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background-color: #b1b1b1;
+    transform: .5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+.social_media_hover ul li a:hover{
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+.social_media_hover ul li:hover .fa{
+  color: #fff;
+}
+.social_media_hover ul li:hover span{
+  color: #fff;
+}
+.social_media_hover ul li:hover:nth-child(1) a{
+    background: #3b5998;
+}
+.social_media_hover ul li:hover:nth-child(1) a::before{
+    background: #3b5998;
+}
+.social_media_hover ul li:hover:nth-child(1) a::after{
+  background: #4a69ad;
+}
+.social_media_hover ul li:hover:nth-child(2) a{
+  background: #00aced;
+}
+.social_media_hover ul li:hover:nth-child(2) a::before{
+  background-color: #097aa5;
+}
+.social_media_hover ul li:hover:nth-child(2) a::after{
+  background: #53b9e0;
+}
+
+.social_media_hover ul li:hover:nth-child(3) a{
+  background: #dd4b39;
+}
+.social_media_hover ul li:hover:nth-child(3) a::before{
+  background-color: #b33a2b;
+}
+.social_media_hover ul li:hover:nth-child(3) a::after{
+  background: #e66a5a;
+}
+
+.social_media_hover ul li:hover:nth-child(4) a{
+  background: #e4405f;
+}
+.social_media_hover ul li:hover:nth-child(4) a::before{
+  background-color: #d81c3f;
+}
+.social_media_hover ul li:hover:nth-child(4) a::after{
+  background: #e46880;
+}
+.social_media_hover {
+    height: 150px;
+    background-color: #ccc;
+}
+.social_media_hover svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+    margin-bottom: -40px;
+    font-size: 40px;
+    color: #000;
+}   
