@@ -102,7 +102,7 @@ const Contact = () => {
                 <div class="social_media_hover">
                   <ul>
                     <Row>
-                      <Col md={6}>
+                      
                         <li>
                           <a href="#">
                             <Facebook />
@@ -115,8 +115,6 @@ const Contact = () => {
                             <span>  LinkedIn</span>
                           </a>
                         </li>
-                      </Col>
-                      <Col md={6}>
                         <li>
                           <a href="#">
                             <WhatsApp />
@@ -129,7 +127,6 @@ const Contact = () => {
                             <span>  Instagram</span>
                           </a>
                         </li>
-                      </Col>
                     </Row>
                   </ul>
                 </div>
