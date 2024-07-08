@@ -17,6 +17,7 @@ import {
 import RoomIcon from "@mui/icons-material/Room";
 import SocialContact from "../components/SocialContact";
 import MetaTitleDes from "../components/MetaTitleDes";
+import UpdateContact from "../components/UpdateContact";
 
 const Contact = () => {
   const divStyle = {
@@ -41,11 +42,12 @@ const Contact = () => {
           "Reach out to us with any questions, feedback, or inquiries you may have. We're here to help! Contact us today and let's start the conversation."
         }
       />
+      <UpdateContact />
       <div className="contact_us_section">
         <div className="contact_us_second">
           <Container>
             <Row>
-              <Col md={6} className="left_contact">
+              {/* <Col md={6} className="left_contact">
                 <div className="contact_des">
                   <Typography variant="h3">Send us a Message!</Typography>
                   <Typography variant="p">
@@ -76,41 +78,13 @@ const Contact = () => {
               </Col>
               <Col md={6} className="right_contact">
                 <ContactForm />
-              </Col>
+              </Col> */}
             </Row>
           </Container>
         </div>
         <div className="contact_us_first">
-          <div class="social_media_hover">
-            <ul>
-              <li>
-                <a href="#">
-                  <Facebook/>
-                  <span> - Facebook</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <LinkedIn/>
-                  <span> - LinkedIn</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <WhatsApp/>
-                  <span> - WhatsApp</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <Instagram/>
-                  <span> - Instagram</span>
-                </a>
-              </li>
-            </ul>
-          </div>
 
-          {/* <Container>
+          <Container>
             <Row>
               <Col md={6}>
                 <Typography variant='h3' >
@@ -120,14 +94,48 @@ const Contact = () => {
                   Get in touch to brainstorm your business idea.
                 </Typography>
                 <Typography variant='p'>
-                Unlock the full potential of your digital venture with our comprehensive suite of services tailored to elevate your online presence. From conceptualization to execution, we're your trusted partner every step of the way. Our holistic approach encompasses meticulous design, agile development, and seamless scalability, ensuring your digital product not only meets but exceeds your expectations.
+                  Unlock the full potential of your digital venture with our comprehensive suite of services tailored to elevate your online presence. From conceptualization to execution, we're your trusted partner every step of the way. Our holistic approach encompasses meticulous design, agile development, and seamless scalability, ensuring your digital product not only meets but exceeds your expectations.
                 </Typography>
               </Col>
               <Col md={6} className='contact_video'>
-                {/* <SocialContact/> */}
-              {/* </Col>
-            </Row> */}
-          {/* </Container>  */}
+                {/* {/* <SocialContact/> */}
+                <div class="social_media_hover">
+                  <ul>
+                    <Row>
+                      <Col md={6}>
+                        <li>
+                          <a href="#">
+                            <Facebook />
+                            <span>  Facebook</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <LinkedIn />
+                            <span>  LinkedIn</span>
+                          </a>
+                        </li>
+                      </Col>
+                      <Col md={6}>
+                        <li>
+                          <a href="#">
+                            <WhatsApp />
+                            <span>  WhatsApp</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <Instagram />
+                            <span>  Instagram</span>
+                          </a>
+                        </li>
+                      </Col>
+                    </Row>
+                  </ul>
+                </div>
+              </Col>
+            </Row>
+          </Container>
         </div>
 
         <iframe

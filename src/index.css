@@ -30,9 +30,11 @@ p {
     font-size: 17px;
     letter-spacing: 0.4px !important;
 }
+
 span {
     letter-spacing: 0.4px !important;
 }
+
 /* header_css_start_Abhi */
 .inner_header_nav {
     display: flex;
@@ -227,7 +229,7 @@ button.owl-next span,
 
 img.signature {
     float: left;
-    padding-top: 0px!important;
+    padding-top: 0px !important;
     width: 160px;
 }
 
@@ -1017,9 +1019,11 @@ span.ti-stars i:hover {
     animation: star .5s cubic-bezier(.36, .07, .57, .99) infinite;
     transform: scale(1.5);
 }
+
 .two-columns.aboutInfo-section .about-content-columns.about_project .about-content p {
     padding-right: 50px;
 }
+
 nav {
     display: table-cell;
     vertical-align: middle;
@@ -1249,14 +1253,17 @@ section#schedules .showcase {
 .review-page .testimonial.testi_clints {
     background-color: #000000 !important;
 }
+
 .blog_detail_form_main .hire_developer_form h2 {
     font-size: 30px !important;
     font-weight: 600;
 }
+
 .blog_detail_form_main .hire_developer_form p {
     font-size: 19px;
     letter-spacing: 0.9px !important;
 }
+
 .client_review_row {
     gap: 30px;
 }
@@ -1500,8 +1507,6 @@ h3.MuiTypography-root.MuiTypography-h3.css-18h9l83 {
 }
 
 .contact_us_second {
-
-    padding: 30px;
     color: var(--background-color-black-paragrpah);
 }
 
@@ -2783,6 +2788,7 @@ header.sticky {
     box-shadow: inset 0px 2000px 0px #000000ba;
     background-attachment: fixed;
 }
+
 .main_header p {
     text-transform: capitalize;
     color: var(--white-color);
@@ -3107,6 +3113,7 @@ h4.blog_detail_sub {
     color: #494949 !important;
     font-size: 15px;
 }
+
 .blog_detail_form_main {
     position: sticky;
     top: 15% !important;
@@ -3114,6 +3121,7 @@ h4.blog_detail_sub {
     width: 100%;
     color: #fff;
 }
+
 .blog_detail_form_main .hire_developer_form select {
     height: 50px;
     max-height: 50px !important;
@@ -3125,19 +3133,23 @@ h4.blog_detail_sub {
     color: #fff;
     background: transparent;
 }
+
 .blog_detail_form_main option {
     background: #72b755;
 }
+
 .blog_detail_form_main input::placeholder {
     opacity: 1 !important;
     color: #fff !important;
     font-size: 16px !important;
 }
+
 .blog_detail_form_main .card {
-    padding: 30px 40px  41px 40px!important;
+    padding: 30px 40px 41px 40px !important;
     background-image: unset !important;
     background-color: #509e53 !important;
 }
+
 .blog_detail_form_main .card button.btn.btn-contained {
     padding: 10px 30px !important;
     box-shadow: unset !important;
@@ -3148,12 +3160,15 @@ h4.blog_detail_sub {
     background: #191e25;
     font-weight: 600;
 }
+
 input#inputPassword5 {
     margin-bottom: 4px;
 }
+
 textarea#floatingTextarea2 {
     margin-top: 25px;
 }
+
 .blog_inner_page_data {
     padding: 70px 0px;
     background: #fff;
@@ -3216,6 +3231,7 @@ button {
 .iner_mains_blog .blog_detail_form_main .card {
     border-radius: 10px !important;
 }
+
 .iner_mains_blog .blog_detail_form_main .card input {
     border: 2px solid #fff;
     border-radius: 5px !important;
@@ -3283,30 +3299,37 @@ p.MuiTypography-root.MuiTypography-body2.blog_title2.css-u30lmt {
     padding-bottom: 10px !important;
     text-shadow: 0px 0px 1px;
 }
+
 .seo_audit_btn a.seo_link {
     border: none !important;
 }
+
 .blog_detail_form_main .card button.btn.btn-contained:hover {
     box-shadow: inset 0px 100px 0px 0px #fff !important;
     transition: 2s !important;
     color: #000 !important;
     border: 1px solid #fff !important;
-  }
+}
+
 /* 01-07-2024 contact us form css start here */
 .right_contact.col-md-6 {
     background-color: #63696980;
     border-radius: 10px;
 }
+
 .right_contact button.form_submit_btn {
     border: 2px solid;
     background-color: #fff !important;
 }
+
 .right_contact .form-control {
     border: 2px solid #fff !important;
 }
+
 .right_contact input::placeholder {
     color: #fff !important;
 }
+
 button.form_submit_btn {
     padding: 10px;
     height: 50px;
@@ -3315,13 +3338,14 @@ button.form_submit_btn {
     font-weight: 600;
     background-color: white;
 }
+
 .contact_us_section .container .right_contact .col-md-6 form button:hover {
     color: #fff !important;
     background-color: #191e25 !important;
 }
 
 
-.social_media_hover ul{
+.social_media_hover ul {
     position: absolute;
     top: 48%;
     left: 50%;
@@ -3330,18 +3354,21 @@ button.form_submit_btn {
     margin: 0;
     padding: 0;
 }
-.social_media_hover ul li{
+
+.social_media_hover ul li {
     list-style: none;
     margin: 0 5px;
 }
-.social_media_hover ul li a .fa{
+
+.social_media_hover ul li a .fa {
     font-size: 40px;
     color: #262626;
     line-height: 80px;
     transition: .5s;
     padding-right: 14px;
 }
-.social_media_hover ul li a span{
+
+.social_media_hover ul li a span {
     padding: 0;
     margin: 0;
     position: absolute;
@@ -3350,7 +3377,8 @@ button.form_submit_btn {
     letter-spacing: 4px;
     transition: .5s;
 }
-.social_media_hover ul li a{
+
+.social_media_hover ul li a {
     text-decoration: none;
     display: absolute;
     display: block;
@@ -3359,11 +3387,12 @@ button.form_submit_btn {
     background-color: #fff;
     text-align: left;
     padding-left: 20px;
-    transform: rotate(-30deg) skew(25deg) translate(0,0);
+    transform: rotate(-30deg) skew(25deg) translate(0, 0);
     transition: .5s;
     box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
 }
-.social_media_hover ul li a::before{
+
+.social_media_hover ul li a::before {
     content: "";
     position: absolute;
     top: 10px;
@@ -3374,7 +3403,8 @@ button.form_submit_btn {
     transform: 0.5s;
     transform: rotate(0deg) skewY(-45deg);
 }
-.social_media_hover ul li a::after{
+
+.social_media_hover ul li a::after {
     content: "";
     position: absolute;
     bottom: -20px;
@@ -3385,60 +3415,83 @@ button.form_submit_btn {
     transform: .5s;
     transform: rotate(0deg) skewX(-45deg);
 }
-.social_media_hover ul li a:hover{
+
+.social_media_hover ul li a:hover {
     transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
     box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
 }
-.social_media_hover ul li:hover .fa{
-  color: #fff;
-}
-.social_media_hover ul li:hover span{
-  color: #fff;
-}
-.social_media_hover ul li:hover:nth-child(1) a{
-    background: #3b5998;
-}
-.social_media_hover ul li:hover:nth-child(1) a::before{
-    background: #3b5998;
-}
-.social_media_hover ul li:hover:nth-child(1) a::after{
-  background: #4a69ad;
-}
-.social_media_hover ul li:hover:nth-child(2) a{
-  background: #00aced;
-}
-.social_media_hover ul li:hover:nth-child(2) a::before{
-  background-color: #097aa5;
-}
-.social_media_hover ul li:hover:nth-child(2) a::after{
-  background: #53b9e0;
+
+.social_media_hover ul li:hover .fa {
+    color: #fff;
 }
 
-.social_media_hover ul li:hover:nth-child(3) a{
-  background: #dd4b39;
-}
-.social_media_hover ul li:hover:nth-child(3) a::before{
-  background-color: #b33a2b;
-}
-.social_media_hover ul li:hover:nth-child(3) a::after{
-  background: #e66a5a;
+.social_media_hover ul li:hover span {
+    color: #fff;
 }
 
-.social_media_hover ul li:hover:nth-child(4) a{
-  background: #e4405f;
+.social_media_hover ul li:hover:nth-child(1) a {
+    background: #3b5998;
 }
-.social_media_hover ul li:hover:nth-child(4) a::before{
-  background-color: #d81c3f;
+
+.social_media_hover ul li:hover:nth-child(1) a::before {
+    background: #3b5998;
 }
-.social_media_hover ul li:hover:nth-child(4) a::after{
-  background: #e46880;
+
+.social_media_hover ul li:hover:nth-child(1) a::after {
+    background: #4a69ad;
 }
+
+.social_media_hover ul li:hover:nth-child(2) a {
+    background: #00aced;
+}
+
+.social_media_hover ul li:hover:nth-child(2) a::before {
+    background-color: #097aa5;
+}
+
+.social_media_hover ul li:hover:nth-child(2) a::after {
+    background: #53b9e0;
+}
+
+.social_media_hover ul li:hover:nth-child(3) a {
+    background: #dd4b39;
+}
+
+.social_media_hover ul li:hover:nth-child(3) a::before {
+    background-color: #b33a2b;
+}
+
+.social_media_hover ul li:hover:nth-child(3) a::after {
+    background: #e66a5a;
+}
+
+.social_media_hover ul li:hover:nth-child(4) a {
+    background: #e4405f;
+}
+
+.social_media_hover ul li:hover:nth-child(4) a::before {
+    background-color: #d81c3f;
+}
+
+.social_media_hover ul li:hover:nth-child(4) a::after {
+    background: #e46880;
+}
+
 .social_media_hover {
     height: 150px;
     background-color: #ccc;
 }
+
 .social_media_hover svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
     margin-bottom: -40px;
     font-size: 40px;
     color: #000;
-}   
+}
+
+
+.social_media_hover ul li {
+    list-style: none;
+    /* margin: 30px; */
+    margin-top: 65px;
+    /* margin-left: 30px; */
+}

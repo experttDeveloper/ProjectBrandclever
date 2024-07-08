@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from './Images/logoWhite.png';
 import { Col, Row } from 'react-bootstrap';
 import DoneAllIcon from '@mui/icons-material/DoneAll';
@@ -160,7 +160,12 @@ const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isSticky, setSticky] = useState(false);
 
-  const [hideDropDown, setHideDropdown] = useState(false)
+  const [hideDropDown, setHideDropdown] = useState(false);
+  const navigate = useNavigate()
+
+  const handleClickContact = ()=>{
+    navigate("/contact")
+  }
 
 
   const toggleMenu = () => {
@@ -481,7 +486,7 @@ const NavBar = () => {
                   </li>
                 </ul>
                 
-                <div className='header_btn'>
+                <div className='header_btn' onClick={handleClickContact}>
                   <Link to="/contact" className='' onClick={closeMenu}>Contact Us</Link>
                 </div>
               </nav>
