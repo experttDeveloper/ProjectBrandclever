@@ -3458,15 +3458,15 @@ button.form_submit_btn {
 }
 
 .social_media_hover ul li:hover:nth-child(3) a {
-    background: #dd4b39;
+    background: #6cd870;
 }
 
 .social_media_hover ul li:hover:nth-child(3) a::before {
-    background-color: #b33a2b;
+    background-color: #509e53;
 }
 
 .social_media_hover ul li:hover:nth-child(3) a::after {
-    background: #e66a5a;
+    background: #255226;
 }
 
 .social_media_hover ul li:hover:nth-child(4) a {
@@ -3494,6 +3494,13 @@ button.form_submit_btn {
     color: #000;
 }
 
+.social_media_hover svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-vubbuv {
+    margin-bottom: -40px;
+    font-size: 40px;
+    color: #000;
+}
+
+
 .social_media_hover ul li {
     list-style: none;
     margin-top: 65px;
@@ -3505,4 +3512,8 @@ button.form_submit_btn {
 
 .contact_us_first {
     border-top: 3px solid #509e53;
+}
+
+.social_efeect:hover a svg {
+    color: white !important;
 }

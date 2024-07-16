@@ -17,7 +17,7 @@
         {
             "id": 3,
             "name": "Charanjeet Singh ",
-            "image": "/images/team/charanjeet.png",
+            "image": "/images/team/charanjit.png",
             "linkedIn":"",
             "profile": "Project Manager"
         },
@@ -55,13 +55,6 @@
             "image": "/images/team/deepak.png",
             "linkedIn":"",
              "profile": "React js Developer"
-        },
-        {
-            "id": 9,
-            "name": "Sahavaj Ahmad",
-            "image": "/images/team/sahavaj.png",
-            "linkedIn":"",
-             "profile": "Laravel Developer"
         },
         {
             "id": 10,

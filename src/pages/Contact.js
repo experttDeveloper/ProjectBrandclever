@@ -103,25 +103,25 @@ const Contact = () => {
                   <ul>
                     <Row>
                       
-                        <li>
+                        <li className="social_efeect">
                           <a href="#">
-                            <Facebook />
+                            <Facebook/>
                             <span>  Facebook</span>
                           </a>
                         </li>
-                        <li>
+                        <li className="social_efeect">
                           <a href="#">
                             <LinkedIn />
                             <span>  LinkedIn</span>
                           </a>
                         </li>
-                        <li>
+                        <li className="social_efeect">
                           <a href="#">
                             <WhatsApp />
                             <span>  WhatsApp</span>
                           </a>
                         </li>
-                        <li>
+                        <li className="social_efeect">
                           <a href="#">
                             <Instagram />
                             <span>  Instagram</span>
