@@ -22,6 +22,7 @@ button.down_qr_btn.btn-secondary.btn.btn-primary {
     background: black;
     border: none;
     margin-right: 10px;
+    width: 30% !important;
 }
 
 button.down_qr_btn.btn-secondary.btn.btn-primary:hover {

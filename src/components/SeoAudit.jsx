@@ -12,6 +12,7 @@ import HelpIcon from '@mui/icons-material/Help';
 import InfoIcon from '@mui/icons-material/Info';
 import { ErrorOutline } from '@mui/icons-material';
 import QRCodeGenerator from './QrCode';
+import Compresser from './freetool/Compresser';
 
 export default function SeoAudit() {
 
@@ -258,6 +259,9 @@ export default function SeoAudit() {
 
             </div>
             <QRCodeGenerator />
+            <div className='image_composser'>
+                <Compresser />
+            </div>
         </>
     )
 }
