@@ -53,13 +53,30 @@ import Dashboard from './components/admin/Index';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import ScrollToTop from './components/ScrollToTop';
-import SeoAudit from './components/SeoAudit';
+import SeoAudit from './components/freetool/SeoAudit';
+import axios from 'axios';
 
 
 
 export default class App extends Component {
+  
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
 
   scrollToTop = () => {
+    // axios.post('https://developer.brandclever.in/brand/admin/form/visitor_count.php')
+    //   .then(response => {
+    //     this.state.count(response.data.count);
+
+    //   })
+    //   .catch(error => {
+    //     console.error('There was an error incrementing the visitor count!', error);
+    //   });
     window.scrollTo({
       top: 0,
       behavior: 'smooth' // Smooth scrolling behavior
@@ -72,7 +89,7 @@ export default class App extends Component {
       <>
 
         <ToastContainer position="top-right" />
-    
+
         {
           window.location.pathname === "/dashboard" ? (
             <BrowserRouter>
@@ -86,7 +103,7 @@ export default class App extends Component {
                 <Route path="/analyzer" element={<SeoAudit />} />
               </Routes>
             </BrowserRouter>
-          ) :(
+          ) : (
             <>
               <BrowserRouter>
                 <ScrollToTop />

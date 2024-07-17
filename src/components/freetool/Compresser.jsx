@@ -1,9 +1,10 @@
 //Components/Compressor.js
 import React, { useState, useEffect } from 'react';
-import { Card, Spinner, Modal,} from 'react-bootstrap';
+import { Card, Spinner, Modal, Container, } from 'react-bootstrap';
 import './Compressor.css';
 import { compress } from 'image-conversion';
-import { Typography,Button   } from '@mui/material';
+import { Typography, Button } from '@mui/material';
+import ImageIcon from '@mui/icons-material/Image';
 
 
 
@@ -22,6 +23,24 @@ function Compresser() {
     const [compressedHistory, setCompressedHistory] = useState([]);
     const [showCompressedImage, setShowCompressedImage] = useState(false);
     const [modalShow, setModalShow] = useState(false);
+    const [image, setImage] = useState(null);
+
+    const handleDrop = (event) => {
+        event.preventDefault();
+        const file = event.dataTransfer.files[0];
+        if (file && file.type.startsWith('image/')) {
+            const imagePreview = {
+                file,
+                preview: URL.createObjectURL(file),
+            };
+            setImage(imagePreview);
+        }
+    };
+
+    const handleDragOver = (event) => {
+        event.preventDefault();
+    };
+
 
     useEffect(() => {
         if (originalImage) {
@@ -92,168 +111,188 @@ function Compresser() {
     }
 
     return (
-        <div className="mainContainer">
-            <Typography variant="h2" className='compresser_title'>Image compresser</Typography>
-    
-            
-            <div className="row mt-5">
-                <div className="col-xl-3 col-lg-3 
-                col-md-12 col-sm-12">
-                    {uploadImage ? (
-                        <Card.Img className="image_compress"
-                            variant="top" src={originalLink}
-                            alt="Original Image" />
-                    ) : (
-                        <Card.Img className="uploadCard"
-                            variant="top"  alt="" />
-                    )}
-                    <div className="d-flex justify-content-center 
-                    upload-btn-wrapper">
-                        <label htmlFor="uploadBtn"
-                            className="upload_btn">
+        <Container>
 
-                            Upload a file
-                        </label>
-                        <input
-                            type="file"
-                            id="uploadBtn"
-                            accept="image/*"
-                            className="mt-2 btn btn-primary w-75"
-                            onChange={(event) => uploadLink(event)} />
+            <div className="mainContainer">
+                <Typography variant="h2" className='compresser_title'>Image compresser</Typography>
+                <Typography className='upload_tie'>Compress JPG, PNG, SVG or GIF with the best quality and compression.
+                    Reduce the filesize of your images at once.</Typography>
+
+                <div className="row mt-5">
+
+
+                    <div className="col-xl-3 col-lg-3 
+                col-md-12 col-sm-12">
+                        <div className="preview">
+                            {image && <img src={image.preview} alt="Preview" height="400px" width="400px" />}
+                        </div>
+                        {uploadImage ? (
+                            <Card.Img className="image_compress"
+                                variant="top" src={originalLink}
+                                alt="Original Image" width={800} height={800} />
+                        ) : (
+                            <Card.Img className="uploadCard"
+                                variant="top" alt="" />
+                        )}
+                        <div className="d-flex justify-content-center upload-btn-wrapper">
+
+                            <label htmlFor="uploadBtn"
+                                className="upload_btn">
+
+                                Upload a file
+                            </label>
+                            <input
+                                type="file"
+                                id="uploadBtn"
+                                accept="image/*"
+                                className="mt-2 btn btn-primary w-75"
+                                onChange={(event) => uploadLink(event)} />
+                        </div>
+                        {/* <div
+                        className="dropzone"
+                        onDrop={handleDrop}
+                        onDragOver={handleDragOver}
+                    >
+                        <p>Drag 'n' drop an image here, or click to select a file</p>
+                        
+                    </div> */}
                     </div>
-                </div>
-                <div
-                    className="col-xl-6 col-lg-6 
+                    <div
+                        className="col-xl-6 col-lg-6 
                         col-md-12 col-sm-12 
                         d-flex justify-content-center 
                         align-items-baseline">
-                    <div>
-                        {outputFileName ? (
-                            <div>
-                                <label htmlFor="qualitySlider" className='compress_slider_title'>
-                                    Compression Quality:
-                                </label>
-                                <input
-                                    id="qualitySlider"
-                                    type="range"
-                                    min="0.1"
-                                    max="1"
-                                    step="0.1"
-                                    value={compressionQuality}
-                                    onChange={
-                                        (event) =>
-                                            setCompressionQuality(
-                                                parseFloat(event.target.value)
-                                            )
-                                    }
-                                />
-                                <div className="text-center">
-                                    Original Size:
-                                    {
-                                        Math.round(originalSize / 1024)
-                                    } KB
-                                    <br />
-                                    Compressed Size:
-                                    {
-                                        Math.round(compressedSize / 1024)
-                                    } KB
-                                </div>
-                                <div className="text-center">
-                                    {isCompressed &&
-                                        !compressionInProgress && (
-                                            <div className="text-success 
+                        <div>
+                            {outputFileName ? (
+                                <div>
+                                    <label htmlFor="qualitySlider" className='compress_slider_title'>
+                                        Compression Quality:
+                                    </label>
+                                    <input
+                                        id="qualitySlider"
+                                        type="range"
+                                        min="0.1"
+                                        max="1"
+                                        step="0.1"
+                                        value={compressionQuality}
+                                        onChange={
+                                            (event) =>
+                                                setCompressionQuality(
+                                                    parseFloat(event.target.value)
+                                                )
+                                        }
+                                    />
+                                    <div className="text-center">
+                                        Original Size:
+                                        {
+                                            Math.round(originalSize / 1024)
+                                        } KB
+                                        <br />
+                                        Compressed Size:
+                                        {
+                                            Math.round(compressedSize / 1024)
+                                        } KB
+                                    </div>
+                                    <div className="text-center">
+                                        {isCompressed &&
+                                            !compressionInProgress && (
+                                                <div className="text-success 
                                             compressed-message">
-                                                Image compressed successfully!
+                                                    Image compressed successfully!
+                                                </div>
+                                            )}
+                                        {
+                                            compressionInProgress &&
+                                            <div className="text-info">
+                                                Compressing image...
                                             </div>
-                                        )}
-                                    {
-                                        compressionInProgress &&
-                                        <div className="text-info">
-                                            Compressing image...
-                                        </div>
-                                    }
-                                </div>
-                                <div className="button-container">
-                                    {loading ? (
-                                        <div className="text-info">
-                                            Loading...
-                                        </div>
-                                    ) : (
-                                        <Button type="button"
-                                            className="commpress_btn"
-                                            onClick={compressImage}>
+                                        }
+                                    </div>
+                                    <div className="button-container">
+                                        {loading ? (
+                                            <div className="text-info">
+                                                Loading...
+                                            </div>
+                                        ) : (
+                                            <Button type="button"
+                                                className="commpress_btn"
+                                                onClick={compressImage}>
 
-                                            Compress
-                                        </Button>
-                                    )}
-                                    <button type="button"
-                                        className="btn btn-danger ml-3"
-                                        onClick={resetApp}>
-                                        Reset
-                                    </button>
+                                                Compress
+                                            </Button>
+                                        )}
+                                        <button type="button"
+                                            className="btn btn-danger ml-3"
+                                            onClick={resetApp}>
+                                            Reset
+                                        </button>
+                                    </div>
                                 </div>
+                            ) : (
+                                <></>
+                            )}
+                        </div>
+                    </div>
+                    <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                        {showCompressedImage ? (
+                            <div>
+                                <Card.Img
+                                    className="image"
+                                    variant="top"
+                                    src={compressedLink}
+                                    alt="Compressed Image"
+                                    onClick={() => setModalShow(true)}
+                                    style={{ cursor: 'pointer' }}
+                                />
+                                <a href={compressedLink}
+                                    download={outputFileName}
+                                    className="mt-2 btn btn-success 
+                                w-75 download-btn">
+
+                                    Download
+                                </a>
+                                <Modal show={modalShow}
+                                    onHide={
+                                        () =>
+                                            setModalShow(false)
+                                    } size="lg">
+                                    <Modal.Body className="text-center">
+                                        <Card.Img className="image"
+                                            variant="top" src={compressedLink}
+                                            alt="Compressed Image" />
+                                    </Modal.Body>
+                                    <Modal.Footer>
+                                        <Button variant="secondary"
+                                            onClick={
+                                                () => setModalShow(false)
+                                            }>
+                                            Close
+                                        </Button>
+                                    </Modal.Footer>
+                                </Modal>
                             </div>
                         ) : (
-                            <></>
+                            <div className="d-flex align-items-center 
+                        justify-content-center">
+                                {
+                                    compressionInProgress &&
+                                    <Spinner animation="border" variant="primary" />
+                                }
+                                {
+                                    !uploadImage &&
+                                    !compressionInProgress && (
+                                        <>
+                                            <ImageIcon className='image_icon' />
+                                            <p className='no_image_title'>no image uploaded yet.</p>
+                                        </>
+                                    )
+                                }
+                            </div>
                         )}
                     </div>
                 </div>
-                <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12">
-                    {showCompressedImage ? (
-                        <div>
-                            <Card.Img
-                                className="image"
-                                variant="top"
-                                src={compressedLink}
-                                alt="Compressed Image"
-                                onClick={() => setModalShow(true)}
-                                style={{ cursor: 'pointer' }}
-                            />
-                            <a href={compressedLink}
-                                download={outputFileName}
-                                className="mt-2 btn btn-success 
-                                w-75 download-btn">
-
-                                Download
-                            </a>
-                            <Modal show={modalShow}
-                                onHide={
-                                    () =>
-                                        setModalShow(false)
-                                } size="lg">
-                                <Modal.Body className="text-center">
-                                    <Card.Img className="image"
-                                        variant="top" src={compressedLink}
-                                        alt="Compressed Image" />
-                                </Modal.Body>
-                                <Modal.Footer>
-                                    <Button variant="secondary"
-                                        onClick={
-                                            () => setModalShow(false)
-                                        }>
-                                        Close
-                                    </Button>
-                                </Modal.Footer>
-                            </Modal>
-                        </div>
-                    ) : (
-                        <div className="d-flex align-items-center 
-                        justify-content-center">
-                            {
-                                compressionInProgress &&
-                                <Spinner animation="border" variant="primary" />
-                            }
-                            {
-                                !uploadImage &&
-                                !compressionInProgress && (
-                                    <p>no image uploaded</p>
-                                )
-                            }
-                        </div>
-                    )}
-                </div>
             </div>
-        </div>
+        </Container>
     );
 }
 export default Compresser;

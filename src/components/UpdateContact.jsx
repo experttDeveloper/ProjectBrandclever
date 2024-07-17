@@ -167,7 +167,7 @@ export default function UpdateContact() {
                         <div class="input-container textarea">
                             <textarea name="message" class="input" placeholder="Message*" onChange={handleInputChange}></textarea>
                         </div>
-                        <input type="submit" value="Submit" class="btn" />
+                        <input type="submit" value="Submit" class="contact_submit_btn" />
                         <span id="statusMsg"></span>
                     </form>
                 </div>

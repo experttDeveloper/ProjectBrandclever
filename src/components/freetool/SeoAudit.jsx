@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import '../css/seo.css'
+import '../../css/seo.css'
 import { Button, Container } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
@@ -12,7 +12,9 @@ import HelpIcon from '@mui/icons-material/Help';
 import InfoIcon from '@mui/icons-material/Info';
 import { ErrorOutline } from '@mui/icons-material';
 import QRCodeGenerator from './QrCode';
-import Compresser from './freetool/Compresser';
+import Compresser from './Compresser';
+import Weather from './Weather';
+import VisitorCounter from './VistorCount';
 
 export default function SeoAudit() {
 
@@ -118,6 +120,7 @@ export default function SeoAudit() {
     };
     return (
         <>
+            {/* <VisitorCounter /> */}
             <div className='seo_analyzer'>
                 <div className='gradient_top_banner_main'>
 
@@ -261,6 +264,9 @@ export default function SeoAudit() {
             <QRCodeGenerator />
             <div className='image_composser'>
                 <Compresser />
+            </div>
+            <div className='weather_info'>
+                <Weather />
             </div>
         </>
     )

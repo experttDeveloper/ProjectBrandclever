@@ -2,7 +2,7 @@
 import React, { useState, useRef } from 'react';
 import QRCode from 'qrcode.react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
-import '../css/qrcode.css'
+import '../../css/qrcode.css'
 
 const QRCodeGenerator = () => {
     const [inputValue, setInputValue] = useState('');

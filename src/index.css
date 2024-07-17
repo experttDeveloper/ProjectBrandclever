@@ -1501,6 +1501,24 @@ h3.MuiTypography-root.MuiTypography-h3.css-18h9l83 {
 
 .social-icons svg {
     margin-top: 5px;
+    width: 35px;
+}
+
+input.contact_submit_btn {
+    /* color: red; */
+    background: #fafafa;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    color: #509e53;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    transition: background-color .3s, transform .2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
 }
 
 .contact_us_first {

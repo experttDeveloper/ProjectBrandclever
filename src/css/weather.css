@@ -1,0 +1,14 @@
+.weather_info {
+    background: rgb(235, 235, 235);
+    padding: 30px;
+}
+
+button.get_weather {
+    margin-top: 10px;
+}
+
+.weather_main_se {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
