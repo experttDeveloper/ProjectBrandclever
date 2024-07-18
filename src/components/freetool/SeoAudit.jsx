@@ -69,7 +69,8 @@ export default function SeoAudit() {
     };
 
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault()
 
         try {
             if (!websiteUrl) {
@@ -131,6 +132,7 @@ export default function SeoAudit() {
                                 <p>Perform in-depth SEO Analysis of your website.<br></br>
                                     See if your pages are optimized and get actionable data if they aren't.</p>
                                 <Paper
+                                    onSubmit={handleSubmit}
                                     component="form"
                                     sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400 }}
                                 >
@@ -142,7 +144,7 @@ export default function SeoAudit() {
                                         value={websiteUrl}
                                     />
                                     <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
-                                        <Button className='anlayze' onClick={handleSubmit} disabled={loading}>Anlayze</Button>
+                                        <Button className='anlayze' type='submit' disabled={loading}>Anlayze</Button>
                                     </IconButton>
                                 </Paper>
                             </div>
