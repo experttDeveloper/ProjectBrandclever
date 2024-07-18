@@ -1,4 +1,16 @@
-i.location_brand.fas.fa-map-marker-alt {
+/* Tushar css start here */
+.updated_container.form_updated {
+    z-index: -9;
+    position: relative;
+}
+
+/* Tushar css end here */
+
+
+
+
+
+.form_updated i.location_brand.fas.fa-map-marker-alt {
     margin-top: -85px;
 }
 
@@ -26,7 +38,7 @@ i.location_brand.fas.fa-map-marker-alt {
     color: #fff !important;
 }
 
-.form {
+.form_updated .form {
     width: 100%;
     max-width: 820px;
     background-color: #fff;
@@ -38,7 +50,7 @@ i.location_brand.fas.fa-map-marker-alt {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.contact-form {
+.form_updated .contact-form {
     background-color: #509e53;
     position: relative;
 }
@@ -74,7 +86,7 @@ i.location_brand.fas.fa-map-marker-alt {
     left: -13px;
 }
 
-form {
+.form_updated form {
     padding: 2.3rem 2.2rem;
     z-index: 10;
     overflow: hidden;
@@ -108,7 +120,7 @@ form {
     transition: 0.3s;
 }
 
-textarea.input {
+.form_updated textarea.input {
     padding: 0.8rem 1.2rem;
     min-height: 150px;
     border-radius: 5px;
@@ -135,7 +147,7 @@ textarea.input {
     transform: translateY(0);
 }
 
-.btn {
+.form_updated .btn {
     padding: 0.6rem 1.3rem;
     background-color: #fff;
     border: 2px solid #fafafa;
@@ -153,7 +165,7 @@ textarea.input {
     text-transform: uppercase;
 }
 
-.btn:hover {
+.form_updated .btn:hover {
     background-color: transparent;
     color: #fff;
 }
@@ -170,7 +182,7 @@ textarea.input {
     z-index: 500;
 }
 
-.input-container span:before,
+.form_updated .input-container span:before,
 .input-container span:after {
     content: "";
     position: absolute;
@@ -204,12 +216,12 @@ textarea.input {
     opacity: 1;
 }
 
-.contact-info {
+.form_updated .contact-info {
     padding: 2.3rem 2.2rem;
     position: relative;
 }
 
-.contact-info .title {
+.form_updated .contact-info .title {
     color: #509e53;
     font-size: 33px;
     font-weight: 700;
@@ -316,7 +328,11 @@ h3.title {
     opacity: 0.2;
 }
 
+
 @media (max-width: 850px) {
+
+
+
     .form {
         grid-template-columns: 1fr;
     }
@@ -352,10 +368,14 @@ h3.title {
     .social-media {
         padding: 1.5rem 0 0 0;
     }
+    .form_updated .form {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
 }
 
 @media (max-width: 480px) {
-    .container {
+    .form_updated .container {
         padding: 1.5rem;
     }
 
@@ -384,8 +404,8 @@ h3.title {
     }
 
     .social-icons a {
-        width: 30px;
-        height: 30px;
+        /* width: 30px;
+        height: 30px; */
         line-height: 30px;
     }
 

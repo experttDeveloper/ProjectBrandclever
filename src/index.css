@@ -2421,6 +2421,9 @@ button.back_btn_placement_traning:hover {
 li.review_nav .row .col-md-6 {
     text-align: left !important;
 }
+.column.footer-address-main a {
+    align-items: unset !important;
+}
 
 /********** Tushar css End here ***********/
 
@@ -2441,12 +2444,15 @@ li.review_nav .dropdown-content {
 .header_btn:hover {
     padding: 8px 30px !important;
     font-weight: 700;
-    box-shadow: inset 0 100px 0 0 #191e25;
-    color: #fff;
-    transition: 1s;
+    box-shadow: inset 0 100px 0 0 #ffffff;
+    color: #000 !important;
+    transition: 1.4s;
     text-decoration: none;
 }
-
+.header_btn:hover a {
+    color: #000 !important;
+    font-weight: 400 !important;
+}
 button.modal_button:hover {
     font-weight: 700;
     box-shadow: inset 0 100px 0 0 #191e25;
@@ -2475,7 +2481,7 @@ button.modal_button:hover {
     transition: ease-out 0.4s;
 }
 
-.career-page-inner .right-vacancyCnt button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.button_slide.slide_down.form_submit_btn.css-3qm5fz-MuiButtonBase-root-MuiButton-root:hover {
+.career-page-inner .right-vacancyCnt button:hover {
     box-shadow: inset 0 100px 0 0 #ebebeb;
     color: #000 !important;
 }
@@ -3352,14 +3358,14 @@ p.MuiTypography-root.MuiTypography-body2.blog_title2.css-u30lmt {
     color: #fff !important;
 }
 
-button.form_submit_btn {
+/* button.form_submit_btn {
     padding: 10px;
     height: 50px;
     width: 100%;
     color: black;
     font-weight: 600;
     background-color: white;
-}
+} */
 
 .contact_us_section .container .right_contact .col-md-6 form button:hover {
     color: #fff !important;

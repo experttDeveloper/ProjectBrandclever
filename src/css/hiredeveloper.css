@@ -37,7 +37,7 @@
   margin: 11px 50px 20px 10px;
 }
 .form_shopify_hire .form_inner .card {
-  padding: 30px 40px  41px 40px!important;
+  padding: 25px 20px  23px 20px !important;
   background-image: unset !important;
   background-color: #509e53 !important;
 }
@@ -80,7 +80,7 @@
   background: transparent;
 }
 .form_shopify_hire .hire_developer_form h2 {
-  font-size: 35px !important;
+  font-size: 35px;
   font-weight: 700;
   letter-spacing: 0.9px;
 }
@@ -177,8 +177,7 @@ img.authorimagelogo {
 .hiring_process {
   padding: 20px;
   box-shadow: 0px 0px 4px 0px var(--white-color);
-  height: 370px;
-  margin-bottom: 70px;
+  height: 100%;
   border-radius: 5px;
   text-align: center;
 }
@@ -444,7 +443,7 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.circle_tick.css-i4bv87-MuiSvgIcon-
 }
 
 .onbasispayment.row .alltext {
-  height: 253px;
+  height: 100% !important;
   margin-top: 16px;
 }
 
@@ -475,9 +474,16 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.circle_tick.css-i4bv87-MuiSvgIcon-
   height: 70px;
 }
 
+p.service_align {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .portfolio_sect h2.title {
   text-align: center;
   padding-bottom: 30px;
+  padding-top: 40px;
 }
 
 .shopify_images.row {

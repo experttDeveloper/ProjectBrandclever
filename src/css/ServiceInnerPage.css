@@ -55,7 +55,7 @@ color: var(--white-color);
     color: var(--black-color);
 }
 .development_service.nests .hiring_process_main {
-    padding: 60px 0px 15px 0px;
+    padding: 60px 0px 60px 0px;
 }
 .web_second_sdit button.get_quote_btn {
     margin-left: 20px !important;

@@ -266,20 +266,23 @@ const Career = () => {
                       {/* Your form inputs go here */}
                       <div className="form-group">
                         <TextField
-                          label="Your Full Name"
                           fullWidth
+                          className='careereeeeer'
                           type="text"
                           placeholder="Name"
                           name="name"
                           value={formData.name}
                           onChange={handleChange}
+                          // InputLabelProps={{
+                          //   shrink: true,
+                          // }}
                         />
                         <span className='error-message'>{formErrors.name}</span>
                       </div>
                       <div className="form-group">
                         <TextField
-                          label="Email"
                           fullWidth
+                          className='careereeeeer'
                           type="email"
                           placeholder="Email"
                           name="email"
@@ -291,7 +294,7 @@ const Career = () => {
                       <div className="form-group">
                         <TextField
                           fullWidth
-                          label="Position"
+                          className='careereeeeer'
                           type="text"
                           id="position"
                           name="position"
@@ -302,9 +305,10 @@ const Career = () => {
                         <span className="error-message">{formErrors.position}</span>
                       </div>
                       <div className="form-group">
-                        <label htmlFor="cv">Upload CV</label>
+                        <label htmlFor="cv"></label>
                         <TextField
                           fullWidth
+                          className='careereeeeer'
                           type="file"
                           id='cv'
                           name='files'
@@ -314,8 +318,8 @@ const Career = () => {
                       </div>
                       <div className="form-group">
                         <TextField
-                          label="Phone Number"
                           fullWidth
+                          className='careereeeeer'
                           type="tel"
                           id="phone"
                           name="phone"
@@ -327,8 +331,8 @@ const Career = () => {
                       </div>
                       <div className="form-group">
                         <TextField
-                          label="Experience"
                           fullWidth
+                          className='careereeeeer'
                           type="number"
                           id="experience"
                           name="experience"

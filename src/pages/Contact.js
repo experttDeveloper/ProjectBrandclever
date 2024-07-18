@@ -85,7 +85,7 @@ const Contact = () => {
         <div className="contact_us_first">
 
           <Container>
-            <Row>
+            <Row className="contact_row_edits">
               <Col md={6}>
                 <Typography variant='h3' >
                   Collaborative Ventures!

@@ -103,7 +103,7 @@ export default function UpdateContact() {
 
 
     return (
-        <div class="updated_container">
+        <div class="updated_container form_updated">
             <span class="big-circle"></span>
             <img src="img/shape.png" class="square" alt="" />
             <div class="form">
@@ -153,7 +153,7 @@ export default function UpdateContact() {
                     <span class="circle one"></span>
                     <span class="circle two"></span>
 
-                    <form ref={myFormRef} onSubmit={addFormData}>
+                    <form ref={myFormRef} onSubmit={addFormData} className='updated_contact_sec'>
                         <h3 class="title">Contact us</h3>
                         <div class="input-container">
                             <input type="text" name="name" class="input" placeholder="Name*" onChange={handleInputChange} />

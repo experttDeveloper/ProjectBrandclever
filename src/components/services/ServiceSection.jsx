@@ -49,7 +49,7 @@ export default function ServiceSection({ data }) {
                                         data[1].points.map((ele, key) => {
                                             return (
                                                 <Col md={6}>
-                                                    <p><VerifiedIcon /> {ele} </p>
+                                                    <p className='service_align'><VerifiedIcon /> {ele} </p>
                                                 </Col>
                                             )
                                         })

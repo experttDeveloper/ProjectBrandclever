@@ -17,7 +17,7 @@ export default class JoinTeam extends Component {
                 <p>
                   Explore cutting-edge technologies and engage in exciting projects beyond your imagination.
                 </p>
-                <Link to='/traning-and-placement'>Apply Now</Link>
+                <Link to='/training-and-placement'>Apply Now</Link>
               </div>
             </div>
             <div className='right-side grid-images'>

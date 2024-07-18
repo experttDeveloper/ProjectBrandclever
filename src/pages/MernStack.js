@@ -107,7 +107,7 @@ export default function MernStack() {
                         },
                         {
                             title: "Design, Development, & Testing",
-                            mage: "images/service/service_process3.png",
+                            image: "images/service/service_process3.png",
                             description: "This stage involves a cyclical process of design, coding, and testing. Iterative feedback ensures that the application meets quality standards, functional requirements, and user expectations."
                         },
                         {
