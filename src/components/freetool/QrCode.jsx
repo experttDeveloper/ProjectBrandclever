@@ -1,6 +1,6 @@
 // src/QRCodeGenerator.js
 import React, { useState, useRef } from 'react';
-import QRCode from 'qrcode.react';
+import QRCode from "react-qr-code";
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import '../../css/qrcode.css'
 
@@ -88,7 +88,7 @@ const QRCodeGenerator = () => {
                             <QRCode
                                 value={inputValue ? inputValue : "brandclever.in"}
                                 style={{ width: '300px', height: '300px' }}
-                                imageSettings={{ src: "favicon.ico", height: 30, width: 30, excavate: true }}
+                                // imageSettings={{ src: "favicon.ico", height: 30, width: 30, excavate: true }}
                             />
                         </div>
                     </Col>

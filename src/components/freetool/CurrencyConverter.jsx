@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../../css/converter.css'
 import { Button, Grid, InputLabel, MenuItem, Select, TextField } from '@mui/material';
-import {  Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import { ClipLoader } from 'react-spinners';
 
 const CurrencyConverter = () => {
@@ -91,9 +91,9 @@ const CurrencyConverter = () => {
                         </Grid>
                     </Grid>
                 </div>
-
             </Container>
         </div>
+           
     );
 };
 

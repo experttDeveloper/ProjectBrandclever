@@ -13,7 +13,6 @@ export default function FreeTool() {
             <div>
                 <SeoFriendly />
             </div>
-
             <QRCodeGenerator />
             <div className='image_composser'>
                 <Compresser />
@@ -21,9 +20,13 @@ export default function FreeTool() {
             <div className='currency_converter_sec'>
                 <CurrencyConverter />
             </div>
+            <div className='other_section_free_tool'>
+
+</div>
             {/* <div className='weather_info'>
                 <Weather />
             </div> */}
+
         </>
     )
 }

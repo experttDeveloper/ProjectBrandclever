@@ -69,7 +69,7 @@ const Weather = () => {
 
                             <div className='weather_main_se'>
                                 <img src={weatherData.current?.condition?.icon ? weatherData.current?.condition?.icon : ""} className='weather_image' />
-                                <p>{`${weatherData.current?.dewpoint_c ? `${weatherData.current?.dewpoint_c}°C` : ""}`}</p>
+                                <p>{`${weatherData.current?.temp_c ? `${weatherData.current?.temp_c}°C` : ""}`}</p>
                                 <div className='weather_right'>
                                     <p>{weatherData.current?.last_updated ? moment(weatherData.current?.last_updated).format('dddd, h:mm:ss a') : ""}</p>
                                     <p>{weatherData.current?.condition?.text ? weatherData.current?.condition?.text : ""}</p>
