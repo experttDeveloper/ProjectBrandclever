@@ -53,8 +53,8 @@ import Dashboard from './components/admin/Index';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import ScrollToTop from './components/ScrollToTop';
-import SeoAudit from './components/freetool/SeoAudit';
 import axios from 'axios';
+import FreeTool from './components/freetool/FreeTool';
 
 
 
@@ -100,7 +100,7 @@ export default class App extends Component {
           ) : window.location.pathname === "/analyzer" ? (
             <BrowserRouter>
               <Routes>
-                <Route path="/analyzer" element={<SeoAudit />} />
+                <Route path="/analyzer" element={<FreeTool />} />
               </Routes>
             </BrowserRouter>
           ) : (

@@ -76,7 +76,7 @@ const Weather = () => {
 
                                 </div>
                             </div>
-                            {/* <pre>{JSON.stringify(weatherData, null, 2)}</pre> */}
+                            <pre>{JSON.stringify(weatherData, null, 2)}</pre>
                         </>
                     )}
                 </form>

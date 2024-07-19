@@ -31,6 +31,7 @@
     "react-scroll-parallax": "^3.4.5",
     "react-share-social": "^0.1.60",
     "react-slick": "^0.29.0",
+    "react-spinners": "^0.14.1",
     "react-toastify": "^10.0.5",
     "react-whatsapp-chat-widget": "^1.1.6",
     "slick-carousel": "^1.8.1",
