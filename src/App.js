@@ -55,6 +55,7 @@ import { ToastContainer } from 'react-toastify';
 import ScrollToTop from './components/ScrollToTop';
 import axios from 'axios';
 import FreeTool from './components/freetool/FreeTool';
+import Fraud from './components/Fraud';
 
 
 
@@ -119,6 +120,7 @@ export default class App extends Component {
                   <Route path="/training-and-placement" element={<PlacementForm />} />
                   <Route path="/review" element={<Review />} />
                   <Route path="/career" element={<Career />} />
+                  <Route path="/fraud" element={<Fraud/>} />
 
 
                   <Route path="/term-conditions" element={<TermCondition />} />

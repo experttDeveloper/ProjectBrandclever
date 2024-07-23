@@ -335,6 +335,10 @@ const NavBar = () => {
                               <img src='/images/menus/privacy.png' alt='about page' height="32px" width="32px" />
                               <Link to="/training-and-placement" onClick={hideHandleDropDown}>Traning & Placement</Link>
                             </div>
+                            <div className='service_img'>
+                              <img src='/images/menus/privacy.png' alt='about page' height="32px" width="32px" />
+                              <Link to="/fraud" onClick={hideHandleDropDown}>Fraud Disclaimer</Link>
+                            </div>
 
                             {/* <div className='service_img'>
                               <img src='images/menus/term.png' alt='about page' height="32px" width="32px" />
@@ -343,7 +347,7 @@ const NavBar = () => {
                           </Col>
                           <Col md={8}>
 
-                            <div className=" serv_img">
+                            <div className=" serv_img_new">
                               <img src={'/images/nav/about_nav.png'} alt='logo_img' />
                             </div>
                           </Col>

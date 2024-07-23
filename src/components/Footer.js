@@ -113,6 +113,7 @@ const Footer = () => {
                     <div className='footer-copy-text'>
                         <p>Copyright &copy; 2024 <Link to="/" className='home-link'>Brandclever </Link> |<Link to="/term-conditions" style={{ color: "white" }}> <span className='term'> Terms & Conditions </span></Link>
                             | <Link to="/privacy-policy" style={{ color: "white" }}> <span className='privacy'> Privacy Policy </span></Link>
+                            | <Link to="/fraud" style={{ color: "white" }}> <span className='privacy'> Fraud Disclaimer </span></Link>
                         </p>
                     </div>
                 </footer>
