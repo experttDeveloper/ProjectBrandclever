@@ -61,26 +61,26 @@ const Career = () => {
 
     switch (fieldName) {
       case 'name':
-        errorMessage = value.trim() === '' ? 'Name is required' : '';
+        errorMessage = value.trim() === '' ? 'Name is required.' : '';
         break;
       case 'email':
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        errorMessage = !emailRegex.test(value) ? 'Invalid email address' : '';
+        errorMessage = !emailRegex.test(value) ? 'Invalid email address.' : '';
         break;
       case 'position':
-        errorMessage = value.trim() === '' ? 'Position is required' : '';
+        errorMessage = value.trim() === '' ? 'Position is required.' : '';
         break;
       case 'files':
-        errorMessage = value === '' ? 'CV is required' : '';
+        errorMessage = value === '' ? 'CV is required.' : '';
         break;
       case 'phone':
         const phoneRegex = /^[0-9 ()+-]+$/;
-        errorMessage = !phoneRegex.test(value) || value.length !== 10 ? 'Invalid phone number ((Exactly 10 digits required)' : '';
+        errorMessage = !phoneRegex.test(value) || value.length !== 10 ? 'Invalid phone number ((Exactly 10 digits required).' : '';
         //errorMessage =  numericValue.length < 10 ? 'Phone number must have at least 10 digits' : '';
         break;
       case 'experience':
         errorMessage =
-          value.trim() === '' || isNaN(value) ? 'Invalid experience value' : '';
+          value.trim() === '' || isNaN(value) ? 'Invalid experience value.' : '';
         break;
       // Add more cases for additional fields
       default:

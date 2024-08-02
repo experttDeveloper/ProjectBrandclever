@@ -135,7 +135,7 @@ export default class PlacementForm extends Component {
 
       if (!name) {
         this.setState((prevState) => ({
-          errors: { ...prevState.errors, name: 'Name is required' },
+          errors: { ...prevState.errors, name: 'Name is required.' },
         }));
         isValid = false;
       }
@@ -143,12 +143,12 @@ export default class PlacementForm extends Component {
       // Email validation
       if (!email) {
         this.setState((prevState) => ({
-          errors: { ...prevState.errors, email: 'Email is required' },
+          errors: { ...prevState.errors, email: 'Email is required.' },
         }));
         isValid = false;
       } else if (!/\S+@\S+\.\S+/.test(email)) {
         this.setState((prevState) => ({
-          errors: { ...prevState.errors, email: 'Invalid email address' },
+          errors: { ...prevState.errors, email: 'Invalid email address.' },
         }));
         isValid = false;
       }
@@ -156,7 +156,7 @@ export default class PlacementForm extends Component {
       // Phone validation
       if (!phone) {
         this.setState((prevState) => ({
-          errors: { ...prevState.errors, phone: 'Phone Number is required' },
+          errors: { ...prevState.errors, phone: 'Phone Number is required.' },
         }));
         isValid = false;
       } else if (!/^\d{10}$/.test(phone)) {
@@ -171,7 +171,7 @@ export default class PlacementForm extends Component {
       // Address validation
       if (!address) {
         this.setState((prevState) => ({
-          errors: { ...prevState.errors, address: 'Fill in your correct Address' },
+          errors: { ...prevState.errors, address: 'Fill in your correct Address.' },
         }));
         isValid = false;
       }
@@ -179,7 +179,7 @@ export default class PlacementForm extends Component {
       // Training experience validation
       if (!trainingExperience.trim()) {
         this.setState((prevState) => ({
-          errors: { ...prevState.errors, trainingExperience: 'Select your Experience' },
+          errors: { ...prevState.errors, trainingExperience: 'Select your Experience.' },
         }));
         isValid = false;
       }
@@ -187,7 +187,7 @@ export default class PlacementForm extends Component {
       // Selected profile validation
       if (!selectedProfile.trim()) {
         this.setState((prevState) => ({
-          errors: { ...prevState.errors, selectedProfile: 'Select your Profile!' },
+          errors: { ...prevState.errors, selectedProfile: 'Select your Profile.' },
         }));
         isValid = false;
       }

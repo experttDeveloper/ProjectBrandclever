@@ -1265,6 +1265,7 @@ section#schedules .showcase {
 }
 
 .blog_detail_form_main .hire_developer_form p {
+    color: red;
     font-size: 19px;
     letter-spacing: 0.9px !important;
 }
@@ -1891,11 +1892,11 @@ div#contactForm {
     align-items: center;
     padding: 0px 0px;
 }
-
 span.question_in {
     font-weight: 600;
+    font-size: 20px;
+    color: #000 !important;
 }
-
 .faq-main .faq-item {
     border-radius: 5px;
 }
@@ -3545,4 +3546,8 @@ p.MuiTypography-root.MuiTypography-body2.blog_title2.css-u30lmt {
 
 .social_efeect:hover a svg {
     color: white !important;
+}
+/* 02-08-2024 css start here */
+h2.cont2 a {
+    color: #509e53;
 }

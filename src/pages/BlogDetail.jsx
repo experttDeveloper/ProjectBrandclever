@@ -43,7 +43,7 @@ export default function BlogDetail() {
                         <Row>
                             <Col md={8}>
                                 <div className='one_side_text_inner_blog'>
-                                    <h3>Introduction:</h3>
+                                    <h3>Introduction</h3>
                                     <p dangerouslySetInnerHTML={{ __html: blog.introduction }}></p>
                                     {/* <p>{blog.introduction}</p> */}
                                     <h3>{blog.step1}</h3>

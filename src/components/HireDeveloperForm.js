@@ -89,7 +89,7 @@ export default function HireDeveloperForm() {
         <div className='hire_developer_form'>
             <Card style={{ backgroundImage: "linear-gradient(#ed5952, yellow)", padding: "15px" }}>
                 <h2 style={{ textAlign: "center" }}>Get Consultation Now!</h2>
-                <p style={{ textAlign: "center" }}>Let’s Discuss to Build Something Great Together!</p>
+                <p style={{ textAlign: "center",color:"white" }}>Let’s Discuss to Build Something Great Together!</p>
                 <form onSubmit={handleSubmit}>
                     <div style={{ marginBottom: "10px" }}>
                         <TextField
@@ -98,7 +98,7 @@ export default function HireDeveloperForm() {
                             variant="outlined"
                             placeholder='Your Name *'
                             onChange={handleChange}
-                            error={!!errors.name} // Display error state
+                            // error={!!errors.name} // Display error state
                             helperText={errors.name} // Display error message
                         />
 
@@ -111,7 +111,7 @@ export default function HireDeveloperForm() {
                             variant="outlined"
                             placeholder='Your Email *'
                             onChange={handleChange}
-                            error={!!errors.email} // Display error state
+                            // error={!!errors.email} // Display error state
                             helperText={errors.email} // Display error message
                         />
                     </div>
@@ -175,7 +175,7 @@ export default function HireDeveloperForm() {
                             name="message"
                             onChange={handleChange}
                             placeholder='Message *'
-                            error={!!errors.message} // Display error state
+                            // error={!!errors.message} // Display error state
                             helperText={errors.message} // Display error message
                         />
                     </div>

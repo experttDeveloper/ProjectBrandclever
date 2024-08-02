@@ -69,7 +69,10 @@ p.title_fraud_contenttext {
 }
 
 .sec_clr {
-    color: #fb0000;
+    font-size: 20px;
+    color: #509e53;
+    font-weight: 600;
+    font-family: "Didact Gothic", sans-serif !important;
 }
 
 @media only screen and (max-width: 600px) {
