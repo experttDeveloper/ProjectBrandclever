@@ -106,7 +106,7 @@ const Footer = () => {
                             <h3>Address</h3>
                             <div className='footer-address'><span><LocationOnIcon className='footer_icon' /></span><span>4th Floor, F-301, Bansal Tower, Phase 8B, Industrial Area, Sector 74, Brandclever, Sahibzada Ajit Singh Nagar, Punjab 160055</span> </div>
                             <div className='footer-phone'><Link to='tel:+919872711866'><span><PhoneIcon className='footer_icon' /></span>+91-9872711866</Link></div>
-                            <div className='footer-email'><Link to='mailto:career@brandclever.in'><span><EmailIcon className='footer_icon' /></span>career@brandclever.in</Link></div>
+                            <div className='footer-email'><Link style={{textTransform:"lowercase"}} to='mailto:career@brandclever.in'><span><EmailIcon className='footer_icon' /></span>career@brandclever.in</Link></div>
                         </div>
                     </div>
                     <hr></hr>

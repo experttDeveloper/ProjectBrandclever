@@ -246,9 +246,9 @@ p.text_expertise_reviews {
 }
 
 .images img {
-  width: 100% !important;
-  height: 400px !important;
+  height: 220px!important;
   margin-bottom: 27px;
+  width: 100%!important;
 }
 
 .images .image {
@@ -272,6 +272,12 @@ p.text_expertise_reviews {
   z-index: 0;
   background-color: red;
   transform: scale(1.05);
+}
+
+.hire_developer_form.error_paragraph p {
+  color: #d92121 ;
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 .btn_contact {

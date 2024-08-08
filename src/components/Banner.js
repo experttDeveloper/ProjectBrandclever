@@ -6,7 +6,7 @@ import '../Banner.css';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Typed from "typed.js";
 import ContactUsModal from './ContactUsModal';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import ContentPasteSearchIcon from '@mui/icons-material/ContentPasteSearch';
 import { IconButton, Tooltip } from '@mui/material';
@@ -14,13 +14,20 @@ import { IconButton, Tooltip } from '@mui/material';
 const Banner = () => {
 
   const [isHover, setIsHover] = useState(false);
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   const [mounted, setMounted] = useState(false);
   const navigate = useNavigate()
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+
+    // Check if the popup has been shown before in the session
+    const hasPopupBeenShown = sessionStorage.getItem('hasPopupBeenShown');
+    if (!hasPopupBeenShown && window.location.pathname === '/') {
+      setOpen(true); // Open the popup if it hasn't been shown before
+      sessionStorage.setItem('hasPopupBeenShown', true); // Set flag in sessionStorage
+    }
+  }, [window.location.pathname]);
 
   const handleOpen = () => {
     setOpen(true)

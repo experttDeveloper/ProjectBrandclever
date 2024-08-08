@@ -1996,6 +1996,7 @@ footer {
 }
 
 .error-message {
+    margin-left: 10px;
     color: #ff0033;
 }
 
@@ -3550,4 +3551,7 @@ p.MuiTypography-root.MuiTypography-body2.blog_title2.css-u30lmt {
 /* 02-08-2024 css start here */
 h2.cont2 a {
     color: #509e53;
+}
+p.error_mesg {
+    margin-left: 12px;
 }

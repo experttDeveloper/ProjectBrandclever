@@ -64,8 +64,12 @@ const Career = () => {
         errorMessage = value.trim() === '' ? 'Name is required.' : '';
         break;
       case 'email':
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        errorMessage = !emailRegex.test(value) ? 'Invalid email address.' : '';
+        if (value.trim() === '') {
+          errorMessage = 'Email is required.';
+        } else {
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          errorMessage = !emailRegex.test(value) ? 'Invalid email address.' : '';
+        }
         break;
       case 'position':
         errorMessage = value.trim() === '' ? 'Position is required.' : '';
@@ -74,18 +78,25 @@ const Career = () => {
         errorMessage = value === '' ? 'CV is required.' : '';
         break;
       case 'phone':
-        const phoneRegex = /^[0-9 ()+-]+$/;
-        errorMessage = !phoneRegex.test(value) || value.length !== 10 ? 'Invalid phone number ((Exactly 10 digits required).' : '';
-        //errorMessage =  numericValue.length < 10 ? 'Phone number must have at least 10 digits' : '';
+        if (value.trim() === '') {
+          errorMessage = 'Phone number is required.';
+        } else {
+          const phoneRegex = /^[0-9 ()+-]+$/;
+          errorMessage = !phoneRegex.test(value) || value.length !== 10 ? 'Invalid phone number (Exactly 10 digits required).' : '';
+        }
         break;
       case 'experience':
-        errorMessage =
-          value.trim() === '' || isNaN(value) ? 'Invalid experience value.' : '';
+        if (value.trim() === '') {
+          errorMessage = 'Experience is required.';
+        } else {
+          errorMessage = isNaN(value) ? 'Invalid experience value.' : '';
+        }
         break;
       // Add more cases for additional fields
       default:
         break;
     }
+    
 
     setFormErrors((prevErrors) => ({
       ...prevErrors,
@@ -242,7 +253,7 @@ const Career = () => {
               <Row>
                 <Col md={6}>
                   <div className='left-vacancyCnt'>
-                    <h3 className='apply_now'>Apply Now</h3>
+                    <h3 className='apply_now'>Apply Now !</h3>
                     <h4>Grow with us and build your dream career! Explore new opportunities and make your career goals a reality with us!</h4>
                     {CareerApi.map(job => (
                       <div key={job.id} className='faq-item' onClick={() => toggleDescription(job.id)}>
