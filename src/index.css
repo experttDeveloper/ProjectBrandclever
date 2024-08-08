@@ -3567,9 +3567,7 @@ p.error_mesg {
 .contact_form.modal_form.modal_form_error p {
     color: #d92121;
     margin-left: 10px;
-    /* padding: 0; */
-    margin-bottom: 10px;
-    margin-top: -15px;
+    margin-top: 10px;
 }
 
 textarea#message_textarea:focus {

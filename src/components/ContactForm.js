@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Button, TextField } from '@mui/material';
 
 const ContactForm = () => {
+  const [statusMsg, setStatusMsg] = useState('');
   const myFormRef = useRef();
   const [formData, setFormData] = useState({
     name: '',
@@ -23,7 +24,7 @@ const ContactForm = () => {
   });
 
   const validateForm = () => {
-    const { name, email, subject, message,number } = formData;
+    const { name, email, subject, message, number } = formData;
     let errors = {
       name: '',
       email: '',
@@ -80,13 +81,17 @@ const ContactForm = () => {
         .post('https://developer.brandclever.in/brand/admin/form/contactForm.php', formData)
         .then((res) => {
           if (res.data.status) {
-            document.getElementById('statusMsg').innerText = res.data.message;
+            setStatusMsg("Form submitted successfully.");
             myFormRef.current.reset();
             setFormData({ name: '', email: '', subject: '', message: '' });
+            setTimeout(() => {
+              setStatusMsg('');
+            }, 5000);
           }
         })
         .catch((error) => {
           console.log("error", error)
+          setStatusMsg(error);
           // console.error(error.response.data.error); // Log detailed error message
         });
     }
@@ -106,7 +111,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <form ref={myFormRef} onSubmit={addFormData} style={{ width: '100%', padding: '1.9rem' ,marginLeft:"15px"}}>
+      <form ref={myFormRef} onSubmit={addFormData} style={{ width: '100%', padding: '1.9rem', marginLeft: "15px" }}>
         <div className="form-group">
           <TextField
             variant="outlined"
@@ -171,7 +176,7 @@ const ContactForm = () => {
         <Button type="submit" className="button_slide slide_down form_submit_btn" sx={{ background: '#54a154' }}>
           Submit
         </Button>
-        <span id="statusMsg"></span>
+        <span id="statusMsg">{statusMsg}</span>
       </form>
     </>
   );
