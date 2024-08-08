@@ -19,15 +19,17 @@ const ContactForm = () => {
     email: '',
     subject: '',
     message: '',
+    number: ""
   });
 
   const validateForm = () => {
-    const { name, email, subject, message } = formData;
+    const { name, email, subject, message,number } = formData;
     let errors = {
       name: '',
       email: '',
       subject: '',
       message: '',
+      number: ""
     };
     let isValid = true;
 
@@ -39,22 +41,26 @@ const ContactForm = () => {
 
     // Email validation
     if (!email) {
-      errors.email = 'Email is required';
+      errors.email = 'Email is required.';
       isValid = false;
     } else if (!/\S+@\S+\.\S+/.test(email)) {
-      errors.email = 'Invalid email address';
+      errors.email = 'Invalid email address.';
       isValid = false;
     }
 
     // Subject validation
     if (!subject) {
-      errors.subject = 'Subject is required';
+      errors.subject = 'Subject is required.';
+      isValid = false;
+    }
+    if (!number) {
+      errors.number = 'Phone number is required.';
       isValid = false;
     }
 
     // Message validation
     if (!message) {
-      errors.message = 'Message is required';
+      errors.message = 'Message is required.';
       isValid = false;
     }
 
@@ -100,7 +106,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <form ref={myFormRef} onSubmit={addFormData} style={{ width: '100%', padding: '3rem' }}>
+      <form ref={myFormRef} onSubmit={addFormData} style={{ width: '100%', padding: '1.9rem' ,marginLeft:"15px"}}>
         <div className="form-group">
           <TextField
             variant="outlined"
@@ -129,6 +135,19 @@ const ContactForm = () => {
         <div className="form-group">
           <TextField
             variant="outlined"
+            type="number"
+            className={`form-control ${errors.number && 'is-invalid'}`}
+            id="number"
+            aria-describedby="emailHelp"
+            placeholder="Phone Number *"
+            name="number"
+            onChange={handleInputChange}
+          />
+          {errors.number && <div className="invalid-feedback">{errors.number}</div>}
+        </div>
+        <div className="form-group">
+          <TextField
+            variant="outlined"
             type="text"
             className={`form-control ${errors.subject && 'is-invalid'}`}
             id="subject"
@@ -140,14 +159,14 @@ const ContactForm = () => {
         </div>
         <div className="form-group">
           <textarea
-            className={`form-control ${errors.message && 'is-invalid'}`}
-            id="message"
+            className={`form-control `}
+            id="message_textarea"
             placeholder="Message *"
             name="message"
             onChange={handleInputChange}
             rows="3"
           ></textarea>
-          {errors.message && <div className="invalid-feedback">{errors.message}</div>}
+          {errors.message && <div className="invalid-feedbacks">{errors.message}</div>}
         </div>
         <Button type="submit" className="button_slide slide_down form_submit_btn" sx={{ background: '#54a154' }}>
           Submit

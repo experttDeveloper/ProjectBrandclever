@@ -128,6 +128,7 @@ h2 {
 .serv_img img {
     width: 100%;
 }
+
 .serv_img_new img {
     width: 100%;
     height: 320px;
@@ -789,13 +790,13 @@ ul.quick-links li {
 .form-group .MuiFormControl-root input {
     color: var(--black-color);
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 textarea#message::placeholder {
     color: #9b9b9b;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 li.hire_us a:hover {
@@ -1892,11 +1893,13 @@ div#contactForm {
     align-items: center;
     padding: 0px 0px;
 }
+
 span.question_in {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     color: #000 !important;
 }
+
 .faq-main .faq-item {
     border-radius: 5px;
 }
@@ -2428,6 +2431,7 @@ button.back_btn_placement_traning:hover {
 li.review_nav .row .col-md-6 {
     text-align: left !important;
 }
+
 .column.footer-address-main a {
     align-items: unset !important;
 }
@@ -2456,10 +2460,12 @@ li.review_nav .dropdown-content {
     transition: 1.4s;
     text-decoration: none;
 }
+
 .header_btn:hover a {
     color: #000 !important;
     font-weight: 400 !important;
 }
+
 button.modal_button:hover {
     font-weight: 700;
     box-shadow: inset 0 100px 0 0 #191e25;
@@ -3548,10 +3554,57 @@ p.MuiTypography-root.MuiTypography-body2.blog_title2.css-u30lmt {
 .social_efeect:hover a svg {
     color: white !important;
 }
+
 /* 02-08-2024 css start here */
 h2.cont2 a {
     color: #509e53;
 }
+
 p.error_mesg {
     margin-left: 12px;
+}
+
+.contact_form.modal_form.modal_form_error p {
+    color: #d92121;
+    margin-left: 10px;
+    /* padding: 0; */
+    margin-bottom: 10px;
+    margin-top: -15px;
+}
+
+textarea#message_textarea:focus {
+    box-shadow: none;
+    border: 2px solid #1b6ef3; /* Focus border color */
+}
+
+/* Style for textarea when it is hovered but not focused */
+textarea#message_textarea:hover {
+    box-shadow: none;
+    border: 1px solid var(--black-color); /* Hover border color */
+}
+
+/* Ensure that focused textarea styles are applied and hover styles are not applied when focused */
+textarea#message_textarea:focus:hover {
+    border: 2px solid #1b6ef3; /* Keep the focus border color */
+}
+
+h2.contact_use_heading {
+    color: var(--black-color);
+    line-height: 1.2;
+    padding-left: 51px;
+    text-align: left;
+    margin-top: 3px;
+    text-transform: capitalize;
+}
+
+.invalid-feedbacks {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+    margin-left: 10px;
+}
+
+.invalid-feedback {
+    margin-left: 10px;
 }

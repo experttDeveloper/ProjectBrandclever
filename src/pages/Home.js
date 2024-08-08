@@ -54,7 +54,7 @@ const Home = () => {
 
   return (
     <>
-    <MetaTitleDes title={"BrandClever - Leading IT Service Provider In India"} description={"We are one of the leading IT service providers offering a range of CMS solutions, digital marketing, Graphic design & web development services worldwide."}/>
+      <MetaTitleDes title={"BrandClever - Leading IT Service Provider In India"} description={"We are one of the leading IT service providers offering a range of CMS solutions, digital marketing, Graphic design & web development services worldwide."} />
       <div className='page'>
         <Banner />
         <Tachnology techImages={technologyImages} />
@@ -73,17 +73,19 @@ const Home = () => {
         <ClientReview />
         <Icons />
         <DatabaseSec />
-    
 
-          <div className='faq_Contact_Sec'>
+
+        <div className='faq_Contact_Sec'>
           <Container>
             <Faq />
-            <div style={{ marginTop: "35px", width: '100%' }}>
+            <div style={{ width: '100%' }}>
+
+              <h2 className='contact_use_heading'>Send Us a Message</h2>
               <ContactForm />
             </div>
-          
+
           </Container>
-          </div>
+        </div>
       </div>
 
     </>

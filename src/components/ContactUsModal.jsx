@@ -48,15 +48,15 @@ export default function ContactUsModal({ useOpen }) {
         const newErrors = {};
 
         if (!form.name) {
-            newErrors.name = 'Full name is required';
+            newErrors.name = 'Full name is required.';
         }
         if (!form.email) {
-            newErrors.email = 'Email is required';
+            newErrors.email = 'Email is required.';
         } else if (!/\S+@\S+\.\S+/.test(form.email)) {
-            newErrors.email = 'Invalid email address';
+            newErrors.email = 'Invalid email address.';
         }
         if (!form.message) {
-            newErrors.message = 'Message is required';
+            newErrors.message = 'Message is required.';
         }
         
         return newErrors;
@@ -105,6 +105,7 @@ export default function ContactUsModal({ useOpen }) {
                 onClose={handleClose}
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
+                className='modal_form_contact_front'
             >
 
                 <Row style={{ marginRight: "0" }}>
@@ -123,7 +124,7 @@ export default function ContactUsModal({ useOpen }) {
                         <Button onClick={handleClose} className='close_modal_btn'>
                             <CloseIcon />
                         </Button>
-                        <div className='contact_form modal_form'>
+                        <div className='contact_form modal_form modal_form_error'>
                             <DialogTitle id="alert-dialog-title" sx={{ display: "flex", justifyContent: "space-between" }}>
                                 <Typography variant='h5' className='right_test_modal'>
                                     Request Free Consultation
@@ -139,7 +140,7 @@ export default function ContactUsModal({ useOpen }) {
                                     name="name"
                                     value={form.name}
                                     onChange={handleChange}
-                                    error={!!errors.name} // Display error state
+                                    // error={!!errors.name} // Display error state
                                     helperText={errors.name} // Display error message
                                     InputProps={{
                                         startAdornment: (
@@ -158,7 +159,7 @@ export default function ContactUsModal({ useOpen }) {
                                     name="email"
                                     value={form.email}
                                     onChange={handleChange}
-                                    error={!!errors.email}
+                                    // error={!!errors.email}
                                     helperText={errors.email}
                                     InputProps={{
                                         startAdornment: (
@@ -194,7 +195,7 @@ export default function ContactUsModal({ useOpen }) {
                                     name="message"
                                     value={form.message}
                                     onChange={handleChange}
-                                    error={!!errors.message} // Display error state
+                                    // error={!!errors.message} // Display error state
                                     helperText={errors.message} // Display error message
                                     InputProps={{
                                         startAdornment: (

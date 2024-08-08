@@ -1,12 +1,30 @@
 /* Tushar css start here */
-.updated_container.form_updated {
+/* .updated_container.form_updated {
     z-index: -9;
     position: relative;
-}
+} */
 
 /* Tushar css end here */
 
 
+.update_contact_error {
+    color: #d92121;
+    margin-left: 10px;
+}
+
+.status_success {
+    text-align: center;
+    color: white;
+    letter-spacing: 1px !important;
+    margin-top: 10px;
+}
+
+.error_success {
+    text-align: center;
+    color: #d92121;
+    letter-spacing: 1px !important;
+    margin-top: 10px;
+}
 
 
 
@@ -241,10 +259,12 @@
     align-items: center;
     font-size: 0.95rem;
 }
+
 h3.title {
     font-size: 33px;
     font-weight: 600;
 }
+
 .information i {
     color: #509e53;
     font-size: 20px;
@@ -368,6 +388,7 @@ h3.title {
     .social-media {
         padding: 1.5rem 0 0 0;
     }
+
     .form_updated .form {
         display: grid !important;
         grid-template-columns: repeat(1, 1fr) !important;
