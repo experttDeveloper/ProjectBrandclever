@@ -56,11 +56,12 @@ import ScrollToTop from './components/ScrollToTop';
 import axios from 'axios';
 import FreeTool from './components/freetool/FreeTool';
 import Fraud from './components/Fraud';
+import Meeting from './Meeting';
 
 
 
 export default class App extends Component {
-  
+
 
   constructor(props) {
     super(props);
@@ -120,7 +121,7 @@ export default class App extends Component {
                   <Route path="/training-and-placement" element={<PlacementForm />} />
                   <Route path="/review" element={<Review />} />
                   <Route path="/career" element={<Career />} />
-                  <Route path="/fraud" element={<Fraud/>} />
+                  <Route path="/fraud" element={<Fraud />} />
 
 
                   <Route path="/term-conditions" element={<TermCondition />} />
@@ -167,6 +168,9 @@ export default class App extends Component {
                 {/* <Chat /> */}
 
               </BrowserRouter>
+              <div className='meeting_button'>
+                <Meeting />
+              </div>
 
               <WhatsAppWidget
                 phoneNo="9872711866"
@@ -195,8 +199,8 @@ export default class App extends Component {
                 btnTxt="Start Chat"
                 btnTxtColor="black"
               />
-
               <button style={{ cursor: "pointer" }} onClick={this.scrollToTop} className='onTop '><i className="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+              
             </>
           )
         }

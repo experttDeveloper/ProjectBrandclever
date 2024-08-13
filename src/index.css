@@ -3606,3 +3606,24 @@ h2.contact_use_heading {
 .invalid-feedback {
     margin-left: 10px;
 }
+
+.meeting_button {
+    position: fixed;
+    bottom: 113px;
+    background: #509e53;
+    border: transparent;
+    right: 50px;
+    z-index: 1;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+button.meeeting_btn {
+    margin-left: -22px;
+    color: white;
+}
+
+h2.meeting_title {
+    color: black;
+}
