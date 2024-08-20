@@ -1,71 +1,127 @@
+import { Container, Link } from '@mui/material';
 import * as React from 'react';
-import Button from '@mui/material/Button';
-import { styled } from '@mui/material/styles';
-import Dialog from '@mui/material/Dialog';
-import DialogTitle from '@mui/material/DialogTitle';
-import DialogContent from '@mui/material/DialogContent';
-import DialogActions from '@mui/material/DialogActions';
-import IconButton from '@mui/material/IconButton';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import CloseIcon from '@mui/icons-material/Close';
-import { Link } from '@mui/material';
+import { Col, Row } from 'react-bootstrap';
+import ContactUsModal from './components/ContactUsModal';
 
-const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-    '& .MuiDialogContent-root': {
-        padding: theme.spacing(2),
-    },
-    '& .MuiDialogActions-root': {
-        padding: theme.spacing(1),
-    },
-}));
 
 export default function Meeting() {
-    const [open, setOpen] = React.useState(false);
 
-    const handleClickOpen = () => {
+    const [open, setOpen] = React.useState(false);
+    const [name, setName] = React.useState("");
+
+    const handleOpen = (name) => {
         setOpen(true);
-    };
-    const handleClose = () => {
-        setOpen(false);
-    };
+        setName(name);
+    }
+
+
 
     return (
-        <React.Fragment>
-            <IconButton variant="outlined" onClick={handleClickOpen} className='meeeting_btn'>
-                <CalendarMonthIcon />
-            </IconButton>
-            <BootstrapDialog
-                onClose={handleClose}
-                aria-labelledby="customized-dialog-title"
-                open={open}
-                className='meeting_section'
-            >
-                <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title" className='meeting_title'>
-                    Join via meeting link
-                </DialogTitle>
-                <IconButton
-                    aria-label="close"
-                    onClick={handleClose}
-                    sx={{
-                        position: 'absolute',
-                        right: 8,
-                        top: 8,
-                        color: (theme) => theme.palette.grey[500],
-                    }}
-                >
-                    <CloseIcon />
-                </IconButton>
-                <DialogContent dividers>
-                    <div className='meeting_links'>
-                        <Link href="https://calendly.com/experttdeveloper/15-minute-meeting" target="_blank">
-                            <p className='linkss'>15 mintus</p>
-                        </Link>
-                        <Link href="https://calendly.com/experttdeveloper/30-minute-meeting" target="_blank">
-                            <p className='linkss'>30 mintus</p>
-                        </Link>
-                    </div>
-                </DialogContent>
-            </BootstrapDialog>
-        </React.Fragment>
+        <>
+            <Container>
+                <h2 className='get_a_free'>Get a Free Consultation Today</h2>
+                <p className='our_experts_gh'>Our experts are dedicated to helping you succeed.
+                    Talk to an expert and get your questions answered in a free 30-minute call.</p>
+                <Row>
+                    <Col md={3}>
+                        <section className="team_section meeting_team_section">
+                            <div className="cards">
+                                <div className="card" >
+                                    <div className="card-img-wrapper">
+                                        <img className='meeting_salwe_img' src={"/images/team/owner.png"} />
+                                    </div>
+                                    {/* <Link to={"#"} className="social-icon" target='_blank'><i class="fa-regular fa-circle-nodes"></i></Link> */}
+                                    <div className="card-content-wrapper">
+                                        <div className="card-content">
+                                            <div className='main_meeting'>
+
+                                                <h4>Manish Verma</h4>
+                                                <p className='sale_meeting_team'>Sales Head (Digital Marketing Expert)</p>
+                                            </div>
+                                            <div class="header_btn_dot"><Link className="_meeting_lin" href="#" onClick={() => handleOpen("Manish Verma")}>Book An Appointment</Link></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </Col>
+                    <Col md={3}>
+                        <section className="team_section meeting_team_section">
+                            <div className="cards">
+                                <div className="card" >
+                                    <div className="card-img-wrapper">
+                                        <img className='meeting_salwe_img' src={"/images/team/pooja_chahaun.png"} />
+                                    </div>
+                                    {/* <Link to={"#"} className="social-icon" target='_blank'><i class="fa-regular fa-circle-nodes"></i></Link> */}
+                                    <div className="card-content-wrapper">
+                                        <div href="#" className="card-content">
+                                            <div className='main_meeting'>
+
+                                                <h4>Pooja Chauhan</h4>
+                                                <p className='sale_meeting_team'>Business Analyst</p>
+                                            </div>
+                                            <div class="header_btn_dot"><Link className="_meeting_lin" href="#" onClick={() => handleOpen("Pooja Chauhan")}>Book An Appointment</Link></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </Col>
+                    <Col md={3}>
+                        <section className="team_section meeting_team_section">
+                            <div className="cards">
+                                <div className="card" >
+                                    <div className="card-img-wrapper">
+                                        <img className='meeting_salwe_img' src={"/images/team/ishika.png"} />
+                                    </div>
+                                    {/* <Link to={"#"} className="social-icon" target='_blank'><i class="fa-regular fa-circle-nodes"></i></Link> */}
+                                    <div className="card-content-wrapper">
+                                        <div href="#" className="card-content">
+                                            <div className='main_meeting'>
+
+                                                <h4>Ishika Bhardwaj</h4>
+                                                <p className='sale_meeting_team'>Project Manager</p>
+                                            </div>
+                                            <div class="header_btn_dot"><Link className="_meeting_lin" href="#" onClick={() => handleOpen("Ishika Bhardwaj")}>Book An Appointment</Link></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </Col>
+                    <Col md={3}>
+                        <section className="team_section meeting_team_section">
+                            <div className="cards">
+                                <div className="card" >
+                                    <div className="card-img-wrapper">
+                                        <img className='meeting_salwe_img' src={"/images/team/charanjit.png"} />
+                                    </div>
+                                    {/* <Link to={"#"} className="social-icon" target='_blank'><i class="fa-regular fa-circle-nodes"></i></Link> */}
+                                    <div className="card-content-wrapper">
+                                        <div href="#" className="card-content">
+                                            <div className='main_meeting'>
+
+                                                <h4>Charanjeet Singh</h4>
+                                                <p className='sale_meeting_team'>Customer Relationship Manager</p>
+                                            </div>
+                                            <div class="header_btn_dot"><Link className="_meeting_lin" href="#" onClick={() => handleOpen("Charanjeet Singh")}>Book An Appointment</Link></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </Col>
+                </Row>
+            </Container>
+
+            {
+                open && (
+                    <ContactUsModal useOpen={() => [open, setOpen]} nameTitle={name}/>
+                )
+            }
+        </>
     );
 }

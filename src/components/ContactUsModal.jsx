@@ -4,14 +4,17 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
-import { IconButton, InputAdornment, TextField, Typography } from '@mui/material';
+import { IconButton, InputAdornment, Link, TextField, Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import { Col, Row } from 'react-bootstrap';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { AccountCircle, Email, Message, Phone } from '@mui/icons-material';
+import Meeting from '../Meeting';
 
-export default function ContactUsModal({ useOpen }) {
+export default function ContactUsModal({ useOpen, nameTitle }) {
+
+    console.log("nameTitle", nameTitle)
 
     const [open, setOpen] = useOpen();
     const [errors, setErrors] = React.useState({});
@@ -58,7 +61,7 @@ export default function ContactUsModal({ useOpen }) {
         if (!form.message) {
             newErrors.message = 'Message is required.';
         }
-        
+
         return newErrors;
     };
 
@@ -97,6 +100,38 @@ export default function ContactUsModal({ useOpen }) {
         }
     };
 
+    const getMeetingLinks = (nameTitle) => {
+        switch (nameTitle) {
+            case 'Manish Verma':
+                return {
+                    fifteenMinutes: 'https://calendly.com/experttdeveloper/15-minute-meeting-manish-verma',
+                    thirtyMinutes: 'https://calendly.com/experttdeveloper/30-minute-meeting-manish-verma'
+                };
+            case 'Pooja Chauhan':
+                return {
+                    fifteenMinutes: 'https://calendly.com/experttdeveloper/15-minute-meeting-pooja-chauhan',
+                    thirtyMinutes: 'https://calendly.com/experttdeveloper/30-minute-meeting-pooja-chauhan'
+                };
+            case 'Ishika Bhardwaj':
+                return {
+                    fifteenMinutes: 'https://calendly.com/experttdeveloper/15-minute-meeting-ishika-bhardwaj',
+                    thirtyMinutes: 'https://calendly.com/experttdeveloper/30-minute-meeting-ishika-bhardwaj'
+                };
+            case 'Charanjeet Singh':
+                return {
+                    fifteenMinutes: 'https://calendly.com/experttdeveloper/15-minute-meeting-charanjeet-singh',
+                    thirtyMinutes: 'https://calendly.com/experttdeveloper/30-minute-meeting-charanjeet-singh'
+                };
+            default:
+                return {
+                    fifteenMinutes: 'https://calendly.com/experttdeveloper/15-minute-meeting-manish-verma',
+                    thirtyMinutes: 'https://calendly.com/experttdeveloper/30-minute-meeting-manish-verma'
+                };
+        }
+    };
+
+    // Get the links based on the current name
+    const { fifteenMinutes, thirtyMinutes } = getMeetingLinks(nameTitle);
     return (
         <React.Fragment>
             <Dialog
@@ -108,22 +143,30 @@ export default function ContactUsModal({ useOpen }) {
                 className='modal_form_contact_front'
             >
 
-                <Row style={{ marginRight: "0" }}>
-                    <Col md={6}>
-                        <div className='left_modal'>
+                <Row style={{ marginRight: "0" }} className='left_modal_center'>
+                    <Col md={6} className='left_modal'>
+                        <div className='left_modal_iner'>
                             <Typography className='title_modal' variant='h4'>
                                 Turning your <span style={{ color: "#54a154", fontWeight: '700' }}>vision </span>
                                 into tangible reality
                             </Typography>
-                            {/* <p className="des_modal">
-                                Delivering a cutting-edge digital experience to meet modern expectations.
-                            </p> */}
+
                         </div>
                     </Col>
-                    <Col md={6}>
-                        <Button onClick={handleClose} className='close_modal_btn'>
+                    <Col md={6} className='meeting_modal_sec'>
+                        <IconButton
+                            aria-label="close"
+                            onClick={handleClose}
+                            sx={{
+                                position: 'absolute',
+                                right: 8,
+                                top: 8,
+                                color: (theme) => theme.palette.grey[500],
+                            }}
+                            className='meeting_close_btn'
+                        >
                             <CloseIcon />
-                        </Button>
+                        </IconButton>
                         <div className='contact_form modal_form modal_form_error'>
                             <DialogTitle id="alert-dialog-title" sx={{ display: "flex", justifyContent: "space-between" }}>
                                 <Typography variant='h5' className='right_test_modal'>
@@ -132,7 +175,15 @@ export default function ContactUsModal({ useOpen }) {
 
                             </DialogTitle>
                             <DialogContent>
-                                <TextField
+                                <div className='meeting_links'>
+                                    <Link href={fifteenMinutes} target="_blank">
+                                        <p className='linkss'>15 minutes</p>
+                                    </Link>
+                                    <Link href={thirtyMinutes} target="_blank">
+                                        <p className='linkss'>30 minutes</p>
+                                    </Link>
+                                </div>
+                                {/* <TextField
                                     fullWidth
                                     id="name"
                                     label="Full name *"
@@ -140,12 +191,12 @@ export default function ContactUsModal({ useOpen }) {
                                     name="name"
                                     value={form.name}
                                     onChange={handleChange}
-                                    // error={!!errors.name} // Display error state
-                                    helperText={errors.name} // Display error message
+                                    
+                                    helperText={errors.name} 
                                     InputProps={{
                                         startAdornment: (
                                             <InputAdornment position="start">
-                                                <AccountCircle /> {/* Icon for Full Name */}
+                                                <AccountCircle /> 
                                             </InputAdornment>
                                         ),
                                     }}
@@ -159,12 +210,12 @@ export default function ContactUsModal({ useOpen }) {
                                     name="email"
                                     value={form.email}
                                     onChange={handleChange}
-                                    // error={!!errors.email}
+                                   
                                     helperText={errors.email}
                                     InputProps={{
                                         startAdornment: (
                                             <InputAdornment position="start">
-                                                <Email /> {/* Icon for Email */}
+                                                <Email /> 
                                             </InputAdornment>
                                         ),
                                     }}
@@ -181,7 +232,7 @@ export default function ContactUsModal({ useOpen }) {
                                     InputProps={{
                                         startAdornment: (
                                             <InputAdornment position="start">
-                                                <Phone /> {/* Icon for Contact Number */}
+                                                <Phone /> 
                                             </InputAdornment>
                                         ),
                                     }}
@@ -195,20 +246,20 @@ export default function ContactUsModal({ useOpen }) {
                                     name="message"
                                     value={form.message}
                                     onChange={handleChange}
-                                    // error={!!errors.message} // Display error state
-                                    helperText={errors.message} // Display error message
+                                   
+                                    helperText={errors.message} 
                                     InputProps={{
                                         startAdornment: (
                                             <InputAdornment position="start">
-                                                <Message /> {/* Icon for Message */}
+                                                <Message /> 
                                             </InputAdornment>
                                         ),
                                     }}
 
-                                />
+                                /> */}
                             </DialogContent>
 
-                            <DialogActions>
+                            {/* <DialogActions>
                                 <Button
                                     onClick={handleSubmit}
                                     fullWidth
@@ -216,7 +267,7 @@ export default function ContactUsModal({ useOpen }) {
                                 >
                                     Submit
                                 </Button>
-                            </DialogActions>
+                            </DialogActions> */}
                         </div>
                     </Col>
                 </Row>

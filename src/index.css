@@ -655,11 +655,188 @@ p.subtitle {
     text-transform: capitalize;
 }
 
+.free_consultat_inf {
+    text-align: center;
+    padding: 23px;
+    margin-bottom: 19px;
+    background: #f3f3f3;
+    border: 1px solid #d7d7d74f;
+}
+
+.free_consultat_inf h4 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.appintment_btn a {
+    outline: 0;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: 700 !important;
+    text-shadow: 1px 1px #0000004f;
+    border: 1px solid #262d37;
+    background: #262d37;
+    width: 56%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+p.sale_meeting_team {
+    margin-top: -21px !important;
+}
+
+section.team_section.team_section .cards .card {
+    position: relative;
+    text-align: left;
+}
+
+.meeting_team_section .cards .card .card-content-wrapper .card-content {
+    display: block;
+    background: white;
+    transition: 0.5s ease;
+    padding: 15px;
+    text-align: center;
+}
+
+.meeting_team_section .cards {
+    margin-top: 2rem;
+}
+
+.get_a_free {
+    text-align: center !important;
+    padding-top: 70px;
+    font-weight: 700;
+}
+
+.our_experts_gh {
+    color: #bfbfbf;
+    text-align: center;
+    margin-bottom: -60px;
+}
+
+a._meeting_lin {
+    color: white;
+    text-decoration: none;
+}
+
+a._meeting_lin:hover {
+    color: #262d37;
+    text-decoration: none;
+}
+
+section.team_section .card a:hover {
+    color: black !important;
+}
+
+.meeting_team_section {
+    padding-bottom: 0px !important;
+    padding-top: 0px;
+}
+
+.meeting_team_section .cards .card .card-content-wrapper {
+    margin-left: 0 !important;
+}
+
+section.meeting_team_section .card:hover h4 {
+    color: white !important;
+}
+
+.meeting_team_section .card:hover .header_btn_dot {
+    text-align: center !important;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0px;
+    text-transform: uppercase;
+    background: #fff !important;
+    color: #000 !important;
+}
+
+.meeting_team_section .card:hover .header_btn_dot {
+    text-align: center !important;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    background: #fff !important;
+    color: #000 !important;
+}
+
+section.meeting_team_section .card h4 {
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.meeting_team_section .cards .card .card-content-wrapper .card-content {
+    display: block;
+    background: white;
+    transition: 0.5s ease;
+    padding: 15px !important;
+    text-align: center;
+}
+
+img.meeting_salwe_img {
+    width: 100% !important;
+    height: 233px;
+}
+
+.header_btn_dot {
+    margin-top: 17px;
+    text-align: center !important;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    background: #509e53 !important;
+    color: #fff !important;
+}
+
+section.team_section.meeting_team_section h4 {
+    font-size: 20px;
+}
+
+.header_btn_dot {
+    margin-top: 17px;
+    text-align: center !important;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 14px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #509e53 !important;
+    color: #fff !important;
+}
+
+.main_meeting {
+    min-height: 90px;
+    text-align: center !important;
+}
+
+
+section.meeting_team_section .cards .card {
+
+    height: auto !important;
+}
+
+p.sale_meeting_team {
+    line-height: 17px;
+}
+
+.free_consultat_inf img {
+    width: 250px;
+    border-radius: 50%;
+}
+
 .social_media-icon {
     list-style: none;
     display: flex;
     gap: 17px;
-    padding-left: 15px !important;
+    padding-left: 0px !important;
 }
 
 .apply_now {
@@ -1966,6 +2143,7 @@ span.question_in {
 .footer_description {
     text-align: left;
     padding: 10px;
+    padding-left: 5px;
 }
 
 .footer-inner .column h3 {
@@ -3564,26 +3742,23 @@ p.error_mesg {
     margin-left: 12px;
 }
 
-.contact_form.modal_form.modal_form_error p {
-    color: #d92121;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
 textarea#message_textarea:focus {
     box-shadow: none;
-    border: 2px solid #1b6ef3; /* Focus border color */
+    border: 2px solid #1b6ef3;
+    /* Focus border color */
 }
 
 /* Style for textarea when it is hovered but not focused */
 textarea#message_textarea:hover {
     box-shadow: none;
-    border: 1px solid var(--black-color); /* Hover border color */
+    border: 1px solid var(--black-color);
+    /* Hover border color */
 }
 
 /* Ensure that focused textarea styles are applied and hover styles are not applied when focused */
 textarea#message_textarea:focus:hover {
-    border: 2px solid #1b6ef3; /* Keep the focus border color */
+    border: 2px solid #1b6ef3;
+    /* Keep the focus border color */
 }
 
 h2.contact_use_heading {
@@ -3607,23 +3782,95 @@ h2.contact_use_heading {
     margin-left: 10px;
 }
 
-.meeting_button {
+.left_modal_iner {
+    height: 450px;
+    padding: 20px;
+    color: #fff;
+    /* box-shadow: inset 0px 0px 0px 2000px #000000bd; */
+}
+
+section.team_section.meeting_team_section .cards .card .card-content-wrapper:hover .card-content .header_btn_dot a {
+    color: var(--dark-black-color) !important;
+}
+
+
+.left_modal.col-md-6 {
+    padding: 0;
+}
+
+.contact_form.modal_form.modal_form_error {
+    padding-top: 131px;
+}
+
+.exp_btn.meetin_btn_footer a {
+    background: #54a154;
+    border: 1px solid #54a154;
+}
+
+.exp_btn.meetin_btn_footer {
+    margin-bottom: 19px;
+    margin-left: 5px;
+}
+
+
+h2#alert-dialog-title {
+    justify-content: center;
+}
+
+button.meeeting_btn {
     position: fixed;
-    bottom: 113px;
-    background: #509e53;
+    bottom: 116px;
+    background: #54a154;
     border: transparent;
     right: 50px;
     z-index: 1;
     border-radius: 50%;
     height: 40px;
-    width: 40px;
+    width: 40px !important;
+    color: white;
+    padding: 0px !important;
 }
 
-button.meeeting_btn {
-    margin-left: -22px;
+button.meeeting_btn:hover {
+    background: #509e53;
+}
+
+.meeting_links a {
+    text-decoration: none;
+}
+
+p.linkss {
+    text-transform: capitalize;
     color: white;
+    background: #28a745;
+    padding: 8px;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none !important;
+    border-bottom: 0px !important;
 }
 
 h2.meeting_title {
     color: black;
+    font-size: 22px !important;
+    width: 400px;
+}
+
+button.meeting_close_btn {
+    padding: 0px !important;
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #28a745;
+    color: #fff;
+    border-bottom-left-radius: 15px !important;
+    margin-right: -8px;
+    margin-top: -10px;
+    border-radius: 0px;
+}
+
+button.meeting_close_btn:hover {
+    background: #28a745 !important;
 }

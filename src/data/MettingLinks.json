@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Manish Verma",
+            "meeting_Links":["https://calendly.com/experttdeveloper/15-minute-meeting-manish-verma","https://calendly.com/experttdeveloper/30-minute-meeting-manish-verma"],
+            "answer": "Brandclever offers comprehensive IT services including web design & development, software development, IT consulting, cloud solutions, and cybersecurity services."
+        },
+        {
+            "id": 2,
+            "name": "Pooja chauhan",
+            "meeting_Links":["https://calendly.com/experttdeveloper/15-minute-meeting-pooja-chauhan","https://calendly.com/experttdeveloper/30-minute-meeting-pooja-chauhan"],
+            "answer": "Brandclever provides strategic IT consulting and customized solutions to streamline operations, enhance productivity, and achieve business objectives through innovative technology."
+        },
+        {
+            "id": 3,
+            "name": "Ishika Bhardwaj",
+            "meeting_Links":["https://calendly.com/experttdeveloper/15-minute-meeting-ishika-bhardwaj","https://calendly.com/experttdeveloper/30-minute-meeting-ishika-bhardwaj"],
+            "answer": "Brandclever collaborates closely with clients to understand their needs and challenges, providing personalized solutions with a focus on quality and timely delivery."
+        },
+        {
+            "id": 4,
+            "name": "Charanjeet Singh",
+            "meeting_Links":["https://calendly.com/experttdeveloper/15-minute-meeting-charanjeet-singh","https://calendly.com/experttdeveloper/30-minute-meeting-charanjeet-singh"],
+            "answer": "Brandclever collaborates closely with clients to understand their needs and challenges, providing personalized solutions with a focus on quality and timely delivery."
+        }
+    ]
+  }

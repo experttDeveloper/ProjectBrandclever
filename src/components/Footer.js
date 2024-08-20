@@ -1,5 +1,5 @@
 // Footer.js
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 //import logo from './Images/logoWhite.png';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -12,9 +12,16 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { Container } from 'react-bootstrap';
 import { BookOnlineOutlined } from '@mui/icons-material';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import ContactUsModal from './ContactUsModal';
 
 const Footer = () => {
+    const [isHover, setIsHover] = useState(false);
+    const [open, setOpen] = useState(false);
 
+    const handleOpen = () => {
+        setOpen(true)
+    }
 
     const certificates = [
         process.env.PUBLIC_URL + '/images/certificate/goodfirms.png',
@@ -40,6 +47,15 @@ const Footer = () => {
 
                             </div>
                             <p className='footer_description'>Brandclever emerges as a top-tier IT force, delivering smart and proven solutions across the tech spectrum.</p>
+                            <div className='exp_btn meetin_btn_footer' >
+                                <Link to='#'
+                                    onMouseEnter={() => setIsHover(true)}
+                                    onMouseLeave={() => setIsHover(false)}
+                                    onClick={handleOpen}
+                                >Consult Our Experts <span className='icon_span'><NavigateNextIcon className={isHover ? "consult_hover " : ""} /> </span>
+                                </Link>
+
+                            </div>
                             <ul className='social_media-icon'>
                                 <li>
                                     <Link to="https://www.facebook.com/brandclever.in/" target="_blank"><FacebookIcon className='footer_icon' /></Link>
@@ -106,7 +122,7 @@ const Footer = () => {
                             <h3>Address</h3>
                             <div className='footer-address'><span><LocationOnIcon className='footer_icon' /></span><span>4th Floor, F-301, Bansal Tower, Phase 8B, Industrial Area, Sector 74, Brandclever, Sahibzada Ajit Singh Nagar, Punjab 160055</span> </div>
                             <div className='footer-phone'><Link to='tel:+919872711866'><span><PhoneIcon className='footer_icon' /></span>+91-9872711866</Link></div>
-                            <div className='footer-email'><Link style={{textTransform:"lowercase"}} to='mailto:career@brandclever.in'><span><EmailIcon className='footer_icon' /></span>career@brandclever.in</Link></div>
+                            <div className='footer-email'><Link style={{ textTransform: "lowercase" }} to='mailto:career@brandclever.in'><span><EmailIcon className='footer_icon' /></span>career@brandclever.in</Link></div>
                         </div>
                     </div>
                     <hr></hr>
@@ -118,6 +134,12 @@ const Footer = () => {
                     </div>
                 </footer>
             </Container>
+
+            {
+                open && (
+                    <ContactUsModal useOpen={() => [open, setOpen]} />
+                )
+            }
         </>
     );
 };

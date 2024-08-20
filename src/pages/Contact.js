@@ -18,6 +18,7 @@ import RoomIcon from "@mui/icons-material/Room";
 import SocialContact from "../components/SocialContact";
 import MetaTitleDes from "../components/MetaTitleDes";
 import UpdateContact from "../components/UpdateContact";
+import Meeting from "../Meeting";
 
 const Contact = () => {
   const divStyle = {
@@ -43,6 +44,7 @@ const Contact = () => {
         }
       />
       <UpdateContact />
+      <Meeting/>
       <div className="contact_us_section">
         <div className="contact_us_second">
           <Container>
