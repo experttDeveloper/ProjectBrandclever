@@ -315,7 +315,7 @@ const Career = () => {
                         />
                         <span className="error-message">{formErrors.position}</span>
                       </div>
-                      <div className="form-group">
+                      <div className="form-group resu_me_up_load">
                         <label htmlFor="cv"></label>
                         <TextField
                           fullWidth

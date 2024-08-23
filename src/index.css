@@ -1093,8 +1093,8 @@ footer .column {
 .whatsapp_widget_pop {
     width: 300px;
     position: fixed;
-    bottom: 110px;
-    right: 25px;
+    bottom: 75px;
+    right: 90px;
 }
 
 .whatsapp_widget_header {
@@ -3479,10 +3479,13 @@ h4.MuiTypography-root.MuiTypography-h3.title_modal.css-18h9l83 {
 }
 
 h4.MuiTypography-root.MuiTypography-h4.title_modal.css-1xvinid {
+    color: #fff;
     padding: 26px 0 0;
     text-align: center;
-    color: white;
     text-transform: capitalize;
+    font-family: Didact Gothic,sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 button.close_modal_btn {
@@ -3497,10 +3500,12 @@ button.close_modal_btn:hover {
 }
 
 h5.MuiTypography-root.MuiTypography-h5.right_test_modal.css-zq6grw {
+    font-size: 32px;
     text-align: center;
-    font-size: 31px;
+    font-family: Didact Gothic,sans-serif !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
-
 .hidedropdown {
     display: none !important;
 }
@@ -3793,6 +3798,11 @@ section.team_section.meeting_team_section .cards .card .card-content-wrapper:hov
     color: var(--dark-black-color) !important;
 }
 
+section.team_section.meeting_team_section .card:hover .header_btn_dot a,
+section.team_section.meeting_team_section .card-img-wrapper:hover .header_btn_dot a,
+section.team_section.meeting_team_section .card-content:hover .header_btn_dot a {
+    color: var(--dark-black-color) !important;
+}
 
 .left_modal.col-md-6 {
     padding: 0;

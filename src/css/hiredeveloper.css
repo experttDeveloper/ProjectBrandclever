@@ -44,7 +44,7 @@
 
 .form_shopify_hire .form_inner .card .MuiInputBase-root {
   background: var(--white-color);
-  border-radius: 5px !important;
+  border-radius: 4px !important;
 }
 .comment_sec_main button.post_btn.btn.btn-primary:hover {
   transform: unset !important;
@@ -183,15 +183,19 @@ img.authorimagelogo {
 }
 
 .hiring_process img.requirement {
-  border: 1px solid var(--white-color);
-  padding: 20px;
-  margin-top: -70px !important;
-  border-radius: 100%;
-  margin-bottom: 20px;
+  background: #292b32;
   background: var(--dark-black-color);
-  height: 100px;
+  border: 1px solid #fff;
+  border: 0;
+  border-radius: 100%;
+  height: 96px;
+  margin-bottom: 20px;
+  margin-top: -70px!important;
+  padding: 17px;
+  object-fit: cover !important;
+  width: 96px !important;
+  border-radius: 20px;
 }
-
 h2.hiringprocesstitle {
   padding: 9px 0 80px 0;
 }

@@ -106,28 +106,28 @@ const Contact = () => {
                     <Row>
                       
                         <li className="social_efeect">
-                          <a href="#">
+                          <Link to="https://www.facebook.com/brandclever.in/" target="_blank">
                             <Facebook/>
                             <span>  Facebook</span>
-                          </a>
+                          </Link>
                         </li>
                         <li className="social_efeect">
-                          <a href="#">
+                         <Link to="https://www.linkedin.com/company/brandclever/" target="_blank">
                             <LinkedIn />
                             <span>  LinkedIn</span>
-                          </a>
+                          </Link>
                         </li>
                         <li className="social_efeect">
-                          <a href="#">
+                         <Link to="https://wa.me/9872711866?text=Hello%20there!%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank">
                             <WhatsApp />
                             <span>  WhatsApp</span>
-                          </a>
+                          </Link>
                         </li>
                         <li className="social_efeect">
-                          <a href="#">
+                         <Link to="https://www.instagram.com/brandclever.in/" target="_blank">
                             <Instagram />
                             <span>  Instagram</span>
-                          </a>
+                          </Link>
                         </li>
                     </Row>
                   </ul>

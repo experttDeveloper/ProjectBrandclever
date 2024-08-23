@@ -158,7 +158,7 @@ const App = () => {
             iconSize="40"
             iconColor="white"
             iconBgColor="#28a745"
-            headerIcon={process.env.PUBLIC_URL + '/images/supports1.png'}
+            headerIcon={process.env.PUBLIC_URL + '/images/team/ishika.png'}
             headerIconColor="pink"
             headerTxtColor="black"
             headerBgColor="#28a745"

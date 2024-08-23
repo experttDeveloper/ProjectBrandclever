@@ -14,7 +14,7 @@ import Meeting from '../Meeting';
 
 export default function ContactUsModal({ useOpen, nameTitle }) {
 
-    console.log("nameTitle", nameTitle)
+   
 
     const [open, setOpen] = useOpen();
     const [errors, setErrors] = React.useState({});
@@ -104,28 +104,28 @@ export default function ContactUsModal({ useOpen, nameTitle }) {
         switch (nameTitle) {
             case 'Manish Verma':
                 return {
-                    fifteenMinutes: 'https://calendly.com/experttdeveloper/15-minute-meeting-manish-verma',
-                    thirtyMinutes: 'https://calendly.com/experttdeveloper/30-minute-meeting-manish-verma'
+                    fifteenMinutes: 'https://calendly.com/experttdeveloper/schedule-a-call-with-brandclever?month=2024-08',
+                    thirtyMinutes: 'https://calendly.com/experttdeveloper/schedule-a-call-with-brandclever?month=2024-08'
                 };
             case 'Pooja Chauhan':
                 return {
-                    fifteenMinutes: 'https://calendly.com/experttdeveloper/15-minute-meeting-pooja-chauhan',
-                    thirtyMinutes: 'https://calendly.com/experttdeveloper/30-minute-meeting-pooja-chauhan'
+                    fifteenMinutes: 'https://calendly.com/experttdeveloper/schedule-a-call-with-brandclever?month=2024-08',
+                    thirtyMinutes: 'https://calendly.com/experttdeveloper/schedule-a-call-with-brandclever?month=2024-08'
                 };
             case 'Ishika Bhardwaj':
                 return {
-                    fifteenMinutes: 'https://calendly.com/experttdeveloper/15-minute-meeting-ishika-bhardwaj',
-                    thirtyMinutes: 'https://calendly.com/experttdeveloper/30-minute-meeting-ishika-bhardwaj'
+                    fifteenMinutes: 'https://calendly.com/experttdeveloper/schedule-a-call-with-brandclever?month=2024-08',
+                    thirtyMinutes: 'https://calendly.com/experttdeveloper/schedule-a-call-with-brandclever?month=2024-08'
                 };
             case 'Charanjeet Singh':
                 return {
-                    fifteenMinutes: 'https://calendly.com/experttdeveloper/15-minute-meeting-charanjeet-singh',
-                    thirtyMinutes: 'https://calendly.com/experttdeveloper/30-minute-meeting-charanjeet-singh'
+                    fifteenMinutes: 'https://calendly.com/experttdeveloper/schedule-a-call-with-brandclever?month=2024-08',
+                    thirtyMinutes: 'https://calendly.com/experttdeveloper/schedule-a-call-with-brandclever?month=2024-08'
                 };
             default:
                 return {
-                    fifteenMinutes: 'https://calendly.com/experttdeveloper/15-minute-meeting-manish-verma',
-                    thirtyMinutes: 'https://calendly.com/experttdeveloper/30-minute-meeting-manish-verma'
+                    fifteenMinutes: 'https://calendly.com/experttdeveloper/schedule-a-call-with-brandclever?month=2024-08',
+                    thirtyMinutes: 'https://calendly.com/experttdeveloper/schedule-a-call-with-brandclever?month=2024-08'
                 };
         }
     };
