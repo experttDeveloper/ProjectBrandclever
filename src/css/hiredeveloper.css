@@ -35,6 +35,7 @@
 .mail_shopify {
   display: flex;
   margin: 11px 50px 20px 10px;
+  gap: 5px;
 }
 .form_shopify_hire .form_inner .card {
   padding: 25px 20px  23px 20px !important;
@@ -107,6 +108,7 @@
 .whatsapp_shopify {
   display: flex;
   margin: 11px 50px 20px 10px;
+  gap: 5px;
 }
 
 .form_inner {

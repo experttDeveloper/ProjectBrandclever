@@ -81,9 +81,9 @@ export default function HireDeveloperForm() {
               service: "",
             });
             setTimeout(() => {
-                setSuccesMsg(false)
-              }, "7000");
-              
+              setSuccesMsg(false)
+            }, "7000");
+
             return;
           }
         })
@@ -186,7 +186,17 @@ export default function HireDeveloperForm() {
                             
                         </FormControl> */}
           </div>
-          <div style={{ marginBottom: "10px" }}>
+          <div className="input-container textarea">
+            <textarea
+              name="message"
+              className="input message_text"
+              placeholder="Message*"
+              onChange={handleChange}
+            >
+            </textarea>
+            {errors.message && <div className="update_contact_error">{errors.message}</div>}
+          </div>
+          {/* <div style={{ marginBottom: "10px" }}>
             <TextField
               fullWidth
               id="message"
@@ -196,13 +206,14 @@ export default function HireDeveloperForm() {
               // error={!!errors.message} // Display error state
               helperText={errors.message} // Display error message
               value={formData.message}
+              className="message_text"
             />
-          </div>
+          </div> */}
           <Button variant="contained" type="submit">
             Hire Developer
           </Button>
           {successMsg && (
-            <h5 style={{ marginTop: "10px", textAlign: "center",color:"white" }}>
+            <h5 style={{ marginTop: "10px", textAlign: "center", color: "white" }}>
               Form submitted successfully.
             </h5>
           )}

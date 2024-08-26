@@ -127,7 +127,8 @@ const hireMenus = [
     id: 8,
     icon: '/images/hire/spaceaquare.png',
     title: "Hire Squarespace Expert",
-    url: "/hire-squarespace-expert"
+    url: "/hire-squarespace-expert",
+    className:"space_sqaure"
   },
   {
     id: 9,
@@ -276,7 +277,7 @@ const NavBar = () => {
                             {hireMenus.slice(0, 6).map((ele, key) => {
                               return (
                                 <div className='service_img'>
-                                  <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
+                                  <img src={ele.icon} height="32px" width="32px" alt='logo_img'  />
                                   <Link to={ele.url} onClick={hideHandleDropDown}>{ele.title}</Link>
                                 </div>
                               )
@@ -287,7 +288,7 @@ const NavBar = () => {
                               hireMenus.slice(6, 12).map((ele, key) => {
                                 return (
                                   <div className='service_img'>
-                                    <img src={ele.icon} height="32px" width="32px" alt='logo_img' />
+                                    <img src={ele.icon} height="32px" width="32px" alt='logo_img' className={ele.className}/>
                                     <Link to={ele.url} onClick={hideHandleDropDown}>{ele.title}</Link>
                                   </div>
                                 )
@@ -336,7 +337,7 @@ const NavBar = () => {
                               <Link to="/training-and-placement" onClick={hideHandleDropDown}>Traning & Placement</Link>
                             </div>
                             <div className='service_img'>
-                              <img src='/images/menus/privacy.png' alt='about page' height="32px" width="32px" />
+                              <img src='/images/menus/fraud.png' alt='about page' height="32px" width="32px" />
                               <Link to="/fraud" onClick={hideHandleDropDown}>Fraud Disclaimer</Link>
                             </div>
 

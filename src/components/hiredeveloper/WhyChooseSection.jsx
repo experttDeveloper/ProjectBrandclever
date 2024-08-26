@@ -4,6 +4,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import HireDeveloperForm from '../HireDeveloperForm';
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import { Link } from 'react-router-dom';
 
 export default function WhyChoose({ title, description1, description2, images, experties }) {
 
@@ -22,18 +23,22 @@ export default function WhyChoose({ title, description1, description2, images, e
                                         {description1}
                                         <br />
                                         <br />
-                                        <span dangerouslySetInnerHTML={{ __html:description2 }}>
-                                            </span>
+                                        <span dangerouslySetInnerHTML={{ __html: description2 }}>
+                                        </span>
                                     </p>
                                 </div>
                                 <div className="contact_shopify">
                                     <div className="whatsapp_shopify">
                                         <WhatsAppIcon />
-                                        <p className="whatsapp_number">+91-9872711866</p>
+                                        <Link to="https://wa.me/9872711866?text=Hello%20there!%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank">
+                                            <p className="whatsapp_number">+91-9872711866</p>
+                                        </Link>
                                     </div>
                                     <div className="mail_shopify">
                                         <MailOutlineIcon />
-                                        <p className="email_id">career@brandclever.in</p>
+                                        <Link style={{ textTransform: "lowercase" }} to='mailto:career@brandclever.in'>
+                                            <p className="email_id">career@brandclever.in</p>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

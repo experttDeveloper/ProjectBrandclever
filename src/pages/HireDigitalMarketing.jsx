@@ -16,7 +16,7 @@ export default function HireDigitalMarketing() {
         <>
          <MetaTitleDes title={"Hire The Best Digital Marketing Agency in India"} description={"Ready to Gear Up your online presence? Trust Brandclever skilled team for effective digital marketing strategies. Drive results today!"} />
             <div>
-                <TopHeader title="hire-digital-marketing-specialist"
+                <TopHeader title="hire digital marketing specialist"
                     description="Hire a digital marketing expert to boost your online presence, drive traffic, and increase customer engagement with targeted campaigns and strategies." />
             </div>
             <WhyChoose

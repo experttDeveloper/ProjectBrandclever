@@ -853,11 +853,12 @@ p.sale_meeting_team {
 }
 
 .exp_btn a:hover {
-    box-shadow: inset 0 100px 0 0 #191e25;
+    border: 1px solid #509e53;
+    box-shadow: inset 0 100px 0 0 #509e53;
+    color: #fff;
     color: var(--white-color);
-    transition: 1s;
     text-decoration: none;
-    border: 1px solid #191e25;
+    transition: 1s;
 }
 
 @keyframes myfirst {
@@ -2109,7 +2110,7 @@ span.question_in {
 
 /********************* About Us Page End *********************/
 .tabs li:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     box-shadow: 0px 0px 11px #2125293d;
     transition: .3s;
     display: block;
@@ -3483,7 +3484,7 @@ h4.MuiTypography-root.MuiTypography-h4.title_modal.css-1xvinid {
     padding: 26px 0 0;
     text-align: center;
     text-transform: capitalize;
-    font-family: Didact Gothic,sans-serif !important;
+    font-family: Didact Gothic, sans-serif !important;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -3502,10 +3503,11 @@ button.close_modal_btn:hover {
 h5.MuiTypography-root.MuiTypography-h5.right_test_modal.css-zq6grw {
     font-size: 32px;
     text-align: center;
-    font-family: Didact Gothic,sans-serif !important;
+    font-family: Didact Gothic, sans-serif !important;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
+
 .hidedropdown {
     display: none !important;
 }
@@ -3740,6 +3742,7 @@ p.MuiTypography-root.MuiTypography-body2.blog_title2.css-u30lmt {
 
 /* 02-08-2024 css start here */
 h2.cont2 a {
+    text-transform: capitalize;
     color: #509e53;
 }
 
@@ -3763,7 +3766,6 @@ textarea#message_textarea:hover {
 /* Ensure that focused textarea styles are applied and hover styles are not applied when focused */
 textarea#message_textarea:focus:hover {
     border: 2px solid #1b6ef3;
-    /* Keep the focus border color */
 }
 
 h2.contact_use_heading {
@@ -3883,4 +3885,38 @@ button.meeting_close_btn {
 
 button.meeting_close_btn:hover {
     background: #28a745 !important;
+}
+
+.column.footer-address-main a:hover {
+    color: #509e53 !important;
+}
+
+.whatsapp_shopify a:hover {
+    color: #509e53;
+}
+
+.mail_shopify a:hover {
+    color: #509e53;
+}
+
+.whatsapp_shopify p:hover {
+    color: #509e53;
+}
+
+.mail_shopify p:hover {
+    color: #509e53;
+}
+
+img.space_sqaure {
+    height: 50px;
+    width: 50px;
+    margin-left: -10px;
+}
+
+textarea.input.message_text::placeholder {
+    color: #f4ffff;
+}
+
+textarea.input.message_text:focus {
+    border: 2px solid rgb(3, 121, 168);
 }
